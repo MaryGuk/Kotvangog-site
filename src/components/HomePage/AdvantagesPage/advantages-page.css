@@ -1,0 +1,98 @@
+.advantages-page {
+  background-color: #e0e0e0;
+  padding-bottom: 85px;
+  /* background-image: url("/public/images/Слой2.png");
+  background-size: contain;
+  background-position: 1350px 15px; */
+  width: 100%;
+  height: auto;
+}
+
+.advantages-page__title {
+  font-size: 28px;
+  font-family: "Lora", serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.advantages-container {
+  padding-top: 45px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.advantages-img1 {
+  width: 100px;
+  height: 100px;
+  margin-left: 25px;
+}
+.advantages-img2 {
+  width: 100px;
+  height: 100px;
+  margin-left: 25px;
+}
+.advantages-img3 {
+  width: 100px;
+  height: 100px;
+  margin-left: 25px;
+}
+.advantages-img4 {
+  width: 100px;
+  height: 100px;
+  margin-left: 25px;
+}
+
+.advantages-text1 {
+  font-size: 12px;
+  font-family: "Lora", serif;
+  font-weight: 600;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 7px;
+  box-shadow: 5px 5px 0 1px #dbc0d1;
+  text-align: center;
+  width: 120px;
+  margin-right: 25px;
+}
+
+.advantages-text2 {
+  font-size: 12px;
+  font-family: "Lora", serif;
+  font-weight: 600;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 7px;
+  box-shadow: 5px 5px 0 1px #dbc0d1;
+  text-align: center;
+  width: 150px;
+  margin-right: 25px;
+}
+
+.advantages-text3 {
+  font-size: 12px;
+  font-family: "Lora", serif;
+  font-weight: 600;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 7px;
+  box-shadow: 5px 5px 0 1px #dbc0d1;
+  text-align: center;
+  width: 150px;
+  margin-right: 25px;
+}
+
+.advantages-text4 {
+  font-size: 12px;
+  font-family: "Lora", serif;
+  font-weight: 600;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 7px;
+  box-shadow: 5px 5px 0 1px #dbc0d1;
+  text-align: center;
+  width: 150px;
+  margin-right: 25px;
+}
