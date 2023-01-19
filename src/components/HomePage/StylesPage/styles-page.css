@@ -1,0 +1,50 @@
+.styles-page__title {
+  font-size: 24px;
+  font-family: "Palatino Linotype";
+  font-weight: 500;
+  /* letter-spacing: 1px; */
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.styles-art {
+  /* display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 2fr);
+  gap: 10px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 880px;
+  margin-left: 340px;
+}
+
+.styles__item {
+  padding: 5px 15px 0 15px;
+}
+
+.styles__image {
+  border: 1px solid black;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 3px 5px 0 1px #b4b5b6;
+  height: 280px;
+  width: 240px;
+}
+
+.styles-name {
+  padding-top: 5px;
+  display: flex;
+  font-size: 18px;
+  font-family: "Lora", serif;
+  font-weight: 500;
+  justify-content: center;
+}
+
+.styles-price {
+  display: flex;
+  font-size: 18px;
+  font-family: "Lora", serif;
+  font-weight: 500;
+  justify-content: center;
+}

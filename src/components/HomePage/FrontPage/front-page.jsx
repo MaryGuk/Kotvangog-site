@@ -5,6 +5,7 @@ const FrontPage = () => {
   return (
     <div className="front-page">
       <Navbar />
+
       <div className="front-page__content">
         <div className="front-page__title">
           Арт портрет с печатью на холсте за три дня
@@ -18,12 +19,14 @@ const FrontPage = () => {
           <div className="front-page__message">
             Нажмите кнопку! Свяжемся с Вами в течение 5 минут
           </div>
-          <button className="front-page__button" type="submit">
-            Получить консультацию
-          </button>
+          <a href="#">
+            <button className="front-page__button" type="submit">
+              Получить консультацию
+            </button>
+          </a>
         </div>
 
-        <img className="main-image" src="/images/112.jpg" alt="" />
+        <img className="main-image" src="/images/112(1).jpg" alt="" />
       </div>
     </div>
   );

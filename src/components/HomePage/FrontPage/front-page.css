@@ -16,12 +16,15 @@
   font-weight: normal;
   font-style: normal;
 }
-
 .front-page__content {
   display: flex;
 }
 
 .front-page__title {
+  background-image: url("/public/images/Фон заголовок.png");
+  background-repeat: no-repeat;
+  background-size: 590px 65px;
+  padding-top: 10px;
   font-size: 22px;
   margin: 20px auto 0 250px;
   font-family: "Palatino Linotype";
@@ -51,7 +54,8 @@
   font-family: "Trebuchetms";
   font-weight: 500;
   margin-top: 45px;
-  margin-left: 275px;
+  margin-left: 230px;
+  margin-right: 60px;
   border: 1px solid black;
   border-radius: 10px;
   padding: 7px;
@@ -77,12 +81,14 @@
   background-color: #36883d;
   color: white;
   border-radius: 50px;
+  border: none;
   padding: 10px;
   max-width: 290px;
-  box-shadow: 5px 5px 0 1px #7b797a;
+  box-shadow: 5px 5px 0 1px #7f7f7f;
 }
 
 .main-image {
-  height: 470px;
-  margin-right: 165px;
+  height: 490px;
+  margin-right: 465px;
+  margin-left: -70px;
 }

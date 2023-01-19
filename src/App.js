@@ -1,12 +1,13 @@
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
-import HomePage from "./components/HomePage/home-page";
+import Header from "./components/HomePage/header";
+import HomePage from "./components/HomePage/header";
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="app-wrapper">
-        <HomePage />
+        <Header />
       </div>
     </BrowserRouter>
   );
