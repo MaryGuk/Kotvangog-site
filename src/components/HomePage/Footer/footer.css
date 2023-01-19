@@ -1,0 +1,99 @@
+.footer-wrapper {
+  background-color: #c5c5c5;
+  height: 400px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-content {
+  padding-top: 70px;
+}
+
+.footer-logo {
+  display: flex;
+  font-family: "Zilla Slab", serif;
+  font-weight: 600;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #535353;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.address {
+  color: #ffffff;
+  font-family: "Nunito", Sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.address::before {
+  content: "[";
+  color: #ffab00;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 4px;
+  line-height: 1em;
+  position: relative;
+  top: -1px;
+}
+
+.address::after {
+  content: "]";
+  color: #ffab00;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 8px;
+  line-height: 1em;
+  position: relative;
+  top: -1px;
+}
+
+.address-metro {
+  font-family: "Nunito", Sans-serif;
+  font-weight: 500;
+  color: #5d5d5d;
+  font-size: 16px;
+}
+
+.address-street {
+  font-family: "Nunito", Sans-serif;
+  font-weight: 500;
+  color: #5d5d5d;
+  max-width: 380px;
+  font-size: 16px;
+}
+
+.footer-contacts {
+  font-family: "Nunito", Sans-serif;
+  font-weight: 500;
+  color: #5d5d5d;
+  font-size: 16px;
+}
+
+.footer-navbar {
+  padding: 40px 40px 10px 2px;
+}
+
+.footer-navbar a {
+  font-size: 20px;
+  color: #535353;
+  font-family: "Nunito", Sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  text-decoration: none;
+}
+
+.footer-navbar a:hover {
+  color: #2e7b35;
+  text-decoration: none;
+}
