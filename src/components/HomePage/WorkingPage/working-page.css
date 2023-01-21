@@ -29,14 +29,14 @@
   display: block;
   padding: 10px 0 0 47px;
   font-size: 16px;
-  font-family: "Lora", serif;
-  font-weight: 500;
+  font-family: "Trebuchetms";
+  font-weight: 600;
 }
 
 .working-text2 {
   font-size: 14px;
   color: #6d6d6d;
-  font-family: "Lora", serif;
+  font-family: "Trebuchetms";
   font-weight: 600;
   padding: 5px 0 0 47px;
 }

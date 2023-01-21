@@ -1,11 +1,8 @@
-import Navbar from "./Navbar/navbar";
 import "./front-page.css";
 
 const FrontPage = () => {
   return (
     <div className="front-page">
-      <Navbar />
-
       <div className="front-page__content">
         <div className="front-page__title">
           Арт портрет с печатью на холсте за три дня

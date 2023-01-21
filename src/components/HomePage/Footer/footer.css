@@ -33,10 +33,11 @@
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 4px;
+  padding-bottom: 5px;
 }
 .address::before {
   content: "[";
-  color: #ffab00;
+  color: #2e7b35;
   font-size: 20px;
   font-weight: bold;
   display: inline-block;
@@ -48,7 +49,7 @@
 
 .address::after {
   content: "]";
-  color: #ffab00;
+  color: #2e7b35;
   font-size: 20px;
   font-weight: bold;
   display: inline-block;
@@ -58,11 +59,20 @@
   top: -1px;
 }
 
+.address-city {
+  font-family: "Nunito", Sans-serif;
+  font-weight: 500;
+  color: #5d5d5d;
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+
 .address-metro {
   font-family: "Nunito", Sans-serif;
   font-weight: 500;
   color: #5d5d5d;
   font-size: 16px;
+  padding-bottom: 5px;
 }
 
 .address-street {
@@ -71,6 +81,7 @@
   color: #5d5d5d;
   max-width: 380px;
   font-size: 16px;
+  padding-bottom: 5px;
 }
 
 .footer-contacts {
@@ -85,7 +96,7 @@
 }
 
 .footer-navbar a {
-  font-size: 20px;
+  font-size: 18px;
   color: #535353;
   font-family: "Nunito", Sans-serif;
   font-weight: 600;
@@ -96,4 +107,37 @@
 .footer-navbar a:hover {
   color: #2e7b35;
   text-decoration: none;
+}
+
+.footer-messenger {
+  font-size: 20px;
+  color: #535353;
+  font-family: "Nunito", Sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.footer-messenger::before {
+  content: "[";
+  color: #2e7b35;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 4px;
+  line-height: 1em;
+  position: relative;
+  top: -1px;
+}
+
+.footer-messenger::after {
+  content: "]";
+  color: #2e7b35;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 8px;
+  line-height: 1em;
+  position: relative;
+  top: -1px;
 }
