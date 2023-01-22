@@ -8,11 +8,12 @@ const Footer = () => {
         <div className="footer-content">
           <h1 className="footer-logo"> kotvangog</h1>
           <div className="footer-contacts">
-            <span className="address"> Адрес</span>
+            <span className="address">Адрес</span>
             <span className="address-city"> Город Москва </span>
             <span className="address-metro">М. Волоколамская</span>
-            <span className="address-street">
-              Пятницкое шоссе, дом 8 ( 400 м от метро Волоколамская)
+            <span className="address-street">Пятницкое шоссе, дом 8</span>
+            <span className="address-street__more">
+              (400 м от метро Волоколамская)
             </span>
             <span className="phone-number"> +7 (993) 360-07-10 </span>{" "}
           </div>

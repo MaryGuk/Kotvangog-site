@@ -4,7 +4,7 @@ import "./App.css";
 import MainPage from "./views/MainPage";
 import ReviewsPage from "./views/ReviewsPage";
 import ProductsPage from "./views/ProductsPage";
-import Navbar from "./components/HomePage/FrontPage/Navbar/navbar";
+import Navbar from "./components/Pages/FrontPage/Navbar/navbar";
 
 const App = () => {
   return (
