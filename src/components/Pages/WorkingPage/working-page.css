@@ -1,5 +1,9 @@
 .working-page {
   background-color: #e0e0e0;
+  background-image: url("/public/images/Слой4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 88% 75%;
   height: 700px;
 }
 

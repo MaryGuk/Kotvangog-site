@@ -15,7 +15,19 @@ const Footer = () => {
             <span className="address-street__more">
               (400 м от метро Волоколамская)
             </span>
-            <span className="phone-number"> +7 (993) 360-07-10 </span>{" "}
+            <span className="phone-number"> +7 (993) 360-07-10 </span>
+            <div className="location-container">
+              <a href="https://yandex.by/maps/-/CCUzJVxNXC" target="_blank">
+                <span className="address-location">
+                  <img
+                    className="location-image"
+                    src="/images/маркер.png"
+                    alt=""
+                  />
+                  Открыть в Яндекс Картах
+                </span>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -35,6 +47,38 @@ const Footer = () => {
 
         <div className="footer-content">
           <span className="footer-messenger"> Мы в соц сетях </span>
+          <div className="footer-icons">
+            <a href="#">
+              <img
+                className="icons-messenger"
+                src="/images/messenger/telegram.svg"
+              />
+            </a>
+            <a href="#">
+              <img
+                className="icons-messenger"
+                src="/images/messenger/whatsapp.svg"
+              />
+            </a>
+            <a href="https://www.instagram.com/nen_nenad/" target="_blank">
+              <img
+                className="icons-messenger"
+                src="/images/messenger/instagram.svg"
+              />
+            </a>
+            <a href="#">
+              <img
+                className="icons-messenger"
+                src="/images/messenger/viber.png"
+              />
+            </a>
+            <a href="#">
+              <img
+                className="icons-messenger"
+                src="/images/messenger/email.svg"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>

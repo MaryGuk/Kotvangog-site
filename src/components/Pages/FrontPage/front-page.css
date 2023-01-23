@@ -16,6 +16,14 @@
   font-weight: normal;
   font-style: normal;
 }
+
+.front-page {
+  background-image: url("/public/images/Слой 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
 .front-page__content {
   display: flex;
 }

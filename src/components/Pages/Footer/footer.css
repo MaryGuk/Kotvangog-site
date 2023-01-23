@@ -96,6 +96,32 @@
   font-weight: 500;
   color: #5d5d5d;
   font-size: 16px;
+  padding-bottom: 15px;
+}
+
+.address-location {
+  display: flex;
+  font-family: "Nunito", Sans-serif;
+  font-weight: 600;
+  color: #5d5d5d;
+  font-size: 16px;
+  background-color: #dfdfdf;
+  border-radius: 5px;
+  height: 30px;
+  padding-top: 5px;
+  text-align: center;
+  color: #000000;
+}
+
+.location-container a {
+  text-decoration: none;
+}
+
+.location-image {
+  width: 25px;
+  height: 25px;
+  padding-left: 3px;
+  align-items: center;
 }
 
 .footer-contacts {
@@ -130,12 +156,13 @@
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 .footer-messenger::before {
   content: "[";
   color: #2e7b35;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   display: inline-block;
   margin-right: 4px;
@@ -147,11 +174,29 @@
 .footer-messenger::after {
   content: "]";
   color: #2e7b35;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   display: inline-block;
   margin-left: 8px;
   line-height: 1em;
   position: relative;
   top: -1px;
+}
+
+.footer-messenger {
+  display: flex;
+}
+
+.icons-messenger {
+  width: 35px;
+  height: 35px;
+  align-items: center;
+  padding-right: 5px;
+  transition: 0.8s;
+}
+
+.icons-messenger:hover {
+  transform: scale(1.5);
+  -webkit-filter: sepia(1) hue-rotate(320deg) saturate(10);
+  filter: sepia(1) hue-rotate(40deg) saturate(10);
 }
