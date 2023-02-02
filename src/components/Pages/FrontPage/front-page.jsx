@@ -23,7 +23,7 @@ const FrontPage = () => {
           </a>
         </div>
 
-        <img className="main-image" src="/images/112(1).jpg" alt="" />
+        <img className="main-image" src="/images/Главное фото.jpg" alt="" />
       </div>
     </div>
   );

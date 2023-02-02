@@ -21,7 +21,7 @@ const Footer = () => {
                 <span className="address-location">
                   <img
                     className="location-image"
-                    src="/images/маркер.png"
+                    src="/images/location-icon.png"
                     alt=""
                   />
                   Открыть в Яндекс Картах

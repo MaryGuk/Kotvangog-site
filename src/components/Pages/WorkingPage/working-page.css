@@ -1,10 +1,10 @@
 .working-page {
   background-color: #e0e0e0;
-  background-image: url("/public/images/Слой4.png");
+  background-image: url("/public/images/background/Слой4.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 88% 75%;
-  height: 700px;
+  background-size: 88% 85%;
+  height: 1020px;
 }
 
 .working-page__title {
@@ -24,8 +24,8 @@
 }
 
 .working-image {
-  width: 300px;
-  height: 205px;
+  width: 320px;
+  height: 200px;
   padding: 40px 45px 0 45px;
 }
 
@@ -43,4 +43,65 @@
   font-family: "Trebuchetms";
   font-weight: 600;
   padding: 5px 0 0 47px;
+}
+
+.work-information {
+  display: flex;
+}
+
+.work-ava {
+  height: 430px;
+  width: 320px;
+  display: block;
+  padding-left: 250px;
+  padding-top: 80px;
+}
+
+.work-inf__text {
+  font-family: "Trebuchetms";
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 60px;
+  margin-left: -40px;
+}
+
+.work-arrow {
+  display: block;
+  height: 60px;
+  padding-top: 85px;
+  margin-left: 80px;
+}
+
+.work-inf__text2 {
+  font-family: "Trebuchetms";
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding-top: 80px;
+  margin-left: -360px;
+}
+
+.work-inf__text3 {
+  font-family: "Trebuchetms";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding-top: 82px;
+  margin-left: 5px;
+  max-width: 170px;
+}
+
+.work-video {
+  width: 450px;
+  height: 280px;
+  padding-top: 145px;
+  margin-left: -190px;
+}
+
+.work-author_name {
+  width: 210px;
+  height: 60px;
+  padding-top: 445px;
+  margin-left: -480px;
+  padding-bottom: 25px;
 }

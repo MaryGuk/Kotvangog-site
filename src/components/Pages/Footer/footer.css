@@ -19,6 +19,7 @@
   font-size: 36px;
   text-transform: uppercase;
   color: #535353;
+  margin-top: -10px;
 }
 
 .footer-contacts {
@@ -29,9 +30,10 @@
 .address {
   color: #ffffff;
   font-family: "Nunito", Sans-serif;
-  font-size: 1em;
+  font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  margin-top: -8px;
   letter-spacing: 4px;
   padding-bottom: 5px;
 }
@@ -63,7 +65,7 @@
   font-family: "Nunito", Sans-serif;
   font-weight: 500;
   color: #5d5d5d;
-  font-size: 16px;
+  font-size: 20px;
   padding-bottom: 5px;
 }
 
@@ -71,7 +73,7 @@
   font-family: "Nunito", Sans-serif;
   font-weight: 500;
   color: #5d5d5d;
-  font-size: 16px;
+  font-size: 20px;
   padding-bottom: 5px;
 }
 
@@ -79,14 +81,14 @@
   font-family: "Nunito", Sans-serif;
   font-weight: 500;
   color: #5d5d5d;
-  font-size: 16px;
+  font-size: 20px;
   padding-bottom: 5px;
 }
 
 .address-street__more {
   font-family: "Nunito", Sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
   padding-bottom: 5px;
   color: #2e7b35;
 }
@@ -95,7 +97,7 @@
   font-family: "Nunito", Sans-serif;
   font-weight: 500;
   color: #5d5d5d;
-  font-size: 16px;
+  font-size: 20px;
   padding-bottom: 15px;
 }
 
@@ -104,7 +106,7 @@
   font-family: "Nunito", Sans-serif;
   font-weight: 600;
   color: #5d5d5d;
-  font-size: 16px;
+  font-size: 18px;
   background-color: #dfdfdf;
   border-radius: 5px;
   height: 30px;
@@ -136,7 +138,7 @@
 }
 
 .footer-navbar a {
-  font-size: 18px;
+  font-size: 20px;
   color: #535353;
   font-family: "Nunito", Sans-serif;
   font-weight: 600;
