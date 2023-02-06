@@ -35,14 +35,14 @@
   border-radius: 10px;
   border: none;
   box-shadow: 3px 5px 0 1px #b4b5b6;
-  height: 280px;
-  width: 240px;
+  height: 270px;
+  width: 210px;
 }
 
 .styles-name {
   padding-top: 15px;
   display: flex;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Lora", serif;
   font-weight: 500;
   justify-content: center;
@@ -50,7 +50,8 @@
 
 .styles-price {
   display: flex;
-  font-size: 16px;
+  font-size: 14px;
+  color: #3c3f42;
   font-family: "Lora", serif;
   font-weight: 500;
   justify-content: center;

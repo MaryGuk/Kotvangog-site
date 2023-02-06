@@ -29,7 +29,7 @@ const WorkingPage = () => {
         </div>
       </div>
       <div className="work-information">
-        <img className="work-ava" src="/images/Люба Photo.png" alt="" />
+        <img className="work-ava" src="/images/Люба ph.png" alt="" />
         <h1 className="work-inf__text">Посмотрите 60-секундное</h1>
         <img className="work-arrow" src="/images/arrow.png" alt="" />
         <h2 className="work-inf__text2"> видео и узнайте,</h2>
