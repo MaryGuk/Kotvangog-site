@@ -1,11 +1,11 @@
 .beauty-art__page {
-  display: flex;
-  flex-direction: column;
   height: auto;
 }
 
 .beauty-art__ava {
   display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .beauty-art__container {
@@ -76,13 +76,12 @@
 .beauty-art__gallery {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1250px;
-  margin-top: 110px;
-  margin-left: -350px;
+  margin-left: 370px;
+  padding-top: 10px;
 }
 
 .beauty-art__image {
-  margin-right: 15px;
+  margin-right: 10px;
   width: 150px;
   height: 185px;
   padding-bottom: 70px;

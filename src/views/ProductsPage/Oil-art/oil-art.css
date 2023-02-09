@@ -1,11 +1,11 @@
 .oli-art__page {
-  display: flex;
-  justify-content: center;
   height: auto;
 }
 
 .oli-art__container {
   display: flex;
+  justify-content: center;
+  flex-direction: row;
   padding-top: 70px;
   margin-left: -45px;
 }

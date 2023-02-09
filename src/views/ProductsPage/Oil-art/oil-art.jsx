@@ -4,11 +4,13 @@ const OliArt = () => {
   return (
     <div className="oli-art__page">
       <div id="oli-art" className="oli-art__container">
-        <img
-          className="oli-art__photo"
-          src="/images/styles/Имитация масла/первое фото.jpg"
-          alt=""
-        />
+        <div>
+          <img
+            className="oli-art__photo"
+            src="/images/styles/Имитация масла/первое фото.jpg"
+            alt=""
+          />
+        </div>
 
         <div className="oli-art__information">
           <div className="oli-art__title"> Имитация масла</div>
@@ -27,39 +29,39 @@ const OliArt = () => {
               </button>
             </a>
           </div>
-          <div className="oli-art__gallery">
-            <img
-              className="oli-art__image"
-              src="/images/styles/Имитация масла/2im.jpg"
-              alt=""
-            />
-            <img
-              className="oli-art__image"
-              src="/images/styles/Имитация масла/14im.jpg"
-              alt=""
-            />
-            <img
-              className="oli-art__image"
-              src="/images/styles/Имитация масла/8im.jpg"
-              alt=""
-            />
-            <img
-              className="oli-art__image"
-              src="/images/styles/Имитация масла/9im.jpg"
-              alt=""
-            />
-            <img
-              className="oli-art__image"
-              src="/images/styles/Имитация масла/10im.jpg"
-              alt=""
-            />
-            <img
-              className="oli-art__image"
-              src="/images/styles/Имитация масла/12im.jpg"
-              alt=""
-            />
-          </div>
         </div>
+      </div>
+      <div className="oli-art__gallery">
+        <img
+          className="oli-art__image"
+          src="/images/styles/Имитация масла/2im.jpg"
+          alt=""
+        />
+        <img
+          className="oli-art__image"
+          src="/images/styles/Имитация масла/14im.jpg"
+          alt=""
+        />
+        <img
+          className="oli-art__image"
+          src="/images/styles/Имитация масла/8im.jpg"
+          alt=""
+        />
+        <img
+          className="oli-art__image"
+          src="/images/styles/Имитация масла/9im.jpg"
+          alt=""
+        />
+        <img
+          className="oli-art__image"
+          src="/images/styles/Имитация масла/10im.jpg"
+          alt=""
+        />
+        <img
+          className="oli-art__image"
+          src="/images/styles/Имитация масла/12im.jpg"
+          alt=""
+        />
       </div>
     </div>
   );

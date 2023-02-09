@@ -1,12 +1,16 @@
 .digital-art__page {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   height: auto;
 }
 
 .digital-art__container {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 230px;
+}
+
+.digital-art__inf {
+  margin-right: 65px;
 }
 
 .digital-art__title {
@@ -69,17 +73,13 @@
 .digital-art__gallery {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 15px;
+  padding-top: 20px;
+  margin-left: 675px;
 }
 
 .digital-art__image {
-  margin-right: 15px;
+  margin-right: 10px;
   width: 150px;
   height: 190px;
   padding-bottom: 10px;
 }
-/* 
-.digital-art__ava {
-  display: flex;
-  flex-direction: row;
-} */
