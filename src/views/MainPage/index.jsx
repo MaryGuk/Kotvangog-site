@@ -9,7 +9,6 @@ import FrontPage from "../../components/Pages/FrontPage/front-page";
 const MainPage = () => {
   return (
     <Box>
-      |
       <FrontPage />
       <AdvantagesPage />
       <StylesPage />

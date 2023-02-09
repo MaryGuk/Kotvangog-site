@@ -3,8 +3,8 @@ import "./digital-portrait.css";
 const DigitalPortrait = () => {
   return (
     <div className="digital-art__page">
-      <div className="digital-art__container">
-        <div className="digital-art__information">
+      <div id="digital" className="digital-art__container">
+        <div>
           <div className="digital-art__title">Диджитал-портрет</div>
           <div className="digital-art__price"> От 2800 руб. </div>
           <div className="digital-art__description">
@@ -16,7 +16,7 @@ const DigitalPortrait = () => {
             будет ослепительным.
           </div>
           <div>
-            <a href="#">
+            <a href="">
               <button className="digital-art__button" type="submit">
                 Получить консультацию
               </button>
@@ -45,11 +45,13 @@ const DigitalPortrait = () => {
             />
           </div>
         </div>
-        <img
-          className="digital-art__photo"
-          src="/images/styles/Диджитал/диджитал.jpg"
-          alt=""
-        />
+        <div className="digital-art__ava">
+          <img
+            className="digital-art__photo"
+            src="/images/styles/Диджитал/диджитал.jpg"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import "./styles-page.css";
+import { HashLink as Link } from "react-router-hash-link";
 
 const StylesPage = () => {
   return (
@@ -6,37 +7,39 @@ const StylesPage = () => {
       <div className="styles-page__title">Стили и цены</div>
       <div className="styles-art">
         <div className="styles__item">
-          <a href="#">
+          <Link to="/products#beauty-art">
             <img
               className="styles__image"
               src="/images/styles/Бьюти-арт/бьюти-арт.jpg"
               alt=""
             />
-          </a>
+          </Link>
           <span className="styles-name"> Бьюти-арт портрет</span>
           <span className="styles-price">От 1590 руб.</span>
         </div>
 
         <div className="styles__item">
-          <a href="#">
+          <Link to="/products#digital">
             <img
               className="styles__image"
               src="/images/styles/Диджитал/диджитал.jpg"
               alt=""
             />
-          </a>
+          </Link>
+
           <span className="styles-name"> Диджитал-портрет</span>
           <span className="styles-price"> От 2800 руб.</span>
         </div>
 
         <div className="styles__item">
-          <a href="#">
+          <Link to="/products#oli-art">
             <img
               className="styles__image"
               src="/images/styles/Имитация масла/первое фото.jpg"
               alt=""
             />
-          </a>
+          </Link>
+
           <span className="styles-name"> Имитация масла </span>
           <span className="styles-price"> От 950 руб.</span>
         </div>

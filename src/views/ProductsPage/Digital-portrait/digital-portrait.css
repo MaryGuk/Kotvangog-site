@@ -1,5 +1,7 @@
 .digital-art__page {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   height: auto;
 }
 
@@ -13,7 +15,7 @@
   font-weight: 400;
   letter-spacing: 0px;
   color: #252930;
-  padding-left: 350px;
+  /* padding-left: 350px; */
 }
 
 .digital-art__title::after {
@@ -26,7 +28,7 @@
 }
 
 .digital-art__price {
-  padding-left: 350px;
+  /* padding-left: 350px; */
   color: #020202;
   font-family: "Prata", Sans-serif;
   font-size: 28px;
@@ -36,7 +38,7 @@
 }
 
 .digital-art__description {
-  padding: 15px 0 25px 350px;
+  padding: 15px 0;
   max-width: 450px;
   color: #6c6c6c;
   font-family: "Nunito", sans-serif;
@@ -48,7 +50,6 @@
 
 .digital-art__button {
   font-size: 16px;
-  margin-left: 350px;
   font-family: "Trebuchetms";
   font-weight: 500;
   background-color: #36883d;
@@ -63,17 +64,22 @@
 .digital-art__photo {
   width: 350px;
   height: 467px;
-  margin-left: -105px;
 }
 
 .digital-art__gallery {
-  margin-top: 120px;
-  margin-left: 340px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 15px;
 }
 
 .digital-art__image {
   margin-right: 15px;
   width: 150px;
   height: 190px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
+/* 
+.digital-art__ava {
+  display: flex;
+  flex-direction: row;
+} */

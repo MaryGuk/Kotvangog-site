@@ -3,7 +3,7 @@ import "./beauty-art.css";
 const BeautyArt = () => {
   return (
     <div className="beauty-art__page">
-      <div className="beauty-art__container">
+      <div id="beauty-art" className="beauty-art__container">
         <img
           className="beauty-art__photo"
           src="/images/styles/Бьюти-арт/бьюти-арт.jpg"

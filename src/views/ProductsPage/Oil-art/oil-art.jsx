@@ -3,7 +3,7 @@ import "./oil-art.css";
 const OliArt = () => {
   return (
     <div className="oli-art__page">
-      <div className="oli-art__container">
+      <div id="oli-art" className="oli-art__container">
         <img
           className="oli-art__photo"
           src="/images/styles/Имитация масла/первое фото.jpg"
