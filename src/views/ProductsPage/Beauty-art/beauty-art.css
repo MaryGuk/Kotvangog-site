@@ -2,17 +2,12 @@
   height: auto;
 }
 
-.beauty-art__ava {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
 .beauty-art__container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-top: 70px;
+  margin-left: -350px;
 }
 
 .beauty-art__photo {
@@ -76,13 +71,13 @@
 .beauty-art__gallery {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 370px;
+  margin-left: 195px;
   padding-top: 10px;
+  padding-bottom: 120px;
 }
 
 .beauty-art__image {
   margin-right: 10px;
   width: 150px;
   height: 185px;
-  padding-bottom: 70px;
 }

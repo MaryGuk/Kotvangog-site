@@ -31,6 +31,7 @@ const OliArt = () => {
           </div>
         </div>
       </div>
+
       <div className="oli-art__gallery">
         <img
           className="oli-art__image"

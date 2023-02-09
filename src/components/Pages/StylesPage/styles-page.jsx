@@ -45,73 +45,76 @@ const StylesPage = () => {
         </div>
 
         <div className="styles__item">
-          <a href="#">
+          <Link to="/products#likeness-art">
             <img
               className="styles__image"
               src="/images/styles/Портрет в образе/первая портрет в образе.jpg"
               alt=""
             />
-          </a>
+          </Link>
           <span className="styles-name">Портрет в образе </span>
           <span className="styles-price"> От 1090 руб.</span>
         </div>
 
         <div className="styles__item">
-          <a href="#">
+        <Link to="/products#fusion-art">
             <img
               className="styles__image"
-              src="/images/styles/Фьюжн/002.jpg"
+              src="/images/styles/Фьюжн/f2.jpg"
               alt=""
             />
-          </a>
+          </Link>
           <span className="styles-name"> Фьюжн </span>
           <span className="styles-price"> От 1890 руб.</span>
         </div>
 
         <div className="styles__item">
-          <a href="#">
+          <Link to="/products#pencil-art">
             <img
               className="styles__image"
               src="/images/styles/Карандаш/карандаш.jpg"
               alt=""
             />
-          </a>
+          </Link>
+
           <span className="styles-name"> Карандаш </span>
           <span className="styles-price"> От 1790 руб.</span>
         </div>
 
         <div className="styles__item">
-          <a href="#">
+          <Link to="/products#infiniti-art">
             <img
               className="styles__image"
               src="/images/styles/Инфинити/инфинити.jpg"
               alt=""
             />
-          </a>
+          </Link>
+
           <span className="styles-name"> Инфинити </span>
           <span className="styles-price"> От 2900 руб.</span>
         </div>
 
         <div className="styles__item">
-          <a href="#">
+          <Link to="/products#mastihin-art">
             <img
               className="styles__image"
               src="/images/styles/Мастихин/04.jpg"
               alt=""
             />
-          </a>
+          </Link>
           <span className="styles-name">Мастихин </span>
           <span className="styles-price"> От 2900 руб.</span>
         </div>
 
         <div className="styles__item">
-          <a href="#">
+          <Link to="/products#animal-art">
             <img
               className="styles__image"
               src="/images/styles/Портрет питомца/питомец первое.jpg"
               alt=""
             />
-          </a>
+          </Link>
+
           <span className="styles-name">Портрет питомца </span>
           <span className="styles-price"> От 1490 руб.</span>
         </div>

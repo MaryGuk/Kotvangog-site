@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-left: 230px;
+  margin-left: -80px;
 }
 
 .digital-art__inf {
@@ -19,7 +19,6 @@
   font-weight: 400;
   letter-spacing: 0px;
   color: #252930;
-  /* padding-left: 350px; */
 }
 
 .digital-art__title::after {
@@ -32,7 +31,6 @@
 }
 
 .digital-art__price {
-  /* padding-left: 350px; */
   color: #020202;
   font-family: "Prata", Sans-serif;
   font-size: 28px;
@@ -73,13 +71,13 @@
 .digital-art__gallery {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 20px;
-  margin-left: 675px;
+  padding-top: 10px;
+  margin-left: 525px;
+  padding-bottom: 120px;
 }
 
 .digital-art__image {
   margin-right: 10px;
   width: 150px;
   height: 190px;
-  padding-bottom: 10px;
 }
