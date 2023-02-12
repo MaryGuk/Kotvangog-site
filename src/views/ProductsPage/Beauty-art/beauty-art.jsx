@@ -1,6 +1,10 @@
+import { Dialog } from "@mui/material";
+import { Box } from "@mui/system";
+import { useState } from "react";
 import "./beauty-art.css";
 
 const BeautyArt = () => {
+  const [openImageDialog, setOpenImageDialog] = useState(false);
   return (
     <div className="beauty-art__page">
       <div id="beauty-art" className="beauty-art__container">
@@ -32,11 +36,14 @@ const BeautyArt = () => {
       </div>
 
       <div className="beauty-art__gallery">
-        <img
-          className="beauty-art__image"
-          src="/images/styles/Бьюти-арт/1 ba.jpg"
-          alt=""
-        />
+        <div onClick={() => setOpenImageDialog(true)}>
+          <img
+            className="beauty-art__image"
+            src="/images/styles/Бьюти-арт/1 ba.jpg"
+            alt=""
+          />
+        </div>
+
         <img
           className="beauty-art__image"
           src="/images/styles/Бьюти-арт/2 ba.jpg"
@@ -63,6 +70,15 @@ const BeautyArt = () => {
           alt=""
         />
       </div>
+      <Dialog open={openImageDialog} onClose={() => setOpenImageDialog(false)}>
+        <Box height="500px" overflow="hidden">
+          <img
+            height="100%"
+            src="https://previews.dropbox.com/p/thumb/ABypDF8RvuCfJbLNYseRfOOp-lHEjRFRIHSaJBL3ZkTjo11ffTf6so4-t1C4vVeUVvc3jz-cdIxTW_nJidWAfgNz_1BCGN1UEhReMUzDy2j0Cvct7kuKpICILhA40ezNgmZpaoZEJKY0DfWbcX4DYEBEOU8dARKIPCgN1uZqv6LrZU0ra-_dgcNJeL732EYilrJCG5LCgXR3X4TF3_0J9S2pciClbkJuqCE8xTQ00XvsIhU612VDRatPrTTacF6Wj9ogB9XYvLQI4xJyxHvNeLulcJoFGeaLlfEmGfKAqplYUBghu4RfbXNCV6E3Ktnr--ymvLYYgkEjJklLEMftmafaIwjq4afXTWZB2bLa9Rwfg9Ac26giojAwLz9vdODXiBA/p.jpeg"
+            alt=""
+          />
+        </Box>
+      </Dialog>
     </div>
   );
 };

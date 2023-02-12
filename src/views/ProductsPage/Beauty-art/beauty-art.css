@@ -77,6 +77,7 @@
 }
 
 .beauty-art__image {
+  overflow: hidden;
   margin-right: 10px;
   width: 150px;
   height: 185px;

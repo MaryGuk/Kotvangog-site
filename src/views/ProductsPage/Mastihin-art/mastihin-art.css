@@ -72,22 +72,17 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: 10px;
-  margin-left: 435px;
+  margin-left: 415px;
   padding-bottom: 120px;
 }
 
 .mastihin-art__image {
   margin-right: 10px;
-  width: 160px;
+  width: 170px;
   height: 190px;
 }
 
 .mastihin-art__horizontal {
   width: 220px;
-  height: 190px;
-}
-
-.mastihin-art__horizontal {
-  width: 230px;
   height: 190px;
 }
