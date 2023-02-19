@@ -1,12 +1,16 @@
 .infiniti-art__page {
-  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.infiniti-art__general {
+  max-width: 1000px;
 }
 
 .infiniti-art__container {
   display: flex;
-  justify-content: center;
   flex-direction: row;
-  margin-left: -250px;
 }
 
 .infiniti-art__photo {
@@ -43,7 +47,7 @@
 
 .infiniti-art__description {
   padding: 15px 0 25px 75px;
-  max-width: 450px;
+  max-width: 400px;
   color: #6c6c6c;
   font-family: "Nunito", sans-serif;
   font-size: 16px;
@@ -70,9 +74,8 @@
 .infiniti-art__gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   max-width: 1250px;
-  margin-left: -40px;
   padding-top: 10px;
   padding-bottom: 120px;
 }

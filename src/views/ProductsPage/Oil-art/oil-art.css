@@ -1,12 +1,16 @@
 .oli-art__page {
-  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.oli-art__general {
+  max-width: 1000px;
 }
 
 .oli-art__container {
   display: flex;
-  justify-content: center;
   flex-direction: row;
-  margin-left: -250px;
 }
 
 .oli-art__photo {
@@ -70,14 +74,13 @@
 .oli-art__gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1250px;
-  margin-left: 38px;
+  justify-content: flex-start;
   padding-top: 10px;
   padding-bottom: 120px;
 }
 
 .oli-art__image {
+  overflow: hidden;
   margin-right: 10px;
   width: 145px;
   height: 185px;

@@ -4,7 +4,7 @@
   padding: 10px 0;
   content: "";
   display: flex;
-  justify-content: space-betweenS;
+  justify-content: space-evenly;
 }
 
 .navbar a {
@@ -23,14 +23,11 @@
 
 .navbar-item {
   display: inline;
-  margin-left: -25px;
-  margin-right: 85px;
-  padding: 0px 10px 5px 10px;
+  padding: 0 25px 5px;
 }
 
 .logo {
   display: flex;
-  margin: -3px 350px 0 350px;
   font-family: "Zilla Slab", serif;
   font-weight: 600;
   font-size: 24px;
