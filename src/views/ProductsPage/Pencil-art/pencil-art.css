@@ -1,12 +1,16 @@
 .pencil-art__page {
-  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pencil-art__general {
+  max-width: 1000px;
 }
 
 .pencil-art__container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-left: 15px;
 }
 
 .pencil-art__inf {
@@ -31,7 +35,6 @@
 }
 
 .pencil-art__price {
-  /* padding-left: 350px; */
   color: #020202;
   font-family: "Prata", Sans-serif;
   font-size: 28px;
@@ -72,13 +75,13 @@
 .pencil-art__gallery {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   padding-top: 10px;
-  margin-left: 665px;
   padding-bottom: 120px;
 }
 
 .pencil-art__image {
-  margin-right: 10px;
+  margin-left: 10px;
   width: 160px;
   height: 190px;
 }

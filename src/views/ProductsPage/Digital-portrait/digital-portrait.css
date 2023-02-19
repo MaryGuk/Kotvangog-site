@@ -1,16 +1,20 @@
 .digital-art__page {
-  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.digital-art__general {
+  max-width: 1000px;
+}
+
+.digital-art__inf {
+  padding-right: 75px;
 }
 
 .digital-art__container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-left: -80px;
-}
-
-.digital-art__inf {
-  margin-right: 65px;
 }
 
 .digital-art__title {
@@ -71,13 +75,13 @@
 .digital-art__gallery {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   padding-top: 10px;
-  margin-left: 525px;
   padding-bottom: 120px;
 }
 
 .digital-art__image {
-  margin-right: 10px;
+  margin-left: 10px;
   width: 150px;
   height: 190px;
 }

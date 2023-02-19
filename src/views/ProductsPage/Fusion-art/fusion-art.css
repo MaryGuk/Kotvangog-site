@@ -1,12 +1,15 @@
 .fusion-art__page {
-  height: auto;
-}
-
-.fusion-art__container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-left: -350px;
+}
+
+.fusion-art__general {
+  max-width: 1000px;
+}
+.fusion-art__container {
+  display: flex;
+  flex-direction: row;
 }
 
 .fusion-art__photo {
@@ -70,7 +73,6 @@
 .fusion-art__gallery {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 195px;
   padding-top: 10px;
   padding-bottom: 120px;
 }

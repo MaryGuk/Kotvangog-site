@@ -1,12 +1,15 @@
 .likeness-art__page {
-  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.likeness-art__general {
+  max-width: 1000px;
 }
 
 .likeness-art__container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-left: -185px;
 }
 
 .likeness-art__inf {
@@ -31,7 +34,6 @@
 }
 
 .likeness-art__price {
-  /* padding-left: 350px; */
   color: #020202;
   font-family: "Prata", Sans-serif;
   font-size: 28px;
@@ -72,13 +74,13 @@
 .likeness-art__gallery {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   padding-top: 10px;
-  margin-left: 220px;
   margin-bottom: 120px;
 }
 
 .likeness-art__image {
-  margin-right: 10px;
+  margin-left: 10px;
   width: 150px;
   height: 190px;
 }

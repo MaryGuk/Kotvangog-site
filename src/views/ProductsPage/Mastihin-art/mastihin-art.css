@@ -1,12 +1,16 @@
 .mastihin-art__page {
-  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mastihin-art__general {
+  max-width: 1000px;
 }
 
 .mastihin-art__container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-left: -35px;
 }
 
 .mastihin-art__inf {
@@ -71,13 +75,13 @@
 .mastihin-art__gallery {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   padding-top: 10px;
-  margin-left: 415px;
   padding-bottom: 120px;
 }
 
 .mastihin-art__image {
-  margin-right: 10px;
+  margin-left: 10px;
   width: 170px;
   height: 190px;
 }

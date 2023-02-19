@@ -1,12 +1,16 @@
 .animal-art__page {
-  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.animal-art__general {
+  max-width: 1000px;
 }
 
 .animal-art__container {
   display: flex;
-  justify-content: center;
   flex-direction: row;
-  margin-left: -250px;
 }
 
 .animal-art__photo {
@@ -70,9 +74,8 @@
 .animal-art__gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   max-width: 1250px;
-  margin-left: 80px;
   padding-top: 10px;
   padding-bottom: 120px;
 }

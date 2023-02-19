@@ -1,19 +1,25 @@
 .beauty-art__page {
-  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.beauty-art__general {
+  max-width: 1000px;
+  /* margin: 0 auto; */
 }
 
 .beauty-art__container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   padding-top: 70px;
-  margin-left: -350px;
 }
 
 .beauty-art__photo {
   width: 350px;
   height: 467px;
 }
+
 .beauty-art__title {
   font-family: "Prata", serif;
   font-size: 31px;
@@ -71,7 +77,7 @@
 .beauty-art__gallery {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 195px;
+  justify-content: flex-start;
   padding-top: 10px;
   padding-bottom: 120px;
 }
