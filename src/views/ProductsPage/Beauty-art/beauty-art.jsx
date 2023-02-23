@@ -1,6 +1,7 @@
 import { Dialog } from "@mui/material";
 import { Box } from "@mui/system";
 import { useState } from "react";
+import BeforeAfterImage from "../../../components/BeforeAfterImage";
 import "./beauty-art.css";
 import ImageBeauty from "./Image-beauty";
 
@@ -11,10 +12,10 @@ const BeautyArt = () => {
       <div className="beauty-art__general">
         <div id="beauty-art" className="beauty-art__container">
           <div>
-            <img
-              className="beauty-art__photo"
-              src="/images/styles/Бьюти-арт/бьюти-арт.jpg"
-              alt=""
+            <BeforeAfterImage
+              height="500px"
+              srcAfter="/images/styles/Бьюти-арт/бьюти-арт.jpg"
+              srcBefore="/images/styles/Бьюти-арт/до бьюти-арт.jpg"
             />
           </div>
 
