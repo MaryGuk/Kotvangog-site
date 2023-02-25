@@ -1,99 +1,57 @@
 .advantages-page {
   background-color: #e0e0e0;
-  background-image: url("/public/images/background/Слой22.png");
+}
+
+.advantages-page__general {
+  background-image: url("/public/images/background/Слой22 -фон.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 55% 88%;
-  padding-bottom: 85px;
-  width: 100%;
-  height: 260px;
 }
 
 .advantages-page__title {
   font-size: 24px;
   font-family: "Palatino Linotype";
   font-weight: 500;
-  /* letter-spacing: 1px; */
   text-align: center;
-  padding-top: 20px;
+  white-space: nowrap;
 }
 
 .advantages-container {
   padding-top: 45px;
-  height: 120px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 85px;
 }
 
-.advantages-img1 {
-  width: 100px;
-  height: 100px;
-  margin-left: 25px;
-}
-.advantages-img2 {
-  width: 100px;
-  height: 100px;
-  margin-left: 25px;
-}
-.advantages-img3 {
-  width: 100px;
-  height: 100px;
-  margin-left: 25px;
-}
-.advantages-img4 {
-  width: 100px;
-  height: 100px;
-  margin-left: 25px;
+.advantages-container:last-child {
+  margin-right: 0;
 }
 
-.advantages-text1 {
+.advantages-img {
+  height: 100%;
+}
+
+.advantages-text {
   font-size: 12px;
   font-family: "Lora", serif;
   font-weight: 600;
   border: 1px solid black;
   border-radius: 10px;
-  padding: 7px;
-  box-shadow: 5px 5px 0 1px #dbc0d1;
-  text-align: center;
-  width: 120px;
-  margin-right: 25px;
-}
-
-.advantages-text2 {
-  font-size: 12px;
-  font-family: "Lora", serif;
-  font-weight: 600;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 7px;
+  background-color: #e0e0e0;
+  padding: 10px;
   box-shadow: 5px 5px 0 1px #dbc0d1;
   text-align: center;
   width: 150px;
-  margin-right: 25px;
 }
 
-.advantages-text3 {
-  font-size: 12px;
-  font-family: "Lora", serif;
-  font-weight: 600;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 7px;
-  box-shadow: 5px 5px 0 1px #dbc0d1;
-  text-align: center;
-  width: 150px;
-  margin-right: 25px;
+.advantage-item__container {
+  display: flex;
+  justify-content: center;
+  height: 100px;
 }
 
-.advantages-text4 {
-  font-size: 12px;
-  font-family: "Lora", serif;
-  font-weight: 600;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 7px;
-  box-shadow: 5px 5px 0 1px #dbc0d1;
-  text-align: center;
-  width: 150px;
-  margin-right: 25px;
+.advantage-item__wrapper {
+  margin-right: 20px;
 }

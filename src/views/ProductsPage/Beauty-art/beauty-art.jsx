@@ -3,7 +3,7 @@ import { Box } from "@mui/system";
 import { useState } from "react";
 import BeforeAfterImage from "../../../components/BeforeAfterImage";
 import "./beauty-art.css";
-import ImageBeauty from "./Image-beauty";
+import ImageGallery from "./Image-beauty";
 
 const BeautyArt = () => {
   const [openImageDialog, setOpenImageDialog] = useState(false);
@@ -37,7 +37,7 @@ const BeautyArt = () => {
             </div>
           </div>
         </div>
-        <ImageBeauty setOpenImageDialog={setOpenImageDialog} />
+        <ImageGallery setOpenImageDialog={setOpenImageDialog} />
 
         <Dialog
           open={openImageDialog}

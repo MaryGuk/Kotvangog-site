@@ -1,34 +1,38 @@
 import "./advantages-page.css";
+import AdvantageItem from "./AdvantageItem.jsx";
+import AdvantagesTitle from "./AdvantagesTitle";
 
 const AdvantagesPage = () => {
   return (
     <div className="advantages-page">
-      <div className="advantages-page__title">
-        Создаём портреты высочайшего качества
-      </div>
-      <div className="advantages-container">
-        <div>
-          <img className="advantages-img1" src="/images/brain.png" alt="" />
-          <h2 className="advantages-text1">Реализуем заказы любой сложности</h2>
-        </div>
+      <div className="advantages-page__general">
+        <AdvantagesTitle />
 
-        <div>
-          <img className="advantages-img2" src="/images/image.png" alt="" />
-          <h2 className="advantages-text2">
-            Плохое качество фото для нас не проблема
-          </h2>
-        </div>
-
-        <div>
-          <img className="advantages-img3" src="/images/phone.png" alt="" />
-          <h2 className="advantages-text3">Не используем шаблоны и фильтры</h2>
-        </div>
-
-        <div>
-          <img className="advantages-img4" src="/images/chat.png" alt="" />
-          <h2 className="advantages-text4">
-            Согласовываем до полного утверждения
-          </h2>
+        <div className="advantages-container">
+          {[
+            {
+              imageSrc: "/images/brain.png",
+              description: "Реализуем заказы любой сложности",
+            },
+            {
+              imageSrc: "/images/image.png",
+              description: "Плохое качество фото для нас не проблема",
+            },
+            {
+              imageSrc: "/images/phone.png",
+              description: "Не используем шаблоны и фильтры",
+            },
+            {
+              imageSrc: "/images/chat.png",
+              description: "Согласовываем до полного утверждения",
+            },
+          ].map(({ imageSrc, description }, idx) => (
+            <AdvantageItem
+              key={idx}
+              imageSrc={imageSrc}
+              description={description}
+            />
+          ))}
         </div>
       </div>
     </div>
