@@ -7,6 +7,8 @@ const BeautyArtGalleryWrapper = styled(Box)((props) => ({
   display: "grid",
   gridTemplateColumns: "repeat(5, 1fr)",
   gridColumnGap: "5px",
+  gridAutoFlow: "dense",
+  direction: props.reverse ? "rtl" : "ltl",
 }));
 
 const getPortionsBy = (arr, count) => {

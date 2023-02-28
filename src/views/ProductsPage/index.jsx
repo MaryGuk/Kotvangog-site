@@ -70,115 +70,23 @@ const ProductsPage = () => {
               восторгов и обескураживающих эмоций. Мы гарантируем, что результат
               будет ослепительным.`,
           srcAfter: "/images/styles/Диджитал/диджитал.jpg",
-          srcBefore: "/images/styles/Диджитал/диджитал.jpg",
+          srcBefore: "/images/styles/Диджитал/до диджитал.jpg",
           galleryImages: [
             {
               previewSrc: "/images/styles/Диджитал/1d.jpg",
               fullSrc: "/images/styles/Диджитал/1d.jpg",
             },
             {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
+              previewSrc: "/images/styles/Диджитал/2d.jpg",
+              fullSrc: "/images/styles/Диджитал/2d.jpg",
             },
             {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
+              previewSrc: "/images/styles/Диджитал/3d.jpg",
+              fullSrc: "/images/styles/Диджитал/3d.jpg",
             },
             {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
-            },
-            {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
-            },
-            {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
-            },
-            {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
-            },
-            {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
-            },
-            {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
-            },
-            {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
-            },
-            {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
-            },
-            {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
-            },
-            {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
-            },
-            {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
-            },
-            {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
-            },
-            {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
-            },
-            {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
-            },
-            {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
-            },
-            {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
-            },
-            {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
-            },
-            {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
-            },
-            {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
-            },
-            {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
-            },
-            {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
-            },
-            {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
-            },
-            {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
-            },
-            {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
+              previewSrc: "/images/styles/Диджитал/4d.jpg",
+              fullSrc: "/images/styles/Диджитал/4d.jpg",
             },
           ],
           reverse: true,

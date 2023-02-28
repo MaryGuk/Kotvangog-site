@@ -1,18 +1,19 @@
 import "./portrait-page-item.css";
+import { ProductPageItemInfoBlock } from "./styled";
 
 const PortraitPageItem = ({
   portraitTitle,
   portraitPrice,
   portraitDescription,
+  reverse,
 }) => {
   return (
-    <div className="beauty-art__information">
+    <ProductPageItemInfoBlock reverse={reverse}>
       <div className="beauty-art__information">
         <div className="beauty-art__title">{portraitTitle}</div>
         <div className="beauty-art__price">{`От ${portraitPrice} руб.`}</div>
         <div className="beauty-art__description">{portraitDescription}</div>
       </div>
-
       <div>
         <a href="#">
           <button className="beauty-art__button" type="submit">
@@ -20,7 +21,7 @@ const PortraitPageItem = ({
           </button>
         </a>
       </div>
-    </div>
+    </ProductPageItemInfoBlock>
   );
 };
 

@@ -6,7 +6,6 @@
 
 .beauty-art__general {
   max-width: 1000px;
-  /* margin: 0 auto; */
 }
 
 .beauty-art__container {
@@ -26,7 +25,6 @@
   font-weight: 400;
   letter-spacing: 0px;
   color: #252930;
-  padding-left: 75px;
 }
 
 .beauty-art__title::after {
@@ -39,7 +37,6 @@
 }
 
 .beauty-art__price {
-  padding-left: 75px;
   color: #020202;
   font-family: "Prata", Sans-serif;
   font-size: 28px;
@@ -49,7 +46,6 @@
 }
 
 .beauty-art__description {
-  padding: 15px 0 25px 75px;
   max-width: 350px;
   color: #6c6c6c;
   font-family: "Nunito", sans-serif;

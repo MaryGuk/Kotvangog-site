@@ -4,7 +4,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 88% 85%;
-  height: 1020px;
+  display: flex;
+  flex-direction: column;
 }
 
 .working-page__title {
@@ -21,12 +22,12 @@
 .working-page__container {
   display: flex;
   justify-content: center;
+  max-width: 1200px;
 }
 
 .working-image {
   width: 320px;
   height: 200px;
-  padding: 40px 45px 0 45px;
 }
 
 .working-text1 {

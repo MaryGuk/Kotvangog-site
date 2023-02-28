@@ -7,3 +7,7 @@ export const ProductPageItemMainInfoWrapper = styled(Box)((props) => ({
   paddingTop: "70px",
   marginBottom: "10px",
 }));
+
+export const ProductPageItemInfoBlock = styled(Box)((props) => ({
+  margin: props.reverse ? "0 75px 0 0" : "0 0 0 0",
+}));

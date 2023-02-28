@@ -30,6 +30,7 @@ const ProductPageItem = ({
             portraitTitle={portraitTitle}
             portraitPrice={portraitPrice}
             portraitDescription={portraitDescription}
+            reverse={reverse}
           />
         </ProductPageItemMainInfoWrapper>
         <ImageGallery
