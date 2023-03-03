@@ -1,10 +1,9 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
-
+import Navbar from "./components/Pages/FrontPage1/Navbar/navbar.jsx";
 import MainPage from "./views/MainPage";
 import ReviewsPage from "./views/ReviewsPage";
 import ProductsPage from "./views/ProductsPage";
-import Navbar from "./components/Pages/FrontPage/Navbar/navbar";
 
 const App = () => {
   return (

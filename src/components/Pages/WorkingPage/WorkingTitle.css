@@ -1,0 +1,17 @@
+.working-page__title-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.working-page__title-background {
+  position: relative;
+  bottom: 30px;
+  justify-content: center;
+  display: flex;
+}
+
+.working-page__title-background-image {
+  width: 350px;
+  height: 40px;
+}

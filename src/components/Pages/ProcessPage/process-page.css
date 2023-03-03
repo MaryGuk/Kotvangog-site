@@ -1,0 +1,25 @@
+.process-page {
+  background-color: #e0e0e0;
+}
+
+.process-page__general {
+}
+
+.process-page__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.process-img {
+  width: 320px;
+  height: 200px;
+}
+
+.process-text {
+  max-width: 310px;
+  display: block;
+  font-size: 15px;
+  font-family: "Lora", serif;
+  font-weight: 600;
+}

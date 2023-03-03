@@ -24,11 +24,13 @@
   background-size: auto 100%;
   display: flex;
   justify-content: center;
+  /* min-width: 1000px; */
   height: auto;
 }
 
 .front-page1__general {
   display: flex;
+  justify-content: center;
   flex-direction: row;
 }
 .front-page1__information {

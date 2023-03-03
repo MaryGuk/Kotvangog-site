@@ -1,29 +1,35 @@
 .styles-page {
-  background-image: url("/public/images/background/Слой3.png");
+  display: flex;
+  justify-content: center;
+  /* min-width: 1000px; */
+}
+
+.styles-page__general {
+  /* background-image: url("/public/images/background/Слой3.png"); */
+  background-image: url("/public/images/background/Слой22 -фон.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto 98%;
+  background-size: 55% 88%;
 }
 
 .styles-page__title {
   font-size: 24px;
   font-family: "Palatino Linotype";
   font-weight: 500;
-  /* letter-spacing: 1px; */
+  white-space: nowrap;
+
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  margin-left: 40px;
+  margin-top: 7px;
+  position: absolute;
 }
 
 .styles-art {
-  /* display: grid;
-  grid-template: repeat(3, 1fr) / repeat(3, 2fr);
-  gap: 10px; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   max-width: 880px;
-  margin-left: 340px;
+  margin-top: 30px;
 }
 
 .styles__item {
