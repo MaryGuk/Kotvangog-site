@@ -2,9 +2,6 @@
   background-color: #e0e0e0;
 }
 
-.process-page__general {
-}
-
 .process-page__container {
   display: flex;
   flex-wrap: wrap;
@@ -17,9 +14,89 @@
 }
 
 .process-text {
-  max-width: 310px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 280px;
   display: block;
   font-size: 15px;
   font-family: "Lora", serif;
   font-weight: 600;
+}
+
+.process-page__information {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.process-text__container {
+  display: flex;
+  justify-content: center;
+}
+
+.process-inf__text {
+  font-family: "Trebuchetms";
+  font-size: 20px;
+  font-weight: 500;
+}
+.process-inf__text2 {
+  font-family: "Trebuchetms";
+  color: rgb(32, 32, 32);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.process-inf__text3 {
+  font-family: "Trebuchetms";
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  max-width: 150px;
+  margin-top: 2px;
+}
+
+.process_text__general {
+  display: flex;
+  flex-direction: row;
+}
+
+.process-arrow__container {
+  position: relative;
+  margin-left: 250px;
+  margin-top: -60px;
+}
+
+.process-arrow {
+  height: 60px;
+}
+
+.process-ava {
+  height: 100%;
+  width: 300px;
+  display: block;
+}
+
+.process-video {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -50px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+.process-author {
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
+  padding-bottom: 20px;
+}
+
+.process-author__name {
+  width: 210px;
+  height: 60px;
 }

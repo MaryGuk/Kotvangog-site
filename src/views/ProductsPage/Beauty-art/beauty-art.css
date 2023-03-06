@@ -83,7 +83,6 @@
 }
 
 .beauty-art__image {
-  overflow: hidden;
-  width: 150px;
-  height: 185px;
+  width: auto;
+  height: 200px;
 }

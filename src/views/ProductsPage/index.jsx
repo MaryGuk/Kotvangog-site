@@ -63,12 +63,7 @@ const ProductsPage = () => {
         {
           portraitTitle: "Диджитал-портрет",
           portraitPrice: 2800,
-          portraitDescription: `Яркий и беспрецедентный — именно такой портрет в стиле «Диджитал».
-              Если Вы искали особенный, ни на что не похожий стиль, то он перед
-              Вами. В этом стиле художник проявляет себя, не ограничивая
-              привычными рамками. Стиль «Диджитал» — это концентрация громких
-              восторгов и обескураживающих эмоций. Мы гарантируем, что результат
-              будет ослепительным.`,
+          portraitDescription: `Яркий и беспрецедентный — именно такой портрет в стиле «Диджитал».Если Вы искали особенный, ни на что не похожий стиль, то он перед Вами. В этом стиле художник проявляет себя, не ограничивая привычными рамками. Стиль «Диджитал» — это концентрация громких восторгов и обескураживающих эмоций. Мы гарантируем, что результат будет ослепительным.`,
           srcAfter: "/images/styles/Диджитал/диджитал.jpg",
           srcBefore: "/images/styles/Диджитал/до диджитал.jpg",
           galleryImages: [
@@ -91,6 +86,108 @@ const ProductsPage = () => {
           ],
           reverse: true,
           imageId: "digital",
+        },
+        {
+          portraitTitle: "Имитация масла",
+          portraitPrice: 950,
+          portraitDescription: `Данный вариант - прекрасная альтернатива классике. Дизайнер повторяет мазки, как в традиционной живописи, что создает впечатление картины, написанной маслом. Особенно хорошо подойдет «арт гель», который предаст мазкам выраженный текстурный объём поверх печати.`,
+          srcAfter: "/images/styles/Имитация масла/первое фото.jpg",
+          srcBefore: "/images/styles/Имитация масла/первое фото.jpg",
+          galleryImages: [
+            {
+              previewSrc: "/images/styles/Имитация масла/1im.jpg",
+              fullSrc: "/images/styles/Диджитал/1d.jpg",
+            },
+            {
+              previewSrc: "/images/styles/Имитация масла/2im.jpg",
+              fullSrc: "/images/styles/Диджитал/2d.jpg",
+            },
+            {
+              previewSrc: "/images/styles/Имитация масла/3im.jpg",
+              fullSrc: "/images/styles/Диджитал/3d.jpg",
+            },
+            {
+              previewSrc: "/images/styles/Имитация масла/4im.jpg",
+              fullSrc: "/images/styles/Диджитал/4d.jpg",
+            },
+            {
+              previewSrc: "/images/styles/Имитация масла/14im.jpg",
+              fullSrc: "/images/styles/Диджитал/4d.jpg",
+            },
+            {
+              previewSrc: "/images/styles/Имитация масла/6im.jpg",
+              fullSrc: "/images/styles/Диджитал/4d.jpg",
+            },
+            {
+              previewSrc: "/images/styles/Имитация масла/7im.jpg",
+              fullSrc: "/images/styles/Диджитал/4d.jpg",
+            },
+            {
+              previewSrc: "/images/styles/Имитация масла/8im.jpg",
+              fullSrc: "/images/styles/Диджитал/4d.jpg",
+            },
+            {
+              previewSrc: "/images/styles/Имитация масла/9im.jpg",
+              fullSrc: "/images/styles/Диджитал/4d.jpg",
+            },
+            {
+              previewSrc: "/images/styles/Имитация масла/10im.jpg",
+              fullSrc: "/images/styles/Диджитал/4d.jpg",
+            },
+            {
+              previewSrc: "/images/styles/Имитация масла/11im.jpg",
+              fullSrc: "/images/styles/Диджитал/4d.jpg",
+            },
+            {
+              previewSrc: "/images/styles/Имитация масла/12im.jpg",
+              fullSrc: "/images/styles/Диджитал/4d.jpg",
+            },
+            {
+              previewSrc: "/images/styles/Имитация масла/13im.jpg",
+              fullSrc: "/images/styles/Диджитал/4d.jpg",
+            },
+            {
+              previewSrc: "/images/styles/Имитация масла/5im.jpg",
+              fullSrc: "/images/styles/Диджитал/4d.jpg",
+            },
+          ],
+
+          imageId: "oli-art",
+        },
+        {
+          portraitTitle: "Портрет в образе",
+          portraitPrice: 1090,
+          portraitDescription: `Портрет в образе - самое необычное перевоплощение! Лучший способ удивить и подарить не только портрет на долгую память, но и море улыбок. Если вам хочется большего, нежели перенос фото на холст — обратите внимание на эти работы. Яркий и беспрецедентный — именно такой портрет в стиле «Диджитал». Если Вы искали особенный, ни на что не похожий стиль, то он перед Вами. В этом стиле художник проявляет себя, не ограничивая привычными рамками. Стиль «Диджитал» — это концентрация громких восторгов и обескураживающих эмоций. Мы гарантируем, что результат будет ослепительным.`,
+          srcAfter: "/images/styles/Портрет в образе/11o.jpg",
+          srcBefore: "/images/styles/Портрет в образе/11o.jpg",
+          galleryImages: [
+            {
+              previewSrc: "/images/styles/Портрет в образе/1o.jpg",
+              fullSrc: "/images/styles/Диджитал/1d.jpg",
+            },
+            {
+              previewSrc: "/images/styles/Портрет в образе/2o.jpg",
+              fullSrc: "/images/styles/Диджитал/2d.jpg",
+            },
+            {
+              previewSrc: "/images/styles/Портрет в образе/3o.jpg",
+              fullSrc: "/images/styles/Портрет в образе/4o.jpg",
+            },
+            {
+              previewSrc: "/images/styles/Портрет в образе/4o.jpg",
+              fullSrc: "/images/styles/Портрет в образе/4o.jpg",
+            },
+            {
+              previewSrc: "/images/styles/Портрет в образе/6o.jpg",
+              fullSrc: "/images/styles/Диджитал/4d.jpg",
+            },
+            {
+              previewSrc: "/images/styles/Портрет в образе/5o.jpg",
+              fullSrc: "/images/styles/Диджитал/4d.jpg",
+            },
+          ],
+          reverse: true,
+          imageId: "likeness-art",
         },
       ].map((props, idx) => (
         <ProductPageItem {...props} setFullImage={setFullImageSrc} key={idx} />

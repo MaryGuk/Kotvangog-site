@@ -21,7 +21,7 @@ const ProcessPage = () => {
             },
             {
               imageSrc: "/images/3.png",
-              description: `По окончанию высылает готовый портрет.Вы можете внести любое количество правок`,
+              description: `По окончанию высылает готовый портрет`,
             },
           ].map(({ imageSrc, description }, idx) => (
             <ProcessItem
@@ -30,6 +30,47 @@ const ProcessPage = () => {
               description={description}
             />
           ))}
+        </div>
+
+        <div className="process-page__information">
+          <div>
+            <img
+              className="process-ava"
+              src="/images/Люба ph.png"
+              alt="Любовь Ненадовец"
+            />
+          </div>
+
+          <div process-text__container>
+            <div className="process-inf__text">Посмотрите 60-секундное</div>
+
+            <div className="process_text__general">
+              <div className="process-inf__text2">видео и узнайте,</div>
+              <div className="process-inf__text3">
+                как художник нарисует вашу картину
+              </div>
+            </div>
+
+            <div className="process-arrow__container">
+              <img className="process-arrow" src="/images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div className="process-video">
+            <video
+              className="work-video"
+              src="/images/video/FLEXBOX. Учимся верстать на флексах. Флексбокс уроки. Часть вторая - свойства flex-элементов.mp4"
+              controls="controls"
+            ></video>
+          </div>
+        </div>
+
+        <div className="process-author">
+          <img
+            className="process-author__name"
+            src="/images/Художник мастерской KOTVANGOG.png"
+            alt=""
+          />
         </div>
       </div>
     </div>

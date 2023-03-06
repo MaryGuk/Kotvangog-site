@@ -15,7 +15,7 @@ const MainPage = () => {
       <AdvantagesPage />
       <StylesPage />
       <ProcessPage />
-      <WorkingPage />
+      {/* <WorkingPage /> */}
       <Footer />
     </Box>
   );

@@ -1,8 +1,8 @@
 import ProductPageItemInfo from "./portrait-page-item";
 import "./portrait-page.css";
 import BeforeAfterImage from "../../../components/BeforeAfterImage";
-import ImageGallery from "../Beauty-art/Image-beauty.jsx";
 import { ProductPageItemMainInfoWrapper } from "./styled";
+import ImageCorousel from "../../../components/ImageCarousel";
 
 const ProductPageItem = ({
   portraitTitle,
@@ -33,7 +33,7 @@ const ProductPageItem = ({
             reverse={reverse}
           />
         </ProductPageItemMainInfoWrapper>
-        <ImageGallery
+        <ImageCorousel
           setFullImage={setFullImage}
           galleryImages={galleryImages}
           reverse={reverse}
