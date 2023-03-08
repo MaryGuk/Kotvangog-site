@@ -7,17 +7,18 @@ import Footer from "../../components/Pages/Footer/footer";
 
 import FrontPage1 from "../../components/Pages/FrontPage1/front-page1";
 import ProcessPage from "../../components/Pages/ProcessPage/process-page";
+import {MainPageWrapper} from "./styled";
 
 const MainPage = () => {
   return (
-    <Box>
+    <MainPageWrapper>
       <FrontPage1 />
-      <AdvantagesPage />
-      <StylesPage />
-      <ProcessPage />
+      {/*<AdvantagesPage />*/}
+      {/*<StylesPage />*/}
+      {/*<ProcessPage />*/}
       {/* <WorkingPage /> */}
-      <Footer />
-    </Box>
+      {/*<Footer />*/}
+    </MainPageWrapper>
   );
 };
 

@@ -29,10 +29,21 @@
 }
 
 .front-page1__general {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: row;
 }
+
+@media(max-width: 650px) {
+  .front-page1__general {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: end;
+  }
+}
+
 .front-page1__information {
   display: flex;
   flex-direction: column;

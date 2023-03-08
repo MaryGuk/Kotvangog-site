@@ -1,6 +1,7 @@
 import "./front-page1.css";
 import { experimentalStyled as styled } from "@mui/material";
 import { Box } from "@mui/system";
+import {FrontPage1ImageWrapper, FrontPage1InfoWrapper} from "../../../views/MainPage/styled";
 
 const TitleWrapper = styled(Box)`
   background-repeat: no-repeat;
@@ -27,7 +28,7 @@ const FrontPage1 = () => {
   return (
     <div className="front-page1">
       <div className="front-page1__general">
-        <div className="front-page1__information">
+        <FrontPage1InfoWrapper className="front-page1__information">
           <div>
             <TitleWrapper>
               <div className="front-page1__title-part">
@@ -65,17 +66,15 @@ const FrontPage1 = () => {
               </button>
             </a>
           </div>
-        </div>
+        </FrontPage1InfoWrapper>
 
-        <div>
-          <div className="front-page1__image">
-            <img
-              className="main-image1"
-              src="/images/Главное фото.jpg"
-              alt=""
-            />
-          </div>
-        </div>
+        <FrontPage1ImageWrapper>
+          <img
+            className="main-image1"
+            src="/images/Главное фото.jpg"
+            alt=""
+          />
+        </FrontPage1ImageWrapper>
       </div>
     </div>
   );
