@@ -1,11 +1,12 @@
 import { NavLink } from "react-router-dom";
 import "./navbar.css";
+import {NavbarWrapper} from "./styled";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo"> kotvangog</div>
-      <div className="navbar-container">
+      <NavbarWrapper>
         {[
           { path: "/home", title: "Главная" },
           { path: "/products", title: "Продукция" },
@@ -15,7 +16,7 @@ const Navbar = () => {
             <NavLink to={path}>{title}</NavLink>
           </div>
         ))}
-      </div>
+      </NavbarWrapper>
     </nav>
   );
 };
