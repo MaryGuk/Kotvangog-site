@@ -21,7 +21,6 @@
   margin: 0 auto;
   padding-top: 85px;
   padding-bottom: 40px;
-  width: 730px;
   text-align: center;
 }
 .working-page__container {
@@ -97,7 +96,7 @@
 }
 
 .work-video {
-  width: 450px;
+  max-width: 450px;
   height: 280px;
 }
 

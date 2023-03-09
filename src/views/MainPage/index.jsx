@@ -17,7 +17,7 @@ const MainPage = () => {
       <StylesPage />
       <ProcessPage />
       {/* <WorkingPage /> */}
-      {/*<Footer />*/}
+      <Footer />
     </MainPageWrapper>
   );
 };
