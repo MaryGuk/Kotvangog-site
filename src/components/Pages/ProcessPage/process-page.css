@@ -8,6 +8,12 @@
   justify-content: center;
 }
 
+.process-page__general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .process-img {
   width: 320px;
   height: 200px;
@@ -24,20 +30,59 @@
 }
 
 .process-page__information {
-  display: flex;
-  justify-content: center;
+  display: grid;
   margin-top: 60px;
+  max-width: 899px;
+  width: 100%;
+  grid-template-columns: 300px 450px;
+  grid-template-rows: 100px 330px;
+  grid-column-gap: calc(100% - 750px);
+}
+
+@media(max-width: 780px) {
+  .process-page__information {
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 430px 280px;
+  }
+}
+
+@media(max-width: 630px) {
+  .process-page__information {
+    display: grid;
+    margin-top: 60px;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 430px 100px 280px;
+    grid-column-gap: calc(100% - 750px);
+    justify-items: center;
+  }
 }
 
 .process-text__container {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  height: 100px;
+  grid-template-columns: 150px 100px 50px;
+  grid-template-rows: 25px 50px;
+}
+
+
+@media(max-width: 780px) {
+  .process-text__container {
+    align-self: end;
+  }
+}
+
+@media(max-width: 630px) {
+  .process-text__container {
+    grid-row: 2;
+  }
 }
 
 .process-inf__text {
   font-family: "Trebuchetms";
   font-size: 20px;
   font-weight: 500;
+  grid-column: 1/3;
 }
 .process-inf__text2 {
   font-family: "Trebuchetms";
@@ -45,6 +90,7 @@
   font-size: 17px;
   font-weight: 600;
   letter-spacing: 0.5px;
+  grid-column-start: 1;
 }
 
 .process-inf__text3 {
@@ -63,8 +109,7 @@
 
 .process-arrow__container {
   position: relative;
-  margin-left: 250px;
-  margin-top: -60px;
+  top: 20px;
 }
 
 .process-arrow {
@@ -80,8 +125,19 @@
 .process-video {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -50px;
+  width: 450px;
 }
+
+
+@media(max-width: 780px) {
+  .process-video {
+    grid-column: 1 / 3;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+  }
+}
+
 
 video {
   width: 100%;
@@ -94,6 +150,13 @@ video {
   justify-content: center;
   margin-top: -30px;
   padding-bottom: 20px;
+}
+
+
+@media(max-width: 780px) {
+  .process-author {
+    margin-top: 20px;
+  }
 }
 
 .process-author__name {

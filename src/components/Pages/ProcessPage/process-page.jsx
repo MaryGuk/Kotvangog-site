@@ -1,10 +1,13 @@
 import "./process-page.css";
 import ProcessItem from "./ProcessItem";
 import ProcessTitle from "./ProcessTitle";
+import {MainPageItemWrapper} from "../../../views/MainPage/styled";
+import {MasterInfoWrapper} from "./styled";
 
 const ProcessPage = () => {
   return (
     <div className="process-page">
+      <MainPageItemWrapper>
       <div className="process-page__general">
         <ProcessTitle />
 
@@ -33,22 +36,21 @@ const ProcessPage = () => {
         </div>
 
         <div className="process-page__information">
-          <div>
+          <MasterInfoWrapper>
             <img
               className="process-ava"
               src="/images/Люба ph.png"
               alt="Любовь Ненадовец"
             />
-          </div>
+          </MasterInfoWrapper>
 
-          <div process-text__container>
+          <div className="process-text__container">
             <div className="process-inf__text">Посмотрите 60-секундное</div>
 
-            <div className="process_text__general">
-              <div className="process-inf__text2">видео и узнайте,</div>
-              <div className="process-inf__text3">
-                как художник нарисует вашу картину
-              </div>
+            <div className="process-inf__text2">видео и узнайте,</div>
+
+            <div className="process-inf__text3">
+              как художник нарисует вашу картину
             </div>
 
             <div className="process-arrow__container">
@@ -73,6 +75,8 @@ const ProcessPage = () => {
           />
         </div>
       </div>
+
+        </MainPageItemWrapper>
     </div>
   );
 };

@@ -1,9 +1,11 @@
 import "./footer.css";
 import { NavLink } from "react-router-dom";
+import {MainPageItemWrapper} from "../../../views/MainPage/styled";
 
 const Footer = () => {
   return (
     <div className="footer-wrapper">
+      <MainPageItemWrapper>
       <div className="footer-container">
         <div className="footer-content">
           <h1 className="footer-logo"> kotvangog</h1>
@@ -81,6 +83,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
+        </MainPageItemWrapper>
     </div>
   );
 };
