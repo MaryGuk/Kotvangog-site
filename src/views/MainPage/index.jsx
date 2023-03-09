@@ -13,8 +13,8 @@ const MainPage = () => {
   return (
     <MainPageWrapper>
       <FrontPage1 />
-      {/*<AdvantagesPage />*/}
-      {/*<StylesPage />*/}
+      <AdvantagesPage />
+      <StylesPage />
       {/*<ProcessPage />*/}
       {/* <WorkingPage /> */}
       {/*<Footer />*/}

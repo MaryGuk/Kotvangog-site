@@ -1,7 +1,7 @@
 import "./front-page1.css";
 import { experimentalStyled as styled } from "@mui/material";
 import { Box } from "@mui/system";
-import {FrontPage1ImageWrapper, FrontPage1InfoWrapper} from "../../../views/MainPage/styled";
+import {FrontPage1ImageWrapper, FrontPage1InfoWrapper, MainPageItemWrapper} from "../../../views/MainPage/styled";
 
 const TitleWrapper = styled(Box)`
   background-repeat: no-repeat;
@@ -26,57 +26,59 @@ const TitleWrapper = styled(Box)`
 
 const FrontPage1 = () => {
   return (
-    <div className="front-page1">
-      <div className="front-page1__general">
-        <FrontPage1InfoWrapper className="front-page1__information">
-          <div>
-            <TitleWrapper>
-              <div className="front-page1__title-part">
-                Арт портрет с печатью
+    <MainPageItemWrapper>
+      <div className="front-page1">
+        <div className="front-page1__general">
+          <FrontPage1InfoWrapper className="front-page1__information">
+            <div>
+              <TitleWrapper>
+                <div className="front-page1__title-part">
+                  Арт портрет с печатью
+                </div>
+
+                <div className="front-page1__title-part">
+                  на холсте за три дня
+                </div>
+              </TitleWrapper>
+            </div>
+
+            <div className="main-subtitle">
+              <div className="front-page1__subtitle">
+                Вернем деньги, если не успеем в оговоренные сроки или не
+                понравится результат
               </div>
+            </div>
 
-              <div className="front-page1__title-part">
-                на холсте за три дня
+            <div className="main-text">
+              <div className="front-page1__text">
+                Получите консультацию профессионального художника прямо сейчас
               </div>
-            </TitleWrapper>
-          </div>
-
-          <div className="main-subtitle">
-            <div className="front-page1__subtitle">
-              Вернем деньги, если не успеем в оговоренные сроки или не
-              понравится результат
             </div>
-          </div>
 
-          <div className="main-text">
-            <div className="front-page1__text">
-              Получите консультацию профессионального художника прямо сейчас
+            <div className="main-message">
+              <div className="front-page1__message">
+                Нажмите кнопку! Свяжемся с Вами в течение 5 минут
+              </div>
             </div>
-          </div>
-
-          <div className="main-message">
-            <div className="front-page1__message">
-              Нажмите кнопку! Свяжемся с Вами в течение 5 минут
+            <div className="main-button">
+              <a href="#">
+                <button className="front-page1__button" type="submit">
+                  Получить консультацию
+                </button>
+              </a>
             </div>
-          </div>
-          <div className="main-button">
-            <a href="#">
-              <button className="front-page1__button" type="submit">
-                Получить консультацию
-              </button>
-            </a>
-          </div>
-        </FrontPage1InfoWrapper>
+          </FrontPage1InfoWrapper>
 
-        <FrontPage1ImageWrapper>
-          <img
-            className="main-image1"
-            src="/images/Главное фото.jpg"
-            alt=""
-          />
-        </FrontPage1ImageWrapper>
+          <FrontPage1ImageWrapper>
+            <img
+              className="main-image1"
+              src="/images/Главное фото.jpg"
+              alt=""
+            />
+          </FrontPage1ImageWrapper>
+        </div>
       </div>
-    </div>
+    </MainPageItemWrapper>
   );
 };
 
