@@ -4,6 +4,7 @@ export const ImageCarouselWrapper = styled(Box)`
   position: relative;
   align-items: center;
   display: flex;
+  margin-bottom: 40px;
 
   :hover {
     & > div {
@@ -25,7 +26,7 @@ export const ImageGalleryWrapper = styled(Box)`
   overflow-x: scroll;
   scroll-behavior: smooth;
   overflow-y: hidden;
-
+  justify-content: ${({ reverse }) => (reverse ? "flex-end" : "flex-start")};
   opacity: 1;
 
   & > div {
@@ -36,6 +37,25 @@ export const ImageGalleryWrapper = styled(Box)`
     margin-right: 0;
   }
 `;
+
+// export const ImageGalleryWrapper = styled(Box)(() => ({
+//   display: "flex",
+//   alignItems: "center",
+//   width: "100%",
+//   overflowX: "scroll",
+//   scrollBehavior: "smooth",
+//   overflowY: "hidden",
+//   opacity: 1,
+//   justifyContent: ({ reverse }) => (reverse ? "flex-end" : "flex-start"),
+
+//   "& > div": {
+//     marginRight: "5px",
+//   },
+
+//   "&:last-child": {
+//     marginRight: 0,
+//   },
+// }));
 
 export const ArrowIconWrapper = styled(Box)`
   position: absolute;
@@ -57,6 +77,7 @@ export const ImageItemWrapper = styled(Box)`
     margin-top: 0;
     margin-bottom: 0;
     height: 195px;
-    transition: 0.7s;
+    transition: 1s;
+    /* transform: scale(1.2); */
   }
 `;

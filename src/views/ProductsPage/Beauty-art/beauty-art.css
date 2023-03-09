@@ -79,7 +79,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   padding-top: 10px;
-  padding-bottom: 120px;
+  margin-bottom: 40px;
 }
 
 .beauty-art__image {
