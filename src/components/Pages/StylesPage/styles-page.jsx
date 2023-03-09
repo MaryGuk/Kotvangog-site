@@ -1,10 +1,12 @@
 import "./styles-page.css";
 import { HashLink as Link } from "react-router-hash-link";
 import StylesTitle from "./StylesTitle";
+import {MainPageItemWrapper} from "../../../views/MainPage/styled";
 
 const StylesPage = () => {
   return (
     <div className="styles-page">
+      <MainPageItemWrapper>
       <div className="advantages-page__general">
         <StylesTitle />
 
@@ -123,6 +125,7 @@ const StylesPage = () => {
           </div>
         </div>
       </div>
+        </MainPageItemWrapper>
     </div>
   );
 };

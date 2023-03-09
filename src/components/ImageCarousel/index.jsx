@@ -8,7 +8,7 @@ import {
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 
-import { Box, IconButton } from "@mui/material";
+import { IconButton } from "@mui/material";
 import { useRef } from "react";
 
 const ImageCorousel = ({ galleryImages, setFullImage, reverse }) => {
