@@ -1,7 +1,11 @@
 import "./front-page1.css";
 import { experimentalStyled as styled } from "@mui/material";
 import { Box } from "@mui/system";
-import {FrontPage1ImageWrapper, FrontPage1InfoWrapper, MainPageItemWrapper} from "../../../views/MainPage/styled";
+import {
+  FrontPage1ImageWrapper,
+  FrontPage1InfoWrapper,
+  MainPageItemWrapper,
+} from "../../../views/MainPage/styled";
 
 const TitleWrapper = styled(Box)`
   background-repeat: no-repeat;

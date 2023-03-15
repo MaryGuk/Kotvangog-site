@@ -72,7 +72,6 @@
 
 .beauty-art__gallery {
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-start;
   padding-top: 10px;
   margin-bottom: 40px;

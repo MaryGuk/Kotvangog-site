@@ -5,7 +5,7 @@ const ProcessTitle = () => {
     <div className="process-page__title-wrapper">
       <div className="process-page__title-first">
         <div className="process-page__title">
-          Дизайнер вручную отрисовывает вашу фотографию в течение 4-8 часов
+          Дизайнер вручную отрисовывает вашу фотографию
         </div>
         <div className="process-page__title-background">
           <img
@@ -14,6 +14,7 @@ const ProcessTitle = () => {
           />
         </div>
       </div>
+      <div className="process-page__title">в течение 4-8 часов</div>
     </div>
   );
 };

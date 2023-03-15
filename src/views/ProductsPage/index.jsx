@@ -2,15 +2,9 @@ import React from "react";
 import { Dialog } from "@mui/material";
 import { Box } from "@mui/system";
 import { useState } from "react";
-import AnimalArt from "./Animal-art/animal-art";
+
 import BeautyArt from "./Beauty-art/beauty-art";
-import DigitalPortrait from "./Digital-portrait/digital-portrait";
-import FusionArt from "./Fusion-art/fusion-art";
-import InfinitiArt from "./Infiniti-art/infiniti-art";
-import LikenessArt from "./Likeness-art/likeness-art";
-import MastihinArt from "./Mastihin-art/mastihin-art";
-import OliArt from "./Oil-art/oil-art";
-import PencilArt from "./Pencil-art/pencil-art";
+
 import ProductPageItem from "./PortraitPage/portrait-page";
 import Footer from "../../components/Pages/Footer/footer";
 
@@ -359,14 +353,7 @@ const ProductsPage = () => {
         <ProductPageItem {...props} setFullImage={setFullImageSrc} key={idx} />
       ))}
       {/* <BeautyArt /> */}
-      {/* <DigitalPortrait /> */}
-      {/* <OliArt />
-      <LikenessArt />
-      <FusionArt />
-      <PencilArt />
-      <InfinitiArt />
-      <MastihinArt />
-      <AnimalArt /> */}
+
       <Footer />
       <Dialog open={!!fullImageSrc} onClose={() => setFullImageSrc(null)}>
         <Box height="500px" overflow="hidden">

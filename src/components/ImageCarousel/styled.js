@@ -76,8 +76,8 @@ export const ImageItemWrapper = styled(Box)`
   :hover {
     margin-top: 0;
     margin-bottom: 0;
-    height: 195px;
-    transition: 1s;
+    height: 185px;
+    /* transition: 1s; */
     /* transform: scale(1.2); */
   }
 `;

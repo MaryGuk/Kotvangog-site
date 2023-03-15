@@ -4,25 +4,35 @@
   justify-content: center;
 }
 
+@media (max-width: 450px) {
+  .process-page__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+
 .process-page__title-background {
   position: relative;
-  bottom: 70px;
-  justify-content: center;
+  bottom: 37px;
+  right: 0;
+  justify-content: flex-end;
   display: flex;
 }
 
 .process-page__title {
-  text-align: center;
-  width: 730px;
   font-size: 30px;
   font-family: "Trebuchetms";
   font-weight: 500;
   letter-spacing: 1px;
-  margin-top: 20px;
+
+  background: none;
+  text-align: end;
 }
 
 .process-page__title-background-image {
-  width: 400px;
+  width: 590px;
   height: 40px;
 }
 
