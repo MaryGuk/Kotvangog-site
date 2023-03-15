@@ -1,7 +1,7 @@
-import {Box, styled} from "@mui/material";
+import { Box, styled } from "@mui/material";
 
 export const MainPageWrapper = styled(Box)`
-  padding: 0 0 30px;
+  padding: 0 0 0;
 `;
 
 export const FrontPage1ImageWrapper = styled(Box)`
@@ -10,7 +10,7 @@ export const FrontPage1ImageWrapper = styled(Box)`
 `;
 
 export const FrontPage1InfoWrapper = styled(Box)`
-  z-index: 2
+  z-index: 2;
 `;
 
 export const MainPageItemWrapper = styled(Box)`

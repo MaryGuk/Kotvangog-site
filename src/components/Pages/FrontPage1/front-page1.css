@@ -35,7 +35,7 @@
   flex-direction: row;
 }
 
-@media(max-width: 650px) {
+@media (max-width: 650px) {
   .front-page1__general {
     display: flex;
     justify-content: center;
@@ -140,4 +140,39 @@
 .main-image1 {
   overflow: hidden;
   height: 600px;
+}
+
+/* modal */
+
+.modal__title {
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.modal__messenger {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.modal-messenger__content {
+  margin-top: 10px;
+}
+
+.modal-icons {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  transition: 0.8s;
+}
+
+modal-icons:last-child {
+  content: "";
+  margin-right: 0;
+}
+
+.modal-icons:hover {
+  transform: scale(1.2);
 }

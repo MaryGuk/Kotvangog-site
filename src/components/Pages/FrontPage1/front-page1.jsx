@@ -6,6 +6,8 @@ import {
   FrontPage1InfoWrapper,
   MainPageItemWrapper,
 } from "../../../views/MainPage/styled";
+import Modal from "../../Modal/modal";
+import { useState } from "react";
 
 const TitleWrapper = styled(Box)`
   background-repeat: no-repeat;
@@ -29,6 +31,8 @@ const TitleWrapper = styled(Box)`
 `;
 
 const FrontPage1 = () => {
+  const [modalActive, setModalActive] = useState(false);
+
   return (
     <MainPageItemWrapper>
       <div className="front-page1">
@@ -65,12 +69,43 @@ const FrontPage1 = () => {
               </div>
             </div>
             <div className="main-button">
-              <a href="#">
-                <button className="front-page1__button" type="submit">
-                  Получить консультацию
-                </button>
-              </a>
+              <button
+                className="front-page1__button"
+                onClick={() => setModalActive(true)}
+              >
+                Получить консультацию
+              </button>
             </div>
+            <Modal active={modalActive} setActive={setModalActive}>
+              <div className="modal__title">
+                Выберите мессенджер, в котором вам будет удобно вести диалог
+              </div>
+              <div className="modal__messenger">
+                <div className="modal-messenger__content">
+                  <a
+                    href="https://api.whatsapp.com/send/?phone=79933600710&text&type=phone_number&app_absent=0"
+                    target="blank"
+                  >
+                    <img
+                      className="modal-icons"
+                      src="/images/modal-icons/whatsapp.svg"
+                    />
+                  </a>
+                  <a href="https://t.me/kot_vangog" target="blank">
+                    <img
+                      className="modal-icons"
+                      src="/images/modal-icons/telegram.svg"
+                    />
+                  </a>
+                  <a href="https://vk.com/lubov0011" target="blank">
+                    <img
+                      className="modal-icons"
+                      src="/images/modal-icons/vk.svg"
+                    />
+                  </a>
+                </div>
+              </div>
+            </Modal>
           </FrontPage1InfoWrapper>
 
           <FrontPage1ImageWrapper>

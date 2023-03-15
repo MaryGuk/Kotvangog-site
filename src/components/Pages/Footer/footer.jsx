@@ -50,13 +50,16 @@ const Footer = () => {
           <div className="footer-content">
             <span className="footer-messenger"> Мы в соц сетях </span>
             <div className="footer-icons">
-              <a href="#">
+              <a href="https://t.me/kot_vangog" target="_blank">
                 <img
                   className="icons-messenger"
                   src="/images/messenger/telegram.svg"
                 />
               </a>
-              <a href="#">
+              <a
+                href="https://api.whatsapp.com/send/?phone=79933600710&text&type=phone_number&app_absent=0"
+                target="_blank"
+              >
                 <img
                   className="icons-messenger"
                   src="/images/messenger/whatsapp.svg"
@@ -68,13 +71,7 @@ const Footer = () => {
                   src="/images/messenger/instagram.svg"
                 />
               </a>
-              <a href="#">
-                <img
-                  className="icons-messenger"
-                  src="/images/messenger/viber.png"
-                />
-              </a>
-              <a href="#">
+              <a href="#" target="_blank">
                 <img
                   className="icons-messenger"
                   src="/images/messenger/email.svg"
