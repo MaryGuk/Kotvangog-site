@@ -63,6 +63,7 @@ const ProcessPage = () => {
                 className="work-video"
                 src="/Портрет Энид Синклер с сериала _Уэнсдей_.mp4"
                 controls="controls"
+                poster="/images/wrapper-video.jpg"
               ></video>
             </div>
           </div>

@@ -69,6 +69,7 @@
 .front-page1__title-part {
   text-align: center;
   white-space: nowrap;
+  margin-right: 5px;
 }
 
 .main-subtitle {

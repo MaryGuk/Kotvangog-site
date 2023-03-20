@@ -71,7 +71,13 @@ const Footer = () => {
                   src="/images/messenger/instagram.svg"
                 />
               </a>
-              <a href="#" target="_blank">
+              <a href="https://vk.com/lubov0011" target="_blank">
+                <img
+                  className="icons-messenger"
+                  src="/images/messenger/vk.svg"
+                />
+              </a>
+              <a href="mailto:mail@kotvangog777com" target="_blank">
                 <img
                   className="icons-messenger"
                   src="/images/messenger/email.svg"

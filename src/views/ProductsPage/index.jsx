@@ -19,38 +19,46 @@ const ProductsPage = () => {
           portraitPrice: 1590,
           portraitDescription:
             "Гладкость и блеск — главный принцип стиля. Он представляет собой нежный, роскошный образ. Особенностью стиля является детальная прорисовка портрета. Самый популярный вид исполнения - печать на холсте, она хорошо сочетается с текстурным гелем.",
-          srcAfter: "/images/styles/Бьюти-арт/бьюти-арт.jpg",
-          srcBefore: "/images/styles/Бьюти-арт/до бьюти-арт.jpg",
+          srcAfter:
+            "https://www.dropbox.com/s/4t6rmbk8blkspky/%D0%B1%D1%8C%D1%8E%D1%82%D0%B8-%D0%B0%D1%80%D1%82.jpg?raw=1",
+          srcBefore:
+            "https://www.dropbox.com/s/ybhgnyumj6g27ps/%D0%B4%D0%BE%20%D0%B1%D1%8C%D1%8E%D1%82%D0%B8-%D0%B0%D1%80%D1%82.jpg?raw=1",
           galleryImages: [
             {
-              previewSrc: "/images/styles/Бьюти-арт/1 ba.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/5l3l65f6bh8dhm4/1%20ba.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/wa73gaqrxygfvky/1%20ba.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Бьюти-арт/2 ba.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/708513f1osehubz/2%20ba.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/sxquz0ubp9f15ge/2%20ba.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Бьюти-арт/3 ba.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/kiaitvn21b7o58p/3%20ba.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/eevclioq349ieu2/3%20ba.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Бьюти-арт/4 ba.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/xzr4iwjvsm95ax3/4%20ba.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/8ba6zihttcjogah/4%20ba.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Бьюти-арт/5 ba.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/62xn4zwci9f27bm/5%20ba.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/45s1o4yq23wlcwy/5%20ba.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Бьюти-арт/6 ba.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/ef2uv2xonifkmf1/6%20ba.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/twbrhy62bet5g84/6%20ba.jpg?raw=1",
             },
           ],
           imageId: "beauty-art",
@@ -59,24 +67,30 @@ const ProductsPage = () => {
           portraitTitle: "Диджитал-портрет",
           portraitPrice: 2800,
           portraitDescription: `Яркий и беспрецедентный — именно такой портрет в стиле «Диджитал».Если Вы искали особенный, ни на что не похожий стиль, то он перед Вами. В этом стиле художник проявляет себя, не ограничивая привычными рамками. Стиль «Диджитал» — это концентрация громких восторгов и обескураживающих эмоций. Мы гарантируем, что результат будет ослепительным.`,
-          srcAfter: "/images/styles/Диджитал/диджитал.jpg",
-          srcBefore: "/images/styles/Диджитал/до диджитал.jpg",
+          srcAfter:
+            "https://www.dropbox.com/s/ixvvr1vlzi2np23/%D0%B4%D0%B8%D0%B4%D0%B6%D0%B8%D1%82%D0%B0%D0%BB.jpg?raw=1",
+          srcBefore:
+            "https://www.dropbox.com/s/3lp9ou51hxfznad/%D0%B4%D0%BE%20%D0%B4%D0%B8%D0%B4%D0%B6%D0%B8%D1%82%D0%B0%D0%BB.jpg?raw=1",
           galleryImages: [
             {
-              previewSrc: "/images/styles/Диджитал/1d.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/4asi26pi2f9i75s/1d.jpg?raw=1",
+              fullSrc: "https://www.dropbox.com/s/autv48b21fuukli/1d.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Диджитал/2d.jpg",
-              fullSrc: "/images/styles/Диджитал/2d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/roxi4j721ocylg8/2d.jpg?raw=1",
+              fullSrc: "https://www.dropbox.com/s/46vyngjezvay4ke/2d.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Диджитал/3d.jpg",
-              fullSrc: "/images/styles/Диджитал/3d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/k3y3q98ku07q6uv/3d.jpg?raw=1",
+              fullSrc: "https://www.dropbox.com/s/xmu8t69415sgcse/3d.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Диджитал/4d.jpg",
-              fullSrc: "/images/styles/Диджитал/4d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/68314819vl5tnib/4d.jpg?raw=1",
+              fullSrc: "https://www.dropbox.com/s/fosuvhz9b8l3tk5/4d.jpg?raw=1",
             },
           ],
           reverse: true,
@@ -86,64 +100,94 @@ const ProductsPage = () => {
           portraitTitle: "Имитация масла",
           portraitPrice: 950,
           portraitDescription: `Данный вариант - прекрасная альтернатива классике. Дизайнер повторяет мазки, как в традиционной живописи, что создает впечатление картины, написанной маслом. Особенно хорошо подойдет «арт гель», который предаст мазкам выраженный текстурный объём поверх печати.`,
-          srcAfter: "/images/styles/Имитация масла/первое фото.jpg",
-          srcBefore: "/images/styles/Имитация масла/первое фото.jpg",
+          srcAfter:
+            "https://www.dropbox.com/s/jdcwizrzmf18k7t/%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B5%20%D1%84%D0%BE%D1%82%D0%BE.jpg?raw=1",
+          srcBefore:
+            "https://www.dropbox.com/s/a7yvf97q1vqk77r/%D0%B8%D0%BC%D0%B8%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BC%D0%B0%D1%81%D0%BB%D0%B0--%D0%B4%D0%BE.jpg?raw=1",
           galleryImages: [
             {
-              previewSrc: "/images/styles/Имитация масла/1im.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/ejmgomkgv0lu0ji/1im.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/e7egjk1z4oijv4j/1im.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Имитация масла/2im.jpg",
-              fullSrc: "/images/styles/Диджитал/2d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/j489qfy8c1b4nm2/2im.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/4brtfw26cg1s8jj/2im.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Имитация масла/3im.jpg",
-              fullSrc: "/images/styles/Диджитал/3d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/vq61c1i648pvp16/3im.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/3ygbzzxbbkg3uio/3im.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Имитация масла/4im.jpg",
-              fullSrc: "/images/styles/Диджитал/4d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/vzsah59dh2qpz5q/4im.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/azdomccdvb1zffg/4im.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Имитация масла/14im.jpg",
-              fullSrc: "/images/styles/Диджитал/4d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/if8uo9ugl91n6pr/14im.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/9ldb07rhlsn4pv7/14im.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Имитация масла/6im.jpg",
-              fullSrc: "/images/styles/Диджитал/4d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/df4366yqyaj6pbo/6im.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/nhvm5k84xl961ir/6im.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Имитация масла/7im.jpg",
-              fullSrc: "/images/styles/Диджитал/4d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/7bl4wr0hevxkojd/7im.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/uz3g2hlpoburd6a/7im.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Имитация масла/8im.jpg",
-              fullSrc: "/images/styles/Диджитал/4d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/rgudgnkxs6fnrxa/8im.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/px80jn98w498f96/8im.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Имитация масла/9im.jpg",
-              fullSrc: "/images/styles/Диджитал/4d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/93xwq66kv0t7bo5/9im.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/jevib06oe9ya8nb/9im.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Имитация масла/10im.jpg",
-              fullSrc: "/images/styles/Диджитал/4d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/pvvupc2v4v0gpye/10im.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/vj1mgyujf0volzs/10im.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Имитация масла/11im.jpg",
-              fullSrc: "/images/styles/Диджитал/4d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/a34bu1i9wtz8f9s/11im.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/zo1otl8djylojo4/11im.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Имитация масла/12im.jpg",
-              fullSrc: "/images/styles/Диджитал/4d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/j3xqfuchuawfhth/12im.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/byjhw0axjdq8xq9/12im.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Имитация масла/13im.jpg",
-              fullSrc: "/images/styles/Диджитал/4d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/skqr9t83jmwd919/13im.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/rhmd8vlgbegu2wb/13im.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Имитация масла/5im.jpg",
-              fullSrc: "/images/styles/Диджитал/4d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/l153rq3xliis69s/5im.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/xna5is0w6mducct/5im.jpg?raw=1",
             },
           ],
 
@@ -153,32 +197,46 @@ const ProductsPage = () => {
           portraitTitle: "Портрет в образе",
           portraitPrice: 1090,
           portraitDescription: `Портрет в образе - самое необычное перевоплощение! Лучший способ удивить и подарить не только портрет на долгую память, но и море улыбок. Если вам хочется большего, нежели перенос фото на холст — обратите внимание на эти работы. Яркий и беспрецедентный — именно такой портрет в стиле «Диджитал». Если Вы искали особенный, ни на что не похожий стиль, то он перед Вами. В этом стиле художник проявляет себя, не ограничивая привычными рамками. Стиль «Диджитал» — это концентрация громких восторгов и обескураживающих эмоций. Мы гарантируем, что результат будет ослепительным.`,
-          srcAfter: "/images/styles/Портрет в образе/11o.jpg",
-          srcBefore: "/images/styles/Портрет в образе/11o.jpg",
+          srcAfter:
+            "https://www.dropbox.com/s/b0y9xrrtunboanr/%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%20%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B5.jpg?raw=1",
+          srcBefore:
+            "https://www.dropbox.com/s/b0y9xrrtunboanr/%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%20%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B5.jpg?raw=1",
           galleryImages: [
             {
-              previewSrc: "/images/styles/Портрет в образе/1o.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/8f8qzs8314wx4v7/5o-2.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/myl01nhsamxqpac/5o-2.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Портрет в образе/2o.jpg",
-              fullSrc: "/images/styles/Диджитал/2d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/2pkd94fhc8gktgn/1o%20%28%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%BE%29.jpg?raw=1",
+              fullSrc: "https://www.dropbox.com/s/0t489rlmr93tzrt/1o.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Портрет в образе/3o.jpg",
-              fullSrc: "/images/styles/Портрет в образе/4o.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/1rjj624q41czarc/2o.jpg?raw=1",
+              fullSrc: "https://www.dropbox.com/s/vhvi4pe11jemgip/2o.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Портрет в образе/4o.jpg",
-              fullSrc: "/images/styles/Портрет в образе/4o.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/yjyvmraradu92wk/3o.jpg?raw=1",
+              fullSrc: "https://www.dropbox.com/s/16ojbl3v0igfpks/3o.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Портрет в образе/6o.jpg",
-              fullSrc: "/images/styles/Диджитал/4d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/w32jouv9sn7jp9t/4o.jpg?raw=1",
+              fullSrc: "https://www.dropbox.com/s/vps5nyb7ks8b2uv/4o.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Портрет в образе/5o-2.jpg",
-              fullSrc: "/images/styles/Диджитал/4d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/x2gezs01a081mfb/6o.jpg?raw=1",
+              fullSrc: "https://www.dropbox.com/s/wh1snofbv47mx2u/6o.jpg?raw=1",
+            },
+            {
+              previewSrc:
+                "https://www.dropbox.com/s/vesqss9tvrtins8/7o.jpg?raw=1",
+              fullSrc: "https://www.dropbox.com/s/9f2m60ffpho7yhs/7o.jpg?raw=1",
             },
           ],
           reverse: true,
@@ -188,38 +246,40 @@ const ProductsPage = () => {
           portraitTitle: "Фьюжн",
           portraitPrice: 1890,
           portraitDescription: `Стиль «Фьюжн» всё больше набирает популярность, и, наверное, уже стал классикой. Особенность этого стиля в смелых пастозных мазках. Фон предоставляем на Ваш выбор. Портрет отлично работает в тандеме с услугой «арт-гель», придающей объём картине. Печать на холсте или портрет маслом на холсте —«Фюжн» превосходен в любом виде…`,
-          srcAfter: "/images/styles/Фьюжн/фьюжн.jpg",
-          srcBefore: "/images/styles/Фьюжн/до-первое.jpg",
+          srcAfter:
+            "https://www.dropbox.com/s/s7bcmbbblwzigry/%D1%84%D1%8C%D1%8E%D0%B6%D0%BD.jpg?raw=1",
+          srcBefore:
+            "https://www.dropbox.com/s/k5f77tvxq2w47pw/%D0%B4%D0%BE-%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B5.jpg?raw=1",
           galleryImages: [
             {
-              previewSrc: "/images/styles/Фьюжн/f1.jpg",
-              fullSrc:
-                "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
+              previewSrc:
+                "https://www.dropbox.com/s/98iu35my4oydvmf/f1.jpg?raw=1",
+              fullSrc: "https://www.dropbox.com/s/rruecqdil0480wp/f1.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Фьюжн/f2.jpg",
-              fullSrc:
-                "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
+              previewSrc:
+                "https://www.dropbox.com/s/zm4i3ih3kpbi2dr/f2.jpg?raw=1",
+              fullSrc: "https://www.dropbox.com/s/xt1t90u0x9ozhhl/f2.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Фьюжн/f3.jpg",
-              fullSrc:
-                "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
+              previewSrc:
+                "https://www.dropbox.com/s/3icqbrxqun3enp4/f3.jpg?raw=1",
+              fullSrc: "https://www.dropbox.com/s/m79y4nmoyev5h1a/f3.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Фьюжн/f4.jpg",
-              fullSrc:
-                "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
+              previewSrc:
+                "https://www.dropbox.com/s/dnlcbwpj1z6e1bf/f4.jpg?raw=1",
+              fullSrc: "https://www.dropbox.com/s/3polsu9g4dio8sk/f4.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Фьюжн/f5.jpg",
-              fullSrc:
-                "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
+              previewSrc:
+                "https://www.dropbox.com/s/ib7ghk0omfdinl6/f5.jpg?raw=1",
+              fullSrc: "https://www.dropbox.com/s/yq16ugdt8xzdp32/f5.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Фьюжн/f6.jpg",
-              fullSrc:
-                "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
+              previewSrc:
+                "https://www.dropbox.com/s/rklp0yhgl04l7uc/f6.jpg?raw=1",
+              fullSrc: "https://www.dropbox.com/s/3uktao3peylqarg/f6.jpg?raw=1",
             },
           ],
           imageId: "fusion-art",
@@ -228,20 +288,28 @@ const ProductsPage = () => {
           portraitTitle: "Карандаш",
           portraitPrice: 1790,
           portraitDescription: `Портрет карандашом - любимый всеми классический портрет, который будет актуальным и стильным всегда. Художник-дизайнер на планшете с нуля рисует портрет на основе предоставленной фотографии. Далее макет можно перенести на холст любого размера.`,
-          srcAfter: "/images/styles/Карандаш/карандаш.jpg",
-          srcBefore: "/images/styles/Карандаш/до--карандаш.jpg",
+          srcAfter:
+            "https://www.dropbox.com/s/3kvp7r831dciy9z/%D0%BA%D0%B0%D1%80%D0%B0%D0%BD%D0%B4%D0%B0%D1%88.jpg?raw=1",
+          srcBefore:
+            "https://www.dropbox.com/s/i3d4c6cwxy1sq5k/%D0%B4%D0%BE--%D0%BA%D0%B0%D1%80%D0%B0%D0%BD%D0%B4%D0%B0%D1%88.jpg?raw=1",
           galleryImages: [
             {
-              previewSrc: "/images/styles/Карандаш/3 k.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/sg0d3zf76mjwxwi/3%20k.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/wk4oojqw27z5o1p/3%20k.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Карандаш/1 k.jpg",
-              fullSrc: "/images/styles/Диджитал/2d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/meaaxzfhpnfzx8l/1%20k.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/o0jjjvftp7xfrg7/1%20k.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Карандаш/2 k.jpg",
-              fullSrc: "/images/styles/Портрет в образе/4o.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/pcxustzd0pgg17f/2%20k.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/fikgfjl834rdcv9/2%20k.jpg?raw=1",
             },
           ],
           reverse: true,
@@ -251,33 +319,40 @@ const ProductsPage = () => {
           portraitTitle: "Инфинити",
           portraitPrice: 2900,
           portraitDescription: `На стиль «Инфинити» можно смотреть бесконечно. Он объединяет в себе два направления: черно-белый портрет и яркий граффити стиль. Вздорный фон и грамотные сочные акценты создают целостную картину, которая точно порадует своего получателя.`,
-          srcAfter: "/images/styles/Инфинити/инфинити.jpg",
-          srcBefore: "/images/styles/Инфинити/до--инфинити.jpg",
+          srcAfter:
+            "https://www.dropbox.com/s/vvu7jzpn8q6sjnd/%D0%B8%D0%BD%D1%84%D0%B8%D0%BD%D0%B8%D1%82%D0%B8.jpg?raw=1",
+          srcBefore:
+            "https://www.dropbox.com/s/rq24x6iwgyn2zpp/%D0%B4%D0%BE--%D0%B8%D0%BD%D1%84%D0%B8%D0%BD%D0%B8%D1%82%D0%B8.jpg?raw=1",
           galleryImages: [
             {
-              previewSrc: "/images/styles/Инфинити/1 i.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/v1d47s7ld5z5dug/1%20i.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/h08aa4mmil5tiqy/1%20i.jpg?raw=1",
+            },
+            {
+              previewSrc:
+                "https://www.dropbox.com/s/nzf58hfz9tesf0z/2%20i.jpg?raw=1",
               fullSrc:
                 "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Инфинити/2 i.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/7fpxo4aq0qpibae/3%20i.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/3t553txganma7c7/3%20i.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Инфинити/3 i.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/8u6bt1kx425qfus/4%20i.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/kf55aciow4r4k6q/4%20i.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Инфинити/4 i.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/bdpntgz4m5yj8iw/5%20i.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
-            },
-            {
-              previewSrc: "/images/styles/Инфинити/5 i.jpg",
-              fullSrc:
-                "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/x7dpswpvavdqtkw/5%20i.jpg?raw=1",
             },
           ],
           imageId: "infiniti-art",
@@ -286,24 +361,35 @@ const ProductsPage = () => {
           portraitTitle: "Мастихин",
           portraitPrice: 2900,
           portraitDescription: `Такой стиль в портретном искусстве достаточно редок, но абсолютно точно - ярок и оригинален. Если Вы готовы уйти от фотографичности, довериться творческому полету наших дизайнеров, то данный вид портрета именно для Вас. Готовьтесь собрать возгласы "WOW", ведь это самый-самый арт. Портрет может быть выполнен как в спокойных тонах, так и в ярких, ослепительных тонах. Печать на холсте или портрет маслом в исполнении художника? Решать Вам - и в одном, и в другом исполнении этот вид портрета не оставит никого равнодушным.`,
-          srcAfter: "/images/styles/Мастихин/мастихин.jpg",
-          srcBefore: "/images/styles/Мастихин/до--мастихин.jpg",
+          srcAfter:
+            "https://www.dropbox.com/s/7gw3cutyn5vwt89/%D0%BC%D0%B0%D1%81%D1%82%D0%B8%D1%85%D0%B8%D0%BD.jpg?raw=1",
+          srcBefore:
+            "https://www.dropbox.com/s/kicc1n22nuquw9s/%D0%B4%D0%BE--%D0%BC%D0%B0%D1%81%D1%82%D0%B8%D1%85%D0%B8%D0%BD.jpg?raw=1",
           galleryImages: [
             {
-              previewSrc: "/images/styles/Мастихин/01.jpg",
-              fullSrc: "/images/styles/Диджитал/1d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/mi5ri8nubbfmb5q/01.jpg?raw=1",
+              fullSrc: "https://www.dropbox.com/s/8s8t7zh75cjm2sc/01.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Мастихин/02.jpg",
-              fullSrc: "/images/styles/Диджитал/2d.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/5aai55cw5jzah26/02.jpg?raw=1",
+              fullSrc: "https://www.dropbox.com/s/xhrwk1gj5tkywyv/02.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Мастихин/03.jpg",
-              fullSrc: "/images/styles/Портрет в образе/4o.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/6wyml4rvbzmmgrl/03.jpg?raw=1",
+              fullSrc: "https://www.dropbox.com/s/29qi44pib0uq8i1/03.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Мастихин/04.jpg",
-              fullSrc: "/images/styles/Портрет в образе/4o.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/kqg56nd0jh6lg8c/04.jpg?raw=1",
+              fullSrc: "https://www.dropbox.com/s/gfwb6nc2gp6f6nc/04.jpg?raw=1",
+            },
+            {
+              previewSrc:
+                "https://www.dropbox.com/s/o95u7lr9rg260gw/05.jpg?raw=1",
+              fullSrc: "https://www.dropbox.com/s/49nk3a1jsb0blqv/05.jpg?raw=1",
             },
           ],
           reverse: true,
@@ -313,38 +399,46 @@ const ProductsPage = () => {
           portraitTitle: "Портрет питомца",
           portraitPrice: 1490,
           portraitDescription: `Выразите свою любовь к своей собаке или кошке путём превращения своего домашнего питомца в произведение искусства! Нужно лишь выбрать образ: исторический, современный или известное произведение мировых художников.`,
-          srcAfter: "/images/styles/Портрет питомца/питомец первое.jpg",
-          srcBefore: "/images/styles/Портрет питомца/питомец первое.jpg",
+          srcAfter:
+            "https://www.dropbox.com/s/bhpspsqdi381wkl/%D0%BF%D0%B8%D1%82%D0%BE%D0%BC%D0%B5%D1%86%20%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B5.jpg?raw=1",
+          srcBefore:
+            "https://www.dropbox.com/s/bhpspsqdi381wkl/%D0%BF%D0%B8%D1%82%D0%BE%D0%BC%D0%B5%D1%86%20%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B5.jpg?raw=1",
           galleryImages: [
             {
-              previewSrc: "/images/styles/Портрет питомца/1 p.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/awi9ok80zk1rrlq/1%20p.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/vakqodtc2ljmm4l/1%20p.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Портрет питомца/2 p.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/jrgxcjwxz4h83t6/2%20p.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/z885bxzdf7wyic6/2%20p.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Портрет питомца/3 p.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/6k3kmwxqoif2qe2/3%20p.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/ckklzid1n4f5566/3%20p.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Портрет питомца/4 p.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/2zxkim4ftams642/4%20p.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/pqckbk4qbu8uiws/4%20p.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Портрет питомца/6 p.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/g293ofjlfdeelph/6%20p.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/9tisrmqtcdgwl8j/6%20p.jpg?raw=1",
             },
             {
-              previewSrc: "/images/styles/Портрет питомца/5 p.jpg",
+              previewSrc:
+                "https://www.dropbox.com/s/amj2kchltwd30xq/5%20p.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/p3xq5ztf5i5i2iq/5%20p.jpg?raw=1",
             },
           ],
           imageId: "animal-art",

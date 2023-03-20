@@ -5,11 +5,9 @@
 }
 
 .styles-page__general {
-  /* background-image: url("/public/images/background/Слой3.png"); */
-  background-image: url("/public/images/background/Слой22 -фон.png");
+  background-image: url("/public/images/background/Слой3.png");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 55% 88%;
+  background-size: contain;
 }
 
 .styles-page__title {

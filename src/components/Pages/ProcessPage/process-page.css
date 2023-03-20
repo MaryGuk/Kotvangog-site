@@ -9,6 +9,9 @@
 }
 
 .process-page__general {
+  background-image: url("/public/images/background/Слой3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +29,7 @@
   display: block;
   font-size: 15px;
   font-family: "Lora", serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .process-page__information {
@@ -39,14 +42,14 @@
   grid-column-gap: calc(100% - 750px);
 }
 
-@media(max-width: 780px) {
+@media (max-width: 780px) {
   .process-page__information {
     grid-template-columns: 300px 1fr;
     grid-template-rows: 430px 280px;
   }
 }
 
-@media(max-width: 630px) {
+@media (max-width: 630px) {
   .process-page__information {
     display: grid;
     margin-top: 60px;
@@ -65,14 +68,13 @@
   grid-template-rows: 25px 50px;
 }
 
-
-@media(max-width: 780px) {
+@media (max-width: 780px) {
   .process-text__container {
     align-self: end;
   }
 }
 
-@media(max-width: 630px) {
+@media (max-width: 630px) {
   .process-text__container {
     grid-row: 2;
   }
@@ -128,8 +130,7 @@
   width: 450px;
 }
 
-
-@media(max-width: 780px) {
+@media (max-width: 780px) {
   .process-video {
     grid-column: 1 / 3;
     display: flex;
@@ -137,7 +138,6 @@
     justify-content: end;
   }
 }
-
 
 video {
   width: 100%;
@@ -152,8 +152,7 @@ video {
   padding-bottom: 20px;
 }
 
-
-@media(max-width: 780px) {
+@media (max-width: 780px) {
   .process-author {
     margin-top: 20px;
   }
