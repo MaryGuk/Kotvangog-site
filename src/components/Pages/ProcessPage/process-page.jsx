@@ -14,16 +14,19 @@ const ProcessPage = () => {
           <div className="process-page__container">
             {[
               {
-                imageSrc: "/images/1.png",
+                imageSrc:
+                  "https://www.dropbox.com/s/uia57lylhf4upo2/1.png?raw=1",
                 description: `Выполняет черновой эскиз и высылает на согласование`,
               },
               {
-                imageSrc: "/images/2.png",
+                imageSrc:
+                  "https://www.dropbox.com/s/elovw829eert1aa/2.png?raw=1",
                 description: `После согласования отрисовывает портрет в выбраннной
               технике`,
               },
               {
-                imageSrc: "/images/3.png",
+                imageSrc:
+                  "https://www.dropbox.com/s/fa38cg0xdhqhllm/3.png?raw=1",
                 description: `По окончанию высылает готовый портрет`,
               },
             ].map(({ imageSrc, description }, idx) => (
@@ -39,7 +42,7 @@ const ProcessPage = () => {
             <MasterInfoWrapper>
               <img
                 className="process-ava"
-                src="/images/Люба ph.png"
+                src="https://www.dropbox.com/s/dgvp57lyybndi0w/%D0%9B%D1%8E%D0%B1%D0%B0%20ph.png?raw=1"
                 alt="Любовь Ненадовец"
               />
             </MasterInfoWrapper>

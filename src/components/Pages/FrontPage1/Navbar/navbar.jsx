@@ -1,10 +1,24 @@
 import { NavLink } from "react-router-dom";
 import "./navbar.css";
-import {NavbarWrapper} from "./styled";
+import { NavbarWrapper } from "./styled";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+
   return (
     <nav className="navbar">
+      <div>
+        <button onClick={() => changeLanguage("en")}> EN </button>
+        <button onClick={() => changeLanguage("ru")}> RU </button>{" "}
+      </div>
+
+      {/* <div> {t("homePage.title")}</div> */}
+
       <div className="logo"> kotvangog</div>
       <NavbarWrapper>
         {[
