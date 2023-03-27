@@ -2,8 +2,11 @@ import "./styles-page.css";
 import { HashLink as Link } from "react-router-hash-link";
 import StylesTitle from "./StylesTitle";
 import { MainPageItemWrapper } from "../../../views/MainPage/styled";
+import { useTranslation } from "react-i18next";
+import i18n from "../../../i18n";
 
 const StylesPage = () => {
+  const { t } = useTranslation();
   return (
     <div className="styles-page">
       <MainPageItemWrapper>
@@ -19,8 +22,10 @@ const StylesPage = () => {
                   alt=""
                 />
               </Link>
-              <div className="styles-name"> Бьюти-арт портрет</div>
-              <div className="styles-price">От 1590 руб.</div>
+              <div className="styles-name">{t("stylesPage.styles_name1")}</div>
+              <div className="styles-price">
+                {i18n.language === "en" ? "From 20$" : "От 1590 руб."}
+              </div>
             </div>
 
             <div className="styles__item">
@@ -32,8 +37,10 @@ const StylesPage = () => {
                 />
               </Link>
 
-              <div className="styles-name"> Диджитал-портрет</div>
-              <div className="styles-price"> От 2800 руб.</div>
+              <div className="styles-name"> {t("stylesPage.styles_name2")}</div>
+              <div className="styles-price">
+                {i18n.language === "en" ? "From 36$" : "От 2800 руб."}
+              </div>
             </div>
 
             <div className="styles__item">
@@ -45,8 +52,10 @@ const StylesPage = () => {
                 />
               </Link>
 
-              <div className="styles-name"> Имитация масла </div>
-              <div className="styles-price"> От 950 руб.</div>
+              <div className="styles-name">{t("stylesPage.styles_name3")}</div>
+              <div className="styles-price">
+                {i18n.language === "en" ? "From 13$" : "От 950 руб."}
+              </div>
             </div>
 
             <div className="styles__item">
@@ -57,8 +66,11 @@ const StylesPage = () => {
                   alt=""
                 />
               </Link>
-              <div className="styles-name">Портрет в образе </div>
-              <div className="styles-price"> От 1090 руб.</div>
+              <div className="styles-name">{t("stylesPage.styles_name4")}</div>
+              <div className="styles-price">
+                {" "}
+                {i18n.language === "en" ? "From 20$" : "От 1490 руб."}
+              </div>
             </div>
 
             <div className="styles__item">
@@ -69,8 +81,10 @@ const StylesPage = () => {
                   alt=""
                 />
               </Link>
-              <div className="styles-name"> Фьюжн </div>
-              <div className="styles-price"> От 1890 руб.</div>
+              <div className="styles-name">{t("stylesPage.styles_name5")}</div>
+              <div className="styles-price">
+                {i18n.language === "en" ? "From 25$" : "От 1890 руб."}
+              </div>
             </div>
 
             <div className="styles__item">
@@ -82,8 +96,10 @@ const StylesPage = () => {
                 />
               </Link>
 
-              <div className="styles-name"> Карандаш </div>
-              <div className="styles-price"> От 1790 руб.</div>
+              <div className="styles-name">{t("stylesPage.styles_name6")}</div>
+              <div className="styles-price">
+                {i18n.language === "en" ? "From 24$" : "От 1790 руб."}
+              </div>
             </div>
 
             <div className="styles__item">
@@ -95,8 +111,10 @@ const StylesPage = () => {
                 />
               </Link>
 
-              <div className="styles-name"> Инфинити </div>
-              <div className="styles-price"> От 2900 руб.</div>
+              <div className="styles-name">{t("stylesPage.styles_name7")}</div>
+              <div className="styles-price">
+                {i18n.language === "en" ? "From 38$" : "От 2900 руб."}
+              </div>
             </div>
 
             <div className="styles__item">
@@ -107,8 +125,10 @@ const StylesPage = () => {
                   alt=""
                 />
               </Link>
-              <div className="styles-name">Мастихин </div>
-              <div className="styles-price"> От 2900 руб.</div>
+              <div className="styles-name">{t("stylesPage.styles_name8")} </div>
+              <div className="styles-price">
+                {i18n.language === "en" ? "From 38$" : "От 2900 руб."}
+              </div>
             </div>
 
             <div className="styles__item">
@@ -120,8 +140,10 @@ const StylesPage = () => {
                 />
               </Link>
 
-              <div className="styles-name">Портрет питомца </div>
-              <div className="styles-price"> От 1490 руб.</div>
+              <div className="styles-name">{t("stylesPage.styles_name9")}</div>
+              <div className="styles-price">
+                {i18n.language === "en" ? "From 20$" : "От 1490 руб."}
+              </div>
             </div>
           </div>
         </div>

@@ -1,10 +1,13 @@
+import { useTranslation } from "react-i18next";
 import "./AdvantagesTitle.css";
 const AdvantagesTitle = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="advantages-page__title-wrapper">
       <div className="advantages-page__title-first">
         <div className="advantages-page__title">
-          Создаём портреты высочайшего
+          {t("advantagesPage.title1")}
         </div>
         <div className="advantages-page__title-background">
           <img
@@ -14,7 +17,7 @@ const AdvantagesTitle = () => {
         </div>
       </div>
 
-      <div className="advantages-page__title">качества</div>
+      <div className="advantages-page__title">{t("advantagesPage.title2")}</div>
     </div>
   );
 };

@@ -6,10 +6,29 @@
       "title1":"Art portrait printed ",
       "title2":"on canvas in three days ",
       "subtitle": "We'll give you your money back if we don't meet the deadline or don't like the result",
-      "message_text": "Get a professional artist's consultation now",
+      "message_text": "Get a consultation with a professional artist right now",
       "message":"Click the button! We'll get back to you within 1 minute",
       "button":"Get a consultation"
-
-   }
+   },
+   "advantagesPage":{
+      "title1": "We create portraits of the highest ",
+      "title2": "quality",
+      "description1": "We realize orders of any complexity",
+      "description2": "Low photo quality is no problem for us",
+      "description3": "We don't use templates and filters",
+      "description4": "We approve the version you liked"
+      },
+      "stylesPage": {
+         "title": "Styles and price",
+         "styles_name1": "Beauty art portrait",
+         "styles_name2": "Digital Art",
+         "styles_name3": "Oli Art",
+         "styles_name4": "Portrait in the image",
+         "styles_name5": "Fusion",
+         "styles_name6": "Pencil Art",
+         "styles_name7": "Infinity",
+         "styles_name8": "Mastichin",
+         "styles_name9": "Pet portrait"
+      }
   
 }

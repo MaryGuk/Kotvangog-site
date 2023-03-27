@@ -17,14 +17,14 @@ const Navbar = () => {
         <button onClick={() => changeLanguage("ru")}> RU </button>{" "}
       </div>
 
-      {/* <div> {t("homePage.title")}</div> */}
+      {/* <div> {t("mainPage.title")}</div> */}
 
       <div className="logo"> kotvangog</div>
       <NavbarWrapper>
         {[
-          { path: "/home", title: "Главная" },
-          { path: "/products", title: "Продукция" },
-          { path: "/reviews", title: "Отзывы" },
+          { path: "/home", title: t("mainPage.navItem1") },
+          { path: "/products", title: t("mainPage.navItem2") },
+          { path: "/reviews", title: t("mainPage.navItem3") },
         ].map(({ path, title }) => (
           <div className="navbar-item">
             <NavLink to={path}>{title}</NavLink>
