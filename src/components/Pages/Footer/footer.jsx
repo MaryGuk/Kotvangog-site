@@ -1,8 +1,11 @@
 import "./footer.css";
 import { NavLink } from "react-router-dom";
 import { MainPageItemWrapper } from "../../../views/MainPage/styled";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="footer-wrapper">
       <MainPageItemWrapper>
@@ -10,12 +13,14 @@ const Footer = () => {
           <div className="footer-content">
             <h1 className="footer-logo"> kotvangog</h1>
             <div className="footer-contacts">
-              <span className="address">Адрес</span>
-              <span className="address-city"> Город Москва </span>
-              <span className="address-metro">М. Волоколамская</span>
-              <span className="address-street">Пятницкое шоссе, дом 8</span>
+              <span className="address">{t("footer.address")}</span>
+              <span className="address-city">{t("footer.address_city")} </span>
+              <span className="address-metro">{t("footer.address_metro")}</span>
+              <span className="address-street">
+                {t("footer.address_street")}
+              </span>
               <span className="address-street__more">
-                (400 м от метро Волоколамская)
+                {t("footer.address-street__more")}
               </span>
               <span className="phone-number"> +7 (993) 360-07-10 </span>
               <div className="location-container">
@@ -26,7 +31,7 @@ const Footer = () => {
                       src="/images/location-icon.png"
                       alt=""
                     />
-                    Открыть в Яндекс Картах
+                    {t("footer.location_image")}
                   </span>
                 </a>
               </div>
@@ -35,20 +40,22 @@ const Footer = () => {
 
           <div className="footer-content">
             <span className="footer-navbar">
-              <NavLink to="/home"> Главная </NavLink>
+              <NavLink to="/home">{t("footer.footer_navbar1")} </NavLink>
             </span>
 
             <span className="footer-navbar">
-              <NavLink to="/products"> Продукция </NavLink>
+              <NavLink to="/products">{t("footer.footer_navbar2")}</NavLink>
             </span>
 
             <span className="footer-navbar">
-              <NavLink to="/reviews"> Отзывы </NavLink>
+              <NavLink to="/reviews">{t("footer.footer_navbar3")}</NavLink>
             </span>
           </div>
 
           <div className="footer-content">
-            <span className="footer-messenger"> Мы в соц сетях </span>
+            <span className="footer-messenger">
+              {t("footer.footer_messenger")}
+            </span>
             <div className="footer-icons">
               <a href="https://t.me/kot_vangog" target="_blank">
                 <img
