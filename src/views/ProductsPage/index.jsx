@@ -7,18 +7,20 @@ import BeautyArt from "./Beauty-art/beauty-art";
 
 import ProductPageItem from "./PortraitPage/portrait-page";
 import Footer from "../../components/Pages/Footer/footer";
+import { useTranslation } from "react-i18next";
+import i18n from "../../i18n";
 
 const ProductsPage = () => {
   const [fullImageSrc, setFullImageSrc] = useState(null);
+  const { t } = useTranslation();
 
   return (
     <div className="products-page__wrapper">
       {[
         {
-          portraitTitle: "Бьюти-арт портрет",
-          portraitPrice: 1590,
-          portraitDescription:
-            "Гладкость и блеск — главный принцип стиля. Он представляет собой нежный, роскошный образ. Особенностью стиля является детальная прорисовка портрета. Самый популярный вид исполнения - печать на холсте, она хорошо сочетается с текстурным гелем.",
+          portraitTitle: t("productsPage.title_beauty"),
+          portraitPrice: i18n.language === "en" ? "From 20$" : "От 1590 руб.",
+          portraitDescription: t("productsPage.portraitDescription.part1"),
           srcAfter:
             "https://www.dropbox.com/s/4t6rmbk8blkspky/%D0%B1%D1%8C%D1%8E%D1%82%D0%B8-%D0%B0%D1%80%D1%82.jpg?raw=1",
           srcBefore:
@@ -64,9 +66,9 @@ const ProductsPage = () => {
           imageId: "beauty-art",
         },
         {
-          portraitTitle: "Диджитал-портрет",
-          portraitPrice: 2800,
-          portraitDescription: `Яркий и беспрецедентный — именно такой портрет в стиле «Диджитал».Если Вы искали особенный, ни на что не похожий стиль, то он перед Вами. В этом стиле художник проявляет себя, не ограничивая привычными рамками. Стиль «Диджитал» — это концентрация громких восторгов и обескураживающих эмоций. Мы гарантируем, что результат будет ослепительным.`,
+          portraitTitle: t("productsPage.title_beauty"),
+          portraitPrice: i18n.language === "en" ? "From 20$" : "От 2800 руб.",
+          portraitDescription:t("productsPage.portraitDescription.part2"), 
           srcAfter:
             "https://www.dropbox.com/s/ixvvr1vlzi2np23/%D0%B4%D0%B8%D0%B4%D0%B6%D0%B8%D1%82%D0%B0%D0%BB.jpg?raw=1",
           srcBefore:
@@ -196,7 +198,7 @@ const ProductsPage = () => {
         {
           portraitTitle: "Портрет в образе",
           portraitPrice: 1090,
-          portraitDescription: `Портрет в образе - самое необычное перевоплощение! Лучший способ удивить и подарить не только портрет на долгую память, но и море улыбок. Если вам хочется большего, нежели перенос фото на холст — обратите внимание на эти работы. Яркий и беспрецедентный — именно такой портрет в стиле «Диджитал». Если Вы искали особенный, ни на что не похожий стиль, то он перед Вами. В этом стиле художник проявляет себя, не ограничивая привычными рамками. Стиль «Диджитал» — это концентрация громких восторгов и обескураживающих эмоций. Мы гарантируем, что результат будет ослепительным.`,
+          portraitDescription: ` Портрет в образе - самое необычное перевоплощение! Лучший способ удивить и подарить не только портрет на долгую память, но и море улыбок. Если вам хочется большего нежели перенос фото на холст — обратите внимание на эти работы.`,
           srcAfter:
             "https://www.dropbox.com/s/b0y9xrrtunboanr/%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%20%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B5.jpg?raw=1",
           srcBefore:
