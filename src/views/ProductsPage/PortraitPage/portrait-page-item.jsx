@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import "./portrait-page-item.css";
 import { ProductPageItemInfoBlock } from "./styled";
 
@@ -7,6 +8,8 @@ const PortraitPageItem = ({
   portraitDescription,
   reverse,
 }) => {
+  const { t } = useTranslation();
+
   return (
     <ProductPageItemInfoBlock reverse={reverse}>
       <div className="beauty-art__information">
@@ -17,7 +20,7 @@ const PortraitPageItem = ({
       <div>
         <a href="#">
           <button className="beauty-art__button" type="submit">
-            Получить консультацию
+            {t("productsPage.button")}
           </button>
         </a>
       </div>

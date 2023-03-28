@@ -66,9 +66,9 @@ const ProductsPage = () => {
           imageId: "beauty-art",
         },
         {
-          portraitTitle: t("productsPage.title_beauty"),
+          portraitTitle: t("productsPage.title_digital"),
           portraitPrice: i18n.language === "en" ? "From 20$" : "От 2800 руб.",
-          portraitDescription:t("productsPage.portraitDescription.part2"), 
+          portraitDescription: t("productsPage.portraitDescription.part2"),
           srcAfter:
             "https://www.dropbox.com/s/ixvvr1vlzi2np23/%D0%B4%D0%B8%D0%B4%D0%B6%D0%B8%D1%82%D0%B0%D0%BB.jpg?raw=1",
           srcBefore:
@@ -99,9 +99,9 @@ const ProductsPage = () => {
           imageId: "digital",
         },
         {
-          portraitTitle: "Имитация масла",
-          portraitPrice: 950,
-          portraitDescription: `Данный вариант - прекрасная альтернатива классике. Дизайнер повторяет мазки, как в традиционной живописи, что создает впечатление картины, написанной маслом. Особенно хорошо подойдет «арт гель», который предаст мазкам выраженный текстурный объём поверх печати.`,
+          portraitTitle: t("productsPage.title_oli"),
+          portraitPrice: i18n.language === "en" ? "From 20$" : "От 950 руб.",
+          portraitDescription: t("productsPage.portraitDescription.part3"),
           srcAfter:
             "https://www.dropbox.com/s/jdcwizrzmf18k7t/%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B5%20%D1%84%D0%BE%D1%82%D0%BE.jpg?raw=1",
           srcBefore:
@@ -196,9 +196,9 @@ const ProductsPage = () => {
           imageId: "oli-art",
         },
         {
-          portraitTitle: "Портрет в образе",
-          portraitPrice: 1090,
-          portraitDescription: ` Портрет в образе - самое необычное перевоплощение! Лучший способ удивить и подарить не только портрет на долгую память, но и море улыбок. Если вам хочется большего нежели перенос фото на холст — обратите внимание на эти работы.`,
+          portraitTitle: t("productsPage.title_image"),
+          portraitPrice: i18n.language === "en" ? "From 20$" : "От 1090 руб.",
+          portraitDescription: t("productsPage.portraitDescription.part4"),
           srcAfter:
             "https://www.dropbox.com/s/b0y9xrrtunboanr/%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%20%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B5.jpg?raw=1",
           srcBefore:
@@ -245,9 +245,9 @@ const ProductsPage = () => {
           imageId: "likeness-art",
         },
         {
-          portraitTitle: "Фьюжн",
-          portraitPrice: 1890,
-          portraitDescription: `Стиль «Фьюжн» всё больше набирает популярность, и, наверное, уже стал классикой. Особенность этого стиля в смелых пастозных мазках. Фон предоставляем на Ваш выбор. Портрет отлично работает в тандеме с услугой «арт-гель», придающей объём картине. Печать на холсте или портрет маслом на холсте —«Фюжн» превосходен в любом виде…`,
+          portraitTitle: t("productsPage.title_fusion"),
+          portraitPrice: i18n.language === "en" ? "From 20$" : "От 1890 руб.",
+          portraitDescription: t("productsPage.portraitDescription.part5"),
           srcAfter:
             "https://www.dropbox.com/s/s7bcmbbblwzigry/%D1%84%D1%8C%D1%8E%D0%B6%D0%BD.jpg?raw=1",
           srcBefore:
@@ -287,9 +287,9 @@ const ProductsPage = () => {
           imageId: "fusion-art",
         },
         {
-          portraitTitle: "Карандаш",
-          portraitPrice: 1790,
-          portraitDescription: `Портрет карандашом - любимый всеми классический портрет, который будет актуальным и стильным всегда. Художник-дизайнер на планшете с нуля рисует портрет на основе предоставленной фотографии. Далее макет можно перенести на холст любого размера.`,
+          portraitTitle: t("productsPage.title_pencil"),
+          portraitPrice: i18n.language === "en" ? "From 20$" : "От 1790 руб.",
+          portraitDescription: t("productsPage.portraitDescription.part6"),
           srcAfter:
             "https://www.dropbox.com/s/3kvp7r831dciy9z/%D0%BA%D0%B0%D1%80%D0%B0%D0%BD%D0%B4%D0%B0%D1%88.jpg?raw=1",
           srcBefore:
@@ -318,9 +318,9 @@ const ProductsPage = () => {
           imageId: "pencil-art",
         },
         {
-          portraitTitle: "Инфинити",
-          portraitPrice: 2900,
-          portraitDescription: `На стиль «Инфинити» можно смотреть бесконечно. Он объединяет в себе два направления: черно-белый портрет и яркий граффити стиль. Вздорный фон и грамотные сочные акценты создают целостную картину, которая точно порадует своего получателя.`,
+          portraitTitle: t("productsPage.title_infinity"),
+          portraitPrice: i18n.language === "en" ? "From 20$" : "От 2900 руб.",
+          portraitDescription: t("productsPage.portraitDescription.part7"),
           srcAfter:
             "https://www.dropbox.com/s/vvu7jzpn8q6sjnd/%D0%B8%D0%BD%D1%84%D0%B8%D0%BD%D0%B8%D1%82%D0%B8.jpg?raw=1",
           srcBefore:
@@ -360,9 +360,9 @@ const ProductsPage = () => {
           imageId: "infiniti-art",
         },
         {
-          portraitTitle: "Мастихин",
-          portraitPrice: 2900,
-          portraitDescription: `Такой стиль в портретном искусстве достаточно редок, но абсолютно точно - ярок и оригинален. Если Вы готовы уйти от фотографичности, довериться творческому полету наших дизайнеров, то данный вид портрета именно для Вас. Готовьтесь собрать возгласы "WOW", ведь это самый-самый арт. Портрет может быть выполнен как в спокойных тонах, так и в ярких, ослепительных тонах. Печать на холсте или портрет маслом в исполнении художника? Решать Вам - и в одном, и в другом исполнении этот вид портрета не оставит никого равнодушным.`,
+          portraitTitle: t("productsPage.title_mastichin"),
+          portraitPrice: i18n.language === "en" ? "From 20$" : "От 2900 руб.",
+          portraitDescription: t("productsPage.portraitDescription.part8"),
           srcAfter:
             "https://www.dropbox.com/s/7gw3cutyn5vwt89/%D0%BC%D0%B0%D1%81%D1%82%D0%B8%D1%85%D0%B8%D0%BD.jpg?raw=1",
           srcBefore:
@@ -398,9 +398,9 @@ const ProductsPage = () => {
           imageId: "mastihin-art",
         },
         {
-          portraitTitle: "Портрет питомца",
-          portraitPrice: 1490,
-          portraitDescription: `Выразите свою любовь к своей собаке или кошке путём превращения своего домашнего питомца в произведение искусства! Нужно лишь выбрать образ: исторический, современный или известное произведение мировых художников.`,
+          portraitTitle: t("productsPage.title_pet"),
+          portraitPrice: i18n.language === "en" ? "From 20$" : "От 1490 руб.",
+          portraitDescription: t("productsPage.portraitDescription.part9"),
           srcAfter:
             "https://www.dropbox.com/s/bhpspsqdi381wkl/%D0%BF%D0%B8%D1%82%D0%BE%D0%BC%D0%B5%D1%86%20%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B5.jpg?raw=1",
           srcBefore:
