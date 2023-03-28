@@ -42,7 +42,9 @@
 
       "info_text1":"Watch the 60-second",
       "info_text2":"video to learn,",
-      "info_text3":"how an artist will paint your picture"
+      "info_text3":"how an artist will paint your picture",
+      "author-name": "Lyubov Nenadovets",
+      "author-name__color": "Artist at KOTVANGOG studio"
         },
 
       "footer":{
@@ -82,6 +84,6 @@
       "part8":"This style in portrait art is quite rare, but absolutely - bright and original.If you are ready to get away from the photographic nature and trust the creative flight of our designers, then this type of portrait is just for you. Get ready to gather cheers of WOW, because it's the very, very art.The portrait can be done both in calm colors and in bright, glaring colors. Print on canvas or oil portrait by an artist? It's up to you - in both versions, this type of portrait will not leave anyone indifferent.",
       "part9":"Express your love for your dog or cat by turning your pet into an artwork!You just need to choose an image: a historical, modern or famous artwork of the world's artists."
    },
-   "button" : "Get consultation"
+   "button" : "Get a consultation"
         } 
 }

@@ -77,11 +77,12 @@ const ProcessPage = () => {
           </div>
 
           <div className="process-author">
-            <img
-              className="process-author__name"
-              src="/images/Художник мастерской KOTVANGOG.png"
-              alt=""
-            />
+            <div className="process-author__name">
+              {t("processPage.author-name")}
+            </div>
+            <div className="author-name__color">
+              {t("processPage.author-name__color")}
+            </div>
           </div>
         </div>
       </MainPageItemWrapper>

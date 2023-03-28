@@ -7,7 +7,7 @@ import {
   MainPageItemWrapper,
 } from "../../../views/MainPage/styled";
 import Modal from "../../Modal/modal";
-import { useState, useTransition } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const TitleWrapper = styled(Box)`
