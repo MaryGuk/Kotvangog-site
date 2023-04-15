@@ -22,14 +22,21 @@
   height: 200px;
 }
 
-.process-text {
+.process-main-description {
   margin-top: 10px;
   margin-bottom: 10px;
   max-width: 280px;
   display: block;
-  font-size: 15px;
-  font-family: "Lora", serif;
-  font-weight: 500;
+  font-size: 16px;
+  font-family: "Trebuchet MS", serif;
+  font-weight: 400;
+}
+
+.process-secondary-description{
+  font-family: "Trebuchet MS", serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #565656;
 }
 
 .process-page__information {
@@ -60,6 +67,10 @@
     justify-items: center;
   }
 }
+.process-item__wrapper{
+  margin: 5px;
+}
+
 
 .process-text__container {
   display: grid;
@@ -81,13 +92,13 @@
 }
 
 .process-inf__text {
-  font-family: "Trebuchetms";
+  font-family: "Trebuchet MS";
   font-size: 20px;
   font-weight: 500;
   grid-column: 1/3;
 }
 .process-inf__text2 {
-  font-family: "Trebuchetms";
+  font-family: "Trebuchet MS";
   color: rgb(32, 32, 32);
   font-size: 17px;
   font-weight: 600;
@@ -96,9 +107,9 @@
 }
 
 .process-inf__text3 {
-  font-family: "Trebuchetms";
+  font-family: "Trebuchet MS";
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.5px;
   max-width: 150px;
   margin-top: 2px;
@@ -165,7 +176,7 @@ video {
 }
 
 .process-author__name {
-  font-family: "Trebuchetms";
+  font-family: "Trebuchet MS";
   font-weight: 400;
   padding-top: 5px;
   font-size: 18px;
@@ -176,7 +187,7 @@ video {
 }
 
 .author-name__color {
-  font-family: "Trebuchetms";
+  font-family: "Trebuchet MS";
   font-weight: 500;
   padding-bottom: 5px;
   text-align: center;

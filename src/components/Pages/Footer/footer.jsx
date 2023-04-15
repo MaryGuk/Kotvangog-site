@@ -39,17 +39,18 @@ const Footer = () => {
           </div>
 
           <div className="footer-content">
-            <span className="footer-navbar">
+            <div className="footer-navbar">
               <NavLink to="/home">{t("footer.footer_navbar1")} </NavLink>
-            </span>
+            </div>
 
-            <span className="footer-navbar">
+            <div className="footer-navbar">
               <NavLink to="/products">{t("footer.footer_navbar2")}</NavLink>
-            </span>
+            </div>
 
-            <span className="footer-navbar">
+            <div className="footer-navbar">
+    
               <NavLink to="/reviews">{t("footer.footer_navbar3")}</NavLink>
-            </span>
+            </div>
           </div>
 
           <div className="footer-content">

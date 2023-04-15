@@ -10,6 +10,7 @@
 
 @font-face {
   font-family: "Trebuchetms";
+  src: url('/public/fonts/trebuc.ttf') format('truetype');
   src: url(/public/fonts/Trebuchetms.woff2) format("woff");
   src: url(/public/fonts/AnyConv.com__Trebuchet\ MS\ Полужирный.woff2)
     format("woff");

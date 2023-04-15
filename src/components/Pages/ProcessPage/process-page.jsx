@@ -18,23 +18,24 @@ const ProcessPage = () => {
               {
                 imageSrc:
                   "https://www.dropbox.com/s/uia57lylhf4upo2/1.png?raw=1",
-                description: t("processPage.description1"),
+                mainDescription: t("processPage.stepOne.mainDescription"),
+                secondaryDescription: t("processPage.stepOne.secondaryDescription"),
               },
               {
                 imageSrc:
                   "https://www.dropbox.com/s/elovw829eert1aa/2.png?raw=1",
-                description: t("processPage.description2"),
+                mainDescription: t("processPage.stepTwo.mainDescription"),
               },
               {
                 imageSrc:
                   "https://www.dropbox.com/s/fa38cg0xdhqhllm/3.png?raw=1",
-                description: t("processPage.description3"),
+                mainDescription: t("processPage.stepThree.mainDescription"),
+                secondaryDescription: t("processPage.stepThree.secondaryDescription"),
               },
-            ].map(({ imageSrc, description }, idx) => (
+            ].map((processItemProps, idx) => (
               <ProcessItem
                 key={idx}
-                imageSrc={imageSrc}
-                description={description}
+                {...processItemProps}
               />
             ))}
           </div>
