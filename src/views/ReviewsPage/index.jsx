@@ -1,8 +1,16 @@
-import React from "react";
-import { Box } from "@mui/material";
+import { useEffect } from "react";
+import { ReviewWrapper } from './styled';
 
 const ReviewsPage = () => {
-  return <Box>Reviews</Box>;
+  // Code from disqus installation instruction
+  useEffect(() => {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://kotvangog.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  });
+
+  return <ReviewWrapper><div id="disqus_thread" /></ReviewWrapper>;
 };
 
 export default ReviewsPage;

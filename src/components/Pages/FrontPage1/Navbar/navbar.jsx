@@ -25,8 +25,8 @@ const Navbar = () => {
           { path: "/home", title: t("mainPage.navItem1") },
           { path: "/products", title: t("mainPage.navItem2") },
           { path: "/reviews", title: t("mainPage.navItem3") },
-        ].map(({ path, title }) => (
-          <div className="navbar-item">
+        ].map(({ path, title }, idx) => (
+          <div className="navbar-item" key={idx}>
             <NavLink to={path}>{title}</NavLink>
           </div>
         ))}
