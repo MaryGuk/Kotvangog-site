@@ -447,7 +447,7 @@ const ProductsPage = () => {
         },
       ].map((props, idx) => (
         <ProductPageItem {...props} setFullImage={setFullImageSrc} key={idx} />
-      ))}
+        ))}
       {/* <BeautyArt /> */}
 
       <Footer />

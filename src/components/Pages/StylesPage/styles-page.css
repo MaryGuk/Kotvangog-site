@@ -1,14 +1,11 @@
 .styles-page {
-  display: flex;
-  justify-content: center;
-  /* min-width: 1000px; */
-}
-
-.styles-page__general {
   background-image: url("/public/images/background/Слой3.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
 }
+
 
 .styles-page__title {
   font-size: 24px;

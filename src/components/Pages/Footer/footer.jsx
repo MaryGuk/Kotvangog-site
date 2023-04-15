@@ -54,7 +54,7 @@ const Footer = () => {
 
           <div className="footer-content">
             <span className="footer-messenger">
-              {t("footer.footer_messenger")}
+              {t("footer.footer-messenger")}
             </span>
             <div className="footer-icons">
               <a href="https://t.me/kot_vangog" target="_blank">

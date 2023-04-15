@@ -6,6 +6,11 @@
 
 .beauty-art__general {
   max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .beauty-art__container {

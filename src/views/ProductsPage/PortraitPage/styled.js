@@ -6,6 +6,8 @@ export const ProductPageItemMainInfoWrapper = styled(Box)((props) => ({
   flexDirection: props.reverse ? "row-reverse" : "row",
   paddingTop: "70px",
   marginBottom: "10px",
+  flexWrap: "wrap",
+  justifyContent: "center",
 }));
 
 export const ProductPageItemInfoBlock = styled(Box)((props) => ({
