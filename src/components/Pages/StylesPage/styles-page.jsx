@@ -18,7 +18,7 @@ const StylesPage = () => {
               <Link to="/products#beauty-art">
                 <img
                   className="styles__image"
-                  src="https://www.dropbox.com/s/4t6rmbk8blkspky/%D0%B1%D1%8C%D1%8E%D1%82%D0%B8-%D0%B0%D1%80%D1%82.jpg?raw=1"
+                  src="https://www.dropbox.com/s/x4rwflkvopzsp16/%D0%B1%D1%8C%D1%8E%D1%82%D0%B8-%D0%B0%D1%80%D1%82.jpg?raw=1"
                   alt=""
                 />
               </Link>
@@ -32,7 +32,7 @@ const StylesPage = () => {
               <Link to="/products#digital">
                 <img
                   className="styles__image"
-                  src="https://www.dropbox.com/s/ixvvr1vlzi2np23/%D0%B4%D0%B8%D0%B4%D0%B6%D0%B8%D1%82%D0%B0%D0%BB.jpg?raw=1"
+                  src="https://www.dropbox.com/s/twifuq7e8e3w71a/%D0%B4%D0%B8%D0%B4%D0%B6%D0%B8%D1%82%D0%B0%D0%BB.jpg?raw=1"
                   alt=""
                 />
               </Link>
@@ -47,7 +47,7 @@ const StylesPage = () => {
               <Link to="/products#oli-art">
                 <img
                   className="styles__image"
-                  src="https://www.dropbox.com/s/jdcwizrzmf18k7t/%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B5%20%D1%84%D0%BE%D1%82%D0%BE.jpg?raw=1"
+                  src="https://www.dropbox.com/s/khvqml3yfktv3em/%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B5%20%D1%84%D0%BE%D1%82%D0%BE.jpg?raw=1"
                   alt=""
                 />
               </Link>
@@ -62,7 +62,7 @@ const StylesPage = () => {
               <Link to="/products#likeness-art">
                 <img
                   className="styles__image"
-                  src="https://www.dropbox.com/s/b0y9xrrtunboanr/%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%20%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B5.jpg?raw=1"
+                  src="https://www.dropbox.com/s/dxenq58vgby6n67/%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%20%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B5.jpg?raw=1"
                   alt=""
                 />
               </Link>
@@ -77,7 +77,7 @@ const StylesPage = () => {
               <Link to="/products#fusion-art">
                 <img
                   className="styles__image"
-                  src="https://www.dropbox.com/s/xt1t90u0x9ozhhl/f2.jpg?raw=1"
+                  src="https://www.dropbox.com/s/b2zcovmten1jml0/f2.jpg?raw=1"
                   alt=""
                 />
               </Link>
@@ -91,7 +91,7 @@ const StylesPage = () => {
               <Link to="/products#pencil-art">
                 <img
                   className="styles__image"
-                  src="https://www.dropbox.com/s/3kvp7r831dciy9z/%D0%BA%D0%B0%D1%80%D0%B0%D0%BD%D0%B4%D0%B0%D1%88.jpg?raw=1"
+                  src="https://www.dropbox.com/s/akpbrhxswe7hli1/%D0%BA%D0%B0%D1%80%D0%B0%D0%BD%D0%B4%D0%B0%D1%88.jpg?raw=1"
                   alt=""
                 />
               </Link>
@@ -106,7 +106,7 @@ const StylesPage = () => {
               <Link to="/products#infiniti-art">
                 <img
                   className="styles__image"
-                  src="https://www.dropbox.com/s/vvu7jzpn8q6sjnd/%D0%B8%D0%BD%D1%84%D0%B8%D0%BD%D0%B8%D1%82%D0%B8.jpg?raw=1"
+                  src="https://www.dropbox.com/s/rmwzm2ox6bdo5jw/%D0%B8%D0%BD%D1%84%D0%B8%D0%BD%D0%B8%D1%82%D0%B8.jpg?raw=1"
                   alt=""
                 />
               </Link>
@@ -121,7 +121,7 @@ const StylesPage = () => {
               <Link to="/products#mastihin-art">
                 <img
                   className="styles__image"
-                  src="https://www.dropbox.com/s/7gw3cutyn5vwt89/%D0%BC%D0%B0%D1%81%D1%82%D0%B8%D1%85%D0%B8%D0%BD.jpg?raw=1"
+                  src="https://www.dropbox.com/s/10eo80lcq4orhuf/%D0%BC%D0%B0%D1%81%D1%82%D0%B8%D1%85%D0%B8%D0%BD.jpg?raw=1"
                   alt=""
                 />
               </Link>
@@ -135,7 +135,7 @@ const StylesPage = () => {
               <Link to="/products#animal-art">
                 <img
                   className="styles__image"
-                  src="https://www.dropbox.com/s/bhpspsqdi381wkl/%D0%BF%D0%B8%D1%82%D0%BE%D0%BC%D0%B5%D1%86%20%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B5.jpg?raw=1"
+                  src="https://www.dropbox.com/s/3f707oug54pnpeo/%D0%BF%D0%B8%D1%82%D0%BE%D0%BC%D0%B5%D1%86%20%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B5.jpg?raw=1"
                   alt=""
                 />
               </Link>

@@ -134,8 +134,15 @@
   font-size: 16px;
 }
 
+.footer-content__navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 60px;
+}
+
 .footer-navbar {
-  padding: 40px 40px 10px 2px;
+  margin: 10px;
 }
 
 .footer-navbar a {
