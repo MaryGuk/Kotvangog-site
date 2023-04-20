@@ -21,14 +21,16 @@ export const ScrollHiddener = styled(Box)`
 `;
 
 export const ImageGalleryWrapper = styled(Box)`
-  display: flex;
-  align-items: center;
-  width: 100%;
   overflow-x: scroll;
   scroll-behavior: smooth;
-  overflow-y: hidden;
+`;
+export const ImageGalleryInnerWrapper = styled(Box, {
+  shouldForwardProp: (prop) => prop !== "reverse",
+})`
+  display: inline-flex;
   justify-content: ${({ reverse }) => (reverse ? "flex-end" : "flex-start")};
   opacity: 1;
+  min-width: 100%;
 
   & > div {
     margin-right: 5px;
@@ -38,25 +40,6 @@ export const ImageGalleryWrapper = styled(Box)`
     margin-right: 0;
   }
 `;
-
-// export const ImageGalleryWrapper = styled(Box)(() => ({
-//   display: "flex",
-//   alignItems: "center",
-//   width: "100%",
-//   overflowX: "scroll",
-//   scrollBehavior: "smooth",
-//   overflowY: "hidden",
-//   opacity: 1,
-//   justifyContent: ({ reverse }) => (reverse ? "flex-end" : "flex-start"),
-
-//   "& > div": {
-//     marginRight: "5px",
-//   },
-
-//   "&:last-child": {
-//     marginRight: 0,
-//   },
-// }));
 
 export const ArrowIconWrapper = styled(Box)`
   position: absolute;

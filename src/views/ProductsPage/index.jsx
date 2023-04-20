@@ -232,7 +232,8 @@ const ProductsPage = () => {
             {
               previewSrc:
                 "https://www.dropbox.com/s/ubqpjvtohr8e73y/11o.jpg?raw=1",
-              fullSrc: "https://www.dropbox.com/s/0rgl7e5wmh1gcc5/11o.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/0rgl7e5wmh1gcc5/11o.jpg?raw=1",
             },
             {
               previewSrc:
@@ -452,7 +453,7 @@ const ProductsPage = () => {
         },
       ].map((props, idx) => (
         <ProductPageItem {...props} setFullImage={setFullImageSrc} key={idx} />
-        ))}
+      ))}
       {/* <BeautyArt /> */}
 
       <Footer />

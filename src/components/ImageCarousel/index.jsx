@@ -4,6 +4,7 @@ import {
   ImageGalleryWrapper,
   ScrollHiddener,
   ImageItemWrapper,
+  ImageGalleryInnerWrapper,
 } from "./styled";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
@@ -33,12 +34,14 @@ const ImageCorousel = ({ galleryImages, setFullImage, reverse }) => {
       </ArrowIconWrapper>
 
       <ScrollHiddener>
-        <ImageGalleryWrapper ref={carouselRef} reverse={reverse}>
-          {galleryImages.map(({ previewSrc, fullSrc }) => (
-            <ImageItemWrapper onClick={() => setFullImage(fullSrc)}>
-              <img className="beauty-art__image" src={previewSrc} alt="123" />
-            </ImageItemWrapper>
-          ))}
+        <ImageGalleryWrapper ref={carouselRef}>
+          <ImageGalleryInnerWrapper reverse={reverse}>
+            {galleryImages.map(({ previewSrc, fullSrc }, idx) => (
+              <ImageItemWrapper onClick={() => setFullImage(fullSrc)} key={idx}>
+                <img className="beauty-art__image" src={previewSrc} alt="123" />
+              </ImageItemWrapper>
+            ))}
+          </ImageGalleryInnerWrapper>
         </ImageGalleryWrapper>
       </ScrollHiddener>
     </ImageCarouselWrapper>
