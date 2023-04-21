@@ -11,9 +11,15 @@ import {
   SecondText,
   EllipseСontainer,
   Ellipse,
+  ThirdText,
+  ButtonContainer,
+  FirstButton,
+  SecondButton,
 } from "./styled";
+import { useTranslation } from "react-i18next";
 
 const OilPortrait = () => {
+  const { t } = useTranslation();
   return (
     <OilPortraitWrapper>
       <OilPortraitGeneral>
@@ -33,13 +39,43 @@ const OilPortrait = () => {
                   портретов, написанных маслом по фотографии.
                 </FirstText>
               </EllipseСontainer>
-              {/* <SecondText>
-                Мы используем только высококачественные материалы! Умеем
-                захватывать эмоции и индивидуальность каждого человека.
+              <SecondText>
+                <b>
+                  Мы используем только высококачественные материалы! Умеем
+                  захватывать эмоции и индивидуальность каждого человека.
+                </b>
                 Результатом нашей работы являются неповторимые произведения
                 искусства, которые будут радовать вас и ваших близких на
                 протяжении многих лет.
-              </SecondText> */}
+              </SecondText>
+              <ThirdText>
+                Мы работаем с фотографиями любого формата и стиля, и готовы
+                предоставить вам консультацию и рекомендации по созданию
+                наиболее удачного портрета.
+                <b>
+                  Не упустите возможность сохранить важные моменты вашей жизни в
+                  искусстве.
+                </b>
+                Обратитесь к нам сегодня, и мы с радостью поможем вам создать
+                портреты, которые вы будете любить и ценить навсегда!
+              </ThirdText>
+              <ButtonContainer>
+                <Box>
+                  <FirstButton>Смотреть все работы</FirstButton>
+                </Box>
+                <Box>
+                  <SecondButton>{t("mainPage.button")}</SecondButton>
+                </Box>
+
+                {/* <div className="main-button">
+                  <button
+                    className="front-page1__button"
+                    onClick={() => setModalActive(true)}
+                  >
+                    {t("mainPage.button")}
+                  </button>
+                </div> */}
+              </ButtonContainer>
             </OilContentDescription>
           </OilContent2>
         </OilContent>
