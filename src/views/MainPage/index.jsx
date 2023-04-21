@@ -13,8 +13,8 @@ const MainPage = () => {
     <MainPageWrapper>
       <FrontPage1 />
       <AdvantagesPage />
-      <StylesPage />
       <OilPortrait />
+      <StylesPage />
       <ProcessPage />
       <Footer />
     </MainPageWrapper>
