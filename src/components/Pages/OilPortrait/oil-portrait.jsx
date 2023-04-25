@@ -16,14 +16,20 @@ import {
   FirstButton,
   SecondButton,
 } from "./styled";
+
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import OilTitle from "./OilTitle/OilTitle";
+import Modal from "../../../components/Modal/modal";
 
 const OilPortrait = () => {
   const { t } = useTranslation();
+  const [modalActive, setModalActive] = useState(false);
   return (
     <OilPortraitWrapper>
       <OilPortraitGeneral>
-        <OilPortraitTitle>Классический портрет маслом</OilPortraitTitle>
+        <OilTitle />
+        {/* <OilPortraitTitle>Классический портрет маслом</OilPortraitTitle> */}
         <OilContent>
           <OilContent2>
             <OilContentPhoto>
@@ -64,17 +70,41 @@ const OilPortrait = () => {
                   <FirstButton>Смотреть все работы</FirstButton>
                 </Box>
                 <Box>
-                  <SecondButton>{t("mainPage.button")}</SecondButton>
+                  <SecondButton onClick={() => setModalActive(true)}>
+                    {t("mainPage.button")}
+                  </SecondButton>
                 </Box>
 
-                {/* <div className="main-button">
-                  <button
-                    className="front-page1__button"
-                    onClick={() => setModalActive(true)}
-                  >
-                    {t("mainPage.button")}
-                  </button>
-                </div> */}
+                <Modal active={modalActive} setActive={setModalActive}>
+                  <div className="modal__title">
+                    Выберите мессенджер, в котором вам будет удобно вести диалог
+                  </div>
+                  <div className="modal__messenger">
+                    <div className="modal-messenger__content">
+                      <a
+                        href="https://api.whatsapp.com/send/?phone=79933600710&text&type=phone_number&app_absent=0"
+                        target="blank"
+                      >
+                        <img
+                          className="modal-icons"
+                          src="/images/modal-icons/whatsapp.svg"
+                        />
+                      </a>
+                      <a href="https://t.me/kot_vangog" target="blank">
+                        <img
+                          className="modal-icons"
+                          src="/images/modal-icons/telegram.svg"
+                        />
+                      </a>
+                      <a href="https://vk.com/lubov0011" target="blank">
+                        <img
+                          className="modal-icons"
+                          src="/images/modal-icons/vk.svg"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </Modal>
               </ButtonContainer>
             </OilContentDescription>
           </OilContent2>

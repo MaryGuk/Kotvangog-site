@@ -12,7 +12,7 @@ const AdvantagesTitle = () => {
         <div className="advantages-page__title-background">
           <img
             className="advantages-page__title-background-image"
-            src="/images/background/Фон заголовок2.png"
+            src="/images/background/Фон заголовок2 — копия.png"
           />
         </div>
       </div>
