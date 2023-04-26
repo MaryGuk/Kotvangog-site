@@ -16,14 +16,6 @@ export const OilPortraitGeneral = styled(Box)`
   padding-top: 20px;
 `;
 
-// export const OilPortraitTitle = styled(Box)`
-//   font-size: 24px;
-//   font-family: "Palatino Linotype";
-//   font-weight: 500;
-//   text-align: center;
-//   margin-bottom: 30px;
-// `;
-
 export const OilContent = styled(Box)`
   display: flex;
   justify-content: center;
@@ -34,6 +26,14 @@ export const OilContent2 = styled(Box)`
   display: flex;
   justify-content: center;
   flex-direction: row;
+
+  @media (max-width: 650px) {
+    display: "flex";
+    justify-content: center;
+    flex-direction: column;
+    align-items: end;
+    margin: 10px;
+  }
 `;
 
 export const OilContentPhoto = styled(Box)`
@@ -55,10 +55,10 @@ export const Ellipse = styled(Box)`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -60%) rotate(5deg);
-  width: 550px; /* Задайте свои размеры */
-  height: 170px; /* Задайте свои размеры */
-  background-color: rgba(190, 190, 190, 0.5); /* Задайте свою прозрачность */
-  border-radius: 50% / 70%; /* Задайте свои радиусы */
+  width: 550px;
+  height: 170px;
+  background-color: rgba(190, 190, 190, 0.5);
+  border-radius: 50% / 70%;
 `;
 
 export const FirstText = styled(Box)`

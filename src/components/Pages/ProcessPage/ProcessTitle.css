@@ -4,7 +4,7 @@
   justify-content: center;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 650px) {
   .process-page__title-wrapper {
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@
 
 .process-page__title-background {
   position: relative;
-  bottom: 37px;
+  bottom: 33px;
   right: 0;
   justify-content: flex-end;
   display: flex;
