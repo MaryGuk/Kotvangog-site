@@ -1,67 +1,52 @@
 import { Box, styled } from "@mui/material";
 
-export const OilPortraitWrapper = styled(Box)`
+export const LikenessPortraitWrapper = styled(Box)`
   background-image: url("/images/background/back-gray.png");
   display: flex;
   justify-content: center;
   width: 100%;
 `;
 
-export const OilPortraitGeneral = styled(Box)`
+export const LikenessPortraitGeneral = styled(Box)`
   background-image: url("/images/background/Слой3.png");
   background-repeat: no-repeat;
   background-size: cover;
-
   width: 100%;
   padding-top: 20px;
 `;
 
-// export const OilPortraitTitle = styled(Box)`
-//   font-size: 24px;
-//   font-family: "Palatino Linotype";
-//   font-weight: 500;
-//   text-align: center;
-//   margin-bottom: 30px;
-// `;
-
-export const OilContent = styled(Box)`
+export const LikenessContent = styled(Box)`
   display: flex;
   justify-content: center;
 `;
-
-export const OilContent2 = styled(Box)`
+export const LikenessContent2 = styled(Box)`
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: row;
 `;
 
-export const OilContentPhoto = styled(Box)`
-  margin-top: -30px;
-`;
-
-export const OilContentDescription = styled(Box)`
+export const LikenessContentDescription = styled(Box)`
   margin-top: 30px;
 `;
-
 export const EllipseСontainer = styled(Box)`
   position: relative;
   display: flex;
   justify-content: center;
 `;
-export const Ellipse = styled(Box)`
+export const EllipseLikeness = styled(Box)`
   position: absolute;
   z-index: 1;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -60%) rotate(5deg);
+  transform: translate(-50%, -65%) rotate(175deg);
   width: 550px; /* Задайте свои размеры */
   height: 170px; /* Задайте свои размеры */
   background-color: rgba(190, 190, 190, 0.5); /* Задайте свою прозрачность */
   border-radius: 50% / 70%; /* Задайте свои радиусы */
 `;
 
-export const FirstText = styled(Box)`
+export const FirstTextLikeness = styled(Box)`
   font-size: 15px;
   font-family: "Nunito";
   font-weight: 700;
@@ -71,30 +56,44 @@ export const FirstText = styled(Box)`
   position: relative;
   z-index: 1;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 `;
-export const SecondText = styled(Box)`
-  font-size: 14px;
+export const SecondTextLikeness = styled(Box)`
+  font-size: 15px;
+  font-family: "Nunito";
+  font-weight: 500;
+  flex-wrap: wrap;
+  max-width: 350px;
+  text-align: left;
+  margin-bottom: 20px;
+`;
+export const ThirdTextLikeness = styled(Box)`
+  font-size: 15px;
   font-family: "Nunito";
   font-weight: 400;
   flex-wrap: wrap;
-  max-width: 550px;
-  text-align: right;
-  margin-bottom: 30px;
+  max-width: 400px;
+  text-align: left;
+  margin-bottom: 20px;
 `;
-export const ThirdText = styled(Box)`
-  font-size: 14px;
+export const FourthTextLikeness = styled(Box)`
+  font-size: 15px;
   font-family: "Nunito";
   font-weight: 400;
   flex-wrap: wrap;
-  max-width: 550px;
-  text-align: right;
+  max-width: 450px;
+  text-align: left;
   margin-bottom: 30px;
 `;
+export const LikenessContentPhoto = styled(Box)`
+  margin-top: -30px;
+`;
+
 export const ButtonContainer = styled(Box)`
   display: flex;
+  margin-bottom: 20px;
 `;
-export const FirstButton = styled(Box)`
+export const FirstButtonLikeness = styled(Box)`
   font-size: 16px;
   font-family: "Trebuchetms";
   font-weight: 500;
@@ -107,7 +106,7 @@ export const FirstButton = styled(Box)`
   box-shadow: 3px 3px 0 1px #9e9e9e;
   margin: 0 20px;
 `;
-export const SecondButton = styled(Box)`
+export const SecondButtonLikeness = styled(Box)`
   font-size: 16px;
   font-family: "Trebuchetms";
   font-weight: 500;

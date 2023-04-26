@@ -29,15 +29,14 @@ const OilPortrait = () => {
     <OilPortraitWrapper>
       <OilPortraitGeneral>
         <OilTitle />
-        {/* <OilPortraitTitle>Классический портрет маслом</OilPortraitTitle> */}
         <OilContent>
           <OilContent2>
             <OilContentPhoto>
-              <img src="/images/oil-classic.png" width="300px" height="500px" />
+              <img src="/images/oil-classic.png" width="350px" height="550px" />
             </OilContentPhoto>
             <OilContentDescription>
               <EllipseСontainer>
-                <Ellipse> </Ellipse>
+                <Ellipse />
                 <FirstText>
                   Вы хотите сохранить воспоминания о важных моментах жизни в
                   виде уникальных произведений искусства? Мы поможем вам с этим!
@@ -65,6 +64,7 @@ const OilPortrait = () => {
                 Обратитесь к нам сегодня, и мы с радостью поможем вам создать
                 портреты, которые вы будете любить и ценить навсегда!
               </ThirdText>
+
               <ButtonContainer>
                 <Box>
                   <FirstButton>Смотреть все работы</FirstButton>
