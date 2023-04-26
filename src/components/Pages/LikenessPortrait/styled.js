@@ -97,7 +97,8 @@ export const FirstButtonLikeness = styled(Box)`
   font-size: 16px;
   font-family: "Trebuchetms";
   font-weight: 500;
-  background-color: #bdbdbd;
+
+  background-color: #36883d;
   color: white;
   border-radius: 50px;
   border: none;
@@ -110,7 +111,7 @@ export const SecondButtonLikeness = styled(Box)`
   font-size: 16px;
   font-family: "Trebuchetms";
   font-weight: 500;
-  background-color: #36883d;
+  background-color: #bdbdbd;
   color: white;
   border-radius: 50px;
   border: none;

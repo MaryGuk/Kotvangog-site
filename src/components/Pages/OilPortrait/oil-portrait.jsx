@@ -32,7 +32,7 @@ const OilPortrait = () => {
         <OilContent>
           <OilContent2>
             <OilContentPhoto>
-              <img src="/images/oil-classic.png" width="350px" height="550px" />
+              <img src="/images/oil-classic.png" width="380px" height="580px" />
             </OilContentPhoto>
             <OilContentDescription>
               <EllipseСontainer>

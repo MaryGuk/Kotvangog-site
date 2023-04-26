@@ -41,7 +41,7 @@ export const OilContentPhoto = styled(Box)`
 `;
 
 export const OilContentDescription = styled(Box)`
-  margin-top: 30px;
+  margin-top: 50px;
 `;
 
 export const EllipseСontainer = styled(Box)`
