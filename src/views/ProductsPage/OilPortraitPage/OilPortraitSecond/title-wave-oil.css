@@ -1,0 +1,31 @@
+.wave-text__title-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+
+.wave-text__title-background {
+  position: absolute;
+  justify-content: flex-start;
+  display: flex;
+  opacity: 0.8;
+  margin-top: -20px;
+  margin-left: -50px;
+}
+
+.wave-text__title-background-image {
+  width: 805px;
+  height: 87px;
+}
+
+.wave-text__title {
+  position: relative;
+  font-size: 18px;
+  font-family: "Nunito";
+  font-weight: 400;
+  flex-wrap: wrap;
+  max-width: 570px;
+  text-align: right;
+}

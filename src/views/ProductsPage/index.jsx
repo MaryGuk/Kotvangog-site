@@ -324,7 +324,7 @@ const ProductsPage = () => {
           imageId: "pencil-art",
         },
         {
-          portraitTitle: t("productsPage.title_infinity"),
+          portraitTitle: t("productsPage.title_infiniti"),
           portraitPrice: i18n.language === "en" ? "From 20$" : "От 2900 руб.",
           portraitDescription: t("productsPage.portraitDescription.part7"),
           srcAfter:

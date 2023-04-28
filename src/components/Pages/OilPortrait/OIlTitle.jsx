@@ -12,7 +12,7 @@ const OilTitle = () => {
       <div className="oil__title-first">
         <OilPortraitTitle>
           <OilTitleBackground>
-            <OilTitleBackgroundImage src="/images/background/Фон заголовок2 — копия.png"></OilTitleBackgroundImage>
+            <OilTitleBackgroundImage src="/images/background/Слой112"></OilTitleBackgroundImage>
           </OilTitleBackground>
         </OilPortraitTitle>
       </div>

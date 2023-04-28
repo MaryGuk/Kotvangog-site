@@ -8,6 +8,7 @@ import Navbar from "./components/Pages/FrontPage1/Navbar/navbar.jsx";
 import MainPage from "./views/MainPage";
 import ReviewsPage from "./views/ReviewsPage";
 import ProductsPage from "./views/ProductsPage";
+import OilPortraitPage from "./views/ProductsPage/OilPortraitPage";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Routes>
             <Route path="/home" element={<MainPage />} />
             <Route path="/products" element={<ProductsPage />} />
+            <Route path="/oil-portrait" element={<OilPortraitPage />} />
             <Route path="/reviews" element={<ReviewsPage />} />
             <Route path="*" element={<Navigate to="/home" />} />
           </Routes>

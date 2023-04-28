@@ -4,13 +4,13 @@ const OilTitle = () => {
   return (
     <div className="oil__title-wrapper">
       <div className="oil__title-first">
-        <div className="oil__title">Классический портрет маслом</div>
         <div className="oil-page__title-background">
           <img
             className="oil__title-background-image"
-            src="/images/background/Фон заголовок2 — копия.png"
+            src="/images/background/Фон заголовок2.png"
           />
         </div>
+        <div className="oil__title">Классический портрет маслом</div>
       </div>
     </div>
   );
