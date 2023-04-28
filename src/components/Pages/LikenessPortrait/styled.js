@@ -13,6 +13,7 @@ export const LikenessPortraitGeneral = styled(Box)`
   background-size: cover;
   width: 100%;
   padding-top: 20px;
+  margin: 10px;
 `;
 
 export const LikenessContent = styled(Box)`

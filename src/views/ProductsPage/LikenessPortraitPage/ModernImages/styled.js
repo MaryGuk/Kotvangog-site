@@ -31,6 +31,14 @@ export const HistoryImagesCollageItems = styled(Box)`
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  @media (max-width: 950px) {
+    display: "flex";
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
 `;
 export const HistoryImagesCollageImage = styled(Box)``;
 
