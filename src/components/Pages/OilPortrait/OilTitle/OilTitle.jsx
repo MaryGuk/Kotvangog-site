@@ -7,7 +7,7 @@ const OilTitle = () => {
         <div className="oil-page__title-background">
           <img
             className="oil__title-background-image"
-            src="/images/background/Фон заголовок2.png"
+            src="/images/background/green wive.png"
           />
         </div>
         <div className="oil__title">Классический портрет маслом</div>

@@ -42,7 +42,7 @@ export const OilContentPhoto = styled(Box)`
 `;
 
 export const OilContentDescription = styled(Box)`
-  margin-top: 50px;
+  margin-top: 80px;
 `;
 
 export const EllipseСontainer = styled(Box)`
@@ -82,6 +82,7 @@ export const SecondText = styled(Box)`
   max-width: 550px;
   text-align: right;
   margin-bottom: 30px;
+  margin-top: 20px;
 `;
 export const ThirdText = styled(Box)`
   font-size: 14px;
