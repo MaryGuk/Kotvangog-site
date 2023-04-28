@@ -1,27 +1,30 @@
-.likeness__title-wrapper {
+.modern-text__title-wrapper {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  margin: 5px;
 }
 
-.likeness-page__title-background {
+.modern-text__title-background {
   position: absolute;
   justify-content: center;
   display: flex;
-  margin-left: -30px;
+  margin-left: -100px;
+  margin-top: 40px;
 }
 
-.likeness__title-background-image {
+.modern-text__title-background-image {
   width: 400px;
-  height: 47px;
+  height: 60px;
 }
 
-.likeness__title {
+.modern-text__title {
   position: relative;
-  font-size: 24px;
+  font-size: 23px;
   font-family: "Palatino Linotype";
   font-weight: 500;
   text-align: center;
   color: white;
+  margin-top: 50px;
 }

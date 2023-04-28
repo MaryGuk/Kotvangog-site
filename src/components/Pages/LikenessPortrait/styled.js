@@ -35,7 +35,7 @@ export const LikenessContent2 = styled(Box)`
 `;
 
 export const LikenessContentDescription = styled(Box)`
-  margin-top: 30px;
+  margin-top: 80px;
 `;
 export const EllipseСontainer = styled(Box)`
   position: relative;
@@ -94,7 +94,7 @@ export const FourthTextLikeness = styled(Box)`
   margin-bottom: 30px;
 `;
 export const LikenessContentPhoto = styled(Box)`
-  margin-top: -30px;
+  margin-top: 40px;
 `;
 
 export const ButtonContainer = styled(Box)`

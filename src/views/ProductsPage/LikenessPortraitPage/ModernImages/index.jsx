@@ -1,0 +1,112 @@
+import {
+  ModernImagesWrapper,
+  ModernImagesGeneral,
+  ModernImagesContent,
+  ModernImagesDescription,
+  ModernImagesGallery,
+  ModernImagesItems,
+} from "./styled";
+import TitleModern from "./title-modern";
+
+const ModernImages = () => {
+  return (
+    <ModernImagesWrapper>
+      <ModernImagesGeneral>
+        <TitleModern />
+        <ModernImagesContent>
+          <ModernImagesDescription>
+            У нас более <b>300</b> современных образов
+          </ModernImagesDescription>
+        </ModernImagesContent>
+        <ModernImagesGallery>
+          <ModernImagesItems>
+            <img
+              width="190px"
+              height="245px"
+              src="/images/ModernImages/1modern.png"
+            />
+          </ModernImagesItems>
+          <ModernImagesItems>
+            <img
+              width="190px"
+              height="245px"
+              src="/images/ModernImages/2modern.png"
+            />
+          </ModernImagesItems>
+          <ModernImagesItems>
+            <img
+              width="190px"
+              height="245px"
+              src="/images/ModernImages/3modern.png"
+            />
+          </ModernImagesItems>
+          <ModernImagesItems>
+            <img
+              width="190px"
+              height="245px"
+              src="/images/ModernImages/4modern.png"
+            />
+          </ModernImagesItems>
+          <ModernImagesItems>
+            <img
+              width="190px"
+              height="245px"
+              src="/images/ModernImages/5modern.png"
+            />
+          </ModernImagesItems>
+          <ModernImagesItems>
+            <img
+              width="190px"
+              height="245px"
+              src="/images/ModernImages/6modern.png"
+            />
+          </ModernImagesItems>
+          <ModernImagesItems>
+            <img
+              width="190px"
+              height="245px"
+              src="/images/ModernImages/7modern.png"
+            />
+          </ModernImagesItems>
+          <ModernImagesItems>
+            <img
+              width="190px"
+              height="245px"
+              src="/images/ModernImages/8modern.png"
+            />
+          </ModernImagesItems>
+          <ModernImagesItems>
+            <img
+              width="190px"
+              height="245px"
+              src="/images/ModernImages/9modern.png"
+            />
+          </ModernImagesItems>
+          <ModernImagesItems>
+            <img
+              width="190px"
+              height="245px"
+              src="/images/ModernImages/10modern.png"
+            />
+          </ModernImagesItems>
+          <ModernImagesItems>
+            <img
+              width="190px"
+              height="245px"
+              src="/images/ModernImages/11modern.png"
+            />
+          </ModernImagesItems>
+          <ModernImagesItems>
+            <img
+              width="190px"
+              height="245px"
+              src="/images/ModernImages/12modern.png"
+            />
+          </ModernImagesItems>
+        </ModernImagesGallery>
+      </ModernImagesGeneral>
+    </ModernImagesWrapper>
+  );
+};
+
+export default ModernImages;

@@ -18,14 +18,8 @@ export const OilPortraitExamplesContent = styled(Box)`
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-column-gap: 10px;
   grid-row-gap: 15px;
-  /* max-width: min-content; */
   width: 75%;
   margin: 40px auto;
-
-  @media (max-width: 459px) {
-    display: flex;
-    flex-direction: column;
-  }
 `;
 
 export const OilPortraitExamplesGallery = styled(Box)``;

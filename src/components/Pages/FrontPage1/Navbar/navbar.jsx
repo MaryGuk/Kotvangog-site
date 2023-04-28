@@ -30,7 +30,10 @@ const Navbar = () => {
                 menuItemPath: "/oil-portrait",
               },
               { menuItemTitle: "Арт стили", menuItemPath: "/home" },
-              { menuItemTitle: "Портрет в образе", menuItemPath: "/home" },
+              {
+                menuItemTitle: "Портрет в образе",
+                menuItemPath: "/likeness-portrait",
+              },
             ],
           },
           { path: "/reviews", title: t("mainPage.navItem3") },
