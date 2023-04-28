@@ -1,6 +1,6 @@
 import { Box, styled } from "@mui/material";
 
-export const ModernImagesGallery = styled(Box)`
+export const HistoryImagesGallery = styled(Box)`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   grid-column-gap: 1px;
@@ -9,4 +9,4 @@ export const ModernImagesGallery = styled(Box)`
   margin: 40px auto;
 `;
 
-export const ModernImagesItems = styled(Box)``;
+export const HistoryImagesItems = styled(Box)``;

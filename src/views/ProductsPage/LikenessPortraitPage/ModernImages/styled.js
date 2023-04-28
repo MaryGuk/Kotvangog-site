@@ -22,3 +22,32 @@ export const ModernImagesDescription = styled(Box)`
   text-align: center;
   color: #555555;
 `;
+
+export const HistoryImagesCollage = styled(Box)`
+  display: flex;
+  justify-content: space-evenly;
+`;
+export const HistoryImagesCollageItems = styled(Box)`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
+export const HistoryImagesCollageImage = styled(Box)``;
+
+export const HistoryImagesCollageText = styled(Box)`
+  margin-top: -40px;
+`;
+export const HistoryImagesCollageText1 = styled(Box)`
+  font-size: 19px;
+  font-family: "Palatino Linotype";
+  font-weight: 700;
+  color: #555555;
+`;
+export const HistoryImagesCollageText2 = styled(Box)`
+  font-size: 18px;
+  font-family: "Palatino Linotype";
+  font-weight: 400;
+  color: #555555;
+  max-width: 310px;
+  text-align: center;
+`;
