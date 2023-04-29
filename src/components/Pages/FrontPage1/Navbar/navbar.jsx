@@ -22,14 +22,14 @@ const Navbar = () => {
         {[
           { path: "/home", title: t("mainPage.navItem1") },
           {
-            path: "/products",
+            path: "/home",
             title: t("mainPage.navItem2"),
             menuItems: [
               {
                 menuItemTitle: "Портрет маслом",
                 menuItemPath: "/oil-portrait",
               },
-              { menuItemTitle: "Арт стили", menuItemPath: "/home" },
+              { menuItemTitle: "Арт стили", menuItemPath: "/products" },
               {
                 menuItemTitle: "Портрет в образе",
                 menuItemPath: "/likeness-portrait",

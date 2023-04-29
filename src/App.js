@@ -26,6 +26,7 @@ const App = () => {
               path="/likeness-portrait"
               element={<LikenessPortraitPage />}
             />
+            <Route path="/art-styles" element={<ProductsPage />} />
             <Route path="/reviews" element={<ReviewsPage />} />
             <Route path="*" element={<Navigate to="/home" />} />
           </Routes>
