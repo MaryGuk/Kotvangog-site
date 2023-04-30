@@ -12,7 +12,7 @@ import { useTranslation } from "react-i18next";
 
 const TitleWrapper = styled(Box)`
   background-repeat: no-repeat;
-  background-image: url("/images/background/singleTitleBackground.png");
+  background-image: url("");
   background-size: cover;
   padding: 0 10px;
   font-size: 22px;

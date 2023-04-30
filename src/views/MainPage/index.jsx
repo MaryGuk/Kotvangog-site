@@ -8,11 +8,13 @@ import ProcessPage from "../../components/Pages/ProcessPage/process-page";
 import { MainPageWrapper } from "./styled";
 import OilPortrait from "../../components/Pages/OilPortrait/oil-portrait";
 import LikenessPortrait from "../../components/Pages/LikenessPortrait/likeness-portrait";
+import FirstPage from "../../components/Pages/FrontPage1/FirstPage";
 
 const MainPage = () => {
   return (
     <MainPageWrapper>
       <FrontPage1 />
+      <FirstPage />
       <AdvantagesPage />
       <OilPortrait />
       <StylesPage />

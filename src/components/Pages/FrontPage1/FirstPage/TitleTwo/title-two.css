@@ -1,0 +1,28 @@
+.title-two__title-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.title-two-page__title-background {
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+.title-two__title-background-image {
+  width: 310px;
+  height: 40px;
+}
+
+.title-two__title {
+  position: relative;
+  font-size: 32px;
+  font-family: "Palatino Linotype";
+  font-weight: 500;
+  margin-top: -18px;
+  display: flex;
+  flex-wrap: nowrap;
+}

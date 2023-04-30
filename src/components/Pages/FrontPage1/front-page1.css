@@ -10,16 +10,23 @@
 
 @font-face {
   font-family: "Trebuchetms";
-  src: url('/public/fonts/trebuc.ttf') format('truetype');
+  src: url("/public/fonts/trebuc.ttf") format("truetype");
   src: url(/public/fonts/Trebuchetms.woff2) format("woff");
   src: url(/public/fonts/AnyConv.com__Trebuchet\ MS\ Полужирный.woff2)
     format("woff");
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Lucidaconsole";
+  src: url("/public/fonts/Lucidaconsole.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 .front-page1 {
-  background-image: url("/public/images/background/Слой 1.png");
+  /* background-image: url("/public/images/background/Слой 1.png"); */
+  background-color: rgb(158, 145, 127);
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 100%;
