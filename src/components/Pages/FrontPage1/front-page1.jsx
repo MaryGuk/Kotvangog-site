@@ -70,6 +70,8 @@ const FrontPage1 = () => {
                 {t("mainPage.message")}
               </div>
             </div>
+
+            
             <div className="main-button">
               <button
                 className="front-page1__button"

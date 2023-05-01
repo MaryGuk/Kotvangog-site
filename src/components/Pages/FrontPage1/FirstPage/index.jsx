@@ -17,6 +17,7 @@ import {
 } from "./styled";
 import TitleOne from "./TitleOne/title-one";
 import TitleTwo from "./TitleTwo/title-two";
+import MainButton from "../../../Button/MainButton";
 
 const FirstPage = () => {
   return (
@@ -78,6 +79,8 @@ const FirstPage = () => {
               Нажмите на кнопку! Свяжемся с Вами в течение 5 минут
             </FirstPageInfoMessageText>
           </FirstPageInfoMessage>
+
+          <MainButton />
         </FirstPageInfo>
 
         <FirstPage1ImageWrapper>

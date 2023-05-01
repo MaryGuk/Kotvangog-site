@@ -2,7 +2,6 @@ import { Box } from "@mui/material";
 import {
   OilPortraitWrapper,
   OilPortraitGeneral,
-  OilPortraitTitle,
   OilContent,
   OilContentPhoto,
   OilContentDescription,
@@ -15,6 +14,10 @@ import {
   ButtonContainer,
   FirstButton,
   SecondButton,
+  ModalMessenger,
+  ModalMessengerContent,
+  ModalIcons,
+  ModalTitle,
 } from "./styled";
 
 import { useState } from "react";
@@ -76,34 +79,43 @@ const OilPortrait = () => {
                 </Box>
 
                 <Modal active={modalActive} setActive={setModalActive}>
-                  <div className="modal__title">
+                  <ModalTitle>
                     Выберите мессенджер, в котором вам будет удобно вести диалог
-                  </div>
-                  <div className="modal__messenger">
-                    <div className="modal-messenger__content">
+                  </ModalTitle>
+                  <ModalMessenger>
+                    <ModalMessengerContent>
                       <a
                         href="https://api.whatsapp.com/send/?phone=79933600710&text&type=phone_number&app_absent=0"
                         target="blank"
                       >
-                        <img
-                          className="modal-icons"
-                          src="/images/modal-icons/whatsapp.svg"
-                        />
+                        <ModalIcons>
+                          <img
+                            width="40px"
+                            height="40px"
+                            src="/images/modal-icons/whatsapp.svg"
+                          />
+                        </ModalIcons>
                       </a>
                       <a href="https://t.me/kot_vangog" target="blank">
-                        <img
-                          className="modal-icons"
-                          src="/images/modal-icons/telegram.svg"
-                        />
+                        <ModalIcons>
+                          <img
+                            width="40px"
+                            height="40px"
+                            src="/images/modal-icons/telegram.svg"
+                          />
+                        </ModalIcons>
                       </a>
                       <a href="https://vk.com/lubov0011" target="blank">
-                        <img
-                          className="modal-icons"
-                          src="/images/modal-icons/vk.svg"
-                        />
+                        <ModalIcons>
+                          <img
+                            width="40px"
+                            height="40px"
+                            src="/images/modal-icons/vk.svg"
+                          />
+                        </ModalIcons>
                       </a>
-                    </div>
-                  </div>
+                    </ModalMessengerContent>
+                  </ModalMessenger>
                 </Modal>
               </ButtonContainer>
             </OilContentDescription>

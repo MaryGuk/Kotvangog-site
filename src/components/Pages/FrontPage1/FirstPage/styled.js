@@ -5,6 +5,7 @@ export const FirstPageWrapper = styled(Box)`
   background-position: center;
   display: flex;
   justify-content: center;
+  height: auto;
 `;
 export const FirstPageGeneral = styled(Box)`
   width: 100%;
@@ -67,7 +68,7 @@ export const FirstPageInfoItemsThree = styled(Box)`
 export const FirstPageInfoMessage = styled(Box)`
   display: flex;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 `;
 export const FirstPageInfoMessageText = styled(Box)`
   font-family: "Nunito", sans-serif;

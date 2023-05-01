@@ -13,7 +13,7 @@ import FirstPage from "../../components/Pages/FrontPage1/FirstPage";
 const MainPage = () => {
   return (
     <MainPageWrapper>
-      <FrontPage1 />
+      {/* <FrontPage1 /> */}
       <FirstPage />
       <AdvantagesPage />
       <OilPortrait />
