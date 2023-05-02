@@ -2,14 +2,21 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: start;
 }
 
 .title-two-page__title-background {
   position: absolute;
   justify-content: center;
   display: flex;
-  margin-left: -10px;
+  margin-left: -50px;
   margin-top: -10px;
+}
+
+@media (max-width: 1082px) {
+  .title-two-page__title-background {
+    margin-left: -20px;
+  }
 }
 
 .title-two__title-background-image {
@@ -23,6 +30,18 @@
   font-family: "Palatino Linotype";
   font-weight: 500;
   margin-top: -18px;
+  margin-left: -30px;
   display: flex;
   flex-wrap: nowrap;
+}
+@media (max-width: 1082px) {
+  .title-two__title {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .title-two__title {
+    font-size: 26px;
+  }
 }

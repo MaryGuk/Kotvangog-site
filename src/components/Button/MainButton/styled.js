@@ -2,10 +2,18 @@ import { Box, styled } from "@mui/material";
 
 export const MainButtonWrapper = styled(Box)`
   margin-bottom: 120px;
+
+  /* @media (max-width: 767px) {
+    margin-bottom: 260px;
+  } */
 `;
 
 export const MainButtonContainer = styled(Box)`
   display: flex;
+
+  /* @media (max-width: 767px) {
+    margin-bottom: 300px;
+  } */
 `;
 
 export const MainButtonItem = styled(Box)`
@@ -13,13 +21,23 @@ export const MainButtonItem = styled(Box)`
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   letter-spacing: 1.5px;
-  background-color: #36883d;
+  background-color: #38893f;
   color: white;
   border-radius: 50px;
   border: none;
   padding: 15px;
   max-width: 300px;
   box-shadow: 3px 3px 0 1px #9e9e9e;
+  margin-left: -50px;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    margin-left: -80px;
+  }
+
+  @media (max-width: 1082px) {
+    margin-left: 25px;
+  }
 `;
 
 export const ModalTitle = styled(Box)`

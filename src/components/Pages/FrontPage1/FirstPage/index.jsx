@@ -56,7 +56,7 @@ const FirstPage = () => {
                 />
               </FirstPageInfoItemsIcon>
               <FirstPageInfoItemsText>
-                Качественные и безопасные материалы
+                Быстрое изготовление
               </FirstPageInfoItemsText>
             </FirstPageInfoItemsTwo>
 
@@ -69,7 +69,7 @@ const FirstPage = () => {
                 />
               </FirstPageInfoItemsIcon>
               <FirstPageInfoItemsText>
-                Быстрое изготовление
+                Качественные и безопасные материалы
               </FirstPageInfoItemsText>
             </FirstPageInfoItemsThree>
           </FirstPageInfoItems>

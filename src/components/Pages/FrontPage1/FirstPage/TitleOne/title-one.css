@@ -9,7 +9,13 @@
   position: absolute;
   justify-content: center;
   display: flex;
-  margin-left: -20px;
+  margin-left: -50px;
+}
+
+@media (max-width: 1082px) {
+  .title-one-page__title-background {
+    margin-left: -20px;
+  }
 }
 
 .title-one__title-background-image {
@@ -23,6 +29,18 @@
   font-family: "Palatino Linotype";
   font-weight: 500;
   margin-top: 8px;
+  margin-left: -30px;
   display: flex;
   flex-wrap: nowrap;
+}
+
+@media (max-width: 767px) {
+  .title-one__title {
+    font-size: 26px;
+  }
+}
+@media (max-width: 1082px) {
+  .title-one__title {
+    margin-left: 20px;
+  }
 }
