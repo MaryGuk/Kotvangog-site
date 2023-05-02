@@ -10,7 +10,7 @@
   position: absolute;
   justify-content: center;
   display: flex;
-  margin-left: 105px;
+  margin-left: -25px;
 }
 
 @media (max-width: 410px) {
@@ -30,8 +30,8 @@
 }
 
 .process-page__title-background-image {
-  width: 500px;
-  height: 42px;
+  width: 600px;
+  height: 45px;
 }
 
 @media (max-width: 635px) {
