@@ -6,7 +6,7 @@ const TitleTwo = () => {
         <div className="title-two-page__title-background">
           <img
             className="title-two__title-background-image"
-            src="/images/background/green wive — копия.png"
+            src="/images/background/green wave — копия.png"
           />
         </div>
         <div className="title-two__title">маслом на заказ</div>

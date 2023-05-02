@@ -10,10 +10,7 @@ export const MainButtonWrapper = styled(Box)`
 
 export const MainButtonContainer = styled(Box)`
   display: flex;
-
-  /* @media (max-width: 767px) {
-    margin-bottom: 300px;
-  } */
+  cursor: pointer;
 `;
 
 export const MainButtonItem = styled(Box)`

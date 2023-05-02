@@ -1,8 +1,8 @@
 import "./advantages-page.css";
 import AdvantageItem from "./AdvantageItem.jsx";
-import AdvantagesTitle from "./AdvantagesTitle";
 import { MainPageItemWrapper } from "../../../views/MainPage/styled";
 import { useTranslation } from "react-i18next";
+import AdvantagesTitleWave from "./AdvantagesTitle/advantages-title";
 
 const AdvantagesPage = () => {
   const { t } = useTranslation();
@@ -11,7 +11,7 @@ const AdvantagesPage = () => {
     <div className="advantages-page">
       <MainPageItemWrapper>
         <div className="advantages-page__general">
-          <AdvantagesTitle />
+          <AdvantagesTitleWave />
 
           <div className="advantages-container">
             {[

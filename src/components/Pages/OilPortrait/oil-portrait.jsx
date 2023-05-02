@@ -24,12 +24,14 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import OilTitle from "./OilTitle/OilTitle";
 import Modal from "../../../components/Modal/modal";
+import { Link } from "react-router-dom";
+import "./oil-portarait.css";
 
 const OilPortrait = () => {
   const { t } = useTranslation();
   const [modalActive, setModalActive] = useState(false);
   return (
-    <OilPortraitWrapper>
+    <OilPortraitWrapper id="/oil-portrait">
       <OilPortraitGeneral>
         <OilTitle />
         <OilContent>
@@ -70,7 +72,9 @@ const OilPortrait = () => {
 
               <ButtonContainer>
                 <Box>
-                  <FirstButton>Смотреть все работы</FirstButton>
+                  <Link to="/oil-portrait" className="link-oil">
+                    <FirstButton>Смотреть все работы</FirstButton>
+                  </Link>
                 </Box>
                 <Box>
                   <SecondButton onClick={() => setModalActive(true)}>

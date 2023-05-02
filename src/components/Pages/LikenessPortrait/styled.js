@@ -115,6 +115,7 @@ export const FirstButtonLikeness = styled(Box)`
   max-width: 300px;
   box-shadow: 3px 3px 0 1px #9e9e9e;
   margin: 0 20px;
+  cursor: pointer;
 `;
 export const SecondButtonLikeness = styled(Box)`
   font-size: 16px;

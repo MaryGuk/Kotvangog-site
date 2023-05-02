@@ -7,7 +7,7 @@ const LikenessTitle = () => {
         <div className="likeness-page__title-background">
           <img
             className="likeness__title-background-image"
-            src="/images/background/green wive.png"
+            src="/images/background/green wave.png"
           />
         </div>
         <div className="likeness__title">Портрет в образе</div>

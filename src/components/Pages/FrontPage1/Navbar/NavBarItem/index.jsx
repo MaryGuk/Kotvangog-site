@@ -10,7 +10,7 @@ import Stack from "@mui/material/Stack";
 import { NavLink } from "react-router-dom";
 
 const NavBarItem = ({ title, path, menuItems }) => {
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
 
   const handleListKeyDown = (event) => {

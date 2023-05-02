@@ -120,6 +120,7 @@ export const SecondButton = styled(Box)`
   padding: 10px;
   max-width: 300px;
   box-shadow: 3px 3px 0 1px #9e9e9e;
+  cursor: pointer;
 `;
 
 export const ModalTitle = styled(Box)`

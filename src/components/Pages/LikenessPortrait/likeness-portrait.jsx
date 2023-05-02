@@ -25,6 +25,9 @@ import {
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Modal from "../../../components/Modal/modal";
+import { Link } from "react-router-dom";
+
+import "./likeness-portrait.css";
 
 const LikenessPortrait = () => {
   const { t } = useTranslation();
@@ -71,9 +74,11 @@ const LikenessPortrait = () => {
                 </Box>
 
                 <Box>
-                  <SecondButtonLikeness>
-                    Смотреть все работы
-                  </SecondButtonLikeness>
+                  <Link to="/likeness-portrait" className="link-likeness">
+                    <SecondButtonLikeness>
+                      Смотреть все работы
+                    </SecondButtonLikeness>
+                  </Link>
                 </Box>
 
                 <Modal active={modalActive} setActive={setModalActive}>
