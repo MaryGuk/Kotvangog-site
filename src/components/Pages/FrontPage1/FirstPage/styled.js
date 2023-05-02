@@ -88,6 +88,7 @@ export const FirstPageInfoItemsText = styled(Box)`
     border-radius: 30px;
     padding: 5px;
     opacity: 0.75;
+    overflow: hidden;
   }
 `;
 

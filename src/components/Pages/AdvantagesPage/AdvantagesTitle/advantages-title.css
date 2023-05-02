@@ -12,6 +12,12 @@
   margin-left: -20px;
 }
 
+@media (max-width: 410px) {
+  .advantages-page__title-background {
+    margin-left: 20px;
+  }
+}
+
 .advantages__title-background-image {
   width: 500px;
   height: 42px;
@@ -20,6 +26,12 @@
 @media (max-width: 515px) {
   .advantages__title-background-image {
     width: 400px;
+    height: 40px;
+  }
+}
+@media (max-width: 410px) {
+  .advantages__title-background-image {
+    width: 300px;
     height: 40px;
   }
 }

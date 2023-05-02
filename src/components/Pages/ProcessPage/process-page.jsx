@@ -1,9 +1,9 @@
 import "./process-page.css";
 import ProcessItem from "./ProcessItem";
-import ProcessTitle from "./ProcessTitle";
 import { MainPageItemWrapper } from "../../../views/MainPage/styled";
 import { MasterInfoWrapper } from "./styled";
 import { useTranslation } from "react-i18next";
+import ProcessPageTitle from "./ProcessPageTitle/ProcessPageTitle";
 
 const ProcessPage = () => {
   const { t } = useTranslation();
@@ -11,7 +11,7 @@ const ProcessPage = () => {
     <div className="process-page">
       <MainPageItemWrapper>
         <div className="process-page__general">
-          <ProcessTitle />
+          <ProcessPageTitle />
 
           <div className="process-page__container">
             {[
@@ -19,7 +19,9 @@ const ProcessPage = () => {
                 imageSrc:
                   "https://www.dropbox.com/s/uia57lylhf4upo2/1.png?raw=1",
                 mainDescription: t("processPage.stepOne.mainDescription"),
-                secondaryDescription: t("processPage.stepOne.secondaryDescription"),
+                secondaryDescription: t(
+                  "processPage.stepOne.secondaryDescription"
+                ),
               },
               {
                 imageSrc:
@@ -30,13 +32,12 @@ const ProcessPage = () => {
                 imageSrc:
                   "https://www.dropbox.com/s/fa38cg0xdhqhllm/3.png?raw=1",
                 mainDescription: t("processPage.stepThree.mainDescription"),
-                secondaryDescription: t("processPage.stepThree.secondaryDescription"),
+                secondaryDescription: t(
+                  "processPage.stepThree.secondaryDescription"
+                ),
               },
             ].map((processItemProps, idx) => (
-              <ProcessItem
-                key={idx}
-                {...processItemProps}
-              />
+              <ProcessItem key={idx} {...processItemProps} />
             ))}
           </div>
 

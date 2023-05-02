@@ -26,11 +26,11 @@ export const LikenessContent2 = styled(Box)`
   justify-content: center;
   flex-direction: row;
 
-  @media (max-width: 650px) {
-    display: "flex";
+  @media (max-width: 990px) {
+    display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
     margin: 10px;
   }
 `;
