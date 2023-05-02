@@ -1,8 +1,13 @@
-import {Box, styled} from "@mui/material";
+import { Box, styled } from "@mui/material";
 
 export const NavbarWrapper = styled(Box)`
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   max-width: 400px;
+
+  @media (max-width: 425px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
