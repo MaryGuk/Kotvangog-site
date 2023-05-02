@@ -1,9 +1,9 @@
 import "./styles-page.css";
 import { HashLink as Link } from "react-router-hash-link";
-import StylesTitle from "./StylesTitle";
 import { MainPageItemWrapper } from "../../../views/MainPage/styled";
 import { useTranslation } from "react-i18next";
 import i18n from "../../../i18n";
+import StylesTitle from "./StylesPageTitle/StylesTitle";
 
 const StylesPage = () => {
   const { t } = useTranslation();
@@ -12,7 +12,6 @@ const StylesPage = () => {
       <MainPageItemWrapper>
         <div className="advantages-page__general">
           <StylesTitle />
-
           <div className="styles-art">
             <div className="styles__item">
               <Link to="/products#beauty-art">
