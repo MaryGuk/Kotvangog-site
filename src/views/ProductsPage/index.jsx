@@ -9,6 +9,7 @@ import ProductPageItem from "./PortraitPage/portrait-page";
 import Footer from "../../components/Pages/Footer/footer";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18n";
+import ArtStylesSize from "./PortraitSizes/ArtStylesSize";
 
 const ProductsPage = () => {
   const [fullImageSrc, setFullImageSrc] = useState(null);
@@ -455,7 +456,7 @@ const ProductsPage = () => {
         <ProductPageItem {...props} setFullImage={setFullImageSrc} key={idx} />
       ))}
       {/* <BeautyArt /> */}
-
+      <ArtStylesSize />
       <Footer />
       <Dialog open={!!fullImageSrc} onClose={() => setFullImageSrc(null)}>
         <Box height="500px" overflow="hidden">
