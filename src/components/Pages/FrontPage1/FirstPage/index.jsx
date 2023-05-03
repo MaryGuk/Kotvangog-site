@@ -88,7 +88,7 @@ const FirstPage = () => {
             width="360px"
             height="600px"
             className="main-image1"
-            src="/images/Главное фото.jpg"
+            src="/images/Главная/Главное фото.jpg"
             alt=""
           />
         </FirstPage1ImageWrapper>
