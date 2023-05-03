@@ -15,7 +15,7 @@ const ArtStylesSizeItem = ({
   return (
     <ArtSizeItemWrapper>
       <ArtSizeItemContainer>
-        <img  src={imageSrc} alt="" />
+        <img src={imageSrc} alt="" />
       </ArtSizeItemContainer>
       <ArtSizesItemSize>{imageSize}</ArtSizesItemSize>
       <ArtSizesPrintText>{printDescription}</ArtSizesPrintText>

@@ -13,6 +13,7 @@ export const FirstPageGeneral = styled(Box)`
   justify-content: space-evenly;
   flex-direction: row;
   overflow: hidden;
+  margin-top: 50px;
 
   @media (max-width: 740px) {
     width: min-content;
@@ -145,6 +146,8 @@ export const FirstPageInfoMessageText = styled(Box)`
 export const FirstPage1ImageWrapper = styled(Box)`
   z-index: 1;
   overflow: hidden;
+  width: 480px;
+  margin-top: 80px;
 
   @media (max-width: 767px) {
     margin-top: 120px;

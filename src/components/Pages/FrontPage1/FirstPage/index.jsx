@@ -18,6 +18,7 @@ import {
 import TitleOne from "./TitleOne/title-one";
 import TitleTwo from "./TitleTwo/title-two";
 import MainButton from "../../../Button/MainButton";
+import Carousel from "react-material-ui-carousel";
 
 const FirstPage = () => {
   return (
@@ -84,13 +85,16 @@ const FirstPage = () => {
         </FirstPageInfo>
 
         <FirstPage1ImageWrapper>
-          <img
-            width="360px"
-            height="600px"
-            className="main-image1"
-            src="/images/Главная/Главное фото.jpg"
-            alt=""
-          />
+          <Carousel>
+            {[
+              "/images/Главная/Главное фото 1.jpg",
+              "/images/Главная/Главное фото 2.jpg",
+              "/images/Главная/Главное фото 3.jpg",
+              "/images/Главная/Главное фото 4.jpg",
+            ].map((src, idx) => (
+              <img src={src} key={idx} />
+            ))}
+          </Carousel>
         </FirstPage1ImageWrapper>
       </FirstPageGeneral>
     </FirstPageWrapper>
