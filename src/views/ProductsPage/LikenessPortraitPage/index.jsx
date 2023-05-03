@@ -2,12 +2,14 @@ import LikenessPortrait from "../../../components/Pages/LikenessPortrait/likenes
 import { Box } from "@mui/material";
 import ModernImages from "./ModernImages";
 import Footer from "../../../components/Pages/Footer/footer";
+import LikenessSize from "../PortraitSizes/LikenessSize";
 
 const LikenessPortraitPage = () => {
   return (
     <Box>
       <LikenessPortrait />
       <ModernImages />
+      <LikenessSize />
       <Footer />
     </Box>
   );

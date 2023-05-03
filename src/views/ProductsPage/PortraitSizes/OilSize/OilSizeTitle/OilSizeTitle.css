@@ -1,22 +1,22 @@
-.portrait-sizes__title-wrapper {
+.oil-sizes__title-wrapper {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
 }
 
-.portrait-sizes-page__title-background {
+.oil-sizes-page__title-background {
   position: absolute;
   justify-content: center;
   display: flex;
   margin-left: -20px;
 }
-.portrait-sizes__title-background-image {
+.oil-sizes__title-background-image {
   width: 300px;
   height: 60px;
 }
 
-.portrait-sizes__title {
+.oil-sizes__title {
   position: relative;
   font-size: 28px;
   font-family: "Palatino Linotype";

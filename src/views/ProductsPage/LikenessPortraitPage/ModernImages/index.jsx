@@ -40,7 +40,7 @@ const ModernImages = () => {
               <img
                 width="450px"
                 height="408px"
-                src="/images/HistoryImages/коллаж.png"
+                src="/images/HistoryImages/коллаж2 — копия.png"
               />
             </HistoryImagesCollageImage>
             <HistoryImagesCollageText>

@@ -10,9 +10,7 @@ export const ModernImagesGeneral = styled(Box)`
   width: 100%;
 `;
 export const ModernImagesContent = styled(Box)`
-  display: flex;
-  justify-content: center;
-  margin-top: 60px;
+  margin-top: 30px;
 `;
 
 export const ModernImagesDescription = styled(Box)`
@@ -25,12 +23,14 @@ export const ModernImagesDescription = styled(Box)`
 
 export const HistoryImagesCollage = styled(Box)`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 `;
 export const HistoryImagesCollageItems = styled(Box)`
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  justify-content: space-evenly;
 
   @media (max-width: 950px) {
     display: "flex";
@@ -40,10 +40,13 @@ export const HistoryImagesCollageItems = styled(Box)`
     margin: 10px;
   }
 `;
-export const HistoryImagesCollageImage = styled(Box)``;
+export const HistoryImagesCollageImage = styled(Box)`
+  margin-bottom: 40px;
+`;
 
 export const HistoryImagesCollageText = styled(Box)`
   margin-top: -40px;
+  margin-left: 20px;
 `;
 export const HistoryImagesCollageText1 = styled(Box)`
   font-size: 19px;

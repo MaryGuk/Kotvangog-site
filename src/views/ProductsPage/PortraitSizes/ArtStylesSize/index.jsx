@@ -1,6 +1,4 @@
-import { Box } from "@mui/material";
 import {
-  ArtStylesSizeTitle,
   ArtStylesSizeGeneral,
   ArtStylesSizeWrapper,
   ArtStylesSizeDescription,
@@ -18,7 +16,6 @@ const ArtStylesSize = () => {
     <ArtStylesSizeWrapper>
       <ArtStylesSizeGeneral>
         <PortraitSizesTitle />
-
         <ArtStylesSizeDescription>
           <ArtSizeTextOneContainer>
             <ArtSizeTextOne>

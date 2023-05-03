@@ -6,7 +6,7 @@ export const ModernImagesGallery = styled(Box)`
   grid-column-gap: 1px;
   grid-row-gap: 30px;
   width: 53%;
-  margin: 40px auto;
+  margin: 20px auto;
 `;
 
 export const ModernImagesItems = styled(Box)``;
