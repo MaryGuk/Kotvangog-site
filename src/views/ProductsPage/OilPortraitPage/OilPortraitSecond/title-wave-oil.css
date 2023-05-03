@@ -15,9 +15,36 @@
   margin-left: -50px;
 }
 
+@media (max-width: 960px) {
+  .wave-text__title-background {
+    margin-left: -0px;
+  }
+}
+
 .wave-text__title-background-image {
   width: 805px;
   height: 87px;
+}
+
+@media (max-width: 960px) {
+  .wave-text__title-background-image {
+    width: 640px;
+  }
+}
+@media (max-width: 767px) {
+  .wave-text__title-background-image {
+    width: 605px;
+  }
+}
+@media (max-width: 650px) {
+  .wave-text__title-background-image {
+    width: 580px;
+  }
+}
+@media (max-width: 375px) {
+  .wave-text__title-background-image {
+    width: 405px;
+  }
 }
 
 .wave-text__title {
