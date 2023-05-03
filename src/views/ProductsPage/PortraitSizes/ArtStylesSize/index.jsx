@@ -72,7 +72,7 @@ const ArtStylesSize = () => {
               oilDescription: "Маслом от 13700 руб.",
             },
             {
-              imageSrc: "/images/Sizes/size 5.jpg",
+              imageSrc: "/images/Sizes/size 5(1).jpg",
               imageSize: "70×90",
               printDescription: "Печать от 5200 руб.",
               oilDescription: "Маслом от 19500 руб.",
