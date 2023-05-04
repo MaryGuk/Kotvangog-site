@@ -15,10 +15,10 @@ export const OilPortraitExamplesGeneral = styled(Box)`
 `;
 export const OilPortraitExamplesContent = styled(Box)`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-column-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-column-gap: 20px;
   grid-row-gap: 15px;
-  width: 75%;
+  width: 70%;
   margin: 40px auto;
 `;
 

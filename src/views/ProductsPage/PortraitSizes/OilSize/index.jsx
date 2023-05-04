@@ -46,27 +46,32 @@ const OilSize = () => {
         <OilSizeContainer>
           {[
             {
-              imageSrc: "/images/Sizes/size 1.jpg",
+              imageSrc:
+                "https://www.dropbox.com/s/fb75hkuo00qqzll/g1.jpg?raw=1",
               imageSize: "30×40",
               oilDescription: "От 5600 руб.",
             },
             {
-              imageSrc: "/images/Sizes/size 2.jpg",
+              imageSrc:
+                "https://www.dropbox.com/s/myrndkdgjj9ikrl/g2.jpg?raw=1",
               imageSize: "40×60",
               oilDescription: "От 8800 руб.",
             },
             {
-              imageSrc: "/images/Sizes/size 3.jpg",
+              imageSrc:
+                "https://www.dropbox.com/s/wvhvu9upq8frshe/g3%281%29.jpg?raw=1",
               imageSize: "50×70",
               oilDescription: "От 11900 руб.",
             },
             {
-              imageSrc: "/images/Sizes/size 4.jpg",
+              imageSrc:
+                "https://www.dropbox.com/s/kh57btnnek6vz34/g4.jpg?raw=1",
               imageSize: "60×80",
               oilDescription: "От 13700 руб.",
             },
             {
-              imageSrc: "/images/Sizes/size 5(1).jpg",
+              imageSrc:
+                "https://www.dropbox.com/s/c3sdtn4pvmsbshz/g5.jpg?raw=1",
               imageSize: "70×90",
               oilDescription: "От 19500 руб.",
             },

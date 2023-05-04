@@ -15,7 +15,7 @@ const LikenessSizeItem = ({
   return (
     <LikenessSizeItemWrapper>
       <LikenessSizeItemContainer>
-        <img src={imageSrc} alt="" />
+        <img src={imageSrc} loading="lazy" decoding="async" alt="" />
       </LikenessSizeItemContainer>
       <LikenessSizesItemSize>{imageSize}</LikenessSizesItemSize>
       <LikenessSizesPrintText>{printDescription}</LikenessSizesPrintText>

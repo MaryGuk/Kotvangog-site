@@ -45,31 +45,36 @@ const ArtStylesSize = () => {
         <ArtSizeContainer>
           {[
             {
-              imageSrc: "/images/Sizes/size 1.jpg",
+              imageSrc:
+                "https://www.dropbox.com/s/fb75hkuo00qqzll/g1.jpg?raw=1",
               imageSize: "30×40",
               printDescription: "Печать от 1190 руб.",
               oilDescription: "Маслом от 5600 руб.",
             },
             {
-              imageSrc: "/images/Sizes/size 2.jpg",
+              imageSrc:
+                "https://www.dropbox.com/s/myrndkdgjj9ikrl/g2.jpg?raw=1",
               imageSize: "40×60",
               printDescription: "Печать от 1950 руб.",
               oilDescription: "Маслом от 8800 руб.",
             },
             {
-              imageSrc: "/images/Sizes/size 3.jpg",
+              imageSrc:
+                "https://www.dropbox.com/s/wvhvu9upq8frshe/g3%281%29.jpg?raw=1",
               imageSize: "50×70",
               printDescription: "Печать от 2700 руб.",
               oilDescription: "Маслом от 11900 руб.",
             },
             {
-              imageSrc: "/images/Sizes/size 4.jpg",
+              imageSrc:
+                "https://www.dropbox.com/s/kh57btnnek6vz34/g4.jpg?raw=1",
               imageSize: "60×80",
               printDescription: "Печать от 3450 руб.",
               oilDescription: "Маслом от 13700 руб.",
             },
             {
-              imageSrc: "/images/Sizes/size 5(1).jpg",
+              imageSrc:
+                "https://www.dropbox.com/s/c3sdtn4pvmsbshz/g5.jpg?raw=1",
               imageSize: "70×90",
               printDescription: "Печать от 5200 руб.",
               oilDescription: "Маслом от 19500 руб.",

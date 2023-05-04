@@ -40,7 +40,9 @@ const ModernImages = () => {
               <img
                 width="450px"
                 height="408px"
-                src="/images/HistoryImages/коллаж2 — копия.png"
+                src="https://www.dropbox.com/s/m2jd06fgn8i20or/%D0%BA%D0%BE%D0%BB%D0%BB%D0%B0%D0%B6%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B2.jpg?raw=1"
+                loading="lazy"
+                decoding="async"
               />
             </HistoryImagesCollageImage>
             <HistoryImagesCollageText>

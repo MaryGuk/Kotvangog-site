@@ -8,84 +8,108 @@ const ModernGallery = () => {
           <img
             width="190px"
             height="245px"
-            src="/images/ModernImages/1modern.png"
+            src="https://www.dropbox.com/s/1l7km1tfs1dqejf/78637387.jpg?raw=1"
+            loading="lazy"
+            decoding="async"
           />
         </ModernImagesItems>
         <ModernImagesItems>
           <img
             width="190px"
             height="245px"
-            src="/images/ModernImages/2modern.png"
+            src="https://www.dropbox.com/s/zs03zpkrksh4z3p/1200_60%D1%8560.jpg?raw=1"
+            loading="lazy"
+            decoding="async"
           />
         </ModernImagesItems>
         <ModernImagesItems>
           <img
             width="190px"
             height="245px"
-            src="/images/ModernImages/3modern.png"
+            src="https://www.dropbox.com/s/6l6l5iv37nmzxi5/1655897.jpg?raw=1"
+            loading="lazy"
+            decoding="async"
           />
         </ModernImagesItems>
         <ModernImagesItems>
           <img
             width="190px"
             height="245px"
-            src="/images/ModernImages/4modern.png"
+            src="https://www.dropbox.com/s/bs38jxj9is2bpb7/7863838.jpg?raw=1"
+            loading="lazy"
+            decoding="async"
           />
         </ModernImagesItems>
         <ModernImagesItems>
           <img
             width="190px"
             height="245px"
-            src="/images/ModernImages/5modern.png"
+            src="https://www.dropbox.com/s/yvta5m0qic24o9m/25454.jpg?raw=1"
+            loading="lazy"
+            decoding="async"
           />
         </ModernImagesItems>
         <ModernImagesItems>
           <img
             width="190px"
             height="245px"
-            src="/images/ModernImages/6modern.png"
+            src="https://www.dropbox.com/s/yzuzwxlko82zjlv/6066_40%D1%8560.jpg?raw=1"
+            loading="lazy"
+            decoding="async"
           />
         </ModernImagesItems>
         <ModernImagesItems>
           <img
             width="190px"
             height="245px"
-            src="/images/ModernImages/7modern.png"
+            src="https://www.dropbox.com/s/thw01s6ske6wt6n/4757838.jpg?raw=1"
+            loading="lazy"
+            decoding="async"
           />
         </ModernImagesItems>
         <ModernImagesItems>
           <img
             width="190px"
             height="245px"
-            src="/images/ModernImages/8modern.png"
+            src="https://www.dropbox.com/s/96t2g5y9l4vijr1/Rodriguez-2MasterJpeg9557JSWfile-753x1024.jpg?raw=1"
+            loading="lazy"
+            decoding="async"
           />
         </ModernImagesItems>
         <ModernImagesItems>
           <img
             width="190px"
             height="245px"
-            src="/images/ModernImages/9modern.png"
+            src="https://www.dropbox.com/s/7vbsn37zmmrz2au/5190_50%D1%85701.jpg?raw=1"
+            loading="lazy"
+            decoding="async"
           />
         </ModernImagesItems>
         <ModernImagesItems>
           <img
             width="190px"
             height="245px"
-            src="/images/ModernImages/10modern.png"
+            src="https://www.dropbox.com/s/c17a27xk4u8g8ci/563783.jpg?raw=1"
+            loading="lazy"
+            decoding="async"
           />
         </ModernImagesItems>
         <ModernImagesItems>
           <img
             width="190px"
             height="245px"
-            src="/images/ModernImages/11modern.png"
+            src="https://www.dropbox.com/s/6h67tgk988le3js/42402b882aaa5309efcde742.jpg?raw=1"
+            loading="lazy"
+            decoding="async"
           />
         </ModernImagesItems>
         <ModernImagesItems>
           <img
             width="190px"
             height="245px"
-            src="/images/ModernImages/12modern.png"
+            src="https://www.dropbox.com/s/flxkpyikmcp6d81/a4d4dca9a7e79172ece7be5.jpg?raw=1"
+            loading="lazy"
+            decoding="async"
           />
         </ModernImagesItems>
       </ModernImagesGallery>

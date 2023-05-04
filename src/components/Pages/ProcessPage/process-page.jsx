@@ -17,7 +17,7 @@ const ProcessPage = () => {
             {[
               {
                 imageSrc:
-                  "https://www.dropbox.com/s/uia57lylhf4upo2/1.png?raw=1",
+                  "https://www.dropbox.com/s/4pfl6qccttqd5jl/1%20Img%20.jpg?raw=1",
                 mainDescription: t("processPage.stepOne.mainDescription"),
                 secondaryDescription: t(
                   "processPage.stepOne.secondaryDescription"
@@ -25,12 +25,12 @@ const ProcessPage = () => {
               },
               {
                 imageSrc:
-                  "https://www.dropbox.com/s/elovw829eert1aa/2.png?raw=1",
+                  "https://www.dropbox.com/s/s097m1ry6ruuuvq/2%20Img%20.jpg?raw=1",
                 mainDescription: t("processPage.stepTwo.mainDescription"),
               },
               {
                 imageSrc:
-                  "https://www.dropbox.com/s/fa38cg0xdhqhllm/3.png?raw=1",
+                  "https://www.dropbox.com/s/matp34db5tt5qe0/3%20Img%20.jpg?raw=1",
                 mainDescription: t("processPage.stepThree.mainDescription"),
                 secondaryDescription: t(
                   "processPage.stepThree.secondaryDescription"
@@ -45,7 +45,9 @@ const ProcessPage = () => {
             <MasterInfoWrapper>
               <img
                 className="process-ava"
-                src="https://www.dropbox.com/s/dgvp57lyybndi0w/%D0%9B%D1%8E%D0%B1%D0%B0%20ph.png?raw=1"
+                src="https://www.dropbox.com/s/fubn96wj2g9p0wu/%D0%9B%D1%8E%D0%B1%D0%B0%20ph2.jpg?raw=1"
+                loading="lazy"
+                decoding="async"
                 alt="Любовь Ненадовец"
               />
             </MasterInfoWrapper>
@@ -73,7 +75,7 @@ const ProcessPage = () => {
                 className="work-video"
                 src="/Портрет Энид Синклер с сериала _Уэнсдей_.mp4"
                 controls="controls"
-                poster="/images/wrapper-video.jpg"
+                poster="https://www.dropbox.com/s/jfkvlrhhuacbkk6/wrapper-video.jpg?raw=1"
               ></video>
             </div>
           </div>
