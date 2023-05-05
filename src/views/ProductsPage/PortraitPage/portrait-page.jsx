@@ -22,6 +22,8 @@ const ProductPageItem = ({
           <div>
             <BeforeAfterImage
               height="500px"
+              loading="lazy"
+              decoding="async"
               srcAfter={srcAfter}
               srcBefore={srcBefore}
             />
@@ -34,6 +36,8 @@ const ProductPageItem = ({
           />
         </ProductPageItemMainInfoWrapper>
         <ImageCorousel
+          loading="lazy"
+          decoding="async"
           setFullImage={setFullImage}
           galleryImages={galleryImages}
           reverse={reverse}

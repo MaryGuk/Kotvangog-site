@@ -23,45 +23,45 @@ const ProductsPage = () => {
           portraitPrice: i18n.language === "en" ? "From 20$" : "От 1590 руб.",
           portraitDescription: t("productsPage.portraitDescription.part1"),
           srcAfter:
-            "https://www.dropbox.com/s/1e8dhooirot7u2n/%D0%B1%D1%8C%D1%8E%D1%82%D0%B8-%D0%B0%D1%80%D1%82.jpg?raw=1",
+            "https://www.dropbox.com/s/jzhvg5zawirl98j/%D0%B1%D1%8C%D1%8E%D1%82%D0%B8-%D0%B0%D1%80%D1%82.jpg?raw=1",
           srcBefore:
-            "https://www.dropbox.com/s/snhdeiwisgi3o7f/%D0%B4%D0%BE%20%D0%B1%D1%8C%D1%8E%D1%82%D0%B8-%D0%B0%D1%80%D1%82.jpg?raw=1",
+            "https://www.dropbox.com/s/1mrlrth8sap9rzi/%D0%B4%D0%BE%20%D0%B1%D1%8C%D1%8E%D1%82%D0%B8-%D0%B0%D1%80%D1%82.jpg?raw=1",
           galleryImages: [
             {
               previewSrc:
-                "https://www.dropbox.com/s/fy2i1bwsfzo627k/1%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/vc80kvteumgzx4z/11%20ba.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/wa73gaqrxygfvky/1%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/ofkqxekkzrmvyqu/1%20ba.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/qb3otskgaux2w4m/2%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/zn1re1hdgxouqnw/2%20ba.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/sxquz0ubp9f15ge/2%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/75tt4p8uaqvx07e/2%20ba%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/g4dzxs8593ikffk/3%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/791s1kuq9pz5gkp/3%20ba.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/eevclioq349ieu2/3%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/o794wha97seb778/3%20ba%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/lyeysfane94es9d/4%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/vbibavxa4l92wg7/44%20ba.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/8ba6zihttcjogah/4%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/vbibavxa4l92wg7/44%20ba.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/4ebhagxfqqwlnt8/5%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/v8sm9jtwu1dh47r/5%20ba.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/45s1o4yq23wlcwy/5%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/hko3gtyeoz4er36/5%20ba%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/709e0p1l4h6700s/6%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/u1507tv6ug0obl8/6%20ba.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/twbrhy62bet5g84/6%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/d1ygygpi0w8kx9i/6%20ba%20full.jpg?raw=1",
             },
           ],
           imageId: "beauty-art",
@@ -71,29 +71,33 @@ const ProductsPage = () => {
           portraitPrice: i18n.language === "en" ? "From 20$" : "От 2800 руб.",
           portraitDescription: t("productsPage.portraitDescription.part2"),
           srcAfter:
-            "https://www.dropbox.com/s/hu0obrvq9uhrxgv/%D0%B4%D0%B8%D0%B4%D0%B6%D0%B8%D1%82%D0%B0%D0%BB.jpg?raw=1",
+            "https://www.dropbox.com/s/hjmr5r45we4wqi6/%D0%B4%D0%B8%D0%B4%D0%B6%D0%B8%D1%82%D0%B0%D0%BB%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5.jpg?raw=1",
           srcBefore:
-            "https://www.dropbox.com/s/zae6536in1rxoso/%D0%B4%D0%BE%20%D0%B4%D0%B8%D0%B4%D0%B6%D0%B8%D1%82%D0%B0%D0%BB.jpg?raw=1",
+            "https://www.dropbox.com/s/hsgw1vs94r6tlm9/%D0%B4%D0%BE%20%D0%B4%D0%B8%D0%B4%D0%B6%D0%B8%D1%82%D0%B0%D0%BB.jpg?raw=1",
           galleryImages: [
             {
               previewSrc:
-                "https://www.dropbox.com/s/4asi26pi2f9i75s/1d.jpg?raw=1",
-              fullSrc: "https://www.dropbox.com/s/autv48b21fuukli/1d.jpg?raw=1",
+                "https://www.dropbox.com/s/ecfq5a0wy4gj64r/1dd.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/4kounumsmybbh70/1d%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/roxi4j721ocylg8/2d.jpg?raw=1",
-              fullSrc: "https://www.dropbox.com/s/46vyngjezvay4ke/2d.jpg?raw=1",
+                "https://www.dropbox.com/s/h6b4ris6tjxzk1h/2dd.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/hp4eo64pfzcwy3g/2d%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/k3y3q98ku07q6uv/3d.jpg?raw=1",
-              fullSrc: "https://www.dropbox.com/s/xmu8t69415sgcse/3d.jpg?raw=1",
+                "https://www.dropbox.com/s/yv8bkiz2opoax74/3dd.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/17vcoize8fr8rok/3d%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/68314819vl5tnib/4d.jpg?raw=1",
-              fullSrc: "https://www.dropbox.com/s/fosuvhz9b8l3tk5/4d.jpg?raw=1",
+                "https://www.dropbox.com/s/s0tfl62topvu8qd/4dd.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/gtie0qoggs9lowo/4d%20full.jpg?raw=1",
             },
           ],
           reverse: true,
@@ -104,93 +108,93 @@ const ProductsPage = () => {
           portraitPrice: i18n.language === "en" ? "From 20$" : "От 950 руб.",
           portraitDescription: t("productsPage.portraitDescription.part3"),
           srcAfter:
-            "https://www.dropbox.com/s/4hgiygld9zytc3z/%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B5%20%D1%84%D0%BE%D1%82%D0%BE.jpg?raw=1",
+            "https://www.dropbox.com/s/qxfhx7o5ub08a5f/%D0%B8%D0%BC%D0%B8%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5.jpg?raw=1",
           srcBefore:
-            "https://www.dropbox.com/s/1eu6uvt56ipspy5/%D0%B8%D0%BC%D0%B8%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BC%D0%B0%D1%81%D0%BB%D0%B0--%D0%B4%D0%BE.jpg?raw=1",
+            "https://www.dropbox.com/s/9zyy20j9ayo3vg5/%D0%B8%D0%BC%D0%B8%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B4%D0%BE.jpg?raw=1",
           galleryImages: [
             {
               previewSrc:
-                "https://www.dropbox.com/s/sjzn8yms2h36qrx/1im.jpg?raw=1",
+                "https://www.dropbox.com/s/cii2jeanklnuum0/1im.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/e7egjk1z4oijv4j/1im.jpg?raw=1",
+                "https://www.dropbox.com/s/kn5i8q2fyx3ava2/1im%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/md921isin5z6ou4/2im.jpg?raw=1",
+                "https://www.dropbox.com/s/8llf1ssgbevturg/2im.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/4brtfw26cg1s8jj/2im.jpg?raw=1",
+                "https://www.dropbox.com/s/cz87yt6ctyqq3q9/2im%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/vq61c1i648pvp16/3im.jpg?raw=1",
+                "https://www.dropbox.com/s/7si1pidvrw0mgdy/3im.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/3ygbzzxbbkg3uio/3im.jpg?raw=1",
+                "https://www.dropbox.com/s/3fd0fjfhm94vx8j/3im%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/iw9uv3e0dfajdb0/4im.jpg?raw=1",
+                "https://www.dropbox.com/s/hrlqvm22k1w3s7l/4im.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/azdomccdvb1zffg/4im.jpg?raw=1",
+                "https://www.dropbox.com/s/ep2gbqhgendm8pv/4im%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/dmqt7xtl9xcj39p/14im.jpg?raw=1",
+                "https://www.dropbox.com/s/9d6b1jtkjquyco2/14im.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/9ldb07rhlsn4pv7/14im.jpg?raw=1",
+                "https://www.dropbox.com/s/2zbbhim41gc2uc1/14im%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/gur64wet8t455xw/6im.jpg?raw=1",
+                "https://www.dropbox.com/s/co71t4fwgg44cyb/6im.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/nhvm5k84xl961ir/6im.jpg?raw=1",
+                "https://www.dropbox.com/s/bgbwe3m4dsyser5/6im%20full%20.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/cbhqrchx5rgv912/7im.jpg?raw=1",
+                "https://www.dropbox.com/s/o5i5paaynt3kva9/7im.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/uz3g2hlpoburd6a/7im.jpg?raw=1",
+                "https://www.dropbox.com/s/476ssc6p1kkjk6m/7im%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/hg4f2zgwmgqto31/8im.jpg?raw=1",
+                "https://www.dropbox.com/s/rpnpuvorcrx6px8/8im.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/px80jn98w498f96/8im.jpg?raw=1",
+                "https://www.dropbox.com/s/sg3f4kxenph3ob7/8im%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/nbk1u6be228k20n/9im.jpg?raw=1",
+                "https://www.dropbox.com/s/behb03wvp1bs7vp/9im.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/jevib06oe9ya8nb/9im.jpg?raw=1",
+                "https://www.dropbox.com/s/3ubs1p653qcryig/9im%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/xjrsm91dubbpi2d/10im.jpg?raw=1",
+                "https://www.dropbox.com/s/f51um0akcut5ts7/10im.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/vj1mgyujf0volzs/10im.jpg?raw=1",
+                "https://www.dropbox.com/s/n8k154xpfnse4q7/10im%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/u38xg0dk4hz8lc5/11im.jpg?raw=1",
+                "https://www.dropbox.com/s/750lnceorramet9/11im.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/zo1otl8djylojo4/11im.jpg?raw=1",
+                "https://www.dropbox.com/s/7nptdazwbmm8vn6/11im%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/jsboeevd7ie6pvz/12im.jpg?raw=1",
+                "https://www.dropbox.com/s/vc5k14mq7xtdf4f/12im.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/byjhw0axjdq8xq9/12im.jpg?raw=1",
+                "https://www.dropbox.com/s/doaar5xwwfusrhc/12im%20full.jpg??raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/sq5bfv0a1dochic/13im.jpg?raw=1",
+                "https://www.dropbox.com/s/lz407zzccyv0nqz/13im.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/rhmd8vlgbegu2wb/13im.jpg?raw=1",
+                "https://www.dropbox.com/s/hy7q3sw71fy3f3a/13im%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/zlldkqeydifjcqz/5im.jpg?raw=1",
+                "https://www.dropbox.com/s/a56v65g8zwai3vb/5im.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/xna5is0w6mducct/5im.jpg?raw=1",
+                "https://www.dropbox.com/s/3u9h8udmpuqo29g/5im%20full.jpg?raw=1",
             },
           ],
 
@@ -201,51 +205,50 @@ const ProductsPage = () => {
           portraitPrice: i18n.language === "en" ? "From 20$" : "От 1090 руб.",
           portraitDescription: t("productsPage.portraitDescription.part4"),
           srcAfter:
-            "https://www.dropbox.com/s/676076wuy1b87jh/%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%20%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B5.jpg?raw=1",
-          srcBefore:
-            "https://www.dropbox.com/s/676076wuy1b87jh/%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%20%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B5.jpg?raw=1",
+            "https://www.dropbox.com/s/f02l7vdxxcb9dnl/%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B5.jpg?raw=1",
           galleryImages: [
             {
               previewSrc:
-                "https://www.dropbox.com/s/1rjj624q41czarc/2o.jpg?raw=1",
-              fullSrc: "https://www.dropbox.com/s/vhvi4pe11jemgip/2o.jpg?raw=1",
-            },
-            {
-              previewSrc:
-                "https://www.dropbox.com/s/jb6xzhh9guyeqg0/3o.jpg?raw=1",
-              fullSrc: "https://www.dropbox.com/s/16ojbl3v0igfpks/3o.jpg?raw=1",
-            },
-            {
-              previewSrc:
-                "https://www.dropbox.com/s/3x1rfk4v035hcye/4o.jpg?raw=1",
-              fullSrc: "https://www.dropbox.com/s/vps5nyb7ks8b2uv/4o.jpg?raw=1",
-            },
-            {
-              previewSrc:
-                "https://www.dropbox.com/s/1gi68kanxn3o0xz/6o.jpg?raw=1",
-              fullSrc: "https://www.dropbox.com/s/wh1snofbv47mx2u/6o.jpg?raw=1",
-            },
-            {
-              previewSrc:
-                "https://www.dropbox.com/s/u28e449fde99pgg/7o.jpg?raw=1",
-              fullSrc: "https://www.dropbox.com/s/9f2m60ffpho7yhs/7o.jpg?raw=1",
-            },
-            {
-              previewSrc:
-                "https://www.dropbox.com/s/ubqpjvtohr8e73y/11o.jpg?raw=1",
+                "https://www.dropbox.com/s/hp81s4h1dmgifws/1oooo.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/0rgl7e5wmh1gcc5/11o.jpg?raw=1",
+                "https://www.dropbox.com/s/s9fs6nmr3j6i6qa/1o%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/bfi274erbk8lcmh/5o-2.jpg?raw=1",
+                "https://www.dropbox.com/s/u4a3voc2yfmua0a/2o.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/myl01nhsamxqpac/5o-2.jpg?raw=1",
+                "https://www.dropbox.com/s/wlnh62wpcqio3o7/2o%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/tpgqyk3pcozh9rf/1o.jpg?raw=1",
-              fullSrc: "https://www.dropbox.com/s/0t489rlmr93tzrt/1o.jpg?raw=1",
+                "https://www.dropbox.com/s/zj0jvg2518r5in0/3o.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/lpd95v2uln6vrjr/3o%20full.jpg?raw=1",
+            },
+            {
+              previewSrc:
+                "https://www.dropbox.com/s/dymh3qat4pczcro/4o.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/eqpqbxmokqa80vl/4o%20full.jpg?raw=1",
+            },
+            {
+              previewSrc:
+                "https://www.dropbox.com/s/vjxcnc4dc23sp52/6o.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/m90vaavlgvpl0y9/6o%20full.jpg?raw=1",
+            },
+            {
+              previewSrc:
+                "https://www.dropbox.com/s/tn65n8buma8e25r/7o.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/ywf45ivbfai0gnr/7o%20full.jpg?raw=1",
+            },
+
+            {
+              previewSrc:
+                "https://www.dropbox.com/s/z08rxz6fc86zvpv/5ojpg.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/nfzfmyhkb8b3pdm/5o%20full.jpg?raw=1",
             },
           ],
           reverse: true,
@@ -256,39 +259,45 @@ const ProductsPage = () => {
           portraitPrice: i18n.language === "en" ? "From 20$" : "От 1890 руб.",
           portraitDescription: t("productsPage.portraitDescription.part5"),
           srcAfter:
-            "https://www.dropbox.com/s/7vutdm2i5avc4kn/%D1%84%D1%8C%D1%8E%D0%B6%D0%BD.jpg?raw=1",
+            "https://www.dropbox.com/s/hbg1ebx3r9r7io0/%D1%84%D1%8C%D1%8E%D0%B6%D0%BD%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5.jpg?raw=1",
           srcBefore:
-            "https://www.dropbox.com/s/wz4tkqulm16x0m2/%D0%B4%D0%BE-%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B5.jpg?raw=1",
+            "https://www.dropbox.com/s/3fc9k8gdq4b7p8p/%D0%B4%D0%BE-%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B5.jpg?raw=1",
           galleryImages: [
             {
               previewSrc:
-                "https://www.dropbox.com/s/yz6s5dpv8o5znxv/f1.jpg?raw=1",
-              fullSrc: "https://www.dropbox.com/s/rruecqdil0480wp/f1.jpg?raw=1",
+                "https://www.dropbox.com/s/s04dd1qjys78yof/f1.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/ogmn03m77gmly9e/f1%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/zm4i3ih3kpbi2dr/f2.jpg?raw=1",
-              fullSrc: "https://www.dropbox.com/s/xt1t90u0x9ozhhl/f2.jpg?raw=1",
+                "https://www.dropbox.com/s/r3g237fkp8ljihq/f2.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/jijtfa0nwc1hk12/f2%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/e5kx6abynnylkw9/f3.jpg?raw=1",
-              fullSrc: "https://www.dropbox.com/s/m79y4nmoyev5h1a/f3.jpg?raw=1",
+                "https://www.dropbox.com/s/n6ccgaemz939omo/f3.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/9hy8pwvclxth8ro/f3%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/ldxs983pxi0n7x2/f4.jpg?raw=1",
-              fullSrc: "https://www.dropbox.com/s/3polsu9g4dio8sk/f4.jpg?raw=1",
+                "https://www.dropbox.com/s/3ujnqgtr1lzzwcu/f4.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/gefodwz51t4ziaf/f4%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/ib7ghk0omfdinl6/f5.jpg?raw=1",
-              fullSrc: "https://www.dropbox.com/s/yq16ugdt8xzdp32/f5.jpg?raw=1",
+                "https://www.dropbox.com/s/kmij9ewn0785nxl/f5.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/5pvzmy8rbh63f1v/f5%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/4t3c9am1q553msi/f6.jpg?raw=1",
-              fullSrc: "https://www.dropbox.com/s/3uktao3peylqarg/f6.jpg?raw=1",
+                "https://www.dropbox.com/s/wp5ip2yndg1z3f0/f6.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/307f83vuzj5y8zs/f6%20full.jpg?raw=1",
             },
           ],
           imageId: "fusion-art",
@@ -298,27 +307,27 @@ const ProductsPage = () => {
           portraitPrice: i18n.language === "en" ? "From 20$" : "От 1790 руб.",
           portraitDescription: t("productsPage.portraitDescription.part6"),
           srcAfter:
-            "https://www.dropbox.com/s/238fhoefmgwy3no/%D0%BA%D0%B0%D1%80%D0%B0%D0%BD%D0%B4%D0%B0%D1%88.jpg?raw=1",
+            "https://www.dropbox.com/s/7bquxqgg7vkt7e5/%D0%BA%D0%B0%D1%80%D0%B0%D0%BD%D0%B4%D0%B0%D1%88%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5.jpg?raw=1",
           srcBefore:
-            "https://www.dropbox.com/s/bohiqq5xtdzawe9/%D0%B4%D0%BE%20-%20%D0%BA%D0%B0%D1%80%D0%B0%D0%BD%D0%B4%D0%B0%D1%88.jpg?raw=1",
+            "https://www.dropbox.com/s/dpkj6tjztkepcz3/%D0%BA%D0%B0%D1%80%D0%B0%D0%BD%D0%B4%D0%B0%D1%88%20%D0%B4%D0%BE.jpg?raw=1",
           galleryImages: [
             {
               previewSrc:
-                "https://www.dropbox.com/s/sg0d3zf76mjwxwi/3%20k.jpg?raw=1",
+                "https://www.dropbox.com/s/w1aftvjhm5l1124/3%20k.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/wk4oojqw27z5o1p/3%20k.jpg?raw=1",
+                "https://www.dropbox.com/s/aeg3webrmvgdaa0/3%20k%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/meaaxzfhpnfzx8l/1%20k.jpg?raw=1",
+                "https://www.dropbox.com/s/sgpc9thenuy3wya/2%20k.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/o0jjjvftp7xfrg7/1%20k.jpg?raw=1",
+                "https://www.dropbox.com/s/c38ehh21z9dnoai/1%20k%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/pcxustzd0pgg17f/2%20k.jpg?raw=1",
+                "https://www.dropbox.com/s/hxnos1tlnp905mu/1%20k.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/fikgfjl834rdcv9/2%20k.jpg?raw=1",
+                "https://www.dropbox.com/s/onwwvynxu6azayo/2%20k%20full.jpg?raw=1",
             },
           ],
           reverse: true,
@@ -329,39 +338,39 @@ const ProductsPage = () => {
           portraitPrice: i18n.language === "en" ? "From 20$" : "От 2900 руб.",
           portraitDescription: t("productsPage.portraitDescription.part7"),
           srcAfter:
-            "https://www.dropbox.com/s/5zi7kl8tbqkbw3a/%D0%B8%D0%BD%D1%84%D0%B8%D0%BD%D0%B8%D1%82%D0%B8.jpg?raw=1",
+            "https://www.dropbox.com/s/e3g3owra567pc8o/%D0%B8%D0%BD%D1%84%D0%B8%D0%BD%D0%B8%D1%82%D0%B8.jpg?raw=1",
           srcBefore:
-            "https://www.dropbox.com/s/8h7xjadn2luo0co/%D0%B4%D0%BE--%D0%B8%D0%BD%D1%84%D0%B8%D0%BD%D0%B8%D1%82%D0%B8.jpg?raw=1",
+            "https://www.dropbox.com/s/byynotuoouqb05i/%D0%B4%D0%BE%20-%20%D0%B8%D0%BD%D1%84%D0%B8%D0%BD%D0%B8%D1%82%D0%B8.jpg?raw=1",
           galleryImages: [
             {
               previewSrc:
-                "https://www.dropbox.com/s/v1d47s7ld5z5dug/1%20i.jpg?raw=1",
+                "https://www.dropbox.com/s/tmmewgmytgbkdo2/1%20i.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/h08aa4mmil5tiqy/1%20i.jpg?raw=1",
+                "https://www.dropbox.com/s/5mwy9x2txnzbsla/1%20i%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/nzf58hfz9tesf0z/2%20i.jpg?raw=1",
+                "https://www.dropbox.com/s/ul23e2nqjpciyd5/2%20i.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/m6iscvy8xkl7qzf/1%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/qdef3j2vv09a3dm/2%20i%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/q5a6mnmx2a6y1xm/3%20i.jpg?raw=1",
+                "https://www.dropbox.com/s/xbqwuppujhocycu/3%20i.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/3t553txganma7c7/3%20i.jpg?raw=1",
+                "https://www.dropbox.com/s/jhoz3ynona85f9p/3%20i%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/8u6bt1kx425qfus/4%20i.jpg?raw=1",
+                "https://www.dropbox.com/s/e3c1xoao7mb5uvf/4%20i.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/kf55aciow4r4k6q/4%20i.jpg?raw=1",
+                "https://www.dropbox.com/s/s70ehfdun5arqw5/4%20i%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/hr6lgw0il67xk9w/5%20i.jpg?raw=1",
+                "https://www.dropbox.com/s/ue8dx5tqqpmp9vg/5%20i.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/x7dpswpvavdqtkw/5%20i.jpg?raw=1",
+                "https://www.dropbox.com/s/z0zzk9nc2m2ejqp/5%20i%20full.jpg?raw=1",
             },
           ],
           imageId: "infiniti-art",
@@ -371,34 +380,39 @@ const ProductsPage = () => {
           portraitPrice: i18n.language === "en" ? "From 20$" : "От 2900 руб.",
           portraitDescription: t("productsPage.portraitDescription.part8"),
           srcAfter:
-            "https://www.dropbox.com/s/71gj7mjdtgqx91g/%D0%BC%D0%B0%D1%81%D1%82%D0%B8%D1%85%D0%B8%D0%BD.jpg?raw=1",
+            "https://www.dropbox.com/s/dnzj5feekxmmaf7/%D0%BC%D0%B0%D1%81%D1%82%D0%B8%D1%85%D0%B8%D0%BD.jpg?raw=1",
           srcBefore:
-            "https://www.dropbox.com/s/pkhbrznknmw88hw/%D0%B4%D0%BE--%D0%BC%D0%B0%D1%81%D1%82%D0%B8%D1%85%D0%B8%D0%BD.jpg?raw=1",
+            "https://www.dropbox.com/s/6z6b5dx5t602ryd/%D0%B4%D0%BE%20-%20%D0%BC%D0%B0%D1%81%D1%82%D0%B8%D1%85%D0%B8%D0%BD.jpg?raw=1",
           galleryImages: [
             {
               previewSrc:
-                "https://www.dropbox.com/s/thywh36q2wkc4vr/01.jpg?raw=1",
-              fullSrc: "https://www.dropbox.com/s/8s8t7zh75cjm2sc/01.jpg?raw=1",
+                "https://www.dropbox.com/s/v16uxasjtcd0uvw/01.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/e6rdxhcwbs2me3m/01%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/7dx7op24lulneqh/02.jpg?raw=1",
-              fullSrc: "https://www.dropbox.com/s/xhrwk1gj5tkywyv/02.jpg?raw=1",
+                "https://www.dropbox.com/s/wnbz4lqwn6vgi8p/02.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/83jipv4jpj1mtnw/02%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/mahxbtx77b0z4d0/03.jpg?raw=1",
-              fullSrc: "https://www.dropbox.com/s/29qi44pib0uq8i1/03.jpg?raw=1",
+                "https://www.dropbox.com/s/et6m1dj4gei5r57/03.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/fzi9by4co2qjfwt/03%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/1ow52s2dlqs0qir/04.jpg?raw=1",
-              fullSrc: "https://www.dropbox.com/s/gfwb6nc2gp6f6nc/04.jpg?raw=1",
+                "https://www.dropbox.com/s/vj9bc1zggke6e8s/04.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/ccg1n6kobqwsgz5/04%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/p855sdjht1ahd5u/05.jpg?raw=1",
-              fullSrc: "https://www.dropbox.com/s/49nk3a1jsb0blqv/05.jpg?raw=1",
+                "https://www.dropbox.com/s/fnsum72zdv7y2tu/05.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/6yiajqugwxoumhn/05%20full.jpg?raw=1",
             },
           ],
           reverse: true,
@@ -409,45 +423,43 @@ const ProductsPage = () => {
           portraitPrice: i18n.language === "en" ? "From 20$" : "От 1490 руб.",
           portraitDescription: t("productsPage.portraitDescription.part9"),
           srcAfter:
-            "https://www.dropbox.com/s/bhpspsqdi381wkl/%D0%BF%D0%B8%D1%82%D0%BE%D0%BC%D0%B5%D1%86%20%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B5.jpg?raw=1",
-          srcBefore:
-            "https://www.dropbox.com/s/bhpspsqdi381wkl/%D0%BF%D0%B8%D1%82%D0%BE%D0%BC%D0%B5%D1%86%20%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B5.jpg?raw=1",
+            "https://www.dropbox.com/s/h6vreznt1wekyph/%D0%BF%D0%B8%D1%82%D0%BE%D0%BC%D0%B5%D1%86%20%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B5.jpg?raw=1",
           galleryImages: [
             {
               previewSrc:
-                "https://www.dropbox.com/s/awi9ok80zk1rrlq/1%20p.jpg?raw=1",
+                "https://www.dropbox.com/s/it9of6gmhvjqf1s/1%20p.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/vakqodtc2ljmm4l/1%20p.jpg?raw=1",
+                "https://www.dropbox.com/s/6t80pbu8pfgiequ/1%20p%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/jrgxcjwxz4h83t6/2%20p.jpg?raw=1",
+                "https://www.dropbox.com/s/ivi2yh3wcehaty3/2%20p.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/z885bxzdf7wyic6/2%20p.jpg?raw=1",
+                "https://www.dropbox.com/s/qoyp5p6r768ajy4/2%20p%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/4rn9k55smwp08bk/3%20p.jpg?raw=1",
+                "https://www.dropbox.com/s/0tx13orr6d0ukji/3%20p.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/ckklzid1n4f5566/3%20p.jpg?raw=1",
+                "https://www.dropbox.com/s/8y9fisggar3z46v/3%20p%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/714ynlzuhbznwmd/4%20p.jpg?raw=1",
+                "https://www.dropbox.com/s/iy50xg2l5tbydsp/4%20p.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/pqckbk4qbu8uiws/4%20p.jpg?raw=1",
+                "https://www.dropbox.com/s/b42nccx1vhsypmf/4%20p%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/st896unugrvz8cq/6%20p.jpg?raw=1",
+                "https://www.dropbox.com/s/pp1bcwaesqu9ule/6%20p.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/9tisrmqtcdgwl8j/6%20p.jpg?raw=1",
+                "https://www.dropbox.com/s/hrp4geqpqz9rqow/6%20p%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/amj2kchltwd30xq/5%20p.jpg?raw=1",
+                "https://www.dropbox.com/s/2reh414ks0gc9rf/5%20p.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/p3xq5ztf5i5i2iq/5%20p.jpg?raw=1",
+                "https://www.dropbox.com/s/buo3or4yuu6otne/5%20p%20full.jpg?raw=1",
             },
           ],
           imageId: "animal-art",
@@ -456,7 +468,7 @@ const ProductsPage = () => {
         <ProductPageItem {...props} setFullImage={setFullImageSrc} key={idx} />
       ))}
       {/* <BeautyArt /> */}
-      <ArtStylesSize />
+      {/* <ArtStylesSize /> */}
       <Footer />
       <Dialog open={!!fullImageSrc} onClose={() => setFullImageSrc(null)}>
         <Box height="500px" overflow="hidden">
