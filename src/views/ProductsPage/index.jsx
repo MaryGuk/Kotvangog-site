@@ -468,7 +468,7 @@ const ProductsPage = () => {
         <ProductPageItem {...props} setFullImage={setFullImageSrc} key={idx} />
       ))}
       {/* <BeautyArt /> */}
-      {/* <ArtStylesSize /> */}
+      <ArtStylesSize />
       <Footer />
       <Dialog open={!!fullImageSrc} onClose={() => setFullImageSrc(null)}>
         <Box height="500px" overflow="hidden">
