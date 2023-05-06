@@ -2,13 +2,14 @@ import { Box } from "@mui/material";
 
 import { ExamplesGallery, ExamplesGalleryContainer } from "./styled-examples";
 
-const ExamplesItem = ({ previewSrc, fullSrc }) => {
+const ExamplesItem = ({ previewSrc, fullSrc, setFullImage }) => {
   return (
     <ExamplesGalleryContainer>
-      <ExamplesGallery>
+      <ExamplesGallery onClick={() => setFullImage(fullSrc)}>
         <img
           src={previewSrc}
           fullSrc={fullSrc}
+          setFullImage={setFullImage}
           width="240px"
           height="310px"
           loading="lazy"
