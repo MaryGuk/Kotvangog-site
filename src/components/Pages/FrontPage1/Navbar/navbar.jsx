@@ -22,7 +22,7 @@ const Navbar = () => {
         {[
           { path: "/home", title: t("mainPage.navItem1") },
           {
-            path: "/home",
+            path: "#",
             title: t("mainPage.navItem2"),
             menuItems: [
               {
