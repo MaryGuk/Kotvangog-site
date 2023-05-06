@@ -32,6 +32,7 @@ const ModernImages = () => {
             У нас более <b>300</b> исторических образов
           </ModernImagesDescription>
         </ModernImagesContent>
+
         <HistoryGallery />
 
         <HistoryImagesCollage>
