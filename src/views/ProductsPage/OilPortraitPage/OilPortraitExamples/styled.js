@@ -13,7 +13,9 @@ export const OilPortraitExamplesGeneral = styled(Box)`
   margin: 10px;
   width: 100%;
 `;
-export const OilPortraitExamplesContent = styled(Box)`
+export const OilPortraitExamplesContent = styled(Box)``;
+
+export const OilPortraitExamplesGallery = styled(Box)`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   grid-column-gap: 20px;
@@ -21,5 +23,3 @@ export const OilPortraitExamplesContent = styled(Box)`
   width: 70%;
   margin: 40px auto;
 `;
-
-export const OilPortraitExamplesGallery = styled(Box)``;

@@ -22,7 +22,7 @@ const ArtStylesSize = () => {
               Печать на холсте и картина маслом
               <span style={{ fontWeight: "700", color: "#606060" }}>
                 {" "}
-                (100% ручная работа){" "}
+                (100% ручная работа)
               </span>
             </ArtSizeTextOne>
           </ArtSizeTextOneContainer>
