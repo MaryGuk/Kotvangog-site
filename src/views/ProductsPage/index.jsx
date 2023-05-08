@@ -10,6 +10,7 @@ import Footer from "../../components/Pages/Footer/footer";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18n";
 import ArtStylesSize from "./PortraitSizes/ArtStylesSize";
+import ImageWithLoader from "../../components/ImageWithLoader";
 
 const ProductsPage = () => {
   const [fullImageSrc, setFullImageSrc] = useState(null);
@@ -472,7 +473,7 @@ const ProductsPage = () => {
       <Footer />
       <Dialog open={!!fullImageSrc} onClose={() => setFullImageSrc(null)}>
         <Box height="500px" overflow="hidden">
-          <img height="100%" src={fullImageSrc} alt="" />
+          <ImageWithLoader height="100%" src={fullImageSrc} alt="" />
         </Box>
       </Dialog>
     </div>

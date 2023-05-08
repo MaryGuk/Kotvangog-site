@@ -9,6 +9,7 @@ import TitleExamples from "./title-examples";
 import { Box } from "@mui/system";
 import { useState } from "react";
 import { Dialog } from "@mui/material";
+import ImageWithLoader from "../../../../components/ImageWithLoader";
 
 const OilPortraitExamples = () => {
   const [fullImageSrc, setFullImageSrc] = useState(null);
@@ -82,7 +83,7 @@ const OilPortraitExamples = () => {
 
       <Dialog open={!!fullImageSrc} onClose={() => setFullImageSrc(null)}>
         <Box height="500px" overflow="hidden">
-          <img height="100%" src={fullImageSrc} alt="" />
+          <ImageWithLoader height="100%" src={fullImageSrc} alt="" />
         </Box>
       </Dialog>
     </OilPortraitExamplesWrapper>

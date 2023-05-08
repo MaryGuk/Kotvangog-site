@@ -1,9 +1,10 @@
 import { Dialog } from "@mui/material";
 import { Box } from "@mui/system";
 import { useState } from "react";
-import BeforeAfterImage from "../../../components/BeforeAfterImage";
 import "./beauty-art.css";
 import ImageGallery from "./Image-beauty";
+import ImageWithLoader from "../../../components/ImageWithLoader";
+import BeforeAfterImage from "../../../components/BeforeAfterImage";
 
 const BeautyArt = () => {
   const [openImageDialog, setOpenImageDialog] = useState(false);
@@ -44,7 +45,7 @@ const BeautyArt = () => {
           onClose={() => setOpenImageDialog(false)}
         >
           <Box height="500px" overflow="hidden">
-            <img
+            <ImageWithLoader
               height="100%"
               src="https://previews.dropbox.com/p/thumb/AB1JSOWx1BQJ1SRvSYEP-n09cqallVWAqG5WvWMe83NMp9-rR6QDyf64a8uQGMuvdGpbGqU_0sjpbxJe347lN0-AERKc3K4Hqta8gn5qW5KldRFZJWhgppsNtKP1722ThQfgX4zlnMO0A4niareEBs1vK1cNybTJHWTyoRCWFLUM_pmpOfqWWS7AvPRPfQ5lWWcFLMfoxJJKXQWl-sJhRt89-XuNDgifDya3n6e9F87dJJTjHJQjX65bn7zIW_2NwZRq_mgsv2EbelGHP96Rv7nW5MR5rm9fhPzQxBi7vXyoRoJLb1rbVt8kh8nk2LD-BSWy2RoLEO3ZlSgufINfXHuyjgFS3f1KohYHEveP2GVPWyel22l6RRBEweBl7I18PBo/p.jpeg"
               alt=""

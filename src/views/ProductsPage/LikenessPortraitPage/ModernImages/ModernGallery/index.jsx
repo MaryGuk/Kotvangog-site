@@ -3,6 +3,7 @@ import { ModernImagesGallery, ModernImagesItems } from "./styled";
 import ModernGalleryItem from "./ModernGalleryItem";
 import { useState } from "react";
 import { Dialog } from "@mui/material";
+import ImageWithLoader from "../../../../../components/ImageWithLoader";
 
 const ModernGallery = () => {
   const [fullImageSrc, setFullImageSrc] = useState(null);
@@ -95,7 +96,7 @@ const ModernGallery = () => {
       </ModernImagesGallery>
       <Dialog open={!!fullImageSrc} onClose={() => setFullImageSrc(null)}>
         <Box height="500px" overflow="hidden">
-          <img height="100%" src={fullImageSrc} alt="" />
+          <ImageWithLoader height="100%" src={fullImageSrc} alt="" />
         </Box>
       </Dialog>
     </Box>

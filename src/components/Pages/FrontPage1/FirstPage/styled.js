@@ -43,6 +43,10 @@ export const FirstPageTitle = styled(Box)`
   @media (max-width: 767px) {
     margin-top: -40px;
   }
+  @media (max-width: 650px) {
+    margin-top: -40px;
+  }
+
   @media (max-width: 592px) {
     margin-top: 40px;
   }

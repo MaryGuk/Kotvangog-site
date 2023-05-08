@@ -20,13 +20,22 @@ const ProductPageItem = ({
       <div className="beauty-art__general">
         <ProductPageItemMainInfoWrapper id={imageId} reverse={reverse}>
           <div>
-            <BeforeAfterImage
-              height="500px"
-              loading="lazy"
-              decoding="async"
-              srcAfter={srcAfter}
-              srcBefore={srcBefore}
-            />
+            {srcBefore ? (
+              <BeforeAfterImage
+                height="500px"
+                loading="lazy"
+                decoding="async"
+                srcAfter={srcAfter}
+                srcBefore={srcBefore}
+              />
+            ) : (
+              <img
+                height="500px"
+                loading="lazy"
+                decoding="async"
+                src={srcAfter}
+              />
+            )}
           </div>
           <ProductPageItemInfo
             portraitTitle={portraitTitle}

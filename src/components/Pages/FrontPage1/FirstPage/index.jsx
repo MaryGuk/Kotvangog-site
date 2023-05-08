@@ -87,12 +87,12 @@ const FirstPage = () => {
         <FirstPage1ImageWrapper>
           <Carousel animation="fade">
             {[
-              "/images/Главная/Главное фото 1.jpg",
+              "https://www.dropbox.com/s/zjw0qb4spkye890/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5%20%D1%84%D0%BE%D1%82%D0%BE.jpg?raw=1",
               "https://www.dropbox.com/s/8tddnzx8pvzc3xp/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5%20%D1%84%D0%BE%D1%82%D0%BE%202.jpg?raw=1",
               "https://www.dropbox.com/s/qjob9pcnxgk3t3s/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5%20%D1%84%D0%BE%D1%82%D0%BE%203.jpg?raw=1",
               "https://www.dropbox.com/s/s93xw6avte7lufx/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5%20%D1%84%D0%BE%D1%82%D0%BE%204.jpg?raw=1",
             ].map((src, idx) => (
-              <img src={src} key={idx} />
+              <img src={src} key={idx} loading="lazy" />
             ))}
           </Carousel>
         </FirstPage1ImageWrapper>

@@ -1,8 +1,9 @@
 import { Box } from "@mui/material";
-import { HistoryImagesGallery, HistoryImagesItems } from "./styled";
+import { HistoryImagesGallery } from "./styled";
 import { useState } from "react";
 import { Dialog } from "@mui/material";
 import HistoryGalleryItem from "./HistoryGalleryItem";
+import ImageWithLoader from "../../../../components/ImageWithLoader";
 
 const HistoryGallery = () => {
   const [fullImageSrc, setFullImageSrc] = useState(null);
@@ -94,7 +95,7 @@ const HistoryGallery = () => {
       </HistoryImagesGallery>
       <Dialog open={!!fullImageSrc} onClose={() => setFullImageSrc(null)}>
         <Box height="500px" overflow="hidden">
-          <img height="100%" src={fullImageSrc} alt="" />
+          <ImageWithLoader height="100%" src={fullImageSrc} alt="" />
         </Box>
       </Dialog>
     </Box>

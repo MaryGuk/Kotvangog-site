@@ -10,10 +10,24 @@ import ReviewsPage from "./views/ReviewsPage";
 import ProductsPage from "./views/ProductsPage";
 import OilPortraitPage from "./views/ProductsPage/OilPortraitPage";
 import LikenessPortraitPage from "./views/ProductsPage/LikenessPortraitPage";
+import { Box } from "@mui/material";
+import PaintbrushLoader from "./components/ImageWithLoader/PaintbrushLoader";
 
 const App = () => {
   return (
-    <Suspense fallback="loading">
+    <Suspense
+      fallback={
+        <Box
+          width="100vw"
+          height="100vh"
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <PaintbrushLoader width={500} />
+        </Box>
+      }
+    >
       <BrowserRouter>
         <div className="app-wrapper">
           <Navbar />
