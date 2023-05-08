@@ -92,7 +92,9 @@ const FirstPage = () => {
               "https://www.dropbox.com/s/qjob9pcnxgk3t3s/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5%20%D1%84%D0%BE%D1%82%D0%BE%203.jpg?raw=1",
               "https://www.dropbox.com/s/s93xw6avte7lufx/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5%20%D1%84%D0%BE%D1%82%D0%BE%204.jpg?raw=1",
             ].map((src, idx) => (
-              <img src={src} key={idx} loading="lazy" />
+              <Box height={600}>
+                <img src={src} key={idx} loading="lazy" decoding="async" />
+              </Box>
             ))}
           </Carousel>
         </FirstPage1ImageWrapper>
