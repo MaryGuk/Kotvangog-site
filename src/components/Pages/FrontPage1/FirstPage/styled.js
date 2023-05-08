@@ -6,6 +6,7 @@ export const FirstPageWrapper = styled(Box)`
   display: flex;
   justify-content: center;
   height: auto;
+  overflow: hidden;
 `;
 export const FirstPageGeneral = styled(Box)`
   width: 100%;
@@ -48,18 +49,15 @@ export const FirstPageTitle = styled(Box)`
   }
 
   @media (max-width: 592px) {
-    margin-top: 40px;
-  }
-  @media (max-width: 480px) {
-    /* margin-top: 20px; */
+    margin-top: -20px;
   }
 `;
 
 export const FirstPageTitleOne = styled(Box)`
-  margin-bottom: 17px;
+  margin-bottom: 5px;
 
-  @media (max-width: 480px) {
-    margin-bottom: 20px;
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    margin-top: 160px;
   }
 `;
 
@@ -69,6 +67,12 @@ export const FirstPageInfoItems = styled(Box)`
 
   @media (max-width: 1082px) {
     margin-left: 20px;
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    margin-top: 80px;
+    align-items: center;
+    margin-right: 20px;
   }
 `;
 
@@ -142,9 +146,10 @@ export const FirstPageInfoMessageText = styled(Box)`
     padding: 10px;
   }
 
-  @media (max-width: 480px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     margin-left: -5px;
     font-size: 16px;
+    margin-top: 30px;
   }
 `;
 
@@ -153,11 +158,16 @@ export const FirstPage1ImageWrapper = styled(Box)`
   overflow: hidden;
   width: 480px;
   margin-top: 80px;
+  margin-bottom: 120px;
 
   @media (max-width: 767px) {
     margin-top: 120px;
   }
   @media (max-width: 480px) {
     margin-top: -80px;
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    margin-top: 160px;
   }
 `;

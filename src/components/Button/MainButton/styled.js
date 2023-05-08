@@ -1,16 +1,15 @@
 import { Box, styled } from "@mui/material";
 
 export const MainButtonWrapper = styled(Box)`
-  margin-bottom: 120px;
-
-  /* @media (max-width: 767px) {
-    margin-bottom: 260px;
-  } */
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    margin-bottom: 80px;
+  }
 `;
 
 export const MainButtonContainer = styled(Box)`
   display: flex;
   cursor: pointer;
+  margin-bottom: 100px;
 `;
 
 export const MainButtonItem = styled(Box)`

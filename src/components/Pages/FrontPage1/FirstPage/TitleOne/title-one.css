@@ -73,3 +73,8 @@
     margin-left: 20px;
   }
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .title-one__title {
+    font-size: 26px;
+  }
+}

@@ -13,9 +13,21 @@
   margin-left: -30px;
 }
 
+@media (max-width: 375px) {
+  .likeness__title-background {
+    margin-left: 30px;
+  }
+}
+
 .likeness__title-background-image {
-  width: 400px;
+  width: 300px;
   height: 47px;
+}
+
+@media (max-width: 375px) {
+  .likeness__title-background-image {
+    width: 150px;
+  }
 }
 
 .likeness__title {

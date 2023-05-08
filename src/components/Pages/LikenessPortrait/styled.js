@@ -13,12 +13,15 @@ export const LikenessPortraitGeneral = styled(Box)`
   background-size: cover;
   width: 100%;
   padding-top: 20px;
-  margin: 10px;
 `;
 
 export const LikenessContent = styled(Box)`
   display: flex;
   justify-content: center;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    padding: 0 20px;
+  }
 `;
 export const LikenessContent2 = styled(Box)`
   width: 100%;
@@ -96,6 +99,12 @@ export const FourthTextLikeness = styled(Box)`
 `;
 export const LikenessContentPhoto = styled(Box)`
   margin-top: 40px;
+  width: 520px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    width: 280px;
+    align-items: center;
+  }
 `;
 
 export const ButtonContainer = styled(Box)`
