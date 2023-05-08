@@ -49,7 +49,7 @@ export const FirstPageTitle = styled(Box)`
   }
 
   @media (max-width: 592px) {
-    margin-top: -20px;
+    margin-top: 190px;
   }
 `;
 

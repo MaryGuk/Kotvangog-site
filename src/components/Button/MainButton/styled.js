@@ -2,7 +2,7 @@ import { Box, styled } from "@mui/material";
 
 export const MainButtonWrapper = styled(Box)`
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    margin-bottom: 80px;
+    margin-bottom: 250px;
   }
 `;
 
