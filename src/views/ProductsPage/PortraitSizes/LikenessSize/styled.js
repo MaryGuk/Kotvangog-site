@@ -27,7 +27,7 @@ export const LikenessSizeTextOneContainer = styled(Box)`
 `;
 
 export const LikenessSizeTextOne = styled(Box)`
-  font-size: 22px;
+  font-size: 18px;
   font-family: "Nunito", Sans-serif;
   font-weight: 600;
 `;
@@ -37,9 +37,9 @@ export const LikenessSizeTextOneMoreContainer = styled(Box)`
 `;
 
 export const LikenessSizeTextOneMore = styled(Box)`
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Nunito", Sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   color: #555555;
 `;
 
@@ -49,19 +49,19 @@ export const LikenessSizeTextTwoContainer = styled(Box)`
 `;
 
 export const LikenessSizeTextTwo = styled(Box)`
-  font-size: 22px;
+  font-size: 18px;
   font-family: "Nunito", Sans-serif;
   font-weight: 600;
 `;
 export const LikenessSizeTextTwoMoreContainer = styled(Box)`
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: -30px;
 `;
 export const LikenessSizeTextTwoMore = styled(Box)`
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Nunito", Sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   color: #555555;
 `;
 

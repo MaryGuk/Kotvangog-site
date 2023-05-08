@@ -50,7 +50,7 @@ const ProductsPage = () => {
               previewSrc:
                 "https://www.dropbox.com/s/vbibavxa4l92wg7/44%20ba.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/vbibavxa4l92wg7/44%20ba.jpg?raw=1",
+                "https://www.dropbox.com/s/gmdw93f2wzwnz9x/4%20ba%20full.jpg?raw=1",
             },
             {
               previewSrc:

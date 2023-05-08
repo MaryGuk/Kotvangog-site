@@ -39,8 +39,8 @@ const OilPortrait = () => {
             <OilContentPhoto>
               <img
                 src="https://www.dropbox.com/s/k1f3ypvk1nq66ce/oil-classic.png?raw=1"
-                width="400px"
-                height="600px"
+                width="100%"
+                height="100%"
               />
             </OilContentPhoto>
             <OilContentDescription>

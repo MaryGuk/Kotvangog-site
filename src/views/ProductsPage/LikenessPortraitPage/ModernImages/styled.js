@@ -29,7 +29,6 @@ export const HistoryImagesCollageItems = styled(Box)`
   display: flex;
   flex-direction: row;
   align-items: center;
-
   justify-content: space-evenly;
 
   @media (max-width: 950px) {

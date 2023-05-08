@@ -20,7 +20,7 @@ const Footer = () => {
               <div className="address-street__more">
                 {t("footer.address-street__more")}
               </div>
-              <div className="phone-number"> +7 (993) 360-07-10 </div>
+              {/* <div className="phone-number"> +7 (993) 360-07-10 </div> */}
               <div className="location-container">
                 <a href="https://yandex.by/maps/-/CCUzJVxNXC" target="_blank">
                   <div className="address-location">

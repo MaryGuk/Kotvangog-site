@@ -47,6 +47,13 @@
   }
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .wave-text__title-background-image {
+    width: 390px;
+    height: 120px;
+  }
+}
+
 .wave-text__title {
   position: relative;
   font-size: 18px;
@@ -55,4 +62,11 @@
   flex-wrap: wrap;
   max-width: 570px;
   text-align: right;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .wave-text__title {
+    font-size: 16px;
+    margin-top: 10px;
+  }
 }

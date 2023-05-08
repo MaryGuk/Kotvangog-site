@@ -11,7 +11,7 @@ export const OilSizeGeneral = styled(Box)`
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 15px;
+  margin-top: 50px;
 
   @media (max-width: 805px) {
     margin: 15px;
@@ -35,7 +35,7 @@ export const OilSizeTextOne = styled(Box)`
 export const OilSizeTextTwoContainer = styled(Box)`
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: -30px;
 `;
 
 export const OilSizeTextTwo = styled(Box)`

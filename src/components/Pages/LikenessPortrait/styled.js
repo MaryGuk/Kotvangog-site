@@ -56,6 +56,10 @@ export const EllipseLikeness = styled(Box)`
   height: 170px;
   background-color: rgba(190, 190, 190, 0.5);
   border-radius: 50% / 70%;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    width: 380px;
+  }
 `;
 
 export const FirstTextLikeness = styled(Box)`

@@ -3,7 +3,12 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 40px;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .oil__title-wrapper {
+    margin-top: 100px;
+  }
 }
 
 .oil-page__title-background {
@@ -18,6 +23,13 @@
   height: 47px;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .oil__title-background-image {
+    width: 350px;
+    margin-left: 10px;
+  }
+}
+
 .oil__title {
   position: relative;
   font-size: 24px;
@@ -25,4 +37,11 @@
   font-weight: 500;
   text-align: center;
   color: white;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .oil__title {
+    margin-top: 5px;
+    font-size: 22px;
+  }
 }
