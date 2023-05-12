@@ -6,7 +6,6 @@
   justify-content: center;
 }
 
-
 .styles-page__title {
   font-size: 24px;
   font-family: "Palatino Linotype";
@@ -28,7 +27,7 @@
 }
 
 .styles__item {
-  padding: 5px 15px 0 15px;
+  padding: 5px 15px;
 }
 
 .styles__image {
@@ -36,8 +35,11 @@
   border-radius: 10px;
   border: none;
   box-shadow: 3px 5px 0 1px #b4b5b6;
-  height: 270px;
-  width: 210px;
+}
+
+.styles__image:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 
 .styles-name {

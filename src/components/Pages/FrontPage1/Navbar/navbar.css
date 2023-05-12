@@ -4,7 +4,7 @@
   padding: 15px;
   content: "";
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 
   position: fixed;
   top: 0;

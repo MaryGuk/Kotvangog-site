@@ -1,5 +1,3 @@
-import { Box } from "@mui/material";
-
 import { ExamplesGallery, ExamplesGalleryContainer } from "./styled-examples";
 
 const ExamplesItem = ({ previewSrc, fullSrc, setFullImage }) => {
