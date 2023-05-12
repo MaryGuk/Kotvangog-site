@@ -1,5 +1,6 @@
 .process-page {
   background-color: #e0e0e0;
+  padding-top: 49px;
 }
 
 .process-page__container {
@@ -32,7 +33,7 @@
   font-weight: 400;
 }
 
-.process-secondary-description{
+.process-secondary-description {
   font-family: "Trebuchet MS", serif;
   font-weight: 400;
   font-size: 14px;
@@ -67,10 +68,9 @@
     justify-items: center;
   }
 }
-.process-item__wrapper{
+.process-item__wrapper {
   margin: 5px;
 }
-
 
 .process-text__container {
   display: grid;
