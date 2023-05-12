@@ -10,7 +10,7 @@ const StylesPage = () => {
   return (
     <div className="styles-page">
       <MainPageItemWrapper>
-        <div className="advantages-page__general">
+        <div className="styles-page__general">
           <StylesTitle />
           <div className="styles-art">
             <div className="styles__item">

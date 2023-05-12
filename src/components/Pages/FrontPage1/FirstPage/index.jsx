@@ -87,7 +87,7 @@ const FirstPage = () => {
         <FirstPage1ImageWrapper>
           <Carousel animation="fade">
             {[
-              "https://www.dropbox.com/s/9my6s654mpsqu3v/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5%20%D1%84%D0%BE%D1%82%D0%BE.jpg?raw=1",
+              "https://www.dropbox.com/s/y84e5q7zb15f96p/111%20pr.jpg?raw=1",
               "https://www.dropbox.com/s/8tddnzx8pvzc3xp/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5%20%D1%84%D0%BE%D1%82%D0%BE%202.jpg?raw=1",
               "https://www.dropbox.com/s/qjob9pcnxgk3t3s/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5%20%D1%84%D0%BE%D1%82%D0%BE%203.jpg?raw=1",
               "https://www.dropbox.com/s/s93xw6avte7lufx/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5%20%D1%84%D0%BE%D1%82%D0%BE%204.jpg?raw=1",

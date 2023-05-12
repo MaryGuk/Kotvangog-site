@@ -15,7 +15,6 @@ export const FirstPageGeneral = styled(Box)`
   flex-direction: row;
   overflow: hidden;
   margin-top: 50px;
-  background-color: #fafafa;
 
   @media (max-width: 740px) {
     width: min-content;

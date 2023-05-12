@@ -6,6 +6,7 @@ export const ArtStylesSizeWrapper = styled(Box)`
   display: flex;
   justify-content: center;
   height: auto;
+  padding-top: 65px;
 `;
 export const ArtStylesSizeGeneral = styled(Box)`
   width: 100%;

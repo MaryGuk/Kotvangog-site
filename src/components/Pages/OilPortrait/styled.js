@@ -5,6 +5,7 @@ export const OilPortraitWrapper = styled(Box)`
   display: flex;
   justify-content: center;
   width: 100%;
+  padding-top: 30px;
 `;
 
 export const OilPortraitGeneral = styled(Box)`
@@ -39,6 +40,7 @@ export const OilContent2 = styled(Box)`
 
 export const OilContentPhoto = styled(Box)`
   margin-top: 10px;
+  margin-bottom: -3px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     width: 280px;
@@ -48,6 +50,7 @@ export const OilContentPhoto = styled(Box)`
 
 export const OilContentDescription = styled(Box)`
   margin-top: 80px;
+  padding-left: 14px;
 `;
 
 export const EllipseСontainer = styled(Box)`

@@ -80,7 +80,7 @@ const LikenessSize = () => {
             },
             {
               imageSrc:
-                "https://www.dropbox.com/s/c3sdtn4pvmsbshz/g5.jpg?raw=1",
+                "https://www.dropbox.com/s/vt3qy5yqyzv1a09/g5.jpg?raw=1",
               imageSize: "70×90",
               printDescription: "Печать от 6290 руб.",
               oilDescription: "Маслом от 19500 руб.",

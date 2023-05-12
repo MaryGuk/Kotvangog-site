@@ -38,7 +38,7 @@ const OilPortrait = () => {
           <OilContent2>
             <OilContentPhoto>
               <img
-                src="https://www.dropbox.com/s/k1f3ypvk1nq66ce/oil-classic.png?raw=1"
+                src="https://www.dropbox.com/s/d246lfzbm0fn6a8/%D0%9A%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE%D0%BC2.png?raw=1"
                 width="100%"
                 height="100%"
               />

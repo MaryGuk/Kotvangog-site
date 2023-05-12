@@ -6,6 +6,8 @@ export const OilSizeWrapper = styled(Box)`
   display: flex;
   justify-content: center;
   height: auto;
+  padding-top: 30px;
+  padding-bottom: 60px;
 `;
 export const OilSizeGeneral = styled(Box)`
   width: 100%;
@@ -52,4 +54,5 @@ export const OilSizeContainer = styled(Box)`
   margin: 0 auto;
   align-items: center;
   justify-items: center;
+  margin-top: 50px;
 `;

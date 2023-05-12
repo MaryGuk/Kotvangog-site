@@ -4,6 +4,7 @@
   background-size: cover;
   display: flex;
   justify-content: center;
+  padding: 65px 0;
 }
 
 .styles-page__title {

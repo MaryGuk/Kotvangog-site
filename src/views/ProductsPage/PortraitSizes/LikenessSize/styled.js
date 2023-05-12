@@ -6,6 +6,7 @@ export const LikenessSizeWrapper = styled(Box)`
   display: flex;
   justify-content: center;
   height: auto;
+  padding: 65px 0;
 `;
 export const LikenessSizeGeneral = styled(Box)`
   width: 100%;
@@ -73,4 +74,5 @@ export const LikenessSizeContainer = styled(Box)`
   margin: 0 auto;
   align-items: center;
   justify-items: center;
+  margin-top: 50px;
 `;

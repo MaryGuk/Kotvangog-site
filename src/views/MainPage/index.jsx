@@ -7,6 +7,7 @@ import { MainPageWrapper } from "./styled";
 import OilPortrait from "../../components/Pages/OilPortrait/oil-portrait";
 import LikenessPortrait from "../../components/Pages/LikenessPortrait/likeness-portrait";
 import FirstPage from "../../components/Pages/FrontPage1/FirstPage";
+import ArtStylesSize from "../ProductsPage/PortraitSizes/ArtStylesSize";
 
 const MainPage = () => {
   return (
@@ -18,6 +19,7 @@ const MainPage = () => {
       <StylesPage />
       <LikenessPortrait />
       <ProcessPage />
+      <ArtStylesSize />
       <Footer />
     </MainPageWrapper>
   );
