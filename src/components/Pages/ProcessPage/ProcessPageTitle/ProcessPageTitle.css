@@ -10,7 +10,7 @@
   position: absolute;
   justify-content: center;
   display: flex;
-  margin-left: -25px;
+  margin-left: -50px;
 }
 
 @media (max-width: 410px) {
@@ -31,7 +31,7 @@
 
 .process-page__title-background-image {
   width: 600px;
-  height: 45px;
+  height: 70px;
 }
 
 @media (max-width: 635px) {
@@ -58,6 +58,7 @@
   font-size: 24px;
   font-family: "Palatino Linotype";
   font-weight: 400;
+  margin-top: 16px;
   font-style: normal;
   font-display: swap;
   text-align: center;

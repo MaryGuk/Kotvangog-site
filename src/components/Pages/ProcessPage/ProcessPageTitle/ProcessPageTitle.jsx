@@ -7,7 +7,7 @@ const ProcessPageTitle = () => {
         <div className="process-page-page__title-background">
           <img
             className="process-page__title-background-image"
-            src="/images/background/green wave.png"
+            src="/images/background/waveTwo1.png"
           />
         </div>
         <div className="process-page__title">
