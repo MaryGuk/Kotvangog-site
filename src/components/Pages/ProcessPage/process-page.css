@@ -1,6 +1,7 @@
 .process-page {
   background-color: #e0e0e0;
-  padding-top: 49px;
+  padding-top: 68px;
+  padding-bottom: 105px;
 }
 
 .process-page__container {
@@ -130,15 +131,20 @@
 }
 
 .process-ava {
-  height: 100%;
-  width: 300px;
-  display: block;
+  width: 400px;
+}
+@media (max-width: 780px) {
+  .process-ava {
+    width: 300px;
+  }
 }
 
 .process-video {
   display: flex;
   flex-wrap: wrap;
-  /* width: 450px; */
+  width: 580px;
+  height: 335px;
+  border-radius: 10px;
   margin-top: 10px;
 }
 
@@ -151,28 +157,34 @@
   }
 }
 
-video {
-  width: 100%;
-  height: auto;
-  max-width: 500px;
-}
-
 .process-author {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 80px;
   background-color: #94b496;
-  box-shadow: 7px 7px 0 1px #b0b0b0;
+  box-shadow: 5px 5px 0 1px #7c7c7c;
   border-radius: 10px;
-  max-width: 200px;
+  max-width: 225px;
   height: auto;
+  margin-left: -40px;
 }
 
 @media (max-width: 780px) {
   .process-author {
+    margin-top: 90px;
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .process-author {
     margin-top: 20px;
   }
+}
+
+.process-author a {
+  text-decoration: none;
 }
 
 .process-author__name {
@@ -183,13 +195,12 @@ video {
   text-align: center;
   color: #fff;
   line-height: 0.9em;
-  padding-top: 5px;
 }
 
 .author-name__color {
   font-family: "Trebuchet MS";
   font-weight: 500;
-  padding-bottom: 5px;
+  /* padding-bottom: 1px; */
   text-align: center;
   color: #414141;
   font-size: 14px;

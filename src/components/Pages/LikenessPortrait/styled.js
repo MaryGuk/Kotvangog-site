@@ -5,7 +5,7 @@ export const LikenessPortraitWrapper = styled(Box)`
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 60px;
+  padding-top: 70px;
 `;
 
 export const LikenessPortraitGeneral = styled(Box)`

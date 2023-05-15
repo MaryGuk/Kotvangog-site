@@ -7,6 +7,7 @@ export const FirstPageWrapper = styled(Box)`
   justify-content: center;
   height: auto;
   overflow: hidden;
+  padding-top: 20px;
 `;
 export const FirstPageGeneral = styled(Box)`
   width: 100%;

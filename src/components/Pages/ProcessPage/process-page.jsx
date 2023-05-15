@@ -73,21 +73,20 @@ const ProcessPage = () => {
             <div className="process-video">
               <iframe
                 className="process-video"
-                width="560"
-                height="315"
                 src="https://www.youtube.com/embed/Ml7CWmrXmsE?autoplay=0"
                 title="Портрет Энид Синклер из сериала Уэнсдей"
                 allowFullScreen
               ></iframe>
             </div>
-          </div>
-
-          <div className="process-author">
-            <div className="process-author__name">
-              {t("processPage.author-name")}
-            </div>
-            <div className="author-name__color">
-              {t("processPage.author-name__color")}
+            <div className="process-author">
+              <a href="https://www.instagram.com/nen_nenad/" target="_blank">
+                <div className="process-author__name">
+                  {t("processPage.author-name")}
+                </div>
+                <div className="author-name__color">
+                  {t("processPage.author-name__color")}
+                </div>
+              </a>
             </div>
           </div>
         </div>
