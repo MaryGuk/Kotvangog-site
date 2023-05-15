@@ -11,37 +11,39 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
-      {/* <div>
+    <div className="navbar-wrapper">
+      <nav className="navbar">
+        {/* <div>
         <button onClick={() => changeLanguage("en")}> EN </button>
         <button onClick={() => changeLanguage("ru")}> RU </button>{" "}
       </div> */}
 
-      <div className="logo"> kotvangog</div>
-      <NavbarWrapper>
-        {[
-          { path: "/home", title: t("mainPage.navItem1") },
-          {
-            path: "#",
-            title: t("mainPage.navItem2"),
-            menuItems: [
-              {
-                menuItemTitle: "Портрет маслом",
-                menuItemPath: "/oil-portrait",
-              },
-              { menuItemTitle: "Арт стили", menuItemPath: "/products" },
-              {
-                menuItemTitle: "Портрет в образе",
-                menuItemPath: "/likeness-portrait",
-              },
-            ],
-          },
-          { path: "/reviews", title: t("mainPage.navItem3") },
-        ].map((navBarItemProps, idx) => (
-          <NavBarItem key={idx} {...navBarItemProps} />
-        ))}
-      </NavbarWrapper>
-    </nav>
+        <div className="logo"> kotvangog</div>
+        <NavbarWrapper>
+          {[
+            { path: "/home", title: t("mainPage.navItem1") },
+            {
+              path: "#",
+              title: t("mainPage.navItem2"),
+              menuItems: [
+                {
+                  menuItemTitle: "Портрет маслом",
+                  menuItemPath: "/oil-portrait",
+                },
+                { menuItemTitle: "Арт стили", menuItemPath: "/products" },
+                {
+                  menuItemTitle: "Портрет в образе",
+                  menuItemPath: "/likeness-portrait",
+                },
+              ],
+            },
+            { path: "/reviews", title: t("mainPage.navItem3") },
+          ].map((navBarItemProps, idx) => (
+            <NavBarItem key={idx} {...navBarItemProps} />
+          ))}
+        </NavbarWrapper>
+      </nav>
+    </div>
   );
 };
 

@@ -1,15 +1,21 @@
-.navbar {
-  background-color: #ececec;
-  text-align: end;
-  padding: 15px;
-  content: "";
+.navbar-wrapper {
   display: flex;
-  justify-content: space-between;
-
+  width: 100%;
+  justify-content: center;
+  background-color: #ececec;
+  height: auto;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 5;
+}
+
+.navbar {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .navbar a {
