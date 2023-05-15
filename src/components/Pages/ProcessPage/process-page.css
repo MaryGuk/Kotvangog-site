@@ -138,8 +138,8 @@
 .process-video {
   display: flex;
   flex-wrap: wrap;
-  width: 450px;
-  margin-top: -40px;
+  /* width: 450px; */
+  margin-top: 10px;
 }
 
 @media (max-width: 780px) {

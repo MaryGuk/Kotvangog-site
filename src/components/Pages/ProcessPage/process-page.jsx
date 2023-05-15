@@ -71,12 +71,14 @@ const ProcessPage = () => {
             </div>
 
             <div className="process-video">
-              <video
-                className="work-video"
-                src="/Портрет Энид Синклер с сериала _Уэнсдей_.mp4"
-                controls="controls"
-                poster="https://www.dropbox.com/s/jfkvlrhhuacbkk6/wrapper-video.jpg?raw=1"
-              ></video>
+              <iframe
+                className="process-video"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/Ml7CWmrXmsE?autoplay=0"
+                title="Портрет Энид Синклер из сериала Уэнсдей"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
 
