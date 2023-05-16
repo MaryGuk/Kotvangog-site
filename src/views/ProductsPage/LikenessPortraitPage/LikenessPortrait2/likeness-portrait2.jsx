@@ -1,21 +1,21 @@
 import { Box } from "@mui/material";
-import LikenessTitle from "./LikenessTitle/LikenessTitle";
+
 import {
-  LikenessPortraitWrapper,
-  LikenessPortraitGeneral,
-  LikenessContent,
+  LikenessPortraitWrapper2,
+  LikenessPortraitGeneral2,
   LikenessContent2,
-  LikenessContentDescription,
-  EllipseСontainer,
-  EllipseLikeness,
-  FirstTextLikeness,
-  SecondTextLikeness,
-  ThirdTextLikeness,
-  FourthTextLikeness,
-  LikenessContentPhoto,
-  ButtonContainer,
-  FirstButtonLikeness,
-  SecondButtonLikeness,
+  LikenessContent22,
+  LikenessContentDescription2,
+  EllipseСontainer2,
+  EllipseLikeness2,
+  FirstTextLikeness2,
+  SecondTextLikeness2,
+  ThirdTextLikeness2,
+  FourthTextLikeness2,
+  LikenessContentPhoto2,
+  ButtonContainer2,
+  FirstButtonLikeness2,
+  SecondButtonLikeness2,
   ModalMessenger,
   ModalMessengerContent,
   ModalIcons,
@@ -24,60 +24,63 @@ import {
 
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import Modal from "../../../components/Modal/modal";
+import "../../../../components/Modal/modal";
 import { Link } from "react-router-dom";
 
-import "./likeness-portrait.css";
+import "./likeness-portrait2.css";
+import "./LikenessTitle2/likeness-title2.jsx";
+import LikenessTitle2 from "./LikenessTitle2/likeness-title2.jsx";
+import Modal from "../../../../components/Modal/modal";
 
-const LikenessPortrait = () => {
+const LikenessPortrait2 = () => {
   const { t } = useTranslation();
   const [modalActive, setModalActive] = useState(false);
   return (
-    <LikenessPortraitWrapper>
-      <LikenessPortraitGeneral>
-        {/* <LikenessTitle /> */}
-        <LikenessContent>
-          <LikenessContent2>
-            <LikenessContentDescription>
-              <EllipseСontainer>
-                <EllipseLikeness />
-                <FirstTextLikeness>
+    <LikenessPortraitWrapper2>
+      <LikenessPortraitGeneral2>
+        <LikenessTitle2 />
+        <LikenessContent2>
+          <LikenessContent22>
+            <LikenessContentDescription2>
+              <EllipseСontainer2>
+                <EllipseLikeness2 />
+                <FirstTextLikeness2>
                   Хотите иметь в своей коллекции настоящее произведение
                   искусства,которое будет украшением вашего дома или офиса и
                   привлекать восхищённые взгляды гостей? Тогда портрет в образе
                   - это то,что вам нужно!
-                </FirstTextLikeness>
-              </EllipseСontainer>
-              <SecondTextLikeness>
+                </FirstTextLikeness2>
+              </EllipseСontainer2>
+              <SecondTextLikeness2>
                 Мы предлагаем уникальную возможность заказать портрет в образе,
                 созданный нашей командой талантливых художников.
-              </SecondTextLikeness>
-              <ThirdTextLikeness>
+              </SecondTextLikeness2>
+              <ThirdTextLikeness2>
                 Мы не просто вставляем ваше лицо в картину, мы создаём
                 уникальный дизайн, сочетающий несколько фотографий в одну
                 красивую композицию и затем отрисовываем в единую картину. Мы
                 умеем передавать индивидуальность и характер каждого человека на
                 портрете, что делает его по-настоящему уникальным и
                 запоминающимся.
-              </ThirdTextLikeness>
-              <FourthTextLikeness>
+              </ThirdTextLikeness2>
+              <FourthTextLikeness2>
                 Не упустите свой шанс стать обладетелем уникального произведения
                 искусства! Свяжитесь с нами прямо сейчас, чтобы заказать свой
                 собственный портрет в образе и превратить его в настоящую
                 гордость своего дома.
-              </FourthTextLikeness>
-              <ButtonContainer>
+              </FourthTextLikeness2>
+              <ButtonContainer2>
                 <Box>
-                  <FirstButtonLikeness onClick={() => setModalActive(true)}>
+                  <FirstButtonLikeness2 onClick={() => setModalActive(true)}>
                     {t("mainPage.button")}
-                  </FirstButtonLikeness>
+                  </FirstButtonLikeness2>
                 </Box>
 
                 <Box>
                   <Link to="/likeness-portrait" className="link-likeness">
-                    <SecondButtonLikeness>
+                    <SecondButtonLikeness2>
                       Смотреть все работы
-                    </SecondButtonLikeness>
+                    </SecondButtonLikeness2>
                   </Link>
                 </Box>
 
@@ -120,16 +123,16 @@ const LikenessPortrait = () => {
                     </ModalMessengerContent>
                   </ModalMessenger>
                 </Modal>
-              </ButtonContainer>
-            </LikenessContentDescription>
-            <LikenessContentPhoto>
-              <img src="/images/образ2.png" width="100%" height="100%" />
-            </LikenessContentPhoto>
-          </LikenessContent2>
-        </LikenessContent>
-      </LikenessPortraitGeneral>
-    </LikenessPortraitWrapper>
+              </ButtonContainer2>
+            </LikenessContentDescription2>
+            <LikenessContentPhoto2>
+              <img src="/images/образ3.png" />
+            </LikenessContentPhoto2>
+          </LikenessContent22>
+        </LikenessContent2>
+      </LikenessPortraitGeneral2>
+    </LikenessPortraitWrapper2>
   );
 };
 
-export default LikenessPortrait;
+export default LikenessPortrait2;
