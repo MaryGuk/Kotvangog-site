@@ -13,6 +13,7 @@ export const LikenessPortraitGeneral = styled(Box)`
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  max-width: 1200px;
 `;
 
 export const LikenessContent = styled(Box)`
@@ -102,7 +103,8 @@ export const FourthTextLikeness = styled(Box)`
   margin-bottom: 30px;
 `;
 export const LikenessContentPhoto = styled(Box)`
-  margin-top: 40px;
+  margin-top: 15px;
+  padding-bottom: 10px;
   width: 520px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {

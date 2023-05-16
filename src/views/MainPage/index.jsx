@@ -13,14 +13,14 @@ const MainPage = () => {
   return (
     <MainPageWrapper>
       {/* <FrontPage1 /> */}
-      <FirstPage />
+      {/* <FirstPage /> */}
       <AdvantagesPage />
-      <OilPortrait />
+      {/* <OilPortrait /> */}
       <StylesPage />
       <LikenessPortrait />
-      <ProcessPage />
+      {/* <ProcessPage />
       <ArtStylesSize />
-      <Footer />
+      <Footer /> */}
     </MainPageWrapper>
   );
 };

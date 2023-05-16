@@ -15,7 +15,7 @@ export const OilPortraitGeneral = styled(Box)`
   margin: 10px;
   width: 100%;
   padding-top: 20px;
-  overflow: hidden;
+  max-width: 1200px;
 `;
 
 export const OilContent = styled(Box)`
@@ -50,7 +50,7 @@ export const OilContentPhoto = styled(Box)`
 
 export const OilContentDescription = styled(Box)`
   margin-top: 80px;
-  padding-left: 14px;
+  padding-left: 66px;
 `;
 
 export const EllipseСontainer = styled(Box)`

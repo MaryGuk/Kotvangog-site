@@ -12,9 +12,10 @@ export const FirstPageWrapper = styled(Box)`
 export const FirstPageGeneral = styled(Box)`
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-direction: row;
-  overflow: hidden;
+  /* overflow: hidden; */
+  max-width: 1200px;
   margin-top: 50px;
 
   @media (max-width: 740px) {
