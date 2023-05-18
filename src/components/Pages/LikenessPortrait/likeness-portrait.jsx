@@ -35,7 +35,7 @@ const LikenessPortrait = () => {
   return (
     <LikenessPortraitWrapper>
       <LikenessPortraitGeneral>
-        {/* <LikenessTitle /> */}
+        <LikenessTitle />
         <LikenessContent>
           <LikenessContent2>
             <LikenessContentDescription>

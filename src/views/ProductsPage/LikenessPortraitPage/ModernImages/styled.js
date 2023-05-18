@@ -29,7 +29,7 @@ export const HistoryImagesCollageItems = styled(Box)`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 
   @media (max-width: 950px) {
     display: "flex";
@@ -45,13 +45,14 @@ export const HistoryImagesCollageImage = styled(Box)`
 
 export const HistoryImagesCollageText = styled(Box)`
   margin-top: -40px;
-  margin-left: 20px;
+  margin-left: 5px;
 `;
 export const HistoryImagesCollageText1 = styled(Box)`
   font-size: 19px;
   font-family: "Palatino Linotype";
   font-weight: 700;
   color: #555555;
+  text-align: center;
 `;
 export const HistoryImagesCollageText2 = styled(Box)`
   font-size: 18px;

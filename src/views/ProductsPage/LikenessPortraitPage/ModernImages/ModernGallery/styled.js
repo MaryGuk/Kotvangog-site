@@ -9,4 +9,5 @@ export const ModernImagesItems = styled(Box)`
   grid-row-gap: 30px;
   width: 53%;
   margin: 20px auto;
+  max-width: 1200px;
 `;

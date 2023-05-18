@@ -68,7 +68,7 @@ export const FirstPageTitleOne = styled(Box)`
 
 export const FirstPageInfoItems = styled(Box)`
   margin-top: 30px;
-  margin-left: -40px;
+  /* margin-left: -40px; */
 
   @media (max-width: 1082px) {
     margin-left: 20px;
@@ -127,7 +127,7 @@ export const FirstPageInfoMessage = styled(Box)`
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-  margin-left: -40px;
+  /* margin-left: -40px; */
 
   @media (max-width: 767px) {
     margin-top: 300px;

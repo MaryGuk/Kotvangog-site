@@ -18,7 +18,6 @@ export const LikenessPortraitGeneral2 = styled(Box)`
 
 export const LikenessContent2 = styled(Box)`
   display: flex;
-  justify-content: center;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     padding: 0 20px;
@@ -106,7 +105,7 @@ export const LikenessContentPhoto2 = styled(Box)`
   margin-top: 15px;
   padding-bottom: 10px;
   width: 520px;
-  margin-left: -25px;
+  /* margin-left: -25px; */
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     width: 280px;

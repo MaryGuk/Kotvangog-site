@@ -24,7 +24,7 @@ export const MainButtonItem = styled(Box)`
   padding: 15px;
   max-width: 300px;
   box-shadow: 3px 3px 0 1px #9e9e9e;
-  margin-left: -50px;
+  /* margin-left: -50px; */
 
   @media (max-width: 767px) {
     font-size: 16px;
