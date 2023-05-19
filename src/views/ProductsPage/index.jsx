@@ -206,7 +206,7 @@ const ProductsPage = () => {
           portraitPrice: i18n.language === "en" ? "From 20$" : "От 1090 руб.",
           portraitDescription: t("productsPage.portraitDescription.part4"),
           srcAfter:
-            "https://www.dropbox.com/s/f02l7vdxxcb9dnl/%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B5.jpg?raw=1",
+            "https://www.dropbox.com/s/q493spz0qmsvtql/%D0%91%D0%B5%D0%B7%20%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8-1.jpg?raw=1",
           galleryImages: [
             {
               previewSrc:
@@ -424,7 +424,7 @@ const ProductsPage = () => {
           portraitPrice: i18n.language === "en" ? "From 20$" : "От 1490 руб.",
           portraitDescription: t("productsPage.portraitDescription.part9"),
           srcAfter:
-            "https://www.dropbox.com/s/h6vreznt1wekyph/%D0%BF%D0%B8%D1%82%D0%BE%D0%BC%D0%B5%D1%86%20%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B5.jpg?raw=1",
+            "https://www.dropbox.com/s/yrok0tjnq0n3x2i/%D0%BF%D0%B8%D1%82%D0%BE%D0%BC%D0%B5%D1%86%20%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B5.jpg?raw=1",
           galleryImages: [
             {
               previewSrc:
