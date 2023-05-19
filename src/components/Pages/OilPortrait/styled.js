@@ -50,10 +50,6 @@ export const OilContentPhoto = styled(Box)`
 export const OilContentDescription = styled(Box)`
   margin-top: 70px;
   padding-left: 66px;
-
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    margin-left: -70px;
-  }
 `;
 
 export const EllipseСontainer = styled(Box)`
