@@ -9,8 +9,11 @@ export const MainButtonWrapper = styled(Box)`
 export const MainButtonContainer = styled(Box)`
   display: flex;
   cursor: pointer;
-  margin-top: -85px;
   margin-left: -10px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    margin-top: -85px;
+  }
 `;
 
 export const MainButtonItem = styled(Box)`
