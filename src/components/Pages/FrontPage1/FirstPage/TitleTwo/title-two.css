@@ -27,7 +27,7 @@
 
 @media (max-width: 480px) {
   .title-two-page__title-background {
-    margin-left: -5px;
+    margin-left: 5px;
   }
 }
 
@@ -36,10 +36,10 @@
   height: 70px;
 }
 
-@media (max-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .title-two__title-background-image {
+    height: 60px;
     width: 210px;
-    height: 32px;
   }
 }
 
@@ -73,12 +73,7 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .title-two__title {
-    font-size: 26px;
-  }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-  .title-two__title {
     margin-top: -15px;
+    font-size: 22px;
   }
 }

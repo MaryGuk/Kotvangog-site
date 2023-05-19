@@ -9,7 +9,8 @@ export const MainButtonWrapper = styled(Box)`
 export const MainButtonContainer = styled(Box)`
   display: flex;
   cursor: pointer;
-  margin-bottom: 100px;
+  margin-top: -85px;
+  margin-left: -10px;
 `;
 
 export const MainButtonItem = styled(Box)`
@@ -24,11 +25,10 @@ export const MainButtonItem = styled(Box)`
   padding: 15px;
   max-width: 300px;
   box-shadow: 3px 3px 0 1px #9e9e9e;
-  /* margin-left: -50px; */
 
   @media (max-width: 767px) {
-    font-size: 16px;
-    margin-left: -80px;
+    font-size: 12px;
+    padding: 10px;
   }
 
   @media (max-width: 1082px) {
