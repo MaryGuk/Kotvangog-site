@@ -18,6 +18,12 @@
   max-width: 1200px;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .advantages-page__general {
+    max-width: 100%;
+  }
+}
+
 .advantages-page__title {
   font-size: 24px;
   font-family: "Palatino Linotype";
@@ -40,6 +46,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
+    grid-row-gap: 20px;
     justify-items: center;
   }
 }
