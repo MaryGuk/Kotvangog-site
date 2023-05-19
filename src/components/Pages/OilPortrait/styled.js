@@ -15,7 +15,6 @@ export const OilPortraitGeneral = styled(Box)`
   margin: 10px;
   width: 100%;
   padding-top: 20px;
-  max-width: 1200px;
 `;
 
 export const OilContent = styled(Box)`
@@ -51,6 +50,10 @@ export const OilContentPhoto = styled(Box)`
 export const OilContentDescription = styled(Box)`
   margin-top: 80px;
   padding-left: 66px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    margin-left: -70px;
+  }
 `;
 
 export const EllipseСontainer = styled(Box)`
@@ -64,71 +67,132 @@ export const Ellipse = styled(Box)`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -60%) rotate(5deg);
-  width: 550px;
-  height: 170px;
+  width: 570px;
+  height: 190px;
   background-color: rgba(190, 190, 190, 0.5);
   border-radius: 50% / 70%;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    width: 320px;
+    height: 220px;
+  }
 `;
 
 export const FirstText = styled(Box)`
-  font-size: 15px;
-  font-family: "Nunito";
-  font-weight: 700;
+  font-size: 17px;
+  font-family: "Nunito", Sans-serif;
+  font-weight: 600;
   flex-wrap: wrap;
   max-width: 420px;
   text-align: center;
   position: relative;
-  z-index: 1;
+  /* letter-spacing: 0.8px; */
+  z-index: 4;
   text-align: center;
   margin-bottom: 30px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    font-size: 13px;
+    max-width: 300px;
+  }
 `;
-export const SecondText = styled(Box)`
-  font-size: 14px;
-  font-family: "Nunito";
-  font-weight: 400;
+export const SecondTextPart1 = styled(Box)`
+  font-size: 16px;
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  line-height: 1.3;
   flex-wrap: wrap;
-  max-width: 550px;
+  max-width: 650px;
   text-align: right;
-  margin-bottom: 30px;
   margin-top: 20px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    font-size: 12px;
+    max-width: 300px;
+    text-align: right;
+  }
 `;
-export const ThirdText = styled(Box)`
-  font-size: 14px;
-  font-family: "Nunito";
+export const SecondTextPart2 = styled(Box)`
+  font-size: 16px;
+  font-family: "Comfortaa", cursive;
   font-weight: 400;
   flex-wrap: wrap;
-  max-width: 550px;
+  max-width: 650px;
   text-align: right;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  margin-top: 3px;
+  line-height: 1.3;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    font-size: 12px;
+    max-width: 300px;
+    text-align: right;
+    margin-bottom: 20px;
+  }
 `;
+
+export const ThirdText = styled(Box)`
+  font-size: 16px;
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+  flex-wrap: wrap;
+  max-width: 650px;
+  text-align: right;
+  margin-bottom: 50px;
+  line-height: 1.3;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    font-size: 12px;
+    max-width: 300px;
+    text-align: right;
+    margin-bottom: 20px;
+  }
+`;
+
 export const ButtonContainer = styled(Box)`
   display: flex;
 `;
 export const FirstButton = styled(Box)`
-  font-size: 16px;
-  font-family: "Trebuchetms";
+  font-size: 17px;
+  font-family: "Comfortaa", cursive;
   font-weight: 500;
   background-color: #bdbdbd;
   color: white;
   border-radius: 50px;
   border: none;
-  padding: 10px;
-  max-width: 300px;
+  padding: 15px;
+  max-width: 320px;
   box-shadow: 3px 3px 0 1px #9e9e9e;
   margin: 0 20px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    font-size: 12px;
+    max-width: 220px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
 `;
 export const SecondButton = styled(Box)`
-  font-size: 16px;
-  font-family: "Trebuchetms";
+  font-size: 17px;
+  font-family: "Palatino Linotype";
   font-weight: 500;
   background-color: #36883d;
   color: white;
   border-radius: 50px;
   border: none;
-  padding: 10px;
-  max-width: 300px;
+  padding: 15px;
+  max-width: 320px;
   box-shadow: 3px 3px 0 1px #9e9e9e;
   cursor: pointer;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    font-size: 12px;
+    max-width: 220px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
 `;
 
 export const ModalTitle = styled(Box)`

@@ -20,6 +20,6 @@ export const OilPortraitExamplesGallery = styled(Box)`
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   grid-column-gap: 20px;
   grid-row-gap: 15px;
-  width: 70%;
+  width: 60%;
   margin: 40px auto;
 `;

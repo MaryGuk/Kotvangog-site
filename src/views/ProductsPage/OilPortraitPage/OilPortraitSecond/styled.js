@@ -12,10 +12,16 @@ export const OilPortraitSecondGeneral = styled(Box)`
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  max-width: 1150px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    max-width: 100%;
+  }
 `;
 export const OilPortraitSecondContentMain = styled(Box)`
-  margin: 40px 200px 20px 200px;
+  margin: 40px auto;
 `;
 
 export const OilPortraitSecondContent = styled(Box)`

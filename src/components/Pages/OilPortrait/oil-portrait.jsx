@@ -7,7 +7,8 @@ import {
   OilContentDescription,
   OilContent2,
   FirstText,
-  SecondText,
+  SecondTextPart1,
+  SecondTextPart2,
   EllipseСontainer,
   Ellipse,
   ThirdText,
@@ -38,7 +39,9 @@ const OilPortrait = () => {
           <OilContent2>
             <OilContentPhoto>
               <img
-                src="https://www.dropbox.com/s/d246lfzbm0fn6a8/%D0%9A%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE%D0%BC2.png?raw=1"
+                src="/images/oil-classic (2).png"
+                // src="https://www.dropbox.com/s/d246lfzbm0fn6a8/%D0%9A%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%20%D0%BC%D0%B0%D1%81%D0%BB%D0%BE%D0%BC2.png?raw=1"
+
                 width="100%"
                 height="100%"
               />
@@ -53,23 +56,25 @@ const OilPortrait = () => {
                   портретов, написанных маслом по фотографии.
                 </FirstText>
               </EllipseСontainer>
-              <SecondText>
-                <span style={{ fontWeight: "700" }}>
-                  Мы используем только высококачественные материалы! Умеем
-                  захватывать эмоции и индивидуальность каждого человека.
-                </span>
+              <SecondTextPart1>
+                Мы используем только высококачественные материалы! Умеем
+                захватывать эмоции и индивидуальность каждого человека.
+              </SecondTextPart1>
+              <SecondTextPart2>
                 Результатом нашей работы являются неповторимые произведения
                 искусства, которые будут радовать вас и ваших близких на
                 протяжении многих лет.
-              </SecondText>
+              </SecondTextPart2>
+
               <ThirdText>
                 Мы работаем с фотографиями любого формата и стиля, и готовы
                 предоставить вам консультацию и рекомендации по созданию
                 наиболее удачного портрета.
                 <span style={{ fontWeight: "700" }}>
+                  {" "}
                   Не упустите возможность сохранить важные моменты вашей жизни в
                   искусстве.
-                </span>
+                </span>{" "}
                 Обратитесь к нам сегодня, и мы с радостью поможем вам создать
                 портреты, которые вы будете любить и ценить навсегда!
               </ThirdText>

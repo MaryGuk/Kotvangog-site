@@ -18,6 +18,12 @@
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    max-width: 100%;
+  }
+}
+
 .navbar a {
   font-size: 18px;
   color: #535353;
@@ -44,4 +50,10 @@
   font-size: 24px;
   text-transform: uppercase;
   color: #535353;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin-right: 80px;
+  }
 }

@@ -2,15 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   margin: 5px;
+  max-width: 1000px;
 }
 
 .wave-text__title-background {
   position: absolute;
   justify-content: flex-start;
   display: flex;
-  opacity: 0.8;
+  opacity: 1;
   margin-top: -20px;
   margin-left: -50px;
 }
@@ -22,7 +23,7 @@
 }
 
 .wave-text__title-background-image {
-  width: 805px;
+  width: 650px;
   height: 87px;
 }
 
@@ -49,7 +50,7 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .wave-text__title-background-image {
-    width: 390px;
+    width: 370px;
     height: 120px;
   }
 }
@@ -66,7 +67,10 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .wave-text__title {
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 370px;
   }
 }

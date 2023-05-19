@@ -126,7 +126,7 @@ const LikenessPortrait2 = () => {
               </ButtonContainer2>
             </LikenessContentDescription2>
             <LikenessContentPhoto2>
-              <img src="/images/образ3.png" />
+              <img src="/images/образ2.png" width="100%" height="100%" />
             </LikenessContentPhoto2>
           </LikenessContent22>
         </LikenessContent2>
