@@ -48,7 +48,7 @@ export const OilContentPhoto = styled(Box)`
 `;
 
 export const OilContentDescription = styled(Box)`
-  margin-top: 80px;
+  margin-top: 70px;
   padding-left: 66px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
@@ -86,7 +86,7 @@ export const FirstText = styled(Box)`
   max-width: 420px;
   text-align: center;
   position: relative;
-  /* letter-spacing: 0.8px; */
+
   z-index: 4;
   text-align: center;
   margin-bottom: 30px;
@@ -104,7 +104,7 @@ export const SecondTextPart1 = styled(Box)`
   flex-wrap: wrap;
   max-width: 650px;
   text-align: right;
-  margin-top: 20px;
+  margin-top: 10px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     font-size: 12px;
@@ -160,7 +160,7 @@ export const FirstButton = styled(Box)`
   color: white;
   border-radius: 50px;
   border: none;
-  padding: 15px;
+  padding: 17px;
   max-width: 320px;
   box-shadow: 3px 3px 0 1px #9e9e9e;
   margin: 0 20px;
@@ -170,7 +170,7 @@ export const FirstButton = styled(Box)`
     max-width: 220px;
     text-align: center;
     margin-bottom: 20px;
-    padding: 5px;
+    padding: 7px;
   }
 `;
 export const SecondButton = styled(Box)`

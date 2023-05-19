@@ -38,7 +38,7 @@ export const LikenessContent22 = styled(Box)`
 `;
 
 export const LikenessContentDescription2 = styled(Box)`
-  margin-top: 80px;
+  margin-top: 75px;
 `;
 export const EllipseСontainer2 = styled(Box)`
   position: relative;
@@ -62,47 +62,67 @@ export const EllipseLikeness2 = styled(Box)`
 `;
 
 export const FirstTextLikeness2 = styled(Box)`
-  font-size: 15px;
-  font-family: "Nunito";
-  font-weight: 700;
+  font-size: 17px;
+  font-family: "Nunito", Sans-serif;
+  font-weight: 600;
   flex-wrap: wrap;
   max-width: 420px;
   text-align: center;
   position: relative;
-  z-index: 1;
+  z-index: 4;
   text-align: center;
   margin-bottom: 20px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    font-size: 14px;
+    max-width: 300px;
+  }
 `;
 export const SecondTextLikeness2 = styled(Box)`
-  font-size: 15px;
-  font-family: "Nunito";
-  font-weight: 500;
+  font-size: 16px;
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  line-height: 1.3;
   flex-wrap: wrap;
-  max-width: 350px;
+  max-width: 500px;
   text-align: left;
   margin-bottom: 20px;
+  margin-top: 10px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    font-size: 14px;
+  }
 `;
 export const ThirdTextLikeness2 = styled(Box)`
-  font-size: 15px;
-  font-family: "Nunito";
-  font-weight: 400;
+  font-size: 16px;
+  font-family: "Comfortaa", cursive;
+  font-weight: 500;
   flex-wrap: wrap;
-  max-width: 400px;
+  max-width: 500px;
   text-align: left;
   margin-bottom: 20px;
+  line-height: 1.3;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    font-size: 14px;
+  }
 `;
 export const FourthTextLikeness2 = styled(Box)`
-  font-size: 15px;
-  font-family: "Nunito";
-  font-weight: 400;
+  font-size: 16px;
+  font-family: "Comfortaa", cursive;
+  font-weight: 500;
   flex-wrap: wrap;
-  max-width: 450px;
+  max-width: 500px;
   text-align: left;
   margin-bottom: 30px;
+  line-height: 1.3;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    font-size: 14px;
+  }
 `;
 export const LikenessContentPhoto2 = styled(Box)`
-  margin-top: 15px;
-  padding-bottom: 10px;
+  margin-top: 16px;
   width: 520px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
@@ -116,31 +136,46 @@ export const ButtonContainer2 = styled(Box)`
   margin-bottom: 20px;
 `;
 export const FirstButtonLikeness2 = styled(Box)`
-  font-size: 16px;
-  font-family: "Trebuchetms";
+  font-size: 17px;
+  font-family: "Palatino Linotype";
   font-weight: 500;
-
   background-color: #36883d;
   color: white;
   border-radius: 50px;
   border: none;
-  padding: 10px;
-  max-width: 300px;
+  padding: 15px;
+  max-width: 320px;
   box-shadow: 3px 3px 0 1px #9e9e9e;
   margin: 0 20px;
   cursor: pointer;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    font-size: 12px;
+    max-width: 220px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
 `;
 export const SecondButtonLikeness2 = styled(Box)`
-  font-size: 16px;
-  font-family: "Trebuchetms";
+  font-size: 17px;
+  font-family: "Comfortaa", cursive;
   font-weight: 500;
   background-color: #bdbdbd;
   color: white;
   border-radius: 50px;
   border: none;
-  padding: 10px;
-  max-width: 300px;
+  padding: 17px;
+  max-width: 320px;
   box-shadow: 3px 3px 0 1px #9e9e9e;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    font-size: 12px;
+    max-width: 220px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 7px;
+  }
 `;
 
 export const ModalTitle = styled(Box)`
