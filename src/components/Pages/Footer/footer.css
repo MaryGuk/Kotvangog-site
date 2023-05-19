@@ -1,11 +1,21 @@
 .footer-wrapper {
   background-color: #c5c5c5;
   height: auto;
+  width: 100%;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+@media (max-width: 680px) {
+  .footer-container {
+    margin-left: -40px;
+  }
 }
 
 .footer-content {
