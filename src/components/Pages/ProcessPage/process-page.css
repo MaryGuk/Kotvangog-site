@@ -3,6 +3,11 @@
   padding-top: 68px;
   padding-bottom: 105px;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .process-page {
+    padding-bottom: 50px;
+  }
+}
 
 .process-page__container {
   display: flex;
@@ -179,7 +184,7 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .process-author {
-    margin-top: 20px;
+    margin-top: 100px;
   }
 }
 

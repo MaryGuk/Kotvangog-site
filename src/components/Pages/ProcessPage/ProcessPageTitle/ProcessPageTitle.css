@@ -7,10 +7,9 @@
 }
 @media (max-width: 472px) {
   .process-page__title-wrapper {
-    margin-top: 60px;
+    margin-top: -30px;
   }
 }
-
 .process-page-page__title-background {
   position: absolute;
   justify-content: center;
@@ -35,7 +34,7 @@
 }
 @media (max-width: 620px) {
   .process-page-page__title-background {
-    margin-top: 10px;
+    margin-top: 5px;
   }
 }
 
@@ -46,7 +45,7 @@
 
 @media (max-width: 635px) {
   .process-page__title-background-image {
-    width: 400px;
+    width: 420px;
     height: 40px;
   }
 }
@@ -63,7 +62,7 @@
 }
 @media (max-width: 480px) {
   .process-page__title-background-image {
-    width: 250px;
+    width: 280px;
     height: 60px;
   }
 }
