@@ -17,7 +17,7 @@ const ProcessPage = () => {
             {[
               {
                 imageSrc:
-                  "https://www.dropbox.com/s/4pfl6qccttqd5jl/1%20Img%20.jpg?raw=1",
+                  "https://www.dropbox.com/s/cgjugtfpi1l0jnr/1%20process.jpg?raw=1",
                 mainDescription: t("processPage.stepOne.mainDescription"),
                 secondaryDescription: t(
                   "processPage.stepOne.secondaryDescription"
@@ -25,12 +25,12 @@ const ProcessPage = () => {
               },
               {
                 imageSrc:
-                  "https://www.dropbox.com/s/s097m1ry6ruuuvq/2%20Img%20.jpg?raw=1",
+                  "https://www.dropbox.com/s/b2iezkzwafj66nf/2%20process.jpg?raw=1",
                 mainDescription: t("processPage.stepTwo.mainDescription"),
               },
               {
                 imageSrc:
-                  "https://www.dropbox.com/s/matp34db5tt5qe0/3%20Img%20.jpg?raw=1",
+                  "https://www.dropbox.com/s/e1bn05qvyhublf9/3%20process.jpg?raw=1",
                 mainDescription: t("processPage.stepThree.mainDescription"),
                 secondaryDescription: t(
                   "processPage.stepThree.secondaryDescription"
