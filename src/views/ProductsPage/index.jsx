@@ -213,7 +213,7 @@ const ProductsPage = () => {
               previewSrc:
                 "https://www.dropbox.com/s/vc5k14mq7xtdf4f/12im.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/doaar5xwwfusrhc/12im%20full.jpg??raw=1",
+                "https://www.dropbox.com/s/doaar5xwwfusrhc/12im%20full.jpg?raw=1",
             },
             {
               previewSrc:
