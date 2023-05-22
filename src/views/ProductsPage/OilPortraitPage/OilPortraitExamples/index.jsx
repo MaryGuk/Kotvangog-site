@@ -13,7 +13,7 @@ import ImageWithLoader from "../../../../components/ImageWithLoader";
 
 const OilPortraitExamples = () => {
   const [fullImageSrc, setFullImageSrc] = useState(null);
-  
+
   return (
     <OilPortraitExamplesWrapper>
       <OilPortraitExamplesGeneral>
