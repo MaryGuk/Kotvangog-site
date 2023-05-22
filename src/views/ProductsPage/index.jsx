@@ -12,7 +12,11 @@ import ImageWithLoader from "../../components/ImageWithLoader";
 import { IconButton } from "@mui/material";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import { StyledIconButton, StyledIconButtonWrapper } from "./styled";
+import {
+  StyledIconButton,
+  StyledIconButtonWrapper,
+  GalleryPhotoBox,
+} from "./styled";
 import { useMemo } from "react";
 
 const ProductsPage = () => {
@@ -578,14 +582,14 @@ const ProductsPage = () => {
           </StyledIconButtonWrapper>
         )}
 
-        <Box height="500px" overflow="hidden">
+        <GalleryPhotoBox>
           <ImageWithLoader
             height="100%"
             src={currentGallery?.[fullImageSrc?.imageIdx]?.fullSrc}
             alt=""
             key={currentGallery?.[fullImageSrc?.imageIdx]?.fullSrc}
           />
-        </Box>
+        </GalleryPhotoBox>
         {!isLastPhoto && (
           <StyledIconButtonWrapper right="10px">
             <StyledIconButton onClick={handleNextPhoto}>

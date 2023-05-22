@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import "./portrait-page-item.css";
 import { ProductPageItemInfoBlock } from "./styled";
 import ArtButton from "../../../components/Button/ArtButton";
 

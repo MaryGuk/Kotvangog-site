@@ -16,3 +16,12 @@ export const StyledIconButton = styled(IconButton)({
     backgroundColor: "rgba(0, 0, 0, 0.8)",
   },
 });
+
+export const GalleryPhotoBox = styled(Box)`
+  height: 500px;
+  overflow: hidden;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    height: 300px;
+  }
+`;
