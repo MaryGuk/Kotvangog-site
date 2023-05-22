@@ -44,6 +44,10 @@ export const EllipseСontainer2 = styled(Box)`
   position: relative;
   display: flex;
   justify-content: center;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    margin-top: -20px;
+  }
 `;
 export const EllipseLikeness2 = styled(Box)`
   position: absolute;
