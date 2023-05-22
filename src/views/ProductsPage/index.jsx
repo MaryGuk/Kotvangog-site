@@ -133,6 +133,36 @@ const ProductsPage = () => {
             },
             {
               previewSrc:
+                "https://www.dropbox.com/s/qy3kqlr96i3jzmw/4%20new.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/925gjevbxei0fs7/4%20full.jpg?raw=1",
+            },
+            {
+              previewSrc:
+                "https://www.dropbox.com/s/9p0kp4liymma92k/5%20new.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/wwhcigzg11d1ehk/5%20full.jpg?raw=1",
+            },
+            {
+              previewSrc:
+                "https://www.dropbox.com/s/k8ty94jb3ps07bv/6new.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/7wh96gqw1r7aqy5/6%20full.jpg?raw=1",
+            },
+            {
+              previewSrc:
+                "https://www.dropbox.com/s/rigvnchpse608bg/7%20new.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/tmaw3tfzf4215cq/7%20full.jpg?raw=1",
+            },
+            {
+              previewSrc:
+                "https://www.dropbox.com/s/b65werwb8tkx30i/8%20new.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/kt8btfia4ebojbd/8%20full.jpg?raw=1",
+            },
+            {
+              previewSrc:
                 "https://www.dropbox.com/s/hrlqvm22k1w3s7l/4im.jpg?raw=1",
               fullSrc:
                 "https://www.dropbox.com/s/ep2gbqhgendm8pv/4im%20full.jpg?raw=1",
@@ -210,16 +240,23 @@ const ProductsPage = () => {
           galleryImages: [
             {
               previewSrc:
+                "https://www.dropbox.com/s/rzpz80ttclcz5fd/1%20new.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/t9y2qxo66mxg5bg/1%20full.jpg?raw=1",
+            },
+            {
+              previewSrc:
                 "https://www.dropbox.com/s/hp81s4h1dmgifws/1oooo.jpg?raw=1",
               fullSrc:
                 "https://www.dropbox.com/s/s9fs6nmr3j6i6qa/1o%20full.jpg?raw=1",
             },
             {
               previewSrc:
-                "https://www.dropbox.com/s/u4a3voc2yfmua0a/2o.jpg?raw=1",
+                "https://www.dropbox.com/s/6fh7hgaeeiyylx2/3%20new.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/wlnh62wpcqio3o7/2o%20full.jpg?raw=1",
+                "https://www.dropbox.com/s/25swnptbb0sji7q/3%20full.jpg?raw=1",
             },
+
             {
               previewSrc:
                 "https://www.dropbox.com/s/zj0jvg2518r5in0/3o.jpg?raw=1",
@@ -240,16 +277,21 @@ const ProductsPage = () => {
             },
             {
               previewSrc:
+                "https://www.dropbox.com/s/dhgs6yub23uhpbj/7%20new.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/24e3bclac1cyv9o/7%20full.jpg?raw=1",
+            },
+            {
+              previewSrc:
+                "https://www.dropbox.com/s/xf1asbmx48f4hig/8%20new.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/2uy1zzvv422vs7y/8%20full.jpg?raw=1",
+            },
+            {
+              previewSrc:
                 "https://www.dropbox.com/s/tn65n8buma8e25r/7o.jpg?raw=1",
               fullSrc:
                 "https://www.dropbox.com/s/ywf45ivbfai0gnr/7o%20full.jpg?raw=1",
-            },
-
-            {
-              previewSrc:
-                "https://www.dropbox.com/s/z08rxz6fc86zvpv/5ojpg.jpg?raw=1",
-              fullSrc:
-                "https://www.dropbox.com/s/nfzfmyhkb8b3pdm/5o%20full.jpg?raw=1",
             },
           ],
           reverse: true,
@@ -284,6 +326,30 @@ const ProductsPage = () => {
             },
             {
               previewSrc:
+                "https://www.dropbox.com/s/xn7nrju33dh0kgr/4%20new.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/4iytwh90qozsjq2/4%20full.jpg?raw=1",
+            },
+            {
+              previewSrc:
+                "https://www.dropbox.com/s/dq94r7yrtwd3pjv/5%20new.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/lbxtrg3nngty81x/5%20full.jpg?raw=1",
+            },
+            {
+              previewSrc:
+                "https://www.dropbox.com/s/jfq4g3ddcdt1h3d/6%20new.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/v7y8jjd0l1z2t8r/6%20full.jpg?raw=1",
+            },
+            {
+              previewSrc:
+                "https://www.dropbox.com/s/fallezwtpgsxepv/7%20new.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/gkw1cx455hjrd33/7%20full.jpg?raw=1",
+            },
+            {
+              previewSrc:
                 "https://www.dropbox.com/s/3ujnqgtr1lzzwcu/f4.jpg?raw=1",
               fullSrc:
                 "https://www.dropbox.com/s/gefodwz51t4ziaf/f4%20full.jpg?raw=1",
@@ -314,6 +380,12 @@ const ProductsPage = () => {
           galleryImages: [
             {
               previewSrc:
+                "https://www.dropbox.com/s/5tefdbc17dxusf3/1%20new.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/k3jr18ae5w2lchq/1%20full.jpg?raw=1",
+            },
+            {
+              previewSrc:
                 "https://www.dropbox.com/s/w1aftvjhm5l1124/3%20k.jpg?raw=1",
               fullSrc:
                 "https://www.dropbox.com/s/aeg3webrmvgdaa0/3%20k%20full.jpg?raw=1",
@@ -322,13 +394,13 @@ const ProductsPage = () => {
               previewSrc:
                 "https://www.dropbox.com/s/sgpc9thenuy3wya/2%20k.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/c38ehh21z9dnoai/1%20k%20full.jpg?raw=1",
+                "https://www.dropbox.com/s/onwwvynxu6azayo/2%20k%20full.jpg?raw=1",
             },
             {
               previewSrc:
                 "https://www.dropbox.com/s/hxnos1tlnp905mu/1%20k.jpg?raw=1",
               fullSrc:
-                "https://www.dropbox.com/s/onwwvynxu6azayo/2%20k%20full.jpg?raw=1",
+                "https://www.dropbox.com/s/c38ehh21z9dnoai/1%20k%20full.jpg?raw=1",
             },
           ],
           reverse: true,
@@ -348,6 +420,12 @@ const ProductsPage = () => {
                 "https://www.dropbox.com/s/tmmewgmytgbkdo2/1%20i.jpg?raw=1",
               fullSrc:
                 "https://www.dropbox.com/s/5mwy9x2txnzbsla/1%20i%20full.jpg?raw=1",
+            },
+            {
+              previewSrc:
+                "https://www.dropbox.com/s/5yg3ftfhf5hvlrc/2%20new.jpg?raw=1",
+              fullSrc:
+                "https://www.dropbox.com/s/qxoiwvdpvwdqwm0/2%20full.jpg?raw=1",
             },
             {
               previewSrc:
