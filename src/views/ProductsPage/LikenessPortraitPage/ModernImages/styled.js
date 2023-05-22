@@ -40,7 +40,7 @@ export const HistoryImagesCollageItems = styled(Box)`
   }
 `;
 export const HistoryImagesCollageImage = styled(Box)`
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 `;
 
 export const HistoryImagesCollageText = styled(Box)`

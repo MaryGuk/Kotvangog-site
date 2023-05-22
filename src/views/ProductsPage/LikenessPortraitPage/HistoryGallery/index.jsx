@@ -43,19 +43,19 @@ const HistoryGallery = () => {
           },
           {
             previewSrc:
-              "https://www.dropbox.com/s/d8zylbi6lvpdy11/5958_50%D1%8570%20%D1%86%D0%B0%D1%80%D1%8C%20%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BE.jpg?raw=1",
+              "https://www.dropbox.com/s/7um38jn3alo4zgh/5646_60%D1%8580.jpg?raw=1",
             fullSrc:
               "https://www.dropbox.com/s/8ibssqm4gi2r39e/6%20%D0%B8%D1%81%D1%82.jpg?raw=1",
           },
           {
             previewSrc:
-              "https://www.dropbox.com/s/aeauo89a8g52xe4/25385_30%D1%8540.jpg?raw=1",
+              "https://www.dropbox.com/s/d8zylbi6lvpdy11/5958_50%D1%8570%20%D1%86%D0%B0%D1%80%D1%8C%20%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BE.jpg?raw=1",
             fullSrc:
               "https://www.dropbox.com/s/fuizg3zurzac7m5/7%20%D0%B8%D1%81%D1%82.jpg?raw=1",
           },
           {
             previewSrc:
-              "https://www.dropbox.com/s/sc5w6hgk2k60ox6/Rodriguez-2MasterJpeg9557JSWfile-753x1024.jpg?raw=1",
+              "https://www.dropbox.com/s/aeauo89a8g52xe4/25385_30%D1%8540.jpg?raw=1",
             fullSrc:
               "https://www.dropbox.com/s/y6101yhohffuo5i/8%20%D0%B8%D1%81%D1%82.jpg?raw=1",
           },
