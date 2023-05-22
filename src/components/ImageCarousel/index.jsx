@@ -12,7 +12,7 @@ import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import { IconButton } from "@mui/material";
 import { useRef } from "react";
 
-const ImageCorousel = ({ galleryImages, setFullImage, reverse }) => {
+const ImageCorousel = ({ galleryImages, setFullImageIdx, reverse }) => {
   const carouselRef = useRef(null);
 
   const handleClick = (positive) => {
@@ -36,8 +36,8 @@ const ImageCorousel = ({ galleryImages, setFullImage, reverse }) => {
       <ScrollHiddener>
         <ImageGalleryWrapper ref={carouselRef}>
           <ImageGalleryInnerWrapper reverse={reverse}>
-            {galleryImages.map(({ previewSrc, fullSrc }, idx) => (
-              <ImageItemWrapper onClick={() => setFullImage(fullSrc)} key={idx}>
+            {galleryImages.map(({ previewSrc }, idx) => (
+              <ImageItemWrapper onClick={() => setFullImageIdx(idx)} key={idx}>
                 <img className="beauty-art__image" src={previewSrc} alt="123" />
               </ImageItemWrapper>
             ))}

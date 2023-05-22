@@ -13,7 +13,7 @@ const ProductPageItem = ({
   galleryImages,
   reverse,
   imageId,
-  setFullImage,
+  setFullImageIdx,
 }) => {
   return (
     <div className="beauty-art__page">
@@ -47,7 +47,7 @@ const ProductPageItem = ({
         <ImageCorousel
           loading="lazy"
           decoding="async"
-          setFullImage={setFullImage}
+          setFullImageIdx={setFullImageIdx}
           galleryImages={galleryImages}
           reverse={reverse}
         />
