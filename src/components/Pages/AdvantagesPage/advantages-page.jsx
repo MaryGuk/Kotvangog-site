@@ -3,6 +3,7 @@ import AdvantageItem from "./AdvantageItem.jsx";
 import { MainPageItemWrapper } from "../../../views/MainPage/styled";
 import { useTranslation } from "react-i18next";
 import AdvantagesTitleWave from "./AdvantagesTitle/advantages-title";
+import { isBrowser, isMobile } from "react-device-detect";
 
 const AdvantagesPage = () => {
   const { t } = useTranslation();
@@ -11,6 +12,7 @@ const AdvantagesPage = () => {
     <div className="advantages-page">
       <MainPageItemWrapper>
         <div className="advantages-page__general">
+          {/* {!isMobile && <AdvantagesTitleWave />} */}
           <AdvantagesTitleWave />
 
           <div className="advantages-container">

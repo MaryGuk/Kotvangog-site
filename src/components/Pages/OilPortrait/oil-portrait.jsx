@@ -27,6 +27,7 @@ import OilTitle from "./OilTitle/OilTitle";
 import Modal from "../../../components/Modal/modal";
 import { Link } from "react-router-dom";
 import "./oil-portarait.css";
+import { isMobile, isBrowser } from "react-device-detect";
 
 const OilPortrait = () => {
   const { t } = useTranslation();
@@ -39,7 +40,11 @@ const OilPortrait = () => {
           <OilContent2>
             <OilContentPhoto>
               <img
-                src="https://www.dropbox.com/s/xmq4neuni1sqm62/oil-classic%20%282%29.png?raw=1"
+                src={
+                  isMobile
+                    ? "https://www.dropbox.com/s/xmq4neuni1sqm62/oil-classic%20%282%29.png?raw=1"
+                    : "https://www.dropbox.com/s/xmq4neuni1sqm62/oil-classic%20%282%29.png?raw=1"
+                }
                 width="100%"
                 height="100%"
               />
