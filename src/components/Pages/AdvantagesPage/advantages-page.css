@@ -22,6 +22,9 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .advantages-page__general {
     max-width: 100%;
+    background-image: url("/public/images/background/Слой7.png");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 

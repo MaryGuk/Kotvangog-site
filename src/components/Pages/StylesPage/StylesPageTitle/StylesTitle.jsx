@@ -1,4 +1,5 @@
 import "./StylesTitle.css";
+import { isMobile } from "react-device-detect";
 
 const StylesTitle = () => {
   return (
@@ -7,10 +8,16 @@ const StylesTitle = () => {
         <div className="styles-page__title-background">
           <img
             className="styles__title-background-image"
-            src="/images/background/waveTwo1.png"
+            src={
+              isMobile
+                ? "/images/background/арт стили волна.png"
+                : "/images/background/waveTwo1.png"
+            }
           />
         </div>
-        <div className="styles__title">Стили и цены</div>
+        <div className="styles__title">
+          {isMobile ? "Арт стили" : "Стили и цены"}
+        </div>
       </div>
     </div>
   );

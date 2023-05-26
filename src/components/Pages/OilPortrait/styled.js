@@ -6,6 +6,10 @@ export const OilPortraitWrapper = styled(Box)`
   justify-content: center;
   width: 100%;
   padding-top: 30px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    background: #e0e0e0;
+  }
 `;
 
 export const OilPortraitGeneral = styled(Box)`
@@ -15,6 +19,10 @@ export const OilPortraitGeneral = styled(Box)`
   margin: 10px;
   width: 100%;
   padding-top: 20px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    padding-top: 10px;
+  }
 `;
 
 export const OilContent = styled(Box)`
@@ -50,6 +58,10 @@ export const OilContentPhoto = styled(Box)`
 export const OilContentDescription = styled(Box)`
   margin-top: 70px;
   padding-left: 66px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: none;
+  }
 `;
 
 export const EllipseСontainer = styled(Box)`
@@ -219,5 +231,36 @@ export const ModalIcons = styled(Box)`
   :last-child {
     content: "";
     margin-right: 0;
+  }
+`;
+export const OilButton = styled(Box)`
+  display: none;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: -60px;
+    margin-bottom: -205px;
+  }
+`;
+export const OilMobileContent = styled(Box)`
+  display: none;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+`;
+export const OilMobileText = styled(Box)`
+  display: none;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: flex;
+    font-family: "Century Gothic";
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
   }
 `;

@@ -19,6 +19,9 @@ import {
   ModalMessengerContent,
   ModalIcons,
   ModalTitle,
+  OilButton,
+  OilMobileContent,
+  OilMobileText,
 } from "./styled";
 
 import { useState } from "react";
@@ -28,6 +31,7 @@ import Modal from "../../../components/Modal/modal";
 import { Link } from "react-router-dom";
 import "./oil-portarait.css";
 import { isMobile } from "react-device-detect";
+import MainButton from "../../Button/MainButton";
 
 const OilPortrait = () => {
   const { t } = useTranslation();
@@ -36,19 +40,29 @@ const OilPortrait = () => {
     <OilPortraitWrapper id="/oil-portrait">
       <OilPortraitGeneral>
         <OilTitle />
+        <OilMobileContent>
+          <OilMobileText>
+            Роспись опытным художником - это неповторимые произведения
+            искусства, которые будут радовать вас и ваших близких на протяжении
+            многих лет.
+          </OilMobileText>
+        </OilMobileContent>
         <OilContent>
           <OilContent2>
             <OilContentPhoto>
               <img
                 src={
                   isMobile
-                    ? "https://www.dropbox.com/s/xmq4neuni1sqm62/oil-classic%20%282%29.png?raw=1"
+                    ? "https://www.dropbox.com/s/6lkuknbtufgnex2/oil%20mobile2.png?raw=1"
                     : "https://www.dropbox.com/s/xmq4neuni1sqm62/oil-classic%20%282%29.png?raw=1"
                 }
                 width="100%"
                 height="100%"
               />
             </OilContentPhoto>
+            <OilButton>
+              <MainButton />
+            </OilButton>
             <OilContentDescription>
               <EllipseСontainer>
                 <Ellipse />
