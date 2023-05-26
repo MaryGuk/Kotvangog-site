@@ -42,3 +42,9 @@ code {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Century Gothic";
+  src: url("/public/fonts/centurygothic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

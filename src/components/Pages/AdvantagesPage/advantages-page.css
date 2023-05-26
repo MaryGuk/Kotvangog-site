@@ -55,7 +55,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-row-gap: 110px;
     justify-items: center;
   }
 }
@@ -91,6 +91,39 @@
     text-align: center;
     position: relative;
     font-size: 13px;
+  }
+}
+
+.advantages-new-text {
+  display: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .advantages-new-text {
+    display: flex;
+    flex-direction: row;
+    font-family: "Century Gothic";
+    font-weight: normal;
+    font-size: 12px;
+    /* width: 335px; */
+    margin-top: 30px;
+    /* margin-left: -60px; */
+  }
+}
+
+.advantages-new-text2 {
+  display: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .advantages-new-text2 {
+    display: flex;
+    flex-direction: row;
+    font-family: "Century Gothic";
+    font-weight: normal;
+    font-size: 12px;
+    /* width: 335px; */
+    /* margin-left: -55px; */
   }
 }
 
