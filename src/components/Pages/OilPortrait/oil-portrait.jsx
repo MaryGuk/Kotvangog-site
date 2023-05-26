@@ -27,7 +27,7 @@ import OilTitle from "./OilTitle/OilTitle";
 import Modal from "../../../components/Modal/modal";
 import { Link } from "react-router-dom";
 import "./oil-portarait.css";
-import { isMobile, isBrowser } from "react-device-detect";
+import { isMobile } from "react-device-detect";
 
 const OilPortrait = () => {
   const { t } = useTranslation();

@@ -12,7 +12,9 @@ export const MainButtonContainer = styled(Box)`
   margin-left: -10px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    margin-top: -85px;
+    margin-top: 15px;
+    align-items: center;
+    margin-left: 30px;
   }
 `;
 
@@ -21,13 +23,13 @@ export const MainButtonItem = styled(Box)`
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   letter-spacing: 1.5px;
-  background-color: #38893f;
+  background-color: #36883d;
   color: white;
   border-radius: 50px;
   border: none;
   padding: 15px;
   max-width: 300px;
-  box-shadow: 3px 3px 0 1px #9e9e9e;
+  box-shadow: 3px 3px 0 1px #717171;
 
   @media (max-width: 767px) {
     font-size: 12px;
@@ -36,6 +38,16 @@ export const MainButtonItem = styled(Box)`
 
   @media (max-width: 1082px) {
     margin-left: 25px;
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    font-family: "Century Gothic";
+    font-weight: normal;
+    padding: 15px;
+    font-size: 17px;
+    box-shadow: 3px 3px 0 3px #717171;
+    margin-left: 20px;
+    border-radius: 25px;
   }
 `;
 

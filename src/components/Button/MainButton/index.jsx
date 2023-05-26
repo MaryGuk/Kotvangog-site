@@ -16,8 +16,8 @@ const MainButton = () => {
   return (
     <MainButtonWrapper>
       <MainButtonContainer>
-        <MainButtonItem onClick={() => setModalActive(true)}>
-          Получить консультацию
+        <MainButtonItem>
+          <div onClick={() => setModalActive(true)}> Получить консультацию</div>
         </MainButtonItem>
 
         <Modal active={modalActive} setActive={setModalActive}>

@@ -74,7 +74,7 @@ export const FirstPageInfoItems = styled(Box)`
   }
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    margin-top: 80px;
+    margin-top: 380px;
     align-items: center;
     margin-right: 20px;
   }
@@ -104,32 +104,46 @@ export const FirstPageInfoItemsText = styled(Box)`
     opacity: 0.75;
     overflow: hidden;
   }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    font-size: 14px;
+  }
 `;
 
 export const FirstPageInfoItemsOne = styled(Box)`
   display: flex;
   align-items: center;
   margin-bottom: 40px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    margin-bottom: 30px;
+  }
 `;
 
 export const FirstPageInfoItemsTwo = styled(Box)`
   display: flex;
   align-items: center;
   margin-bottom: 40px;
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    margin-bottom: 30px;
+  }
 `;
 export const FirstPageInfoItemsThree = styled(Box)`
   display: flex;
   align-items: center;
   margin-bottom: 80px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    margin-bottom: 30px;
+  }
 `;
 export const FirstPageInfoMessage = styled(Box)`
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-  /* margin-left: -40px; */
 
   @media (max-width: 767px) {
-    margin-top: 300px;
+    margin-top: 130px;
     margin-bottom: 30px;
   }
 
@@ -145,7 +159,8 @@ export const FirstPageInfoMessageText = styled(Box)`
   @media (max-width: 767px) {
     font-size: 16px;
     margin-left: -40px;
-    background: #d9d9d9;
+    background: #a7a7a7;
+    color: white;
     border-radius: 45px;
     padding: 10px;
   }
@@ -154,6 +169,7 @@ export const FirstPageInfoMessageText = styled(Box)`
     margin-left: -5px;
     font-size: 12px;
     margin-top: -175px;
+    border-radius: 25px;
   }
 `;
 
@@ -175,3 +191,20 @@ export const FirstPage1ImageWrapper = styled(Box)`
     margin-top: 160px;
   }
 `;
+
+export const ArrowGrayContainer = styled(Box)`
+  display: none;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: -80px;
+  }
+`;
+
+// @media (max-width: 600px) {
+//   .MuiMobileStepper-dots {
+//     display: none;
+//   }
+// }
