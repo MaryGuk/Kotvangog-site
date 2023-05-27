@@ -39,6 +39,7 @@ export const FirstPageInfo = styled(Box)`
 
   @media (max-width: 767px) {
     position: absolute;
+    padding: 0 26px;
   }
 `;
 
@@ -76,7 +77,8 @@ export const FirstPageInfoItems = styled(Box)`
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     margin-top: 380px;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 `;
 
@@ -158,7 +160,6 @@ export const FirstPageInfoMessageText = styled(Box)`
 
   @media (max-width: 767px) {
     font-size: 16px;
-    margin-left: -40px;
     background: #a7a7a7;
     color: white;
     border-radius: 45px;
@@ -166,10 +167,10 @@ export const FirstPageInfoMessageText = styled(Box)`
   }
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    margin-left: -5px;
     font-size: 12px;
     margin-top: -175px;
     border-radius: 25px;
+    width: 100%;
   }
 `;
 

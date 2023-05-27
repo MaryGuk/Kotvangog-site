@@ -2,7 +2,7 @@ import { Box, styled } from "@mui/material";
 
 export const LikenessButtonWrapper = styled(Box)`
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    margin-bottom: 250px;
+    /* margin-bottom: 250px; */
   }
 `;
 
@@ -36,7 +36,7 @@ export const LikenessButtonItem = styled(Box)`
   }
 
   @media (max-width: 1082px) {
-    margin-left: 25px;
+    /* margin-left: 25px; */
   }
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {

@@ -21,7 +21,7 @@ export const ArtButtonItem = styled(Box)`
   padding: 15px;
   max-width: 300px;
   box-shadow: 3px 3px 0 1px #9e9e9e;
-  margin-left: 75px;
+  /* margin-left: 75px; */
 
   @media (max-width: 767px) {
     font-size: 16px;
@@ -29,7 +29,7 @@ export const ArtButtonItem = styled(Box)`
   }
 
   @media (max-width: 1082px) {
-    margin-left: 25px;
+    /* margin-left: 25px; */
   }
 `;
 

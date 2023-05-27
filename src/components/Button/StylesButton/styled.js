@@ -37,7 +37,7 @@ export const StylesButtonItem = styled(Box)`
   }
 
   @media (max-width: 1082px) {
-    margin-left: 25px;
+    /* margin-left: 25px; */
   }
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {

@@ -1,4 +1,5 @@
 import "./PortraitSizesTitle.css";
+import { isMobile } from "react-device-detect";
 
 const PortraitSizesTitle = () => {
   return (
@@ -7,7 +8,11 @@ const PortraitSizesTitle = () => {
         <div className="portrait-sizes-page__title-background">
           <img
             className="portrait-sizes__title-background-image"
-            src="/images/background/waveOne1.png"
+            src={
+              isMobile
+                ? "/images/background/size wave.png"
+                : "/images/background/waveOne1.png"
+            }
           />
         </div>
         <div className="portrait-sizes__title">Размеры и цены</div>

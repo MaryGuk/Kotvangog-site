@@ -11,9 +11,22 @@
   display: flex;
   margin-left: -20px;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .portrait-sizes-page__title-background {
+    margin-left: -45px;
+  }
+}
+
 .portrait-sizes__title-background-image {
   width: 300px;
   height: 60px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .portrait-sizes__title-background-image {
+    width: 250px;
+  }
 }
 
 .portrait-sizes__title {
@@ -24,4 +37,12 @@
   text-align: center;
   color: #202020;
   margin-top: 10px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .portrait-sizes__title {
+    font-size: 20px;
+    color: white;
+    margin-top: 9px;
+  }
 }

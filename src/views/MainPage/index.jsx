@@ -8,6 +8,7 @@ import OilPortrait from "../../components/Pages/OilPortrait/oil-portrait";
 import LikenessPortrait from "../../components/Pages/LikenessPortrait/likeness-portrait";
 import FirstPage from "../../components/Pages/FrontPage1/FirstPage";
 import ArtStylesSize from "../ProductsPage/PortraitSizes/ArtStylesSize";
+import { isMobile } from "react-device-detect";
 
 const MainPage = () => {
   return (
@@ -20,7 +21,7 @@ const MainPage = () => {
       <LikenessPortrait />
       <ProcessPage />
       <ArtStylesSize />
-      <Footer />
+      {!isMobile && <Footer />}
     </MainPageWrapper>
   );
 };

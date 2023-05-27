@@ -7,6 +7,7 @@ import {
   ArtSizeTextOneContainer,
   ArtSizeTextTwoContainer,
   ArtSizeContainer,
+  ArtSizeTextOnePart2,
 } from "./styled";
 import ArtStylesSizeItem from "./ArtStylesSizeItem";
 import PortraitSizesTitle from "./PortraitSizesTitle/PortraitSizesTitle";
@@ -18,22 +19,16 @@ const ArtStylesSize = () => {
         <PortraitSizesTitle />
         <ArtStylesSizeDescription>
           <ArtSizeTextOneContainer>
-            <ArtSizeTextOne>
-              Печать на холсте и картина маслом
-              <span style={{ fontWeight: "700", color: "#606060" }}>
-                {" "}
-                (100% ручная работа)
-              </span>
-            </ArtSizeTextOne>
+            <ArtSizeTextOne>Печать на холсте и картина маслом</ArtSizeTextOne>
+            <ArtSizeTextOnePart2> (100% ручная работа) </ArtSizeTextOnePart2>
           </ArtSizeTextOneContainer>
           <ArtSizeTextTwoContainer>
             <ArtSizeTextTwo>
               Возможно изготовление любых размеров.
               <span
                 style={{
-                  fontStyle: "italic",
-                  fontSize: "18px",
-                  color: "#3f3f3f",
+                  fontSize: "12px",
+                  color: "#414141",
                 }}
               >
                 Цены указаны без работы дизайнера
@@ -82,7 +77,8 @@ const ArtStylesSize = () => {
           ].map(
             (
               { imageSrc, imageSize, printDescription, oilDescription },
-              idx
+              idx,
+              arr
             ) => (
               <ArtStylesSizeItem
                 key={idx}
@@ -90,6 +86,9 @@ const ArtStylesSize = () => {
                 imageSize={imageSize}
                 printDescription={printDescription}
                 oilDescription={oilDescription}
+                idx={idx}
+                lastItem={idx == arr.length - 1}
+                columnCount={2}
               />
             )
           )}

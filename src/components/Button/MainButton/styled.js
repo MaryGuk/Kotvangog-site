@@ -2,19 +2,20 @@ import { Box, styled } from "@mui/material";
 
 export const MainButtonWrapper = styled(Box)`
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    margin-bottom: 250px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 15px;
   }
 `;
 
 export const MainButtonContainer = styled(Box)`
   display: flex;
   cursor: pointer;
-  margin-left: -10px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    margin-top: 15px;
     align-items: center;
-    margin-left: 30px;
+    /* margin-left: 30px; */
   }
 `;
 
@@ -37,7 +38,7 @@ export const MainButtonItem = styled(Box)`
   }
 
   @media (max-width: 1082px) {
-    margin-left: 25px;
+    /* margin-left: 25px; */
   }
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
