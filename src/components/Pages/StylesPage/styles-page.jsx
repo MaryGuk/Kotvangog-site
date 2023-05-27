@@ -14,7 +14,7 @@ const StylesPage = () => {
       <MainPageItemWrapper>
         <div className="styles-page__general">
           <StylesTitle />
-          <div className="styles-art">
+          {/* <div className="styles-art">
             <div className="styles__item">
               <Link to="/products#beauty-art">
                 <img
@@ -173,7 +173,7 @@ const StylesPage = () => {
               </div>
               {isMobile ? <StylesButton /> : null}
             </div>
-          </div>
+          </div> */}
         </div>
       </MainPageItemWrapper>
     </div>

@@ -6,6 +6,10 @@ export const LikenessPortraitWrapper = styled(Box)`
   justify-content: center;
   width: 100%;
   padding-top: 70px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    background: #e0e0e0;
+  }
 `;
 
 export const LikenessPortraitGeneral = styled(Box)`
@@ -41,6 +45,10 @@ export const LikenessContent2 = styled(Box)`
 
 export const LikenessContentDescription = styled(Box)`
   margin-top: 75px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: none;
+  }
 `;
 export const EllipseСontainer = styled(Box)`
   position: relative;
@@ -125,12 +133,12 @@ export const FourthTextLikeness = styled(Box)`
 `;
 export const LikenessContentPhoto = styled(Box)`
   margin-top: 15px;
-
   width: 520px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    width: 280px;
+    width: 341px;
     align-items: center;
+    margin-top: -25px;
   }
 `;
 
@@ -209,5 +217,61 @@ export const ModalIcons = styled(Box)`
   :last-child {
     content: "";
     margin-right: 0;
+  }
+`;
+
+export const LikenessMobileContent = styled(Box)`
+  display: none;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+`;
+export const LikenessMobileTextPart1 = styled(Box)`
+  display: none;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: flex;
+    font-family: "Century Gothic";
+    font-weight: normal;
+    font-size: 11.8px;
+    margin: 0 auto;
+  }
+`;
+export const LikenessMobileTextPart2 = styled(Box)`
+  display: none;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: flex;
+    font-family: "Century Gothic";
+    font-weight: normal;
+    font-size: 11.8px;
+    margin: 0 auto;
+  }
+`;
+export const LikenessMobileTextPart3 = styled(Box)`
+  display: none;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: flex;
+    font-family: "Century Gothic";
+    font-weight: normal;
+    font-size: 11.8px;
+    margin: 0 auto;
+  }
+`;
+export const LikenessButton = styled(Box)`
+  display: none;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: -60px;
+    margin-bottom: -205px;
   }
 `;

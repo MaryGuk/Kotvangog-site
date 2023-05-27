@@ -1,4 +1,4 @@
-.likeness__title-wrapper {
+.likeness__title-wrapper2 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -7,12 +7,12 @@
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-  .likeness__title-wrapper {
-    margin-top: 100px;
+  .likeness__title-wrapper2 {
+    margin-top: -15px;
   }
 }
 
-.likeness-page__title-background {
+.likeness-page__title-background2 {
   position: absolute;
   justify-content: center;
   display: flex;
@@ -20,23 +20,23 @@
 }
 
 @media (max-width: 375px) {
-  .likeness__title-background {
+  .likeness__title-background2 {
     margin-left: -3px;
   }
 }
 
-.likeness__title-background-image {
+.likeness__title-background-image2 {
   width: 300px;
   height: 47px;
 }
 
 @media (max-width: 375px) {
-  .likeness__title-background-image {
+  .likeness__title-background-image2 {
     width: 150px;
   }
 }
 
-.likeness__title {
+.likeness__title2 {
   position: relative;
   font-size: 24px;
   font-family: "Palatino Linotype";

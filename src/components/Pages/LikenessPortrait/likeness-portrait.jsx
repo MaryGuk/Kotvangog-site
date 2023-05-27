@@ -20,14 +20,20 @@ import {
   ModalMessengerContent,
   ModalIcons,
   ModalTitle,
+  LikenessMobileContent,
+  LikenessMobileTextPart1,
+  LikenessMobileTextPart2,
+  LikenessMobileTextPart3,
+  LikenessButton,
 } from "./styled";
 
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Modal from "../../../components/Modal/modal";
 import { Link } from "react-router-dom";
-
 import "./likeness-portrait.css";
+import { isMobile } from "react-device-detect";
+import LikenessButtonMobile from "../../Button/LikenessButton";
 
 const LikenessPortrait = () => {
   const { t } = useTranslation();
@@ -36,6 +42,17 @@ const LikenessPortrait = () => {
     <LikenessPortraitWrapper>
       <LikenessPortraitGeneral>
         <LikenessTitle />
+        <LikenessMobileContent>
+          <LikenessMobileTextPart1>
+            Не знаете какой образ подойдет?
+          </LikenessMobileTextPart1>
+          <LikenessMobileTextPart2>
+            Мы бесплатно подберем 7-8 грубых макетов под ваше фото.
+          </LikenessMobileTextPart2>
+          <LikenessMobileTextPart3>
+            Вы сами выберите образ который вам понравится.
+          </LikenessMobileTextPart3>
+        </LikenessMobileContent>
         <LikenessContent>
           <LikenessContent2>
             <LikenessContentDescription>
@@ -124,11 +141,18 @@ const LikenessPortrait = () => {
             </LikenessContentDescription>
             <LikenessContentPhoto>
               <img
-                src="https://www.dropbox.com/s/cho3zbrorta4r0b/%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%20%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B522.png?raw=1"
+                src={
+                  isMobile
+                    ? "/images/в образе mobile.png"
+                    : "https://www.dropbox.com/s/cho3zbrorta4r0b/%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%20%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B522.png?raw=1"
+                }
                 width="100%"
                 height="100%"
               />
             </LikenessContentPhoto>
+            <LikenessButton>
+              <LikenessButtonMobile />
+            </LikenessButton>
           </LikenessContent2>
         </LikenessContent>
       </LikenessPortraitGeneral>
