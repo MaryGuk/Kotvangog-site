@@ -86,3 +86,10 @@
   width: auto;
   height: 100%;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .beauty-art__general {
+    padding: 0 26px;
+    box-sizing: border-box;
+  }
+}

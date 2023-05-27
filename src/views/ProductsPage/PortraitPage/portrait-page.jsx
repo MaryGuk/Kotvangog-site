@@ -3,6 +3,8 @@ import "./portrait-page.css";
 import BeforeAfterImage from "../../../components/BeforeAfterImage";
 import { ProductPageItemMainInfoWrapper } from "./styled";
 import ImageCorousel from "../../../components/ImageCarousel";
+import { isMobile } from "react-device-detect";
+import ArtButton from "../../../components/Button/ArtButton";
 
 const ProductPageItem = ({
   portraitTitle,
@@ -19,6 +21,7 @@ const ProductPageItem = ({
     <div className="beauty-art__page">
       <div className="beauty-art__general">
         <ProductPageItemMainInfoWrapper id={imageId} reverse={reverse}>
+          {isMobile && <ArtButton />}
           <div>
             {srcBefore ? (
               <BeforeAfterImage

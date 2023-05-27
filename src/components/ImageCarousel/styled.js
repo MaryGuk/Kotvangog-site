@@ -12,12 +12,23 @@ export const ImageCarouselWrapper = styled(Box)`
       visibility: visible;
     }
   }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    width: 100%;
+    & > div {
+      visibility: visible;
+    }
+  }
 `;
 
 export const ScrollHiddener = styled(Box)`
   height: 195px;
   overflow-y: hidden;
   width: 100%;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    height: 290px;
+  }
 `;
 
 export const ImageGalleryWrapper = styled(Box)`
@@ -38,6 +49,16 @@ export const ImageGalleryInnerWrapper = styled(Box, {
 
   :last-child {
     margin-right: 0;
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    & > div {
+      margin-right: 18px;
+    }
+
+    :last-child {
+      margin-right: 0;
+    }
   }
 `;
 
@@ -63,5 +84,9 @@ export const ImageItemWrapper = styled(Box)`
     height: 185px;
     /* transition: 1s; */
     /* transform: scale(1.2); */
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    height: 280px;
   }
 `;
