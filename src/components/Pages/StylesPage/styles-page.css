@@ -6,6 +6,13 @@
   justify-content: center;
   padding: 65px 0;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .styles-page {
+    background-image: url("/public/images/background/Слой7.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
 
 .styles-page__title {
   font-size: 24px;

@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import i18n from "../../../i18n";
 import StylesTitle from "./StylesPageTitle/StylesTitle";
 import StylesButton from "../../Button/StylesButton";
+import { isMobile } from "react-device-detect";
 
 const StylesPage = () => {
   const { t } = useTranslation();
@@ -28,7 +29,7 @@ const StylesPage = () => {
               <div className="styles-price">
                 {i18n.language === "en" ? "From 20$" : "От 1590 руб."}
               </div>
-              <StylesButton />
+              {isMobile ? <StylesButton /> : null}
             </div>
 
             <div className="styles__item">
@@ -46,7 +47,7 @@ const StylesPage = () => {
               <div className="styles-price">
                 {i18n.language === "en" ? "From 36$" : "От 2800 руб."}
               </div>
-              <StylesButton />
+              {isMobile ? <StylesButton /> : null}
             </div>
 
             <div className="styles__item">
@@ -64,7 +65,7 @@ const StylesPage = () => {
               <div className="styles-price">
                 {i18n.language === "en" ? "From 13$" : "От 950 руб."}
               </div>
-              <StylesButton />
+              {isMobile ? <StylesButton /> : null}
             </div>
 
             <div className="styles__item">
@@ -82,7 +83,7 @@ const StylesPage = () => {
                 {" "}
                 {i18n.language === "en" ? "From 20$" : "От 1490 руб."}
               </div>
-              <StylesButton />
+              {isMobile ? <StylesButton /> : null}
             </div>
 
             <div className="styles__item">
@@ -99,7 +100,7 @@ const StylesPage = () => {
               <div className="styles-price">
                 {i18n.language === "en" ? "From 25$" : "От 1890 руб."}
               </div>
-              <StylesButton />
+              {isMobile ? <StylesButton /> : null}
             </div>
 
             <div className="styles__item">
@@ -117,7 +118,7 @@ const StylesPage = () => {
               <div className="styles-price">
                 {i18n.language === "en" ? "From 24$" : "От 1790 руб."}
               </div>
-              <StylesButton />
+              {isMobile ? <StylesButton /> : null}
             </div>
 
             <div className="styles__item">
@@ -135,7 +136,7 @@ const StylesPage = () => {
               <div className="styles-price">
                 {i18n.language === "en" ? "From 38$" : "От 2900 руб."}
               </div>
-              <StylesButton />
+              {isMobile ? <StylesButton /> : null}
             </div>
 
             <div className="styles__item">
@@ -152,7 +153,7 @@ const StylesPage = () => {
               <div className="styles-price">
                 {i18n.language === "en" ? "From 38$" : "От 2900 руб."}
               </div>
-              <StylesButton />
+              {isMobile ? <StylesButton /> : null}
             </div>
 
             <div className="styles__item">
@@ -170,7 +171,7 @@ const StylesPage = () => {
               <div className="styles-price">
                 {i18n.language === "en" ? "From 20$" : "От 1490 руб."}
               </div>
-              <StylesButton />
+              {isMobile ? <StylesButton /> : null}
             </div>
           </div>
         </div>

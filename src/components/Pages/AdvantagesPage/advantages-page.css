@@ -8,6 +8,14 @@
   justify-content: center;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .advantages-page {
+    background-image: url("/public/images/background/Слой7.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
 .advantages-page__general {
   background-image: url("/public/images/background/Слой22 -фон.png");
   background-repeat: no-repeat;
