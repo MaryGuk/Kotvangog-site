@@ -27,7 +27,7 @@
 
 @media (max-width: 480px) {
   .title-two-page__title-background {
-    margin-left: 5px;
+    margin-left: -18px;
   }
 }
 
@@ -49,13 +49,12 @@
   font-family: "Palatino Linotype";
   font-weight: 500;
   margin-top: -18px;
-  /* margin-left: -30px; */
   display: flex;
   flex-wrap: nowrap;
 }
 @media (max-width: 1082px) {
   .title-two__title {
-    margin-left: 20px;
+    margin-left: -2px;
   }
 }
 

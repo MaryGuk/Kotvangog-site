@@ -7,7 +7,7 @@ const TitleOne = () => {
         <div className="title-one-page__title-background">
           <img
             className="title-one__title-background-image"
-            src="/images/background/waveOne1.png"
+            src="/images/background/Слой перый розовый.png"
           />
         </div>
         <div className="title-one__title">Уникальные портреты и картины</div>
