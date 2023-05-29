@@ -9,17 +9,19 @@ import LikenessPortrait from "../../components/Pages/LikenessPortrait/likeness-p
 import FirstPage from "../../components/Pages/FrontPage1/FirstPage";
 import ArtStylesSize from "../ProductsPage/PortraitSizes/ArtStylesSize";
 import { isMobile } from "react-device-detect";
+import ProcessMaster from "../../components/Pages/ProcessPage/ProcessMaster/process-master";
 
 const MainPage = () => {
   return (
     <MainPageWrapper>
       {/* <FrontPage1 /> */}
-      <FirstPage />
+      {/* <FirstPage />
       <AdvantagesPage />
       <OilPortrait />
-      <StylesPage />
+      <StylesPage /> */}
       <LikenessPortrait />
       <ProcessPage />
+      {isMobile ? <ProcessMaster /> : null}
       <ArtStylesSize />
       {!isMobile && <Footer />}
     </MainPageWrapper>

@@ -39,11 +39,28 @@
   font-weight: 400;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .process-main-description {
+    font-family: "Century Gothic";
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+
 .process-secondary-description {
   font-family: "Trebuchet MS", serif;
   font-weight: 400;
   font-size: 14px;
   color: #565656;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .process-secondary-description {
+    font-family: "Century Gothic";
+    font-size: 12px;
+    font-weight: normal;
+    color: black;
+  }
 }
 
 .process-page__information {
@@ -72,6 +89,12 @@
     grid-template-rows: 430px 100px 280px;
     grid-column-gap: calc(100% - 750px);
     justify-items: center;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .process-page__information {
+    display: none;
   }
 }
 .process-item__wrapper {

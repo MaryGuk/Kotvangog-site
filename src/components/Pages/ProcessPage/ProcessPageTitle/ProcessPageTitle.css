@@ -5,9 +5,9 @@
   justify-content: center;
   margin-bottom: 60px;
 }
-@media (max-width: 472px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .process-page__title-wrapper {
-    margin-top: -30px;
+    display: none;
   }
 }
 .process-page-page__title-background {

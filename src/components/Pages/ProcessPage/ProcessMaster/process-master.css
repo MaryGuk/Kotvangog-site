@@ -1,0 +1,154 @@
+.process-master__wrapper {
+  background-color: white;
+}
+
+.process-page__information {
+  display: grid;
+  margin-top: 60px;
+  max-width: 899px;
+  width: 100%;
+  grid-template-columns: 300px 450px;
+  grid-template-rows: 100px 330px;
+  grid-column-gap: calc(100% - 750px);
+}
+
+@media (max-width: 780px) {
+  .process-page__information {
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 430px 280px;
+  }
+}
+
+@media (max-width: 630px) {
+  .process-page__information {
+    display: grid;
+    margin-top: 60px;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 430px 100px 280px;
+    grid-column-gap: calc(100% - 750px);
+    justify-items: center;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .process-page__information {
+    margin-top: 35px;
+    margin-bottom: 65px;
+  }
+}
+
+.process-item__wrapper {
+  margin: 5px;
+}
+
+.process-text__container {
+  display: grid;
+  height: 100px;
+  grid-template-columns: 150px 100px 50px;
+  grid-template-rows: 25px 50px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .process-text__container {
+    grid-template-columns: 156px 126px 61px;
+  }
+}
+
+@media (max-width: 780px) {
+  .process-text__container {
+    align-self: end;
+  }
+}
+
+@media (max-width: 630px) {
+  .process-text__container {
+    grid-row: 2;
+  }
+}
+
+.process-inf__text {
+  font-family: "Trebuchet MS";
+  font-size: 20px;
+  font-weight: bold;
+  grid-column: 1/3;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .process-inf__text {
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+.process-inf__text2 {
+  font-family: "Trebuchet MS";
+  color: rgb(32, 32, 32);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  grid-column-start: 1;
+}
+
+.process-inf__text3 {
+  font-family: "Trebuchet MS";
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  max-width: 150px;
+  margin-top: 2px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .process-inf__text3 {
+    font-family: "Century Gothic";
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+
+.process_text__general {
+  display: flex;
+  flex-direction: row;
+}
+
+.process-arrow__container {
+  position: relative;
+  top: 20px;
+}
+
+.process-arrow {
+  height: 60px;
+}
+
+.process-ava {
+  width: 400px;
+}
+@media (max-width: 780px) {
+  .process-ava {
+    width: 300px;
+  }
+}
+
+.process-video {
+  display: flex;
+  flex-wrap: wrap;
+  width: 540px;
+  height: 335px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+@media (max-width: 780px) {
+  .process-video {
+    grid-column: 1 / 3;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+  }
+}
+
+.master-name {
+  display: flex;
+  margin-top: 10px;
+}
