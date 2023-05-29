@@ -21,9 +21,7 @@ const AdvantagesPage = () => {
                 imageSrc: "/images/brain.png",
                 description: t("advantagesPage.description1"),
                 newDescription:
-                  "Не нашли что искали, воплотим любую идею красиво. ",
-                newDescription2:
-                  "От печати на холсте до написания картины маслом.",
+                  "Не нашли что искали, воплотим любую идею красиво. От печати на холсте до написания картины маслом.",
               },
               {
                 imageSrc: "/images/image.png",
@@ -31,9 +29,8 @@ const AdvantagesPage = () => {
                   ? "Экспресс-изготовление за сутки"
                   : t("advantagesPage.description2"),
 
-                newDescription: "Стандартный срок 3-4 рабочих дня.",
-                newDescription2:
-                  "Экспресс-изготовление за 1 рабочие сутки. Мы не подведем!",
+                newDescription:
+                  "Стандартный срок 3-4 рабочих дня. Экспресс-изготовление за 1 рабочие сутки. Мы не подведем!",
               },
               {
                 imageSrc: "/images/phone.png",
@@ -45,9 +42,7 @@ const AdvantagesPage = () => {
                 imageSrc: "/images/chat.png",
                 description: t("advantagesPage.description4"),
                 newDescription:
-                  "Готовый макет дизайнер отправит на согласование по мессенджеру.",
-                newDescription2:
-                  " Вы можете вносить дополнительные корректировки.",
+                  "Готовый макет дизайнер отправит на согласование по мессенджеру.Вы можете вносить дополнительные корректировки.",
               },
             ].map(
               (
