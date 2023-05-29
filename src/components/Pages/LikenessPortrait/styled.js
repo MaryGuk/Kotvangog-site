@@ -5,7 +5,7 @@ export const LikenessPortraitWrapper = styled(Box)`
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 70px;
+  padding-top: 45px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     background: #e0e0e0;
@@ -237,7 +237,7 @@ export const LikenessMobileTextPart1 = styled(Box)`
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: flex;
     font-family: "Century Gothic";
-    font-weight: normal;
+    font-weight: bold;
     font-size: 11.8px;
     margin: 0 auto;
   }
@@ -248,7 +248,7 @@ export const LikenessMobileTextPart2 = styled(Box)`
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: flex;
     font-family: "Century Gothic";
-    font-weight: normal;
+    font-weight: bold;
     font-size: 11.8px;
     margin: 0 auto;
   }
@@ -259,7 +259,7 @@ export const LikenessMobileTextPart3 = styled(Box)`
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: flex;
     font-family: "Century Gothic";
-    font-weight: normal;
+    font-weight: bold;
     font-size: 11.8px;
     margin: 0 auto;
   }
@@ -271,7 +271,5 @@ export const LikenessButton = styled(Box)`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: -60px;
-    margin-bottom: -205px;
   }
 `;
