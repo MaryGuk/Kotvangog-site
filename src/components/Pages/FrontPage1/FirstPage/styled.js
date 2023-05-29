@@ -39,7 +39,7 @@ export const FirstPageInfo = styled(Box)`
 
   @media (max-width: 767px) {
     position: absolute;
-    /* padding: 0 26px; */
+    padding: 0 10px;
   }
 `;
 
@@ -205,8 +205,3 @@ export const ArrowGrayContainer = styled(Box)`
   }
 `;
 
-// @media (max-width: 600px) {
-//   .MuiMobileStepper-dots {
-//     display: none;
-//   }
-// }

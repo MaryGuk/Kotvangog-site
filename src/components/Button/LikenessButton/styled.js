@@ -2,19 +2,16 @@ import { Box, styled } from "@mui/material";
 
 export const LikenessButtonWrapper = styled(Box)`
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    /* margin-bottom: 250px; */
   }
 `;
 
 export const LikenessButtonContainer = styled(Box)`
   display: flex;
   cursor: pointer;
-  margin-left: -10px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    margin-top: 15px;
+    margin-top: 10px;
     align-items: center;
-    margin-left: 30px;
   }
 `;
 
@@ -36,7 +33,6 @@ export const LikenessButtonItem = styled(Box)`
   }
 
   @media (max-width: 1082px) {
-    /* margin-left: 25px; */
   }
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
@@ -45,7 +41,6 @@ export const LikenessButtonItem = styled(Box)`
     padding: 10px;
     font-size: 15px;
     box-shadow: 3px 3px 0 3px #717171;
-    margin-left: 20px;
     border-radius: 25px;
   }
 `;

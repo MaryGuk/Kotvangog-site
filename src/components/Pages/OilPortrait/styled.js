@@ -9,6 +9,7 @@ export const OilPortraitWrapper = styled(Box)`
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     background: #e0e0e0;
+    height: 730px;
   }
 `;
 
@@ -46,12 +47,13 @@ export const OilContent2 = styled(Box)`
 `;
 
 export const OilContentPhoto = styled(Box)`
-  margin-top: 10px;
+  margin-top: -20px;
   margin-bottom: -3px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     width: 280px;
     align-items: center;
+    margin-top: 9px;
   }
 `;
 
@@ -240,8 +242,7 @@ export const OilButton = styled(Box)`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: -60px;
-    margin-bottom: -205px;
+    margin-top: 15px;
   }
 `;
 export const OilMobileContent = styled(Box)`
@@ -250,7 +251,6 @@ export const OilMobileContent = styled(Box)`
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: flex;
     margin-top: 40px;
-    margin-bottom: 30px;
   }
 `;
 export const OilMobileText = styled(Box)`
