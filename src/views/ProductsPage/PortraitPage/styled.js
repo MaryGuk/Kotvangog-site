@@ -23,6 +23,6 @@ export const ProductPageItemInfoBlock = styled(Box, {
   margin: props.reverse ? "0 75px 0 0" : "0 0 0 0",
 }));
 
-export const ArtButtonGapper = styled(Box)`
+export const ArtButtonWrapper = styled(Box)`
   padding-left: 75px;
 `;

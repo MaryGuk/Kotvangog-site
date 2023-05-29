@@ -15,6 +15,7 @@ export const ImageCarouselWrapper = styled(Box)`
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     width: 100%;
+    margin-bottom: 10px;
     & > div {
       visibility: visible;
     }

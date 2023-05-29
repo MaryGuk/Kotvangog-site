@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { ProductPageItemInfoBlock, ArtButtonGapper } from "./styled";
+import { ProductPageItemInfoBlock, ArtButtonWrapper } from "./styled";
 import ArtButton from "../../../components/Button/ArtButton";
 import { isMobile } from "react-device-detect";
 
@@ -22,9 +22,9 @@ const PortraitPageItem = ({
       </div>
 
       {!isMobile && (
-        <ArtButtonGapper>
+        <ArtButtonWrapper>
           <ArtButton />
-        </ArtButtonGapper>
+        </ArtButtonWrapper>
       )}
     </ProductPageItemInfoBlock>
   );

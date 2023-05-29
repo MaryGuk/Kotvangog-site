@@ -21,7 +21,7 @@ const ProductPageItem = ({
     <div className="beauty-art__page">
       <div className="beauty-art__general">
         <ProductPageItemMainInfoWrapper id={imageId} reverse={reverse}>
-          {isMobile && <ArtButton />}
+          {/* {isMobile && <ArtButton />} */}
           <div>
             {srcBefore ? (
               <BeforeAfterImage
@@ -54,6 +54,7 @@ const ProductPageItem = ({
           galleryImages={galleryImages}
           reverse={reverse}
         />
+        {isMobile && <ArtButton />}
       </div>
     </div>
   );
