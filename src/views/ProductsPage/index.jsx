@@ -18,6 +18,8 @@ import {
   GalleryPhotoBox,
 } from "./styled";
 import { useMemo } from "react";
+import FooterMobile from "../../components/Pages/FooterMobile";
+import { isMobile } from "react-device-detect";
 
 const ProductsPage = () => {
   const { t } = useTranslation();
@@ -568,7 +570,7 @@ const ProductsPage = () => {
       ))}
       {/* <BeautyArt /> */}
       <ArtStylesSize />
-      <Footer />
+      {isMobile ? <FooterMobile /> : <Footer />}
       <Dialog open={!!fullImageSrc} onClose={() => setFullImageSrc(null)}>
         {!isFirstPhoto && (
           <StyledIconButtonWrapper left="10px">

@@ -1,9 +1,11 @@
 import "./LikenessPortrait2/likeness-portrait2.jsx";
 import { Box } from "@mui/material";
 import ModernImages from "./ModernImages";
-import Footer from "../../../components/Pages/Footer/footer";
+import Footer from "../../../components/Pages/Footer/footer.jsx";
 import LikenessSize from "../PortraitSizes/LikenessSize";
 import LikenessPortrait2 from "./LikenessPortrait2/likeness-portrait2.jsx";
+import FooterMobile from "../../../components/Pages/FooterMobile/index.jsx";
+import { isMobile } from "react-device-detect";
 
 const LikenessPortraitPage = () => {
   return (
@@ -11,7 +13,7 @@ const LikenessPortraitPage = () => {
       <LikenessPortrait2 />
       <ModernImages />
       <LikenessSize />
-      <Footer />
+      {isMobile ? <FooterMobile /> : <Footer />}
     </Box>
   );
 };
