@@ -7,12 +7,15 @@ import OilSize from "../PortraitSizes/OilSize";
 import FooterMobile from "../../../components/Pages/FooterMobile/index.jsx";
 import { isMobile } from "react-device-detect";
 import OilPage from "./OilPage2";
+import PortraitFrame from "./PortraitFrame";
+
 const OilPortraitPage = () => {
   return (
     <Box>
       <OilPage />
       <OilPortraitSecond />
       <OilPortraitExamples />
+      {isMobile ? <PortraitFrame /> : null}
       <OilSize />
       {isMobile ? <FooterMobile /> : <Footer />}
     </Box>

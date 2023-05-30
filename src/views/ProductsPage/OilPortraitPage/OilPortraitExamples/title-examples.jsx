@@ -1,4 +1,5 @@
 import "./title-examples.css";
+import { isMobile } from "react-device-detect";
 
 const TitleExamples = () => {
   return (
@@ -7,7 +8,11 @@ const TitleExamples = () => {
         <div className="examples-text__title-background">
           <img
             className="examples-text__title-background-image"
-            src="/images/background/Examples.png"
+            src={
+              isMobile
+                ? "/images/background/примеры моб.png"
+                : "/images/background/Examples.png"
+            }
           />
         </div>
         <div className="examples-text__title">Примеры</div>
