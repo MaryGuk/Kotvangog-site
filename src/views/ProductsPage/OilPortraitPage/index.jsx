@@ -6,10 +6,11 @@ import Footer from "../../../components/Pages/Footer/footer";
 import OilSize from "../PortraitSizes/OilSize";
 import FooterMobile from "../../../components/Pages/FooterMobile/index.jsx";
 import { isMobile } from "react-device-detect";
+import OilPage from "./OilPage2";
 const OilPortraitPage = () => {
   return (
     <Box>
-      <OilPortrait />
+      <OilPage />
       <OilPortraitSecond />
       <OilPortraitExamples />
       <OilSize />

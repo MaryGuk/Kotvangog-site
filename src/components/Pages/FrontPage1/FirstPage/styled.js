@@ -83,7 +83,11 @@ export const FirstPageInfoItems = styled(Box)`
   }
 `;
 
-export const FirstPageInfoItemsIcon = styled(Box)``;
+export const FirstPageInfoItemsIcon = styled(Box)`
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    padding-right: 5px;
+  }
+`;
 export const FirstPageInfoItemsText = styled(Box)`
   align-items: center;
   font-family: "Lucidaconsole";
@@ -204,4 +208,3 @@ export const ArrowGrayContainer = styled(Box)`
     margin-top: -80px;
   }
 `;
-
