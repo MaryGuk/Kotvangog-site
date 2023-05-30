@@ -20,6 +20,7 @@ import {
 } from "./styled";
 import { Box } from "@mui/material";
 import "./footer-mobile.css";
+import { NavLink } from "react-router-dom";
 
 const FooterMobile = () => {
   return (
@@ -33,10 +34,38 @@ const FooterMobile = () => {
 
         <FooterMobileInformation>
           <FooterMobileLinkContainer>
-            <FooterMobileLink>Портрет маслом</FooterMobileLink>
-            <FooterMobileLink>Арт стили</FooterMobileLink>
-            <FooterMobileLink>Портрет в образе</FooterMobileLink>
-            <FooterMobileLink>Отзывы</FooterMobileLink>
+            <FooterMobileLink>
+              <NavLink
+                style={{ textDecoration: "none", color: "white" }}
+                to="/oil-portrait"
+              >
+                Портрет маслом
+              </NavLink>
+            </FooterMobileLink>
+            <FooterMobileLink>
+              <NavLink
+                style={{ textDecoration: "none", color: "white" }}
+                to="/products"
+              >
+                Арт стили
+              </NavLink>
+            </FooterMobileLink>
+            <FooterMobileLink>
+              <NavLink
+                style={{ textDecoration: "none", color: "white" }}
+                to="/likeness-portrait"
+              >
+                Портрет в образе
+              </NavLink>
+            </FooterMobileLink>
+            <FooterMobileLink>
+              <NavLink
+                style={{ textDecoration: "none", color: "white" }}
+                to="/reviews"
+              >
+                Отзывы
+              </NavLink>
+            </FooterMobileLink>
           </FooterMobileLinkContainer>
 
           <FooterMobileMessenger>

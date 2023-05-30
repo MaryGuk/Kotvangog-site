@@ -82,6 +82,10 @@ export const FooterMobileMessenger = styled(Box)`
   height: 38px;
   width: 167px;
   align-items: center;
+
+  a {
+    text-decoration: none;
+  }
 `;
 
 export const FooterMobileContacts = styled(Box)`
