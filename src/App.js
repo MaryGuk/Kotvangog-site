@@ -12,6 +12,9 @@ import OilPortraitPage from "./views/ProductsPage/OilPortraitPage";
 import LikenessPortraitPage from "./views/ProductsPage/LikenessPortraitPage";
 import { Box } from "@mui/material";
 import PaintbrushLoader from "./components/ImageWithLoader/PaintbrushLoader";
+import NavbarMobile from "./components/Pages/NavbarMobile/burger-menu";
+import { isMobile } from "react-device-detect";
+import BurgerMenu from "./components/Pages/NavbarMobile/burger-menu";
 
 const App = () => {
   return (
@@ -30,8 +33,7 @@ const App = () => {
     >
       <BrowserRouter>
         <div className="app-wrapper">
-          <Navbar />
-
+          {isMobile ? <BurgerMenu /> : <Navbar />}
           <Routes>
             <Route path="/home" element={<MainPage />} />
             <Route path="/products" element={<ProductsPage />} />
