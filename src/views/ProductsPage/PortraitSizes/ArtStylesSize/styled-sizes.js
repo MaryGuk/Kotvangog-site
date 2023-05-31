@@ -14,18 +14,30 @@ export const ArtSizesItemSize = styled(Box)`
   font-family: "Nunito", Sans-serif;
   font-weight: 700;
   text-align: center;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 17px;
+  }
 `;
 
 export const ArtSizesPrintText = styled(Box)`
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Nunito", Sans-serif;
   font-weight: 600;
   text-align: center;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 15px;
+  }
 `;
 
 export const ArtSizesOilText = styled(Box)`
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Nunito", Sans-serif;
   font-weight: 600;
   text-align: center;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 15px;
+  }
 `;

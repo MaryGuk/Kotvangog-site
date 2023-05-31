@@ -11,6 +11,7 @@ import {
 } from "./styled";
 import ArtStylesSizeItem from "./ArtStylesSizeItem";
 import PortraitSizesTitle from "./PortraitSizesTitle/PortraitSizesTitle";
+import { isMobile } from "react-device-detect";
 
 const ArtStylesSize = () => {
   return (

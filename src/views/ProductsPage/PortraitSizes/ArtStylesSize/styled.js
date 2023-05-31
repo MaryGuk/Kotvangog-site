@@ -26,7 +26,7 @@ export const ArtSizeTextOneContainer = styled(Box)`
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 `;
 
 export const ArtSizeTextOne = styled(Box)`
@@ -42,7 +42,10 @@ export const ArtSizeTextOne = styled(Box)`
   }
 `;
 export const ArtSizeTextOnePart2 = styled(Box)`
-  display: none;
+  display: flex;
+  font-weight: 700;
+  font-family: "Nunito", Sans-serif;
+  color: #606060;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: flex;

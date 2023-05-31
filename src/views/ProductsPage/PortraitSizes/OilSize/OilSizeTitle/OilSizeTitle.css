@@ -11,6 +11,13 @@
   display: flex;
   margin-left: -20px;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .oil-sizes-page__title-background {
+    margin-left: -70px;
+  }
+}
+
 .oil-sizes__title-background-image {
   width: 300px;
   height: 60px;
@@ -24,4 +31,11 @@
   text-align: center;
   color: #202020;
   margin-top: 10px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .oil-sizes__title {
+    font-size: 20px;
+    color: white;
+  }
 }

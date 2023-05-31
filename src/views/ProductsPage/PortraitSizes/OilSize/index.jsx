@@ -1,6 +1,5 @@
 import OilSizeItem from "./OilSizeItem";
 import OilSizeTitle from "./OilSizeTitle/OilSizeTitle";
-
 import {
   OilSizeWrapper,
   OilSizeGeneral,
@@ -10,6 +9,7 @@ import {
   OilSizeTextTwoContainer,
   OilSizeTextTwo,
   OilSizeContainer,
+  OilSizeTextOnePart2,
 } from "./styled";
 
 const OilSize = () => {
@@ -19,22 +19,17 @@ const OilSize = () => {
         <OilSizeTitle />
         <OilSizeDescription>
           <OilSizeTextOneContainer>
-            <OilSizeTextOne>
-              Портрет или картина маслом
-              <span style={{ fontWeight: "700", color: "#606060" }}>
-                {" "}
-                (100% ручная работа){" "}
-              </span>
-            </OilSizeTextOne>
+            <OilSizeTextOne>Портрет или картина маслом</OilSizeTextOne>
+            <OilSizeTextOnePart2>(100% ручная работа) </OilSizeTextOnePart2>
           </OilSizeTextOneContainer>
           <OilSizeTextTwoContainer>
             <OilSizeTextTwo>
               Возможно изготовление любых размеров.{" "}
               <span
                 style={{
-                  fontStyle: "italic",
-                  fontSize: "18px",
-                  color: "#3f3f3f",
+                  fontSize: "12px",
+                  color: "#414141",
+                  fontFamily: "Century Gothic",
                 }}
               >
                 Цены указаны без работы дизайнера
