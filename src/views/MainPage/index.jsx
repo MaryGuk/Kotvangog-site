@@ -11,6 +11,7 @@ import ArtStylesSize from "../ProductsPage/PortraitSizes/ArtStylesSize";
 import { isMobile } from "react-device-detect";
 import ProcessMaster from "../../components/Pages/ProcessPage/ProcessMaster/process-master";
 import FooterMobile from "../../components/Pages/FooterMobile";
+import ContactsSticky from "../../components/Pages/ContactsSticky";
 
 const MainPage = () => {
   return (
@@ -24,6 +25,7 @@ const MainPage = () => {
       {isMobile ? <ProcessMaster /> : null}
       <ArtStylesSize />
       {isMobile ? <FooterMobile /> : <Footer />}
+      {isMobile ? <ContactsSticky /> : null}
     </MainPageWrapper>
   );
 };
