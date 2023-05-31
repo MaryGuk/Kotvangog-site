@@ -59,7 +59,7 @@
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: #333;
+  background-color: #969696;
   padding: 20px;
   box-sizing: border-box;
   z-index: 1200;
@@ -73,6 +73,7 @@
 
 .burger-menu__content li {
   font-size: 18px;
+  font-family: "Century Gothic";
   line-height: 1.5;
   color: #fff;
   margin-bottom: 10px;
