@@ -28,7 +28,7 @@ export const FirstPageGeneral = styled(Box)`
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     height: auto;
-    margin-top: -55px;
+    margin-top: -10px;
     max-width: 100%;
   }
 `;
