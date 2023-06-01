@@ -28,6 +28,14 @@
   color: #252930;
   padding-left: 75px;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .beauty-art__title {
+    padding-left: 0;
+    /* background-image: url("/public/images/background/арт стили волна.png");
+    background-size: 50% 60%;
+    background-repeat: no-repeat; */
+  }
+}
 
 .beauty-art__title::after {
   content: "";
@@ -46,6 +54,14 @@
   font-weight: 400;
   letter-spacing: -0.5px;
   word-spacing: 6px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .beauty-art__price {
+    padding-left: 0;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
 }
 
 .beauty-art__description {

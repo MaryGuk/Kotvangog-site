@@ -19,9 +19,38 @@
   padding-top: 70px;
 }
 
+.beauty-art__information {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .beauty-art__photo {
   width: 350px;
   height: 467px;
+}
+.beauty__title-background {
+  display: none;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .beauty__title-background {
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    margin-left: -127px;
+  }
+}
+
+.beauty__title-background-image {
+  display: none;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .beauty__title-background-image {
+    display: flex;
+    width: 256px;
+    height: 45px;
+  }
 }
 
 .beauty-art__title {
@@ -32,11 +61,16 @@
   color: #252930;
 }
 
-/* @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .beauty-art__title {
-    display: none;
+    font-size: 20px;
+    font-family: "Palatino Linotype";
+    font-weight: 500;
+    position: relative;
+    z-index: 2;
+    padding-top: 5px;
   }
-} */
+}
 
 .beauty-art__title::after {
   content: "";
@@ -67,6 +101,7 @@
     font-family: "Century Gothic";
     font-weight: normal;
     font-size: 20px;
+    letter-spacing: 1;
   }
 }
 
