@@ -7,6 +7,10 @@ export const LikenessSizeWrapper = styled(Box)`
   justify-content: center;
   height: auto;
   padding: 65px 0;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    padding-top: 0;
+  }
 `;
 export const LikenessSizeGeneral = styled(Box)`
   width: 100%;
@@ -31,6 +35,13 @@ export const LikenessSizeTextOne = styled(Box)`
   font-size: 18px;
   font-family: "Nunito", Sans-serif;
   font-weight: 600;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    font-family: "Century Gothic";
+    font-weight: normal;
+    font-size: 15px;
+    text-align: center;
+  }
 `;
 export const LikenessSizeTextOneMoreContainer = styled(Box)`
   display: flex;
@@ -42,6 +53,14 @@ export const LikenessSizeTextOneMore = styled(Box)`
   font-family: "Nunito", Sans-serif;
   font-weight: 600;
   color: #555555;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    font-family: "Century Gothic";
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 5px;
+  }
 `;
 
 export const LikenessSizeTextTwoContainer = styled(Box)`
@@ -53,6 +72,14 @@ export const LikenessSizeTextTwo = styled(Box)`
   font-size: 18px;
   font-family: "Nunito", Sans-serif;
   font-weight: 600;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    font-family: "Century Gothic";
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 5px;
+  }
 `;
 export const LikenessSizeTextTwoMoreContainer = styled(Box)`
   display: flex;
@@ -64,6 +91,13 @@ export const LikenessSizeTextTwoMore = styled(Box)`
   font-family: "Nunito", Sans-serif;
   font-weight: 600;
   color: #555555;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    font-family: "Century Gothic";
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+  }
 `;
 
 export const LikenessSizeContainer = styled(Box)`
