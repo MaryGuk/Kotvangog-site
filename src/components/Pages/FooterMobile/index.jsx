@@ -129,7 +129,18 @@ const FooterMobile = () => {
             <FooterEmail>Email:</FooterEmail>
             <FooterEmailName>Kotvangog@gmail.ru</FooterEmailName>
             <FooterPhone>Телефон:</FooterPhone>
-            <FooterPhoneNumber>+79933600710</FooterPhoneNumber>
+            <FooterPhoneNumber>
+              <a
+                style={{
+                  textDecoration: "none",
+                  color: "#fff",
+                  fontFamily: "Century Gothic",
+                }}
+                href="tel:+79933600710"
+              >
+                +79933600710
+              </a>
+            </FooterPhoneNumber>
           </FooterMobileContacts>
         </FooterMobileInformation>
       </FooterMobileGeneral>
