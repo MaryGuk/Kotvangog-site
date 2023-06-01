@@ -6,6 +6,7 @@ import LikenessSize from "../PortraitSizes/LikenessSize";
 import LikenessPortrait2 from "./LikenessPortrait2/likeness-portrait2.jsx";
 import FooterMobile from "../../../components/Pages/FooterMobile/index.jsx";
 import { isMobile } from "react-device-detect";
+import ContactsSticky from "../../../components/Pages/ContactsSticky";
 
 const LikenessPortraitPage = () => {
   return (
@@ -14,6 +15,7 @@ const LikenessPortraitPage = () => {
       <ModernImages />
       <LikenessSize />
       {isMobile ? <FooterMobile /> : <Footer />}
+      {isMobile ? <ContactsSticky /> : null}
     </Box>
   );
 };

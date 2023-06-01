@@ -20,6 +20,7 @@ import {
 import { useMemo } from "react";
 import FooterMobile from "../../components/Pages/FooterMobile";
 import { isMobile } from "react-device-detect";
+import ContactsSticky from "../../components/Pages/ContactsSticky";
 
 const ProductsPage = () => {
   const { t } = useTranslation();
@@ -571,6 +572,7 @@ const ProductsPage = () => {
       {/* <BeautyArt /> */}
       <ArtStylesSize />
       {isMobile ? <FooterMobile /> : <Footer />}
+
       <Dialog open={!!fullImageSrc} onClose={() => setFullImageSrc(null)}>
         {!isFirstPhoto && (
           <StyledIconButtonWrapper left="10px">
@@ -600,6 +602,7 @@ const ProductsPage = () => {
           </StyledIconButtonWrapper>
         )}
       </Dialog>
+      {isMobile ? <ContactsSticky /> : null}
     </div>
   );
 };

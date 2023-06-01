@@ -8,6 +8,7 @@ import FooterMobile from "../../../components/Pages/FooterMobile/index.jsx";
 import { isMobile } from "react-device-detect";
 import OilPage from "./OilPage2";
 import PortraitFrame from "./PortraitFrame";
+import ContactsSticky from "../../../components/Pages/ContactsSticky";
 
 const OilPortraitPage = () => {
   return (
@@ -18,6 +19,7 @@ const OilPortraitPage = () => {
       {isMobile ? <PortraitFrame /> : null}
       <OilSize />
       {isMobile ? <FooterMobile /> : <Footer />}
+      {isMobile ? <ContactsSticky /> : null}
     </Box>
   );
 };
