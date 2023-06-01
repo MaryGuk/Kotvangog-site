@@ -6,12 +6,6 @@
   margin-top: 40px;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-  .likeness__title-wrapper2 {
-    margin-top: 10px;
-  }
-}
-
 .likeness-page__title-background2 {
   position: absolute;
   justify-content: center;

@@ -1,6 +1,6 @@
 import { Box, styled } from "@mui/material";
 
-export const OilPortraitWrapper2 = styled(Box)`
+export const LikenessPortraitWrapper2 = styled(Box)`
   background-image: url("/images/background/back-gray.png");
   display: flex;
   justify-content: center;
@@ -14,7 +14,7 @@ export const OilPortraitWrapper2 = styled(Box)`
   }
 `;
 
-export const OilPortraitGeneral2 = styled(Box)`
+export const LikenessPortraitGeneral2 = styled(Box)`
   background-image: url("/images/background/Слой3.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,12 +27,12 @@ export const OilPortraitGeneral2 = styled(Box)`
   }
 `;
 
-export const OilContent2 = styled(Box)`
+export const LikenessContent2 = styled(Box)`
   display: flex;
   justify-content: center;
 `;
 
-export const OilContent22 = styled(Box)`
+export const LikenessContent22 = styled(Box)`
   width: 100%;
   display: flex;
   justify-content: center;
@@ -47,7 +47,7 @@ export const OilContent22 = styled(Box)`
   }
 `;
 
-export const OilContentPhoto2 = styled(Box)`
+export const LikenessContentPhoto2 = styled(Box)`
   margin-top: -20px;
   margin-bottom: -3px;
 
@@ -58,7 +58,7 @@ export const OilContentPhoto2 = styled(Box)`
   }
 `;
 
-export const OilContentDescription2 = styled(Box)`
+export const LikenessContentDescription2 = styled(Box)`
   margin-top: 70px;
   padding-left: 66px;
 
@@ -236,19 +236,19 @@ export const ModalIcons = styled(Box)`
     margin-right: 0;
   }
 `;
-export const OilButton2 = styled(Box)`
+export const LikenessButton2 = styled(Box)`
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: none;
   }
 `;
-export const OilMobileContent2 = styled(Box)`
+export const LikenessMobileContent2 = styled(Box)`
   display: none;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: flex;
   }
 `;
-export const OilMobileText2 = styled(Box)`
+export const LikenessMobileText2 = styled(Box)`
   display: none;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
@@ -261,7 +261,7 @@ export const OilMobileText2 = styled(Box)`
   }
 `;
 
-export const OilMobileInfoItems = styled(Box)`
+export const LikenessMobileInfoItems = styled(Box)`
   margin-top: 30px;
   /* margin-left: -40px; */
 
@@ -276,32 +276,32 @@ export const OilMobileInfoItems = styled(Box)`
   }
 `;
 
-export const OilMobileInfoItemsIcon = styled(Box)`
+export const LikenessMobileInfoItemsIcon = styled(Box)`
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     padding-right: 5px;
   }
 `;
-export const OilMobileInfoItemsText = styled(Box)`
+export const LikenessMobileInfoItemsText = styled(Box)`
   align-items: center;
   font-family: "Century Gothic";
   font-weight: normal;
-  font-size: 13px;
+  font-size: 14px;
   display: flex;
   flex-wrap: wrap;
 `;
 
-export const OilMobileInfoItemsOne = styled(Box)`
+export const LikenessMobileInfoItemsOne = styled(Box)`
   display: flex;
   align-items: center;
   padding-bottom: 20px;
 `;
 
-export const OilMobileInfoItemsTwo = styled(Box)`
+export const LikenessMobileInfoItemsTwo = styled(Box)`
   display: flex;
   align-items: center;
   padding-bottom: 20px;
 `;
-export const OilMobileInfoItemsThree = styled(Box)`
+export const LikenessMobileInfoItemsThree = styled(Box)`
   display: flex;
   align-items: center;
   padding-bottom: 21px;
