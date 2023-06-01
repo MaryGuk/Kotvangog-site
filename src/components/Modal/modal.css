@@ -11,6 +11,7 @@
   opacity: 0;
   pointer-events: none;
   transition: 0.5s;
+  z-index: 1200;
 }
 
 .modal.active {
@@ -25,6 +26,13 @@
   width: 30vw;
   transform: scale(0.5);
   transition: 0.4s all;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .modal__content {
+    width: 210px;
+    height: 250px;
+  }
 }
 
 .modal__content.active {
