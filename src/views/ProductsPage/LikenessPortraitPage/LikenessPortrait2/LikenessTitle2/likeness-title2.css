@@ -8,7 +8,7 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .likeness__title-wrapper2 {
-    margin-top: -15px;
+    margin-top: 10px;
   }
 }
 
@@ -17,12 +17,6 @@
   justify-content: center;
   display: flex;
   margin-left: -30px;
-}
-
-@media (max-width: 375px) {
-  .likeness__title-background2 {
-    margin-left: -3px;
-  }
 }
 
 .likeness__title-background-image2 {
@@ -36,6 +30,12 @@
   }
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .likeness__title-background-image2 {
+    margin-left: -20px;
+  }
+}
+
 .likeness__title2 {
   position: relative;
   font-size: 24px;
@@ -43,4 +43,10 @@
   font-weight: 500;
   text-align: center;
   color: white;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .likeness__title2 {
+    padding-top: 10px;
+    font-size: 20px;
+  }
 }

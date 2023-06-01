@@ -30,8 +30,8 @@ export const FooterMobileInformation = styled(Box)`
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   height: 300px;
-
   padding-top: 37px;
+  padding-bottom: 45px;
 `;
 
 export const FooterMobileLinkContainer = styled(Box)`

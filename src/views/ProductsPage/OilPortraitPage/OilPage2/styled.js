@@ -10,6 +10,7 @@ export const OilPortraitWrapper2 = styled(Box)`
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     /* height: 730px; */
     background-image: none;
+    padding-top: 0;
   }
 `;
 
