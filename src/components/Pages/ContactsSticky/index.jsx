@@ -60,7 +60,19 @@ const PhoneDialog = ({ open, onClose, phoneNumber }) => {
               color: "#C6119A",
             }}
           >
-            {phoneNumber}
+            {
+              <a
+                style={{
+                  textDecoration: "none",
+                  color: "#C6119A",
+                  fontFamily: "Century Gothic",
+                }}
+                href="tel:+79933600710"
+              >
+                {" "}
+                {phoneNumber}
+              </a>
+            }
           </Box>
         </Box>
       </DialogContent>
