@@ -95,8 +95,33 @@ const ContactsSticky = () => {
 
         <ContactStickyButtonTwoContainer>
           <ContactStickyButtonTwo>
-            <Box> Позвонить</Box>
+            <Box onClick={() => setModalActive(true)}> Позвонить</Box>
           </ContactStickyButtonTwo>
+          <Modal active={modalActive} setActive={setModalActive}>
+            <ModalTitleContacts>
+              Получите консультацию по телефону:
+            </ModalTitleContacts>
+            <ModalMessengerContacts>
+              <ModalMessengerContentContacts>
+                <a
+                  style={{
+                    textDecoration: "none",
+                    color: "#C6119A",
+                    fontFamily: "Century Gothic",
+                  }}
+                  target="blank"
+                  href="tel:+79933600710"
+                >
+                  <ModalContactsItems>
+                    <ModalIconsContacts>
+                      <img width="40px" src="/images/icon phone.png" />
+                    </ModalIconsContacts>
+                    <ModalContactsName> +79933600710</ModalContactsName>
+                  </ModalContactsItems>
+                </a>
+              </ModalMessengerContentContacts>
+            </ModalMessengerContacts>
+          </Modal>
         </ContactStickyButtonTwoContainer>
       </ContactStickyContainer>
     </ContactSticky>
@@ -104,25 +129,3 @@ const ContactsSticky = () => {
 };
 
 export default ContactsSticky;
-
-// return (
-//    <nav className="footer-sticky">
-//      <ul className="footer-sticky__nav">
-//        <div className="footer-sticky__container">
-//          <div className="footer-sticky__box">
-//            <div className="footer-sticky__item1">
-//              <a href="#" className="footer-sticky__link">
-//                Написать
-//              </a>
-//            </div>
-//          </div>
-
-//          <div className="footer-sticky__item2">
-//            <a href="#" className="footer-sticky__link">
-//              Позвонить
-//            </a>
-//          </div>
-//        </div>
-//      </ul>
-//    </nav>
-//  );
