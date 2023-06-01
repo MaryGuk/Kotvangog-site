@@ -25,9 +25,9 @@ export const OilPortraitExamplesContent = styled(Box)``;
 
 export const OilPortraitExamplesGallery = styled(Box)`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 240px));
   grid-column-gap: 20px;
   grid-row-gap: 15px;
-  width: 60%;
+  width: 70%;
   margin: 40px auto;
 `;
