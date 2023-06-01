@@ -1,3 +1,4 @@
+import { isMobile } from "react-device-detect";
 import HistoryGallery from "../HistoryGallery";
 import ModernGallery from "./ModernGallery";
 import {
@@ -11,6 +12,12 @@ import {
   HistoryImagesCollageText,
   HistoryImagesCollageText1,
   HistoryImagesCollageText2,
+  MobileLikenessOneContainer,
+  MobileLikenessTextOne,
+  MobileLikenessTextThree,
+  MobileLikenessTextTwo,
+  MobileLikenessThreeContainer,
+  MobileLikenessTwoContainer,
 } from "./styled";
 import TitleHistory from "./title-history";
 import TitleModern from "./title-modern";
@@ -37,6 +44,21 @@ const ModernImages = () => {
 
         <HistoryImagesCollage>
           <HistoryImagesCollageItems>
+            <MobileLikenessOneContainer>
+              <MobileLikenessTextOne>
+                Не знаете какой образ подойдет?
+              </MobileLikenessTextOne>
+            </MobileLikenessOneContainer>
+            <MobileLikenessTwoContainer>
+              <MobileLikenessTextTwo>
+                Мы бесплатно подберем 7-8 грубых макетов под ваше фото.
+              </MobileLikenessTextTwo>
+            </MobileLikenessTwoContainer>
+            <MobileLikenessThreeContainer>
+              <MobileLikenessTextThree>
+                Вы сами выберите образ который вам понравится.
+              </MobileLikenessTextThree>
+            </MobileLikenessThreeContainer>
             <HistoryImagesCollageImage>
               <img
                 width="100%"

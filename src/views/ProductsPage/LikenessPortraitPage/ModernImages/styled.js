@@ -5,6 +5,10 @@ export const ModernImagesWrapper = styled(Box)`
   display: flex;
   justify-content: center;
   width: 100%;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    background-color: #fff;
+  }
 `;
 export const ModernImagesGeneral = styled(Box)`
   width: 100%;
@@ -14,7 +18,7 @@ export const ModernImagesContent = styled(Box)`
 `;
 
 export const ModernImagesDescription = styled(Box)`
-  font-size: 26px;
+  font-size: 17px;
   font-family: "Palatino Linotype";
   font-weight: 500;
   text-align: center;
@@ -46,6 +50,10 @@ export const HistoryImagesCollageImage = styled(Box)`
 export const HistoryImagesCollageText = styled(Box)`
   margin-top: -40px;
   margin-left: 5px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: none;
+  }
 `;
 export const HistoryImagesCollageText1 = styled(Box)`
   font-size: 19px;
@@ -61,4 +69,73 @@ export const HistoryImagesCollageText2 = styled(Box)`
   color: #555555;
   max-width: 310px;
   text-align: center;
+`;
+
+//
+
+export const MobileLikenessOneContainer = styled(Box)`
+  display: none;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 43px;
+  }
+`;
+
+export const MobileLikenessTextOne = styled(Box)`
+  display: none;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    font-family: "Century Gothic";
+    font-weight: normal;
+    font-size: 13px;
+    text-align: center;
+    display: flex;
+  }
+`;
+
+export const MobileLikenessTwoContainer = styled(Box)`
+  display: none;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: flex;
+    justify-content: center;
+  }
+`;
+
+export const MobileLikenessTextTwo = styled(Box)`
+  display: none;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    font-family: "Century Gothic";
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    display: flex;
+    line-height: 2;
+  }
+`;
+
+export const MobileLikenessThreeContainer = styled(Box)`
+  display: none;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+  }
+`;
+
+export const MobileLikenessTextThree = styled(Box)`
+  display: none;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    font-family: "Century Gothic";
+    font-weight: normal;
+    font-size: 13px;
+    text-align: center;
+    display: flex;
+  }
 `;

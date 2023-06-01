@@ -23,7 +23,7 @@
   .modern-text__title-background-image {
     width: 300px;
     height: 50px;
-    margin-left: 60px;
+    margin-left: 45px;
   }
 }
 
@@ -39,7 +39,7 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .modern-text__title {
-    font-size: 21px;
-    margin-top: 42px;
+    font-size: 20px;
+    margin-top: 50px;
   }
 }

@@ -35,3 +35,9 @@
   color: white;
   margin-top: 30px;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .history-text__title {
+    font-size: 20px;
+  }
+}
