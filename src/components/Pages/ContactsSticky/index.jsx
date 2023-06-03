@@ -1,4 +1,4 @@
-import { Box, color } from "@mui/system";
+import { Box } from "@mui/system";
 import {
   ContactSticky,
   ContactStickyContainer,
@@ -12,11 +12,6 @@ import {
   ModalContactsItems,
   ModalContactsName,
   ModalIconsContacts,
-  ModalContactsItemsPhone,
-  ModalContactsNamePhone,
-  ModalIconsContactsPhone,
-  ModalMessengerContactsPhone,
-  ModalTitleContactsPhone,
 } from "./styled";
 import { useState } from "react";
 import Modal from "../../Modal/modal";
@@ -24,8 +19,6 @@ import {
   Dialog,
   DialogTitle,
   DialogContent,
-  DialogContentText,
-  TextField,
   DialogActions,
   Button,
 } from "@mui/material";
@@ -46,7 +39,7 @@ const PhoneDialog = ({ open, onClose, phoneNumber }) => {
       <DialogContent>
         <Box style={{ display: "flex", flexDirection: "row" }}>
           <Box style={{ marginRight: "15px" }}>
-            <img width="40px" src="/images/icon phone.png" />{" "}
+            <img width="40px" src="/images/icon phone.png" alt=""/>
           </Box>
           <Box
             style={{

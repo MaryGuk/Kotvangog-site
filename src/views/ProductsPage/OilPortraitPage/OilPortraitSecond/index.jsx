@@ -1,4 +1,3 @@
-import { Box } from "@mui/material";
 import {
   OilPortraitSecondGeneral,
   OilPortraitSecondWrapper,
@@ -40,6 +39,7 @@ const OilPortraitSecond = () => {
                 }
                 loading="lazy"
                 decoding="async"
+                alt=""
               />
             </OilPortraitSecondContentImages>
             <OilPortraitSecondContentImages>
@@ -53,6 +53,7 @@ const OilPortraitSecond = () => {
                 }
                 loading="lazy"
                 decoding="async"
+                alt=""
               />
             </OilPortraitSecondContentImages>
 
@@ -64,6 +65,7 @@ const OilPortraitSecond = () => {
                   src="https://www.dropbox.com/s/45jazoryhehrv7c/3%20%D1%84%D0%BE%D1%82%D0%BE.jpg?raw=1"
                   loading="lazy"
                   decoding="async"
+                  alt=""
                 />
               </OilPortraitSecondContentImages>
             )}

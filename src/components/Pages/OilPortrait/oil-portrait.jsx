@@ -31,7 +31,6 @@ import Modal from "../../../components/Modal/modal";
 import { Link } from "react-router-dom";
 import "./oil-portarait.css";
 import { isMobile } from "react-device-detect";
-import MainButton from "../../Button/MainButton";
 import LikenessButtonMobile from "../../Button/LikenessButton";
 
 const OilPortrait = () => {

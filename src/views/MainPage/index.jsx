@@ -1,4 +1,3 @@
-import React from "react";
 import AdvantagesPage from "../../components/Pages/AdvantagesPage/advantages-page";
 import StylesPage from "../../components/Pages/StylesPage/styles-page";
 import Footer from "../../components/Pages/Footer/footer";

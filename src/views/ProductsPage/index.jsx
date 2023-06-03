@@ -1,15 +1,11 @@
-import React from "react";
 import { Dialog } from "@mui/material";
-import { Box } from "@mui/system";
 import { useState } from "react";
-import BeautyArt from "./Beauty-art/beauty-art";
 import ProductPageItem from "./PortraitPage/portrait-page";
 import Footer from "../../components/Pages/Footer/footer";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18n";
 import ArtStylesSize from "./PortraitSizes/ArtStylesSize";
 import ImageWithLoader from "../../components/ImageWithLoader";
-import { IconButton } from "@mui/material";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import {

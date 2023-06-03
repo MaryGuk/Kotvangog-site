@@ -28,10 +28,10 @@ const ImageGallery = ({ galleryImages, setFullImage, reverse }) => {
   return (
     //
     <Carousel>
-      {imagePortionsArray?.map((portion) => (
-        <BeautyArtGalleryWrapper reverse={reverse}>
-          {portion.map(({ previewSrc, fullSrc }) => (
-            <div onClick={() => setFullImage(fullSrc)}>
+      {imagePortionsArray?.map((portion, idx) => (
+        <BeautyArtGalleryWrapper reverse={reverse} key={idx}>
+          {portion.map(({ previewSrc, fullSrc }, i) => (
+            <div onClick={() => setFullImage(fullSrc)} key={i}>
               <img className="beauty-art__image" src={previewSrc} alt="123" />
             </div>
           ))}

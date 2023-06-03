@@ -100,7 +100,7 @@ const ProcessPage = () => {
                 ></iframe>
               </div>
               <div className="process-author">
-                <a href="https://www.instagram.com/nen_nenad/" target="_blank">
+                <a href="https://www.instagram.com/nen_nenad/" target="_blank" rel="noreferrer">
                   <div className="process-author__name">
                     {t("processPage.author-name")}
                   </div>

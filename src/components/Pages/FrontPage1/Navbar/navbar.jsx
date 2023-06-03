@@ -6,6 +6,7 @@ import NavBarItem from "./NavBarItem";
 const Navbar = () => {
   const { t, i18n } = useTranslation();
 
+  // eslint-disable-next-line no-unused-vars
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
   };

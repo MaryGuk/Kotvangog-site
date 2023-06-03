@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
     "env": {
         "browser": true,
@@ -7,6 +8,11 @@ module.exports = {
         "eslint:recommended",
         "plugin:react/recommended"
     ],
+    "settings": {
+        "react": {
+            "version": "detect" // автоматически обнаруживает версию React
+        }
+    },
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
@@ -15,5 +21,8 @@ module.exports = {
         "react"
     ],
     "rules": {
+        "react/prop-types": "off",
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off"
     }
 }
