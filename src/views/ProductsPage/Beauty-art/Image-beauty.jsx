@@ -26,7 +26,6 @@ const ImageGallery = ({ galleryImages, setFullImage, reverse }) => {
   );
 
   return (
-    //
     <Carousel>
       {imagePortionsArray?.map((portion, idx) => (
         <BeautyArtGalleryWrapper reverse={reverse} key={idx}>
@@ -38,7 +37,6 @@ const ImageGallery = ({ galleryImages, setFullImage, reverse }) => {
         </BeautyArtGalleryWrapper>
       ))}
     </Carousel>
-    //
   );
 };
 

@@ -19,15 +19,24 @@ const BeforeAfterImage = ({
   dividingSlider,
 }) => {
   const [sliderPosition, setSliderPosition] = useState(50);
+  const [lastTouchedPosition, setLastTouchedPosition] = useState(null);
 
   const [mousePressed, setMousePressed] = useState(false);
 
-  const handleMouseMove = ({ movementX, ...rest }) => {
+  const handleMouseMove = (event) => {
     if (!mousePressed) {
       return;
     }
 
-    const { width } = rest.currentTarget.getBoundingClientRect();
+    let movementX = event.movementX;
+
+    if (!movementX && event.touches[0]) {
+      const touchedClientX = event.touches[0].clientX;
+      movementX = lastTouchedPosition ? touchedClientX - lastTouchedPosition : 0;
+      setLastTouchedPosition(touchedClientX);
+    }
+
+    const { width } = event.currentTarget.getBoundingClientRect();
 
     setSliderPosition((prev) => prev + (movementX * 100) / width);
   };
@@ -36,8 +45,12 @@ const BeforeAfterImage = ({
     const handleMouseUp = () => setMousePressed(false);
 
     document.addEventListener("mouseup", handleMouseUp);
+    document.addEventListener("touchend", handleMouseUp);
 
-    return () => document.removeEventListener("mouseup", handleMouseUp);
+    return () => {
+      document.removeEventListener("mouseup", handleMouseUp);
+      document.removeEventListener("touchend", handleMouseUp);
+    }
   }, []);
 
   const normalizedSliderPosition = useMemo(
@@ -49,6 +62,7 @@ const BeforeAfterImage = ({
     <BeforeAfterImageWrapper
       height={height ?? "100%"}
       onMouseMove={handleMouseMove}
+      onTouchMove={handleMouseMove}
       changeCursor={mousePressed}
     >
       <ImageWrapper>
@@ -63,7 +77,7 @@ const BeforeAfterImage = ({
           backgroundColor={dividingLineColor ?? "white"}
         />
         <HoverListener />
-        <DividingLineSliderWrapper onMouseDown={() => setMousePressed(true)}>
+        <DividingLineSliderWrapper onMouseDown={() => setMousePressed(true)} onTouchStart={() => setMousePressed(true)}>
           {dividingSlider ?? <ExampleDividingSlider />}
         </DividingLineSliderWrapper>
       </SliderWrapper>
