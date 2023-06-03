@@ -70,6 +70,10 @@ export const DividingLineSliderWrapper = styled(Box)`
   :hover {
     visibility: visible;
   }
+  
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    visibility: visible;
+  }
 `;
 
 export const ExampleDividingSlider = styled(Box)`
@@ -77,4 +81,11 @@ export const ExampleDividingSlider = styled(Box)`
   height: 50px;
   background-color: white;
   border-radius: 3px;
+
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    width: 50px;
+    border-radius: 50%;
+    opacity: 0.7;
+  }
 `;

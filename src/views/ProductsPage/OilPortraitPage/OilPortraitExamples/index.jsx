@@ -1,7 +1,5 @@
-// import ExamplesItem from "./ExamplesItem";
 import {
   OilPortraitExamplesContent,
-  OilPortraitExamplesGallery,
   OilPortraitExamplesGeneral,
   OilPortraitExamplesWrapper,
 } from "./styled";
