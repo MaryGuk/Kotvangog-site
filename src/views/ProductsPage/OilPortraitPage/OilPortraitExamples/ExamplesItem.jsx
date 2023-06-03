@@ -22,8 +22,6 @@ const ExamplesItem = ({ previewSrc, fullSrc, setFullImage, onImageLoad }) => {
       <ExamplesGallery onClick={() => setFullImage(fullSrc)}>
         <img
           src={previewSrc}
-          fullSrc={fullSrc}
-          setFullImage={setFullImage}
           style={style}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}

@@ -21,7 +21,6 @@ import {
   ModalTitle,
   OilButton2,
   OilMobileContent2,
-  OilMobileText2,
   OilMobileInfoItems,
   OilMobileInfoItemsIcon,
   OilMobileInfoItemsOne,

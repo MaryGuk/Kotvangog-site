@@ -9,6 +9,7 @@ function BurgerMenu() {
     setIsOpen(!isOpen);
   };
 
+    // eslint-disable-next-line no-unused-vars
   const handleBackdropClick = () => {
     setIsOpen(false);
   };
@@ -19,9 +20,9 @@ function BurgerMenu() {
         className={`burger-menu__icon ${isOpen ? "open" : ""}`}
         onClick={handleMenuClick}
       >
-        <span></span>
-        <span></span>
-        <span></span>
+        <span/>
+        <span/>
+        <span/>
       </div>
 
       <div className="burger-menu__logo">

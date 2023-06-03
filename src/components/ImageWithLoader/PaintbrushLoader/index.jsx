@@ -1,4 +1,3 @@
-import React from "react";
 import { LoaderRotatingWrapper, LoaderStaticWrapper } from "./styled";
 
 const PaintbrushLoader = ({ width, backgroundColor }) => {
