@@ -12,6 +12,7 @@ import { Dialog } from "@mui/material";
 import ImageWithLoader from "../../../../components/ImageWithLoader";
 import ExamplesPhoto from "./ExamplesPhoto";
 import Carousel from "react-material-ui-carousel";
+import { isMobile } from "react-device-detect";
 
 const photosData = [
   {
@@ -55,7 +56,11 @@ const photosData = [
   },
 ];
 
-const slicedPhotosData = photosData.reduce((acc, curr, idx) => {
+const adaptivePhotosData = isMobile
+  ? [0, 7, 6, 2, 1, 5, 3, 4].map((i) => photosData[i])
+  : photosData;
+
+const slicedPhotosData = adaptivePhotosData.reduce((acc, curr, idx) => {
   if (idx % 4) {
     acc[acc.length - 1].push(curr);
   } else {
@@ -74,31 +79,40 @@ const OilPortraitExamples = () => {
       <OilPortraitExamplesGeneral>
         <TitleExamples />
         <OilPortraitExamplesContent>
-          <Carousel
-            animation="slide"
-            swipeable
-            showArrows={false}
-            navButtonsAlwaysInvisible
-            autoPlay={autoPlay}
-            changeOnFirstRender
-            interval={1000}
-            indicators={false}
-          >
-            {slicedPhotosData.map((photosArray, idx) => (
-              <ExamplesPhoto
-                key={idx}
-                setFullImageSrc={setFullImageSrc}
-                photosArray={photosArray}
-                onImageLoad={() => setAutoPlay((prev) => prev - 1)}
-              />
-            ))}
-          </Carousel>
+          {isMobile ? (
+            <Carousel
+              animation="slide"
+              swipeable
+              showArrows={false}
+              navButtonsAlwaysInvisible
+              autoPlay={autoPlay}
+              changeOnFirstRender
+              interval={1000}
+              indicators={false}
+            >
+              {slicedPhotosData.map((photosArray, idx) => (
+                <ExamplesPhoto
+                  key={idx}
+                  setFullImageSrc={setFullImageSrc}
+                  photosArray={photosArray}
+                  onImageLoad={() => setAutoPlay((prev) => prev - 1)}
+                />
+              ))}
+            </Carousel>
+          ) : (
+            <Box></Box>
+          )}
         </OilPortraitExamplesContent>
       </OilPortraitExamplesGeneral>
 
       <Dialog open={!!fullImageSrc} onClose={() => setFullImageSrc(null)}>
-        <Box height="500px" overflow="hidden">
-          <ImageWithLoader height="100%" src={fullImageSrc} alt="" />
+        <Box height={isMobile ? undefined : "500px"} overflow="hidden">
+          <ImageWithLoader
+            height={isMobile ? undefined : "100%"}
+            width={isMobile ? "100%" : undefined}
+            src={fullImageSrc}
+            alt=""
+          />
         </Box>
       </Dialog>
     </OilPortraitExamplesWrapper>
