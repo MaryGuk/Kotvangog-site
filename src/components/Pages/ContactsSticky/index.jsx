@@ -51,7 +51,6 @@ const PhoneDialog = ({ open, onClose, phoneNumber }) => {
           <Box
             style={{
               textDecoration: "none",
-              color: "black",
               fontFamily: "Century Gothic",
               fontSize: "18px",
               display: "flex",
