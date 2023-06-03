@@ -17,7 +17,7 @@ export const OilPortraitGeneral = styled(Box)`
   background-image: url("/images/background/Слой3.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 10px;
+  padding: 10px;
   width: 100%;
   padding-top: 20px;
 
