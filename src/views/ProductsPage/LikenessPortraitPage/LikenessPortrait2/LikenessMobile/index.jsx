@@ -21,7 +21,6 @@ import {
   ModalTitle,
   LikenessButton2,
   LikenessMobileContent2,
-  LikenessMobileText2,
   LikenessMobileInfoItems,
   LikenessMobileInfoItemsIcon,
   LikenessMobileInfoItemsOne,

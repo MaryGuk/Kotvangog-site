@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import PaintbrushLoader from "./PaintbrushLoader";
 import { ImageLoaderBackground } from "./styled";
 

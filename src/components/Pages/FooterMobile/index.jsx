@@ -1,4 +1,3 @@
-import Footer from "../Footer/footer";
 import {
   FooterMobileWrapper,
   FooterMobileGeneral,
@@ -70,7 +69,7 @@ const FooterMobile = () => {
 
           <FooterMobileMessenger>
             <Box>
-              <a href="https://t.me/kot_vangog" target="_blank">
+              <a href="https://t.me/kot_vangog" target="_blank" rel="noreferrer">
                 <img
                   className="icons-footer__mobile"
                   src="/images/messenger/telegram.svg"
@@ -81,7 +80,7 @@ const FooterMobile = () => {
             <Box>
               <a
                 href="https://api.whatsapp.com/send/?phone=79933600710&text&type=phone_number&app_absent=0"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 <img
                   className="icons-footer__mobile"
@@ -91,7 +90,7 @@ const FooterMobile = () => {
             </Box>
 
             <Box>
-              <a href="https://vk.com/lubov0011" target="_blank">
+              <a href="https://vk.com/lubov0011" target="_blank" rel="noreferrer">
                 <img
                   className="icons-footer__mobile"
                   src="/images/messenger/vk.svg"
@@ -100,7 +99,7 @@ const FooterMobile = () => {
             </Box>
 
             <Box>
-              <a href="https://www.instagram.com/nen_nenad/" target="_blank">
+              <a href="https://www.instagram.com/nen_nenad/" target="_blank" rel="noreferrer">
                 <img
                   className="icons-footer__mobile"
                   src="/images/messenger/instagram.svg"
@@ -109,7 +108,7 @@ const FooterMobile = () => {
             </Box>
 
             <Box>
-              <a href="mailto:mail@kotvangog777com" target="_blank">
+              <a href="mailto:mail@kotvangog777com" target="_blank" rel="noreferrer">
                 <img
                   className="icons-footer__mobile"
                   src="/images/messenger/email.svg"

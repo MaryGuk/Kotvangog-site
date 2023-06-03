@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next";
 import { ProductPageItemInfoBlock, ArtButtonWrapper } from "./styled";
 import ArtButton from "../../../components/Button/ArtButton";
 import { isMobile } from "react-device-detect";
@@ -10,8 +9,6 @@ const PortraitPageItem = ({
   portraitDescription,
   reverse,
 }) => {
-  const { t } = useTranslation();
-
   return (
     <ProductPageItemInfoBlock reverse={reverse}>
       <div className="beauty-art__information">
@@ -20,6 +17,7 @@ const PortraitPageItem = ({
             <img
               className="beauty__title-background-image"
               src="/images/background/арт стили волна.png"
+              alt=""
             />
           </div>
         </div>

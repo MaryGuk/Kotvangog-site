@@ -1,10 +1,7 @@
-import { isMobile } from "react-device-detect";
-
 const AdvantageItem = ({
   imageSrc,
   description,
   newDescription,
-  newDescription2,
 }) => {
   return (
     <div className="advantages-wrapper">

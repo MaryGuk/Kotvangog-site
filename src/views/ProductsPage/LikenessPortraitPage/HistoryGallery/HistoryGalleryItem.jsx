@@ -21,8 +21,6 @@ const HistoryGalleryItem = ({ previewSrc, fullSrc, setFullImage }) => {
       <Box onClick={() => setFullImage(fullSrc)}>
         <img
           src={previewSrc}
-          fullSrc={fullSrc}
-          setFullImage={setFullImage}
           width="190px"
           height="245px"
           loading="lazy"

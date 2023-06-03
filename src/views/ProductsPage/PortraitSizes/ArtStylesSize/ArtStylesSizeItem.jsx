@@ -1,5 +1,4 @@
 import {
-  ArtSizeItemWrapper,
   ArtSizeItemContainer,
   ArtSizesItemSize,
   ArtSizesOilText,

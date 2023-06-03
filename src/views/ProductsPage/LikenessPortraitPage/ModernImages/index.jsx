@@ -1,4 +1,3 @@
-import { isMobile } from "react-device-detect";
 import HistoryGallery from "../HistoryGallery";
 import ModernGallery from "./ModernGallery";
 import {
