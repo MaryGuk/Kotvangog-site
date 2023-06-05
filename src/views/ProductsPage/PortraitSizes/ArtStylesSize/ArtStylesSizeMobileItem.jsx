@@ -7,7 +7,7 @@ import {
 
 import { Fragment } from "react";
 
-const ArtStylesSizeItem = ({
+const ArtStylesSizeMobileItem = ({
   imageSrc,
   imageSize,
   printDescription,
@@ -40,4 +40,4 @@ const ArtStylesSizeItem = ({
   );
 };
 
-export default ArtStylesSizeItem;
+export default ArtStylesSizeMobileItem;

@@ -9,8 +9,10 @@ import {
   ArtSizeContainer,
   ArtSizeTextOnePart2,
 } from "./styled";
-import ArtStylesSizeItem from "./ArtStylesSizeItem";
+import ArtStylesSizeMobileItem from "./ArtStylesSizeMobileItem";
 import PortraitSizesTitle from "./PortraitSizesTitle/PortraitSizesTitle";
+import ArtStylesSizeDesktopItem from "./ArtStylesSizeDesktopItem";
+import { isMobile } from "react-device-detect";
 
 const ArtStylesSize = () => {
   return (
@@ -79,19 +81,27 @@ const ArtStylesSize = () => {
               { imageSrc, imageSize, printDescription, oilDescription },
               idx,
               arr
-            ) => (
-              <ArtStylesSizeItem
-                key={idx}
-                imageSrc={imageSrc}
-                imageSize={imageSize}
-                printDescription={printDescription}
-                oilDescription={oilDescription}
-                idx={idx}
-                lastItem={idx === arr.length - 1}
-                columnCount={2}
-              />
+            ) => isMobile ? (
+                <ArtStylesSizeMobileItem
+                    key={idx}
+                    imageSrc={imageSrc}
+                    imageSize={imageSize}
+                    printDescription={printDescription}
+                    oilDescription={oilDescription}
+                    idx={idx}
+                    lastItem={idx === arr.length - 1}
+                    columnCount={2}
+                />
+            ) :(
+                <ArtStylesSizeDesktopItem
+                    key={idx}
+                    imageSrc={imageSrc}
+                    imageSize={imageSize}
+                    printDescription={printDescription}
+                    oilDescription={oilDescription}
+                />
             )
-          )}
+            )}
         </ArtSizeContainer>
       </ArtStylesSizeGeneral>
     </ArtStylesSizeWrapper>
