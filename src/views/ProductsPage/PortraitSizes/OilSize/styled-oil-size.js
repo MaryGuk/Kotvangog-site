@@ -5,16 +5,10 @@ export const OilSizeItemWrapper = styled(Box)``;
 export const OilSizeItemContainer = styled(Box)`
   display: flex;
   justify-content: center;
-
-  @media only screen and (max-width: 480px) {
-    :last-child {
-      align-items: center;
-    }
-  }
+  height: 100%;
 `;
 
 export const OilSizesItemSize = styled(Box)`
-  margin-top: 7px;
   font-size: 18px;
   color: #606060;
   font-family: "Nunito", Sans-serif;
@@ -37,12 +31,11 @@ export const OilSizesPrintText = styled(Box)`
   }
 `;
 
-export const OilSizesItemText = styled(Box)`
+export const OilSizesOilText = styled(Box)`
   font-size: 16px;
   font-family: "Nunito", Sans-serif;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 20px;
 
   @media only screen and (max-width: 480px) {
     font-size: 15px;
