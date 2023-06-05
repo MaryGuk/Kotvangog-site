@@ -87,7 +87,7 @@ const ArtStylesSize = () => {
                 printDescription={printDescription}
                 oilDescription={oilDescription}
                 idx={idx}
-                lastItem={idx == arr.length - 1}
+                lastItem={idx === arr.length - 1}
                 columnCount={2}
               />
             )
