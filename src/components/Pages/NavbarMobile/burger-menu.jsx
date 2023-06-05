@@ -9,8 +9,7 @@ function BurgerMenu() {
     setIsOpen(!isOpen);
   };
 
-    // eslint-disable-next-line no-unused-vars
-  const handleBackdropClick = () => {
+  const handleCloseNavbar = () => {
     setIsOpen(false);
   };
 
@@ -35,12 +34,14 @@ function BurgerMenu() {
               <NavLink
                 style={{ textDecoration: "none", color: "white" }}
                 to="/home"
+                onClick={handleCloseNavbar}
               >
                 Главная
               </NavLink>
             </li>
             <li>
               <NavLink
+                onClick={handleCloseNavbar}
                 style={{ textDecoration: "none", color: "white" }}
                 to="/oil-portrait"
               >
@@ -49,6 +50,7 @@ function BurgerMenu() {
             </li>
             <li>
               <NavLink
+                onClick={handleCloseNavbar}
                 style={{ textDecoration: "none", color: "white" }}
                 to="/products"
               >
@@ -57,6 +59,7 @@ function BurgerMenu() {
             </li>
             <li>
               <NavLink
+                onClick={handleCloseNavbar}
                 style={{ textDecoration: "none", color: "white" }}
                 to="/likeness-portrait"
               >
@@ -65,6 +68,7 @@ function BurgerMenu() {
             </li>
             <li>
               <NavLink
+                onClick={handleCloseNavbar}
                 style={{ textDecoration: "none", color: "white" }}
                 to="/reviews"
               >
