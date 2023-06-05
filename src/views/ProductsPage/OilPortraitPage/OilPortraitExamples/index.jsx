@@ -2,9 +2,9 @@ import {
   OilPortraitExamplesContent,
   OilPortraitExamplesGeneral,
   OilPortraitExamplesWrapper,
+  OilPortraitExamplesGallery,
 } from "./styled";
 import TitleExamples from "./title-examples";
-import { Box } from "@mui/system";
 import { useState } from "react";
 import ExamplesPhoto from "./ExamplesPhoto";
 import Carousel from "react-material-ui-carousel";
@@ -121,7 +121,7 @@ const OilPortraitExamples = () => {
                   key={idx}
                   previewSrc={previewSrc}
                   fullSrc={fullSrc}
-                  setFullImage={setFullImageSrc}
+                  setFullImage={setFullImageSrcId}
                 />
               ))}
             </OilPortraitExamplesGallery>
