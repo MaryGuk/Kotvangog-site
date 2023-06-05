@@ -6,12 +6,9 @@ export const LikenessSizeWrapper = styled(Box)`
   display: flex;
   justify-content: center;
   height: auto;
-  padding: 65px 0;
-
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    padding-top: 0;
-  }
+  padding-top: 65px;
 `;
+
 export const LikenessSizeGeneral = styled(Box)`
   width: 100%;
   display: flex;
@@ -19,7 +16,7 @@ export const LikenessSizeGeneral = styled(Box)`
   margin-top: 15px;
 
   @media (max-width: 805px) {
-    margin: 15px;
+    padding-bottom: 51px;
   }
 `;
 
@@ -29,6 +26,7 @@ export const LikenessSizeTextOneContainer = styled(Box)`
   margin-top: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
 `;
 
 export const LikenessSizeTextOne = styled(Box)`
@@ -109,4 +107,14 @@ export const LikenessSizeContainer = styled(Box)`
   align-items: center;
   justify-items: center;
   margin-top: 50px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 210px 12px 11px 11px);
+    grid-column-gap: 20px;
+    grid-row-gap: 8px;
+    justify-content: center;
+    width: 90%;
+  }
 `;

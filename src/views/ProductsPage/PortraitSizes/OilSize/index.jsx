@@ -1,26 +1,29 @@
-import OilSizeItem from "./OilSizeItem";
-import OilSizeTitle from "./OilSizeTitle/OilSizeTitle";
 import {
-  OilSizeWrapper,
-  OilSizeGeneral,
-  OilSizeDescription,
+  OilStylesSizeWrapper,
+  OilStylesSizeDescription,
+  OilStylesSizeGeneral,
   OilSizeTextOneContainer,
   OilSizeTextOne,
+  OilSizeTextOneOil2,
   OilSizeTextTwoContainer,
   OilSizeTextTwo,
   OilSizeContainer,
-  OilSizeTextOnePart2,
 } from "./styled";
+import { isMobile } from "react-device-detect";
+
+import OilStylesSizeDesktopItem from "./OilStylesSizeDesktopItem";
+import OilStylesSizeMobileItem from "./OilStylesSizeMobileItem";
+import PortraitSizesTitle from "../ArtStylesSize/PortraitSizesTitle/PortraitSizesTitle";
 
 const OilSize = () => {
   return (
-    <OilSizeWrapper>
-      <OilSizeGeneral>
-        <OilSizeTitle />
-        <OilSizeDescription>
+    <OilStylesSizeWrapper>
+      <OilStylesSizeGeneral>
+        <PortraitSizesTitle />
+        <OilStylesSizeDescription>
           <OilSizeTextOneContainer>
             <OilSizeTextOne>Портрет или картина маслом</OilSizeTextOne>
-            <OilSizeTextOnePart2>(100% ручная работа) </OilSizeTextOnePart2>
+            <OilSizeTextOneOil2>(100% ручная работа) </OilSizeTextOneOil2>
           </OilSizeTextOneContainer>
           <OilSizeTextTwoContainer>
             <OilSizeTextTwo>
@@ -36,7 +39,7 @@ const OilSize = () => {
               </span>
             </OilSizeTextTwo>
           </OilSizeTextTwoContainer>
-        </OilSizeDescription>
+        </OilStylesSizeDescription>
 
         <OilSizeContainer>
           {[
@@ -70,17 +73,29 @@ const OilSize = () => {
               imageSize: "70×90",
               oilDescription: "От 19500 руб.",
             },
-          ].map(({ imageSrc, imageSize, oilDescription }, idx) => (
-            <OilSizeItem
-              key={idx}
-              imageSrc={imageSrc}
-              imageSize={imageSize}
-              oilDescription={oilDescription}
-            />
-          ))}
+          ].map(({ imageSrc, imageSize, oilDescription }, idx, arr) =>
+            isMobile ? (
+              <OilStylesSizeMobileItem
+                key={idx}
+                imageSrc={imageSrc}
+                imageSize={imageSize}
+                oilDescription={oilDescription}
+                idx={idx}
+                lastItem={idx === arr.length - 1}
+                columnCount={2}
+              />
+            ) : (
+              <OilStylesSizeDesktopItem
+                key={idx}
+                imageSrc={imageSrc}
+                imageSize={imageSize}
+                oilDescription={oilDescription}
+              />
+            )
+          )}
         </OilSizeContainer>
-      </OilSizeGeneral>
-    </OilSizeWrapper>
+      </OilStylesSizeGeneral>
+    </OilStylesSizeWrapper>
   );
 };
 

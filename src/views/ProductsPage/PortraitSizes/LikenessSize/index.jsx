@@ -14,7 +14,9 @@ import {
 } from "./styled";
 
 import PortraitSizesTitle from "../ArtStylesSize/PortraitSizesTitle/PortraitSizesTitle";
-import LikenessSizeItem from "./LikenessSizeItem";
+import LikenessStylesSizeMobileItem from "./LikenessStylesSizeMobileItem";
+import LikenessStylesSizeDesktopItem from "./LikenessStylesSizeDesktopItem";
+import { isMobile } from "react-device-detect";
 
 const LikenessSize = () => {
   return (
@@ -88,16 +90,29 @@ const LikenessSize = () => {
           ].map(
             (
               { imageSrc, imageSize, printDescription, oilDescription },
-              idx
-            ) => (
-              <LikenessSizeItem
-                key={idx}
-                imageSrc={imageSrc}
-                imageSize={imageSize}
-                printDescription={printDescription}
-                oilDescription={oilDescription}
-              />
-            )
+              idx,
+              arr
+            ) =>
+              isMobile ? (
+                <LikenessStylesSizeMobileItem
+                  key={idx}
+                  imageSrc={imageSrc}
+                  imageSize={imageSize}
+                  printDescription={printDescription}
+                  oilDescription={oilDescription}
+                  idx={idx}
+                  lastItem={idx === arr.length - 1}
+                  columnCount={2}
+                />
+              ) : (
+                <LikenessStylesSizeDesktopItem
+                  key={idx}
+                  imageSrc={imageSrc}
+                  imageSize={imageSize}
+                  printDescription={printDescription}
+                  oilDescription={oilDescription}
+                />
+              )
           )}
         </LikenessSizeContainer>
       </LikenessSizeGeneral>

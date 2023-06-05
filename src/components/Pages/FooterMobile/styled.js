@@ -78,7 +78,6 @@ export const FooterWorkTime = styled(Box)`
 export const FooterMobileMessenger = styled(Box)`
   display: flex;
   flex-direction: row;
-  background-color: #d7d7d7;
   height: 38px;
   width: 167px;
   align-items: center;
