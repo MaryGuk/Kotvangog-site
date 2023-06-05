@@ -10,12 +10,13 @@ export const ContactStickyContainer = styled(Box)`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
 `;
 export const ContactStickyButtonOneContainer = styled(Box)`
   display: flex;
   justify-content: center;
   background-color: #ff8cbc;
-  width: 195px;
+  width: 50%;
   border-radius: 5px;
 `;
 
@@ -32,7 +33,7 @@ export const ContactStickyButtonTwoContainer = styled(Box)`
   display: flex;
   justify-content: center;
   background-color: #3a8a41;
-  width: 189px;
+  width: 50%;
   border-radius: 5px;
 `;
 
@@ -54,7 +55,6 @@ export const ModalTitleContacts = styled(Box)`
 export const ModalMessengerContacts = styled(Box)`
   display: flex;
   justify-content: flex-start;
-  /* overflow: hidden; */
 `;
 export const ModalMessengerContentContacts = styled(Box)`
   display: flex;
