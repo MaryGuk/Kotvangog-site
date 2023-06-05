@@ -1,7 +1,8 @@
 import { Box, styled } from "@mui/material";
 
 export const ArtButtonWrapper = styled(Box)`
-  margin-bottom: 120px;
+  /* margin-bottom: 120px; */
+  padding-bottom: 10px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     margin-bottom: 0;

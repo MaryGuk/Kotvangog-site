@@ -5,7 +5,7 @@ export const ImageCarouselWrapper = styled(Box)`
   align-items: center;
   display: flex;
   margin-bottom: 40px;
-  width: 90%;
+  width: 93%;
 
   :hover {
     & > div {

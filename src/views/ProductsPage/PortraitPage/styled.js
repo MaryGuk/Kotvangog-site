@@ -9,20 +9,24 @@ export const ProductPageItemMainInfoWrapper = styled(Box, {
   paddingTop: "70px",
   marginBottom: "10px",
   flexWrap: "wrap",
-  justifyContent: "center",
+  justifyContent: "space-between",
 
   "@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait)":
     {
       flexDirection: "column-reverse",
+      with: 0,
     },
 }));
 
 export const ProductPageItemInfoBlock = styled(Box, {
   shouldForwardProp: (prop) => prop !== "reverse",
 })((props) => ({
-  margin: props.reverse ? "0 75px 0 0" : "0 0 0 0",
+  margin: props.reverse ? "0 0 0 0" : "0 0 0 0",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
 }));
 
 export const ArtButtonWrapper = styled(Box)`
-  padding-left: 75px;
+  padding-left: 55px;
 `;
