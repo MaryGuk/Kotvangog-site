@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./burger-menu.css";
 import { NavLink } from "react-router-dom";
-import {ClickAwayHandler, NavbarParent} from "./styled";
+import { ClickAwayHandler, NavbarParent } from "./styled";
 
 function BurgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
