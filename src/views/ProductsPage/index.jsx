@@ -1,22 +1,14 @@
-import { Dialog } from "@mui/material";
 import { useState } from "react";
 import ProductPageItem from "./PortraitPage/portrait-page";
 import Footer from "../../components/Pages/Footer/footer";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18n";
 import ArtStylesSize from "./PortraitSizes/ArtStylesSize";
-import ImageWithLoader from "../../components/ImageWithLoader";
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import {
-  StyledIconButton,
-  StyledIconButtonWrapper,
-  GalleryPhotoBox,
-} from "./styled";
 import { useMemo } from "react";
 import FooterMobile from "../../components/Pages/FooterMobile";
 import { isMobile } from "react-device-detect";
 import ContactsSticky from "../../components/Pages/ContactsSticky";
+import PreviewPhotoDialog from "../../components/PreviewPhotoDialog";
 
 const ProductsPage = () => {
   const { t } = useTranslation();
@@ -569,35 +561,16 @@ const ProductsPage = () => {
       <ArtStylesSize />
       {isMobile ? <FooterMobile /> : <Footer />}
 
-      <Dialog open={!!fullImageSrc} onClose={() => setFullImageSrc(null)}>
-        {!isFirstPhoto && (
-          <StyledIconButtonWrapper left="10px">
-            <StyledIconButton onClick={handlePrevPhoto}>
-              <ArrowBackIosIcon
-                style={{
-                  transform: "translateX(20%)",
-                }}
-              />
-            </StyledIconButton>
-          </StyledIconButtonWrapper>
-        )}
+      <PreviewPhotoDialog
+          open={!!fullImageSrc}
+          onClose={() => setFullImageSrc(null)}
+          showPrevArrow={isFirstPhoto}
+          showNextArrow={isLastPhoto}
+          handlePrevPhoto={handlePrevPhoto}
+          handleNextPhoto={handleNextPhoto}
+          src={currentGallery?.[fullImageSrc?.imageIdx]?.fullSrc}
+      />
 
-        <GalleryPhotoBox>
-          <ImageWithLoader
-            height="100%"
-            src={currentGallery?.[fullImageSrc?.imageIdx]?.fullSrc}
-            alt=""
-            key={currentGallery?.[fullImageSrc?.imageIdx]?.fullSrc}
-          />
-        </GalleryPhotoBox>
-        {!isLastPhoto && (
-          <StyledIconButtonWrapper right="10px">
-            <StyledIconButton onClick={handleNextPhoto}>
-              <ArrowForwardIosIcon />
-            </StyledIconButton>
-          </StyledIconButtonWrapper>
-        )}
-      </Dialog>
       {isMobile ? <ContactsSticky /> : null}
     </div>
   );

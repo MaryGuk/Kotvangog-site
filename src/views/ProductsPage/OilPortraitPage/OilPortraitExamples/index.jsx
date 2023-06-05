@@ -6,11 +6,10 @@ import {
 import TitleExamples from "./title-examples";
 import { Box } from "@mui/system";
 import { useState } from "react";
-import { Dialog } from "@mui/material";
-import ImageWithLoader from "../../../../components/ImageWithLoader";
 import ExamplesPhoto from "./ExamplesPhoto";
 import Carousel from "react-material-ui-carousel";
 import { isMobile } from "react-device-detect";
+import PreviewPhotoDialog from "../../../../components/PreviewPhotoDialog";
 
 const photosData = [
   {
@@ -69,8 +68,14 @@ const slicedPhotosData = adaptivePhotosData.reduce((acc, curr, idx) => {
 }, []);
 
 const OilPortraitExamples = () => {
-  const [fullImageSrc, setFullImageSrc] = useState(null);
+  const [fullImageSrcId, setFullImageSrcId] = useState(null);
   const [autoPlay, setAutoPlay] = useState(photosData.length);
+
+  const isFirstPhoto = fullImageSrcId <= 0;
+  const isLastPhoto = fullImageSrcId >= adaptivePhotosData.length - 1;
+
+  const handleNextPhoto = () => setFullImageSrcId((prev) => prev + 1 >= adaptivePhotosData.length ? adaptivePhotosData.length - 1 : prev + 1);
+  const handlePrevPhoto = () => setFullImageSrcId((prev) => prev > 0 ? prev - 1 : 0);
 
   return (
     <OilPortraitExamplesWrapper>
@@ -91,7 +96,10 @@ const OilPortraitExamples = () => {
               {slicedPhotosData.map((photosArray, idx) => (
                 <ExamplesPhoto
                   key={idx}
-                  setFullImageSrc={setFullImageSrc}
+                  setFullImageSrc={(src) => {
+                    const index = adaptivePhotosData.findIndex(({fullSrc}) => fullSrc === src);
+                    setFullImageSrcId( index < 0 ? 0 : index)
+                  }}
                   photosArray={photosArray}
                   onImageLoad={() => setAutoPlay((prev) => prev - 1)}
                 />
@@ -103,16 +111,15 @@ const OilPortraitExamples = () => {
         </OilPortraitExamplesContent>
       </OilPortraitExamplesGeneral>
 
-      <Dialog open={!!fullImageSrc} onClose={() => setFullImageSrc(null)}>
-        <Box height={isMobile ? undefined : "500px"} overflow="hidden">
-          <ImageWithLoader
-            height={isMobile ? undefined : "100%"}
-            width={isMobile ? "100%" : undefined}
-            src={fullImageSrc}
-            alt=""
-          />
-        </Box>
-      </Dialog>
+      <PreviewPhotoDialog
+          open={fullImageSrcId !== null}
+          onClose={() => setFullImageSrcId(null)}
+          showPrevArrow={isFirstPhoto}
+          showNextArrow={isLastPhoto}
+          handlePrevPhoto={handlePrevPhoto}
+          handleNextPhoto={handleNextPhoto}
+          src={fullImageSrcId !== null && (adaptivePhotosData[fullImageSrcId] ?? adaptivePhotosData[0]).fullSrc}
+      />
     </OilPortraitExamplesWrapper>
   );
 };
