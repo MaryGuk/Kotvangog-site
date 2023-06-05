@@ -10,6 +10,7 @@ import ExamplesPhoto from "./ExamplesPhoto";
 import Carousel from "react-material-ui-carousel";
 import { isMobile } from "react-device-detect";
 import PreviewPhotoDialog from "../../../../components/PreviewPhotoDialog";
+import ExamplesItem from "./ExamplesItem";
 
 const photosData = [
   {
@@ -74,8 +75,14 @@ const OilPortraitExamples = () => {
   const isFirstPhoto = fullImageSrcId <= 0;
   const isLastPhoto = fullImageSrcId >= adaptivePhotosData.length - 1;
 
-  const handleNextPhoto = () => setFullImageSrcId((prev) => prev + 1 >= adaptivePhotosData.length ? adaptivePhotosData.length - 1 : prev + 1);
-  const handlePrevPhoto = () => setFullImageSrcId((prev) => prev > 0 ? prev - 1 : 0);
+  const handleNextPhoto = () =>
+    setFullImageSrcId((prev) =>
+      prev + 1 >= adaptivePhotosData.length
+        ? adaptivePhotosData.length - 1
+        : prev + 1
+    );
+  const handlePrevPhoto = () =>
+    setFullImageSrcId((prev) => (prev > 0 ? prev - 1 : 0));
 
   return (
     <OilPortraitExamplesWrapper>
@@ -97,8 +104,10 @@ const OilPortraitExamples = () => {
                 <ExamplesPhoto
                   key={idx}
                   setFullImageSrc={(src) => {
-                    const index = adaptivePhotosData.findIndex(({fullSrc}) => fullSrc === src);
-                    setFullImageSrcId( index < 0 ? 0 : index)
+                    const index = adaptivePhotosData.findIndex(
+                      ({ fullSrc }) => fullSrc === src
+                    );
+                    setFullImageSrcId(index < 0 ? 0 : index);
                   }}
                   photosArray={photosArray}
                   onImageLoad={() => setAutoPlay((prev) => prev - 1)}
@@ -106,19 +115,31 @@ const OilPortraitExamples = () => {
               ))}
             </Carousel>
           ) : (
-            <Box></Box>
+            <OilPortraitExamplesGallery>
+              {photosData.map(({ previewSrc, fullSrc }, idx) => (
+                <ExamplesItem
+                  key={idx}
+                  previewSrc={previewSrc}
+                  fullSrc={fullSrc}
+                  setFullImage={setFullImageSrc}
+                />
+              ))}
+            </OilPortraitExamplesGallery>
           )}
         </OilPortraitExamplesContent>
       </OilPortraitExamplesGeneral>
 
       <PreviewPhotoDialog
-          open={fullImageSrcId !== null}
-          onClose={() => setFullImageSrcId(null)}
-          showPrevArrow={isFirstPhoto}
-          showNextArrow={isLastPhoto}
-          handlePrevPhoto={handlePrevPhoto}
-          handleNextPhoto={handleNextPhoto}
-          src={fullImageSrcId !== null && (adaptivePhotosData[fullImageSrcId] ?? adaptivePhotosData[0]).fullSrc}
+        open={fullImageSrcId !== null}
+        onClose={() => setFullImageSrcId(null)}
+        showPrevArrow={isFirstPhoto}
+        showNextArrow={isLastPhoto}
+        handlePrevPhoto={handlePrevPhoto}
+        handleNextPhoto={handleNextPhoto}
+        src={
+          fullImageSrcId !== null &&
+          (adaptivePhotosData[fullImageSrcId] ?? adaptivePhotosData[0]).fullSrc
+        }
       />
     </OilPortraitExamplesWrapper>
   );
