@@ -3,6 +3,30 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {Box} from "@mui/system";
+import { StyledIconButtonPrev, StyledIconButtonNext } from "./styled";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+
+const NextArrow = ({ onClick }) => {
+    return (
+        <StyledIconButtonNext
+            onClick={onClick}
+        >
+            <ArrowForwardIosIcon />
+        </StyledIconButtonNext>
+    );
+}
+
+const PrevArrow = ({ onClick }) => {
+    return (
+        <StyledIconButtonPrev
+            onClick={onClick}
+        >
+            <ArrowBackIosIcon />
+        </StyledIconButtonPrev>
+    );
+}
+
 
 const MobileCarousel = ({ imageList, rowCount, columnCount, onImageClick }) => {
     const [maxHeight, setMaxHeight] = useState(0);
@@ -23,6 +47,8 @@ const MobileCarousel = ({ imageList, rowCount, columnCount, onImageClick }) => {
         slidesToScroll: 1,
         adaptiveHeight: true,
         swipeToSlide: true,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />
     };
 
     const handleImageLoad = ({ target: img }) => {
