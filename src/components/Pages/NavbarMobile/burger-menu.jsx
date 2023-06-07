@@ -26,7 +26,12 @@ function BurgerMenu() {
       </div>
 
       <div className="burger-menu__logo">
-        <div className="burger-menu__text"> KOTVANGOG </div>
+          <NavLink
+              style={{ textDecoration: "none"}}
+              to="/home"
+          >
+              <div className="burger-menu__text"> KOTVANGOG </div>
+          </NavLink>
       </div>
       {isOpen && (
         <NavbarParent>
