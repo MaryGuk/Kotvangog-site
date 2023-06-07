@@ -11,7 +11,9 @@ const StyledIconButton = styled(IconButton)`
 
 
 export const StyledIconButtonPrev = styled(StyledIconButton)`
-
+  svg {
+    transform: translateX(15%);
+  }
 `;
 
 export const StyledIconButtonNext = styled(StyledIconButton)`

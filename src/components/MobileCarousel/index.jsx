@@ -60,9 +60,16 @@ const MobileCarousel = ({ imageList, rowCount, columnCount, onImageClick }) => {
             <Slider {...settings}>
                 {pages.map((images, index) => (
                     <Box key={index}>
-                        <Box display="grid" gridTemplateColumns={`repeat(${columnCount}, 1fr)`} columnGap="12px" rowGap="22px" padding="0 10px">
+                        <Box
+                            display="grid"
+                            gridTemplateColumns={`repeat(${columnCount}, 1fr)`}
+                            gridTemplateRows={`repeat(${rowCount}, ${maxHeight}px)`}
+                            columnGap="12px"
+                            rowGap="22px"
+                            padding="0 10px"
+                        >
                             {images.map((src, idx) => (
-                                <Box key={idx} onClick={() => onImageClick(index * imagesOnPage + idx)}>
+                                <Box key={idx} onClick={() => onImageClick(index * imagesOnPage + idx)} display="flex" justifyContent="center" alignItems="center">
                                     <img
                                         style={{width: '100%', height: 'auto'}}
                                         src={src}
