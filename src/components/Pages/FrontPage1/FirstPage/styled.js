@@ -30,6 +30,8 @@ export const FirstPageGeneral = styled(Box)`
     height: auto;
     margin-top: -10px;
     max-width: 100%;
+    display: flex;
+    align-items: center;
   }
 `;
 export const FirstPageInfo = styled(Box)`
