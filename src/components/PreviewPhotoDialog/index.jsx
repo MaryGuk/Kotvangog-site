@@ -5,8 +5,6 @@ import {Dialog} from "@mui/material";
 import {GalleryPhotoBox, StyledIconButton, StyledIconButtonWrapper} from "./styled";
 
 const PreviewPhotoDialog = ({ open, onClose, showPrevArrow, showNextArrow, handlePrevPhoto, handleNextPhoto, src }) => {
-    console.log(src);
-
     return (<Dialog open={open} onClose={onClose}>
         {!showPrevArrow && (
             <StyledIconButtonWrapper left="10px">

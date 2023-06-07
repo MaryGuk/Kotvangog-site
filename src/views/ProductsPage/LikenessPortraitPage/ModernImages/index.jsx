@@ -20,8 +20,25 @@ import {
 } from "./styled";
 import TitleHistory from "./title-history";
 import TitleModern from "./title-modern";
+import MobileCarousel from "../../../../components/MobileCarousel";
+import {isMobile} from "react-device-detect";
+import {Box} from "@mui/material";
+import PreviewPhotoDialog from "../../../../components/PreviewPhotoDialog";
+import usePreviewPhotoDialogState from "../../../../components/PreviewPhotoDialog/usePreviewPhotoDialogState";
+import {modernImages} from "../../../../constants/galeries/modernImages";
+import {historyImages} from "../../../../constants/galeries/historyImages";
+
 
 const ModernImages = () => {
+  const {
+    isFirstPhoto,
+    isLastPhoto,
+    handlePrevPhoto,
+    handleNextPhoto,
+    fullImageSrcData,
+    setFullImageSrcData
+  } = usePreviewPhotoDialogState();
+
   return (
     <ModernImagesWrapper>
       <ModernImagesGeneral>
@@ -31,7 +48,21 @@ const ModernImages = () => {
             У нас более <b>300</b> современных образов
           </ModernImagesDescription>
         </ModernImagesContent>
-        <ModernGallery />
+        {isMobile ?
+          <Box pl="30px" pr="30px">
+            <MobileCarousel
+                imageList={modernImages.map(({ previewSrc}) => previewSrc)}
+                columnCount={2}
+                rowCount={3}
+                onImageClick={(idx) => setFullImageSrcData({ gallery: modernImages, idx })}
+            />
+          </Box> :
+            <ModernGallery modernImages={modernImages} setFullImageSrc={(src) => {
+              const idx = modernImages.findIndex(({ fullSrc }) => fullSrc === src);
+
+              setFullImageSrcData({gallery: modernImages, idx: idx < 0 ? 0 : idx })
+            }}/>
+        }
         <TitleHistory />
         <ModernImagesContent>
           <ModernImagesDescription>
@@ -39,7 +70,15 @@ const ModernImages = () => {
           </ModernImagesDescription>
         </ModernImagesContent>
 
-        <HistoryGallery />
+        {isMobile ? (
+          <Box pl="30px" pr="30px">
+            <MobileCarousel
+              imageList={historyImages.map(({ previewSrc}) => previewSrc)}
+              columnCount={2}
+              rowCount={3}
+              onImageClick={(idx) => setFullImageSrcData({ gallery: historyImages, idx })}
+            />
+          </Box>) : (<HistoryGallery/>)}
 
         <HistoryImagesCollage>
           <HistoryImagesCollageItems>
@@ -78,6 +117,19 @@ const ModernImages = () => {
           </HistoryImagesCollageItems>
         </HistoryImagesCollage>
       </ModernImagesGeneral>
+
+      <PreviewPhotoDialog
+          open={fullImageSrcData !== null}
+          onClose={() => setFullImageSrcData(null)}
+          showPrevArrow={isFirstPhoto}
+          showNextArrow={isLastPhoto}
+          handlePrevPhoto={handlePrevPhoto}
+          handleNextPhoto={handleNextPhoto}
+          src={
+              fullImageSrcData &&
+              (fullImageSrcData.gallery[fullImageSrcData.idx] ?? fullImageSrcData.gallery[0]).fullSrc
+          }
+      />
     </ModernImagesWrapper>
   );
 };
