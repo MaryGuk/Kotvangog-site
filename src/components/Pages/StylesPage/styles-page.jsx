@@ -23,6 +23,8 @@ const StylesPage = () => {
                   loading="lazy"
                   decoding="async"
                   alt=""
+                  width="100%"
+                  height="auto"
                 />
               </Link>
               <div className="styles-name">{t("stylesPage.styles_name1")}</div>
@@ -40,6 +42,8 @@ const StylesPage = () => {
                   loading="lazy"
                   decoding="async"
                   alt=""
+                  width="100%"
+                  height="auto"
                 />
               </Link>
 
@@ -58,6 +62,8 @@ const StylesPage = () => {
                   loading="lazy"
                   decoding="async"
                   alt=""
+                  width="100%"
+                  height="auto"
                 />
               </Link>
 
@@ -76,6 +82,8 @@ const StylesPage = () => {
                   loading="lazy"
                   decoding="async"
                   alt=""
+                  width="100%"
+                  height="auto"
                 />
               </Link>
               <div className="styles-name">{t("stylesPage.styles_name4")}</div>
@@ -94,6 +102,8 @@ const StylesPage = () => {
                   loading="lazy"
                   decoding="async"
                   alt=""
+                  width="100%"
+                  height="auto"
                 />
               </Link>
               <div className="styles-name">{t("stylesPage.styles_name5")}</div>
@@ -111,6 +121,8 @@ const StylesPage = () => {
                   loading="lazy"
                   decoding="async"
                   alt=""
+                  width="100%"
+                  height="auto"
                 />
               </Link>
 
@@ -129,6 +141,8 @@ const StylesPage = () => {
                   loading="lazy"
                   decoding="async"
                   alt=""
+                  width="100%"
+                  height="auto"
                 />
               </Link>
 
@@ -147,6 +161,8 @@ const StylesPage = () => {
                   loading="lazy"
                   decoding="async"
                   alt=""
+                  width="100%"
+                  height="auto"
                 />
               </Link>
               <div className="styles-name">{t("stylesPage.styles_name8")} </div>
@@ -164,6 +180,8 @@ const StylesPage = () => {
                   loading="lazy"
                   decoding="async"
                   alt=""
+                  width="100%"
+                  height="auto"
                 />
               </Link>
 
