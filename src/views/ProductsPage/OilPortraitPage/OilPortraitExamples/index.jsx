@@ -62,7 +62,7 @@ const OilPortraitExamples = () => {
 
       <PreviewPhotoDialog
         open={fullImageSrcData !== null}
-        onClose={() => fullImageSrcData(null)}
+        onClose={() => setFullImageSrcData(null)}
         showPrevArrow={isFirstPhoto}
         showNextArrow={isLastPhoto}
         handlePrevPhoto={handlePrevPhoto}
