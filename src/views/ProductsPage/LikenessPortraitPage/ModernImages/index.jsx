@@ -48,7 +48,7 @@ const ModernImages = () => {
           </ModernImagesDescription>
         </ModernImagesContent>
         {isMobile ?
-          <Box pl="30px" pr="30px">
+          <Box p="30px 2px">
             <MobileCarousel
                 imageList={modernImages.map(({ previewSrc}) => previewSrc)}
                 columnCount={2}
@@ -70,7 +70,7 @@ const ModernImages = () => {
         </ModernImagesContent>
 
         {isMobile ? (
-          <Box pl="30px" pr="30px">
+          <Box p="30px 2px">
             <MobileCarousel
               imageList={historyImages.map(({ previewSrc}) => previewSrc)}
               columnCount={2}

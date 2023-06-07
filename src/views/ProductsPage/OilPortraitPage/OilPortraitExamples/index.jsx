@@ -34,7 +34,7 @@ const OilPortraitExamples = () => {
         <TitleExamples />
         <OilPortraitExamplesContent>
           {isMobile ? (
-            <Box p="30px">
+            <Box p="30px 2px">
               <MobileCarousel
                   imageList={adaptivePhotosData.map(({ previewSrc}) => previewSrc)}
                   columnCount={2}
