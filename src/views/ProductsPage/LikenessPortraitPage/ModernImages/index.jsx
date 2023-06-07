@@ -28,7 +28,6 @@ import usePreviewPhotoDialogState from "../../../../components/PreviewPhotoDialo
 import {modernImages} from "../../../../constants/galeries/modernImages";
 import {historyImages} from "../../../../constants/galeries/historyImages";
 
-
 const ModernImages = () => {
   const {
     isFirstPhoto,

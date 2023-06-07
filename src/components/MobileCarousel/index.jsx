@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useMemo, useState} from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -28,12 +28,15 @@ const PrevArrow = ({ onClick }) => {
 }
 
 
-const MobileCarousel = ({ imageList, rowCount, columnCount, onImageClick }) => {
+const MobileCarouselRow = ({ imageList, columnCount, onImageClick, rowCount }) => {
     const [maxHeight, setMaxHeight] = useState(0);
 
     const pages = [];
 
-    const imagesOnPage = ((rowCount || 1) * (columnCount || 1));
+    rowCount = rowCount || 1;
+    columnCount = columnCount || 1;
+
+    const imagesOnPage = rowCount * columnCount;
 
     for (let i = 0; i < imageList.length; i += imagesOnPage) {
         pages.push(imageList.slice(i, i + imagesOnPage));
@@ -85,5 +88,35 @@ const MobileCarousel = ({ imageList, rowCount, columnCount, onImageClick }) => {
         </Box>
     );
 };
+
+
+const MobileCarousel = ({ imageList, rowCount, columnCount, onImageClick }) => {
+    const imagesOnPage = rowCount * columnCount;
+
+    const carouselRowsImages = useMemo(() => {
+        const rowsImages = [];
+
+        for (let i = 0; i < rowCount; i++) {
+            rowsImages.push([]);
+        }
+
+        return imageList.reduce((prev, src, idx) => {
+            prev[Math.floor((idx % imagesOnPage) / columnCount)].push(src);
+
+            return prev;
+        }, rowsImages)
+    }, []);
+
+    return (<Box>
+        {carouselRowsImages.map((rowImages, idx) => (
+            <Box mt="22px" key={idx}>
+                <MobileCarouselRow
+                    columnCount={columnCount}
+                    imageList={rowImages}
+                    onImageClick={(rowImagesIdx) => onImageClick((imagesOnPage * Math.floor(rowImagesIdx / columnCount)) + (rowImagesIdx % columnCount) + (idx * columnCount))}
+                />
+            </Box>))}
+    </Box>);
+}
 
 export default MobileCarousel;

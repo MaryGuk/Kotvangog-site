@@ -1,4 +1,6 @@
-export const modernImages = [
+import {isMobile} from "react-device-detect";
+
+const modernImagesRaw = [
     {
         previewSrc:
             " https://www.dropbox.com/s/1l7km1tfs1dqejf/78637387.jpg?raw=1",
@@ -72,3 +74,5 @@ export const modernImages = [
             "https://www.dropbox.com/s/7aw7yemyybpt1m0/12%20%D1%81%D0%BE%D0%B2.jpg?raw=1",
     },
 ];
+
+export const modernImages = isMobile ? [0, 2, 4, 5, 8, 10, 1, 3, 6, 7, 9, 11].map((i) => modernImagesRaw[i]) : modernImagesRaw;
