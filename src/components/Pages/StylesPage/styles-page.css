@@ -36,18 +36,25 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .styles-art {
-    padding-left: 50px;
+    padding: 0 3%;
+    display: flex;
+    justify-content: center;
     max-width: 100%;
   }
 }
 
 .styles__item {
-  padding: 5px 15px;
+  width: 100%;
+  padding: 5px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.styles__item > a {
+  width: 100%;
 }
 
 .styles__image {
