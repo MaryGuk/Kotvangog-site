@@ -6,6 +6,7 @@ export const ArtSizeItemContainer = styled(Box)`
   display: flex;
   justify-content: center;
   height: 100%;
+  width: 100%;
 `;
 
 export const ArtSizesItemSize = styled(Box)`

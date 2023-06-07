@@ -25,7 +25,7 @@ const ArtStylesSizeMobileItem = ({
   return (
     <Fragment>
       <ArtSizeItemContainer gridColumn={gridColumn} gridRow={gridRowOffset + 1}>
-        <img src={imageSrc} loading="lazy" decoding="async" alt="" />
+        <img src={imageSrc} loading="lazy" decoding="async" alt="" height="100%" width="auto" />
       </ArtSizeItemContainer>
       <ArtSizesItemSize gridColumn={gridColumn} gridRow={gridRowOffset + 2}>
         {imageSize}
