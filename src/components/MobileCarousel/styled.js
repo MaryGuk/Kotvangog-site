@@ -6,7 +6,8 @@ const StyledIconButton = styled(IconButton)`
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
-  z-index: 100;
+  z-index: 1;
+  transform: translateY(-50%);
 `;
 
 
