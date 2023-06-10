@@ -28,7 +28,10 @@ const BeforeAfterImage = ({
       return;
     }
 
-    let movementX = event.movementX;
+    event.stopPropagation();
+    event.preventDefault();
+
+  let movementX = event.movementX;
 
     if (!movementX && event.touches[0]) {
       const touchedClientX = event.touches[0].clientX;
@@ -42,7 +45,10 @@ const BeforeAfterImage = ({
   };
 
   useEffect(() => {
-    const handleMouseUp = () => setMousePressed(false);
+    const handleMouseUp = () => {
+      setMousePressed(false);
+      document.body.style.overflowY = 'initial';
+    }
 
     document.addEventListener("mouseup", handleMouseUp);
     document.addEventListener("touchend", handleMouseUp);
@@ -57,6 +63,12 @@ const BeforeAfterImage = ({
     () => Math.min(100, Math.max(0, sliderPosition)),
     [sliderPosition]
   );
+
+  const handleTouchStart = (e) => {
+    e.preventDefault();
+    setMousePressed(true);
+    document.body.style.overflowY = 'hidden';
+  }
 
   return (
     <BeforeAfterImageWrapper
@@ -77,7 +89,7 @@ const BeforeAfterImage = ({
           backgroundColor={dividingLineColor ?? "white"}
         />
         <HoverListener />
-        <DividingLineSliderWrapper onMouseDown={() => setMousePressed(true)} onTouchStart={() => setMousePressed(true)}>
+        <DividingLineSliderWrapper onMouseDown={() => setMousePressed(true)} onTouchStart={handleTouchStart}>
           {dividingSlider ?? <ExampleDividingSlider />}
         </DividingLineSliderWrapper>
       </SliderWrapper>
