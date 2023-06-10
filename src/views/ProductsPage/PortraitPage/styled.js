@@ -14,7 +14,8 @@ export const ProductPageItemMainInfoWrapper = styled(Box, {
   "@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait)":
     {
       flexDirection: "column-reverse",
-      with: 0,
+      width: '100%',
+      alignItems: 'center',
     },
 }));
 
