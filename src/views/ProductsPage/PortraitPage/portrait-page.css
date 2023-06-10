@@ -30,6 +30,7 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .beauty-art__information {
     align-items: center;
+    padding-left: 0;
   }
 }
 
@@ -64,7 +65,7 @@
   font-family: "Prata", serif;
   font-size: 30pt;
   font-weight: 400;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   color: #252930;
 }
 
@@ -121,7 +122,7 @@
   font-size: 16pt;
   font-weight: 500;
   line-height: 26px;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   text-align: left;
 }
 

@@ -67,6 +67,7 @@ const BeforeAfterImage = ({
   const handleTouchStart = (e) => {
     e.preventDefault();
     setMousePressed(true);
+    setLastTouchedPosition(null);
     document.body.style.overflowY = 'hidden';
   }
 
