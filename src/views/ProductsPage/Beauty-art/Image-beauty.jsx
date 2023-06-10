@@ -31,7 +31,7 @@ const ImageGallery = ({ galleryImages, setFullImage, reverse }) => {
         <BeautyArtGalleryWrapper reverse={reverse} key={idx}>
           {portion.map(({ previewSrc, fullSrc }, i) => (
             <div onClick={() => setFullImage(fullSrc)} key={i}>
-              <img className="beauty-art__image" src={previewSrc} alt="123" />
+              <img className="beauty-art__image" src={previewSrc} alt="Photo" />
             </div>
           ))}
         </BeautyArtGalleryWrapper>
