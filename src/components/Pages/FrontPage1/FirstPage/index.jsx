@@ -103,13 +103,17 @@ const FirstPage = () => {
         </FirstPageInfo>
 
         <FirstPage1ImageWrapper>
-          <Carousel
-            animation="fade"
-            indicatorIconButtonProps={{
-              style: {
-                display: "none",
-              },
-            }}
+          {isMobile? (
+              <Box>
+                <img src="https://www.dropbox.com/s/y84e5q7zb15f96p/111%20pr.jpg?raw=1" alt="Main photo"/>
+              </Box>
+          ) : (<Carousel
+              animation="fade"
+              indicatorIconButtonProps={{
+                style: {
+                  display: "none",
+                },
+              }}
           >
             {[
               {
@@ -128,12 +132,12 @@ const FirstPage = () => {
                 src: "https://www.dropbox.com/s/s93xw6avte7lufx/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5%20%D1%84%D0%BE%D1%82%D0%BE%204.jpg?raw=1",
                 key: "image4",
               },
-            ].slice(0, isMobile ? 1 : 4).map(({ src, key }) => (
-              <Box height={600} key={key}>
-                <img src={src} key={key} loading="lazy" decoding="async" />
-              </Box>
+            ].map(({src, key}) => (
+                <Box height={600} key={key}>
+                  <img src={src} key={key} loading="lazy" decoding="async"/>
+                </Box>
             ))}
-          </Carousel>
+          </Carousel>)}
         </FirstPage1ImageWrapper>
       </FirstPageGeneral>
     </FirstPageWrapper>
