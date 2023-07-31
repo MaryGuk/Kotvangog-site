@@ -43,35 +43,35 @@ const ArtStylesSize = () => {
           {[
             {
               imageSrc:
-                "https://www.dropbox.com/s/fb75hkuo00qqzll/g1.jpg?raw=1",
+                "https://www.dropbox.com/scl/fi/66emeo7tqa3w78afqqgyj/g1.jpg?rlkey=57ovsy7x3l09pegdizqej5uxi&raw=1",
               imageSize: "30×40",
               printDescription: "Печать от 1190 руб.",
               oilDescription: "Маслом от 5600 руб.",
             },
             {
               imageSrc:
-                "https://www.dropbox.com/s/myrndkdgjj9ikrl/g2.jpg?raw=1",
+                "https://www.dropbox.com/scl/fi/rg2fhz21m8rnv2cu45esy/g2.jpg?rlkey=fs4vdqj4rjb0oan8yqjl88ynt&raw=1",
               imageSize: "40×60",
               printDescription: "Печать от 1950 руб.",
               oilDescription: "Маслом от 8800 руб.",
             },
             {
               imageSrc:
-                "https://www.dropbox.com/s/wvhvu9upq8frshe/g3%281%29.jpg?raw=1",
+                "https://www.dropbox.com/scl/fi/hqqv1wyux6tqd87y7z6ab/g3-1.jpg?rlkey=4i7prdgtqlt9aq9qhtmj6yfvi&raw=1",
               imageSize: "50×70",
               printDescription: "Печать от 2700 руб.",
               oilDescription: "Маслом от 11900 руб.",
             },
             {
               imageSrc:
-                "https://www.dropbox.com/s/kh57btnnek6vz34/g4.jpg?raw=1",
+                "https://www.dropbox.com/scl/fi/175cgekuvoog3oxe5jov6/g4.jpg?rlkey=6wj8yjmwg5y839wmh0xv3mwwl&raw=1",
               imageSize: "60×80",
               printDescription: "Печать от 3450 руб.",
               oilDescription: "Маслом от 13700 руб.",
             },
             {
               imageSrc:
-                "https://www.dropbox.com/s/vt3qy5yqyzv1a09/g5.jpg?raw=1",
+                "https://www.dropbox.com/scl/fi/wpwuzaj8hvdnoy0m6wbpp/g5.jpg?rlkey=tef9ai99q9yv5kjkjejs849jl&raw=1",
               imageSize: "70×90",
               printDescription: "Печать от 5200 руб.",
               oilDescription: "Маслом от 19500 руб.",
