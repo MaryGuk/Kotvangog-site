@@ -6,21 +6,29 @@
   height: auto;
   position: fixed;
   top: 0;
-  width: 100%;
   z-index: 5;
+
+  padding: 0 15%;
+  box-sizing: border-box;
 }
 
 .navbar {
-  padding: 15px;
+  padding: 15px 0;
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1300px;
   width: 100%;
 }
 
-@media (max-width: 768px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .navbar {
+    padding: 15px;
     max-width: 100%;
+  }
+
+  .navbar-wrapper {
+    padding: 0;
+    box-sizing: initial;
   }
 }
 
