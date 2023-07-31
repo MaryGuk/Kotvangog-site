@@ -7,6 +7,10 @@ export const LikenessSizeWrapper = styled(Box)`
   justify-content: center;
   height: auto;
   padding-top: 65px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    padding-top: 0;
+  }
 `;
 
 export const LikenessSizeGeneral = styled(Box)`
