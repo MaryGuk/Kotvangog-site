@@ -10,5 +10,11 @@ export const FirstPageInfoWrapper = styled(Box)`
 `;
 
 export const MainPageItemWrapper = styled(Box)`
-  padding: 15px;
+  padding: 15px 0;
+  width: 100%;
+  max-width: 1300px;
+  
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    padding: 15px;
+  }
 `;
