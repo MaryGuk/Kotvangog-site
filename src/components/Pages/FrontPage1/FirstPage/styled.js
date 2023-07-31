@@ -7,15 +7,21 @@ export const FirstPageWrapper = styled(Box)`
   justify-content: center;
   height: auto;
   overflow: hidden;
-  padding-top: 20px;
+  padding: 20px 15% 0;
+  box-sizing: border-box;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    box-sizing: initial;
+    padding: 20px 0 0;
+  }
 `;
 export const FirstPageGeneral = styled(Box)`
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  max-width: 1200px;
-  margin-top: 50px;
+  max-width: 1300px;
+  margin-top: 130px;
 
   @media (max-width: 740px) {
     width: min-content;
@@ -28,22 +34,28 @@ export const FirstPageGeneral = styled(Box)`
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     height: auto;
-    margin-top: -10px;
+    margin-top: 70px;
     max-width: 100%;
     display: flex;
     align-items: center;
   }
 `;
 export const FirstPageInfo = styled(Box)`
-  margin-top: 60px;
+  margin-top: -15px;
   display: flex;
   flex-direction: column;
   z-index: 2;
+  justify-content: space-between;
+  padding-bottom: 15px;
 
   @media (max-width: 767px) {
     position: absolute;
     padding: 0 10px;
   }
+`;
+export const FirstPageInfoPart = styled(Box)`
+  display: flex;
+  flex-direction: column;
 `;
 
 export const FirstPageTitle = styled(Box)`
@@ -186,18 +198,16 @@ export const FirstPage1ImageWrapper = styled(Box)`
   z-index: 1;
   overflow: hidden;
   width: 480px;
-  margin-top: 80px;
-  margin-bottom: 10px;
 
   @media (max-width: 767px) {
-    margin-top: 120px;
+    margin-top: 40px;
   }
   @media (max-width: 480px) {
     margin-top: -80px;
   }
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    margin-top: 145px;
+    margin-top: 65px;
   }
 `;
 
@@ -210,4 +220,10 @@ export const ArrowGrayContainer = styled(Box)`
     flex-direction: row;
     margin-top: -80px;
   }
+`;
+
+export const CarouselImageWrapper = styled(Box)`
+  display: flex;
+  justify-content: end;
+  height: 600px;
 `;
