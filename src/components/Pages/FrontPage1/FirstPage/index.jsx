@@ -14,7 +14,7 @@ import {
   FirstPageInfoItemsThree,
   FirstPageInfoMessage,
   FirstPageInfoMessageText,
-  ArrowGrayContainer,
+  ArrowGrayContainer, FirstPageInfoPart, CarouselImageWrapper,
 } from "./styled";
 import TitleOne from "./TitleOne/title-one";
 import TitleTwo from "./TitleTwo/title-two";
@@ -27,79 +27,83 @@ const FirstPage = () => {
     <FirstPageWrapper>
       <FirstPageGeneral>
         <FirstPageInfo>
-          <FirstPageTitle>
-            <FirstPageTitleOne>
-              <TitleOne />
-            </FirstPageTitleOne>
-            <Box>
-              <TitleTwo />
-            </Box>
-          </FirstPageTitle>
+          <FirstPageInfoPart>
+            <FirstPageTitle>
+              <FirstPageTitleOne>
+                <TitleOne />
+              </FirstPageTitleOne>
+              <Box>
+                <TitleTwo />
+              </Box>
+            </FirstPageTitle>
 
-          <FirstPageInfoItems>
-            <FirstPageInfoItemsOne>
-              <FirstPageInfoItemsIcon>
-                <img
-                  width="20px"
-                  height="20px"
-                  src={
-                    isMobile
-                      ? "/images/background/ellipse2.png"
-                      : "/images/background/check.png"
-                  }
-                />
-              </FirstPageInfoItemsIcon>
-              <FirstPageInfoItemsText>
-                Полностью ручная отрисовка портрета художником
-              </FirstPageInfoItemsText>
-            </FirstPageInfoItemsOne>
+            <FirstPageInfoItems>
+              <FirstPageInfoItemsOne>
+                <FirstPageInfoItemsIcon>
+                  <img
+                    width="20px"
+                    height="20px"
+                    src={
+                      isMobile
+                        ? "/images/background/ellipse2.png"
+                        : "/images/background/check.png"
+                    }
+                  />
+                </FirstPageInfoItemsIcon>
+                <FirstPageInfoItemsText>
+                  Полностью ручная отрисовка портрета художником
+                </FirstPageInfoItemsText>
+              </FirstPageInfoItemsOne>
 
-            <FirstPageInfoItemsTwo>
-              <FirstPageInfoItemsIcon>
-                <img
-                  width="20px"
-                  height="20px"
-                  src={
-                    isMobile
-                      ? "/images/background/ellipse2.png"
-                      : "/images/background/check.png"
-                  }
-                />
-              </FirstPageInfoItemsIcon>
-              <FirstPageInfoItemsText>
-                Быстрое изготовление
-              </FirstPageInfoItemsText>
-            </FirstPageInfoItemsTwo>
+              <FirstPageInfoItemsTwo>
+                <FirstPageInfoItemsIcon>
+                  <img
+                    width="20px"
+                    height="20px"
+                    src={
+                      isMobile
+                        ? "/images/background/ellipse2.png"
+                        : "/images/background/check.png"
+                    }
+                  />
+                </FirstPageInfoItemsIcon>
+                <FirstPageInfoItemsText>
+                  Быстрое изготовление
+                </FirstPageInfoItemsText>
+              </FirstPageInfoItemsTwo>
 
-            <FirstPageInfoItemsThree>
-              <FirstPageInfoItemsIcon>
-                <img
-                  width="20px"
-                  height="20px"
-                  src={
-                    isMobile
-                      ? "/images/background/ellipse2.png"
-                      : "/images/background/check.png"
-                  }
-                />
-              </FirstPageInfoItemsIcon>
-              <FirstPageInfoItemsText>
-                Качественные и безопасные материалы
-              </FirstPageInfoItemsText>
-            </FirstPageInfoItemsThree>
-          </FirstPageInfoItems>
+              <FirstPageInfoItemsThree>
+                <FirstPageInfoItemsIcon>
+                  <img
+                    width="20px"
+                    height="20px"
+                    src={
+                      isMobile
+                        ? "/images/background/ellipse2.png"
+                        : "/images/background/check.png"
+                    }
+                  />
+                </FirstPageInfoItemsIcon>
+                <FirstPageInfoItemsText>
+                  Качественные и безопасные материалы
+                </FirstPageInfoItemsText>
+              </FirstPageInfoItemsThree>
+            </FirstPageInfoItems>
+          </FirstPageInfoPart>
 
-          <FirstPageInfoMessage>
-            <FirstPageInfoMessageText>
-              Нажмите на кнопку! Свяжемся с Вами в течение 5 минут
-            </FirstPageInfoMessageText>
-          </FirstPageInfoMessage>
+          <FirstPageInfoPart>
+            <FirstPageInfoMessage>
+              <FirstPageInfoMessageText>
+                Нажмите на кнопку! Свяжемся с Вами в течение 5 минут
+              </FirstPageInfoMessageText>
+            </FirstPageInfoMessage>
 
-          <ArrowGrayContainer>
-            <img height="45px" src="/images/background/arrow first.png" />
-          </ArrowGrayContainer>
+            <ArrowGrayContainer>
+              <img height="45px" src="/images/background/arrow first.png" />
+            </ArrowGrayContainer>
 
-          <MainButton />
+            <MainButton />
+          </FirstPageInfoPart>
         </FirstPageInfo>
 
         <FirstPage1ImageWrapper>
@@ -133,9 +137,9 @@ const FirstPage = () => {
                 key: "image4",
               },
             ].map(({src, key}) => (
-                <Box height={600} key={key}>
+                <CarouselImageWrapper key={key}>
                   <img src={src} key={key} loading="lazy" decoding="async"/>
-                </Box>
+                </CarouselImageWrapper>
             ))}
           </Carousel>)}
         </FirstPage1ImageWrapper>
