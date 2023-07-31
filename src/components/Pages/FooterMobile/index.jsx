@@ -121,7 +121,7 @@ const FooterMobile = () => {
             <FooterSchedule> График работы:</FooterSchedule>
             <FooterWorkDays> Пн — Пт:</FooterWorkDays>
             <FooterWorkTime> с 09:00 до 20:00</FooterWorkTime>
-            <FooterWorkDays> Сб: с 11;00 до 18:00</FooterWorkDays>
+            <FooterWorkDays> Сб: с 11:00 до 18:00</FooterWorkDays>
           </FooterMobileWorkSchedule>
 
           <FooterMobileContacts>
