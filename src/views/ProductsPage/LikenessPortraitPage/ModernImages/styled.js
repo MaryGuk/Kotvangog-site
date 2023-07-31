@@ -45,6 +45,10 @@ export const HistoryImagesCollageItems = styled(Box)`
 `;
 export const HistoryImagesCollageImage = styled(Box)`
   margin-bottom: 80px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    margin-bottom: 40px;
+  }
 `;
 
 export const HistoryImagesCollageText = styled(Box)`
