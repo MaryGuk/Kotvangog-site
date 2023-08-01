@@ -3,6 +3,7 @@ import ImageWithLoader from "../ImageWithLoader";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import {Dialog} from "@mui/material";
 import {GalleryPhotoBox, StyledIconButton, StyledIconButtonWrapper} from "./styled";
+import {isMobile} from "react-device-detect";
 
 const PreviewPhotoDialog = ({ open, onClose, showPrevArrow, showNextArrow, handlePrevPhoto, handleNextPhoto, src }) => {
     return (<Dialog open={open} onClose={onClose}>
@@ -20,7 +21,8 @@ const PreviewPhotoDialog = ({ open, onClose, showPrevArrow, showNextArrow, handl
 
         <GalleryPhotoBox>
             <ImageWithLoader
-                height="100%"
+                height={isMobile ? undefined : "100%"}
+                width={isMobile ? "100%" : undefined}
                 src={src}
                 alt=""
                 key={src}
