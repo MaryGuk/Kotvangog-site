@@ -12,8 +12,8 @@ const ImageWithLoader = ({ src, alt, height, width, ...props }) => {
   return (
     <>
       {!isImageLoaded && (
-        <ImageLoaderBackground height={500} width={300}>
-          <PaintbrushLoader width={150} />
+        <ImageLoaderBackground>
+          <PaintbrushLoader width={400} />
         </ImageLoaderBackground>
       )}
       <img
