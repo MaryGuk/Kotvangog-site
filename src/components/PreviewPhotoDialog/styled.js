@@ -18,10 +18,11 @@ export const StyledIconButton = styled(IconButton)({
 });
 
 export const GalleryPhotoBox = styled(Box)`
-  height: 700px;
+  height: 90vh;
   overflow: hidden;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    width: 90%;
+    height: 100%;
+    width: 100%;
   }
 `;

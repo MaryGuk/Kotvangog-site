@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PaintbrushLoader from "./PaintbrushLoader";
 import { ImageLoaderBackground } from "./styled";
+import {isMobile} from "react-device-detect";
 
 const ImageWithLoader = ({ src, alt, height, width, ...props }) => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -13,7 +14,7 @@ const ImageWithLoader = ({ src, alt, height, width, ...props }) => {
     <>
       {!isImageLoaded && (
         <ImageLoaderBackground>
-          <PaintbrushLoader width={400} />
+          <PaintbrushLoader width={isMobile ? 150 : 400} />
         </ImageLoaderBackground>
       )}
       <img

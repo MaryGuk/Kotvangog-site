@@ -14,41 +14,45 @@ import PaintbrushLoader from "./components/ImageWithLoader/PaintbrushLoader";
 import { isMobile } from "react-device-detect";
 import BurgerMenu from "./components/Pages/NavbarMobile/burger-menu";
 import ScrollToTop from "./components/ScrollToTop";
+import { ThemeProvider } from '@mui/material/styles';
+import theme from "./theme/theme";
 
 const App = () => {
   return (
-    <Suspense
-      fallback={
-        <Box
-          width="100vw"
-          height="100vh"
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-        >
-          <PaintbrushLoader width={500} />
-        </Box>
-      }
-    >
-      <BrowserRouter>
-        <div className="app-wrapper">
-          <ScrollToTop />
-          {isMobile ? <BurgerMenu /> : <Navbar />}
-          <Routes>
-            <Route path="/home" element={<MainPage />} />
-            <Route path="/products" element={<ProductsPage />} />
-            <Route path="/oil-portrait" element={<OilPortraitPage />} />
-            <Route
-              path="/likeness-portrait"
-              element={<LikenessPortraitPage />}
-            />
-            <Route path="/art-styles" element={<ProductsPage />} />
-            <Route path="/reviews" element={<ReviewsPage />} />
-            <Route path="*" element={<Navigate to="/home" />} />
-          </Routes>
-        </div>
-      </BrowserRouter>
-    </Suspense>
+    <ThemeProvider theme={theme}>
+      <Suspense
+        fallback={
+          <Box
+            width="100vw"
+            height="100vh"
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <PaintbrushLoader width={500} />
+          </Box>
+        }
+      >
+        <BrowserRouter>
+          <div className="app-wrapper">
+            <ScrollToTop />
+            {isMobile ? <BurgerMenu /> : <Navbar />}
+            <Routes>
+              <Route path="/home" element={<MainPage />} />
+              <Route path="/products" element={<ProductsPage />} />
+              <Route path="/oil-portrait" element={<OilPortraitPage />} />
+              <Route
+                path="/likeness-portrait"
+                element={<LikenessPortraitPage />}
+              />
+              <Route path="/art-styles" element={<ProductsPage />} />
+              <Route path="/reviews" element={<ReviewsPage />} />
+              <Route path="*" element={<Navigate to="/home" />} />
+            </Routes>
+          </div>
+        </BrowserRouter>
+      </Suspense>
+    </ThemeProvider>
   );
 };
 
