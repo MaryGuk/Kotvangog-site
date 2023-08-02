@@ -10,5 +10,7 @@ export const FirstPageInfoWrapper = styled(Box)`
 `;
 
 export const MainPageItemWrapper = styled(Box)`
-  padding: 15px;
+  padding: 15px 0;
+  max-width: 1300px;
+  width: 100%;
 `;

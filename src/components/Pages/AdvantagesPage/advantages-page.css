@@ -5,6 +5,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 0 15%;
+  box-sizing: border-box;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
@@ -12,28 +14,20 @@
     background-image: url("/public/images/background/Слой7.png");
     background-repeat: no-repeat;
     background-size: contain;
+    padding: 0;
+    box-sizing: initial;
   }
 }
 
 .advantages-wrapper {
-  width: 100%;
+  width: 155px;
 }
 
 .advantages-page__general {
-  /*background-image: url("/public/images/background/Слой22 -фон.png");*/
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 55% 88%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1200px;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .advantages-page__general {
-    max-width: 100%;
-    /*background-image: url("/public/images/background/Слой7.png");*/
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -49,10 +43,9 @@
 
 .advantages-container {
   margin: 45px 0 85px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 45px;
-  justify-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 @media (max-width: 700px) {
