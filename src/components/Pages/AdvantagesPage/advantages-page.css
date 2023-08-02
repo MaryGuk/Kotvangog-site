@@ -23,9 +23,6 @@
   width: 155px;
 }
 
-.advantages-page__general {
-}
-
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .advantages-page__general {
     background-repeat: no-repeat;
@@ -64,6 +61,7 @@
     grid-column-gap: 20px;
     grid-row-gap: 55px;
     justify-items: center;
+    padding-top: 75px;
   }
 }
 
@@ -115,7 +113,14 @@
 }
 
 .advantages-new-text {
-  display: none;
+  display: flex;
+  flex-direction: row;
+  font-family: "Century Gothic";
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  margin-left: -30px;
+  margin-right: -35px;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
