@@ -1,8 +1,4 @@
-const AdvantageItem = ({
-  imageSrc,
-  description,
-  newDescription,
-}) => {
+const AdvantageItem = ({ imageSrc, description, newDescription }) => {
   return (
     <div className="advantages-wrapper">
       <div className="advantage-item__wrapper">
