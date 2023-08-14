@@ -6,12 +6,6 @@ import {
   OilContentPhoto,
   OilContentDescription,
   OilContent2,
-  FirstText,
-  SecondTextPart1,
-  SecondTextPart2,
-  EllipseСontainer,
-  Ellipse,
-  ThirdText,
   ButtonContainer,
   FirstButton,
   SecondButton,
@@ -22,6 +16,15 @@ import {
   OilButton,
   OilMobileContent,
   OilMobileText,
+  OilDesktopInfo,
+  OilDesktopInfoIcon,
+  OilDesktopInfoOne,
+  OilDesktopInfoText,
+  OilDesktopInfoTwo,
+  OilDesktopInfoThree,
+  OilDesktopDescription1,
+  OilDesktopDescription2,
+  OilDesktopDescription3,
 } from "./styled";
 
 import { useState } from "react";
@@ -64,37 +67,58 @@ const OilPortrait = () => {
               <LikenessButtonMobile />
             </OilButton>
             <OilContentDescription>
-              <EllipseСontainer>
-                <Ellipse />
-                <FirstText>
-                  Вы хотите сохранить воспоминания о важных моментах жизни в
-                  виде уникальных произведений искусства? Мы поможем вам с этим!
-                  Наша команда опытных художников специализируется на создании
-                  портретов, написанных маслом по фотографии.
-                </FirstText>
-              </EllipseСontainer>
-              <SecondTextPart1>
-                Мы используем только высококачественные материалы! Умеем
-                захватывать эмоции и индивидуальность каждого человека.
-              </SecondTextPart1>
-              <SecondTextPart2>
-                Результатом нашей работы являются неповторимые произведения
-                искусства, которые будут радовать вас и ваших близких на
-                протяжении многих лет.
-              </SecondTextPart2>
+              <OilDesktopInfo>
+                <OilDesktopInfoOne>
+                  <OilDesktopInfoIcon>
+                    <img
+                      width="20px"
+                      height="20px"
+                      src="/images/background/ellipse2.png"
+                    />
+                  </OilDesktopInfoIcon>
+                  <OilDesktopInfoText>
+                    Полностью ручная роспись маслом
+                  </OilDesktopInfoText>
+                </OilDesktopInfoOne>
 
-              <ThirdText>
+                <OilDesktopInfoTwo>
+                  <OilDesktopInfoIcon>
+                    <img
+                      width="20px"
+                      height="20px"
+                      src="/images/background/ellipse2.png"
+                    />
+                  </OilDesktopInfoIcon>
+                  <OilDesktopInfoText>
+                    Художники с опытом рисования более 10 лет
+                  </OilDesktopInfoText>
+                </OilDesktopInfoTwo>
+
+                <OilDesktopInfoThree>
+                  <OilDesktopInfoIcon>
+                    <img
+                      width="20px"
+                      height="20px"
+                      src="/images/background/ellipse2.png"
+                    />
+                  </OilDesktopInfoIcon>
+                  <OilDesktopInfoText>
+                    Портретное сходство сохраняем на 100%
+                  </OilDesktopInfoText>
+                </OilDesktopInfoThree>
+              </OilDesktopInfo>
+              <OilDesktopDescription1>
                 Мы работаем с фотографиями любого формата и стиля, и готовы
-                предоставить вам консультацию и рекомендации по созданию
-                наиболее удачного портрета.
-                <span style={{ fontWeight: "700" }}>
-                  {" "}
-                  Не упустите возможность сохранить важные моменты вашей жизни в
-                  искусстве.
-                </span>{" "}
+                предоставить вам консультацию по созданию лучшего портрета.
+              </OilDesktopDescription1>
+              <OilDesktopDescription2>
+                Не упустите возможность сохранить важные моменты вашей жизни в
+                искусстве.
+              </OilDesktopDescription2>
+              <OilDesktopDescription3>
                 Обратитесь к нам сегодня, и мы с радостью поможем вам создать
                 портреты, которые вы будете любить и ценить навсегда!
-              </ThirdText>
+              </OilDesktopDescription3>
 
               <ButtonContainer>
                 <Box>
