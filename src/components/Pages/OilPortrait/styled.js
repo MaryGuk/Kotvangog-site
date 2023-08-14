@@ -1,10 +1,11 @@
 import { Box, styled } from "@mui/material";
 
 export const OilPortraitWrapper = styled(Box)`
-  background-image: url("/images/background/back-gray.png");
   display: flex;
   justify-content: center;
   width: 100%;
+  padding: 0 15%;
+  box-sizing: border-box;
   padding-top: 30px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
@@ -19,6 +20,7 @@ export const OilPortraitGeneral = styled(Box)`
   background-size: cover;
   padding: 10px;
   width: 100%;
+  max-width: 1300px;
   padding-top: 20px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
@@ -47,7 +49,7 @@ export const OilContent2 = styled(Box)`
 `;
 
 export const OilContentPhoto = styled(Box)`
-  margin-top: -20px;
+  margin-top: 35px;
   margin-bottom: -3px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
@@ -63,99 +65,6 @@ export const OilContentDescription = styled(Box)`
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: none;
-  }
-`;
-
-export const EllipseСontainer = styled(Box)`
-  position: relative;
-  display: flex;
-  justify-content: center;
-`;
-export const Ellipse = styled(Box)`
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -60%) rotate(5deg);
-  width: 570px;
-  height: 190px;
-  background-color: rgba(190, 190, 190, 0.5);
-  border-radius: 50% / 70%;
-
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    width: 320px;
-    height: 220px;
-  }
-`;
-
-export const FirstText = styled(Box)`
-  font-size: 17px;
-  font-family: "Nunito", Sans-serif;
-  font-weight: 600;
-  flex-wrap: wrap;
-  max-width: 420px;
-  text-align: center;
-  position: relative;
-
-  z-index: 4;
-  text-align: center;
-  margin-bottom: 30px;
-
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    font-size: 13px;
-    max-width: 300px;
-  }
-`;
-export const SecondTextPart1 = styled(Box)`
-  font-size: 16px;
-  font-family: "Comfortaa", cursive;
-  font-weight: 700;
-  line-height: 1.3;
-  flex-wrap: wrap;
-  max-width: 650px;
-  text-align: right;
-  margin-top: 10px;
-
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    font-size: 12px;
-    max-width: 300px;
-    text-align: right;
-  }
-`;
-export const SecondTextPart2 = styled(Box)`
-  font-size: 16px;
-  font-family: "Comfortaa", cursive;
-  font-weight: 400;
-  flex-wrap: wrap;
-  max-width: 650px;
-  text-align: right;
-  margin-bottom: 20px;
-  margin-top: 3px;
-  line-height: 1.3;
-
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    font-size: 12px;
-    max-width: 300px;
-    text-align: right;
-    margin-bottom: 20px;
-  }
-`;
-
-export const ThirdText = styled(Box)`
-  font-size: 16px;
-  font-family: "Comfortaa", cursive;
-  font-weight: 400;
-  flex-wrap: wrap;
-  max-width: 650px;
-  text-align: right;
-  margin-bottom: 50px;
-  line-height: 1.3;
-
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    font-size: 12px;
-    max-width: 300px;
-    text-align: right;
-    margin-bottom: 20px;
   }
 `;
 
@@ -263,4 +172,92 @@ export const OilMobileText = styled(Box)`
     font-size: 12px;
     text-align: center;
   }
+`;
+
+export const OilDesktopInfo = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: none;
+  }
+`;
+export const OilDesktopInfoOne = styled(Box)`
+  display: flex;
+  padding-bottom: 20px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: none;
+  }
+`;
+export const OilDesktopInfoIcon = styled(Box)`
+  padding-right: 5px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: none;
+  }
+`;
+export const OilDesktopInfoText = styled(Box)`
+  display: flex;
+  align-items: center;
+  font-family: "Century Gothic";
+  font-weight: normal;
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: none;
+  }
+`;
+export const OilDesktopInfoTwo = styled(Box)`
+  display: flex;
+  padding-bottom: 20px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: none;
+  }
+`;
+export const OilDesktopInfoThree = styled(Box)`
+  display: flex;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: none;
+  }
+`;
+
+export const OilDesktopDescription1 = styled(Box)`
+  display: flex;
+  margin-left: 15px;
+  width: 400px;
+  align-items: center;
+  font-family: "Century Gothic";
+  font-weight: normal;
+  padding-top: 95px;
+  font-size: 16px;
+  line-height: 1.5;
+`;
+export const OilDesktopDescription2 = styled(Box)`
+  display: flex;
+  margin-left: 15px;
+  width: 400px;
+  align-items: center;
+  font-family: "Century Gothic";
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+`;
+export const OilDesktopDescription3 = styled(Box)`
+  display: flex;
+  margin-left: 15px;
+  width: 400px;
+  align-items: center;
+  font-family: "Century Gothic";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 80px;
 `;
