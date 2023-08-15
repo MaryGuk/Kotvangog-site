@@ -59,7 +59,6 @@ const OilPortrait = () => {
                     ? "https://www.dropbox.com/s/6lkuknbtufgnex2/oil%20mobile2.png?raw=1"
                     : "https://www.dropbox.com/s/xmq4neuni1sqm62/oil-classic%20%282%29.png?raw=1"
                 }
-                width="100%"
                 height="100%"
               />
             </OilContentPhoto>

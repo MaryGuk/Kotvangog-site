@@ -5,7 +5,8 @@ export const LikenessPortraitWrapper = styled(Box)`
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 45px;
+  padding: 45px 15% 0;
+  box-sizing: border-box;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     background: #e0e0e0;
@@ -17,7 +18,7 @@ export const LikenessPortraitGeneral = styled(Box)`
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
 `;
 
 export const LikenessContent = styled(Box)`
@@ -31,7 +32,7 @@ export const LikenessContent = styled(Box)`
 export const LikenessContent2 = styled(Box)`
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
 
   @media (max-width: 990px) {
@@ -132,13 +133,13 @@ export const FourthTextLikeness = styled(Box)`
   }
 `;
 export const LikenessContentPhoto = styled(Box)`
-  margin-top: 15px;
+  margin: 15px -5px 0 0;
   width: 520px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     width: 341px;
     align-items: center;
-    margin-top: -25px;
+    margin: -25px 0 0;
   }
 `;
 

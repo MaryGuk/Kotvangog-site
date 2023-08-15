@@ -6,9 +6,15 @@ export const ArtStylesSizeWrapper = styled(Box)`
   display: flex;
   justify-content: center;
   height: auto;
-  padding-top: 65px;
+  padding: 65px 15% 0;
+  box-sizing: border-box;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    padding: 65px 0 0;
+  }
 `;
 export const ArtStylesSizeGeneral = styled(Box)`
+  max-width: 1300px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -80,8 +86,6 @@ export const ArtSizeContainer = styled(Box)`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 10px;
-  width: 75%;
-  margin: 0 auto;
   align-items: center;
   justify-items: center;
 
@@ -93,5 +97,6 @@ export const ArtSizeContainer = styled(Box)`
     grid-row-gap: 8px;
     justify-content: center;
     width: 90%;
+    margin: 0 auto;
   }
 `;

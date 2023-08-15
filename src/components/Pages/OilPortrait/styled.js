@@ -18,7 +18,6 @@ export const OilPortraitGeneral = styled(Box)`
   background-image: url("/images/background/Слой3.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10px;
   width: 100%;
   max-width: 1300px;
   padding-top: 20px;
@@ -29,6 +28,7 @@ export const OilPortraitGeneral = styled(Box)`
 `;
 
 export const OilContent = styled(Box)`
+  margin-top: 35px;
   display: flex;
   justify-content: center;
 `;
@@ -36,11 +36,10 @@ export const OilContent = styled(Box)`
 export const OilContent2 = styled(Box)`
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-direction: row;
 
   @media (max-width: 990px) {
-    display: "flex";
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -49,7 +48,6 @@ export const OilContent2 = styled(Box)`
 `;
 
 export const OilContentPhoto = styled(Box)`
-  margin-top: 35px;
   margin-bottom: -3px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
@@ -60,9 +58,12 @@ export const OilContentPhoto = styled(Box)`
 `;
 
 export const OilContentDescription = styled(Box)`
-  margin-top: 70px;
-  padding-left: 66px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: none;
   }
@@ -177,7 +178,6 @@ export const OilMobileText = styled(Box)`
 export const OilDesktopInfo = styled(Box)`
   display: flex;
   flex-direction: column;
-  margin-top: 70px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: none;
@@ -229,7 +229,7 @@ export const OilDesktopInfoThree = styled(Box)`
 
 export const OilDesktopDescription1 = styled(Box)`
   display: flex;
-  margin-left: 15px;
+  margin-left: 25px;
   width: 400px;
   align-items: center;
   font-family: "Century Gothic";
@@ -240,7 +240,7 @@ export const OilDesktopDescription1 = styled(Box)`
 `;
 export const OilDesktopDescription2 = styled(Box)`
   display: flex;
-  margin-left: 15px;
+  margin-left: 25px;
   width: 400px;
   align-items: center;
   font-family: "Century Gothic";
@@ -252,7 +252,7 @@ export const OilDesktopDescription2 = styled(Box)`
 `;
 export const OilDesktopDescription3 = styled(Box)`
   display: flex;
-  margin-left: 15px;
+  margin-left: 25px;
   width: 400px;
   align-items: center;
   font-family: "Century Gothic";
