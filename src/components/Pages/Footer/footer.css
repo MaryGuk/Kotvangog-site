@@ -2,18 +2,20 @@
   background-color: #c5c5c5;
   height: auto;
   width: 100%;
+  padding: 0 15%;
+  box-sizing: border-box;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1300px;
   width: 100%;
 }
 
 @media (max-width: 680px) {
   .footer-container {
+    margin: 0 auto;
     margin-left: -40px;
   }
 }

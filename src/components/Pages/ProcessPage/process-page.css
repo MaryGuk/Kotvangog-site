@@ -1,18 +1,24 @@
 .process-page {
   background-color: #e0e0e0;
-  padding-top: 68px;
-  padding-bottom: 105px;
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-  .process-page {
-    padding-bottom: 50px;
-  }
+  padding: 68px 15% 105px;
+  box-sizing: border-box;
 }
 
 .process-page__container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  .process-page {
+    padding: 68px 0 50px;
+  }
+
+  .process-page__container {
+    justify-content: center;
+  }
 }
 
 .process-page__general {
