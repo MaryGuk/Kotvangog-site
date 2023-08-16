@@ -98,7 +98,6 @@ const OilPage = () => {
                     : "https://www.dropbox.com/s/xmq4neuni1sqm62/oil-classic%20%282%29.png?raw=1"
                 }
                 width="100%"
-                height="100%"
               />
             </OilContentPhoto2>
             {isMobile ? (

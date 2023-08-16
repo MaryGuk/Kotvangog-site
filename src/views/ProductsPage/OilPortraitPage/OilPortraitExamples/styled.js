@@ -24,8 +24,11 @@ export const OilPortraitExamplesGeneral = styled(Box)`
 export const OilPortraitExamplesContent = styled(Box)`
   padding: 0 10%;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: block;
     padding: 0;
   }
 `;
