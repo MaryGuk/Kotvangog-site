@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import { HistoryImagesGallery } from "./styled";
+import {HistoryImagesGallery, HistoryImagesGalleryWrapper} from "./styled";
 import { useState } from "react";
 import { Dialog } from "@mui/material";
 import HistoryGalleryItem from "./HistoryGalleryItem";
@@ -9,7 +9,7 @@ import {historyImages} from "../../../../constants/galeries/historyImages";
 const HistoryGallery = () => {
   const [fullImageSrc, setFullImageSrc] = useState(null);
   return (
-    <Box>
+    <HistoryImagesGalleryWrapper>
       <HistoryImagesGallery>
         {historyImages.map(({ previewSrc, fullSrc }, idx) => (
           <HistoryGalleryItem
@@ -25,7 +25,7 @@ const HistoryGallery = () => {
           <ImageWithLoader height="100%" src={fullImageSrc} alt="" />
         </Box>
       </Dialog>
-    </Box>
+    </HistoryImagesGalleryWrapper>
   );
 };
 

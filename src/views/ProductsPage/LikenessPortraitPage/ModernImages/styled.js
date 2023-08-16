@@ -12,6 +12,12 @@ export const ModernImagesWrapper = styled(Box)`
 `;
 export const ModernImagesGeneral = styled(Box)`
   width: 100%;
+  padding: 0 10%;
+  box-sizing: border-box;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    padding: 0;
+  }
 `;
 export const ModernImagesContent = styled(Box)`
   margin-top: 30px;
@@ -28,12 +34,19 @@ export const ModernImagesDescription = styled(Box)`
 export const HistoryImagesCollage = styled(Box)`
   display: flex;
   justify-content: center;
+  width: 100%;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    justify-content: center;
+  }
 `;
 export const HistoryImagesCollageItems = styled(Box)`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1300px;
 
   @media (max-width: 950px) {
     display: "flex";

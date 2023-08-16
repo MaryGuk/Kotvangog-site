@@ -1,5 +1,6 @@
-import { Box } from "@mui/material";
 import { useState } from "react";
+import { ModernImageItemWrapper } from "./styled";
+import { Box } from "@mui/material";
 
 const ModernGalleryItem = ({ previewSrc, fullSrc, setFullImage }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -18,7 +19,7 @@ const ModernGalleryItem = ({ previewSrc, fullSrc, setFullImage }) => {
   };
   return (
     <Box>
-      <Box onClick={() => setFullImage(fullSrc)}>
+      <ModernImageItemWrapper onClick={() => setFullImage(fullSrc)}>
         <img
           src={previewSrc}
           width="190px"
@@ -30,7 +31,7 @@ const ModernGalleryItem = ({ previewSrc, fullSrc, setFullImage }) => {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         />
-      </Box>
+      </ModernImageItemWrapper>
     </Box>
   );
 };
