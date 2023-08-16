@@ -87,6 +87,7 @@ export const OilSizeContainer = styled(Box)`
   margin: 0 auto;
   align-items: center;
   justify-items: center;
+  padding: 0 0 90px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: grid;
@@ -96,5 +97,6 @@ export const OilSizeContainer = styled(Box)`
     grid-row-gap: 8px;
     justify-content: center;
     width: 90%;
+    padding: 0;
   }
 `;

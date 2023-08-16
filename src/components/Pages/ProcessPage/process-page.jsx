@@ -33,7 +33,7 @@ const ProcessPage = () => {
             {[
               {
                 imageSrc:
-                  "https://www.dropbox.com/s/cgjugtfpi1l0jnr/1%20process.jpg?raw=1",
+                  "https://www.dropbox.com/scl/fi/7p95fd7ftqku8mtrfyflu/1.png?rlkey=tjj6h9zctzhy9rfgfuymvqqmy&dl=0&raw=1",
                 mainDescription: t("processPage.stepOne.mainDescription"),
                 secondaryDescription: t(
                   "processPage.stepOne.secondaryDescription"
@@ -41,19 +41,19 @@ const ProcessPage = () => {
               },
               {
                 imageSrc:
-                  "https://www.dropbox.com/s/b2iezkzwafj66nf/2%20process.jpg?raw=1",
+                  "https://www.dropbox.com/scl/fi/cgjiqcvq23gmg2m1kykim/2.png?rlkey=t9mi18pf180dqmyhb08wejxn6&dl=0&raw=1",
                 mainDescription: t("processPage.stepTwo.mainDescription"),
               },
               {
                 imageSrc:
-                  "https://www.dropbox.com/s/e1bn05qvyhublf9/3%20process.jpg?raw=1",
+                  "https://www.dropbox.com/scl/fi/q1zznh7009qcfxdnuwc2n/3.png?rlkey=crto2g5pbfowvn7zvb2zxyfls&dl=0&raw=1",
                 mainDescription: t("processPage.stepThree.mainDescription"),
                 secondaryDescription: t(
                   "processPage.stepThree.secondaryDescription"
                 ),
               },
             ].map((processItemProps, idx) => (
-              <ProcessItem key={idx} {...processItemProps} />
+              <ProcessItem key={idx} {...processItemProps} number={idx + 1} />
             ))}
           </div>
 
@@ -62,7 +62,7 @@ const ProcessPage = () => {
               <MasterInfoWrapper>
                 <img
                   className="process-ava"
-                  src="https://www.dropbox.com/s/fubn96wj2g9p0wu/%D0%9B%D1%8E%D0%B1%D0%B0%20ph2.jpg?raw=1"
+                  src="https://www.dropbox.com/scl/fi/v7xee084me4e0zmb7rxq2/painter.png?rlkey=ubwp34is5yfl3aki9ocrztunm&dl=0&raw=1"
                   loading="lazy"
                   decoding="async"
                   alt="Любовь Ненадовец"
