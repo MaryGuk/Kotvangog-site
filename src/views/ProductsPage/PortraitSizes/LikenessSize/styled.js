@@ -6,10 +6,10 @@ export const LikenessSizeWrapper = styled(Box)`
   display: flex;
   justify-content: center;
   height: auto;
-  padding-top: 65px;
+  padding: 65px 0 90px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    padding-top: 0;
+    padding: 0;
   }
 `;
 

@@ -1,6 +1,5 @@
 .process-page {
-  background-color: #e0e0e0;
-  padding: 68px 10% 105px;
+  padding: 68px 10% 55px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -24,7 +23,6 @@
 }
 
 .process-page__general {
-  background-image: url("/public/images/background/Слой3.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -33,14 +31,13 @@
 }
 
 .process-img {
-  width: 320px;
   height: 200px;
 }
 
 .process-main-description {
   margin-top: 10px;
   margin-bottom: 10px;
-  max-width: 280px;
+  max-width: 240px;
   display: block;
   font-size: 16px;
   font-family: "Trebuchet MS", serif;
@@ -60,6 +57,7 @@
   font-weight: 400;
   font-size: 14px;
   color: #565656;
+  max-width: 230px;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
@@ -107,6 +105,17 @@
 }
 .process-item__wrapper {
   margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.process-item__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 0 -50px;
 }
 
 .process-text__container {
