@@ -18,22 +18,26 @@ export const OilPortraitGeneral2 = styled(Box)`
   background-image: url("/images/background/Слой3.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 10px;
+  margin: 10px 0;
   width: 100%;
   padding-top: 20px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     background-image: none;
+    margin: 10px;
   }
 `;
 
 export const OilContent2 = styled(Box)`
   display: flex;
   justify-content: center;
+  padding: 0 10%;
+  box-sizing: border-box;
 `;
 
 export const OilContent22 = styled(Box)`
   width: 100%;
+  max-width: 1300px;
   display: flex;
   justify-content: center;
   flex-direction: row;

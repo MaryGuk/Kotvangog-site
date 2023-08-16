@@ -6,9 +6,12 @@ export const OilPortraitSecondWrapper = styled(Box)`
   justify-content: center;
   width: 100%;
   overflow: hidden;
+  padding: 0 10%;
+  box-sizing: border-box;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     background-color: white;
+    padding: 0;
   }
 `;
 export const OilPortraitSecondGeneral = styled(Box)`
@@ -18,7 +21,7 @@ export const OilPortraitSecondGeneral = styled(Box)`
   width: 100%;
   margin-top: 80px;
   margin-bottom: 40px;
-  max-width: 1150px;
+  max-width: 1300px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     max-width: 100%;
@@ -38,7 +41,11 @@ export const OilPortraitSecondContent = styled(Box)`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    justify-content: space-evenly;
+  }
 `;
 
 export const OilPortraitSecondContentImages = styled(Box)``;

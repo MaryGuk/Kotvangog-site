@@ -4,7 +4,7 @@ export const OilPortraitWrapper = styled(Box)`
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 0 15%;
+  padding: 0 10%;
   box-sizing: border-box;
   padding-top: 30px;
 

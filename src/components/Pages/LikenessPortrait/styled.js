@@ -5,7 +5,7 @@ export const LikenessPortraitWrapper = styled(Box)`
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 45px 15% 0;
+  padding: 45px 10% 0;
   box-sizing: border-box;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
