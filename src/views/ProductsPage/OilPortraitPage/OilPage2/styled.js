@@ -31,7 +31,7 @@ export const OilPortraitGeneral2 = styled(Box)`
 export const OilContent2 = styled(Box)`
   display: flex;
   justify-content: center;
-  padding: 0 15%;
+  padding: 0 10%;
   box-sizing: border-box;
 `;
 

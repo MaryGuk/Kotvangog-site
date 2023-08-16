@@ -7,7 +7,7 @@ export const FirstPageWrapper = styled(Box)`
   justify-content: center;
   height: auto;
   overflow: hidden;
-  padding: 20px 15% 0;
+  padding: 20px 10% 0;
   box-sizing: border-box;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {

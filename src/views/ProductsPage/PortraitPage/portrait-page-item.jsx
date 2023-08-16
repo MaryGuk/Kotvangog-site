@@ -1,4 +1,4 @@
-import { ProductPageItemInfoBlock, ArtButtonWrapper } from "./styled";
+import {ProductPageItemInfoBlock, ArtButtonWrapper, BeautyArtInformation } from "./styled";
 import ArtButton from "../../../components/Button/ArtButton";
 import { isMobile } from "react-device-detect";
 import "./portrait-page.css";
@@ -11,7 +11,7 @@ const PortraitPageItem = ({
 }) => {
   return (
     <ProductPageItemInfoBlock reverse={reverse}>
-      <div className="beauty-art__information">
+      <BeautyArtInformation reverse={reverse}>
         <div>
           <div className="beauty__title-background">
             <img
@@ -26,7 +26,7 @@ const PortraitPageItem = ({
         {!isMobile && (
           <div className="beauty-art__description">{portraitDescription}</div>
         )}
-      </div>
+      </BeautyArtInformation>
 
       {!isMobile && (
         <ArtButtonWrapper>

@@ -6,7 +6,7 @@ export const OilPortraitSecondWrapper = styled(Box)`
   justify-content: center;
   width: 100%;
   overflow: hidden;
-  padding: 0 15%;
+  padding: 0 10%;
   box-sizing: border-box;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
