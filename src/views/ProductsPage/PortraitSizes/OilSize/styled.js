@@ -13,10 +13,12 @@ export const OilStylesSizeGeneral = styled(Box)`
   display: flex;
   flex-direction: column;
   margin-top: 15px;
+  padding: 0 10%;
+  align-items: center;
 
   @media (max-width: 805px) {
     /* margin: 15px; */
-    padding-bottom: 51px;
+    padding: 0 0 51px;
   }
 `;
 
@@ -80,7 +82,8 @@ export const OilSizeContainer = styled(Box)`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 10px;
-  width: 75%;
+  width: 100%;
+  max-width: 1300px;
   margin: 0 auto;
   align-items: center;
   justify-items: center;

@@ -2,6 +2,8 @@
   background-color: #e0e0e0;
   padding: 68px 10% 105px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 
 .process-page__container {

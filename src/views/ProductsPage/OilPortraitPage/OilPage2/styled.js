@@ -39,11 +39,11 @@ export const OilContent22 = styled(Box)`
   width: 100%;
   max-width: 1300px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
 
   @media (max-width: 990px) {
-    display: "flex";
+    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
