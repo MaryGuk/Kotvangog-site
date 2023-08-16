@@ -18,6 +18,11 @@ export const LikenessSizeGeneral = styled(Box)`
   display: flex;
   flex-direction: column;
   margin-top: 15px;
+  padding: 0 10%; 
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+      padding: 0;  
+  }
 
   @media (max-width: 805px) {
     padding-bottom: 51px;
@@ -106,11 +111,11 @@ export const LikenessSizeContainer = styled(Box)`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 10px;
-  width: 75%;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 1300px;
+  margin: 50px auto 0;
   align-items: center;
   justify-items: center;
-  margin-top: 50px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: grid;
