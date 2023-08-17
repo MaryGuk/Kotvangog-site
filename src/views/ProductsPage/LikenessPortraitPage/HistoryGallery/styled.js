@@ -8,8 +8,8 @@ export const HistoryImagesGalleryWrapper = styled(Box)`
 
 export const HistoryImagesGallery = styled(Box)`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  grid-column-gap: 40px;
+  grid-template-columns: repeat(4, minmax(170px, 1fr));
+  grid-column-gap: 2%;
   grid-row-gap: 30px;
   margin: 20px 0;
   max-width: 1300px;
@@ -19,4 +19,8 @@ export const HistoryImagesGallery = styled(Box)`
 export const HistoryImageItemWrapper = styled(Box)`
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
 `;

@@ -22,8 +22,7 @@ const ModernGalleryItem = ({ previewSrc, fullSrc, setFullImage }) => {
       <ModernImageItemWrapper onClick={() => setFullImage(fullSrc)}>
         <img
           src={previewSrc}
-          width="190px"
-          height="245px"
+          width="100%"
           loading="lazy"
           decoding="async"
           alt=""

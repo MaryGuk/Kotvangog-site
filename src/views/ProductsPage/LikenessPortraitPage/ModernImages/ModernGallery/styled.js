@@ -7,9 +7,9 @@ export const ModernImagesGallery = styled(Box)`
 
 export const ModernImagesItems = styled(Box)`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  grid-column-gap: 40px;
-  grid-row-gap: 30px;
+  grid-template-columns: repeat(4, minmax(170px, 1fr));
+  grid-column-gap: 2%;
+  grid-row-gap: 60px;
   margin: 20px 0;
   max-width: 1300px;
   width: 100%;
@@ -18,4 +18,8 @@ export const ModernImagesItems = styled(Box)`
 export const ModernImageItemWrapper = styled(Box)`
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 `;
