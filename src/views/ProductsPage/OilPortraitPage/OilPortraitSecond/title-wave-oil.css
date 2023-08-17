@@ -3,7 +3,12 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-end;
-  margin: 5px;
+  width: 100%;
+  padding: 0 30px 0 0;
+  box-sizing: border-box;
+}
+
+.wave-text__title-first {
   max-width: 1000px;
 }
 
