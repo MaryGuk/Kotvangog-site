@@ -47,6 +47,7 @@ export const HistoryImagesCollageItems = styled(Box)`
   justify-content: flex-start;
   width: 100%;
   max-width: 1300px;
+  margin-bottom: 80px;
 
   @media (max-width: 950px) {
     display: "flex";
@@ -57,35 +58,43 @@ export const HistoryImagesCollageItems = styled(Box)`
   }
 `;
 export const HistoryImagesCollageImage = styled(Box)`
-  margin-bottom: 80px;
+  width: 80%;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     margin-bottom: 40px;
+    width: 100%;
   }
 `;
 
 export const HistoryImagesCollageText = styled(Box)`
-  margin-top: -40px;
-  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: none;
   }
 `;
 export const HistoryImagesCollageText1 = styled(Box)`
-  font-size: 19px;
+  font-size: 24px;
   font-family: "Palatino Linotype";
   font-weight: 700;
+  max-width: 310px;
   color: #555555;
   text-align: center;
+  padding: 0 0 7%;
 `;
 export const HistoryImagesCollageText2 = styled(Box)`
-  font-size: 18px;
+  font-size: 24px;
   font-family: "Palatino Linotype";
   font-weight: 400;
   color: #555555;
-  max-width: 310px;
+  max-width: 360px;
   text-align: center;
+  padding: 0 0 25%;
 `;
 
 //
