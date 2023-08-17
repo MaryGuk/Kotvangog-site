@@ -1,7 +1,6 @@
 import { Box, styled } from "@mui/material";
 
 export const OilPortraitSecondWrapper = styled(Box)`
-  background-color: #bdbdbd;
   display: flex;
   justify-content: center;
   width: 100%;
