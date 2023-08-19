@@ -7,7 +7,7 @@ const OilTitle2 = () => {
         <div className="oil-page__title2-background">
           <img
             className="oil__title2-background-image"
-            src={"/images/background/classic mobile.png"}
+            src={"/images/background/background new.png"}
           />
         </div>
         <div className="oil__title2">Классический портрет маслом</div>
