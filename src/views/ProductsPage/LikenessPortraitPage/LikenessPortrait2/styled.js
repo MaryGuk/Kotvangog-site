@@ -1,11 +1,15 @@
 import { Box, styled } from "@mui/material";
 
 export const LikenessPortraitWrapper2 = styled(Box)`
-  background-image: url("/images/background/back-gray.png");
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 70px;
+  padding: 0 10%;
+  box-sizing: border-box;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    background: #e0e0e0;
+  }
 `;
 
 export const LikenessPortraitGeneral2 = styled(Box)`
@@ -13,13 +17,11 @@ export const LikenessPortraitGeneral2 = styled(Box)`
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  max-width: 1300px;
 `;
 
 export const LikenessContent2 = styled(Box)`
   display: flex;
-  padding: 0 10%;
-  width: 100%;
-  box-sizing: border-box;
   justify-content: center;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
@@ -31,7 +33,6 @@ export const LikenessContent22 = styled(Box)`
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  max-width: 1300px;
 
   @media (max-width: 990px) {
     display: flex;
@@ -44,107 +45,28 @@ export const LikenessContent22 = styled(Box)`
 
 export const LikenessContentDescription2 = styled(Box)`
   margin-top: 75px;
-`;
-export const EllipseСontainer2 = styled(Box)`
-  position: relative;
-  display: flex;
-  justify-content: center;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    margin-top: -20px;
-  }
-`;
-export const EllipseLikeness2 = styled(Box)`
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -65%) rotate(175deg);
-  width: 550px;
-  height: 170px;
-  background-color: rgba(190, 190, 190, 0.5);
-  border-radius: 50% / 70%;
-
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    width: 380px;
+    display: none;
   }
 `;
 
-export const FirstTextLikeness2 = styled(Box)`
-  font-size: 17px;
-  font-family: "Nunito", Sans-serif;
-  font-weight: 600;
-  flex-wrap: wrap;
-  max-width: 420px;
-  text-align: center;
-  position: relative;
-  z-index: 4;
-  text-align: center;
-  margin-bottom: 20px;
-
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    font-size: 14px;
-    max-width: 300px;
-  }
-`;
-export const SecondTextLikeness2 = styled(Box)`
-  font-size: 16px;
-  font-family: "Comfortaa", cursive;
-  font-weight: 700;
-  line-height: 1.3;
-  flex-wrap: wrap;
-  max-width: 500px;
-  text-align: left;
-  margin-bottom: 20px;
-  margin-top: 10px;
-
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    font-size: 14px;
-  }
-`;
-export const ThirdTextLikeness2 = styled(Box)`
-  font-size: 16px;
-  font-family: "Comfortaa", cursive;
-  font-weight: 500;
-  flex-wrap: wrap;
-  max-width: 500px;
-  text-align: left;
-  margin-bottom: 20px;
-  line-height: 1.3;
-
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    font-size: 14px;
-  }
-`;
-export const FourthTextLikeness2 = styled(Box)`
-  font-size: 16px;
-  font-family: "Comfortaa", cursive;
-  font-weight: 500;
-  flex-wrap: wrap;
-  max-width: 500px;
-  text-align: left;
-  margin-bottom: 30px;
-  line-height: 1.3;
-
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    font-size: 14px;
-  }
-`;
 export const LikenessContentPhoto2 = styled(Box)`
-  margin-top: 16px;
+  margin: 15px -5px 0 0;
   width: 520px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    width: 280px;
+    width: 341px;
     align-items: center;
+    margin: -25px 0 0;
   }
 `;
 
-export const ButtonContainer2 = styled(Box)`
+export const ButtonContainer = styled(Box)`
   display: flex;
-  margin-bottom: 20px;
+  padding-top: 180px;
 `;
-export const FirstButtonLikeness2 = styled(Box)`
+export const FirstButtonLikeness = styled(Box)`
   font-size: 17px;
   font-family: "Palatino Linotype";
   font-weight: 500;
@@ -166,7 +88,7 @@ export const FirstButtonLikeness2 = styled(Box)`
     padding: 5px;
   }
 `;
-export const SecondButtonLikeness2 = styled(Box)`
+export const SecondButtonLikeness = styled(Box)`
   font-size: 17px;
   font-family: "Comfortaa", cursive;
   font-weight: 500;
@@ -216,4 +138,146 @@ export const ModalIcons = styled(Box)`
     content: "";
     margin-right: 0;
   }
+`;
+
+export const LikenessMobileContent22 = styled(Box)`
+  display: none;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+`;
+export const LikenessMobileTextPart12 = styled(Box)`
+  display: none;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: flex;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    font-size: 11.8px;
+    margin: 0 auto;
+  }
+`;
+export const LikenessMobileTextPart22 = styled(Box)`
+  display: none;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: flex;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    font-size: 11.8px;
+    margin: 0 auto;
+  }
+`;
+export const LikenessMobileTextPart32 = styled(Box)`
+  display: none;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: flex;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    font-size: 11.8px;
+    margin: 0 auto;
+  }
+`;
+export const LikenessButton = styled(Box)`
+  display: none;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+`;
+
+export const LikenessDesktopInfo2 = styled(Box)`
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: none;
+  }
+`;
+export const LikenessDesktopInfoOne2 = styled(Box)`
+  display: flex;
+  padding-bottom: 20px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: none;
+  }
+`;
+
+export const LikenessDesktopInfoIcon2 = styled(Box)`
+  display: flex;
+  padding-right: 5px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: none;
+  }
+`;
+export const LikenessDesktopInfoText2 = styled(Box)`
+  display: flex;
+  align-items: center;
+  font-family: "Century Gothic";
+  font-weight: normal;
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: none;
+  }
+`;
+export const LikenessDesktopInfoTwo2 = styled(Box)`
+  display: flex;
+  padding-bottom: 20px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: none;
+  }
+`;
+export const LikenessDesktopInfoThree2 = styled(Box)`
+  display: flex;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    display: none;
+  }
+`;
+
+export const LikenessDesktopDescription12 = styled(Box)`
+  display: flex;
+  margin-left: 25px;
+  width: 400px;
+  align-items: center;
+  font-family: "Century Gothic";
+  font-weight: bold;
+  padding-top: 95px;
+  font-size: 16px;
+  line-height: 1.5;
+`;
+export const LikenessDesktopDescription22 = styled(Box)`
+  display: flex;
+  margin-left: 25px;
+  width: 400px;
+  align-items: center;
+  font-family: "Century Gothic";
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+`;
+export const LikenessDesktopDescription32 = styled(Box)`
+  display: flex;
+  margin-left: 25px;
+  width: 400px;
+  align-items: center;
+  font-family: "Century Gothic";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5;
 `;
