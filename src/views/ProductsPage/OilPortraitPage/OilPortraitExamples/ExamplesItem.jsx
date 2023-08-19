@@ -1,6 +1,5 @@
 import { ExamplesGallery, ExamplesGalleryContainer } from "./styled-examples";
 import { useState } from "react";
-import { isMobile } from "react-device-detect";
 
 const ExamplesItem = ({ previewSrc, fullSrc, setFullImage, onImageLoad }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -25,8 +24,7 @@ const ExamplesItem = ({ previewSrc, fullSrc, setFullImage, onImageLoad }) => {
           style={style}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          width={isMobile ? "100%" : "240px"}
-          height={isMobile ? undefined : "310px"}
+          width="100%"
           loading="lazy"
           decoding="async"
           onLoad={() => onImageLoad()}

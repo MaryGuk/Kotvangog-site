@@ -10,7 +10,7 @@
   position: absolute;
   justify-content: center;
   display: flex;
-  margin-left: -160px;
+  margin-left: -120px;
   margin-top: 40px;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .examples-text__title-background-image {
-  width: 450px;
+  width: 350px;
   height: 60px;
 }
 
@@ -35,16 +35,17 @@
 
 .examples-text__title {
   position: relative;
-  font-size: 30px;
+  font-size: 35px;
   font-family: "Palatino Linotype";
   font-weight: 500;
   text-align: center;
-  color: white;
+  color: black;
   margin-top: 45px;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .examples-text__title {
     font-size: 20px;
+    color: white;
   }
 }
