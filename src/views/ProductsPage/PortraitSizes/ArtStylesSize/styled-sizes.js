@@ -1,12 +1,14 @@
 import { Box, styled } from "@mui/material";
 
-export const ArtSizeItemWrapper = styled(Box)``;
+export const ArtSizeItemWrapper = styled(Box)`
+  height: 100%
+`;
 
 export const ArtSizeItemContainer = styled(Box)`
   display: flex;
   justify-content: center;
   height: 100%;
-  width: 100%;
+  max-height: 210px;
 `;
 
 export const ArtSizesItemSize = styled(Box)`

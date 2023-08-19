@@ -24,36 +24,36 @@ const ProductsPage = () => {
       galleryImages: [
         {
           previewSrc:
-            "https://www.dropbox.com/scl/fi/kx0fk985qmvhjl8ykerh3/0000.jpg?rlkey=y0xihkn6jrhx7mt1jy18rivmy&raw=1",
+            "https://www.dropbox.com/scl/fi/7tq3wnanjqrlh9n9e5x2k/370_0000.jpg?rlkey=lo59yf5wqd0u147grzr02cy4r&dl=0&raw=1",
           fullSrc: "https://www.dropbox.com/s/ofkqxekkzrmvyqu/1%20ba.jpg?raw=1",
         },
         {
           previewSrc:
-            "https://www.dropbox.com/scl/fi/lwj45hpngbjt9kzr7wrlu/03.jpg?rlkey=9qee5ga3odqwv80blefhmwgte&raw=1",
+            "https://www.dropbox.com/scl/fi/mpon3cyiqx9tcrhm8z2se/370_03.jpg?rlkey=9s1tluoa6811mwk5ey38t5up9&dl=0&raw=1",
           fullSrc:
             "https://www.dropbox.com/s/75tt4p8uaqvx07e/2%20ba%20full.jpg?raw=1",
         },
         {
           previewSrc:
-            "https://www.dropbox.com/scl/fi/y349vw3txdgvyu6ivk1ek/3.jpg?rlkey=yhjwx6ks8bvp7f251aemdxetm&raw=1",
+            "https://www.dropbox.com/scl/fi/jk1q3zyekiyp9d5so8nrq/370_3.jpg?rlkey=p9cymsr9fl260ofqlynw9xbtf&dl=0&raw=1",
           fullSrc:
             "https://www.dropbox.com/s/o794wha97seb778/3%20ba%20full.jpg?raw=1",
         },
         {
           previewSrc:
-            "https://www.dropbox.com/scl/fi/lhkpolaqbkhbhct5pjzf4/73537.jpg?rlkey=b9kscg82stu34nstow14n4zdv&raw=1",
+            "https://www.dropbox.com/scl/fi/rrh3xjdh05nf06viujbll/370_73537.jpg?rlkey=cj87czeqktac54yqfc0bcgz14&dl=0&raw=1",
           fullSrc:
             "https://www.dropbox.com/s/gmdw93f2wzwnz9x/4%20ba%20full.jpg?raw=1",
         },
         {
           previewSrc:
-            "https://www.dropbox.com/scl/fi/7xlf70grhffycmk9no1gv/meika-woollard-3-1-730x913.jpg?rlkey=1h5ivc8zczurwvs2jrx7f785p&raw=1",
+            "https://www.dropbox.com/scl/fi/k00xmewybqa3wfs1uv3ux/370_meika-woollard-3-1-730x913.jpg?rlkey=t3c3m193xjrhi640nnbf9u5zw&dl=0&raw=1",
           fullSrc:
             "https://www.dropbox.com/s/hko3gtyeoz4er36/5%20ba%20full.jpg?raw=1",
         },
         {
           previewSrc:
-            "https://www.dropbox.com/scl/fi/xgbyickndkiktz34p9p58/.jpg?rlkey=33dxzn2jy2qy59irc8jbwyriy&raw=1",
+            "https://www.dropbox.com/scl/fi/r05uoz81zxyrur1g15s1j/370_15156284.jpg?rlkey=fvak1uswpd7xrf3zuzfvunfl5&dl=0&raw=1",
           fullSrc:
             "https://www.dropbox.com/s/d1ygygpi0w8kx9i/6%20ba%20full.jpg?raw=1",
         },

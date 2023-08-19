@@ -15,7 +15,7 @@ const ArtStylesSizeItem = ({
     return (
         <ArtSizeItemWrapper>
             <ArtSizeItemContainer>
-                <img src={imageSrc} loading="lazy" decoding="async" alt="" />
+                <img src={imageSrc} loading="lazy" decoding="async" alt="" height="100%" />
             </ArtSizeItemContainer>
             <ArtSizesItemSize>{imageSize}</ArtSizesItemSize>
             <ArtSizesPrintText>{printDescription}</ArtSizesPrintText>
