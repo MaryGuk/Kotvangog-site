@@ -11,7 +11,7 @@ const LikenessTitle2 = () => {
             src={
               isMobile
                 ? "/images/background/примеры моб.png"
-                : "/images/background/background new.png"
+                : "/images/background/Мазок волна.png"
             }
           />
         </div>

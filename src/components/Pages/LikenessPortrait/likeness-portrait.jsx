@@ -6,12 +6,6 @@ import {
   LikenessContent,
   LikenessContent2,
   LikenessContentDescription,
-  EllipseСontainer,
-  EllipseLikeness,
-  FirstTextLikeness,
-  SecondTextLikeness,
-  ThirdTextLikeness,
-  FourthTextLikeness,
   LikenessContentPhoto,
   ButtonContainer,
   FirstButtonLikeness,
@@ -25,6 +19,15 @@ import {
   LikenessMobileTextPart2,
   LikenessMobileTextPart3,
   LikenessButton,
+  LikenessDesktopInfo,
+  LikenessDesktopInfoIcon,
+  LikenessDesktopInfoOne,
+  LikenessDesktopInfoText,
+  LikenessDesktopInfoTwo,
+  LikenessDesktopInfoThree,
+  LikenessDesktopDescription1,
+  LikenessDesktopDescription2,
+  LikenessDesktopDescription3,
 } from "./styled";
 
 import { useState } from "react";
@@ -55,41 +58,72 @@ const LikenessPortrait = () => {
         </LikenessMobileContent>
         <LikenessContent>
           <LikenessContent2>
+            <LikenessContentPhoto>
+              <img
+                src={
+                  isMobile
+                    ? "/images/в образе моб.png"
+                    : "https://www.dropbox.com/s/cho3zbrorta4r0b/%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%20%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B522.png?raw=1"
+                }
+                width="100%"
+                height="100%"
+              />
+            </LikenessContentPhoto>
             <LikenessContentDescription>
-              <EllipseСontainer>
-                <EllipseLikeness />
-                <FirstTextLikeness>
-                  Хотите иметь в своей коллекции настоящее произведение
-                  искусства,которое будет украшением вашего дома или офиса и
-                  привлекать восхищённые взгляды гостей? Тогда портрет в образе
-                  - это то,что вам нужно!
-                </FirstTextLikeness>
-              </EllipseСontainer>
-              <SecondTextLikeness>
-                Мы предлагаем уникальную возможность заказать портрет в образе,
-                созданный нашей командой талантливых художников.
-              </SecondTextLikeness>
-              <ThirdTextLikeness>
-                Мы не просто вставляем ваше лицо в картину, мы создаём
-                уникальный дизайн, сочетающий несколько фотографий в одну
-                красивую композицию и затем отрисовываем в единую картину. Мы
-                умеем передавать индивидуальность и характер каждого человека на
-                портрете, что делает его по-настоящему уникальным и
-                запоминающимся.
-              </ThirdTextLikeness>
-              <FourthTextLikeness>
-                Не упустите свой шанс стать обладетелем уникального произведения
-                искусства! Свяжитесь с нами прямо сейчас, чтобы заказать свой
-                собственный портрет в образе и превратить его в настоящую
-                гордость своего дома.
-              </FourthTextLikeness>
-              <ButtonContainer>
-                <Box>
-                  <FirstButtonLikeness onClick={() => setModalActive(true)}>
-                    {t("mainPage.button")}
-                  </FirstButtonLikeness>
-                </Box>
+              <LikenessDesktopInfo>
+                <LikenessDesktopInfoOne>
+                  <LikenessDesktopInfoIcon>
+                    <img
+                      width="20px"
+                      height="20px"
+                      src="/images/background/ellipse2.png"
+                    />
+                  </LikenessDesktopInfoIcon>
+                  <LikenessDesktopInfoText>
+                    Бесплатно подберем 7-8 грубых макетов.
+                  </LikenessDesktopInfoText>
+                </LikenessDesktopInfoOne>
 
+                <LikenessDesktopInfoTwo>
+                  <LikenessDesktopInfoIcon>
+                    <img
+                      width="20px"
+                      height="20px"
+                      src="/images/background/ellipse2.png"
+                    />
+                  </LikenessDesktopInfoIcon>
+                  <LikenessDesktopInfoText>
+                    Более 600 тематических образов.
+                  </LikenessDesktopInfoText>
+                </LikenessDesktopInfoTwo>
+
+                <LikenessDesktopInfoThree>
+                  <LikenessDesktopInfoIcon>
+                    <img
+                      width="20px"
+                      height="20px"
+                      src="/images/background/ellipse2.png"
+                    />
+                  </LikenessDesktopInfoIcon>
+                  <LikenessDesktopInfoText>
+                    Портретное сходство сохраняем на 100%
+                  </LikenessDesktopInfoText>
+                </LikenessDesktopInfoThree>
+              </LikenessDesktopInfo>
+
+              <LikenessDesktopDescription1>
+                Лучший способ удивить!
+              </LikenessDesktopDescription1>
+              <LikenessDesktopDescription2>
+                Картина - это уже эффектный подарок, а картина в образе - это
+                ещё и море улыбок, и добрая, долгая память.
+              </LikenessDesktopDescription2>
+              <LikenessDesktopDescription3>
+                Если вам хочется большего, нежели перенос фото на холст —
+                обратите внимание на эти работы.
+              </LikenessDesktopDescription3>
+
+              <ButtonContainer>
                 <Box>
                   <Link to="/likeness-portrait" className="link-likeness">
                     <SecondButtonLikeness>
@@ -98,6 +132,11 @@ const LikenessPortrait = () => {
                   </Link>
                 </Box>
 
+                <Box>
+                  <FirstButtonLikeness onClick={() => setModalActive(true)}>
+                    {t("mainPage.button")}
+                  </FirstButtonLikeness>
+                </Box>
                 <Modal active={modalActive} setActive={setModalActive}>
                   <ModalTitle>
                     Выберите мессенджер, в котором вам будет удобно вести диалог
@@ -139,17 +178,6 @@ const LikenessPortrait = () => {
                 </Modal>
               </ButtonContainer>
             </LikenessContentDescription>
-            <LikenessContentPhoto>
-              <img
-                src={
-                  isMobile
-                    ? "/images/в образе моб.png"
-                    : "https://www.dropbox.com/s/cho3zbrorta4r0b/%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%20%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B522.png?raw=1"
-                }
-                width="100%"
-                height="100%"
-              />
-            </LikenessContentPhoto>
             <LikenessButton>
               <LikenessButtonMobile />
             </LikenessButton>
