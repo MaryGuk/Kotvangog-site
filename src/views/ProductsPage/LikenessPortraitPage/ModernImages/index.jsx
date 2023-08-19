@@ -18,8 +18,6 @@ import {
   MobileLikenessThreeContainer,
   MobileLikenessTwoContainer,
 } from "./styled";
-import TitleHistory from "./title-history";
-import TitleModern from "./title-modern";
 import MobileCarousel from "../../../../components/MobileCarousel";
 import {isMobile} from "react-device-detect";
 import {Box} from "@mui/material";
@@ -27,6 +25,7 @@ import PreviewPhotoDialog from "../../../../components/PreviewPhotoDialog";
 import usePreviewPhotoDialogState from "../../../../components/PreviewPhotoDialog/usePreviewPhotoDialogState";
 import {modernImages} from "../../../../constants/galeries/modernImages";
 import {historyImages} from "../../../../constants/galeries/historyImages";
+import LikenessTitle from "./title-history";
 
 const ModernImages = () => {
   const {
@@ -41,7 +40,7 @@ const ModernImages = () => {
   return (
     <ModernImagesWrapper>
       <ModernImagesGeneral>
-        <TitleModern />
+        <LikenessTitle text="Современные образы" />
         <ModernImagesContent>
           <ModernImagesDescription>
             У нас более <b>300</b> современных образов
@@ -62,7 +61,7 @@ const ModernImages = () => {
               setFullImageSrcData({gallery: modernImages, idx: idx < 0 ? 0 : idx })
             }}/>
         }
-        <TitleHistory />
+        <LikenessTitle text="Исторические образы" />
         <ModernImagesContent>
           <ModernImagesDescription>
             У нас более <b>300</b> исторических образов

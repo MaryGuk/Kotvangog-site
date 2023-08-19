@@ -1,6 +1,6 @@
 import "./title-history.css";
 
-const TitleHistory = () => {
+const LikenessTitle = ({text}) => {
   return (
     <div className="history-text__title-wrapper">
       <div className="history-text__title-first">
@@ -10,10 +10,10 @@ const TitleHistory = () => {
             src="/images/background/Pink wave reverse.png"
           />
         </div>
-        <div className="history-text__title">Исторические образы</div>
+        <div className="history-text__title">{text}</div>
       </div>
     </div>
   );
 };
 
-export default TitleHistory;
+export default LikenessTitle;
