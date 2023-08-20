@@ -63,3 +63,10 @@ export const BeautyArtInformation = styled(Box, {
 export const ArtButtonWrapper = styled(Box)`
   padding-left: 55px;
 `;
+
+export const SimpleImageWrapper = styled(Box)`
+  max-width: 90vw;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+`;
