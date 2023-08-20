@@ -1,12 +1,14 @@
 import { Box, styled } from "@mui/material";
 
-export const ArtSizeItemWrapper = styled(Box)``;
+export const ArtSizeItemWrapper = styled(Box)`
+  height: 100%
+`;
 
 export const ArtSizeItemContainer = styled(Box)`
   display: flex;
   justify-content: center;
   height: 100%;
-  width: 100%;
+  max-height: 210px;
 `;
 
 export const ArtSizesItemSize = styled(Box)`
@@ -26,6 +28,7 @@ export const ArtSizesPrintText = styled(Box)`
   font-family: "Nunito", Sans-serif;
   font-weight: 600;
   text-align: center;
+  text-wrap: nowrap;
 
   @media only screen and (max-width: 480px) {
     font-size: 15px;
@@ -37,6 +40,8 @@ export const ArtSizesOilText = styled(Box)`
   font-family: "Nunito", Sans-serif;
   font-weight: 600;
   text-align: center;
+  text-wrap: none;
+  text-wrap: nowrap;
 
   @media only screen and (max-width: 480px) {
     font-size: 15px;

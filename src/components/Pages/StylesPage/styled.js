@@ -22,3 +22,11 @@ export const StylesPageItemPrice = styled(Box)`
   justify-content: center;
   padding-bottom: 20px;
 `;
+
+export const StylesImageWrapper = styled(Box)`
+  max-height: 450px;
+  border-radius: 10px;
+  overflow-y: hidden;
+  display: flex;
+  align-items: flex-start;
+`

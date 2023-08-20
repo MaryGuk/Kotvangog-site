@@ -121,19 +121,19 @@ const FirstPage = () => {
           >
             {[
               {
-                src: "https://www.dropbox.com/s/y84e5q7zb15f96p/111%20pr.jpg?raw=1",
+                src: "https://www.dropbox.com/scl/fi/4gro68aqd27rpezwrvh8l/1200_-1.jpg?rlkey=pmb55xt55hzo5lu9qz6vxrt03&dl=0&raw=1",
                 key: "image1",
               },
               {
-                src: "https://www.dropbox.com/s/8tddnzx8pvzc3xp/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5%20%D1%84%D0%BE%D1%82%D0%BE%202.jpg?raw=1",
+                src: "https://www.dropbox.com/scl/fi/kzx56m03325x09gmss2c3/1200_1.jpg?rlkey=3etdysce18gpwh8fjv019xj5e&dl=0&raw=1",
                 key: "image2",
               },
               {
-                src: "https://www.dropbox.com/s/qjob9pcnxgk3t3s/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5%20%D1%84%D0%BE%D1%82%D0%BE%203.jpg?raw=1",
+                src: "https://www.dropbox.com/scl/fi/blte2qu43bz0hndunkyl6/1200_digital.jpg?rlkey=ef4umg20atz9tax7rzedtahok&dl=0&raw=1",
                 key: "image3",
               },
               {
-                src: "https://www.dropbox.com/s/s93xw6avte7lufx/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5%20%D1%84%D0%BE%D1%82%D0%BE%204.jpg?raw=1",
+                src: "https://www.dropbox.com/scl/fi/2ood6qq8xqyrigrprokxd/1200_2_bak.png?rlkey=eka67a520amm338a5ki03fnu3&dl=0&raw=1",
                 key: "image4",
               },
             ].map(({src, key}) => (

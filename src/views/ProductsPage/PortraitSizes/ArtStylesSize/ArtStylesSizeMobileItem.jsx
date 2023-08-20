@@ -15,6 +15,8 @@ const ArtStylesSizeMobileItem = ({
   idx,
   lastItem,
   columnCount,
+  printPricePrefix,
+  oilPricePrefix
 }) => {
   const gridColumn = `${(idx % 2) + 1}${
     lastItem ? ` / ${columnCount + 1}` : ""
@@ -30,12 +32,12 @@ const ArtStylesSizeMobileItem = ({
       <ArtSizesItemSize gridColumn={gridColumn} gridRow={gridRowOffset + 2}>
         {imageSize}
       </ArtSizesItemSize>
-      <ArtSizesPrintText gridColumn={gridColumn} gridRow={gridRowOffset + 3}>
-        {printDescription}
-      </ArtSizesPrintText>
-      <ArtSizesOilText gridColumn={gridColumn} gridRow={gridRowOffset + 4}>
-        {oilDescription}
-      </ArtSizesOilText>
+      {printPricePrefix && <ArtSizesPrintText gridColumn={gridColumn} gridRow={gridRowOffset + 3}>
+        {`${printPricePrefix} ${printDescription} руб.`}
+      </ArtSizesPrintText>}
+      {oilPricePrefix && <ArtSizesOilText gridColumn={gridColumn} gridRow={gridRowOffset + 4}>
+        {`${oilPricePrefix} ${oilDescription} руб.`}
+      </ArtSizesOilText>}
     </Fragment>
   );
 };

@@ -14,71 +14,71 @@ import ArtStylesSizeDesktopItem from "./ArtStylesSizeDesktopItem";
 import PortraitSizesTitle from "./PortraitSizesTitle/PortraitSizesTitle";
 import { isMobile } from "react-device-detect";
 
-const ArtStylesSize = () => {
+const ArtStylesSize = ({ title, printPricePrefix, oilPricePrefix, children, alternateOilPrices, alternatePrintPrices }) => {
   return (
     <ArtStylesSizeWrapper>
       <ArtStylesSizeGeneral>
         <PortraitSizesTitle />
-        <ArtStylesSizeDescription>
+        {children ?? <ArtStylesSizeDescription>
           <ArtSizeTextOneContainer>
-            <ArtSizeTextOne>Печать на холсте и картина маслом</ArtSizeTextOne>
+            <ArtSizeTextOne>{title}</ArtSizeTextOne>
             <ArtSizeTextOnePart2> (100% ручная работа) </ArtSizeTextOnePart2>
           </ArtSizeTextOneContainer>
           <ArtSizeTextTwoContainer>
             <ArtSizeTextTwo>
               Возможно изготовление любых размеров.
               <span
-                style={{
-                  fontSize: "12px",
-                  color: "#414141",
-                }}
+                  style={{
+                    fontSize: "12px",
+                    color: "#414141",
+                  }}
               >
                 Цены указаны без работы дизайнера
               </span>
             </ArtSizeTextTwo>
           </ArtSizeTextTwoContainer>
-        </ArtStylesSizeDescription>
+        </ArtStylesSizeDescription>}
 
         <ArtSizeContainer>
           {[
             {
               imageSrc:
-                "https://www.dropbox.com/scl/fi/66emeo7tqa3w78afqqgyj/g1.jpg?rlkey=57ovsy7x3l09pegdizqej5uxi&raw=1",
+                "https://www.dropbox.com/scl/fi/jsdbj9x2epkkw8mnfgkg9/g1.jpg?rlkey=le0m3lq4z422lup99vpf41cig&dl=0&raw=1",
               imageSize: "30×40",
-              printDescription: "Печать от 1190 руб.",
-              oilDescription: "Маслом от 5600 руб.",
+              printPrice: 1190,
+              oilPrice: 5600,
             },
             {
               imageSrc:
-                "https://www.dropbox.com/scl/fi/rg2fhz21m8rnv2cu45esy/g2.jpg?rlkey=fs4vdqj4rjb0oan8yqjl88ynt&raw=1",
+                "https://www.dropbox.com/scl/fi/acbrb26b7l31gf8emb8lr/g2.jpg?rlkey=eiyplclufbidbzuyus6nkwa09&dl=0&raw=1",
               imageSize: "40×60",
-              printDescription: "Печать от 1950 руб.",
-              oilDescription: "Маслом от 8800 руб.",
+              printPrice: 1950,
+              oilPrice: 8800,
             },
             {
               imageSrc:
-                "https://www.dropbox.com/scl/fi/hqqv1wyux6tqd87y7z6ab/g3-1.jpg?rlkey=4i7prdgtqlt9aq9qhtmj6yfvi&raw=1",
+                "https://www.dropbox.com/scl/fi/jpvozs7xwfxu3lvcz6tgi/g3-1.jpg?rlkey=a0znwxizwsv0pe3w5kowmfc4b&dl=0&raw=1",
               imageSize: "50×70",
-              printDescription: "Печать от 2700 руб.",
-              oilDescription: "Маслом от 11900 руб.",
+              printPrice: 2700,
+              oilPrice: 11900,
             },
             {
               imageSrc:
-                "https://www.dropbox.com/scl/fi/175cgekuvoog3oxe5jov6/g4.jpg?rlkey=6wj8yjmwg5y839wmh0xv3mwwl&raw=1",
+                "https://www.dropbox.com/scl/fi/n8zekpiy5239nduwlw5dh/g4.jpg?rlkey=yfk7ygmo1zotzifgwqwwbtsc7&dl=0&raw=1",
               imageSize: "60×80",
-              printDescription: "Печать от 3450 руб.",
-              oilDescription: "Маслом от 13700 руб.",
+              printPrice: 3450,
+              oilPrice: 13700,
             },
             {
               imageSrc:
-                "https://www.dropbox.com/scl/fi/wpwuzaj8hvdnoy0m6wbpp/g5.jpg?rlkey=tef9ai99q9yv5kjkjejs849jl&raw=1",
+                "https://www.dropbox.com/scl/fi/v3igod6v7cctg2idj0ssn/g5.jpg?rlkey=9ffub48amhjfanhwb0cexb4nz&dl=0&raw=1",
               imageSize: "70×90",
-              printDescription: "Печать от 5200 руб.",
-              oilDescription: "Маслом от 19500 руб.",
+              printPrice: 5200,
+              oilPrice: 19500,
             },
           ].map(
             (
-              { imageSrc, imageSize, printDescription, oilDescription },
+              { imageSrc, imageSize, printPrice, oilPrice },
               idx,
               arr
             ) =>
@@ -87,19 +87,23 @@ const ArtStylesSize = () => {
                   key={idx}
                   imageSrc={imageSrc}
                   imageSize={imageSize}
-                  printDescription={printDescription}
-                  oilDescription={oilDescription}
+                  printDescription={alternatePrintPrices?.[idx] ?? printPrice}
+                  oilDescription={alternateOilPrices?.[idx] ?? oilPrice}
                   idx={idx}
                   lastItem={idx === arr.length - 1}
                   columnCount={2}
+                  printPricePrefix={printPricePrefix}
+                  oilPricePrefix={oilPricePrefix}
                 />
               ) : (
                 <ArtStylesSizeDesktopItem
                   key={idx}
                   imageSrc={imageSrc}
                   imageSize={imageSize}
-                  printDescription={printDescription}
-                  oilDescription={oilDescription}
+                  printDescription={alternatePrintPrices?.[idx] ?? printPrice}
+                  oilDescription={alternateOilPrices?.[idx] ?? oilPrice}
+                  printPricePrefix={printPricePrefix}
+                  oilPricePrefix={oilPricePrefix}
                 />
               )
           )}
