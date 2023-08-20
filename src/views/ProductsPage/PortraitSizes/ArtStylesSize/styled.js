@@ -99,4 +99,8 @@ export const ArtSizeContainer = styled(Box)`
     width: 90%;
     margin: 0 auto;
   }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 395px) and (orientation: portrait) {
+    grid-column-gap: 1%;
+  }
 `;
