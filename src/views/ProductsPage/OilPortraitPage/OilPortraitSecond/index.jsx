@@ -62,7 +62,7 @@ const OilPortraitSecond = () => {
                 <img
                   width="auto"
                   height="326px"
-                  src="https://www.dropbox.com/s/45jazoryhehrv7c/3%20%D1%84%D0%BE%D1%82%D0%BE.jpg?raw=1"
+                  src="https://www.dropbox.com/scl/fi/a9xzb8cfb9d6qgr72he2b/615_418941561.png?rlkey=4t27f7j65kc0a8uqyrs59kyq1&dl=0&raw=1"
                   loading="lazy"
                   decoding="async"
                   alt=""

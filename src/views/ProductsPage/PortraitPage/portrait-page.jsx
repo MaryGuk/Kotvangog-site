@@ -1,7 +1,7 @@
 import ProductPageItemInfo from "./portrait-page-item";
 import "./portrait-page.css";
 import BeforeAfterImage from "../../../components/BeforeAfterImage";
-import {ProductPageImageWrapper, ProductPageItemMainInfoWrapper} from "./styled";
+import {ProductPageImageWrapper, ProductPageItemMainInfoWrapper, SimpleImageWrapper} from "./styled";
 import ImageCorousel from "../../../components/ImageCarousel";
 import { isMobile } from "react-device-detect";
 import ArtButton from "../../../components/Button/ArtButton";
@@ -32,12 +32,14 @@ const ProductPageItem = ({
                 srcBefore={srcBefore}
               />
             ) : (
-              <img
-                height="500px"
-                loading="lazy"
-                decoding="async"
-                src={srcAfter}
-              />
+              <SimpleImageWrapper>
+                <img
+                    height="500px"
+                    loading="lazy"
+                    decoding="async"
+                    src={srcAfter}
+                />
+              </SimpleImageWrapper>
             )}
           </ProductPageImageWrapper>
           <ProductPageItemInfo
