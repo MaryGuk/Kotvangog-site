@@ -24,7 +24,7 @@ const ExamplesItem = ({ previewSrc, fullSrc, setFullImage, onImageLoad }) => {
           style={style}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          width="100%"
+          height="300px"
           loading="lazy"
           decoding="async"
           onLoad={() => onImageLoad()}
