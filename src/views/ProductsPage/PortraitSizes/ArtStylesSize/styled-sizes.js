@@ -28,6 +28,7 @@ export const ArtSizesPrintText = styled(Box)`
   font-family: "Nunito", Sans-serif;
   font-weight: 600;
   text-align: center;
+  text-wrap: nowrap;
 
   @media only screen and (max-width: 480px) {
     font-size: 15px;
@@ -39,6 +40,8 @@ export const ArtSizesOilText = styled(Box)`
   font-family: "Nunito", Sans-serif;
   font-weight: 600;
   text-align: center;
+  text-wrap: none;
+  text-wrap: nowrap;
 
   @media only screen and (max-width: 480px) {
     font-size: 15px;

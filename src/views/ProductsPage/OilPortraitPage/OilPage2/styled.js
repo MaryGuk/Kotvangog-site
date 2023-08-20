@@ -53,11 +53,13 @@ export const OilContent22 = styled(Box)`
 export const OilContentPhoto2 = styled(Box)`
   margin-top: -20px;
   margin-bottom: -3px;
+  height: 700px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     width: 280px;
     align-items: center;
     margin-top: 10px;
+    height: initial;
   }
 `;
 

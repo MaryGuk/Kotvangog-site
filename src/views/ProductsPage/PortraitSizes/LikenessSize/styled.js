@@ -91,7 +91,7 @@ export const LikenessSizeTextTwo = styled(Box)`
 export const LikenessSizeTextTwoMoreContainer = styled(Box)`
   display: flex;
   justify-content: center;
-  margin-bottom: -30px;
+  margin-bottom: 10px;
 `;
 export const LikenessSizeTextTwoMore = styled(Box)`
   font-size: 16px;
@@ -126,4 +126,8 @@ export const LikenessSizeContainer = styled(Box)`
     justify-content: center;
     width: 90%;
   }
+`;
+
+export const LikenessSizeDescriptionWrapper = styled(Box)`
+
 `;

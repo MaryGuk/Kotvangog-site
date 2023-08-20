@@ -22,7 +22,7 @@ const MainPage = () => {
       <LikenessPortrait />
       <ProcessPage />
       {isMobile ? <ProcessMaster /> : null}
-      <ArtStylesSize />
+      <ArtStylesSize title="Печать на холсте и картина маслом" printPricePrefix="Печать от" oilPricePrefix="Маслом от" />
       {isMobile ? <FooterMobile /> : <Footer />}
       {isMobile ? <ContactsSticky /> : null}
     </MainPageWrapper>

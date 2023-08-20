@@ -22,4 +22,5 @@ export const ModernImageItemWrapper = styled(Box)`
   width: 100%;
   height: 100%;
   overflow: hidden;
+  max-height: 320px;
 `;

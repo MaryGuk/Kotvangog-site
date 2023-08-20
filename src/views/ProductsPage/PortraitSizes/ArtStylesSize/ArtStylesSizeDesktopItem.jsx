@@ -11,6 +11,8 @@ const ArtStylesSizeItem = ({
    imageSize,
    printDescription,
    oilDescription,
+   printPricePrefix,
+   oilPricePrefix
 }) => {
     return (
         <ArtSizeItemWrapper>
@@ -18,8 +20,8 @@ const ArtStylesSizeItem = ({
                 <img src={imageSrc} loading="lazy" decoding="async" alt="" height="100%" />
             </ArtSizeItemContainer>
             <ArtSizesItemSize>{imageSize}</ArtSizesItemSize>
-            <ArtSizesPrintText>{printDescription}</ArtSizesPrintText>
-            <ArtSizesOilText>{oilDescription}</ArtSizesOilText>
+            {printPricePrefix && <ArtSizesPrintText>{`${printPricePrefix} ${printDescription} руб.`}</ArtSizesPrintText>}
+            {oilPricePrefix && <ArtSizesOilText>{`${oilPricePrefix} ${oilDescription} руб.`}</ArtSizesOilText>}
         </ArtSizeItemWrapper>
     );
 };
