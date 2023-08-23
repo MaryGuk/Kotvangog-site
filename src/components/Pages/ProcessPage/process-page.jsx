@@ -62,7 +62,7 @@ const ProcessPage = () => {
               <MasterInfoWrapper>
                 <img
                   className="process-ava"
-                  src="https://www.dropbox.com/scl/fi/v7xee084me4e0zmb7rxq2/painter.png?rlkey=ubwp34is5yfl3aki9ocrztunm&dl=0&raw=1"
+                  src="https://www.dropbox.com/scl/fi/0e6ki42jrovkd8pyh8596/1100_.png?rlkey=06ccss6335lv26nd5psf0yog3&dl=0&raw=1"
                   loading="lazy"
                   decoding="async"
                   alt="Любовь Ненадовец"

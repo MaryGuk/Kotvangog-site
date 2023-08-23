@@ -15,7 +15,7 @@ const ProcessMaster = () => {
         <MasterInfoWrapper>
           <img
             className="process-ava"
-            src="https://www.dropbox.com/s/6wfd8c9cp39z7l3/Master%20progr.jpg?raw=1"
+            src="https://www.dropbox.com/scl/fi/27c826d7m8vuw7zygbth2/900_.png?rlkey=2yutlcjoozkt3u7kfl7vmf9nv&dl=0&raw=1"
             loading="lazy"
             decoding="async"
             alt="Любовь Ненадовец"
