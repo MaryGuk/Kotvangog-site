@@ -46,7 +46,7 @@ const stylesData = [
   },
   {
     nameKey: "stylesPage.styles_name6",
-    imgSrc: "https://www.dropbox.com/scl/fi/oyxwpswtr9190qhl105uh/900_6.jpg?rlkey=gt7f1cmau8mp0cep9l1m6uh7b&dl=0&raw=1",
+    imgSrc: "https://www.dropbox.com/scl/fi/3khx20ncl39798ngzaf2b/900_.jpg?rlkey=0xxerqnlxn4vhvnvzp5smvyed&dl=0&raw=1",
     enPrice: "From 24$",
     ruPrice: "От 1790 руб.",
     linkTo: "/products#pencil-art",
