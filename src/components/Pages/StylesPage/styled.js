@@ -29,4 +29,8 @@ export const StylesImageWrapper = styled(Box)`
   overflow-y: hidden;
   display: flex;
   align-items: flex-start;
+
+  @media only screen and (min-device-width: 600px) and (max-device-width: 1625px) {
+    max-height: 29vw;
+  }
 `
