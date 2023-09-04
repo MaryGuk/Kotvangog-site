@@ -10,7 +10,7 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .styles-page {
-    padding: 65px 0;
+    padding: 15px 0 0;
     box-sizing: initial;
     background-image: url("/public/images/background/Слой7.png");
     background-repeat: no-repeat;

@@ -1,6 +1,6 @@
 import "./oil.css";
 
-const OilTitle = () => {
+const OilTitle = ({ titleText }) => {
   return (
     <div className="oil__title-wrapper">
       <div className="oil__title-first">
@@ -10,7 +10,7 @@ const OilTitle = () => {
             src="/images/background/background new.png"
           />
         </div>
-        <div className="oil__title">Классический портрет маслом</div>
+        <div className="oil__title">{titleText}</div>
       </div>
     </div>
   );
