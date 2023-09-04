@@ -18,9 +18,7 @@ import {
   OilMobileText,
   OilDesktopInfo,
   OilDesktopInfoIcon,
-  OilDesktopInfoOne,
   OilDesktopInfoText,
-  OilDesktopInfoTwo,
   OilDesktopInfoThree,
   OilDesktopDescription1,
   OilDesktopDescription2,
@@ -36,28 +34,38 @@ import "./oil-portarait.css";
 import { isMobile } from "react-device-detect";
 import LikenessButtonMobile from "../../Button/LikenessButton";
 
-const OilPortrait = () => {
+const OilPortrait = ({
+  title,
+  imageMobile,
+  imageDesktop,
+  advantages,
+  descriptionMobile,
+  descriptionDesktop,
+  linkToPage,
+  customMobileDescription,
+  customMobileTitle,
+}) => {
   const { t } = useTranslation();
   const [modalActive, setModalActive] = useState(false);
   return (
     <OilPortraitWrapper id="/oil-portrait">
       <OilPortraitGeneral>
-        <OilTitle />
-        <OilMobileContent>
-          <OilMobileText>
-            Роспись опытным художником - это неповторимые произведения
-            искусства, которые будут радовать вас и ваших близких на протяжении
-            многих лет.
-          </OilMobileText>
-        </OilMobileContent>
+        {customMobileTitle || (<OilTitle titleText={title}/>)}
+        {customMobileDescription ||
+          (<OilMobileContent>
+            <OilMobileText>
+              {descriptionMobile}
+            </OilMobileText>
+          </OilMobileContent>
+        )}
         <OilContent>
           <OilContent2>
             <OilContentPhoto>
               <img
                 src={
                   isMobile
-                    ? "https://www.dropbox.com/s/6lkuknbtufgnex2/oil%20mobile2.png?raw=1"
-                    : "https://www.dropbox.com/scl/fi/iq5j40wn1qfxabp89ma0o/1400_oil-classic.png?rlkey=gafvctnfhn3w6e1t6tzg2ydzc&dl=0&raw=1"
+                    ? imageMobile
+                    : imageDesktop
                 }
                 height="100%"
               />
@@ -67,61 +75,39 @@ const OilPortrait = () => {
             </OilButton>
             <OilContentDescription>
               <OilDesktopInfo>
-                <OilDesktopInfoOne>
-                  <OilDesktopInfoIcon>
-                    <img
-                      width="20px"
-                      height="20px"
-                      src="/images/background/ellipse2.png"
-                    />
-                  </OilDesktopInfoIcon>
-                  <OilDesktopInfoText>
-                    Полностью ручная роспись маслом
-                  </OilDesktopInfoText>
-                </OilDesktopInfoOne>
-
-                <OilDesktopInfoTwo>
-                  <OilDesktopInfoIcon>
-                    <img
-                      width="20px"
-                      height="20px"
-                      src="/images/background/ellipse2.png"
-                    />
-                  </OilDesktopInfoIcon>
-                  <OilDesktopInfoText>
-                    Художники с опытом рисования более 10 лет
-                  </OilDesktopInfoText>
-                </OilDesktopInfoTwo>
-
-                <OilDesktopInfoThree>
-                  <OilDesktopInfoIcon>
-                    <img
-                      width="20px"
-                      height="20px"
-                      src="/images/background/ellipse2.png"
-                    />
-                  </OilDesktopInfoIcon>
-                  <OilDesktopInfoText>
-                    Портретное сходство сохраняем на 100%
-                  </OilDesktopInfoText>
-                </OilDesktopInfoThree>
+                {advantages.map((advantage, idx, arr) => (
+                    <OilDesktopInfoThree key={advantage} paddingBottom={idx === arr - 1 ? "0px" : "20px"}>
+                      <OilDesktopInfoIcon>
+                        <img
+                            width="20px"
+                            height="20px"
+                            src="/images/background/ellipse2.png"
+                        />
+                      </OilDesktopInfoIcon>
+                      <OilDesktopInfoText>
+                        {advantage}
+                      </OilDesktopInfoText>
+                    </OilDesktopInfoThree>
+                ))}
               </OilDesktopInfo>
-              <OilDesktopDescription1>
-                Мы работаем с фотографиями любого формата и стиля, и готовы
-                предоставить вам консультацию по созданию лучшего портрета.
-              </OilDesktopDescription1>
-              <OilDesktopDescription2>
-                Не упустите возможность сохранить важные моменты вашей жизни в
-                искусстве.
-              </OilDesktopDescription2>
-              <OilDesktopDescription3>
-                Обратитесь к нам сегодня, и мы с радостью поможем вам создать
-                портреты, которые вы будете любить и ценить навсегда!
-              </OilDesktopDescription3>
-
+              {descriptionDesktop[0] && (
+                  <OilDesktopDescription1 bold={descriptionDesktop[0].bold}>
+                    {descriptionDesktop[0].text}
+                  </OilDesktopDescription1>
+              )}
+              {descriptionDesktop[1] && (
+                  <OilDesktopDescription2 bold={descriptionDesktop[1].bold}>
+                    {descriptionDesktop[1].text}
+                  </OilDesktopDescription2>
+              )}
+              {descriptionDesktop[2] && (
+                  <OilDesktopDescription3 bold={descriptionDesktop[2].bold}>
+                    {descriptionDesktop[2].text}
+                  </OilDesktopDescription3>
+              )}
               <ButtonContainer>
                 <Box>
-                  <Link to="/oil-portrait" className="link-oil">
+                  <Link to={linkToPage} className="link-oil">
                     <FirstButton>Смотреть все работы</FirstButton>
                   </Link>
                 </Box>

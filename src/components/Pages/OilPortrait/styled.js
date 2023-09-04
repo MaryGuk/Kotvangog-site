@@ -10,7 +10,6 @@ export const OilPortraitWrapper = styled(Box)`
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     background: #e0e0e0;
-    height: 760px;
   }
 `;
 
@@ -55,15 +54,22 @@ export const OilContentPhoto = styled(Box)`
     width: 280px;
     align-items: center;
     margin-top: 9px;
+    display: flex;
+    justify-content: center;
   }
 `;
 
 export const OilContentDescription = styled(Box)`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-end;
   width: 100%;
+  padding-left: 10%;
+  
+  @media (max-width: 1300px) {
+    padding-left: 5%;
+  }
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: none;
@@ -72,7 +78,11 @@ export const OilContentDescription = styled(Box)`
 
 export const ButtonContainer = styled(Box)`
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 `;
+
 export const FirstButton = styled(Box)`
   font-size: 17px;
   font-family: "Comfortaa", cursive;
@@ -84,13 +94,13 @@ export const FirstButton = styled(Box)`
   padding: 17px;
   max-width: 320px;
   box-shadow: 3px 3px 0 1px #9e9e9e;
-  margin: 0 20px;
+  margin: 10px 20px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     font-size: 12px;
     max-width: 220px;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 0 20px 20px 20px;
     padding: 7px;
   }
 `;
@@ -153,7 +163,7 @@ export const OilButton = styled(Box)`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 15px;
+    margin: 15px 0 18px;
   }
 `;
 export const OilMobileContent = styled(Box)`
@@ -234,7 +244,7 @@ export const OilDesktopDescription1 = styled(Box)`
   width: 400px;
   align-items: center;
   font-family: "Century Gothic";
-  font-weight: normal;
+  font-weight: ${({ bold }) => bold ? "bold" : "normal"};
   padding-top: 95px;
   font-size: 16px;
   line-height: 1.5;
@@ -245,7 +255,7 @@ export const OilDesktopDescription2 = styled(Box)`
   width: 400px;
   align-items: center;
   font-family: "Century Gothic";
-  font-weight: bold;
+  font-weight: ${({ bold }) => bold ? "bold" : "normal"};
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 16px;
@@ -257,7 +267,7 @@ export const OilDesktopDescription3 = styled(Box)`
   width: 400px;
   align-items: center;
   font-family: "Century Gothic";
-  font-weight: normal;
+  font-weight: ${({ bold }) => bold ? "bold" : "normal"};
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 80px;
