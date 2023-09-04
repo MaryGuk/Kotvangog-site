@@ -60,7 +60,7 @@ const stylesData = [
   },
   {
     nameKey: "stylesPage.styles_name8",
-    imgSrc: "https://www.dropbox.com/scl/fi/8cbsu4o9egs50g545jkw3/900_8.jpg?rlkey=hs86g7frpk76yijhk7q1s067j&dl=0&raw=1",
+    imgSrc: "https://www.dropbox.com/scl/fi/ogebbva9f978gvcizjvga/900_8_cutted.jpg?rlkey=3ckdlb3ljlmmkrvdf9r9q5yif&dl=0&raw=1",
     enPrice: "From 38$",
     ruPrice: "От 2900 руб.",
     linkTo: "/products#mastihin-art",

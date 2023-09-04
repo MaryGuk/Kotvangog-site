@@ -23,6 +23,7 @@ export const LikenessPortraitGeneral2 = styled(Box)`
 export const LikenessContent2 = styled(Box)`
   display: flex;
   justify-content: center;
+  padding: 0 0 22px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     padding: 0 20px;
