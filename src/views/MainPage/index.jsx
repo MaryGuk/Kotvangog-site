@@ -16,11 +16,18 @@ import {
     LikenessMobileTextPart2, LikenessMobileTextPart3
 } from "../../components/Pages/LikenessPortrait/styled";
 import LikenessTitle from "../../components/Pages/LikenessPortrait/LikenessTitle/LikenessTitle";
+import HeaderContacts from "../../components/Autumn2023Update/HeaderContacts";
+import {UnderHeaderBlock} from "../../components/Autumn2023Update/styled";
 
 const MainPage = () => {
   return (
     <MainPageWrapper>
-      <FirstPage />
+        {isMobile ? (
+            <>
+                <UnderHeaderBlock />
+                <HeaderContacts />
+            </>
+        ): <FirstPage />}
       <AdvantagesPage />
       <OilPortrait
         title={"Классический портрет маслом"}
