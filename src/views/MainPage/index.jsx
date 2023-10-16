@@ -16,12 +16,25 @@ import {
     LikenessMobileTextPart2, LikenessMobileTextPart3
 } from "../../components/Pages/LikenessPortrait/styled";
 import LikenessTitle from "../../components/Pages/LikenessPortrait/LikenessTitle/LikenessTitle";
+import HeaderContacts from "../../components/Autumn2023Update/HeaderContacts";
+import {UnderHeaderBlock} from "../../components/Autumn2023Update/styled";
+import MainSlide from "../../components/Autumn2023Update/MainSlide";
 
 const MainPage = () => {
   return (
     <MainPageWrapper>
-      <FirstPage />
-      <AdvantagesPage />
+        {isMobile ? (
+            <>
+                <UnderHeaderBlock />
+                <HeaderContacts />
+                <MainSlide />
+            </>
+        ): (
+            <>
+                <FirstPage />
+                <AdvantagesPage />
+            </>
+        )}
       <OilPortrait
         title={"Классический портрет маслом"}
         imageMobile={"https://www.dropbox.com/s/6lkuknbtufgnex2/oil%20mobile2.png?raw=1"}
