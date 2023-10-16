@@ -16,6 +16,7 @@ import BurgerMenu from "./components/Pages/NavbarMobile/burger-menu";
 import ScrollToTop from "./components/ScrollToTop";
 import { ThemeProvider } from '@mui/material/styles';
 import theme from "./theme/theme";
+import ConsultationDialogProvider from "./components/Autumn2023Update/ConsultationDialogProvider/provider";
 
 const App = () => {
   return (
@@ -33,24 +34,26 @@ const App = () => {
           </Box>
         }
       >
-        <BrowserRouter>
-          <div className="app-wrapper">
-            <ScrollToTop />
-            {isMobile ? <BurgerMenu /> : <Navbar />}
-            <Routes>
-              <Route path="/home" element={<MainPage />} />
-              <Route path="/products" element={<ProductsPage />} />
-              <Route path="/oil-portrait" element={<OilPortraitPage />} />
-              <Route
-                path="/likeness-portrait"
-                element={<LikenessPortraitPage />}
-              />
-              <Route path="/art-styles" element={<ProductsPage />} />
-              <Route path="/reviews" element={<ReviewsPage />} />
-              <Route path="*" element={<Navigate to="/home" />} />
-            </Routes>
-          </div>
-        </BrowserRouter>
+        <ConsultationDialogProvider>
+          <BrowserRouter>
+            <div className="app-wrapper">
+              <ScrollToTop />
+              {isMobile ? <BurgerMenu /> : <Navbar />}
+              <Routes>
+                <Route path="/home" element={<MainPage />} />
+                <Route path="/products" element={<ProductsPage />} />
+                <Route path="/oil-portrait" element={<OilPortraitPage />} />
+                <Route
+                  path="/likeness-portrait"
+                  element={<LikenessPortraitPage />}
+                />
+                <Route path="/art-styles" element={<ProductsPage />} />
+                <Route path="/reviews" element={<ReviewsPage />} />
+                <Route path="*" element={<Navigate to="/home" />} />
+              </Routes>
+            </div>
+          </BrowserRouter>
+        </ConsultationDialogProvider>
       </Suspense>
     </ThemeProvider>
   );
