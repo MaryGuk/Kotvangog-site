@@ -29,8 +29,12 @@ const MainPage = () => {
                 <HeaderContacts />
                 <MainSlide />
             </>
-        ): <FirstPage />}
-      <AdvantagesPage />
+        ): (
+            <>
+                <FirstPage />
+                <AdvantagesPage />
+            </>
+        )}
       <OilPortrait
         title={"Классический портрет маслом"}
         imageMobile={"https://www.dropbox.com/s/6lkuknbtufgnex2/oil%20mobile2.png?raw=1"}
