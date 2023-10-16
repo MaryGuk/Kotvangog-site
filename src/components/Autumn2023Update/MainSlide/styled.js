@@ -5,16 +5,18 @@ export const MainSlideWrapper = styled(Box)`
   justify-content: space-between;
   flex-direction: column;
   background-color: #595037;
-  padding: 20px 7px 14px;
-  height: 320px;
+  padding: 0 7px 16px;
+  height: 120vw;
   width: 100%;
+  box-sizing: border-box;
 `;
 
 export const MainSlideTitleWrapper = styled(Box)`
   display: flex;
   flex-direction: column;
-  padding: 0 14px 0;
+  padding: 20px 14px 0;
   color: #ffffff;
+  z-index: 100;
 `;
 
 export const MainSlideTitleTextWrapper = styled(Box)`
@@ -36,6 +38,7 @@ export const MainSlideTitleDescriptionWrapper = styled(Box)`
 export const AdvantagesWrapper = styled(Box)`
   display: flex;
   flex-direction: column;
+  z-index: 100;
 `;
 
 export const AdvantageItemWrapper = styled(Box)`
@@ -50,8 +53,7 @@ export const AdvantageItemWrapper = styled(Box)`
 
 export const AdvantageItemDescriptionWrapper = styled(Box)`
   display: flex;
-  background-color: #ffffff;
-  opacity: 0.4;
+  background-color: #ffffff66;
   border-radius: 10px;
   font-family: "Century Gothic", "Arial", sans-serif;
   font-size: 9px;
@@ -61,3 +63,38 @@ export const AdvantageItemDescriptionWrapper = styled(Box)`
   min-width: 150px;
 `;
 
+export const OfferWrapper = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+`;
+
+export const OfferDescriptionWrapper = styled(Box)`
+  display: flex;
+  color: white;
+  padding: 0 10px 10px;
+  font-size: 10px;
+`;
+
+export const OfferButtonItem = styled(Box)`
+  letter-spacing: 1px;
+  background-color: #f7b801;
+  color: black;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Century Gothic", sans-serif;
+  font-weight: bold;
+  padding: 6px 25px;
+  font-size: 7px;
+  box-shadow: 3px 4px 0 #717171;
+  border-radius: 25px;
+  max-width: 170px;
+  text-align: center;
+`;
+
+export const MainSlideImageWrapper = styled(Box)`
+  display: flex;
+  height: inherit;
+  position: absolute;
+  right: -20px;
+`;

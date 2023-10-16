@@ -5,10 +5,14 @@ import {
     MainSlideWrapper
 } from "./styled";
 import Advantages from "./Advantages";
+import Offer from "./offer";
+import MainSlideImage from "./MainSlideImage";
+
 
 const MainSlide = () => {
     return (
         <MainSlideWrapper>
+            <MainSlideImage />
             <MainSlideTitleWrapper>
                 <MainSlideTitleTextWrapper>
                     Портреты маслом по фото на заказ
@@ -18,6 +22,7 @@ const MainSlide = () => {
                 </MainSlideTitleDescriptionWrapper>
             </MainSlideTitleWrapper>
             <Advantages />
+            <Offer />
         </MainSlideWrapper>
     );
 };

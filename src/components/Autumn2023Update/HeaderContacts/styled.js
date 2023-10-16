@@ -3,12 +3,16 @@ import { styled, Box } from "@mui/material";
 export const HeaderContactsWrapper = styled(Box)`
   display: flex;
   justify-content: space-between;
+  padding: 0 0 5px;
+  
+  & > div {
+    padding: 0 10px;
+  }
 `;
 
 export const HeaderContactsWorkTimeWrapper = styled(Box)`
   display: flex;
   flex-direction: column;
-  padding: 0 10px 10px;
   font-family: "Century Gothic", "sans-serif";
   font-size: 12px;
   min-width: 40%;
@@ -17,7 +21,6 @@ export const HeaderContactsWorkTimeWrapper = styled(Box)`
 export const HeaderContactsMessengersWrapper = styled(Box)`
   display: flex;
   align-items: center;
-  padding: 0 10px 10px;
   justify-content: flex-end;
 `;
 
