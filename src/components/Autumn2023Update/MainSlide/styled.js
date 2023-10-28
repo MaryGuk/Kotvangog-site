@@ -5,7 +5,7 @@ export const MainSlideWrapper = styled(Box)`
   justify-content: space-between;
   flex-direction: column;
   background-color: #595037;
-  padding: 0 7px 16px;
+  padding: 0 0 16px;
   height: 120vw;
   width: 100%;
   box-sizing: border-box;
@@ -94,7 +94,20 @@ export const OfferButtonItem = styled(Box)`
 
 export const MainSlideImageWrapper = styled(Box)`
   display: flex;
-  height: inherit;
+  height: 120vw;
+  right: 0;
+`;
+
+export const MainSlideImageCarouselWrapper = styled(Box)`
+  display: flex;
+  justify-content: center;
   position: absolute;
-  right: -20px;
+  width: 100vw;
+  height: 120vw;
+`;
+
+
+export const BestGiftHeaderWrapper = styled(Box)`
+  display: flex;
+  padding: 10px 0;
 `;

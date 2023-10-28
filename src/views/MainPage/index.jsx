@@ -19,6 +19,7 @@ import LikenessTitle from "../../components/Pages/LikenessPortrait/LikenessTitle
 import HeaderContacts from "../../components/Autumn2023Update/HeaderContacts";
 import {UnderHeaderBlock} from "../../components/Autumn2023Update/styled";
 import MainSlide from "../../components/Autumn2023Update/MainSlide";
+import GiftAdvertisementSlide from "../../components/Autumn2023Update/GiftAdvertisementSlide";
 
 const MainPage = () => {
   return (
@@ -28,6 +29,7 @@ const MainPage = () => {
                 <UnderHeaderBlock />
                 <HeaderContacts />
                 <MainSlide />
+                <GiftAdvertisementSlide />
             </>
         ): (
             <>

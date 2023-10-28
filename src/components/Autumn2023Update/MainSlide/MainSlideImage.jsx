@@ -1,9 +1,30 @@
-import {MainSlideImageWrapper} from "./styled";
+import {MainSlideImageWrapper, MainSlideImageCarouselWrapper} from "./styled";
+import {mainSlideFramesGallery} from "../../../constants/galeries/mainPageImages";
+import Carousel from "react-material-ui-carousel";
+import {Box} from "@mui/system";
 
 const MainSlideImage = () => {
-    return <MainSlideImageWrapper>
-        <img src={"https://www.dropbox.com/scl/fi/vti8x3kbvjh994gk0i6lc/750_3.png?rlkey=0ta1z5qn4mincgj9m803n83wg&dl=0&raw=1"} alt={"frame"}/>
-    </MainSlideImageWrapper>
+    return <MainSlideImageCarouselWrapper>
+      <Box height="120vw" width="100vw">
+        <Carousel
+          autoPlay
+          indicators={false}
+          swipe
+          cycleNavigation
+          navButtonsAlwaysVisible
+          fullHeightHover
+          animation="slide"
+        >
+          {
+            mainSlideFramesGallery.map((src, idx) =>
+              (<MainSlideImageWrapper key={idx}>
+                <img src={src} alt={"frame"}/>
+              </MainSlideImageWrapper>)
+            )
+          }
+        </Carousel>
+        </Box>
+    </MainSlideImageCarouselWrapper>
 }
 
 export default MainSlideImage;
