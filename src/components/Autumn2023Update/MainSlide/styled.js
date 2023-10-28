@@ -2,13 +2,21 @@ import { styled, Box } from "@mui/material";
 
 export const MainSlideWrapper = styled(Box)`
   display: flex;
+  background-color: #595037;
+  height: 120vw;
+  width: 100%;
+  box-sizing: border-box;
+`;
+
+export const MainSlideContentWrapper = styled(Box)`
+  display: flex;
   justify-content: space-between;
   flex-direction: column;
-  background-color: #595037;
   padding: 0 7px 16px;
   height: 120vw;
   width: 100%;
   box-sizing: border-box;
+  position: absolute;
 `;
 
 export const MainSlideTitleWrapper = styled(Box)`
@@ -94,7 +102,28 @@ export const OfferButtonItem = styled(Box)`
 
 export const MainSlideImageWrapper = styled(Box)`
   display: flex;
-  height: inherit;
-  position: absolute;
-  right: -20px;
+  height: 120vw;
+  right: 0;
+  background-color: #595037;
+`;
+
+export const MainSlideImageCarouselWrapper = styled(Box)`
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  width: 100vw;
+  height: 120vw;
+`;
+
+
+export const BestGiftHeaderWrapper = styled(Box)`
+  display: flex;
+  padding: 10px 0;
+`;
+
+export const PrevArrowWrapper = styled(Box)`
+  height: 24px;
+  svg {
+    transform: translate(15%, -15%);
+  }
 `;

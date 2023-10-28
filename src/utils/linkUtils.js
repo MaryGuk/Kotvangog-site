@@ -1,0 +1,1 @@
+export const normalizeDropBoxLink = (link) => `${link}&raw=1`;

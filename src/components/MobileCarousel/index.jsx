@@ -7,7 +7,7 @@ import { StyledIconButtonPrev, StyledIconButtonNext } from "./styled";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
-const NextArrow = ({ onClick }) => {
+export const NextArrow = ({ onClick }) => {
     return (
         <StyledIconButtonNext
             onClick={onClick}
@@ -17,7 +17,7 @@ const NextArrow = ({ onClick }) => {
     );
 }
 
-const PrevArrow = ({ onClick }) => {
+export const PrevArrow = ({ onClick }) => {
     return (
         <StyledIconButtonPrev
             onClick={onClick}
