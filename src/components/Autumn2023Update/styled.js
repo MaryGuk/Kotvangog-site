@@ -7,7 +7,8 @@ export const UnderHeaderBlock = styled(Box)`
 
 export const GiftAdvertisementSlideWrapper = styled(Box)`
   padding: 25px 1px;
-  height: 700px;
+  //height: 700px;
+  height: 70px;
   width: 100%;
   background-color: #ede7d6;
   display: flex;
