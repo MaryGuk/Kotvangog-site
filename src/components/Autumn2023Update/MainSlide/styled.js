@@ -104,7 +104,7 @@ export const MainSlideImageWrapper = styled(Box)`
   display: flex;
   height: 120vw;
   right: 0;
-  padding: 0 0 0 30px;
+  background-color: #595037;
 `;
 
 export const MainSlideImageCarouselWrapper = styled(Box)`
@@ -121,6 +121,9 @@ export const BestGiftHeaderWrapper = styled(Box)`
   padding: 10px 0;
 `;
 
-export const NextArrowWrapper = styled(Box)`
-  //width: 100vw;
+export const PrevArrowWrapper = styled(Box)`
+  height: 24px;
+  svg {
+    transform: translate(15%, -15%);
+  }
 `;

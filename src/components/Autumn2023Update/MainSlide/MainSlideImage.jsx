@@ -1,12 +1,13 @@
-import {MainSlideImageWrapper, MainSlideImageCarouselWrapper} from "./styled";
+import {MainSlideImageWrapper, MainSlideImageCarouselWrapper, PrevArrowWrapper} from "./styled";
 import {mainSlideFramesGallery} from "../../../constants/galeries/mainPageImages";
 import Carousel from "react-material-ui-carousel";
 import {Box} from "@mui/system";
-import {NextArrow, PrevArrow} from "../../MobileCarousel";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const MainSlideImages = () => {
     return <MainSlideImageCarouselWrapper>
-      <Box height="120vw" width="140vw" position="absolute">
+      <Box height="120vw" width="100vw" position="absolute">
         <Carousel
           autoPlay
           indicators={false}
@@ -15,8 +16,10 @@ const MainSlideImages = () => {
           navButtonsAlwaysVisible
           fullHeightHover
           animation="slide"
-          NextIcon={<NextArrow/>}
-          PrevIcon={<PrevArrow/>}
+          NextIcon={<ArrowForwardIosIcon />}
+          PrevIcon={<PrevArrowWrapper><ArrowBackIosIcon /></PrevArrowWrapper>}
+          navButtonsWrapperProps={{style: { zIndex: 200 }}}
+          navButtonsProps={{style: { background: '#49494944' }}}
         >
           {
             mainSlideFramesGallery.map((src, idx) =>
