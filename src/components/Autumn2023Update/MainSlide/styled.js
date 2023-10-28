@@ -2,13 +2,21 @@ import { styled, Box } from "@mui/material";
 
 export const MainSlideWrapper = styled(Box)`
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
   background-color: #595037;
-  padding: 0 0 16px;
   height: 120vw;
   width: 100%;
   box-sizing: border-box;
+`;
+
+export const MainSlideContentWrapper = styled(Box)`
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0 7px 16px;
+  height: 120vw;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
 `;
 
 export const MainSlideTitleWrapper = styled(Box)`
@@ -96,12 +104,13 @@ export const MainSlideImageWrapper = styled(Box)`
   display: flex;
   height: 120vw;
   right: 0;
+  padding: 0 0 0 30px;
 `;
 
 export const MainSlideImageCarouselWrapper = styled(Box)`
   display: flex;
-  justify-content: center;
-  position: absolute;
+  justify-content: flex-start;
+  position: relative;
   width: 100vw;
   height: 120vw;
 `;
@@ -110,4 +119,8 @@ export const MainSlideImageCarouselWrapper = styled(Box)`
 export const BestGiftHeaderWrapper = styled(Box)`
   display: flex;
   padding: 10px 0;
+`;
+
+export const NextArrowWrapper = styled(Box)`
+  //width: 100vw;
 `;
