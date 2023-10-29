@@ -1,12 +1,13 @@
 import {HeaderContactsMessengersWrapper, HeaderContactsWorkTimeWrapper, HeaderContactsWrapper} from "./styled";
 import {workTime, messengers} from '../../../constants/mainCoonstants';
 import HeaderContact from "./HeaderContact";
+import {Typography} from "@mui/material";
 
 const HeaderContacts = () => {
   return <HeaderContactsWrapper>
     <HeaderContactsWorkTimeWrapper>
       {workTime.map((workTimeItem) => (
-          <div key={workTimeItem}>{workTimeItem}</div>
+          <Typography variant="body2" key={workTimeItem} textAlign="start">{workTimeItem}</Typography>
       ))}
     </HeaderContactsWorkTimeWrapper>
     <HeaderContactsMessengersWrapper>

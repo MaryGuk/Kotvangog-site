@@ -39,8 +39,6 @@ export const MainSlideTitleTextWrapper = styled(Box)`
 export const MainSlideTitleDescriptionWrapper = styled(Box)`
   display: flex;
   padding: 0;
-  font-size: 10px;
-  font-family: "Century Gothic", "sans-serif";
 `;
 
 export const AdvantagesWrapper = styled(Box)`
@@ -63,10 +61,7 @@ export const AdvantageItemDescriptionWrapper = styled(Box)`
   display: flex;
   background-color: #ffffff66;
   border-radius: 10px;
-  font-family: "Century Gothic", "Arial", sans-serif;
-  font-size: 9px;
   height: 18px;
-  line-height: 18px;
   padding: 1px 10px;
   min-width: 150px;
 `;
@@ -81,7 +76,6 @@ export const OfferDescriptionWrapper = styled(Box)`
   display: flex;
   color: white;
   padding: 0 10px 10px;
-  font-size: 10px;
 `;
 
 export const OfferButtonItem = styled(Box)`
@@ -118,7 +112,28 @@ export const MainSlideImageCarouselWrapper = styled(Box)`
 
 export const BestGiftHeaderWrapper = styled(Box)`
   display: flex;
-  padding: 10px 0;
+  padding: 20px 15px;
+  position: relative;
+`;
+
+export const BestGiftHeaderSmearWrapper = styled(Box)`
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  width:100%;
+  right: 20px;
+
+  img {
+    width: 60vw;
+  }
+`;
+
+export const BestGiftHeaderTextWrapper = styled(Box)`
+  display: flex;
+  z-index: 1;
+  max-width: 380px;
+  min-width: 290px;
+  
 `;
 
 export const PrevArrowWrapper = styled(Box)`

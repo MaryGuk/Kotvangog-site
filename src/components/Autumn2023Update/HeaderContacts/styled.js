@@ -13,8 +13,6 @@ export const HeaderContactsWrapper = styled(Box)`
 export const HeaderContactsWorkTimeWrapper = styled(Box)`
   display: flex;
   flex-direction: column;
-  font-family: "Century Gothic", "sans-serif";
-  font-size: 12px;
   min-width: 40%;
 `;
 

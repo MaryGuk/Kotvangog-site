@@ -4,6 +4,7 @@ import {
 } from "./styled";
 import {advantages} from "../../../constants/mainCoonstants";
 import AdvantageMarker from "../../../images/MainPage/MainSlide/advantageMarker.svg";
+import {Typography} from "@mui/material";
 
 const Advantages = () => {
     return (
@@ -12,7 +13,9 @@ const Advantages = () => {
                 <AdvantageItemWrapper key={idx}>
                     <img src={AdvantageMarker} alt="advantage marker" />
                     <AdvantageItemDescriptionWrapper>
+                      <Typography variant="body2" textAlign="start">
                         {advantageString}
+                      </Typography>
                     </AdvantageItemDescriptionWrapper>
                 </AdvantageItemWrapper>
             ))}

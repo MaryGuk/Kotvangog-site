@@ -8,6 +8,7 @@ import {
 import Advantages from "./Advantages";
 import Offer from "./offer";
 import MainSlideImages from "./MainSlideImage";
+import {Typography} from "@mui/material";
 
 
 const MainSlide = () => {
@@ -20,7 +21,9 @@ const MainSlide = () => {
                 Портреты маслом по фото на заказ
               </MainSlideTitleTextWrapper>
               <MainSlideTitleDescriptionWrapper>
-                За 1 день от 1350 руб
+                <Typography variant="body2">
+                  За 1 день от 1350 руб
+                </Typography>
               </MainSlideTitleDescriptionWrapper>
             </MainSlideTitleWrapper>
             <Advantages />
