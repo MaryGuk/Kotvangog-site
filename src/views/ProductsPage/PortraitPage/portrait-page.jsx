@@ -2,9 +2,10 @@ import ProductPageItemInfo from "./portrait-page-item";
 import "./portrait-page.css";
 import BeforeAfterImage from "../../../components/BeforeAfterImage";
 import {ProductPageImageWrapper, ProductPageItemMainInfoWrapper, SimpleImageWrapper} from "./styled";
-import ImageCorousel from "../../../components/ImageCarousel";
+import ImageCarousel from "../../../components/ImageCarousel";
 import { isMobile } from "react-device-detect";
 import ArtButton from "../../../components/Button/ArtButton";
+import {useTranslation} from "react-i18next";
 
 const ProductPageItem = ({
   portraitTitle,
@@ -17,6 +18,8 @@ const ProductPageItem = ({
   imageId,
   setFullImageIdx,
 }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="beauty-art__page">
       <div className="beauty-art__general">
@@ -43,13 +46,13 @@ const ProductPageItem = ({
             )}
           </ProductPageImageWrapper>
           <ProductPageItemInfo
-            portraitTitle={portraitTitle}
+            portraitTitle={t(portraitTitle)}
             portraitPrice={portraitPrice}
-            portraitDescription={portraitDescription}
+            portraitDescription={t(portraitDescription)}
             reverse={reverse}
           />
         </ProductPageItemMainInfoWrapper>
-        <ImageCorousel
+        <ImageCarousel
           loading="lazy"
           decoding="async"
           setFullImageIdx={setFullImageIdx}

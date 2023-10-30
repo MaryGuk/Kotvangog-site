@@ -7,17 +7,19 @@ export const UnderHeaderBlock = styled(Box)`
 
 export const GiftAdvertisementSlideWrapper = styled(Box)`
   padding: 25px 1px;
-  //height: 700px;
-  height: 70px;
+  height: 700px;
   width: 100%;
   background-color: #ede7d6;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
+
+export const BestGiftFooter = styled(Box)`
+  display: flex;
+  max-width: 20rem;
 `;
 
 export const FortuneWheelDescriptionWrapper = styled(Box)`
-  max-width: 290px;
-  font-family: "Century Gothic", "sans-serif";
-  font-size: 10px;
-  text-align: center;
+  max-width: 345px;
 `;

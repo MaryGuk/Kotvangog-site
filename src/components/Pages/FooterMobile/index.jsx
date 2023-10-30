@@ -20,8 +20,25 @@ import {
 import { Box } from "@mui/material";
 import "./footer-mobile.css";
 import { NavLink } from "react-router-dom";
+import {telegramLink, whatsappLink, vkLink, instagramLink, mailLink} from "../../../constants/links";
+import { ReactComponent as TelegramLogo } from './images/messenger/telegram.svg';
+import { ReactComponent as WhatsAppLogo } from './images/messenger/whatsapp.svg';
+import { ReactComponent as VkLogo } from './images/messenger/vk.svg';
+import { ReactComponent as InstagramLogo } from './images/messenger/instagram.svg';
+import { ReactComponent as EmailLogo } from './images/messenger/email.svg';
+import { useTheme } from '@mui/material/styles';
+
+const getMessengersData = ({ fill }) => [
+  { link: telegramLink, icon: <TelegramLogo fill={fill} /> },
+  { link: whatsappLink, icon: <WhatsAppLogo fill={fill} /> },
+  { link: vkLink, icon: <VkLogo fill={fill} /> },
+  { link: instagramLink, icon: <InstagramLogo fill={fill} /> },
+  { link: mailLink, icon: <EmailLogo fill={fill} /> },
+];
 
 const FooterMobile = () => {
+  const { palette } = useTheme();
+
   return (
     <FooterMobileWrapper>
       <FooterMobileGeneral>
@@ -68,53 +85,13 @@ const FooterMobile = () => {
           </FooterMobileLinkContainer>
 
           <FooterMobileMessenger>
-            <Box>
-              <a href="https://t.me/kot_vangog" target="_blank" rel="noreferrer">
-                <img
-                  className="icons-footer__mobile"
-                  src="/images/messenger/telegram.svg"
-                />
-              </a>
-            </Box>
-
-            <Box>
-              <a
-                href="https://api.whatsapp.com/send/?phone=79933600710&text&type=phone_number&app_absent=0"
-                target="_blank" rel="noreferrer"
-              >
-                <img
-                  className="icons-footer__mobile"
-                  src="/images/messenger/whatsapp.svg"
-                />
-              </a>
-            </Box>
-
-            <Box>
-              <a href="https://vk.com/lubov0011" target="_blank" rel="noreferrer">
-                <img
-                  className="icons-footer__mobile"
-                  src="/images/messenger/vk.svg"
-                />
-              </a>
-            </Box>
-
-            <Box>
-              <a href="https://www.instagram.com/nen_nenad/" target="_blank" rel="noreferrer">
-                <img
-                  className="icons-footer__mobile"
-                  src="/images/messenger/instagram.svg"
-                />
-              </a>
-            </Box>
-
-            <Box>
-              <a href="mailto:mail@kotvangog777com" target="_blank" rel="noreferrer">
-                <img
-                  className="icons-footer__mobile"
-                  src="/images/messenger/email.svg"
-                />
-              </a>
-            </Box>
+            {getMessengersData({ fill: palette.primary.main }).map(({ link, icon }, idx) => (
+              <Box key={idx}>
+                <a href={link} target="_blank" rel="noreferrer">
+                  {icon}
+                </a>
+              </Box>
+            ))}
           </FooterMobileMessenger>
 
           <FooterMobileWorkSchedule>

@@ -13,8 +13,6 @@ export const HeaderContactsWrapper = styled(Box)`
 export const HeaderContactsWorkTimeWrapper = styled(Box)`
   display: flex;
   flex-direction: column;
-  font-family: "Century Gothic", "sans-serif";
-  font-size: 12px;
   min-width: 40%;
 `;
 
@@ -32,7 +30,7 @@ export const HeaderContactsMessengerItemWrapper = styled(Box)`
   
   & > a > img {
     width: 100%;
-    background-color: #d7d7d7;
+    background-color: ${({ theme }) => theme.palette.secondary.main};
     border-radius: 7px;
     padding: 1px;
   }

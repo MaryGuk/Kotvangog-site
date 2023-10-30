@@ -84,6 +84,20 @@ export const FooterMobileMessenger = styled(Box)`
 
   a {
     text-decoration: none;
+    
+    svg {
+      width: 30px;
+      height: 30px;
+      align-items: center;
+      padding-right: 3px;
+      transition: 0.8s;
+      
+      :hover {
+        transform: scale(1.2);
+        -webkit-filter: sepia(1) hue-rotate(320deg) saturate(10);
+        filter: sepia(1) hue-rotate(40deg) saturate(10);
+      }
+    }
   }
 `;
 

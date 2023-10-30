@@ -39,8 +39,6 @@ export const MainSlideTitleTextWrapper = styled(Box)`
 export const MainSlideTitleDescriptionWrapper = styled(Box)`
   display: flex;
   padding: 0;
-  font-size: 10px;
-  font-family: "Century Gothic", "sans-serif";
 `;
 
 export const AdvantagesWrapper = styled(Box)`
@@ -63,10 +61,7 @@ export const AdvantageItemDescriptionWrapper = styled(Box)`
   display: flex;
   background-color: #ffffff66;
   border-radius: 10px;
-  font-family: "Century Gothic", "Arial", sans-serif;
-  font-size: 9px;
   height: 18px;
-  line-height: 18px;
   padding: 1px 10px;
   min-width: 150px;
 `;
@@ -81,23 +76,6 @@ export const OfferDescriptionWrapper = styled(Box)`
   display: flex;
   color: white;
   padding: 0 10px 10px;
-  font-size: 10px;
-`;
-
-export const OfferButtonItem = styled(Box)`
-  letter-spacing: 1px;
-  background-color: #f7b801;
-  color: black;
-  border: none;
-  box-sizing: border-box;
-  font-family: "Century Gothic", sans-serif;
-  font-weight: bold;
-  padding: 6px 25px;
-  font-size: 7px;
-  box-shadow: 3px 4px 0 #717171;
-  border-radius: 25px;
-  max-width: 170px;
-  text-align: center;
 `;
 
 export const MainSlideImageWrapper = styled(Box)`
@@ -105,6 +83,9 @@ export const MainSlideImageWrapper = styled(Box)`
   height: 120vw;
   right: 0;
   background-color: #595037;
+  transform: translateX(10vw);
+  width: 90vw;
+  overflow-x: hidden;
 `;
 
 export const MainSlideImageCarouselWrapper = styled(Box)`
@@ -118,7 +99,28 @@ export const MainSlideImageCarouselWrapper = styled(Box)`
 
 export const BestGiftHeaderWrapper = styled(Box)`
   display: flex;
-  padding: 10px 0;
+  padding: 20px 15px;
+  position: relative;
+`;
+
+export const BestGiftHeaderSmearWrapper = styled(Box)`
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  width:100%;
+  right: 20px;
+
+  img {
+    width: 60vw;
+  }
+`;
+
+export const BestGiftHeaderTextWrapper = styled(Box)`
+  display: flex;
+  z-index: 1;
+  max-width: 380px;
+  min-width: 290px;
+  
 `;
 
 export const PrevArrowWrapper = styled(Box)`
