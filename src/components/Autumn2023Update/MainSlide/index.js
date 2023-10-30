@@ -18,7 +18,9 @@ const MainSlide = () => {
           <MainSlideContentWrapper>
             <MainSlideTitleWrapper>
               <MainSlideTitleTextWrapper>
-                Портреты маслом по фото на заказ
+                <Typography variant="h4" textAlign="start">
+                  Портреты маслом по фото на заказ
+                </Typography>
               </MainSlideTitleTextWrapper>
               <MainSlideTitleDescriptionWrapper>
                 <Typography variant="body2">

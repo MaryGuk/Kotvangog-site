@@ -1,6 +1,6 @@
-import {OfferButtonItem, OfferDescriptionWrapper, OfferWrapper} from "./styled";
+import { OfferDescriptionWrapper, OfferWrapper} from "./styled";
 import {useConsultationDialog} from "../ConsultationDialogProvider";
-import {Typography} from "@mui/material";
+import {Button, Typography} from "@mui/material";
 
 const Offer = () => {
   const { onOpen } = useConsultationDialog();
@@ -11,7 +11,7 @@ const Offer = () => {
         Отправьте фото и получите + 8 примеров работ
       </Typography>
     </ OfferDescriptionWrapper>
-    <OfferButtonItem onClick={onOpen}>Рассчитать стоимость + подарок</OfferButtonItem>
+    <Button variant="contained" onClick={onOpen}>Отправить фото и получить подарок</Button>
   </OfferWrapper>
 }
 

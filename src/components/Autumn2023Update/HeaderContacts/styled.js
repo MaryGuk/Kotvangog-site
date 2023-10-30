@@ -30,7 +30,7 @@ export const HeaderContactsMessengerItemWrapper = styled(Box)`
   
   & > a > img {
     width: 100%;
-    background-color: #d7d7d7;
+    background-color: ${({ theme }) => theme.palette.secondary.main};
     border-radius: 7px;
     padding: 1px;
   }

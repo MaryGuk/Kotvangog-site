@@ -2,7 +2,7 @@ import {
     AdvantagesWrapper,
     AdvantageItemWrapper, AdvantageItemDescriptionWrapper
 } from "./styled";
-import {advantages} from "../../../constants/mainCoonstants";
+import {advantages} from "../../../constants/mainConstants";
 import AdvantageMarker from "../../../images/MainPage/MainSlide/advantageMarker.svg";
 import {Typography} from "@mui/material";
 

@@ -1,5 +1,5 @@
 import {HeaderContactsMessengersWrapper, HeaderContactsWorkTimeWrapper, HeaderContactsWrapper} from "./styled";
-import {workTime, messengers} from '../../../constants/mainCoonstants';
+import {workTime, messengers} from '../../../constants/mainConstants';
 import HeaderContact from "./HeaderContact";
 import {Typography} from "@mui/material";
 

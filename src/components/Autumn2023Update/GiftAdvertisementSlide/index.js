@@ -1,7 +1,10 @@
 import {BestGiftFooter, FortuneWheelDescriptionWrapper, GiftAdvertisementSlideWrapper} from "../styled";
 import BestGiftHeader from "./BestGiftHeader";
-import {Typography} from "@mui/material";
-// import MobileCarousel from "../../MobileCarousel";
+import {Box, Typography} from "@mui/material";
+import {productPageData} from "../../../constants/mainConstants";
+import MobileCarousel from "../../MobileCarousel";
+
+const mockImageSrcs = productPageData[0].galleryImages.map(({ fullSrc }) => fullSrc);
 
 const GiftAdvertisementSlide = () => {
   return <GiftAdvertisementSlideWrapper>
@@ -16,12 +19,14 @@ const GiftAdvertisementSlide = () => {
 
     <BestGiftHeader />
 
-    {/*<MobileCarousel*/}
-    {/*  imageList={adaptivePhotosData.map(({ previewSrc}) => previewSrc)}*/}
-    {/*  columnCount={2}*/}
-    {/*  rowCount={2}*/}
-    {/*  onImageClick={(idx) => setFullImageSrcData({ gallery: adaptivePhotosData, idx })}*/}
-    {/*/>*/}
+    <Box height="150vw" width="95vw">
+      <MobileCarousel
+        imageList={mockImageSrcs}
+        columnCount={1}
+        rowCount={1}
+        onImageClick={() => true}
+      />
+    </Box>
 
     <BestGiftFooter>
       <Typography variant="h4">

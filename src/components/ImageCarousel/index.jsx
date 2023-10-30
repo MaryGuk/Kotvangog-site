@@ -12,11 +12,11 @@ import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import { IconButton } from "@mui/material";
 import { useRef } from "react";
 
-const ImageCorousel = ({ galleryImages, setFullImageIdx, reverse }) => {
+const ImageCarousel = ({ galleryImages, setFullImageIdx, reverse }) => {
   const carouselRef = useRef(null);
 
   const handleClick = (positive) => {
-    carouselRef.current.scrollBy(positive ? 100 : -100, 0);
+    carouselRef.current.scrollBy(positive ? 300 : -300, 0);
   };
 
   return (
@@ -48,4 +48,4 @@ const ImageCorousel = ({ galleryImages, setFullImageIdx, reverse }) => {
   );
 };
 
-export default ImageCorousel;
+export default ImageCarousel;
