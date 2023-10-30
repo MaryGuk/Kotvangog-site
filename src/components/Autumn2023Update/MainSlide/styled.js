@@ -78,27 +78,14 @@ export const OfferDescriptionWrapper = styled(Box)`
   padding: 0 10px 10px;
 `;
 
-export const OfferButtonItem = styled(Box)`
-  letter-spacing: 1px;
-  background-color: #f7b801;
-  color: black;
-  border: none;
-  box-sizing: border-box;
-  font-family: "Century Gothic", sans-serif;
-  font-weight: bold;
-  padding: 6px 25px;
-  font-size: 7px;
-  box-shadow: 3px 4px 0 #717171;
-  border-radius: 25px;
-  max-width: 170px;
-  text-align: center;
-`;
-
 export const MainSlideImageWrapper = styled(Box)`
   display: flex;
   height: 120vw;
   right: 0;
   background-color: #595037;
+  transform: translateX(10vw);
+  width: 90vw;
+  overflow-x: hidden;
 `;
 
 export const MainSlideImageCarouselWrapper = styled(Box)`

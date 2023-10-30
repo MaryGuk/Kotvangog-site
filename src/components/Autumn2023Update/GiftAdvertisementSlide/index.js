@@ -19,7 +19,7 @@ const GiftAdvertisementSlide = () => {
 
     <BestGiftHeader />
 
-    <Box height="150vw" width="95vw">
+    <Box height="150vw" width="100vw">
       <MobileCarousel
         imageList={mockImageSrcs}
         columnCount={1}

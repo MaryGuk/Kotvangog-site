@@ -24,7 +24,7 @@ const MainSlideImages = () => {
           {
             mainSlideFramesGallery.map((src, idx) =>
               (<MainSlideImageWrapper key={idx}>
-                <img src={src} alt={"frame"}/>
+                  <img src={src} alt={"frame"} height="100%" />
               </MainSlideImageWrapper>)
             )
           }
