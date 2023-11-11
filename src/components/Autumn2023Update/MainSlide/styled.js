@@ -17,6 +17,7 @@ export const MainSlideContentWrapper = styled(Box)`
   width: 100%;
   box-sizing: border-box;
   position: absolute;
+  pointer-events: none;
 `;
 
 export const MainSlideTitleWrapper = styled(Box)`
@@ -82,10 +83,12 @@ export const MainSlideImageWrapper = styled(Box)`
   display: flex;
   height: 120vw;
   right: 0;
-  background-color: #595037;
   transform: translateX(10vw);
   width: 90vw;
-  overflow-x: hidden;
+  
+  img {
+    width: 120vw !important;
+  }
 `;
 
 export const MainSlideImageCarouselWrapper = styled(Box)`
@@ -120,12 +123,4 @@ export const BestGiftHeaderTextWrapper = styled(Box)`
   z-index: 1;
   max-width: 380px;
   min-width: 290px;
-  
-`;
-
-export const PrevArrowWrapper = styled(Box)`
-  height: 24px;
-  svg {
-    transform: translate(15%, -15%);
-  }
 `;
