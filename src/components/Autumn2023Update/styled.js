@@ -21,5 +21,5 @@ export const BestGiftFooter = styled(Box)`
 `;
 
 export const FortuneWheelDescriptionWrapper = styled(Box)`
-  max-width: 345px;
+  max-width: 80vw;
 `;

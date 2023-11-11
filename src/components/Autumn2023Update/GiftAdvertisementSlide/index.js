@@ -10,10 +10,7 @@ const GiftAdvertisementSlide = () => {
   return <GiftAdvertisementSlideWrapper>
     <FortuneWheelDescriptionWrapper>
       <Typography variant="body2">
-        Ищете подарок, который не оставит равнодушных?
-      </Typography>
-      <Typography variant="body2">
-        Хотите услышать «ВАУ» вместо банального «Спасибо»?
+        Ищете подарок, который не оставит равнодушных? Хотите услышать «ВАУ» вместо банального «Спасибо»?
       </Typography>
     </FortuneWheelDescriptionWrapper>
 
