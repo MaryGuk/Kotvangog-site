@@ -3,11 +3,16 @@ import {styled} from "@mui/material";
 
 const StyledIconButton = styled(IconButton)`
   top: 50%;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   z-index: 1;
   transform: translateY(-50%);
+  background-color: white;
+  border-radius: 50%;
+  
+  :hover {
+    background-color: white;
+    box-shadow: 0 0 20px #36883d;
+  }
 `;
 
 
