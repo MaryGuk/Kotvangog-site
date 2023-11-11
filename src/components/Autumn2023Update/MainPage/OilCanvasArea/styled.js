@@ -41,3 +41,12 @@ export const OilAreaWrapper = styled(Box)`
   flex-direction: column;
   align-items: center;
 `;
+
+export const AdvantagesListWrapper = styled(Box)`
+  display: flex;
+  width: 100%;
+  
+  &>div {
+    max-width: 17.9rem;
+  }
+`;
