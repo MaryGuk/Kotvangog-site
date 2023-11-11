@@ -1,4 +1,4 @@
-import {BestGiftFooter, FortuneWheelDescriptionWrapper, GiftAdvertisementSlideWrapper} from "../../styled";
+import {FortuneWheelDescriptionWrapper, GiftAdvertisementSlideWrapper} from "../../styled";
 import BestGiftHeader from "./BestGiftHeader";
 import {Box, Typography} from "@mui/material";
 import {productPageData} from "../../../../constants/mainConstants";
@@ -24,12 +24,6 @@ const GiftAdvertisementSlide = () => {
         onImageClick={() => true}
       />
     </Box>
-
-    <BestGiftFooter>
-      <Typography variant="h4">
-        Мы создаем портреты маслом или печатаем на холсте
-      </Typography>
-    </BestGiftFooter>
   </GiftAdvertisementSlideWrapper>
 }
 

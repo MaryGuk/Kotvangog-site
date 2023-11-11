@@ -20,6 +20,7 @@ import HeaderContacts from "../../components/Autumn2023Update/MainPage/HeaderCon
 import {UnderHeaderBlock} from "../../components/Autumn2023Update/styled";
 import MainSlide from "../../components/Autumn2023Update/MainPage/MainSlide";
 import GiftAdvertisementSlide from "../../components/Autumn2023Update/MainPage/GiftAdvertisementSlide";
+import OilCanvasArea from "../../components/Autumn2023Update/MainPage/OilCanvasArea";
 
 const MainPage = () => {
   return (
@@ -37,34 +38,39 @@ const MainPage = () => {
                 <AdvantagesPage />
             </>
         )}
-      <OilPortrait
-        title={"Классический портрет маслом"}
-        imageMobile={"https://www.dropbox.com/s/6lkuknbtufgnex2/oil%20mobile2.png?raw=1"}
-        imageDesktop={"https://www.dropbox.com/scl/fi/iq5j40wn1qfxabp89ma0o/1400_oil-classic.png?rlkey=gafvctnfhn3w6e1t6tzg2ydzc&dl=0&raw=1"}
-        advantages={[
+
+      {isMobile ? (
+        <OilCanvasArea />
+      ) : (
+        <OilPortrait
+          title={"Классический портрет маслом"}
+          imageMobile={"https://www.dropbox.com/s/6lkuknbtufgnex2/oil%20mobile2.png?raw=1"}
+          imageDesktop={"https://www.dropbox.com/scl/fi/iq5j40wn1qfxabp89ma0o/1400_oil-classic.png?rlkey=gafvctnfhn3w6e1t6tzg2ydzc&dl=0&raw=1"}
+          advantages={[
             "Полностью ручная роспись маслом",
             "Художники с опытом рисования более 10 лет",
             "Портретное сходство сохраняем на 100%"
-        ]}
-        descriptionMobile={"Роспись опытным художником - это неповторимые произведения искусства, " +
+          ]}
+          descriptionMobile={"Роспись опытным художником - это неповторимые произведения искусства, " +
             "которые будут радовать вас и ваших близких на протяжении многих лет."}
-        descriptionDesktop={[
+          descriptionDesktop={[
             {
-                text: "Мы работаем с фотографиями любого формата и стиля, и готовы " +
-                    "предоставить вам консультацию по созданию лучшего портрета.",
-                bold: false,
+              text: "Мы работаем с фотографиями любого формата и стиля, и готовы " +
+                "предоставить вам консультацию по созданию лучшего портрета.",
+              bold: false,
             },
             {
-                text: "Не упустите возможность сохранить важные моменты вашей жизни в искусстве.",
-                bold: true,
+              text: "Не упустите возможность сохранить важные моменты вашей жизни в искусстве.",
+              bold: true,
             },
             {
-                text: "Обратитесь к нам сегодня, и мы с радостью поможем вам создать портреты, которые вы будете любить и ценить навсегда!",
-                bold: false,
+              text: "Обратитесь к нам сегодня, и мы с радостью поможем вам создать портреты, которые вы будете любить и ценить навсегда!",
+              bold: false,
             },
-        ]}
-        linkToPage={"/oil-portrait"}
-      />
+          ]}
+          linkToPage={"/oil-portrait"}
+        />
+      )}
       <StylesPage />
       <OilPortrait
         title={"Портрет в образе"}
