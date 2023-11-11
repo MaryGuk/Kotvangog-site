@@ -6,6 +6,7 @@ export const MainSlideWrapper = styled(Box)`
   height: 120vw;
   width: 100%;
   box-sizing: border-box;
+  position: relative;
 `;
 
 export const MainSlideContentWrapper = styled(Box)`
@@ -13,7 +14,7 @@ export const MainSlideContentWrapper = styled(Box)`
   justify-content: space-between;
   flex-direction: column;
   padding: 0 7px 16px;
-  height: 120vw;
+  height: calc(120vw - 60px);
   width: 100%;
   box-sizing: border-box;
   position: absolute;
@@ -123,4 +124,11 @@ export const BestGiftHeaderTextWrapper = styled(Box)`
   z-index: 1;
   max-width: 380px;
   min-width: 290px;
+`;
+
+export const OfferButtonWrapper = styled(Box)`
+  height: min-content;
+  left: 10px;
+  bottom: 25px;
+  position: absolute;
 `;
