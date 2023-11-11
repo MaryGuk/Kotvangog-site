@@ -2,11 +2,8 @@ import {Typography} from "@mui/material";
 import {
   OilCanvasAreaTitleWrapper,
   OilCanvasAreaWrapper,
-  OilTitleBrashWrapper,
-  OilTitleTextWrapper,
-  OilTitleWrapper
 } from "./styled";
-import Brash from '../../../../images/brashes/brash4.svg';
+import OilSlide from "./OilSlide";
 
 const OilCanvasArea = () => {
   return (
@@ -17,15 +14,7 @@ const OilCanvasArea = () => {
         </Typography>
       </OilCanvasAreaTitleWrapper>
 
-      <OilTitleWrapper>
-        <OilTitleBrashWrapper>
-          <img src={Brash} alt="background-brash" />
-        </OilTitleBrashWrapper>
-
-        <OilTitleTextWrapper>
-          <Typography variant="subtitle1">Портрет маслом</Typography>
-        </OilTitleTextWrapper>
-      </OilTitleWrapper>
+      <OilSlide />
     </OilCanvasAreaWrapper>
   );
 }

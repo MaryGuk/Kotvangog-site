@@ -26,12 +26,18 @@ export const OilTitleTextWrapper = styled(Box)`
 
 export const OilTitleBrashWrapper = styled(Box)`
   display: flex;
-  width: 20rem;
+  width: 10rem;
   position: absolute;
   right: 50%;
-  transform: translateX(50%);
+  transform: translate(50%, 10%);
 
   img {
     width: 100%
   }
+`;
+
+export const OilAreaWrapper = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
