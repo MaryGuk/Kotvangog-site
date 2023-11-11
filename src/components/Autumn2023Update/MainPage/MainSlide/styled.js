@@ -6,6 +6,7 @@ export const MainSlideWrapper = styled(Box)`
   height: 120vw;
   width: 100%;
   box-sizing: border-box;
+  position: relative;
 `;
 
 export const MainSlideContentWrapper = styled(Box)`
@@ -13,10 +14,11 @@ export const MainSlideContentWrapper = styled(Box)`
   justify-content: space-between;
   flex-direction: column;
   padding: 0 7px 16px;
-  height: 120vw;
+  height: calc(120vw - 60px);
   width: 100%;
   box-sizing: border-box;
   position: absolute;
+  pointer-events: none;
 `;
 
 export const MainSlideTitleWrapper = styled(Box)`
@@ -82,10 +84,12 @@ export const MainSlideImageWrapper = styled(Box)`
   display: flex;
   height: 120vw;
   right: 0;
-  background-color: #595037;
   transform: translateX(10vw);
   width: 90vw;
-  overflow-x: hidden;
+  
+  img {
+    width: 120vw !important;
+  }
 `;
 
 export const MainSlideImageCarouselWrapper = styled(Box)`
@@ -120,12 +124,11 @@ export const BestGiftHeaderTextWrapper = styled(Box)`
   z-index: 1;
   max-width: 380px;
   min-width: 290px;
-  
 `;
 
-export const PrevArrowWrapper = styled(Box)`
-  height: 24px;
-  svg {
-    transform: translate(15%, -15%);
-  }
+export const OfferButtonWrapper = styled(Box)`
+  height: min-content;
+  left: 10px;
+  bottom: 25px;
+  position: absolute;
 `;

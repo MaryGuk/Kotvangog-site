@@ -1,13 +1,18 @@
-import {IconButton} from "@mui/material";
+import {IconButton, Box} from "@mui/material";
 import {styled} from "@mui/material";
 
 const StyledIconButton = styled(IconButton)`
   top: 50%;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   z-index: 1;
   transform: translateY(-50%);
+  background-color: white;
+  border-radius: 50%;
+  
+  :hover {
+    background-color: white;
+    box-shadow: 0 0 20px #36883d;
+  }
 `;
 
 
@@ -19,4 +24,13 @@ export const StyledIconButtonPrev = styled(StyledIconButton)`
 
 export const StyledIconButtonNext = styled(StyledIconButton)`
   right: 0;
+`;
+
+export const HoverScalableContent = styled(Box)`
+  transform: scale(0.95);
+  
+  :hover {
+    transform: scale(1);
+    transition: 0.5s;
+  }
 `;

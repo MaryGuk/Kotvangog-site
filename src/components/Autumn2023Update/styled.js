@@ -15,11 +15,7 @@ export const GiftAdvertisementSlideWrapper = styled(Box)`
   flex-direction: column;
 `;
 
-export const BestGiftFooter = styled(Box)`
-  display: flex;
-  max-width: 20rem;
-`;
 
 export const FortuneWheelDescriptionWrapper = styled(Box)`
-  max-width: 345px;
+  max-width: 80vw;
 `;

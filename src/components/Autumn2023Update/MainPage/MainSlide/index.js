@@ -3,15 +3,19 @@ import {
     MainSlideTitleTextWrapper,
     MainSlideTitleWrapper,
     MainSlideWrapper,
-    MainSlideContentWrapper
+    MainSlideContentWrapper,
+    OfferButtonWrapper
 } from "./styled";
 import Advantages from "./Advantages";
 import Offer from "./offer";
 import MainSlideImages from "./MainSlideImage";
-import {Typography} from "@mui/material";
+import {useConsultationDialog} from "../../ConsultationDialogProvider";
+import {Button, Typography} from "@mui/material";
 
 
 const MainSlide = () => {
+  const { onOpen } = useConsultationDialog();
+
     return (
         <MainSlideWrapper>
           <MainSlideImages />
@@ -19,7 +23,7 @@ const MainSlide = () => {
             <MainSlideTitleWrapper>
               <MainSlideTitleTextWrapper>
                 <Typography variant="h4" textAlign="start">
-                  Портреты маслом по фото на заказ
+                  Портреты по фото маслом и на холсте
                 </Typography>
               </MainSlideTitleTextWrapper>
               <MainSlideTitleDescriptionWrapper>
@@ -31,6 +35,9 @@ const MainSlide = () => {
             <Advantages />
             <Offer />
           </MainSlideContentWrapper>
+          <OfferButtonWrapper>
+            <Button variant="contained" onClick={onOpen}>Получить подарок</Button>
+          </OfferButtonWrapper>
         </MainSlideWrapper>
     );
 };
