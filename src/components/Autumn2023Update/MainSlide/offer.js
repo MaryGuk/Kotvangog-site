@@ -11,7 +11,7 @@ const Offer = () => {
         Отправьте фото и получите + 8 примеров работ
       </Typography>
     </ OfferDescriptionWrapper>
-    <Button variant="contained" onClick={onOpen}>Отправить фото и получить подарок</Button>
+    <Button variant="contained" onClick={onOpen}>Получить подарок</Button>
   </OfferWrapper>
 }
 
