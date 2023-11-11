@@ -1,4 +1,4 @@
-import {IconButton} from "@mui/material";
+import {IconButton, Box} from "@mui/material";
 import {styled} from "@mui/material";
 
 const StyledIconButton = styled(IconButton)`
@@ -24,4 +24,13 @@ export const StyledIconButtonPrev = styled(StyledIconButton)`
 
 export const StyledIconButtonNext = styled(StyledIconButton)`
   right: 0;
+`;
+
+export const HoverScalableContent = styled(Box)`
+  transform: scale(0.95);
+  
+  :hover {
+    transform: scale(1);
+    transition: 0.5s;
+  }
 `;

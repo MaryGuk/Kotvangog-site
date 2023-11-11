@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {Box} from "@mui/system";
-import { StyledIconButtonPrev, StyledIconButtonNext } from "./styled";
+import {StyledIconButtonPrev, StyledIconButtonNext, HoverScalableContent} from "./styled";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
@@ -59,7 +59,7 @@ const MobileCarouselRow = ({ imageList, columnCount, onImageClick, rowCount }) =
     };
 
     return (
-        <Box height={maxHeight * rowCount}>
+        <HoverScalableContent height={maxHeight * rowCount}>
             <Slider {...settings}>
                 {pages.map((images, index) => (
                     <Box key={index}>
@@ -85,7 +85,7 @@ const MobileCarouselRow = ({ imageList, columnCount, onImageClick, rowCount }) =
                     </Box>
                 ))}
             </Slider>
-        </Box>
+        </HoverScalableContent>
     );
 };
 

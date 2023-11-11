@@ -9,7 +9,7 @@ import {
 import Advantages from "./Advantages";
 import Offer from "./offer";
 import MainSlideImages from "./MainSlideImage";
-import {useConsultationDialog} from "../ConsultationDialogProvider";
+import {useConsultationDialog} from "../../ConsultationDialogProvider";
 import {Button, Typography} from "@mui/material";
 
 

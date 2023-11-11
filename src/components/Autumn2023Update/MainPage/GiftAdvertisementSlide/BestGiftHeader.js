@@ -1,5 +1,5 @@
 import {BestGiftHeaderWrapper, BestGiftHeaderTextWrapper, BestGiftHeaderSmearWrapper} from "../MainSlide/styled";
-import {BestGiftHeaderSmearSrc} from "../../../constants/galeries/smears";
+import {BestGiftHeaderSmearSrc} from "../../../../constants/galeries/smears";
 import {Typography} from "@mui/material";
 
 const BestGiftHeader = () => {

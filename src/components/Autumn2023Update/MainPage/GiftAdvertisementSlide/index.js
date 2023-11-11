@@ -1,8 +1,8 @@
-import {BestGiftFooter, FortuneWheelDescriptionWrapper, GiftAdvertisementSlideWrapper} from "../styled";
+import {BestGiftFooter, FortuneWheelDescriptionWrapper, GiftAdvertisementSlideWrapper} from "../../styled";
 import BestGiftHeader from "./BestGiftHeader";
 import {Box, Typography} from "@mui/material";
-import {productPageData} from "../../../constants/mainConstants";
-import MobileCarousel from "../../MobileCarousel";
+import {productPageData} from "../../../../constants/mainConstants";
+import MobileCarousel from "../../../MobileCarousel";
 
 const mockImageSrcs = productPageData[0].galleryImages.map(({ fullSrc }) => fullSrc);
 

@@ -16,10 +16,10 @@ import {
     LikenessMobileTextPart2, LikenessMobileTextPart3
 } from "../../components/Pages/LikenessPortrait/styled";
 import LikenessTitle from "../../components/Pages/LikenessPortrait/LikenessTitle/LikenessTitle";
-import HeaderContacts from "../../components/Autumn2023Update/HeaderContacts";
+import HeaderContacts from "../../components/Autumn2023Update/MainPage/HeaderContacts";
 import {UnderHeaderBlock} from "../../components/Autumn2023Update/styled";
-import MainSlide from "../../components/Autumn2023Update/MainSlide";
-import GiftAdvertisementSlide from "../../components/Autumn2023Update/GiftAdvertisementSlide";
+import MainSlide from "../../components/Autumn2023Update/MainPage/MainSlide";
+import GiftAdvertisementSlide from "../../components/Autumn2023Update/MainPage/GiftAdvertisementSlide";
 
 const MainPage = () => {
   return (
