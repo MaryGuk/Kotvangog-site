@@ -26,7 +26,7 @@ export const OilTitleTextWrapper = styled(Box)`
 
 export const OilTitleBrashWrapper = styled(Box)`
   display: flex;
-  width: 10rem;
+  width: 14rem;
   position: absolute;
   right: 50%;
   transform: translate(50%, 10%);

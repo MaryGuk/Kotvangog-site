@@ -10,6 +10,10 @@ const MuiTypography = {
     body2: {
       fontFamily: "Century Gothic, sans-serif",
       fontSize: '0.75rem',
+    },
+    subtitle1: {
+      fontSize: '1.23rem',
+      fontFamily: "Century Gothic, sans-serif",
     }
   },
 };
