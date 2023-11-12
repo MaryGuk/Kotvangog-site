@@ -50,3 +50,11 @@ export const AdvantagesListWrapper = styled(Box)`
     max-width: 17.9rem;
   }
 `;
+
+export const BoxingPointerWrapper = styled(Box)`
+  display: flex;
+  position: absolute;
+  right: 32px;
+  transform: translate(100%, 50%);
+  height: 45px;
+`;

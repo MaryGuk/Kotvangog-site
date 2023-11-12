@@ -5,12 +5,13 @@ import Marker from '../../images/MainPage/MainSlide/advantageMarker.svg';
 const AdvantagesList = ({ advantages }) => {
   return <AdvantagesListWrapper>
     <List>
-      {advantages?.map(({ advantageText }, idx) => (
+      {advantages?.map(({ advantageText, endAdornment }, idx) => (
         <ListItem key={idx} mar>
           <ListItemIcon>
             <img src={Marker} alt="marker" />
           </ListItemIcon>
           <Typography variant="body2" textAlign="start">{advantageText}</Typography>
+          {endAdornment}
         </ListItem>
       ))}
     </List>
