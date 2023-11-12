@@ -4,6 +4,7 @@ import {
   OilCanvasAreaWrapper,
 } from "./styled";
 import OilSlide from "./OilSlide";
+import PresentBoxingSlide from "./PresentBoxingSlide";
 
 const OilCanvasArea = () => {
   return (
@@ -15,6 +16,8 @@ const OilCanvasArea = () => {
       </OilCanvasAreaTitleWrapper>
 
       <OilSlide />
+
+      <PresentBoxingSlide />
     </OilCanvasAreaWrapper>
   );
 }

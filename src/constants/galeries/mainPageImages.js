@@ -17,3 +17,9 @@ export const oilSlideFramesGallery = [
   'https://www.dropbox.com/scl/fi/evkdavpe9v3wxjkkgh923/00006_1000px.jpg?rlkey=09b7t39khwh3lxmkn5v8qiqca&dl=0',
 ].map(normalizeDropBoxLink)
 
+export const presentSlideImages = [
+  'https://www.dropbox.com/scl/fi/jn6w5avgebxupxma9da7d/IMG_5213_400px.jpg?rlkey=8pp2y8ggl4ginppycc2pkzjt1&dl=0',
+  'https://www.dropbox.com/scl/fi/xk1v3xvtshnbqpl8uojus/IMG_5543_400px.jpg?rlkey=k5dsdx09p7r6031j83m33nqyy&dl=0',
+  'https://www.dropbox.com/scl/fi/qbqaiud2iow9h4kmomtfd/IMG_5550_400px.jpg?rlkey=quiyb4na5c15tikhi18cv1b2b&dl=0',
+].map(normalizeDropBoxLink)
+
