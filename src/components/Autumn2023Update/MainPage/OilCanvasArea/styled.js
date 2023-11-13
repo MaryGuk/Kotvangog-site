@@ -45,10 +45,15 @@ export const OilAreaWrapper = styled(Box)`
 export const AdvantagesListWrapper = styled(Box)`
   display: flex;
   width: 100%;
-  
+
   &>div {
     max-width: 17.9rem;
   }
+`;
+
+export const CanvasAdvantagesListWrapper = styled(Box)`
+  display: flex;
+  width: 100%;
 `;
 
 export const BoxingPointerWrapper = styled(Box)`
@@ -87,4 +92,11 @@ export const PresentButtonWrapper = styled(Box)`
   width: 100%;
   justify-content: center;
   padding: 30px 0 10px;
+`;
+
+export const CanvasAreaWrapper = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0 0;
 `;
