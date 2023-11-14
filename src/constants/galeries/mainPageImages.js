@@ -23,3 +23,11 @@ export const presentSlideImages = [
   'https://www.dropbox.com/scl/fi/qbqaiud2iow9h4kmomtfd/IMG_5550_400px.jpg?rlkey=quiyb4na5c15tikhi18cv1b2b&dl=0',
 ].map(normalizeDropBoxLink)
 
+export const canvasSlideGallery = [
+  'https://www.dropbox.com/scl/fi/geqahq16woarcnka1smge/0_-_1000px.jpg?rlkey=6tq18hgpofyr4vt6376wlfb4b&dl=0',
+  'https://www.dropbox.com/scl/fi/erssszpkb3z4ceobz8fet/1_-_1000px.jpg?rlkey=j7xv49cbx1yjp4c5moilbrh3q&dl=0',
+  'https://www.dropbox.com/scl/fi/qrg2x7544344dziyvpecv/2_-_1000px.jpg?rlkey=clb92pqp4cvch735t5zl24mqu&dl=0',
+  'https://www.dropbox.com/scl/fi/vfx0bw8y685cbw8tyi2h7/4_-23-_1000px.jpg?rlkey=ldl9wtnzh7lnsmry7ke29b2b6&dl=0',
+  'https://www.dropbox.com/scl/fi/7nj870v3gwrcaov9yv2rr/5_-_1000px.jpg?rlkey=75hwe50ya12ctdsgruwfvu0sf&dl=0',
+  'https://www.dropbox.com/scl/fi/77ry0ylbwa16u7ap6er8u/6_-_1000px.jpg?rlkey=ohhj8bv0ygt2hr0kj0qev11fo&dl=0',
+].map(normalizeDropBoxLink)

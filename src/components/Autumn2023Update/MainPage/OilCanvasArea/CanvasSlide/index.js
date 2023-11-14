@@ -3,7 +3,7 @@ import {
 } from "../styled";
 import {Box, Typography} from "@mui/material";
 import MobileCarousel from "../../../../MobileCarousel";
-import {oilSlideFramesGallery} from "../../../../../constants/galeries/mainPageImages";
+import {canvasSlideGallery} from "../../../../../constants/galeries/mainPageImages";
 import AdvantagesList from "../../../../AdvantagesList";
 import {canvasAdvantages} from "../../../../../constants/advantages";
 import BrashTitle from "../../../BrashTitle";
@@ -18,7 +18,7 @@ const CanvasSlide = () => {
 
       <Box width="100vw" display="block">
         <MobileCarousel
-          imageList={oilSlideFramesGallery}
+          imageList={canvasSlideGallery}
           columnCount={1}
           rowCount={1}
           onImageClick={() => true}
