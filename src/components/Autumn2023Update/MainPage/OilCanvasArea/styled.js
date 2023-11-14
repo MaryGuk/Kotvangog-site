@@ -5,7 +5,7 @@ export const OilCanvasAreaWrapper = styled(Box)`
   align-items: center;
   background-color: ${({ theme: { palette }}) => palette.background.default};
   flex-direction: column;
-  padding: 0 0 30px;
+  padding: 0 4% 30px;
 `;
 
 export const OilCanvasAreaTitleWrapper = styled(Box)`
@@ -26,7 +26,7 @@ export const OilTitleTextWrapper = styled(Box)`
 
 export const OilTitleBrashWrapper = styled(Box)`
   display: flex;
-  width: 10rem;
+  width: 14rem;
   position: absolute;
   right: 50%;
   transform: translate(50%, 10%);
@@ -45,8 +45,58 @@ export const OilAreaWrapper = styled(Box)`
 export const AdvantagesListWrapper = styled(Box)`
   display: flex;
   width: 100%;
-  
+
   &>div {
     max-width: 17.9rem;
   }
+`;
+
+export const CanvasAdvantagesListWrapper = styled(Box)`
+  display: flex;
+  width: 100%;
+`;
+
+export const BoxingPointerWrapper = styled(Box)`
+  display: flex;
+  position: absolute;
+  right: 32px;
+  transform: translate(100%, 50%);
+  height: 45px;
+`;
+
+export const PresentBoxingAreaWrapper = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0 0;
+`;
+
+export const PresentImagesWrapper = styled(Box)`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 30px 0 0;
+`;
+
+export const PresentImageItemWrapper = styled(Box)`
+  display: flex;
+  width: 30%;
+
+  & > img {
+    width: 100%;
+  }
+`;
+
+export const PresentButtonWrapper = styled(Box)`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 30px 0 10px;
+`;
+
+export const CanvasAreaWrapper = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0 0;
 `;
