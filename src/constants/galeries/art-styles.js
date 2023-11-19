@@ -1,4 +1,5 @@
 import {normalizeDropBoxLink} from "../../utils/linkUtils";
+import {productPageData} from "../mainConstants";
 
 const addRedirectLink = (redirectTo) => ((imageSrc) => ({
   imageSrc,
@@ -18,3 +19,21 @@ export const petsPhotos = [
   'https://www.dropbox.com/scl/fi/1pb7pk75cdo6w013kpog0/2_75757_1000px.jpg?rlkey=o2uegifb8vyirfh7br4rufglc&dl=0',
   'https://www.dropbox.com/scl/fi/hjswvhvre4bef8tkvgugr/3_42473_1000px.jpg?rlkey=c4ipjyr8dbm5tpr4m6rmlcn14&dl=0',
 ].map(normalizeDropBoxLink).map(addRedirectLink('/products#animal-art'));
+
+const hiddenStylesOnMainPage = ['petPortrait',  'likenessPortrait'];
+
+export const artStylesData = Object.keys(productPageData).reduce((acc, key) => {
+  if (hiddenStylesOnMainPage.includes(key)) {
+    return acc;
+  }
+
+  const currentStyle = productPageData[key];
+
+  acc.push({
+    imageSrc: currentStyle.srcAfter,
+    redirectTo: `/products#${currentStyle.imageId}`,
+    description: [currentStyle.portraitTitle, currentStyle.portraitPrice]
+  });
+
+  return acc;
+}, []);
