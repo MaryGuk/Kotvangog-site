@@ -23,7 +23,11 @@ process_image() {
     local extension="${base##*.}"
     local dir=$(dirname "$img" | cut -d/ -f2-)
     mkdir -p "output/$dir"
-    convert "$img" -resize x$HEIGHT "output/$dir/${filename}_${HEIGHT}px.$extension"
+    if [[ "$extension" =~ (jpe?g|JPE?G) ]]; then
+        convert "$img" -resize x$HEIGHT -interlace Plane "output/$dir/${filename}_${HEIGHT}px_progressive.jpg"
+    else
+        convert "$img" -resize x$HEIGHT "output/$dir/${filename}_${HEIGHT}px.$extension"
+    fi
 }
 
 # JPEG
