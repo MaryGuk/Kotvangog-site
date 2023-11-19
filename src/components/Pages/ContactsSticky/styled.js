@@ -4,7 +4,7 @@ export const ContactSticky = styled(Box)`
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 5;
+  z-index: 200;
 `;
 export const ContactStickyContainer = styled(Box)`
   display: flex;
