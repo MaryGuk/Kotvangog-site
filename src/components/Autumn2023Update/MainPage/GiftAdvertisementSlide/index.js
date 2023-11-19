@@ -4,7 +4,7 @@ import {Box, Typography} from "@mui/material";
 import {productPageData} from "../../../../constants/mainConstants";
 import MobileCarousel from "../../../MobileCarousel";
 
-const mockImageSrcs = productPageData[0].galleryImages.map(({ fullSrc }) => fullSrc);
+const mockImageSrcs = productPageData.beautyArt.galleryImages.map(({ fullSrc }) => fullSrc);
 
 const GiftAdvertisementSlide = () => {
   return <GiftAdvertisementSlideWrapper>
