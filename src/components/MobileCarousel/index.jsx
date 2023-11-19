@@ -6,6 +6,7 @@ import {Box} from "@mui/system";
 import {StyledIconButtonPrev, StyledIconButtonNext, HoverScalableContent} from "./styled";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import {Link} from "react-router-dom";
 
 export const NextArrow = ({ onClick }) => {
     return (
@@ -25,6 +26,35 @@ export const PrevArrow = ({ onClick }) => {
             <ArrowBackIosIcon />
         </StyledIconButtonPrev>
     );
+}
+
+const MobileCarouselItem = ({ onClick, onImageLoad, data }) => {
+  let redirectTo, imageSrc;
+
+  if (typeof(data) === 'string') {
+    imageSrc = data;
+  } else {
+    imageSrc = data.imageSrc;
+    redirectTo = data.redirectTo;
+  }
+
+
+  const itemContent = (
+    <Box onClick={onClick} display="flex" justifyContent="center" alignItems="center">
+      <img
+        style={{width: '100%', height: 'auto'}}
+        src={imageSrc}
+        alt=''
+        onLoad={onImageLoad}
+      />
+    </Box>
+  );
+
+  return redirectTo ? (
+    <Link to={redirectTo}>
+      {itemContent}
+    </Link>
+  ) : itemContent;
 }
 
 
@@ -71,15 +101,8 @@ const MobileCarouselRow = ({ imageList, columnCount, onImageClick, rowCount }) =
                             rowGap="22px"
                             padding="0 10px"
                         >
-                            {images.map((src, idx) => (
-                                <Box key={idx} onClick={() => onImageClick(index * imagesOnPage + idx)} display="flex" justifyContent="center" alignItems="center">
-                                    <img
-                                        style={{width: '100%', height: 'auto'}}
-                                        src={src}
-                                        alt=''
-                                        onLoad={handleImageLoad}
-                                    />
-                                </Box>
+                            {images.map((imageData, idx) => (
+                              <MobileCarouselItem key={idx} data={imageData} onClick={() => onImageClick(index * imagesOnPage + idx)} onImageLoad={handleImageLoad} />
                             ))}
                         </Box>
                     </Box>

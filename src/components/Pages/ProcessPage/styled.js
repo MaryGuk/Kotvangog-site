@@ -22,6 +22,7 @@ export const ProcessMobileContent = styled(Box)`
 
     flex-direction: column;
     text-align: center;
+    align-items: center;
   }
 `;
 export const ProcessMobileText = styled(Box)`

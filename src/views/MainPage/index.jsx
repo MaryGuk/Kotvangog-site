@@ -21,26 +21,30 @@ import {UnderHeaderBlock} from "../../components/Autumn2023Update/styled";
 import MainSlide from "../../components/Autumn2023Update/MainPage/MainSlide";
 import GiftAdvertisementSlide from "../../components/Autumn2023Update/MainPage/GiftAdvertisementSlide";
 import OilCanvasArea from "../../components/Autumn2023Update/MainPage/OilCanvasArea";
+import ArtStylesArea from "../../components/Autumn2023Update/MainPage/ArtStylesArea";
 
 const MainPage = () => {
   return (
     <MainPageWrapper>
         {isMobile ? (
             <>
-                <UnderHeaderBlock />
-                <HeaderContacts />
-                <MainSlide />
-                <GiftAdvertisementSlide />
+              <UnderHeaderBlock />
+              <HeaderContacts />
+              <MainSlide />
+              <GiftAdvertisementSlide />
             </>
         ): (
             <>
-                <FirstPage />
-                <AdvantagesPage />
+              <FirstPage />
+              <AdvantagesPage />
             </>
         )}
 
       {isMobile ? (
-        <OilCanvasArea />
+        <>
+          <OilCanvasArea />
+          <ArtStylesArea />
+        </>
       ) : (
         <OilPortrait
           title={"Классический портрет маслом"}
