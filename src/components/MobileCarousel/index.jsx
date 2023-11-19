@@ -6,7 +6,7 @@ import {Box} from "@mui/system";
 import {StyledIconButtonPrev, StyledIconButtonNext, HoverScalableContent} from "./styled";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import {Link} from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 export const NextArrow = ({ onClick }) => {
     return (
