@@ -3,10 +3,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {Box} from "@mui/system";
-import {StyledIconButtonPrev, StyledIconButtonNext, HoverScalableContent} from "./styled";
+import {StyledIconButtonPrev, StyledIconButtonNext, HoverScalableContent, MobileCarouselItemsWrapper} from "./styled";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { HashLink as Link } from "react-router-hash-link";
+import {useTranslation} from "react-i18next";
+import {Typography} from "@mui/material";
+import {subtitlePxHeight} from "../../theme/overrides/MuiTypography";
 
 export const NextArrow = ({ onClick }) => {
     return (
@@ -30,6 +33,7 @@ export const PrevArrow = ({ onClick }) => {
 
 const MobileCarouselItem = ({ onClick, onImageLoad, data }) => {
   let redirectTo, imageSrc;
+  const { t } = useTranslation();
 
   if (typeof(data) === 'string') {
     imageSrc = data;
@@ -38,15 +42,21 @@ const MobileCarouselItem = ({ onClick, onImageLoad, data }) => {
     redirectTo = data.redirectTo;
   }
 
+  const handleImageLoad = (({ target: img }) => {
+    onImageLoad(img.offsetHeight + (data.description?.length ?? 0) * subtitlePxHeight);
+  });
 
   const itemContent = (
-    <Box onClick={onClick} display="flex" justifyContent="center" alignItems="center">
+    <Box onClick={onClick} display="flex" justifyContent="center" alignItems="center" flexDirection="column">
       <img
         style={{width: '100%', height: 'auto'}}
         src={imageSrc}
         alt=''
-        onLoad={onImageLoad}
+        onLoad={handleImageLoad}
       />
+      {data.description?.map((textKey, idx) => (
+        <Typography color="black" variant="subtitle1" key={idx}>{t(textKey)}</Typography>
+      ))}
     </Box>
   );
 
@@ -84,8 +94,8 @@ const MobileCarouselRow = ({ imageList, columnCount, onImageClick, rowCount }) =
         prevArrow: <PrevArrow />
     };
 
-    const handleImageLoad = ({ target: img }) => {
-        setMaxHeight(oldHeight => Math.max(oldHeight, img.offsetHeight));
+    const handleImageLoad = (imageHeight) => {
+        setMaxHeight(oldHeight => Math.max(oldHeight, imageHeight));
     };
 
     return (
@@ -93,18 +103,14 @@ const MobileCarouselRow = ({ imageList, columnCount, onImageClick, rowCount }) =
             <Slider {...settings}>
                 {pages.map((images, index) => (
                     <Box key={index}>
-                        <Box
-                            display="grid"
+                        <MobileCarouselItemsWrapper
                             gridTemplateColumns={`repeat(${columnCount}, 1fr)`}
                             gridTemplateRows={`repeat(${rowCount}, ${maxHeight}px)`}
-                            columnGap="12px"
-                            rowGap="22px"
-                            padding="0 10px"
                         >
                             {images.map((imageData, idx) => (
                               <MobileCarouselItem key={idx} data={imageData} onClick={() => onImageClick(index * imagesOnPage + idx)} onImageLoad={handleImageLoad} />
                             ))}
-                        </Box>
+                        </MobileCarouselItemsWrapper>
                     </Box>
                 ))}
             </Slider>
