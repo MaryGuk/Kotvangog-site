@@ -10,18 +10,21 @@ import ProcessPageTitle from "./ProcessPageTitle/ProcessPageTitle";
 import { isMobile } from "react-device-detect";
 import BrashTitle from "../../Autumn2023Update/BrashTitle";
 import brashSrc from "../../../images/brashes/brash7.svg";
-import {Typography} from "@mui/material";
+import {Typography, Box} from "@mui/material";
+import {useTheme} from "@mui/material/styles";
 
 const ProcessPage = () => {
   const { t } = useTranslation();
+  const { palette } = useTheme();
+
   return (
-    <div className="process-page">
+    <Box className="process-page" bgcolor={palette.background.default}>
       <MainPageItemWrapper>
         <div className="process-page__general">
           <ProcessPageTitle />
           <ProcessMobileContent>
             <BrashTitle brashSrc={brashSrc} brashWidth="20rem" translateY={-16}>
-              <Typography variant="h4">Как дизайнер рисует портрет</Typography>
+              <Typography variant="h4" color={palette.text.secondary}>Как дизайнер рисует портрет</Typography>
             </BrashTitle>
           </ProcessMobileContent>
 
@@ -109,7 +112,7 @@ const ProcessPage = () => {
           )}
         </div>
       </MainPageItemWrapper>
-    </div>
+    </Box>
   );
 };
 
