@@ -1,10 +1,5 @@
-import {normalizeDropBoxLink} from "../../utils/linkUtils";
+import {addRedirectLink, normalizeDropBoxLink} from "../../utils/linkUtils";
 import {productPageData} from "../mainConstants";
-
-const addRedirectLink = (redirectTo) => ((imageSrc) => ({
-  imageSrc,
-  redirectTo
-}));
 
 export const likenessPhotos = [
   "https://www.dropbox.com/scl/fi/cfb41sbbc2s60a0mmv2pl/2_4353_1000px.jpg?rlkey=5cwipkeunlqwj7ul53drjs6ck&dl=0",
