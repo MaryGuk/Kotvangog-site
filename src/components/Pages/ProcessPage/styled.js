@@ -70,3 +70,44 @@ export const StepNumberText = styled(Box)`
   font-size: 34px;
   line-height: 45px;
 `;
+
+export const ProcessSlideWrapper = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  background-color: ${({ theme }) => theme.palette.background.default};
+  padding: 0 5%;
+`;
+
+export const ProcessVideoStepsWrapper = styled(Box)`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const ProcessItemVideoStepWrapper = styled(Box)`
+  display: flex;
+  flex-direction: column;
+
+  & > div {
+    padding: 0 0 10px;
+    
+    iframe {
+      width: 100%;
+      height: 60vw;
+    }
+  }
+  
+  & > p {
+    padding: 15px 0 15px;
+  }
+`;
+
+export const ProcessItemStepVideoWrapper = styled(Box)``;
+
+export const MasterInfoBlockWrapper = styled(Box)`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const AboutMeBlock = styled(Box)`
+  padding: 5px 0 0;
+`;

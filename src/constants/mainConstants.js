@@ -33,6 +33,93 @@ export const advantages = [
     "Ручная отрисовка дизайнера и художника",
 ];
 
+export const processVideoStepsData = [
+  {
+    videoSrc: 'https://www.youtube.com/embed/Ml7CWmrXmsE?autoplay=0',
+    description: 'Как дизайнер нарисует ваш портрет',
+  },
+  {
+    videoSrc: 'https://www.youtube.com/embed/Ml7CWmrXmsE?autoplay=0',
+    videoTitle: 'Портрет Энид Синклер из сериала Уэнсдей',
+    description: 'Как художник будет писать портрет маслом',
+  },
+];
+
+export const aboutMeText = [
+  [
+    {
+      text: 'Меня зовут Любовь. Я ',
+      bold: false ,
+    },
+    {
+      text: 'художник и основатель',
+      bold: true ,
+    },
+    {
+      text: ' мастерской «kotvangog».',
+      bold: false ,
+    },
+  ],
+  [
+    {
+      text: 'За ',
+      bold: false,
+    },
+    {
+      text: '10 лет',
+      bold: true,
+    },
+    {
+      text: ' работы мною были созданы ',
+      bold: false,
+    },
+    {
+      text: 'более 3000',
+      bold: true,
+    },
+    {
+      text: ' заказов.',
+      bold: false,
+    },
+  ],
+  [
+    {
+      text: 'У меня нет наценок я не навязываю ненужные услуги. Главное чтобы вы возвращались ко мне ',
+      bold: false,
+    },
+    {
+      text: 'довольные',
+      bold: true,
+    },
+    {
+      text: '.',
+      bold: false,
+    },
+  ],
+  [
+    {
+      text: 'Я ',
+      bold: false,
+    },
+    {
+      text: 'непосредственно',
+      bold: true,
+    },
+    {
+      text: ' принимаю участие ',
+      bold: false,
+    },
+    {
+      text: 'во всех',
+      bold: true,
+    },
+    {
+      text: ' этапах выполнения заказа (от приема до упаковки и отправки портрета.',
+      bold: false,
+    },
+  ],
+];
+
 export const productPageData = {
   beautyArt: {
     id: 1,
