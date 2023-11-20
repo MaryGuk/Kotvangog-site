@@ -1,53 +1,37 @@
 import "./process-master.css";
-import { MasterInfoWrapper } from "../styled";
-import { useTranslation } from "react-i18next";
-import MasterName from "../MasterName/master-name";
+import {
+  ProcessItemStepVideoWrapper,
+  ProcessItemVideoStepWrapper,
+  ProcessSlideWrapper,
+  ProcessVideoStepsWrapper
+} from "../styled";
+import {Typography} from "@mui/material";
+import {processVideoStepsData} from "../../../../constants/mainConstants";
+import MasterInfoBlock from "./MasterInfoBlock";
 
 const ProcessMaster = () => {
-  const { t } = useTranslation();
   return (
-    <div className="process-master__wrapper">
-      <div className="master-name">
-        <MasterName />
-      </div>
+    <ProcessSlideWrapper>
+      <ProcessVideoStepsWrapper>
+        <Typography variant="h4" textAlign="left">Посмотрите 60-секундное видео</Typography>
 
-      <div className="process-page__information">
-        <MasterInfoWrapper>
-          <img
-            className="process-ava"
-            src="https://www.dropbox.com/scl/fi/27c826d7m8vuw7zygbth2/900_.png?rlkey=2yutlcjoozkt3u7kfl7vmf9nv&dl=0&raw=1"
-            loading="lazy"
-            decoding="async"
-            alt="Любовь Ненадовец"
-          />
-        </MasterInfoWrapper>
+        {processVideoStepsData.map(({ videoSrc, videoTitle, description }, idx) => (
+          <ProcessItemVideoStepWrapper key={idx}>
+            <Typography variant="body2" textAlign="left">{description}</Typography>
 
-        <div className="process-text__container">
-          <div className="process-inf__text">{t("processPage.info_text1")}</div>
+            <ProcessItemStepVideoWrapper>
+              <iframe
+                src={videoSrc}
+                title={videoTitle}
+                allowFullScreen
+              />
+            </ProcessItemStepVideoWrapper>
+          </ProcessItemVideoStepWrapper>
+        ))}
+      </ProcessVideoStepsWrapper>
 
-          <div className="process-inf__text2">
-            {t("processPage.info_text2")}
-          </div>
-
-          <div className="process-inf__text3">
-            {t("processPage.info_text3")}
-          </div>
-
-          <div className="process-arrow__container">
-            <img className="process-arrow" src="/images/arrow.png" alt="" />
-          </div>
-        </div>
-
-        <div className="process-video">
-          <iframe
-            className="process-video"
-            src="https://www.youtube.com/embed/Ml7CWmrXmsE?autoplay=0"
-            title="Портрет Энид Синклер из сериала Уэнсдей"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </div>
-    </div>
+      <MasterInfoBlock />
+    </ProcessSlideWrapper>
   );
 };
 export default ProcessMaster;

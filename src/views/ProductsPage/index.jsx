@@ -10,12 +10,13 @@ import PreviewPhotoDialog from "../../components/PreviewPhotoDialog";
 import {productPageData} from "../../constants/mainConstants";
 
 const ProductsPage = () => {
+  const productPageDataArray = Object.values(productPageData);
 
   const [fullImageSrc, setFullImageSrc] = useState(null);
 
   const currentGallery = useMemo(
-    () => fullImageSrc && productPageData[fullImageSrc.pageIdx]?.galleryImages,
-    [fullImageSrc, productPageData]
+    () => fullImageSrc && productPageDataArray[fullImageSrc.pageIdx]?.galleryImages,
+    [fullImageSrc, productPageDataArray]
   );
   const isLastPhoto = useMemo(
     () =>
@@ -49,7 +50,7 @@ const ProductsPage = () => {
 
   return (
     <div className="products-page__wrapper">
-      {productPageData.map((props, idx) => (
+      {productPageDataArray.map((props, idx) => (
         <ProductPageItem
           {...props}
           setFullImageIdx={(imageIdx) =>

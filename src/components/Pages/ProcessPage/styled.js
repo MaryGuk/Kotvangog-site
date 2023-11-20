@@ -22,6 +22,7 @@ export const ProcessMobileContent = styled(Box)`
 
     flex-direction: column;
     text-align: center;
+    align-items: center;
   }
 `;
 export const ProcessMobileText = styled(Box)`
@@ -68,4 +69,84 @@ export const StepNumberText = styled(Box)`
   font-family: "Palatino Linotype";
   font-size: 34px;
   line-height: 45px;
+`;
+
+export const ProcessSlideWrapper = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  background-color: ${({ theme }) => theme.palette.background.default};
+  padding: 0 5% 20px;
+`;
+
+export const ProcessVideoStepsWrapper = styled(Box)`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const ProcessItemVideoStepWrapper = styled(Box)`
+  display: flex;
+  flex-direction: column;
+
+  & > div {
+    padding: 0 0 10px;
+    
+    iframe {
+      width: 100%;
+      height: 60vw;
+    }
+  }
+  
+  & > p {
+    padding: 15px 0 15px;
+  }
+`;
+
+export const ProcessItemStepVideoWrapper = styled(Box)``;
+
+export const MasterInfoBlockWrapper = styled(Box)`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const AboutMeBlock = styled(Box)`
+  padding: 5px 0 0;
+`;
+
+export const WriteMeBlock = styled(Box)`
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+`;
+
+export const WriteMeText = styled(Box)`
+  display: flex;
+  width: 100%;
+`;
+
+export const WriteMeLinks = styled(Box, {
+  shouldForwardProp: (prop) => prop !== "linksCount",
+})`
+  width: max-content;
+  
+  display: grid;
+  grid-template-columns: repeat(${({ linksCount }) => `${linksCount}, ${105 / linksCount - 5}%`});
+  grid-column-gap: 5%;
+  margin: 0 0 0 25px;
+  
+  & > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    a {
+      width: 100%;
+      
+      img {
+        border-radius: 20%;
+        background-color: ${({ theme }) => theme.palette.secondary.main};
+        width: 100%;
+      }
+    }
+  }
 `;

@@ -4,31 +4,30 @@ import { MainPageItemWrapper } from "../../../views/MainPage/styled";
 import {
   MasterInfoWrapper,
   ProcessMobileContent,
-  ProcessMobileText,
-  ProcessMobileTextOne,
 } from "./styled";
 import { useTranslation } from "react-i18next";
 import ProcessPageTitle from "./ProcessPageTitle/ProcessPageTitle";
-import ProcessMobileTitle from "./ProcessMobileTitle/processMobileTitle";
 import { isMobile } from "react-device-detect";
+import BrashTitle from "../../Autumn2023Update/BrashTitle";
+import brashSrc from "../../../images/brashes/brash7.svg";
+import {Typography, Box} from "@mui/material";
+import {useTheme} from "@mui/material/styles";
 
 const ProcessPage = () => {
   const { t } = useTranslation();
+  const { palette } = useTheme();
+
   return (
-    <div className="process-page">
+    <Box className="process-page" bgcolor={palette.background.default}>
       <MainPageItemWrapper>
         <div className="process-page__general">
           <ProcessPageTitle />
           <ProcessMobileContent>
-            <ProcessMobileTitle />
-
-            <ProcessMobileText>
-              <ProcessMobileTextOne>
-                Дизайнер вручную отрисовывает вашу фотографию в течение 4-8
-                часов
-              </ProcessMobileTextOne>
-            </ProcessMobileText>
+            <BrashTitle brashSrc={brashSrc} brashWidth="20rem" translateY={-16}>
+              <Typography variant="h4" color={palette.text.secondary}>Как дизайнер рисует портрет</Typography>
+            </BrashTitle>
           </ProcessMobileContent>
+
           <div className="process-page__container">
             {[
               {
@@ -113,7 +112,7 @@ const ProcessPage = () => {
           )}
         </div>
       </MainPageItemWrapper>
-    </div>
+    </Box>
   );
 };
 

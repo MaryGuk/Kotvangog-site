@@ -33,8 +33,97 @@ export const advantages = [
     "Ручная отрисовка дизайнера и художника",
 ];
 
-export const productPageData = [
+export const processVideoStepsData = [
   {
+    videoSrc: 'https://www.youtube.com/embed/Ml7CWmrXmsE?autoplay=0',
+    videoTitle: 'Портрет Энид Синклер из сериала Уэнсдей',
+    description: 'Как дизайнер нарисует ваш портрет',
+  },
+  // {
+  //   videoSrc: 'https://www.youtube.com/embed/Ml7CWmrXmsE?autoplay=0',
+  //   videoTitle: 'Портрет Энид Синклер из сериала Уэнсдей',
+  //   description: 'Как художник будет писать портрет маслом',
+  // },
+];
+
+export const aboutMeText = [
+  [
+    {
+      text: 'Меня зовут Любовь. Я ',
+      bold: false ,
+    },
+    {
+      text: 'художник и основатель',
+      bold: true ,
+    },
+    {
+      text: ' мастерской «kotvangog».',
+      bold: false ,
+    },
+  ],
+  [
+    {
+      text: 'За ',
+      bold: false,
+    },
+    {
+      text: '10 лет',
+      bold: true,
+    },
+    {
+      text: ' работы мною были созданы ',
+      bold: false,
+    },
+    {
+      text: 'более 3000',
+      bold: true,
+    },
+    {
+      text: ' заказов.',
+      bold: false,
+    },
+  ],
+  [
+    {
+      text: 'У меня нет наценок я не навязываю ненужные услуги. Главное чтобы вы возвращались ко мне ',
+      bold: false,
+    },
+    {
+      text: 'довольные',
+      bold: true,
+    },
+    {
+      text: '.',
+      bold: false,
+    },
+  ],
+  [
+    {
+      text: 'Я ',
+      bold: false,
+    },
+    {
+      text: 'непосредственно',
+      bold: true,
+    },
+    {
+      text: ' принимаю участие ',
+      bold: false,
+    },
+    {
+      text: 'во всех',
+      bold: true,
+    },
+    {
+      text: ' этапах выполнения заказа (от приема до упаковки и отправки портрета.',
+      bold: false,
+    },
+  ],
+];
+
+export const productPageData = {
+  beautyArt: {
+    id: 1,
     portraitTitle: "productsPage.title_beauty",
     portraitPrice: i18n.language === "en" ? "From 20$" : "От 1590 руб.",
     portraitDescription: "productsPage.portraitDescription.part1",
@@ -81,7 +170,8 @@ export const productPageData = [
     ],
     imageId: "beauty-art",
   },
-  {
+  digital: {
+    id: 2,
     portraitTitle: "productsPage.title_digital",
     portraitPrice: i18n.language === "en" ? "From 20$" : "От 2800 руб.",
     portraitDescription: "productsPage.portraitDescription.part2",
@@ -118,7 +208,8 @@ export const productPageData = [
     reverse: true,
     imageId: "digital",
   },
-  {
+  oilImitation: {
+    id: 3,
     portraitTitle: "productsPage.title_oli",
     portraitPrice: i18n.language === "en" ? "From 20$" : "От 950 руб.",
     portraitDescription: "productsPage.portraitDescription.part3",
@@ -245,7 +336,8 @@ export const productPageData = [
 
     imageId: "oli-art",
   },
-  {
+  likenessPortrait: {
+    id: 4,
     portraitTitle: "productsPage.title_image",
     portraitPrice: i18n.language === "en" ? "From 20$" : "От 1090 руб.",
     portraitDescription: "productsPage.portraitDescription.part4",
@@ -311,7 +403,8 @@ export const productPageData = [
     reverse: true,
     imageId: "likeness-art",
   },
-  {
+  fusion: {
+    id: 5,
     portraitTitle: "productsPage.title_fusion",
     portraitPrice: i18n.language === "en" ? "From 20$" : "От 1890 руб.",
     portraitDescription: "productsPage.portraitDescription.part5",
@@ -383,7 +476,8 @@ export const productPageData = [
     ],
     imageId: "fusion-art",
   },
-  {
+  pencil: {
+    id: 6,
     portraitTitle: "productsPage.title_pencil",
     portraitPrice: i18n.language === "en" ? "From 20$" : "От 1790 руб.",
     portraitDescription: "productsPage.portraitDescription.part6",
@@ -420,7 +514,8 @@ export const productPageData = [
     reverse: true,
     imageId: "pencil-art",
   },
-  {
+  infinity: {
+    id: 7,
     portraitTitle: "productsPage.title_infiniti",
     portraitPrice: i18n.language === "en" ? "From 20$" : "От 2900 руб.",
     portraitDescription: "productsPage.portraitDescription.part7",
@@ -468,7 +563,8 @@ export const productPageData = [
     ],
     imageId: "infiniti-art",
   },
-  {
+  mastichin: {
+    id: 8,
     portraitTitle: "productsPage.title_mastichin",
     portraitPrice: i18n.language === "en" ? "From 20$" : "От 2900 руб.",
     portraitDescription: "productsPage.portraitDescription.part8",
@@ -511,7 +607,8 @@ export const productPageData = [
     reverse: true,
     imageId: "mastihin-art",
   },
-  {
+  petPortrait: {
+    id: 9,
     portraitTitle: "productsPage.title_pet",
     portraitPrice: i18n.language === "en" ? "From 20$" : "От 1490 руб.",
     portraitDescription: "productsPage.portraitDescription.part9",
@@ -557,4 +654,4 @@ export const productPageData = [
     ],
     imageId: "animal-art",
   },
-];
+};

@@ -13,10 +13,11 @@ export const BrashTitleTextWrapper = styled(Box)`
 `;
 
 export const BrashTitleBrashWrapper = styled(Box, {
-  shouldForwardProp: (prop) => !['translateX', 'translateY'].includes(prop),
+  shouldForwardProp: (prop) => !['translateX', 'translateY', 'brashWidth'].includes(prop),
 })`
   display: flex;
-  width: 14rem;
+  width: ${(({brashWidth}) => brashWidth ?? '14rem')};
+  max-width: 95vw;
   position: absolute;
   right: 50%;
   transform: ${({translateX, translateY}) => `translate(${50 + translateX}%, ${translateY}%)`};

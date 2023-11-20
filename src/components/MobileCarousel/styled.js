@@ -34,3 +34,14 @@ export const HoverScalableContent = styled(Box)`
     transition: 0.5s;
   }
 `;
+
+export const MobileCarouselItemsWrapper = styled(Box)`
+  display: grid;
+  column-gap: 12px;
+  row-gap: 22px;
+  padding: 0 10px;
+  
+  & > a {
+    text-decoration: none;
+  }
+`;
