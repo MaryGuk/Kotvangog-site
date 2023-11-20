@@ -1,7 +1,14 @@
-import {AboutMeBlock, MasterInfoBlockWrapper, MasterInfoWrapper} from "../styled";
+import {
+  AboutMeBlock,
+  MasterInfoBlockWrapper,
+  MasterInfoWrapper,
+  WriteMeBlock,
+  WriteMeLinks,
+  WriteMeText
+} from "../styled";
 import MasterName from "../MasterName/master-name";
-import {Typography} from "@mui/material";
-import {aboutMeText} from "../../../../constants/mainConstants";
+import {Typography, Box} from "@mui/material";
+import {aboutMeText, messengers} from "../../../../constants/mainConstants";
 import {Fragment} from "react";
 
 const MasterInfoBlock = () => {
@@ -30,6 +37,25 @@ const MasterInfoBlock = () => {
           </Typography>
         ))}
       </AboutMeBlock>
+
+      <WriteMeBlock>
+        <WriteMeText>
+          <Typography variant="body2" textAlign="left" noWrap>Напишите мне:</Typography>
+        </WriteMeText>
+
+        <WriteMeLinks linksCount={messengers.length}>
+          {messengers.map(({imgSrc, link}, idx) => (
+            <Box key={idx}>
+              <a href={link} target="_blank" rel="noreferrer">
+                <img
+                  src={imgSrc}
+                  alt="contact"
+                />
+              </a>
+            </Box>
+          ))}
+        </WriteMeLinks>
+      </WriteMeBlock>
     </MasterInfoBlockWrapper>
   );
 };
