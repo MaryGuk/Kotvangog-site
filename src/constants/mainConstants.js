@@ -36,13 +36,14 @@ export const advantages = [
 export const processVideoStepsData = [
   {
     videoSrc: 'https://www.youtube.com/embed/Ml7CWmrXmsE?autoplay=0',
+    videoTitle: 'Портрет Энид Синклер из сериала Уэнсдей',
     description: 'Как дизайнер нарисует ваш портрет',
   },
-  {
-    videoSrc: 'https://www.youtube.com/embed/Ml7CWmrXmsE?autoplay=0',
-    videoTitle: 'Портрет Энид Синклер из сериала Уэнсдей',
-    description: 'Как художник будет писать портрет маслом',
-  },
+  // {
+  //   videoSrc: 'https://www.youtube.com/embed/Ml7CWmrXmsE?autoplay=0',
+  //   videoTitle: 'Портрет Энид Синклер из сериала Уэнсдей',
+  //   description: 'Как художник будет писать портрет маслом',
+  // },
 ];
 
 export const aboutMeText = [
