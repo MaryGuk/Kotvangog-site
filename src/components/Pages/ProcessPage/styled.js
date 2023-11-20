@@ -120,7 +120,6 @@ export const WriteMeBlock = styled(Box)`
 
 export const WriteMeText = styled(Box)`
   display: flex;
-  width: 100%;
 `;
 
 export const WriteMeLinks = styled(Box, {
