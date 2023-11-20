@@ -1,5 +1,3 @@
-export const subtitlePxHeight = 34;
-
 const MuiTypography = {
   styleOverrides: {
     root: {
@@ -16,7 +14,6 @@ const MuiTypography = {
     subtitle1: {
       fontSize: '1.23rem',
       fontFamily: "Century Gothic, sans-serif",
-      lineHeight: `${subtitlePxHeight}px`
     }
   },
 };

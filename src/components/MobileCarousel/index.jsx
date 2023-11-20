@@ -9,7 +9,8 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { HashLink as Link } from "react-router-hash-link";
 import {useTranslation} from "react-i18next";
 import {Typography} from "@mui/material";
-import {subtitlePxHeight} from "../../theme/overrides/MuiTypography";
+
+export const subtitlePxHeight = 34;
 
 export const NextArrow = ({ onClick }) => {
     return (
@@ -55,7 +56,9 @@ const MobileCarouselItem = ({ onClick, onImageLoad, data }) => {
         onLoad={handleImageLoad}
       />
       {data.description?.map((textKey, idx) => (
-        <Typography color="black" variant="subtitle1" key={idx}>{t(textKey)}</Typography>
+        <Box display="flex" justifyContent="center" alignItems="center" height={subtitlePxHeight} key={idx}>
+          <Typography color="black" variant="subtitle1">{t(textKey)}</Typography>
+        </Box>
       ))}
     </Box>
   );
