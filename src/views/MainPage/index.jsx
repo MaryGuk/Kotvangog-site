@@ -38,7 +38,6 @@ const MainPage = () => {
           </>
         ) : (
           <>
-            <UnderHeaderBlock />
             <MainSlide />
             <FirstPage />
             <AdvantagesPage />

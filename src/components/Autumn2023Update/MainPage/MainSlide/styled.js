@@ -22,7 +22,7 @@ export const MainSlideWrapper = styled(Box)`
   display: flex;
   height: 450px;
   width: 100%;
-  background-color: ${({ theme }) => theme.palette.background.paper};
+  background-color: ${({ theme }) => theme.palette.secondary.dark};
   box-sizing: border-box;
   position: relative;
 

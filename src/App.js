@@ -3,7 +3,7 @@ import { Suspense } from "react";
 
 import "./App.css";
 
-import Navbar from "./components/Pages/FrontPage1/Navbar/navbar.jsx";
+import Navbar from "./components/Navbar/navbar.jsx";
 import MainPage from "./views/MainPage";
 import ReviewsPage from "./views/ReviewsPage";
 import ProductsPage from "./views/ProductsPage";
