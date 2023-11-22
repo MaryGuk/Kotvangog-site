@@ -113,6 +113,10 @@ export const MainSlideImageCarouselWrapper = styled(Box)`
 
   & > div {
     height: 450px;
+    
+    div {
+      height: 450px;
+    }
   }
   
   
@@ -121,6 +125,10 @@ export const MainSlideImageCarouselWrapper = styled(Box)`
     
     & > div {
       height: 120vw;
+      
+      div {
+        height: 120vw;
+      }
     }
   `)}
 `;
