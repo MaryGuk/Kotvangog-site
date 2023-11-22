@@ -4,20 +4,24 @@ import {mobileStyles} from "../../../../utils/stylesUtils";
 export const MainSlideDesktopWrapper = styled(Box)`
   width: 100%;
   padding: 0 10%;
+  box-sizing: border-box;
   
   ${mobileStyles(`
     padding: 0 0;
   `)}
+  
+  & > div {
+    max-width: 1300px;
+  }
 `;
 
 export const MainSlideWrapper = styled(Box)`
   display: flex;
-  background-color: #595037;
   height: 450px;
   width: 100%;
+  background-color: ${({ theme }) => theme.palette.background.paper};
   box-sizing: border-box;
   position: relative;
-  max-width: 1300px;
 
   ${mobileStyles(`
     height: 120vw;
@@ -25,17 +29,19 @@ export const MainSlideWrapper = styled(Box)`
 `;
 
 export const MainSlideContentWrapper = styled(Box)`
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 0 7px 16px;
-  width: 100%;
   box-sizing: border-box;
   position: absolute;
   pointer-events: none;
   
   ${mobileStyles(`
-    height: calc(120vw - 60px);
+    & > div > div {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 0 7px 16px;
+      width: 100%;
+      height: calc(120vw - 60px);
+    }
   `)}
 `;
 
