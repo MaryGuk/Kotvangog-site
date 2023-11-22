@@ -2,7 +2,7 @@ import { styled, Box } from "@mui/material";
 import {mobileStyles} from "../../../../utils/stylesUtils";
 
 export const MainSlideDesktopWrapper = styled(Box)`
-  width: 100%;
+  width: 100vw;
   padding: 0 10%;
   box-sizing: border-box;
   
@@ -32,8 +32,19 @@ export const MainSlideContentWrapper = styled(Box)`
   box-sizing: border-box;
   position: absolute;
   pointer-events: none;
+  height: 350px;
+  
+  & > div {
+    height: 100%;
+
+    & > div {
+      height: 100%;
+    }
+  }
   
   ${mobileStyles(`
+    height: auto;
+  
     & > div > div {
       display: flex;
       justify-content: space-between;
@@ -101,7 +112,12 @@ export const OfferWrapper = styled(Box)`
 export const OfferDescriptionWrapper = styled(Box)`
   display: flex;
   color: white;
-  padding: 0 10px 10px;
+  padding: 0 30px 10px;
+  
+  ${mobileStyles(`
+    padding: 0 10px 10px;
+  
+  `)}
 `;
 
 export const MainSlideImageWrapper = styled(Box)`
@@ -180,7 +196,33 @@ export const BestGiftHeaderTextWrapper = styled(Box)`
 
 export const OfferButtonWrapper = styled(Box)`
   height: min-content;
-  left: 10px;
-  bottom: 25px;
+  left: 0;
+  bottom: 65px;
   position: absolute;
+  
+  & > div {
+    width: 100vw;
+    padding: 0 10%;
+    box-sizing: border-box;
+    
+    div {
+      width: 100%;
+      max-width: 1300px;
+      padding: 0 0 0 30px;
+    }
+  }
+  
+  ${mobileStyles(`
+    left: 10px;
+    bottom: 25px;
+    
+    & > div {
+      width: min-content;
+      padding: 0;
+      
+      div {
+        padding: 0;
+      }
+    }
+  `)}
 `;
