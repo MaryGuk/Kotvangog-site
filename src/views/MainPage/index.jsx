@@ -4,7 +4,6 @@ import Footer from "../../components/Pages/Footer/footer";
 import ProcessPage from "../../components/Pages/ProcessPage/process-page";
 import { MainPageWrapper } from "./styled";
 import OilPortrait from "../../components/Pages/OilPortrait/oil-portrait";
-import FirstPage from "../../components/Pages/FrontPage1/FirstPage";
 import ArtStylesSize from "../ProductsPage/PortraitSizes/ArtStylesSize";
 import { isMobile } from "react-device-detect";
 import ProcessMaster from "../../components/Pages/ProcessPage/ProcessMaster/process-master";
@@ -39,7 +38,6 @@ const MainPage = () => {
         ) : (
           <>
             <MainSlide />
-            <FirstPage />
             <AdvantagesPage />
             <OilPortrait
               title={"Классический портрет маслом"}
