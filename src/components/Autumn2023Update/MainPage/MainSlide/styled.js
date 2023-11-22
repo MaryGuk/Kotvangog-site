@@ -5,12 +5,15 @@ export const MainSlideDesktopWrapper = styled(Box)`
   width: 100vw;
   padding: 0 10%;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
   
   ${mobileStyles(`
     padding: 0 0;
   `)}
   
   & > div {
+    width: 100%;
     max-width: 1300px;
   }
 `;
@@ -120,16 +123,42 @@ export const OfferDescriptionWrapper = styled(Box)`
   `)}
 `;
 
+export const MainSlideCarouselItemWrapper = styled(Box)`
+  display: flex;
+  width: 100vw;
+  padding: 0 10%;
+  box-sizing: border-box;
+  justify-content: center;
+  
+  & > div {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+
+  ${mobileStyles(`
+    justify-content: start;
+    width: auto;
+    padding: 0;
+    
+    & > div {
+      display: block;
+    }
+  `)}
+`;
+
 export const MainSlideImageWrapper = styled(Box)`
   display: flex;
   right: 0;
-  transform: translateX(10vw);
   
   img {
     width: auto !important;
   }
 
   ${mobileStyles(`
+    transform: translateX(10vw);
     height: 120vw;
     width: 90vw;
     
