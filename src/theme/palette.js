@@ -1,13 +1,14 @@
 const palette = {
   primary: {
     main: '#f7b801'
+
   },
   secondary: {
-    main: '#7678ed'
+    main: '#7678ed',
+    dark: '#595037'
   },
   background: {
-    default: '#ede7d6',
-    paper: '#595037'
+    default: '#ede7d6'
   },
   text: {
     primary: '#000',

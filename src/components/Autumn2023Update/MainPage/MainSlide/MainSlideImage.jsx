@@ -1,4 +1,4 @@
-import {MainSlideImageWrapper, MainSlideImageCarouselWrapper} from "./styled";
+import {MainSlideImageWrapper, MainSlideImageCarouselWrapper, MainSlideCarouselItemWrapper} from "./styled";
 import {mainSlideFramesGallery} from "../../../../constants/galeries/mainPageImages";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -9,9 +9,9 @@ const MainSlideImages = () => {
     const [autoPlay, setAutoPlay] = useState(true);
 
     return <MainSlideImageCarouselWrapper>
-      <Box height="120vw" width="100vw" position="absolute" onTouchStart={() => setAutoPlay(false)} onTouchEnd={() => setAutoPlay(true)}>
+      <Box width="100vw" position="absolute" onTouchStart={() => setAutoPlay(false)} onTouchEnd={() => setAutoPlay(true)}>
         <Carousel
-          autoPlay={autoPlay}
+          autoPlay={autoPlay && false}
           showIndicators={false}
           showThumbs={false}
           showArrows={false}
@@ -21,11 +21,15 @@ const MainSlideImages = () => {
           width="120vw"
         >
           {
-            mainSlideFramesGallery.map((src, idx) =>
-              (<MainSlideImageWrapper key={idx}>
-                  <img src={src} alt={"frame"} height="100%" />
-              </MainSlideImageWrapper>)
-            )
+            mainSlideFramesGallery.map((src, idx) => (
+              <MainSlideCarouselItemWrapper key={idx}>
+                <Box>
+                  <MainSlideImageWrapper>
+                    <img src={src} alt={"frame"} height="100%" />
+                  </MainSlideImageWrapper>
+                </Box>
+              </MainSlideCarouselItemWrapper>
+            ))
           }
         </Carousel>
         </Box>

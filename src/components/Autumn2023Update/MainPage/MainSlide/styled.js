@@ -1,24 +1,62 @@
 import { styled, Box } from "@mui/material";
+import {mobileStyles} from "../../../../utils/stylesUtils";
+
+export const MainSlideDesktopWrapper = styled(Box)`
+  width: 100vw;
+  padding: 0 10%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  
+  ${mobileStyles(`
+    padding: 0 0;
+  `)}
+  
+  & > div {
+    width: 100%;
+    max-width: 1300px;
+  }
+`;
 
 export const MainSlideWrapper = styled(Box)`
   display: flex;
-  background-color: #595037;
-  height: 120vw;
+  height: 450px;
   width: 100%;
+  background-color: ${({ theme }) => theme.palette.secondary.dark};
   box-sizing: border-box;
   position: relative;
+
+  ${mobileStyles(`
+    height: 120vw;
+  `)}
 `;
 
 export const MainSlideContentWrapper = styled(Box)`
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 0 7px 16px;
-  height: calc(120vw - 60px);
-  width: 100%;
   box-sizing: border-box;
   position: absolute;
   pointer-events: none;
+  height: 350px;
+  
+  & > div {
+    height: 100%;
+
+    & > div {
+      height: 100%;
+    }
+  }
+  
+  ${mobileStyles(`
+    height: auto;
+  
+    & > div > div {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 0 7px 16px;
+      width: 100%;
+      height: calc(120vw - 60px);
+    }
+  `)}
 `;
 
 export const MainSlideTitleWrapper = styled(Box)`
@@ -77,19 +115,57 @@ export const OfferWrapper = styled(Box)`
 export const OfferDescriptionWrapper = styled(Box)`
   display: flex;
   color: white;
-  padding: 0 10px 10px;
+  padding: 0 30px 10px;
+  
+  ${mobileStyles(`
+    padding: 0 10px 10px;
+  
+  `)}
+`;
+
+export const MainSlideCarouselItemWrapper = styled(Box)`
+  display: flex;
+  width: 100vw;
+  padding: 0 10%;
+  box-sizing: border-box;
+  justify-content: center;
+  
+  & > div {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+
+  ${mobileStyles(`
+    justify-content: start;
+    width: auto;
+    padding: 0;
+    
+    & > div {
+      display: block;
+    }
+  `)}
 `;
 
 export const MainSlideImageWrapper = styled(Box)`
   display: flex;
-  height: 120vw;
   right: 0;
-  transform: translateX(10vw);
-  width: 90vw;
   
   img {
-    width: 120vw !important;
+    width: auto !important;
   }
+
+  ${mobileStyles(`
+    transform: translateX(10vw);
+    height: 120vw;
+    width: 90vw;
+    
+    img {
+      width: 120vw !important;
+    }
+  `)}
 `;
 
 export const MainSlideImageCarouselWrapper = styled(Box)`
@@ -97,7 +173,28 @@ export const MainSlideImageCarouselWrapper = styled(Box)`
   justify-content: flex-start;
   position: relative;
   width: 100vw;
-  height: 120vw;
+  height: 450px;
+
+  & > div {
+    height: 450px;
+    
+    div {
+      height: 450px;
+    }
+  }
+  
+  
+  ${mobileStyles(`
+    height: 120vw;
+    
+    & > div {
+      height: 120vw;
+      
+      div {
+        height: 120vw;
+      }
+    }
+  `)}
 `;
 
 
@@ -128,7 +225,33 @@ export const BestGiftHeaderTextWrapper = styled(Box)`
 
 export const OfferButtonWrapper = styled(Box)`
   height: min-content;
-  left: 10px;
-  bottom: 25px;
+  left: 0;
+  bottom: 65px;
   position: absolute;
+  
+  & > div {
+    width: 100vw;
+    padding: 0 10%;
+    box-sizing: border-box;
+    
+    div {
+      width: 100%;
+      max-width: 1300px;
+      padding: 0 0 0 30px;
+    }
+  }
+  
+  ${mobileStyles(`
+    left: 10px;
+    bottom: 25px;
+    
+    & > div {
+      width: min-content;
+      padding: 0;
+      
+      div {
+        padding: 0;
+      }
+    }
+  `)}
 `;
