@@ -43,3 +43,20 @@ export const TimeItemWrapper = styled(Box)`
   align-items: center;
   padding: 0 0 0 5px;
 `;
+
+export const ContactsWithCommentWrapper = styled(Box)`
+  display: flex;
+  max-width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+`;
+
+export const ContactItemWrapper = styled(Box)`
+  display: flex;
+`;
+
+export const ContactCommentWrapper = styled(Box)`
+  display: flex;
+  padding: 0 10px;
+`;

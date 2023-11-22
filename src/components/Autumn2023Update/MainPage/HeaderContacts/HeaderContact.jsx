@@ -1,8 +1,8 @@
 import {HeaderContactsMessengerItemWrapper} from "./styled";
 
-const HeaderContact = ({ imgSrc, link }) => {
+const HeaderContact = ({ imgSrc, link, width='16%' }) => {
     return (
-        <HeaderContactsMessengerItemWrapper>
+        <HeaderContactsMessengerItemWrapper width={width}>
             <a href={link} target="_blank" rel="noreferrer">
                 <img
                     src={imgSrc}

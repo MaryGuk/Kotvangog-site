@@ -3,6 +3,7 @@ import {NavbarContent, NavbarLayer, NavbarWrapper} from "./styled";
 import { useTranslation } from "react-i18next";
 import NavBarItem from "./NavBarItem";
 import PhoneAndTime from "./PhoneAndTime";
+import ContactsWithComment from "./ContactsWithComment";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -48,6 +49,7 @@ const Navbar = () => {
             </NavbarWrapper>
           </NavbarLayer>
           <NavbarLayer>
+            <ContactsWithComment commentPosition={3} />
             <PhoneAndTime />
           </NavbarLayer>
         </NavbarContent>

@@ -25,7 +25,6 @@ export const HeaderContactsMessengersWrapper = styled(Box)`
 export const HeaderContactsMessengerItemWrapper = styled(Box)`
   display: flex;
   margin: 0 0 0 5px;
-  width: 16%;
   height: min-content;
   
   & > a > img {

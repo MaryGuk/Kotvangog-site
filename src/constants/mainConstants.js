@@ -26,6 +26,8 @@ export const messengers = [
     },
 ];
 
+export const messengersComment = "Быстрая связь в мессенджерах:";
+
 
 export const advantages = [
     "Первый макет бесплатный!",
