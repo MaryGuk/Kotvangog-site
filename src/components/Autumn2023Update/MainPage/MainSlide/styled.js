@@ -1,12 +1,18 @@
 import { styled, Box } from "@mui/material";
+import {mobileStyles} from "../../../../utils/stylesUtils";
 
 export const MainSlideWrapper = styled(Box)`
   display: flex;
   background-color: #595037;
-  height: 120vw;
+  height: 450px;
   width: 100%;
   box-sizing: border-box;
   position: relative;
+
+  ${mobileStyles(`
+    height: 120vw;
+      
+  `)}
 `;
 
 export const MainSlideContentWrapper = styled(Box)`
@@ -14,11 +20,14 @@ export const MainSlideContentWrapper = styled(Box)`
   justify-content: space-between;
   flex-direction: column;
   padding: 0 7px 16px;
-  height: calc(120vw - 60px);
   width: 100%;
   box-sizing: border-box;
   position: absolute;
   pointer-events: none;
+  
+  ${mobileStyles(`
+    height: calc(120vw - 60px);
+  `)}
 `;
 
 export const MainSlideTitleWrapper = styled(Box)`
@@ -82,7 +91,6 @@ export const OfferDescriptionWrapper = styled(Box)`
 
 export const MainSlideImageWrapper = styled(Box)`
   display: flex;
-  height: 120vw;
   right: 0;
   transform: translateX(10vw);
   width: 90vw;
@@ -90,6 +98,10 @@ export const MainSlideImageWrapper = styled(Box)`
   img {
     width: 120vw !important;
   }
+
+  ${mobileStyles(`
+    height: 120vw;
+  `)}
 `;
 
 export const MainSlideImageCarouselWrapper = styled(Box)`
@@ -97,7 +109,20 @@ export const MainSlideImageCarouselWrapper = styled(Box)`
   justify-content: flex-start;
   position: relative;
   width: 100vw;
-  height: 120vw;
+  height: 450px;
+
+  & > div {
+    height: 450px;
+  }
+  
+  
+  ${mobileStyles(`
+    height: 120vw;
+    
+    & > div {
+      height: 120vw;
+    }
+  `)}
 `;
 
 

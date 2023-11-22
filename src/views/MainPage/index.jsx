@@ -38,6 +38,7 @@ const MainPage = () => {
           </>
         ) : (
           <>
+            <MainSlide />
             <FirstPage />
             <AdvantagesPage />
             <OilPortrait

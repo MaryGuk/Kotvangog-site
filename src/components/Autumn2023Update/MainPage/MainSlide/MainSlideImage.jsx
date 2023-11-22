@@ -9,7 +9,7 @@ const MainSlideImages = () => {
     const [autoPlay, setAutoPlay] = useState(true);
 
     return <MainSlideImageCarouselWrapper>
-      <Box height="120vw" width="100vw" position="absolute" onTouchStart={() => setAutoPlay(false)} onTouchEnd={() => setAutoPlay(true)}>
+      <Box width="100vw" position="absolute" onTouchStart={() => setAutoPlay(false)} onTouchEnd={() => setAutoPlay(true)}>
         <Carousel
           autoPlay={autoPlay}
           showIndicators={false}
