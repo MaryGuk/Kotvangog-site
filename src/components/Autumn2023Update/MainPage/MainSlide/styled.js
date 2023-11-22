@@ -1,6 +1,15 @@
 import { styled, Box } from "@mui/material";
 import {mobileStyles} from "../../../../utils/stylesUtils";
 
+export const MainSlideDesktopWrapper = styled(Box)`
+  width: 100%;
+  padding: 0 10%;
+  
+  ${mobileStyles(`
+    padding: 0 0;
+  `)}
+`;
+
 export const MainSlideWrapper = styled(Box)`
   display: flex;
   background-color: #595037;
@@ -8,10 +17,10 @@ export const MainSlideWrapper = styled(Box)`
   width: 100%;
   box-sizing: border-box;
   position: relative;
+  max-width: 1300px;
 
   ${mobileStyles(`
     height: 120vw;
-      
   `)}
 `;
 
