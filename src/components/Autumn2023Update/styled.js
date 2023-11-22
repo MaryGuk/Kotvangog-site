@@ -1,8 +1,13 @@
 import { styled, Box } from "@mui/material";
+import {mobileStyles} from "../../utils/stylesUtils";
 
 export const UnderHeaderBlock = styled(Box)`
-  height: 50px;
+  height: 60px;
   width: 100%;
+  
+  ${mobileStyles(`  
+    height: 50px;
+  `)};
 `;
 
 export const GiftAdvertisementSlideWrapper = styled(Box)`

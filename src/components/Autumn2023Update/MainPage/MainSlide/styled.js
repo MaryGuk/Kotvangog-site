@@ -93,14 +93,18 @@ export const MainSlideImageWrapper = styled(Box)`
   display: flex;
   right: 0;
   transform: translateX(10vw);
-  width: 90vw;
   
   img {
-    width: 120vw !important;
+    width: auto !important;
   }
 
   ${mobileStyles(`
     height: 120vw;
+    width: 90vw;
+    
+    img {
+      width: 120vw !important;
+    }
   `)}
 `;
 
