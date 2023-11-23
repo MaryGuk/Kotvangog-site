@@ -14,7 +14,7 @@ export const ArtStylesSizeWrapper = styled(Box)`
   }
 `;
 export const ArtStylesSizeGeneral = styled(Box)`
-  max-width: 1300px;
+  max-width: 1000px;
   width: 100%;
   display: flex;
   flex-direction: column;

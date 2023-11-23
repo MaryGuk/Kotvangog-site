@@ -7,9 +7,7 @@ const PhoneAndTime = () => {
   return (
     <PhoneAndTimeWrapper>
       <PhoneWrapper>
-        <Typography variant="subtitle2">
-          <MobileLink />
-        </Typography>
+        <MobileLink />
       </PhoneWrapper>
 
       <TimeWrapper>

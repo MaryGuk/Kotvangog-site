@@ -46,7 +46,7 @@ export const HistoryImagesCollageItems = styled(Box)`
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1000px;
   margin-bottom: 80px;
 
   @media (max-width: 950px) {

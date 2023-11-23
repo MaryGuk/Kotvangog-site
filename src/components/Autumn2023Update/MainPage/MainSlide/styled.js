@@ -14,7 +14,7 @@ export const MainSlideDesktopWrapper = styled(Box)`
   
   & > div {
     width: 100%;
-    max-width: 1300px;
+    max-width: 1000px;
   }
 `;
 
@@ -132,7 +132,7 @@ export const MainSlideCarouselItemWrapper = styled(Box)`
   
   & > div {
     width: 100%;
-    max-width: 1300px;
+    max-width: 1000px;
     display: flex;
     justify-content: flex-end;
   }
@@ -236,7 +236,7 @@ export const OfferButtonWrapper = styled(Box)`
     
     div {
       width: 100%;
-      max-width: 1300px;
+      max-width: 1000px;
       padding: 0 0 0 30px;
     }
   }

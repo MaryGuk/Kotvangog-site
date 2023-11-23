@@ -83,7 +83,7 @@ export const OilSizeContainer = styled(Box)`
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 10px;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1000px;
   margin: 0 auto;
   align-items: center;
   justify-items: center;

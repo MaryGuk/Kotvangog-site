@@ -20,7 +20,7 @@ export const FirstPageGeneral = styled(Box)`
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  max-width: 1300px;
+  max-width: 1000px;
   margin-top: 130px;
 
   @media (max-width: 740px) {

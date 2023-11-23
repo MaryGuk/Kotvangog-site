@@ -17,7 +17,7 @@ export const LikenessPortraitGeneral = styled(Box)`
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1000px;
 `;
 
 export const LikenessContent = styled(Box)`

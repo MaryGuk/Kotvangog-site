@@ -11,7 +11,7 @@ export const ModernImagesItems = styled(Box)`
   grid-column-gap: 2%;
   grid-row-gap: 60px;
   margin: 20px 0;
-  max-width: 1300px;
+  max-width: 1000px;
   width: 100%;
 `;
 
