@@ -35,7 +35,7 @@ export const OilPortraitExamplesContent = styled(Box)`
 export const OilPortraitExamplesGallery = styled(Box)`
   display: grid;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1000px;
   margin: 40px 0;
   grid-template-columns: repeat(4, minmax(170px, 1fr));
   gap: 60px 2%;

@@ -112,7 +112,7 @@ export const LikenessSizeContainer = styled(Box)`
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 10px;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1000px;
   margin: 50px auto 0;
   align-items: center;
   justify-items: center;

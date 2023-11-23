@@ -18,7 +18,7 @@ export const OilPortraitGeneral = styled(Box)`
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1000px;
   padding-top: 20px;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {

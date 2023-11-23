@@ -36,7 +36,7 @@ export const OilContent2 = styled(Box)`
 
 export const OilContent22 = styled(Box)`
   width: 100%;
-  max-width: 1300px;
+  max-width: 1000px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
