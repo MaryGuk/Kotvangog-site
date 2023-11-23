@@ -149,3 +149,10 @@ export const WriteMeLinks = styled(Box, {
     }
   }
 `;
+
+export const MasterNameWrapper = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 20px;
+`;
