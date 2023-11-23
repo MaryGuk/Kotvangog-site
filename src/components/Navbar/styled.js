@@ -32,6 +32,8 @@ export const PhoneAndTimeWrapper = styled(Box)`
 
 export const PhoneWrapper = styled(Box)`
   display: flex;
+  align-items: center;
+  cursor: pointer;
 `;
 
 export const TimeWrapper = styled(Box)`

@@ -1,7 +1,7 @@
 import i18n from "../i18n";
 
 export const workTime = ['Пн-Пт – 09:00-20:00', 'Сб - 12:00-17:00'];
-export const mobilePhone = '+79933600710';
+export const mobilePhone = { number: '+79933600710', text: '+79933600710' };
 
 export const messengers = [
     {
