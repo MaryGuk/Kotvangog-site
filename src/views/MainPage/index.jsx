@@ -38,6 +38,7 @@ const MainPage = () => {
         ) : (
           <>
             <MainSlide />
+            <GiftAdvertisementSlide />
             <AdvantagesPage />
             <OilPortrait
               title={"Классический портрет маслом"}

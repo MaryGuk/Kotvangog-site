@@ -22,5 +22,9 @@ export const GiftAdvertisementSlideWrapper = styled(Box)`
 
 
 export const FortuneWheelDescriptionWrapper = styled(Box)`
-  max-width: 80vw;
+  max-width: 22rem;
+
+  ${mobileStyles(`  
+    max-width: 80vw;
+  `)};
 `;

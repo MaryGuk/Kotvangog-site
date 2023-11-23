@@ -201,26 +201,6 @@ export const MainSlideImageCarouselWrapper = styled(Box)`
 export const BestGiftHeaderWrapper = styled(Box)`
   display: flex;
   padding: 20px 15px;
-  position: relative;
-`;
-
-export const BestGiftHeaderSmearWrapper = styled(Box)`
-  display: flex;
-  justify-content: flex-end;
-  position: absolute;
-  width:100%;
-  right: 20px;
-
-  img {
-    width: 60vw;
-  }
-`;
-
-export const BestGiftHeaderTextWrapper = styled(Box)`
-  display: flex;
-  z-index: 1;
-  max-width: 380px;
-  min-width: 290px;
 `;
 
 export const OfferButtonWrapper = styled(Box)`

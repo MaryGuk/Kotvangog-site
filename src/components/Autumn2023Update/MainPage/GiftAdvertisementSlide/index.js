@@ -3,6 +3,7 @@ import BestGiftHeader from "./BestGiftHeader";
 import {Box, Typography} from "@mui/material";
 import {productPageData} from "../../../../constants/mainConstants";
 import MobileCarousel from "../../../MobileCarousel";
+import {isMobile} from "react-device-detect";
 
 const mockImageSrcs = productPageData.beautyArt.galleryImages.map(({ fullSrc }) => fullSrc);
 
@@ -16,14 +17,16 @@ const GiftAdvertisementSlide = () => {
 
     <BestGiftHeader />
 
-    <Box height="150vw" width="100vw">
-      <MobileCarousel
-        imageList={mockImageSrcs}
-        columnCount={1}
-        rowCount={1}
-        onImageClick={() => true}
-      />
-    </Box>
+    {isMobile && (
+      <Box height="150vw" width="100vw">
+        <MobileCarousel
+          imageList={mockImageSrcs}
+          columnCount={1}
+          rowCount={1}
+          onImageClick={() => true}
+        />
+      </Box>
+    )}
   </GiftAdvertisementSlideWrapper>
 }
 
