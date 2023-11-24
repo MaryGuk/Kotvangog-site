@@ -1,5 +1,5 @@
-import { Box } from "@mui/material";
-import LikenessTitle from "./LikenessTitle/LikenessTitle";
+import { Box } from '@mui/material';
+import LikenessTitle from './LikenessTitle/LikenessTitle';
 import {
   LikenessPortraitWrapper,
   LikenessPortraitGeneral,
@@ -28,15 +28,15 @@ import {
   LikenessDesktopDescription1,
   LikenessDesktopDescription2,
   LikenessDesktopDescription3,
-} from "./styled";
+} from './styled';
 
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
-import Modal from "../../../components/Modal/modal";
-import { Link } from "react-router-dom";
-import "./likeness-portrait.css";
-import { isMobile } from "react-device-detect";
-import LikenessButtonMobile from "../../Button/LikenessButton";
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import Modal from '../../../components/Modal/modal';
+import { Link } from 'react-router-dom';
+import './likeness-portrait.css';
+import { isMobile } from 'react-device-detect';
+import LikenessButtonMobile from '../../Button/LikenessButton';
 
 const LikenessPortrait = () => {
   const { t } = useTranslation();
@@ -62,8 +62,8 @@ const LikenessPortrait = () => {
               <img
                 src={
                   isMobile
-                    ? "/images/в образе моб.png"
-                    : "https://www.dropbox.com/scl/fi/5ms2icxzh7gkbbw1n0kf2/1400_likeness-portrait.png?rlkey=5vvmwjjk1kbos4fjdd3g0dh6g&dl=0&raw=1"
+                    ? '/images/в образе моб.png'
+                    : 'https://www.dropbox.com/scl/fi/41rriflyaxngeqi4ruct9/2_4353_1400px_progressive.jpg?rlkey=alftcvp5saam6k8w00iccdpxd&dl=0&raw=1'
                 }
                 width="100%"
               />
@@ -133,7 +133,7 @@ const LikenessPortrait = () => {
 
                 <Box>
                   <FirstButtonLikeness onClick={() => setModalActive(true)}>
-                    {t("mainPage.button")}
+                    {t('mainPage.button')}
                   </FirstButtonLikeness>
                 </Box>
                 <Modal active={modalActive} setActive={setModalActive}>

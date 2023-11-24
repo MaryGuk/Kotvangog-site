@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box } from '@mui/material';
 import {
   LikenessPortraitWrapper2,
   LikenessPortraitGeneral2,
@@ -27,16 +27,16 @@ import {
   LikenessDesktopDescription12,
   LikenessDesktopDescription22,
   LikenessDesktopDescription32,
-} from "./styled";
+} from './styled';
 
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
-import Modal from "../../../../components/Modal/modal";
-import { Link } from "react-router-dom";
-import "./likeness-portrait2.css";
-import { isMobile } from "react-device-detect";
-import LikenessButtonMobile from "../../../../components/Button/LikenessButton";
-import LikenessTitle2 from "./LikenessTitle2/likeness-title2";
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import Modal from '../../../../components/Modal/modal';
+import { Link } from 'react-router-dom';
+import './likeness-portrait2.css';
+import { isMobile } from 'react-device-detect';
+import LikenessButtonMobile from '../../../../components/Button/LikenessButton';
+import LikenessTitle2 from './LikenessTitle2/likeness-title2';
 
 const LikenessPortrait = () => {
   const { t } = useTranslation();
@@ -62,8 +62,8 @@ const LikenessPortrait = () => {
               <img
                 src={
                   isMobile
-                    ? "https://www.dropbox.com/scl/fi/pkv6adm7vjoe089jjtppc/800_likeness-portrait.png?rlkey=9wi4q4e3f9gx1bf3yzq2n6u07&dl=0&raw=1"
-                    : "https://www.dropbox.com/scl/fi/5ms2icxzh7gkbbw1n0kf2/1400_likeness-portrait.png?rlkey=5vvmwjjk1kbos4fjdd3g0dh6g&dl=0&raw=1"
+                    ? 'https://www.dropbox.com/scl/fi/sci2tymgovy0nk8l18cev/2_4353_800px_progressive.jpg?rlkey=jz2z6dflhaj3eqh7vk9izs5z1&dl=0&raw=1'
+                    : 'https://www.dropbox.com/scl/fi/41rriflyaxngeqi4ruct9/2_4353_1400px_progressive.jpg?rlkey=alftcvp5saam6k8w00iccdpxd&dl=0&raw=1'
                 }
                 width="100%"
                 height="100%"
@@ -134,7 +134,7 @@ const LikenessPortrait = () => {
 
                 <Box>
                   <FirstButtonLikeness onClick={() => setModalActive(true)}>
-                    {t("mainPage.button")}
+                    {t('mainPage.button')}
                   </FirstButtonLikeness>
                 </Box>
                 <Modal active={modalActive} setActive={setModalActive}>

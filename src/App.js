@@ -1,22 +1,22 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import { Suspense } from "react";
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { Suspense } from 'react';
 
-import "./App.css";
+import './App.css';
 
-import Navbar from "./components/Navbar/navbar.jsx";
-import MainPage from "./views/MainPage";
-import ReviewsPage from "./views/ReviewsPage";
-import ProductsPage from "./views/ProductsPage";
-import OilPortraitPage from "./views/ProductsPage/OilPortraitPage";
-import LikenessPortraitPage from "./views/ProductsPage/LikenessPortraitPage";
-import { Box } from "@mui/material";
-import PaintbrushLoader from "./components/ImageWithLoader/PaintbrushLoader";
-import { isMobile } from "react-device-detect";
-import BurgerMenu from "./components/Pages/NavbarMobile/burger-menu";
-import ScrollToTop from "./components/ScrollToTop";
+import Navbar from './components/Navbar/navbar.jsx';
+import MainPage from './views/MainPage';
+import ReviewsPage from './views/ReviewsPage';
+import ProductsPage from './views/ProductsPage';
+import OilPortraitPage from './views/ProductsPage/OilPortraitPage';
+import LikenessPortraitPage from './views/ProductsPage/LikenessPortraitPage';
+import { Box } from '@mui/material';
+import PaintbrushLoader from './components/ImageWithLoader/PaintbrushLoader';
+import { isMobile } from 'react-device-detect';
+import BurgerMenu from './components/Pages/NavbarMobile/burger-menu';
+import ScrollToTop from './components/ScrollToTop';
 import { ThemeProvider } from '@mui/material/styles';
-import theme from "./theme/theme";
-import ConsultationDialogProvider from "./components/Autumn2023Update/ConsultationDialogProvider/provider";
+import theme from './theme/theme';
+import ConsultationDialogProvider from './components/Autumn2023Update/ConsultationDialogProvider/provider';
 
 const App = () => {
   return (
