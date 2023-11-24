@@ -1,9 +1,9 @@
-import {Box, styled} from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 export const OilCanvasAreaWrapper = styled(Box)`
   display: flex;
   align-items: center;
-  background-color: ${({ theme: { palette }}) => palette.background.default};
+  background-color: ${({ theme: { palette } }) => palette.background.default};
   flex-direction: column;
   padding: 0 4% 30px;
 `;
@@ -32,7 +32,7 @@ export const OilTitleBrashWrapper = styled(Box)`
   transform: translate(50%, 10%);
 
   img {
-    width: 100%
+    width: 100%;
   }
 `;
 
@@ -46,7 +46,7 @@ export const AdvantagesListWrapper = styled(Box)`
   display: flex;
   width: 100%;
 
-  &>div {
+  & > div {
     max-width: 17.9rem;
   }
 `;

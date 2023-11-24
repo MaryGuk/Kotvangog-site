@@ -1,28 +1,31 @@
-import {Typography} from "@mui/material";
+// import { Typography } from '@mui/material';
 import {
-  OilCanvasAreaTitleWrapper,
+  // OilCanvasAreaTitleWrapper,
   OilCanvasAreaWrapper,
-} from "./styled";
-import OilSlide from "./OilSlide";
-import PresentBoxingSlide from "./PresentBoxingSlide";
-import CanvasSlide from "./CanvasSlide";
+} from './styled';
+// import OilSlide from './OilSlide';
+import PresentBoxingSlide from './PresentBoxingSlide';
+import PageContentWrapper from '../../../PageContentWrapper';
+// import CanvasSlide from './CanvasSlide';
 
 const OilCanvasArea = () => {
   return (
     <OilCanvasAreaWrapper>
-      <OilCanvasAreaTitleWrapper>
-        <Typography variant="h4">
-          Мы создаем портреты маслом или печатаем на холсте
-        </Typography>
-      </OilCanvasAreaTitleWrapper>
+      <PageContentWrapper>
+        {/*<OilCanvasAreaTitleWrapper>*/}
+        {/*  <Typography variant="h4">*/}
+        {/*    Мы создаем портреты маслом или печатаем на холсте*/}
+        {/*  </Typography>*/}
+        {/*</OilCanvasAreaTitleWrapper>*/}
 
-      <OilSlide />
+        {/*<OilSlide />*/}
 
-      <PresentBoxingSlide />
+        <PresentBoxingSlide />
 
-      <CanvasSlide />
+        {/*<CanvasSlide />*/}
+      </PageContentWrapper>
     </OilCanvasAreaWrapper>
   );
-}
+};
 
 export default OilCanvasArea;

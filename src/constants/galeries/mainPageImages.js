@@ -29,54 +29,54 @@ export const presentSlideImages = [
 export const eventsSlideGallery = [
   {
     imageSrc:
-      'https://www.dropbox.com/scl/fi/yd8d436ztm5njoy0ynqup/0_-_1000px_progressive.jpg?rlkey=tplu9hvlf465swhg8dwopulzn&dl=0',
+      'https://www.dropbox.com/scl/fi/hiqvoe8zniag2dq1g6w7a/0_.jpg?rlkey=elyh84cib5yw3lhz8whvfyrwn&dl=0',
     imageSrc_1000:
-      'https://www.dropbox.com/scl/fi/yd8d436ztm5njoy0ynqup/0_-_1000px_progressive.jpg?rlkey=tplu9hvlf465swhg8dwopulzn&dl=0',
+      'https://www.dropbox.com/scl/fi/qgatcdxvkek4tx1q3unmv/0_-_1000px_progressive.jpg?rlkey=54tyhtzxqlg6qkli0oum1uz2t&dl=0',
     imageSrc_500:
-      'https://www.dropbox.com/scl/fi/t0erzoqs0cfok85y4j20a/0_-_500px_progressive.jpg?rlkey=6sq2jyj1ox9ogzzsesu3t488u&dl=0',
+      'https://www.dropbox.com/scl/fi/hiza7onsu7vfax2itonuw/0_-_500px_progressive.jpg?rlkey=1j96g5nmk70pydfokcqn8l1yf&dl=0',
     description: 'Портрет на день рождения',
   },
   {
     imageSrc:
-      'https://www.dropbox.com/scl/fi/d49fx8czp4po5dhm0vafn/1_-_1000px_progressive.jpg?rlkey=l32ccvmo0ahk0jm2kzsok2355&dl=0',
+      'https://www.dropbox.com/scl/fi/ad3h5lm3nkzvjyam2mhxp/1_.jpg?rlkey=9mf61kf8lz964o391rnsougjx&dl=0',
     imageSrc_1000:
-      'https://www.dropbox.com/scl/fi/d49fx8czp4po5dhm0vafn/1_-_1000px_progressive.jpg?rlkey=l32ccvmo0ahk0jm2kzsok2355&dl=0',
+      'https://www.dropbox.com/scl/fi/ij59j7pn7emn3qu84nxek/1_-_1000px_progressive.jpg?rlkey=jn4ocihsf4gtz95xm61zs29mb&dl=0',
     imageSrc_500:
-      'https://www.dropbox.com/scl/fi/rhzhdreslinsbi7krp8rp/1_-_500px_progressive.jpg?rlkey=ngfxhz1xvpegg30woq4h5u4gd&dl=0',
+      'https://www.dropbox.com/scl/fi/pmgh7c618unxuj6zm9yuz/1_-_500px_progressive.jpg?rlkey=fw2w83p0i4hkqa9vsotjcuk3l&dl=0',
     description: 'Портрет на  новый год',
   },
   {
     imageSrc:
-      'https://www.dropbox.com/scl/fi/xvnuxiyqc0eqech2jyx70/2_-_1000px_progressive.jpg?rlkey=t03hwkem638s6eqf9tv33w79a&dl=0',
+      'https://www.dropbox.com/scl/fi/qsv4z6n2n9qlmk42q0gd6/2_.jpg?rlkey=l0gyu3o6odkmt623p8m5kn8cp&dl=0',
     imageSrc_1000:
-      'https://www.dropbox.com/scl/fi/xvnuxiyqc0eqech2jyx70/2_-_1000px_progressive.jpg?rlkey=t03hwkem638s6eqf9tv33w79a&dl=0',
+      'https://www.dropbox.com/scl/fi/p0ib5lvv56zf8267bfr5j/2_-_1000px_progressive.jpg?rlkey=uesdedv2gnryra699bpmbur09&dl=0',
     imageSrc_500:
-      'https://www.dropbox.com/scl/fi/s8xcq0ugpivr0cm7cclm1/2_-_500px_progressive.jpg?rlkey=tlfs4pbkqvt0lp5fci6upq1tp&dl=0',
+      'https://www.dropbox.com/scl/fi/yhckfquxc8yubcshesn5e/2_-_500px_progressive.jpg?rlkey=6cinnuv5jsdfgf79m51geidco&dl=0',
     description: 'Портрет на  день влюбленных',
   },
   {
     imageSrc:
-      'https://www.dropbox.com/scl/fi/ccd0mg9nscb58mpvjcrqi/4_-23-_1000px_progressive.jpg?rlkey=dd3hu85cd2z019o7mn5umzzdu&dl=0',
+      'https://www.dropbox.com/scl/fi/tmc8ronxwvmxwh3f8ker1/4_-23.jpg?rlkey=1buxdoeh2nys3vv70gzzfhv0j&dl=0',
     imageSrc_1000:
-      'https://www.dropbox.com/scl/fi/ccd0mg9nscb58mpvjcrqi/4_-23-_1000px_progressive.jpg?rlkey=dd3hu85cd2z019o7mn5umzzdu&dl=0',
+      'https://www.dropbox.com/scl/fi/gohhwf8uaml6zkhf4ka05/4_-23-_1000px_progressive.jpg?rlkey=jyqccz3pz9v7cfwqvtqrupyei&dl=0',
     imageSrc_500:
-      'https://www.dropbox.com/scl/fi/qyz5rv83icysejivzzwf4/4_-23-_500px_progressive.jpg?rlkey=6bl9pkf0c78u6zwgu3tkd3df1&dl=0',
+      'https://www.dropbox.com/scl/fi/ozrhl1mzb7j7vhmw3g3pf/4_-23-_500px_progressive.jpg?rlkey=q1l9edlw98o3yuh8yeugndyvx&dl=0',
     description: 'Портрет на  23 февраля',
   },
   {
     imageSrc:
-      'https://www.dropbox.com/scl/fi/tfgk7bv8excvgyz3ofrzb/5_-_1000px_progressive.jpg?rlkey=63s15z1dff3q8bo5kywk3048f&dl=0',
+      'https://www.dropbox.com/scl/fi/wcuah4uuckcv43bi2of64/5_.jpg?rlkey=7boj0e1l4lfl38htix9fl69wf&dl=0',
     imageSrc_1000:
-      'https://www.dropbox.com/scl/fi/tfgk7bv8excvgyz3ofrzb/5_-_1000px_progressive.jpg?rlkey=63s15z1dff3q8bo5kywk3048f&dl=0',
+      'https://www.dropbox.com/scl/fi/ketfebruhiikdiud34hjj/5_-_1000px_progressive.jpg?rlkey=2qk1w0d2e3hmm1gjh1bhl1v4g&dl=0',
     imageSrc_500:
-      'https://www.dropbox.com/scl/fi/ejmcbbeavqsbxfp1zod1f/5_-_500px_progressive.jpg?rlkey=apboblxz3a7r6ka0z1kxy25dx&dl=0',
+      'https://www.dropbox.com/scl/fi/u0qo7zccuxi1jk73zt2lp/5_-_500px_progressive.jpg?rlkey=0fobp7app3hgaa2olqlhv65xv&dl=0',
     description: 'Портрет для питомца',
   },
   {
     imageSrc:
-      'https://www.dropbox.com/scl/fi/m3vlyxhtekax4yh43kqbj/6_-_1000px_progressive.jpg?rlkey=4gurs7mefsn3qz70jifmtspx0&dl=0',
+      'https://www.dropbox.com/scl/fi/2notowjz0sxbuqa6ps2jk/6_.jpg?rlkey=369cyfzsplcswxjssv859a4wg&dl=0',
     imageSrc_1000:
-      'https://www.dropbox.com/scl/fi/m3vlyxhtekax4yh43kqbj/6_-_1000px_progressive.jpg?rlkey=4gurs7mefsn3qz70jifmtspx0&dl=0',
+      'https://www.dropbox.com/scl/fi/dhc1ljlrjmhukgxidr95w/6_-_1000px_progressive.jpg?rlkey=nd2yviqzftw3ly7u9skjk3n4t&dl=0',
     imageSrc_500:
       'https://www.dropbox.com/scl/fi/tcbicgphrxw5j81sri1ju/6_-_500px_progressive.jpg?rlkey=0ws6vr9mupwkzipnivsn2tmkf&dl=0',
     description: 'Портрет на  память',
