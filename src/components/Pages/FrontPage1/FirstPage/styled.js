@@ -1,4 +1,4 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 export const FirstPageWrapper = styled(Box)`
   width: 100%;
@@ -105,7 +105,7 @@ export const FirstPageInfoItemsIcon = styled(Box)`
 `;
 export const FirstPageInfoItemsText = styled(Box)`
   align-items: center;
-  font-family: "Lucidaconsole";
+  font-family: 'Lucidaconsole';
   font-size: 20px;
   font-weight: 400;
   display: flex;
@@ -174,7 +174,7 @@ export const FirstPageInfoMessage = styled(Box)`
   }
 `;
 export const FirstPageInfoMessageText = styled(Box)`
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 700;
   font-size: 20px;
 

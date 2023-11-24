@@ -1,5 +1,5 @@
-import { isMobile } from "react-device-detect";
-import "./title-modern.css";
+import { isMobile } from 'react-device-detect';
+import './title-modern.css';
 
 const TitleModern = () => {
   return (
@@ -10,8 +10,8 @@ const TitleModern = () => {
             className="modern-text__title-background-image"
             src={
               isMobile
-                ? "/images/frame title.png"
-                : "/images/background/Examples.png"
+                ? '/images/frame title.png'
+                : '/images/background/Examples.png'
             }
           />
         </div>

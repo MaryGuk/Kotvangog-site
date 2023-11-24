@@ -34,7 +34,7 @@
 .navbar a {
   font-size: 18px;
   color: #535353;
-  font-family: "Nunito", Sans-serif;
+  font-family: 'Nunito', Sans-serif;
   font-weight: 600;
   letter-spacing: -0.3px;
   text-decoration: none;
@@ -57,7 +57,7 @@
 
 .logo {
   display: flex;
-  font-family: "Zilla Slab", serif;
+  font-family: 'Zilla Slab', serif;
   font-weight: 600;
   font-size: 24px;
   text-transform: uppercase;

@@ -1,6 +1,6 @@
-import { Box } from "@mui/material";
-import { ModernImagesGallery, ModernImagesItems } from "./styled";
-import ModernGalleryItem from "./ModernGalleryItem";
+import { Box } from '@mui/material';
+import { ModernImagesGallery, ModernImagesItems } from './styled';
+import ModernGalleryItem from './ModernGalleryItem';
 
 const ModernGallery = ({ modernImages, setFullImageSrc }) => {
   return (

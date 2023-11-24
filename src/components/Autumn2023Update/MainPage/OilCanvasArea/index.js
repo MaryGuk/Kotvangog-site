@@ -1,28 +1,31 @@
-// import { Typography } from '@mui/material';
-import {
-  // OilCanvasAreaTitleWrapper,
-  OilCanvasAreaWrapper,
-} from './styled';
-// import OilSlide from './OilSlide';
+import { Typography } from '@mui/material';
+import { OilCanvasAreaTitleWrapper, OilCanvasAreaWrapper } from './styled';
+import OilSlide from './OilSlide';
 import PresentBoxingSlide from './PresentBoxingSlide';
 import PageContentWrapper from '../../../PageContentWrapper';
-// import CanvasSlide from './CanvasSlide';
+import { isMobile } from 'react-device-detect';
+import CanvasSlide from './CanvasSlide';
+import OilCanvasDesktopGrid from './OilCanvasDesktopGrid';
 
 const OilCanvasArea = () => {
   return (
     <OilCanvasAreaWrapper>
-      <PageContentWrapper>
-        {/*<OilCanvasAreaTitleWrapper>*/}
-        {/*  <Typography variant="h4">*/}
-        {/*    Мы создаем портреты маслом или печатаем на холсте*/}
-        {/*  </Typography>*/}
-        {/*</OilCanvasAreaTitleWrapper>*/}
+      <PageContentWrapper
+        display="flex"
+        flexDirection="column"
+        alignItems="center"
+      >
+        <OilCanvasAreaTitleWrapper>
+          <Typography variant="h4">
+            Мы создаем портреты маслом или печатаем на холсте
+          </Typography>
+        </OilCanvasAreaTitleWrapper>
 
-        {/*<OilSlide />*/}
+        {isMobile ? <OilSlide /> : <OilCanvasDesktopGrid />}
 
         <PresentBoxingSlide />
 
-        {/*<CanvasSlide />*/}
+        {isMobile && <CanvasSlide />}
       </PageContentWrapper>
     </OilCanvasAreaWrapper>
   );

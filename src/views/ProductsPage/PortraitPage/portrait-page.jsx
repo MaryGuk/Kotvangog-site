@@ -1,11 +1,15 @@
-import ProductPageItemInfo from "./portrait-page-item";
-import "./portrait-page.css";
-import BeforeAfterImage from "../../../components/BeforeAfterImage";
-import {ProductPageImageWrapper, ProductPageItemMainInfoWrapper, SimpleImageWrapper} from "./styled";
-import ImageCarousel from "../../../components/ImageCarousel";
-import { isMobile } from "react-device-detect";
-import ArtButton from "../../../components/Button/ArtButton";
-import {useTranslation} from "react-i18next";
+import ProductPageItemInfo from './portrait-page-item';
+import './portrait-page.css';
+import BeforeAfterImage from '../../../components/BeforeAfterImage';
+import {
+  ProductPageImageWrapper,
+  ProductPageItemMainInfoWrapper,
+  SimpleImageWrapper,
+} from './styled';
+import ImageCarousel from '../../../components/ImageCarousel';
+import { isMobile } from 'react-device-detect';
+import ArtButton from '../../../components/Button/ArtButton';
+import { useTranslation } from 'react-i18next';
 
 const ProductPageItem = ({
   portraitTitle,
@@ -37,10 +41,10 @@ const ProductPageItem = ({
             ) : (
               <SimpleImageWrapper>
                 <img
-                    height="500px"
-                    loading="lazy"
-                    decoding="async"
-                    src={srcAfter}
+                  height="500px"
+                  loading="lazy"
+                  decoding="async"
+                  src={srcAfter}
                 />
               </SimpleImageWrapper>
             )}

@@ -1,34 +1,34 @@
 import { useState } from 'react';
-import ConsultationDialog from "./ConsultationDialog";
-import ConsultationDialogContext from "./context";
+import ConsultationDialog from './ConsultationDialog';
+import ConsultationDialogContext from './context';
 
 const ConsultationDialogProvider = ({ children }) => {
-    const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
 
-    const handleDialogClose = () => {
-        setIsDialogOpen(false);
-    }
+  const handleDialogClose = () => {
+    setIsDialogOpen(false);
+  };
 
-    const handleDialogOpen = () => {
-        setIsDialogOpen(true);
-    }
+  const handleDialogOpen = () => {
+    setIsDialogOpen(true);
+  };
 
-    return (
-        <ConsultationDialogContext.Provider
-            value={{
-                open: isDialogOpen,
-                onClose: handleDialogClose,
-                onOpen: handleDialogOpen,
-            }}
-        >
-            {children}
+  return (
+    <ConsultationDialogContext.Provider
+      value={{
+        open: isDialogOpen,
+        onClose: handleDialogClose,
+        onOpen: handleDialogOpen,
+      }}
+    >
+      {children}
 
-            <ConsultationDialog
-                open={isDialogOpen}
-                setModalActive={setIsDialogOpen}
-            />
-        </ConsultationDialogContext.Provider>
-    );
+      <ConsultationDialog
+        open={isDialogOpen}
+        setModalActive={setIsDialogOpen}
+      />
+    </ConsultationDialogContext.Provider>
+  );
 };
 
 export default ConsultationDialogProvider;

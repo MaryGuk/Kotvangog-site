@@ -7,7 +7,7 @@ import {
   PresentImageItemWrapper,
   PresentImagesWrapper,
 } from '../styled';
-import { presentSlideImages } from '../../../../../constants/galeries/mainPageImages';
+import { presentSlideImages } from '../../../../../constants/galleries/mainPageImages';
 import { useConsultationDialog } from '../../../ConsultationDialogProvider';
 import { isMobile } from 'react-device-detect';
 

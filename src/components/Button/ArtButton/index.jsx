@@ -6,10 +6,10 @@ import {
   ModalMessenger,
   ModalMessengerContent,
   ModalTitle,
-} from "./styled";
+} from './styled';
 
-import { useState } from "react";
-import Modal from "../../Modal/modal";
+import { useState } from 'react';
+import Modal from '../../Modal/modal';
 
 const ArtButton = () => {
   const [modalActive, setModalActive] = useState(false);

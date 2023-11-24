@@ -9,19 +9,19 @@ import {
   LikenessSizeTextTwoMoreContainer,
   LikenessSizeTextTwoMore,
   LikenessSizeDescriptionWrapper,
-} from "./styled";
+} from './styled';
 
-import ArtStylesSize from "../ArtStylesSize";
+import ArtStylesSize from '../ArtStylesSize';
 
 const LikenessSize = () => {
   return (
     <>
       <ArtStylesSize
-          title="Печать на холсте и картина маслом"
-          printPricePrefix="Печать от"
-          oilPricePrefix="Маслом от"
-          alternatePrintPrices={[2280, 3040, 3790, 4540, 6290]}
-          alternateOilPrices={[5600, 8800, 11900, 13700, 19500]}
+        title="Печать на холсте и картина маслом"
+        printPricePrefix="Печать от"
+        oilPricePrefix="Маслом от"
+        alternatePrintPrices={[2280, 3040, 3790, 4540, 6290]}
+        alternateOilPrices={[5600, 8800, 11900, 13700, 19500]}
       >
         <LikenessSizeDescriptionWrapper>
           <LikenessSizeDescription>

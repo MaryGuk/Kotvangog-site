@@ -3,7 +3,7 @@ import {
   OilSizeItemContainer,
   OilSizesItemSize,
   OilSizesItemText,
-} from "./styled-oil-size";
+} from './styled-oil-size';
 
 const OilSizeItem = ({ imageSrc, imageSize, oilDescription }) => {
   return (

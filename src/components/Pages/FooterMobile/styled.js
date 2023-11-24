@@ -1,4 +1,4 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 export const FooterMobileWrapper = styled(Box)`
   background-color: #989898;
@@ -18,7 +18,7 @@ export const FooterMobileTitleWrapper = styled(Box)`
 `;
 
 export const FooterMobileTitle = styled(Box)`
-  font-family: "Century Gothic";
+  font-family: 'Century Gothic';
   font-size: 17px;
   font-weight: normal;
   color: white;
@@ -41,7 +41,7 @@ export const FooterMobileLinkContainer = styled(Box)`
 `;
 
 export const FooterMobileLink = styled(Box)`
-  font-family: "Century Gothic";
+  font-family: 'Century Gothic';
   font-size: 15px;
   font-weight: normal;
   color: white;
@@ -54,21 +54,21 @@ export const FooterMobileWorkSchedule = styled(Box)`
 `;
 
 export const FooterSchedule = styled(Box)`
-  font-family: "Century Gothic";
+  font-family: 'Century Gothic';
   font-size: 12px;
   font-weight: normal;
   color: white;
   padding-bottom: 18px;
 `;
 export const FooterWorkDays = styled(Box)`
-  font-family: "Century Gothic";
+  font-family: 'Century Gothic';
   font-size: 12px;
   font-weight: normal;
   color: white;
   padding-bottom: 5px;
 `;
 export const FooterWorkTime = styled(Box)`
-  font-family: "Century Gothic";
+  font-family: 'Century Gothic';
   font-size: 12px;
   font-weight: normal;
   color: white;
@@ -84,14 +84,14 @@ export const FooterMobileMessenger = styled(Box)`
 
   a {
     text-decoration: none;
-    
+
     svg {
       width: 30px;
       height: 30px;
       align-items: center;
       padding-right: 3px;
       transition: 0.8s;
-      
+
       :hover {
         transform: scale(1.2);
         -webkit-filter: sepia(1) hue-rotate(320deg) saturate(10);
@@ -104,7 +104,7 @@ export const FooterMobileMessenger = styled(Box)`
 export const FooterMobileContacts = styled(Box)`
   display: flex;
   flex-direction: column;
-  font-family: "Century Gothic";
+  font-family: 'Century Gothic';
   font-size: 12px;
   font-weight: normal;
   color: white;

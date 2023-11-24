@@ -1,9 +1,9 @@
 import { createContext } from 'react';
 
 const defaultValue = {
-    open: false,
-    onClose: () => true,
-    onOpen: () => true,
+  open: false,
+  onClose: () => true,
+  onOpen: () => true,
 };
 
 const ConsultationDialogContext = createContext(defaultValue);

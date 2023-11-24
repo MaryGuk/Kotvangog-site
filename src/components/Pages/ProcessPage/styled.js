@@ -1,4 +1,4 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 export const MasterInfoWrapper = styled(Box)`
   grid-row: 1/4;
@@ -38,7 +38,7 @@ export const ProcessMobileTextOne = styled(Box)`
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: flex;
-    font-family: "Century Gothic";
+    font-family: 'Century Gothic';
     font-weight: bold;
     font-size: 14px;
     margin: 0 auto;
@@ -47,9 +47,9 @@ export const ProcessMobileTextOne = styled(Box)`
 `;
 
 export const ProcessItemDescriptionWrapper = styled(Box)`
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 `;
 
 export const StepNumber = styled(Box)`
@@ -66,7 +66,7 @@ export const StepNumber = styled(Box)`
 `;
 
 export const StepNumberText = styled(Box)`
-  font-family: "Palatino Linotype";
+  font-family: 'Palatino Linotype';
   font-size: 34px;
   line-height: 45px;
 `;
@@ -89,13 +89,13 @@ export const ProcessItemVideoStepWrapper = styled(Box)`
 
   & > div {
     padding: 0 0 10px;
-    
+
     iframe {
       width: 100%;
       height: 60vw;
     }
   }
-  
+
   & > p {
     padding: 15px 0 15px;
   }
@@ -123,24 +123,26 @@ export const WriteMeText = styled(Box)`
 `;
 
 export const WriteMeLinks = styled(Box, {
-  shouldForwardProp: (prop) => prop !== "linksCount",
+  shouldForwardProp: (prop) => prop !== 'linksCount',
 })`
   width: max-content;
-  
+
   display: grid;
-  grid-template-columns: repeat(${({ linksCount }) => `${linksCount}, ${105 / linksCount - 5}%`});
+  grid-template-columns: repeat(
+    ${({ linksCount }) => `${linksCount}, ${105 / linksCount - 5}%`}
+  );
   grid-column-gap: 5%;
   margin: 0 0 0 25px;
-  
+
   & > div {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     a {
       width: 100%;
-      
+
       img {
         border-radius: 20%;
         background-color: ${({ theme }) => theme.palette.secondary.main};

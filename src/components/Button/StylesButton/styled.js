@@ -1,4 +1,4 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 export const StylesButtonWrapper = styled(Box)`
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
@@ -20,7 +20,7 @@ export const StylesButtonContainer = styled(Box)`
 
 export const StylesButtonItem = styled(Box)`
   font-size: 18px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 600;
   letter-spacing: 1.5px;
   background-color: #36883d;
@@ -41,7 +41,7 @@ export const StylesButtonItem = styled(Box)`
   }
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    font-family: "Century Gothic";
+    font-family: 'Century Gothic';
     font-weight: normal;
     padding: 10px;
     width: 191px;
@@ -54,7 +54,7 @@ export const StylesButtonItem = styled(Box)`
 
 export const ModalTitle = styled(Box)`
   font-size: 18px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 600;
   text-align: center;
 `;
@@ -78,7 +78,7 @@ export const ModalIcons = styled(Box)`
   }
 
   :last-child {
-    content: "";
+    content: '';
     margin-right: 0;
   }
 `;

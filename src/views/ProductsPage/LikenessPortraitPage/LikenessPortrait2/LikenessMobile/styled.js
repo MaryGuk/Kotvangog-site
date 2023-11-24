@@ -1,7 +1,7 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 export const LikenessPortraitWrapper2 = styled(Box)`
-  background-image: url("/images/background/back-gray.png");
+  background-image: url('/images/background/back-gray.png');
   display: flex;
   justify-content: center;
   width: 100%;
@@ -15,7 +15,7 @@ export const LikenessPortraitWrapper2 = styled(Box)`
 `;
 
 export const LikenessPortraitGeneral2 = styled(Box)`
-  background-image: url("/images/background/Слой3.png");
+  background-image: url('/images/background/Слой3.png');
   background-repeat: no-repeat;
   background-size: cover;
   margin: 10px 0;
@@ -40,7 +40,7 @@ export const LikenessContent22 = styled(Box)`
   flex-direction: row;
 
   @media (max-width: 990px) {
-    display: "flex";
+    display: 'flex';
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -92,7 +92,7 @@ export const Ellipse2 = styled(Box)`
 
 export const FirstText2 = styled(Box)`
   font-size: 17px;
-  font-family: "Nunito", Sans-serif;
+  font-family: 'Nunito', Sans-serif;
   font-weight: 600;
   flex-wrap: wrap;
   max-width: 420px;
@@ -110,7 +110,7 @@ export const FirstText2 = styled(Box)`
 `;
 export const SecondTextPart12 = styled(Box)`
   font-size: 16px;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Comfortaa', cursive;
   font-weight: 700;
   line-height: 1.3;
   flex-wrap: wrap;
@@ -126,7 +126,7 @@ export const SecondTextPart12 = styled(Box)`
 `;
 export const SecondTextPart22 = styled(Box)`
   font-size: 16px;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Comfortaa', cursive;
   font-weight: 400;
   flex-wrap: wrap;
   max-width: 650px;
@@ -145,7 +145,7 @@ export const SecondTextPart22 = styled(Box)`
 
 export const ThirdText2 = styled(Box)`
   font-size: 16px;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Comfortaa', cursive;
   font-weight: 400;
   flex-wrap: wrap;
   max-width: 650px;
@@ -166,7 +166,7 @@ export const ButtonContainer2 = styled(Box)`
 `;
 export const FirstButton2 = styled(Box)`
   font-size: 17px;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Comfortaa', cursive;
   font-weight: 500;
   background-color: #bdbdbd;
   color: white;
@@ -187,7 +187,7 @@ export const FirstButton2 = styled(Box)`
 `;
 export const SecondButton2 = styled(Box)`
   font-size: 17px;
-  font-family: "Palatino Linotype";
+  font-family: 'Palatino Linotype';
   font-weight: 500;
   background-color: #36883d;
   color: white;
@@ -209,7 +209,7 @@ export const SecondButton2 = styled(Box)`
 
 export const ModalTitle = styled(Box)`
   font-size: 18px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 600;
   text-align: center;
 `;
@@ -233,7 +233,7 @@ export const ModalIcons = styled(Box)`
   }
 
   :last-child {
-    content: "";
+    content: '';
     margin-right: 0;
   }
 `;
@@ -254,7 +254,7 @@ export const LikenessMobileText2 = styled(Box)`
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: flex;
-    font-family: "Century Gothic";
+    font-family: 'Century Gothic';
     font-weight: normal;
     font-size: 12px;
     text-align: center;
@@ -284,7 +284,7 @@ export const LikenessMobileInfoItemsIcon = styled(Box)`
 `;
 export const LikenessMobileInfoItemsText = styled(Box)`
   align-items: center;
-  font-family: "Century Gothic";
+  font-family: 'Century Gothic';
   font-weight: normal;
   font-size: 14px;
   display: flex;

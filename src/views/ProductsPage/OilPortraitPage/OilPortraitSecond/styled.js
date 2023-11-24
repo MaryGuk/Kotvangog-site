@@ -1,4 +1,4 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 export const OilPortraitSecondWrapper = styled(Box)`
   display: flex;
@@ -14,7 +14,7 @@ export const OilPortraitSecondWrapper = styled(Box)`
   }
 `;
 export const OilPortraitSecondGeneral = styled(Box)`
-  background-image: url("/images/background/Слой3.png");
+  background-image: url('/images/background/Слой3.png');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -66,7 +66,7 @@ export const OilMobileSecondText1 = styled(Box)`
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: flex;
-    font-family: "Century Gothic";
+    font-family: 'Century Gothic';
     font-weight: bold;
     font-size: 12px;
     text-align: center;
@@ -78,7 +78,7 @@ export const OilMobileSecondText2 = styled(Box)`
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: flex;
-    font-family: "Century Gothic";
+    font-family: 'Century Gothic';
     font-weight: bold;
     font-size: 12px;
     text-align: center;
@@ -90,7 +90,7 @@ export const OilMobileSecondText3 = styled(Box)`
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: flex;
-    font-family: "Century Gothic";
+    font-family: 'Century Gothic';
     font-weight: bold;
     font-size: 12px;
     text-align: center;

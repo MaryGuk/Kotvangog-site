@@ -7,4 +7,3 @@ const { shadows } = defaultTheme;
 shadows[1] = `3px 4px 0 #717171`;
 
 export default shadows;
-

@@ -4,7 +4,13 @@ const AdvantageItem = ({ imageSrc, description, newDescription }) => {
       <div className="advantage-item__wrapper">
         <div className="ellipse-container">
           <div className="advantage-item__container">
-            <img className="advantages-img" src={imageSrc} alt="" />
+            <img
+              className="advantages-img"
+              src={imageSrc}
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div className="advantages-text">{description}</div>
         </div>

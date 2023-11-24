@@ -1,4 +1,4 @@
-import "./title-frame.css";
+import './title-frame.css';
 
 const FrameTitle = () => {
   return (

@@ -40,20 +40,20 @@
   max-width: 240px;
   display: block;
   font-size: 16px;
-  font-family: "Trebuchet MS", serif;
+  font-family: 'Trebuchet MS', serif;
   font-weight: 400;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .process-main-description {
-    font-family: "Century Gothic";
+    font-family: 'Century Gothic';
     font-size: 15px;
     font-weight: bold;
   }
 }
 
 .process-secondary-description {
-  font-family: "Trebuchet MS", serif;
+  font-family: 'Trebuchet MS', serif;
   font-weight: 400;
   font-size: 14px;
   color: #565656;
@@ -62,7 +62,7 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .process-secondary-description {
-    font-family: "Century Gothic";
+    font-family: 'Century Gothic';
     font-size: 12px;
     font-weight: normal;
     color: black;
@@ -137,13 +137,13 @@
 }
 
 .process-inf__text {
-  font-family: "Trebuchet MS";
+  font-family: 'Trebuchet MS';
   font-size: 20px;
   font-weight: 500;
   grid-column: 1/4;
 }
 .process-inf__text2 {
-  font-family: "Trebuchet MS";
+  font-family: 'Trebuchet MS';
   color: rgb(32, 32, 32);
   font-size: 17px;
   font-weight: 600;
@@ -152,7 +152,7 @@
 }
 
 .process-inf__text3 {
-  font-family: "Trebuchet MS";
+  font-family: 'Trebuchet MS';
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 0.5px;
@@ -232,7 +232,7 @@
 }
 
 .process-author__name {
-  font-family: "Trebuchet MS";
+  font-family: 'Trebuchet MS';
   font-weight: 400;
   padding-top: 5px;
   font-size: 18px;
@@ -242,7 +242,7 @@
 }
 
 .author-name__color {
-  font-family: "Trebuchet MS";
+  font-family: 'Trebuchet MS';
   font-weight: 500;
   /* padding-bottom: 1px; */
   text-align: center;

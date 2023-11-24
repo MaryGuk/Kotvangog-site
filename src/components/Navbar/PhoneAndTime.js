@@ -1,7 +1,12 @@
-import {PhoneAndTimeWrapper, PhoneWrapper, TimeItemWrapper, TimeWrapper} from "./styled";
-import {workTime} from "../../constants/mainConstants";
-import {Typography} from "@mui/material";
-import MobileLink from "../MobileLink";
+import {
+  PhoneAndTimeWrapper,
+  PhoneWrapper,
+  TimeItemWrapper,
+  TimeWrapper,
+} from './styled';
+import { workTime } from '../../constants/mainConstants';
+import { Typography } from '@mui/material';
+import MobileLink from '../MobileLink';
 
 const PhoneAndTime = () => {
   return (
@@ -13,14 +18,12 @@ const PhoneAndTime = () => {
       <TimeWrapper>
         {workTime.map((workTimeItem, idx) => (
           <TimeItemWrapper key={idx}>
-            <Typography variant="body2">
-              {workTimeItem}
-            </Typography>
+            <Typography variant="body2">{workTimeItem}</Typography>
           </TimeItemWrapper>
         ))}
       </TimeWrapper>
     </PhoneAndTimeWrapper>
   );
-}
+};
 
 export default PhoneAndTime;

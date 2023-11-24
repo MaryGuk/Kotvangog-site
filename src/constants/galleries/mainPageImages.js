@@ -9,6 +9,7 @@ export const mainSlideFramesGallery = [
   'https://www.dropbox.com/scl/fi/xh7b71oj3zv9ni2k1o3lz/00011_750px.png?rlkey=lk58et701rajag48gwb38i7ek&dl=0',
 ].map(normalizeDropBoxLink);
 
+// TODO : add 500px for PC OilCanvasGrid
 export const oilSlideFramesGallery = [
   'https://www.dropbox.com/scl/fi/mn8fa7t724hzl452r862y/00001_1000px_progressive.jpg?rlkey=wwuxtfni2vlvdt3pqx30x7wzv&dl=0',
   'https://www.dropbox.com/scl/fi/g7gnzy4xe9k174chj4azx/00002_1000px_progressive.jpg?rlkey=ur6gdsjtnxxfgo6nwxdb52ba5&dl=0',

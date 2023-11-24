@@ -1,4 +1,4 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 export const ArtStylesSizeWrapper = styled(Box)`
   width: 100%;
@@ -37,11 +37,11 @@ export const ArtSizeTextOneContainer = styled(Box)`
 
 export const ArtSizeTextOne = styled(Box)`
   font-size: 22px;
-  font-family: "Nunito", Sans-serif;
+  font-family: 'Nunito', Sans-serif;
   font-weight: 600;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    font-family: "Century Gothic";
+    font-family: 'Century Gothic';
     font-weight: normal;
     font-size: 15px;
     text-align: center;
@@ -50,12 +50,12 @@ export const ArtSizeTextOne = styled(Box)`
 export const ArtSizeTextOnePart2 = styled(Box)`
   display: flex;
   font-weight: 700;
-  font-family: "Nunito", Sans-serif;
+  font-family: 'Nunito', Sans-serif;
   color: #606060;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: flex;
-    font-family: "Century Gothic";
+    font-family: 'Century Gothic';
     font-weight: bold;
     font-size: 15px;
     text-align: center;
@@ -71,11 +71,11 @@ export const ArtSizeTextTwoContainer = styled(Box)`
 
 export const ArtSizeTextTwo = styled(Box)`
   font-size: 22px;
-  font-family: "Nunito", Sans-serif;
+  font-family: 'Nunito', Sans-serif;
   font-weight: 600;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    font-family: "Century Gothic";
+    font-family: 'Century Gothic';
     font-weight: normal;
     font-size: 15px;
     text-align: center;

@@ -1,4 +1,4 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 export const OilSizeItemWrapper = styled(Box)``;
 
@@ -11,7 +11,7 @@ export const OilSizeItemContainer = styled(Box)`
 export const OilSizesItemSize = styled(Box)`
   font-size: 18px;
   color: #606060;
-  font-family: "Nunito", Sans-serif;
+  font-family: 'Nunito', Sans-serif;
   font-weight: 700;
   text-align: center;
 
@@ -22,7 +22,7 @@ export const OilSizesItemSize = styled(Box)`
 
 export const OilSizesPrintText = styled(Box)`
   font-size: 16px;
-  font-family: "Nunito", Sans-serif;
+  font-family: 'Nunito', Sans-serif;
   font-weight: 600;
   text-align: center;
 
@@ -33,7 +33,7 @@ export const OilSizesPrintText = styled(Box)`
 
 export const OilSizesOilText = styled(Box)`
   font-size: 16px;
-  font-family: "Nunito", Sans-serif;
+  font-family: 'Nunito', Sans-serif;
   font-weight: 600;
   text-align: center;
 

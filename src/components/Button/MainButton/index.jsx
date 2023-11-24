@@ -6,9 +6,9 @@ import {
   ModalIcons,
   ModalTitle,
   MainButtonContainer,
-} from "./styled";
-import Modal from "../../Modal/modal";
-import { useState } from "react";
+} from './styled';
+import Modal from '../../Modal/modal';
+import { useState } from 'react';
 
 const MainButton = () => {
   const [modalActive, setModalActive] = useState(false);

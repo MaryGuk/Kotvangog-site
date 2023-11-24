@@ -1,14 +1,14 @@
 import { isMobile } from 'react-device-detect';
 import { InnerWrapper, OuterWrapper } from './styled';
 
-const PageContentWrapper = ({ children }) => {
+const PageContentWrapper = ({ children, ...props }) => {
   if (isMobile) {
     return children;
   }
 
   return (
     <OuterWrapper>
-      <InnerWrapper>{children}</InnerWrapper>
+      <InnerWrapper {...props}>{children}</InnerWrapper>
     </OuterWrapper>
   );
 };

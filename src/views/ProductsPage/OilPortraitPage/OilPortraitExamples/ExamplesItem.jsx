@@ -1,5 +1,5 @@
-import { ExamplesGallery, ExamplesGalleryContainer } from "./styled-examples";
-import { useState } from "react";
+import { ExamplesGallery, ExamplesGalleryContainer } from './styled-examples';
+import { useState } from 'react';
 
 const ExamplesItem = ({ previewSrc, fullSrc, setFullImage, onImageLoad }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -13,8 +13,8 @@ const ExamplesItem = ({ previewSrc, fullSrc, setFullImage, onImageLoad }) => {
   };
 
   const style = {
-    transform: isHovered ? "scale(1.05)" : "scale(1)",
-    transition: "transform 0.5s ease-in-out",
+    transform: isHovered ? 'scale(1.05)' : 'scale(1)',
+    transition: 'transform 0.5s ease-in-out',
   };
   return (
     <ExamplesGalleryContainer>

@@ -1,4 +1,4 @@
-import "./oil.css";
+import './oil.css';
 
 const OilTitle = ({ titleText }) => {
   return (

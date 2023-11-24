@@ -18,7 +18,7 @@
 
 .burger-menu__text {
   display: flex;
-  font-family: "Zilla Slab", serif;
+  font-family: 'Zilla Slab', serif;
   font-weight: 600;
   font-size: 24px;
   text-transform: uppercase;
@@ -74,7 +74,7 @@
 
 .burger-menu__content li {
   font-size: 18px;
-  font-family: "Century Gothic";
+  font-family: 'Century Gothic';
   line-height: 1.5;
   color: #fff;
   margin-bottom: 10px;

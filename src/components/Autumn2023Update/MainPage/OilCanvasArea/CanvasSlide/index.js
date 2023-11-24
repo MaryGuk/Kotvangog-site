@@ -1,11 +1,11 @@
 import { CanvasAdvantagesListWrapper, CanvasAreaWrapper } from '../styled';
 import { Box, Typography } from '@mui/material';
 import MobileCarousel from '../../../../MobileCarousel';
-import { eventsSlideGallery } from '../../../../../constants/galeries/mainPageImages';
-import AdvantagesList from '../../../../AdvantagesList';
+import { newCanvasSlideGallery } from '../../../../../constants/galleries/mainPageImages';
 import { canvasAdvantages } from '../../../../../constants/advantages';
 import BrashTitle from '../../../BrashTitle';
 import brashSrc from '../../../../../images/brashes/brash7.svg';
+import AdvantagesList from '../../../../AdvantagesList';
 
 const CanvasSlide = () => {
   return (
@@ -16,7 +16,7 @@ const CanvasSlide = () => {
 
       <Box width="100vw" display="block">
         <MobileCarousel
-          imageList={eventsSlideGallery}
+          imageList={newCanvasSlideGallery}
           columnCount={1}
           rowCount={1}
           onImageClick={() => true}

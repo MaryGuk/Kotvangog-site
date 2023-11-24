@@ -1,14 +1,14 @@
-import { experimentalStyled as styled } from "@mui/material";
-import { Box } from "@mui/system";
-import { useMemo } from "react";
-import Carousel from "react-material-ui-carousel";
+import { experimentalStyled as styled } from '@mui/material';
+import { Box } from '@mui/system';
+import { useMemo } from 'react';
+import Carousel from 'react-material-ui-carousel';
 
 const BeautyArtGalleryWrapper = styled(Box)((props) => ({
-  display: "grid",
-  gridTemplateColumns: "repeat(5, 1fr)",
-  gridColumnGap: "5px",
-  gridAutoFlow: "dense",
-  direction: props.reverse ? "rtl" : "ltl",
+  display: 'grid',
+  gridTemplateColumns: 'repeat(5, 1fr)',
+  gridColumnGap: '5px',
+  gridAutoFlow: 'dense',
+  direction: props.reverse ? 'rtl' : 'ltl',
 }));
 
 const getPortionsBy = (arr, count) => {

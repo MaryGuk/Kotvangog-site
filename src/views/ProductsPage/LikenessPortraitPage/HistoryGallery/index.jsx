@@ -1,10 +1,10 @@
-import { Box } from "@mui/material";
-import {HistoryImagesGallery, HistoryImagesGalleryWrapper} from "./styled";
-import { useState } from "react";
-import { Dialog } from "@mui/material";
-import HistoryGalleryItem from "./HistoryGalleryItem";
-import ImageWithLoader from "../../../../components/ImageWithLoader";
-import {historyImages} from "../../../../constants/galeries/historyImages";
+import { Box } from '@mui/material';
+import { HistoryImagesGallery, HistoryImagesGalleryWrapper } from './styled';
+import { useState } from 'react';
+import { Dialog } from '@mui/material';
+import HistoryGalleryItem from './HistoryGalleryItem';
+import ImageWithLoader from '../../../../components/ImageWithLoader';
+import { historyImages } from '../../../../constants/galleries/historyImages';
 
 const HistoryGallery = () => {
   const [fullImageSrc, setFullImageSrc] = useState(null);

@@ -1,7 +1,15 @@
-import { ProcessItemDescriptionWrapper, StepNumber, StepNumberText } from "./styled";
+import {
+  ProcessItemDescriptionWrapper,
+  StepNumber,
+  StepNumberText,
+} from './styled';
 
-
-const ProcessItem = ({ imageSrc, mainDescription, secondaryDescription, number }) => {
+const ProcessItem = ({
+  imageSrc,
+  mainDescription,
+  secondaryDescription,
+  number,
+}) => {
   return (
     <div className="process-item__wrapper">
       <div className="process-item__container">
@@ -14,7 +22,7 @@ const ProcessItem = ({ imageSrc, mainDescription, secondaryDescription, number }
         />
 
         <StepNumber>
-            <StepNumberText>{number}</StepNumberText>
+          <StepNumberText>{number}</StepNumberText>
         </StepNumber>
       </div>
       <ProcessItemDescriptionWrapper>

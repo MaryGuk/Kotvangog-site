@@ -1,4 +1,4 @@
-import "./title-two.css";
+import './title-two.css';
 const TitleTwo = () => {
   return (
     <div className="title-two__title-wrapper">

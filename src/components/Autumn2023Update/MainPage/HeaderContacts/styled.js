@@ -1,10 +1,10 @@
-import { styled, Box } from "@mui/material";
+import { styled, Box } from '@mui/material';
 
 export const HeaderContactsWrapper = styled(Box)`
   display: flex;
   justify-content: space-between;
   padding: 0 0 5px;
-  
+
   & > div {
     padding: 0 10px;
   }
@@ -26,7 +26,7 @@ export const HeaderContactsMessengerItemWrapper = styled(Box)`
   display: flex;
   margin: 0 0 0 5px;
   height: min-content;
-  
+
   & > a > img {
     width: 100%;
     background-color: ${({ theme }) => theme.palette.secondary.main};

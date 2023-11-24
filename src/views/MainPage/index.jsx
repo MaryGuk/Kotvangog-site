@@ -1,4 +1,4 @@
-import AdvantagesPage from '../../components/Pages/AdvantagesPage/advantages-page';
+// import AdvantagesPage from '../../components/Pages/AdvantagesPage/advantages-page';
 import StylesPage from '../../components/Pages/StylesPage/styles-page';
 import Footer from '../../components/Pages/Footer/footer';
 import ProcessPage from '../../components/Pages/ProcessPage/process-page';
@@ -26,56 +26,59 @@ import ArtStylesArea from '../../components/Autumn2023Update/MainPage/ArtStylesA
 const MainPage = () => {
   return (
     <MainPageWrapper>
-      {isMobile ? (
+      {isMobile && (
         <>
           <UnderHeaderBlock />
           <HeaderContacts />
-          <MainSlide />
-          <GiftAdvertisementSlide />
-          <OilCanvasArea />
+        </>
+      )}
+
+      <MainSlide />
+      <GiftAdvertisementSlide />
+      <OilCanvasArea />
+
+      {isMobile ? (
+        <>
           <ArtStylesArea />
         </>
       ) : (
         <>
-          <MainSlide />
-          <GiftAdvertisementSlide />
-          <OilCanvasArea />
-          <AdvantagesPage />
-          <OilPortrait
-            title={'Классический портрет маслом'}
-            imageMobile={
-              'https://www.dropbox.com/s/6lkuknbtufgnex2/oil%20mobile2.png?raw=1'
-            }
-            imageDesktop={
-              'https://www.dropbox.com/scl/fi/iq5j40wn1qfxabp89ma0o/1400_oil-classic.png?rlkey=gafvctnfhn3w6e1t6tzg2ydzc&dl=0&raw=1'
-            }
-            advantages={[
-              'Полностью ручная роспись маслом',
-              'Художники с опытом рисования более 10 лет',
-              'Портретное сходство сохраняем на 100%',
-            ]}
-            descriptionMobile={
-              'Роспись опытным художником - это неповторимые произведения искусства, ' +
-              'которые будут радовать вас и ваших близких на протяжении многих лет.'
-            }
-            descriptionDesktop={[
-              {
-                text:
-                  'Мы работаем с фотографиями любого формата и стиля, и готовы ' +
-                  'предоставить вам консультацию по созданию лучшего портрета.',
-                bold: false,
-              },
-              {
-                text: 'Не упустите возможность сохранить важные моменты вашей жизни в искусстве.',
-                bold: true,
-              },
-              {
-                text: 'Обратитесь к нам сегодня, и мы с радостью поможем вам создать портреты, которые вы будете любить и ценить навсегда!',
-                bold: false,
-              },
-            ]}
-            linkToPage={'/oil-portrait'}
-          />
+          {/*<AdvantagesPage />*/}
+          {/*<OilPortrait*/}
+          {/*  title={'Классический портрет маслом'}*/}
+          {/*  imageMobile={*/}
+          {/*    'https://www.dropbox.com/s/6lkuknbtufgnex2/oil%20mobile2.png?raw=1'*/}
+          {/*  }*/}
+          {/*  imageDesktop={*/}
+          {/*    'https://www.dropbox.com/scl/fi/iq5j40wn1qfxabp89ma0o/1400_oil-classic.png?rlkey=gafvctnfhn3w6e1t6tzg2ydzc&dl=0&raw=1'*/}
+          {/*  }*/}
+          {/*  advantages={[*/}
+          {/*    'Полностью ручная роспись маслом',*/}
+          {/*    'Художники с опытом рисования более 10 лет',*/}
+          {/*    'Портретное сходство сохраняем на 100%',*/}
+          {/*  ]}*/}
+          {/*  descriptionMobile={*/}
+          {/*    'Роспись опытным художником - это неповторимые произведения искусства, ' +*/}
+          {/*    'которые будут радовать вас и ваших близких на протяжении многих лет.'*/}
+          {/*  }*/}
+          {/*  descriptionDesktop={[*/}
+          {/*    {*/}
+          {/*      text:*/}
+          {/*        'Мы работаем с фотографиями любого формата и стиля, и готовы ' +*/}
+          {/*        'предоставить вам консультацию по созданию лучшего портрета.',*/}
+          {/*      bold: false,*/}
+          {/*    },*/}
+          {/*    {*/}
+          {/*      text: 'Не упустите возможность сохранить важные моменты вашей жизни в искусстве.',*/}
+          {/*      bold: true,*/}
+          {/*    },*/}
+          {/*    {*/}
+          {/*      text: 'Обратитесь к нам сегодня, и мы с радостью поможем вам создать портреты, которые вы будете любить и ценить навсегда!',*/}
+          {/*      bold: false,*/}
+          {/*    },*/}
+          {/*  ]}*/}
+          {/*  linkToPage={'/oil-portrait'}*/}
+          {/*/>*/}
           <StylesPage />
           <OilPortrait
             title={'Портрет в образе'}

@@ -4,12 +4,12 @@ import {
   MasterInfoWrapper,
   WriteMeBlock,
   WriteMeLinks,
-  WriteMeText
-} from "../styled";
-import MasterName from "../MasterName/master-name";
-import {Typography, Box} from "@mui/material";
-import {aboutMeText, messengers} from "../../../../constants/mainConstants";
-import {Fragment} from "react";
+  WriteMeText,
+} from '../styled';
+import MasterName from '../MasterName/master-name';
+import { Typography, Box } from '@mui/material';
+import { aboutMeText, messengers } from '../../../../constants/mainConstants';
+import { Fragment } from 'react';
 
 const MasterInfoBlock = () => {
   return (
@@ -32,7 +32,9 @@ const MasterInfoBlock = () => {
         {aboutMeText.map((textBlock, idx) => (
           <Typography mb variant="body2" textAlign="left" key={idx}>
             {textBlock.map(({ bold, text }, internalIdx) => (
-              <Fragment key={internalIdx}>{bold ? (<strong>{text}</strong>) : text}</Fragment>
+              <Fragment key={internalIdx}>
+                {bold ? <strong>{text}</strong> : text}
+              </Fragment>
             ))}
           </Typography>
         ))}
@@ -40,17 +42,16 @@ const MasterInfoBlock = () => {
 
       <WriteMeBlock>
         <WriteMeText>
-          <Typography variant="body2" textAlign="left" noWrap>Напишите мне:</Typography>
+          <Typography variant="body2" textAlign="left" noWrap>
+            Напишите мне:
+          </Typography>
         </WriteMeText>
 
         <WriteMeLinks linksCount={messengers.length}>
-          {messengers.map(({imgSrc, link}, idx) => (
+          {messengers.map(({ imgSrc, link }, idx) => (
             <Box key={idx}>
               <a href={link} target="_blank" rel="noreferrer">
-                <img
-                  src={imgSrc}
-                  alt="contact"
-                />
+                <img src={imgSrc} alt="contact" />
               </a>
             </Box>
           ))}

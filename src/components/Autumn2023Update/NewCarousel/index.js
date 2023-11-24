@@ -3,7 +3,7 @@ import {
   NewCarouselItemWrapper,
   NewCarouselWrapper,
 } from '../styled';
-import { eventsSlideGallery } from '../../../constants/galeries/mainPageImages';
+import { eventsSlideGallery } from '../../../constants/galleries/mainPageImages';
 import Slider from 'react-slick';
 import { NextArrow, PrevArrow } from '../../MobileCarousel';
 import { isMobile } from 'react-device-detect';
@@ -30,6 +30,7 @@ const NewCarousel = () => {
                 src={(!isMobile && imageSrc_500) || imageSrc}
                 alt="example image"
                 width="100%"
+                loading="lazy"
               />
               {description && (
                 <NewCarouselItemDescriptionWrapper>

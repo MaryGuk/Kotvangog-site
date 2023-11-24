@@ -1,4 +1,4 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 export const ImageCarouselWrapper = styled(Box)`
   position: relative;
@@ -37,10 +37,10 @@ export const ImageGalleryWrapper = styled(Box)`
   scroll-behavior: smooth;
 `;
 export const ImageGalleryInnerWrapper = styled(Box, {
-  shouldForwardProp: (prop) => prop !== "reverse",
+  shouldForwardProp: (prop) => prop !== 'reverse',
 })`
   display: inline-flex;
-  justify-content: ${({ reverse }) => (reverse ? "flex-end" : "flex-start")};
+  justify-content: ${({ reverse }) => (reverse ? 'flex-end' : 'flex-start')};
   opacity: 1;
   min-width: 100%;
 
@@ -89,7 +89,7 @@ export const ImageItemWrapper = styled(Box)`
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     height: 280px;
-    
+
     :hover {
       margin-top: 5px;
       margin-bottom: 5px;
