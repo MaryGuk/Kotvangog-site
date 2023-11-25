@@ -3,16 +3,11 @@ import {
   GiftAdvertisementSlideWrapper,
 } from '../../styled';
 import BestGiftHeader from './BestGiftHeader';
-import { Box, Typography } from '@mui/material';
-import { productPageData } from '../../../../constants/mainConstants';
-import MobileCarousel from '../../../MobileCarousel';
+import { Typography } from '@mui/material';
 import { isMobile } from 'react-device-detect';
 import NewCarousel from '../../NewCarousel';
 import PageContentWrapper from '../../../PageContentWrapper';
-
-const mockImageSrcs = productPageData.beautyArt.galleryImages.map(
-  ({ fullSrc }) => fullSrc
-);
+import { HoverScalableContent } from '../../../MobileCarousel/styled';
 
 const GiftAdvertisementSlide = () => {
   return (
@@ -27,17 +22,12 @@ const GiftAdvertisementSlide = () => {
       <BestGiftHeader />
 
       {isMobile ? (
-        <Box height="150vw" width="100vw">
-          <MobileCarousel
-            imageList={mockImageSrcs}
-            columnCount={1}
-            rowCount={1}
-            onImageClick={() => true}
-          />
-        </Box>
+        <HoverScalableContent>
+          <NewCarousel />
+        </HoverScalableContent>
       ) : (
         <PageContentWrapper>
-          <NewCarousel />
+          <NewCarousel slidesToShow={3} />
         </PageContentWrapper>
       )}
     </GiftAdvertisementSlideWrapper>
