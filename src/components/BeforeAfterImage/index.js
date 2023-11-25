@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from 'react';
 import {
   ImageWrapper,
   SecondImageWrapper,
@@ -8,7 +8,7 @@ import {
   DividingLineSliderWrapper,
   ExampleDividingSlider,
   HoverListener,
-} from "./styled";
+} from './styled';
 
 const BeforeAfterImage = ({
   srcBefore,
@@ -31,11 +31,13 @@ const BeforeAfterImage = ({
     event.stopPropagation();
     event.preventDefault();
 
-  let movementX = event.movementX;
+    let movementX = event.movementX;
 
     if (!movementX && event.touches[0]) {
       const touchedClientX = event.touches[0].clientX;
-      movementX = lastTouchedPosition ? touchedClientX - lastTouchedPosition : 0;
+      movementX = lastTouchedPosition
+        ? touchedClientX - lastTouchedPosition
+        : 0;
       setLastTouchedPosition(touchedClientX);
     }
 
@@ -48,15 +50,15 @@ const BeforeAfterImage = ({
     const handleMouseUp = () => {
       setMousePressed(false);
       document.body.style.overflowY = 'initial';
-    }
+    };
 
-    document.addEventListener("mouseup", handleMouseUp);
-    document.addEventListener("touchend", handleMouseUp);
+    document.addEventListener('mouseup', handleMouseUp);
+    document.addEventListener('touchend', handleMouseUp);
 
     return () => {
-      document.removeEventListener("mouseup", handleMouseUp);
-      document.removeEventListener("touchend", handleMouseUp);
-    }
+      document.removeEventListener('mouseup', handleMouseUp);
+      document.removeEventListener('touchend', handleMouseUp);
+    };
   }, []);
 
   const normalizedSliderPosition = useMemo(
@@ -69,11 +71,11 @@ const BeforeAfterImage = ({
     setMousePressed(true);
     setLastTouchedPosition(null);
     document.body.style.overflowY = 'hidden';
-  }
+  };
 
   return (
     <BeforeAfterImageWrapper
-      height={height ?? "100%"}
+      height={height ?? '100%'}
       onMouseMove={handleMouseMove}
       onTouchMove={handleMouseMove}
       changeCursor={mousePressed}
@@ -86,11 +88,14 @@ const BeforeAfterImage = ({
       </SecondImageWrapper>
       <SliderWrapper left={`${normalizedSliderPosition}%`}>
         <DividingLine
-          width={dividingLineWidth ?? "2px"}
-          backgroundColor={dividingLineColor ?? "white"}
+          width={dividingLineWidth ?? '2px'}
+          backgroundColor={dividingLineColor ?? 'white'}
         />
         <HoverListener />
-        <DividingLineSliderWrapper onMouseDown={() => setMousePressed(true)} onTouchStart={handleTouchStart}>
+        <DividingLineSliderWrapper
+          onMouseDown={() => setMousePressed(true)}
+          onTouchStart={handleTouchStart}
+        >
           {dividingSlider ?? <ExampleDividingSlider />}
         </DividingLineSliderWrapper>
       </SliderWrapper>

@@ -1,5 +1,5 @@
 .styles-page {
-  background-image: url("/public/images/background/Слой3.png");
+  background-image: url('/public/images/background/Слой3.png');
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -12,7 +12,7 @@
   .styles-page {
     padding: 15px 0 0;
     box-sizing: initial;
-    background-image: url("/public/images/background/Слой7.png");
+    background-image: url('/public/images/background/Слой7.png');
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -20,7 +20,7 @@
 
 .styles-page__title {
   font-size: 24px;
-  font-family: "Palatino Linotype";
+  font-family: 'Palatino Linotype';
   font-weight: 500;
   white-space: nowrap;
 
@@ -35,7 +35,7 @@
   max-width: 1000px;
   margin-top: 30px;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 5%
+  grid-column-gap: 5%;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
@@ -79,14 +79,14 @@
   padding-top: 15px;
   display: flex;
   font-size: 16px;
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   font-weight: 500;
   justify-content: center;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .styles-name {
-    font-family: "Century Gothic";
+    font-family: 'Century Gothic';
     font-weight: normal;
     font-size: 20px;
   }
@@ -96,14 +96,14 @@
   display: flex;
   font-size: 14px;
   color: #3c3f42;
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   font-weight: 500;
   justify-content: center;
   padding-bottom: 20px;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .styles-price {
-    font-family: "Century Gothic";
+    font-family: 'Century Gothic';
     font-weight: normal;
     font-size: 20px;
   }

@@ -1,30 +1,47 @@
-import {FortuneWheelDescriptionWrapper, GiftAdvertisementSlideWrapper} from "../../styled";
-import BestGiftHeader from "./BestGiftHeader";
-import {Box, Typography} from "@mui/material";
-import {productPageData} from "../../../../constants/mainConstants";
-import MobileCarousel from "../../../MobileCarousel";
+import {
+  FortuneWheelDescriptionWrapper,
+  GiftAdvertisementSlideWrapper,
+} from '../../styled';
+import BestGiftHeader from './BestGiftHeader';
+import { Box, Typography } from '@mui/material';
+import { productPageData } from '../../../../constants/mainConstants';
+import MobileCarousel from '../../../MobileCarousel';
+import { isMobile } from 'react-device-detect';
+import NewCarousel from '../../NewCarousel';
+import PageContentWrapper from '../../../PageContentWrapper';
 
-const mockImageSrcs = productPageData.beautyArt.galleryImages.map(({ fullSrc }) => fullSrc);
+const mockImageSrcs = productPageData.beautyArt.galleryImages.map(
+  ({ fullSrc }) => fullSrc
+);
 
 const GiftAdvertisementSlide = () => {
-  return <GiftAdvertisementSlideWrapper>
-    <FortuneWheelDescriptionWrapper>
-      <Typography variant="body2">
-        Ищете подарок, который не оставит равнодушных? Хотите услышать «ВАУ» вместо банального «Спасибо»?
-      </Typography>
-    </FortuneWheelDescriptionWrapper>
+  return (
+    <GiftAdvertisementSlideWrapper>
+      <FortuneWheelDescriptionWrapper>
+        <Typography variant="body2">
+          Ищете подарок, который не оставит равнодушных? Хотите услышать «ВАУ»
+          вместо банального «Спасибо»?
+        </Typography>
+      </FortuneWheelDescriptionWrapper>
 
-    <BestGiftHeader />
+      <BestGiftHeader />
 
-    <Box height="150vw" width="100vw">
-      <MobileCarousel
-        imageList={mockImageSrcs}
-        columnCount={1}
-        rowCount={1}
-        onImageClick={() => true}
-      />
-    </Box>
-  </GiftAdvertisementSlideWrapper>
-}
+      {isMobile ? (
+        <Box height="150vw" width="100vw">
+          <MobileCarousel
+            imageList={mockImageSrcs}
+            columnCount={1}
+            rowCount={1}
+            onImageClick={() => true}
+          />
+        </Box>
+      ) : (
+        <PageContentWrapper>
+          <NewCarousel />
+        </PageContentWrapper>
+      )}
+    </GiftAdvertisementSlideWrapper>
+  );
+};
 
 export default GiftAdvertisementSlide;

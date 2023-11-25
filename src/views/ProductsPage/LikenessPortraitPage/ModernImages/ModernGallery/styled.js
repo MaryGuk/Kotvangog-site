@@ -1,4 +1,4 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 export const ModernImagesGallery = styled(Box)`
   display: flex;

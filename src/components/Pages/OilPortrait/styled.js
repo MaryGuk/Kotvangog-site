@@ -1,4 +1,4 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 export const OilPortraitWrapper = styled(Box)`
   display: flex;
@@ -14,7 +14,7 @@ export const OilPortraitWrapper = styled(Box)`
 `;
 
 export const OilPortraitGeneral = styled(Box)`
-  background-image: url("/images/background/Слой3.png");
+  background-image: url('/images/background/Слой3.png');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -66,7 +66,7 @@ export const OilContentDescription = styled(Box)`
   justify-content: flex-end;
   width: 100%;
   padding-left: 10%;
-  
+
   @media (max-width: 1300px) {
     padding-left: 5%;
   }
@@ -85,7 +85,7 @@ export const ButtonContainer = styled(Box)`
 
 export const FirstButton = styled(Box)`
   font-size: 17px;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Comfortaa', cursive;
   font-weight: 500;
   background-color: #bdbdbd;
   color: white;
@@ -106,7 +106,7 @@ export const FirstButton = styled(Box)`
 `;
 export const SecondButton = styled(Box)`
   font-size: 17px;
-  font-family: "Palatino Linotype";
+  font-family: 'Palatino Linotype';
   font-weight: 500;
   background-color: #36883d;
   color: white;
@@ -128,7 +128,7 @@ export const SecondButton = styled(Box)`
 
 export const ModalTitle = styled(Box)`
   font-size: 18px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 600;
   text-align: center;
 `;
@@ -152,7 +152,7 @@ export const ModalIcons = styled(Box)`
   }
 
   :last-child {
-    content: "";
+    content: '';
     margin-right: 0;
   }
 `;
@@ -179,7 +179,7 @@ export const OilMobileText = styled(Box)`
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: flex;
-    font-family: "Century Gothic";
+    font-family: 'Century Gothic';
     font-weight: normal;
     font-size: 12px;
     text-align: center;
@@ -212,7 +212,7 @@ export const OilDesktopInfoIcon = styled(Box)`
 export const OilDesktopInfoText = styled(Box)`
   display: flex;
   align-items: center;
-  font-family: "Century Gothic";
+  font-family: 'Century Gothic';
   font-weight: normal;
   font-size: 16px;
   display: flex;
@@ -243,8 +243,8 @@ export const OilDesktopDescription1 = styled(Box)`
   margin-left: 25px;
   width: 400px;
   align-items: center;
-  font-family: "Century Gothic";
-  font-weight: ${({ bold }) => bold ? "bold" : "normal"};
+  font-family: 'Century Gothic';
+  font-weight: ${({ bold }) => (bold ? 'bold' : 'normal')};
   padding-top: 95px;
   font-size: 16px;
   line-height: 1.5;
@@ -254,8 +254,8 @@ export const OilDesktopDescription2 = styled(Box)`
   margin-left: 25px;
   width: 400px;
   align-items: center;
-  font-family: "Century Gothic";
-  font-weight: ${({ bold }) => bold ? "bold" : "normal"};
+  font-family: 'Century Gothic';
+  font-weight: ${({ bold }) => (bold ? 'bold' : 'normal')};
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 16px;
@@ -266,8 +266,8 @@ export const OilDesktopDescription3 = styled(Box)`
   margin-left: 25px;
   width: 400px;
   align-items: center;
-  font-family: "Century Gothic";
-  font-weight: ${({ bold }) => bold ? "bold" : "normal"};
+  font-family: 'Century Gothic';
+  font-weight: ${({ bold }) => (bold ? 'bold' : 'normal')};
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 80px;

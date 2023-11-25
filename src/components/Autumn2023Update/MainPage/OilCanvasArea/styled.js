@@ -1,17 +1,25 @@
-import {Box, styled} from "@mui/material";
+import { Box, styled } from '@mui/material';
+import { mobileStyles } from '../../../../utils/stylesUtils';
 
 export const OilCanvasAreaWrapper = styled(Box)`
   display: flex;
   align-items: center;
-  background-color: ${({ theme: { palette }}) => palette.background.default};
+  background-color: ${({ theme: { palette } }) => palette.background.default};
   flex-direction: column;
-  padding: 0 4% 30px;
+  padding: 20px 0 30px;
+
+  ${mobileStyles(`
+    padding: 0 4% 30px;
+  `)}
 `;
 
 export const OilCanvasAreaTitleWrapper = styled(Box)`
   display: flex;
-  max-width: 20rem;
   padding: 0 0 30px;
+
+  ${mobileStyles(`
+    max-width: 20rem;
+  `)}
 `;
 
 export const OilTitleWrapper = styled(Box)`
@@ -32,7 +40,7 @@ export const OilTitleBrashWrapper = styled(Box)`
   transform: translate(50%, 10%);
 
   img {
-    width: 100%
+    width: 100%;
   }
 `;
 
@@ -46,7 +54,7 @@ export const AdvantagesListWrapper = styled(Box)`
   display: flex;
   width: 100%;
 
-  &>div {
+  & > div {
     max-width: 17.9rem;
   }
 `;
@@ -61,6 +69,14 @@ export const BoxingPointerWrapper = styled(Box)`
   position: absolute;
   right: 32px;
   transform: translate(100%, 50%);
+  height: 45px;
+`;
+
+export const ReverseBoxingPointerWrapper = styled(Box)`
+  display: flex;
+  position: absolute;
+  left: 22px;
+  transform: translate(-100%, 50%) scaleX(-1);
   height: 45px;
 `;
 
@@ -99,4 +115,40 @@ export const CanvasAreaWrapper = styled(Box)`
   flex-direction: column;
   align-items: center;
   padding: 25px 0 0;
+`;
+
+export const OilCanvasDesktopGridWrapper = styled(Box, {
+  shouldForwardProp: (prop) => prop !== 'maxPrimaryBlockWidth',
+})`
+  display: grid;
+  width: 100%;
+  grid-template-columns: ${({ maxPrimaryBlockWidth = '370px' }) =>
+    `minmax(0, ${maxPrimaryBlockWidth}) 1fr minmax(0, ${maxPrimaryBlockWidth});`};
+  padding: 0 0 10px;
+`;
+
+export const OilCanvasGridPrimaryBlockWrapper = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+`;
+
+export const OilCanvasGridSecondaryBlockWrapper = styled(Box, {
+  shouldForwardProp: (prop) => prop !== 'reverse',
+})`
+  display: flex;
+  flex-direction: column;
+  align-items: ${({ reverse }) => (reverse ? 'flex-end' : 'flex-start')};
+  width: 100%;
+  height: 100%;
+`;
+
+export const OilCanvasGridButtonBlockWrapper = styled(Box)`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 15px 0 0;
 `;

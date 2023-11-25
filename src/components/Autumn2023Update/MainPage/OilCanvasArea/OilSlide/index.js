@@ -3,14 +3,14 @@ import {
   OilAreaWrapper,
   OilTitleBrashWrapper,
   OilTitleTextWrapper,
-  OilTitleWrapper
-} from "../styled";
-import Brash from "../../../../../images/brashes/brash4.svg";
-import {Box, Typography} from "@mui/material";
-import MobileCarousel from "../../../../MobileCarousel";
-import {oilSlideFramesGallery} from "../../../../../constants/galeries/mainPageImages";
-import AdvantagesList from "../../../../AdvantagesList";
-import {oilAdvantages} from "../../../../../constants/advantages";
+  OilTitleWrapper,
+} from '../styled';
+import Brash from '../../../../../images/brashes/brash4.svg';
+import { Box, Typography } from '@mui/material';
+import MobileCarousel from '../../../../MobileCarousel';
+import { oilSlideFramesGallery } from '../../../../../constants/galleries/mainPageImages';
+import AdvantagesList from '../../../../AdvantagesList';
+import { oilAdvantages } from '../../../../../constants/advantages';
 
 const OilSlide = () => {
   return (
@@ -39,6 +39,6 @@ const OilSlide = () => {
       </AdvantagesListWrapper>
     </OilAreaWrapper>
   );
-}
+};
 
 export default OilSlide;

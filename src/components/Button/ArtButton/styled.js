@@ -1,4 +1,4 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 export const ArtButtonWrapper = styled(Box)`
   /* margin-bottom: 120px; */
@@ -16,7 +16,7 @@ export const ArtButtonContainer = styled(Box)`
 
 export const ArtButtonItem = styled(Box)`
   font-size: 18px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 600;
   letter-spacing: 1.5px;
   background-color: #38893f;
@@ -42,7 +42,7 @@ export const ArtButtonItem = styled(Box)`
 
 export const ModalTitle = styled(Box)`
   font-size: 18px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 600;
   text-align: center;
 `;
@@ -66,7 +66,7 @@ export const ModalIcons = styled(Box)`
   }
 
   :last-child {
-    content: "";
+    content: '';
     margin-right: 0;
   }
 `;

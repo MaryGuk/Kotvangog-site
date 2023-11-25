@@ -1,5 +1,5 @@
-import HistoryGallery from "../HistoryGallery";
-import ModernGallery from "./ModernGallery";
+import HistoryGallery from '../HistoryGallery';
+import ModernGallery from './ModernGallery';
 import {
   ModernImagesWrapper,
   ModernImagesGeneral,
@@ -17,15 +17,15 @@ import {
   MobileLikenessTextTwo,
   MobileLikenessThreeContainer,
   MobileLikenessTwoContainer,
-} from "./styled";
-import MobileCarousel from "../../../../components/MobileCarousel";
-import {isMobile} from "react-device-detect";
-import {Box} from "@mui/material";
-import PreviewPhotoDialog from "../../../../components/PreviewPhotoDialog";
-import usePreviewPhotoDialogState from "../../../../components/PreviewPhotoDialog/usePreviewPhotoDialogState";
-import {modernImages} from "../../../../constants/galeries/modernImages";
-import {historyImages} from "../../../../constants/galeries/historyImages";
-import LikenessTitle from "./title-history";
+} from './styled';
+import MobileCarousel from '../../../../components/MobileCarousel';
+import { isMobile } from 'react-device-detect';
+import { Box } from '@mui/material';
+import PreviewPhotoDialog from '../../../../components/PreviewPhotoDialog';
+import usePreviewPhotoDialogState from '../../../../components/PreviewPhotoDialog/usePreviewPhotoDialogState';
+import { modernImages } from '../../../../constants/galleries/modernImages';
+import { historyImages } from '../../../../constants/galleries/historyImages';
+import LikenessTitle from './title-history';
 
 const ModernImages = () => {
   const {
@@ -34,7 +34,7 @@ const ModernImages = () => {
     handlePrevPhoto,
     handleNextPhoto,
     fullImageSrcData,
-    setFullImageSrcData
+    setFullImageSrcData,
   } = usePreviewPhotoDialogState();
 
   return (
@@ -46,21 +46,32 @@ const ModernImages = () => {
             У нас более <b>300</b> современных образов
           </ModernImagesDescription>
         </ModernImagesContent>
-        {isMobile ?
+        {isMobile ? (
           <Box p="30px 2px">
             <MobileCarousel
-                imageList={modernImages.map(({ previewSrc}) => previewSrc)}
-                columnCount={2}
-                rowCount={3}
-                onImageClick={(idx) => setFullImageSrcData({ gallery: modernImages, idx })}
+              imageList={modernImages.map(({ previewSrc }) => previewSrc)}
+              columnCount={2}
+              rowCount={3}
+              onImageClick={(idx) =>
+                setFullImageSrcData({ gallery: modernImages, idx })
+              }
             />
-          </Box> :
-            <ModernGallery modernImages={modernImages} setFullImageSrc={(src) => {
-              const idx = modernImages.findIndex(({ fullSrc }) => fullSrc === src);
+          </Box>
+        ) : (
+          <ModernGallery
+            modernImages={modernImages}
+            setFullImageSrc={(src) => {
+              const idx = modernImages.findIndex(
+                ({ fullSrc }) => fullSrc === src
+              );
 
-              setFullImageSrcData({gallery: modernImages, idx: idx < 0 ? 0 : idx })
-            }}/>
-        }
+              setFullImageSrcData({
+                gallery: modernImages,
+                idx: idx < 0 ? 0 : idx,
+              });
+            }}
+          />
+        )}
         <LikenessTitle text="Исторические образы" />
         <ModernImagesContent>
           <ModernImagesDescription>
@@ -71,12 +82,17 @@ const ModernImages = () => {
         {isMobile ? (
           <Box p="30px 2px">
             <MobileCarousel
-              imageList={historyImages.map(({ previewSrc}) => previewSrc)}
+              imageList={historyImages.map(({ previewSrc }) => previewSrc)}
               columnCount={2}
               rowCount={3}
-              onImageClick={(idx) => setFullImageSrcData({ gallery: historyImages, idx })}
+              onImageClick={(idx) =>
+                setFullImageSrcData({ gallery: historyImages, idx })
+              }
             />
-          </Box>) : (<HistoryGallery/>)}
+          </Box>
+        ) : (
+          <HistoryGallery />
+        )}
 
         <HistoryImagesCollage>
           <HistoryImagesCollageItems>
@@ -117,16 +133,19 @@ const ModernImages = () => {
       </ModernImagesGeneral>
 
       <PreviewPhotoDialog
-          open={fullImageSrcData !== null}
-          onClose={() => setFullImageSrcData(null)}
-          showPrevArrow={isFirstPhoto}
-          showNextArrow={isLastPhoto}
-          handlePrevPhoto={handlePrevPhoto}
-          handleNextPhoto={handleNextPhoto}
-          src={
-              fullImageSrcData &&
-              (fullImageSrcData.gallery[fullImageSrcData.idx] ?? fullImageSrcData.gallery[0]).fullSrc
-          }
+        open={fullImageSrcData !== null}
+        onClose={() => setFullImageSrcData(null)}
+        showPrevArrow={isFirstPhoto}
+        showNextArrow={isLastPhoto}
+        handlePrevPhoto={handlePrevPhoto}
+        handleNextPhoto={handleNextPhoto}
+        src={
+          fullImageSrcData &&
+          (
+            fullImageSrcData.gallery[fullImageSrcData.idx] ??
+            fullImageSrcData.gallery[0]
+          ).fullSrc
+        }
       />
     </ModernImagesWrapper>
   );

@@ -1,5 +1,5 @@
-import "./title-examples.css";
-import { isMobile } from "react-device-detect";
+import './title-examples.css';
+import { isMobile } from 'react-device-detect';
 
 const TitleExamples = () => {
   return (
@@ -10,8 +10,8 @@ const TitleExamples = () => {
             className="examples-text__title-background-image"
             src={
               isMobile
-                ? "/images/background/примеры моб.png"
-                : "https://www.dropbox.com/scl/fi/ungyc09uwmyb183idhjcx/.png?rlkey=06vxly6c5oo0h729a31w7n2e2&dl=0&raw=1"
+                ? '/images/background/примеры моб.png'
+                : 'https://www.dropbox.com/scl/fi/ungyc09uwmyb183idhjcx/.png?rlkey=06vxly6c5oo0h729a31w7n2e2&dl=0&raw=1'
             }
           />
         </div>

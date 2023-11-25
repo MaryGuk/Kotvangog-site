@@ -1,4 +1,4 @@
-import { Box } from "@mui/system";
+import { Box } from '@mui/system';
 import {
   ContactSticky,
   ContactStickyContainer,
@@ -12,56 +12,56 @@ import {
   ModalContactsItems,
   ModalContactsName,
   ModalIconsContacts,
-} from "./styled";
-import { useState } from "react";
-import Modal from "../../Modal/modal";
+} from './styled';
+import { useState } from 'react';
+import Modal from '../../Modal/modal';
 import {
   Dialog,
   DialogTitle,
   DialogContent,
   DialogActions,
   Button,
-} from "@mui/material";
+} from '@mui/material';
 
 const PhoneDialog = ({ open, onClose, phoneNumber }) => {
   return (
     <Dialog open={open} onClose={onClose} maxWidth="xs" fullWidth>
       <DialogTitle
         style={{
-          color: "black",
-          fontFamily: "Century Gothic",
-          fontSize: "20px",
-          textAlign: "center",
+          color: 'black',
+          fontFamily: 'Century Gothic',
+          fontSize: '20px',
+          textAlign: 'center',
         }}
       >
         Получите консультацию по телефону:
       </DialogTitle>
       <DialogContent>
-        <Box style={{ display: "flex", flexDirection: "row" }}>
-          <Box style={{ marginRight: "15px" }}>
-            <img width="40px" src="/images/icon phone.png" alt=""/>
+        <Box style={{ display: 'flex', flexDirection: 'row' }}>
+          <Box style={{ marginRight: '15px' }}>
+            <img width="40px" src="/images/icon phone.png" alt="" />
           </Box>
           <Box
             style={{
-              textDecoration: "none",
-              fontFamily: "Century Gothic",
-              fontSize: "18px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              color: "#C6119A",
+              textDecoration: 'none',
+              fontFamily: 'Century Gothic',
+              fontSize: '18px',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              color: '#C6119A',
             }}
           >
             {
               <a
                 style={{
-                  textDecoration: "none",
-                  color: "#C6119A",
-                  fontFamily: "Century Gothic",
+                  textDecoration: 'none',
+                  color: '#C6119A',
+                  fontFamily: 'Century Gothic',
                 }}
                 href="tel:+79933600710"
               >
-                {" "}
+                {' '}
                 {phoneNumber}
               </a>
             }
@@ -72,9 +72,9 @@ const PhoneDialog = ({ open, onClose, phoneNumber }) => {
         <Button onClick={onClose} color="primary">
           <a
             style={{
-              textDecoration: "none",
-              color: "black",
-              fontFamily: "Century Gothic",
+              textDecoration: 'none',
+              color: 'black',
+              fontFamily: 'Century Gothic',
             }}
           >
             Отмена
@@ -83,9 +83,9 @@ const PhoneDialog = ({ open, onClose, phoneNumber }) => {
         <Button onClick={onClose} color="primary">
           <a
             style={{
-              textDecoration: "none",
-              color: "#C6119A",
-              fontFamily: "Century Gothic",
+              textDecoration: 'none',
+              color: '#C6119A',
+              fontFamily: 'Century Gothic',
             }}
             href="tel:+79933600710"
           >
@@ -101,7 +101,7 @@ const ContactsSticky = () => {
   const [modalActive, setModalActive] = useState(false);
 
   const [dialogOpen, setDialogOpen] = useState(false);
-  const phoneNumber = "+7 993 360 07 10";
+  const phoneNumber = '+7 993 360 07 10';
 
   const handleDialogOpen = () => {
     setDialogOpen(true);
@@ -126,9 +126,9 @@ const ContactsSticky = () => {
               <ModalMessengerContentContacts>
                 <a
                   style={{
-                    textDecoration: "none",
-                    color: "#C6119A",
-                    fontFamily: "Century Gothic",
+                    textDecoration: 'none',
+                    color: '#C6119A',
+                    fontFamily: 'Century Gothic',
                   }}
                   href="https://api.whatsapp.com/send/?phone=79933600710&text&type=phone_number&app_absent=0"
                   target="blank"
@@ -146,9 +146,9 @@ const ContactsSticky = () => {
 
                 <a
                   style={{
-                    textDecoration: "none",
-                    color: "#C6119A",
-                    fontFamily: "Century Gothic",
+                    textDecoration: 'none',
+                    color: '#C6119A',
+                    fontFamily: 'Century Gothic',
                   }}
                   href="https://t.me/kot_vangog"
                   target="blank"
@@ -166,9 +166,9 @@ const ContactsSticky = () => {
 
                 <a
                   style={{
-                    textDecoration: "none",
-                    color: "#C6119A",
-                    fontFamily: "Century Gothic",
+                    textDecoration: 'none',
+                    color: '#C6119A',
+                    fontFamily: 'Century Gothic',
                   }}
                   href="https://vk.com/lubov0011"
                   target="blank"

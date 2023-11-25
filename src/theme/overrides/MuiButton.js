@@ -1,4 +1,4 @@
-import shadows from "../shadows";
+import shadows from '../shadows';
 
 const MuiButton = {
   styleOverrides: {

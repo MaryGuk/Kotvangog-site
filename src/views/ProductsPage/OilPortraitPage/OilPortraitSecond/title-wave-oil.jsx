@@ -1,4 +1,4 @@
-import "./title-wave-oil.css";
+import './title-wave-oil.css';
 
 const TitleWaveOil = () => {
   return (

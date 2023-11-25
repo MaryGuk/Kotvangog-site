@@ -1,21 +1,27 @@
-import {AdvantagesListWrapper} from "./styled";
-import {Typography, List, ListItem, ListItemIcon} from "@mui/material";
+import { AdvantagesListWrapper } from './styled';
+import { Typography, List, ListItem, ListItemIcon } from '@mui/material';
 import Marker from '../../images/MainPage/MainSlide/advantageMarker.svg';
 
-const AdvantagesList = ({ advantages }) => {
-  return <AdvantagesListWrapper>
-    <List>
-      {advantages?.map(({ advantageText, endAdornment }, idx) => (
-        <ListItem key={idx} mar>
-          <ListItemIcon>
-            <img src={Marker} alt="marker" />
-          </ListItemIcon>
-          <Typography variant="body2" textAlign="start">{advantageText}</Typography>
-          {endAdornment}
-        </ListItem>
-      ))}
-    </List>
-  </AdvantagesListWrapper>
-}
+const AdvantagesList = ({ advantages, reverse }) => {
+  return (
+    <AdvantagesListWrapper reverse={reverse}>
+      <List>
+        {advantages?.map(
+          ({ advantageText, endAdornment, reverseEndAdornment }, idx) => (
+            <ListItem key={idx} mar>
+              <ListItemIcon>
+                <img src={Marker} alt="marker" />
+              </ListItemIcon>
+              <Typography variant="body2" textAlign="start">
+                {advantageText}
+              </Typography>
+              {(reverse && reverseEndAdornment) || endAdornment}
+            </ListItem>
+          )
+        )}
+      </List>
+    </AdvantagesListWrapper>
+  );
+};
 
-export default AdvantagesList
+export default AdvantagesList;

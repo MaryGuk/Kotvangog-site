@@ -1,4 +1,4 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 export const LoaderRotatingWrapper = styled(Box)`
   animation: swing 2s ease-in-out infinite;

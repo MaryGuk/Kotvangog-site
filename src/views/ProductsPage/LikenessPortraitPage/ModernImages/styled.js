@@ -1,4 +1,4 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 export const ModernImagesWrapper = styled(Box)`
   background-color: #bdbdbd;
@@ -25,7 +25,7 @@ export const ModernImagesContent = styled(Box)`
 
 export const ModernImagesDescription = styled(Box)`
   font-size: 17px;
-  font-family: "Palatino Linotype";
+  font-family: 'Palatino Linotype';
   font-weight: 500;
   text-align: center;
   color: #555555;
@@ -50,7 +50,7 @@ export const HistoryImagesCollageItems = styled(Box)`
   margin-bottom: 80px;
 
   @media (max-width: 950px) {
-    display: "flex";
+    display: 'flex';
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -80,7 +80,7 @@ export const HistoryImagesCollageText = styled(Box)`
 `;
 export const HistoryImagesCollageText1 = styled(Box)`
   font-size: 24px;
-  font-family: "Palatino Linotype";
+  font-family: 'Palatino Linotype';
   font-weight: 700;
   max-width: 310px;
   color: #555555;
@@ -89,7 +89,7 @@ export const HistoryImagesCollageText1 = styled(Box)`
 `;
 export const HistoryImagesCollageText2 = styled(Box)`
   font-size: 24px;
-  font-family: "Palatino Linotype";
+  font-family: 'Palatino Linotype';
   font-weight: 400;
   color: #555555;
   max-width: 360px;
@@ -114,7 +114,7 @@ export const MobileLikenessTextOne = styled(Box)`
   display: none;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    font-family: "Century Gothic";
+    font-family: 'Century Gothic';
     font-weight: normal;
     font-size: 13px;
     text-align: center;
@@ -135,7 +135,7 @@ export const MobileLikenessTextTwo = styled(Box)`
   display: none;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    font-family: "Century Gothic";
+    font-family: 'Century Gothic';
     font-weight: bold;
     font-size: 13px;
     text-align: center;
@@ -158,7 +158,7 @@ export const MobileLikenessTextThree = styled(Box)`
   display: none;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    font-family: "Century Gothic";
+    font-family: 'Century Gothic';
     font-weight: normal;
     font-size: 13px;
     text-align: center;

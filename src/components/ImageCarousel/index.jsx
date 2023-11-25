@@ -5,12 +5,12 @@ import {
   ScrollHiddener,
   ImageItemWrapper,
   ImageGalleryInnerWrapper,
-} from "./styled";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+} from './styled';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
-import { IconButton } from "@mui/material";
-import { useRef } from "react";
+import { IconButton } from '@mui/material';
+import { useRef } from 'react';
 
 const ImageCarousel = ({ galleryImages, setFullImageIdx, reverse }) => {
   const carouselRef = useRef(null);
@@ -38,7 +38,11 @@ const ImageCarousel = ({ galleryImages, setFullImageIdx, reverse }) => {
           <ImageGalleryInnerWrapper reverse={reverse}>
             {galleryImages.map(({ previewSrc }, idx) => (
               <ImageItemWrapper onClick={() => setFullImageIdx(idx)} key={idx}>
-                <img className="beauty-art__image" src={previewSrc} alt="Photo" />
+                <img
+                  className="beauty-art__image"
+                  src={previewSrc}
+                  alt="Photo"
+                />
               </ImageItemWrapper>
             ))}
           </ImageGalleryInnerWrapper>

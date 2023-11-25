@@ -1,9 +1,9 @@
-import { LoaderRotatingWrapper, LoaderStaticWrapper } from "./styled";
+import { LoaderRotatingWrapper, LoaderStaticWrapper } from './styled';
 
 const PaintbrushLoader = ({ width, backgroundColor }) => {
   const currentWidth = width ?? 128;
   const currentHeight = (width / 128) * 117.4;
-  const currentBackgroundColor = backgroundColor ?? "white";
+  const currentBackgroundColor = backgroundColor ?? 'white';
 
   const staticWrapperSize = Math.min(currentWidth, currentHeight) * 1.5;
 
@@ -32,15 +32,15 @@ const PaintbrushLoader = ({ width, backgroundColor }) => {
             >
               <stop
                 offset="0%"
-                style={{ stopColor: "#8B4513", stopOpacity: 1 }}
+                style={{ stopColor: '#8B4513', stopOpacity: 1 }}
               />
               <stop
                 offset="50%"
-                style={{ stopColor: "#A0522D", stopOpacity: 1 }}
+                style={{ stopColor: '#A0522D', stopOpacity: 1 }}
               />
               <stop
                 offset="100%"
-                style={{ stopColor: "#8B4513", stopOpacity: 1 }}
+                style={{ stopColor: '#8B4513', stopOpacity: 1 }}
               />
             </linearGradient>
           </defs>

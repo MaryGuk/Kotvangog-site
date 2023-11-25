@@ -1,4 +1,4 @@
-import "./working-page.css";
+import './working-page.css';
 
 const WorkingPage = () => {
   return (

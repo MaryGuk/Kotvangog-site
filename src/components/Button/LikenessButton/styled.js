@@ -1,4 +1,4 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 export const LikenessButtonWrapper = styled(Box)`
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
@@ -17,7 +17,7 @@ export const LikenessButtonContainer = styled(Box)`
 
 export const LikenessButtonItem = styled(Box)`
   font-size: 18px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 600;
   background-color: #36883d;
   color: white;
@@ -36,7 +36,7 @@ export const LikenessButtonItem = styled(Box)`
   }
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    font-family: "Century Gothic";
+    font-family: 'Century Gothic';
     font-weight: normal;
     padding: 10px;
     font-size: 15px;
@@ -47,7 +47,7 @@ export const LikenessButtonItem = styled(Box)`
 
 export const ModalTitle = styled(Box)`
   font-size: 18px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 600;
   text-align: center;
 `;
@@ -71,7 +71,7 @@ export const ModalIcons = styled(Box)`
   }
 
   :last-child {
-    content: "";
+    content: '';
     margin-right: 0;
   }
 `;

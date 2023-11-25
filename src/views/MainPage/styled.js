@@ -1,4 +1,4 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 export const MainPageWrapper = styled(Box)`
   padding: 0 0 0;

@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box } from '@mui/material';
 import {
   LikenessPortraitWrapper2,
   LikenessPortraitGeneral2,
@@ -27,15 +27,15 @@ import {
   LikenessMobileInfoItemsText,
   LikenessMobileInfoItemsThree,
   LikenessMobileInfoItemsTwo,
-} from "./styled";
+} from './styled';
 
-import Modal from "../../../../../components/Modal/modal";
-import LikenessButtonMobile from "../../../../../components/Button/LikenessButton";
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
-import { isMobile } from "react-device-detect";
-import LikenessTitle2 from "../LikenessTitle2/likeness-title2";
+import Modal from '../../../../../components/Modal/modal';
+import LikenessButtonMobile from '../../../../../components/Button/LikenessButton';
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import { isMobile } from 'react-device-detect';
+import LikenessTitle2 from '../LikenessTitle2/likeness-title2';
 
 const LikenessMobile = () => {
   const { t } = useTranslation();
@@ -53,6 +53,8 @@ const LikenessMobile = () => {
                     width="20px"
                     height="20px"
                     src="/images/background/ellipse2.png"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </LikenessMobileInfoItemsIcon>
                 <LikenessMobileInfoItemsText>
@@ -94,8 +96,8 @@ const LikenessMobile = () => {
               <img
                 src={
                   isMobile
-                    ? "/images/в образе моб.png"
-                    : "https://www.dropbox.com/s/cho3zbrorta4r0b/%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%20%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B522.png?raw=1"
+                    ? '/images/в образе моб.png'
+                    : 'https://www.dropbox.com/s/cho3zbrorta4r0b/%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82%20%D0%B2%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B522.png?raw=1'
                 }
                 width="100%"
                 height="100%"
@@ -130,11 +132,11 @@ const LikenessMobile = () => {
                 Мы работаем с фотографиями любого формата и стиля, и готовы
                 предоставить вам консультацию и рекомендации по созданию
                 наиболее удачного портрета.
-                <span style={{ fontWeight: "700" }}>
-                  {" "}
+                <span style={{ fontWeight: '700' }}>
+                  {' '}
                   Не упустите возможность сохранить важные моменты вашей жизни в
                   искусстве.
-                </span>{" "}
+                </span>{' '}
                 Обратитесь к нам сегодня, и мы с радостью поможем вам создать
                 портреты, которые вы будете любить и ценить навсегда!
               </ThirdText2>
@@ -147,7 +149,7 @@ const LikenessMobile = () => {
                 </Box>
                 <Box>
                   <SecondButton2 onClick={() => setModalActive(true)}>
-                    {t("mainPage.button")}
+                    {t('mainPage.button')}
                   </SecondButton2>
                 </Box>
 

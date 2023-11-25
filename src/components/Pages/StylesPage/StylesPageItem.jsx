@@ -1,11 +1,9 @@
-import { Box } from "@mui/material";
-
 import {
   StylesPageItemWrapper,
   StylesPageItemContainer,
   StylesPageItemName,
   StylesPageItemPrice,
-} from "./styled";
+} from './styled';
 
 const StylesPageItem = ({ imageSrc, stylesName, stylesPrice }) => {
   return (

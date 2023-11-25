@@ -1,4 +1,4 @@
-import "./WorkingTitle.css";
+import './WorkingTitle.css';
 
 const WorkingTitle = () => {
   return (

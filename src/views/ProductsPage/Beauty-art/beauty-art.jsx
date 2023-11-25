@@ -1,10 +1,10 @@
-import { Dialog } from "@mui/material";
-import { Box } from "@mui/system";
-import { useState } from "react";
-import "./beauty-art.css";
-import ImageGallery from "./Image-beauty";
-import ImageWithLoader from "../../../components/ImageWithLoader";
-import BeforeAfterImage from "../../../components/BeforeAfterImage";
+import { Dialog } from '@mui/material';
+import { Box } from '@mui/system';
+import { useState } from 'react';
+import './beauty-art.css';
+import ImageGallery from './Image-beauty';
+import ImageWithLoader from '../../../components/ImageWithLoader';
+import BeforeAfterImage from '../../../components/BeforeAfterImage';
 
 const BeautyArt = () => {
   const [openImageDialog, setOpenImageDialog] = useState(false);

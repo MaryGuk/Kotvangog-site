@@ -6,9 +6,9 @@ import {
   ModalIcons,
   ModalTitle,
   LikenessButtonContainer,
-} from "./styled";
-import Modal from "../../Modal/modal";
-import { useState } from "react";
+} from './styled';
+import Modal from '../../Modal/modal';
+import { useState } from 'react';
 
 const LikenessButtonMobile = () => {
   const [modalActive, setModalActive] = useState(false);

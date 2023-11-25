@@ -1,6 +1,6 @@
-import "./title-history.css";
+import './title-history.css';
 
-const LikenessTitle = ({text}) => {
+const LikenessTitle = ({ text }) => {
   return (
     <div className="history-text__title-wrapper">
       <div className="history-text__title-first">

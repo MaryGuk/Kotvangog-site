@@ -1,9 +1,9 @@
-import { styled, Box } from "@mui/material";
+import { styled, Box } from '@mui/material';
 
 export const ArtStylesAreaWrapper = styled(Box)`
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme: { palette }}) => palette.background.default};
+  background-color: ${({ theme: { palette } }) => palette.background.default};
 `;
 
 export const ArtStyleSlideWrapper = styled(Box)`

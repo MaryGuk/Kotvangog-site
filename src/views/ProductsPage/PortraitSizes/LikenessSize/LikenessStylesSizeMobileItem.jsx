@@ -3,9 +3,9 @@ import {
   LikenessSizesItemSize,
   LikenessSizesOilText,
   LikenessSizesPrintText,
-} from "./styled-likeness";
+} from './styled-likeness';
 
-import { Fragment } from "react";
+import { Fragment } from 'react';
 
 const LikenessStylesSizeMobileItem = ({
   imageSrc,
@@ -17,7 +17,7 @@ const LikenessStylesSizeMobileItem = ({
   columnCount,
 }) => {
   const gridColumn = `${(idx % 2) + 1}${
-    lastItem ? ` / ${columnCount + 1}` : ""
+    lastItem ? ` / ${columnCount + 1}` : ''
   }`;
 
   const gridRowOffset = Math.floor(idx / 2) * 4;

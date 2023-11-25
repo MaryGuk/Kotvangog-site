@@ -1,4 +1,4 @@
-import { Box, styled, IconButton } from "@mui/material";
+import { Box, styled, IconButton } from '@mui/material';
 
 export const StyledIconButtonWrapper = styled(Box)`
   position: fixed;
@@ -6,15 +6,15 @@ export const StyledIconButtonWrapper = styled(Box)`
 `;
 
 export const StyledIconButton = styled(IconButton)({
-    position: "static",
-    top: "50%",
-    transform: "translateY(-50%)",
-    zIndex: 1,
-    color: "white",
-    backgroundColor: "rgba(0, 0, 0, 0.5)",
-    "&:hover": {
-        backgroundColor: "rgba(0, 0, 0, 0.8)",
-    },
+  position: 'static',
+  top: '50%',
+  transform: 'translateY(-50%)',
+  zIndex: 1,
+  color: 'white',
+  backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  '&:hover': {
+    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+  },
 });
 
 export const GalleryPhotoBox = styled(Box)`

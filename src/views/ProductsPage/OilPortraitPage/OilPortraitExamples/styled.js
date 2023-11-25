@@ -1,4 +1,4 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 export const OilPortraitExamplesWrapper = styled(Box)`
   display: flex;
@@ -10,7 +10,7 @@ export const OilPortraitExamplesWrapper = styled(Box)`
   }
 `;
 export const OilPortraitExamplesGeneral = styled(Box)`
-  background-image: url("/images/background/Слой3.png");
+  background-image: url('/images/background/Слой3.png');
   background-repeat: no-repeat;
   background-size: cover;
   margin: 10px 0;

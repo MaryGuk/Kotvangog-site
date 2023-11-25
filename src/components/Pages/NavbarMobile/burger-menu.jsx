@@ -1,7 +1,7 @@
-import { useState } from "react";
-import "./burger-menu.css";
-import { NavLink } from "react-router-dom";
-import { ClickAwayHandler, NavbarParent } from "./styled";
+import { useState } from 'react';
+import './burger-menu.css';
+import { NavLink } from 'react-router-dom';
+import { ClickAwayHandler, NavbarParent } from './styled';
 
 function BurgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +17,7 @@ function BurgerMenu() {
   return (
     <div className="burger-menu">
       <div
-        className={`burger-menu__icon ${isOpen ? "open" : ""}`}
+        className={`burger-menu__icon ${isOpen ? 'open' : ''}`}
         onClick={handleMenuClick}
       >
         <span />
@@ -26,12 +26,9 @@ function BurgerMenu() {
       </div>
 
       <div className="burger-menu__logo">
-          <NavLink
-              style={{ textDecoration: "none"}}
-              to="/home"
-          >
-              <div className="burger-menu__text"> KOTVANGOG </div>
-          </NavLink>
+        <NavLink style={{ textDecoration: 'none' }} to="/home">
+          <div className="burger-menu__text"> KOTVANGOG </div>
+        </NavLink>
       </div>
       {isOpen && (
         <NavbarParent>
@@ -39,7 +36,7 @@ function BurgerMenu() {
             <ul>
               <li>
                 <NavLink
-                  style={{ textDecoration: "none", color: "white" }}
+                  style={{ textDecoration: 'none', color: 'white' }}
                   to="/home"
                   onClick={handleCloseNavbar}
                 >
@@ -48,7 +45,7 @@ function BurgerMenu() {
               </li>
               <li>
                 <NavLink
-                  style={{ textDecoration: "none", color: "white" }}
+                  style={{ textDecoration: 'none', color: 'white' }}
                   to="/oil-portrait"
                   onClick={handleCloseNavbar}
                 >
@@ -57,7 +54,7 @@ function BurgerMenu() {
               </li>
               <li>
                 <NavLink
-                  style={{ textDecoration: "none", color: "white" }}
+                  style={{ textDecoration: 'none', color: 'white' }}
                   to="/products"
                   onClick={handleCloseNavbar}
                 >
@@ -66,7 +63,7 @@ function BurgerMenu() {
               </li>
               <li>
                 <NavLink
-                  style={{ textDecoration: "none", color: "white" }}
+                  style={{ textDecoration: 'none', color: 'white' }}
                   to="/likeness-portrait"
                   onClick={handleCloseNavbar}
                 >
@@ -75,7 +72,7 @@ function BurgerMenu() {
               </li>
               <li>
                 <NavLink
-                  style={{ textDecoration: "none", color: "white" }}
+                  style={{ textDecoration: 'none', color: 'white' }}
                   to="/reviews"
                   onClick={handleCloseNavbar}
                 >

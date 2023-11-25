@@ -1,4 +1,4 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 export const LikenessPortraitWrapper2 = styled(Box)`
   display: flex;
@@ -13,7 +13,7 @@ export const LikenessPortraitWrapper2 = styled(Box)`
 `;
 
 export const LikenessPortraitGeneral2 = styled(Box)`
-  background-image: url("/images/background/Слой3.png");
+  background-image: url('/images/background/Слой3.png');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -69,7 +69,7 @@ export const ButtonContainer = styled(Box)`
 `;
 export const FirstButtonLikeness = styled(Box)`
   font-size: 17px;
-  font-family: "Palatino Linotype";
+  font-family: 'Palatino Linotype';
   font-weight: 500;
   background-color: #36883d;
   color: white;
@@ -91,7 +91,7 @@ export const FirstButtonLikeness = styled(Box)`
 `;
 export const SecondButtonLikeness = styled(Box)`
   font-size: 17px;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Comfortaa', cursive;
   font-weight: 500;
   background-color: #bdbdbd;
   color: white;
@@ -112,7 +112,7 @@ export const SecondButtonLikeness = styled(Box)`
 
 export const ModalTitle = styled(Box)`
   font-size: 18px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 600;
   text-align: center;
 `;
@@ -136,7 +136,7 @@ export const ModalIcons = styled(Box)`
   }
 
   :last-child {
-    content: "";
+    content: '';
     margin-right: 0;
   }
 `;
@@ -157,7 +157,7 @@ export const LikenessMobileTextPart12 = styled(Box)`
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: flex;
-    font-family: "Century Gothic";
+    font-family: 'Century Gothic';
     font-weight: bold;
     font-size: 11.8px;
     margin: 0 auto;
@@ -168,7 +168,7 @@ export const LikenessMobileTextPart22 = styled(Box)`
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: flex;
-    font-family: "Century Gothic";
+    font-family: 'Century Gothic';
     font-weight: bold;
     font-size: 11.8px;
     margin: 0 auto;
@@ -179,7 +179,7 @@ export const LikenessMobileTextPart32 = styled(Box)`
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: flex;
-    font-family: "Century Gothic";
+    font-family: 'Century Gothic';
     font-weight: bold;
     font-size: 11.8px;
     margin: 0 auto;
@@ -223,7 +223,7 @@ export const LikenessDesktopInfoIcon2 = styled(Box)`
 export const LikenessDesktopInfoText2 = styled(Box)`
   display: flex;
   align-items: center;
-  font-family: "Century Gothic";
+  font-family: 'Century Gothic';
   font-weight: normal;
   font-size: 16px;
   display: flex;
@@ -254,7 +254,7 @@ export const LikenessDesktopDescription12 = styled(Box)`
   margin-left: 25px;
   width: 400px;
   align-items: center;
-  font-family: "Century Gothic";
+  font-family: 'Century Gothic';
   font-weight: bold;
   padding-top: 95px;
   font-size: 16px;
@@ -265,7 +265,7 @@ export const LikenessDesktopDescription22 = styled(Box)`
   margin-left: 25px;
   width: 400px;
   align-items: center;
-  font-family: "Century Gothic";
+  font-family: 'Century Gothic';
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -277,7 +277,7 @@ export const LikenessDesktopDescription32 = styled(Box)`
   margin-left: 25px;
   width: 400px;
   align-items: center;
-  font-family: "Century Gothic";
+  font-family: 'Century Gothic';
   font-weight: bold;
   font-size: 16px;
   line-height: 1.5;

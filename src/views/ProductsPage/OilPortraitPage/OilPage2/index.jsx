@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box } from '@mui/material';
 import {
   OilPortraitWrapper2,
   OilPortraitGeneral2,
@@ -30,15 +30,15 @@ import {
   OilDesktopDescription1,
   OilDesktopDescription2,
   OilDesktopDescription3,
-} from "./styled";
+} from './styled';
 
-import Modal from "../../../../components/Modal/modal";
-import LikenessButtonMobile from "../../../../components/Button/LikenessButton/index.jsx";
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
-import { isMobile } from "react-device-detect";
-import OilTitle2 from "../OilTitle2/oil-title2";
+import Modal from '../../../../components/Modal/modal';
+import LikenessButtonMobile from '../../../../components/Button/LikenessButton/index.jsx';
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import { isMobile } from 'react-device-detect';
+import OilTitle2 from '../OilTitle2/oil-title2';
 
 const OilPage = () => {
   const { t } = useTranslation();
@@ -97,11 +97,11 @@ const OilPage = () => {
               <img
                 src={
                   isMobile
-                    ? "https://www.dropbox.com/s/6lkuknbtufgnex2/oil%20mobile2.png?raw=1"
-                    : "https://www.dropbox.com/scl/fi/iq5j40wn1qfxabp89ma0o/1400_oil-classic.png?rlkey=gafvctnfhn3w6e1t6tzg2ydzc&dl=0&raw=1"
+                    ? 'https://www.dropbox.com/s/6lkuknbtufgnex2/oil%20mobile2.png?raw=1'
+                    : 'https://www.dropbox.com/scl/fi/iq5j40wn1qfxabp89ma0o/1400_oil-classic.png?rlkey=gafvctnfhn3w6e1t6tzg2ydzc&dl=0&raw=1'
                 }
-                height={isMobile ? undefined : "100%"}
-                width={isMobile ? "100%" :  undefined}
+                height={isMobile ? undefined : '100%'}
+                width={isMobile ? '100%' : undefined}
               />
             </OilContentPhoto2>
             {isMobile ? (
@@ -171,7 +171,7 @@ const OilPage = () => {
                 </Box>
                 <Box>
                   <SecondButton2 onClick={() => setModalActive(true)}>
-                    {t("mainPage.button")}
+                    {t('mainPage.button')}
                   </SecondButton2>
                 </Box>
 

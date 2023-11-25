@@ -1,7 +1,7 @@
-import { useState } from "react";
-import PaintbrushLoader from "./PaintbrushLoader";
-import { ImageLoaderBackground } from "./styled";
-import {isMobile} from "react-device-detect";
+import { useState } from 'react';
+import PaintbrushLoader from './PaintbrushLoader';
+import { ImageLoaderBackground } from './styled';
+import { isMobile } from 'react-device-detect';
 
 const ImageWithLoader = ({ src, alt, height, width, ...props }) => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -24,7 +24,7 @@ const ImageWithLoader = ({ src, alt, height, width, ...props }) => {
         src={src}
         alt={alt}
         onLoad={handleImageLoad}
-        style={{ display: isImageLoaded ? "block" : "none" }}
+        style={{ display: isImageLoaded ? 'block' : 'none' }}
       />
     </>
   );

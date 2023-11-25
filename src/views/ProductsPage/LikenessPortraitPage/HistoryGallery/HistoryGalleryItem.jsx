@@ -1,6 +1,6 @@
-import { Box } from "@mui/material";
-import { useState } from "react";
-import { HistoryImageItemWrapper } from "./styled";
+import { Box } from '@mui/material';
+import { useState } from 'react';
+import { HistoryImageItemWrapper } from './styled';
 
 const HistoryGalleryItem = ({ previewSrc, fullSrc, setFullImage }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -14,8 +14,8 @@ const HistoryGalleryItem = ({ previewSrc, fullSrc, setFullImage }) => {
   };
 
   const style = {
-    transform: isHovered ? "scale(1.05)" : "scale(1)",
-    transition: "transform 0.5s ease-in-out",
+    transform: isHovered ? 'scale(1.05)' : 'scale(1)',
+    transition: 'transform 0.5s ease-in-out',
   };
   return (
     <Box>

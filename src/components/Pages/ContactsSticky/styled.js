@@ -1,4 +1,4 @@
-import { styled, Box } from "@mui/material";
+import { styled, Box } from '@mui/material';
 
 export const ContactSticky = styled(Box)`
   position: fixed;
@@ -22,7 +22,7 @@ export const ContactStickyButtonOneContainer = styled(Box)`
 
 export const ContactStickyButtonOne = styled(Box)`
   font-size: 20px;
-  font-family: "Century Gothic";
+  font-family: 'Century Gothic';
   text-align: center;
   align-items: center;
   font-weight: normal;
@@ -39,7 +39,7 @@ export const ContactStickyButtonTwoContainer = styled(Box)`
 
 export const ContactStickyButtonTwo = styled(Box)`
   font-size: 20px;
-  font-family: "Century Gothic";
+  font-family: 'Century Gothic';
   text-align: center;
   font-weight: normal;
   align-items: center;
@@ -48,7 +48,7 @@ export const ContactStickyButtonTwo = styled(Box)`
 
 export const ModalTitleContacts = styled(Box)`
   font-size: 21px;
-  font-family: "Century Gothic";
+  font-family: 'Century Gothic';
   text-align: center;
   padding-bottom: 10px;
 `;
@@ -84,7 +84,7 @@ export const ModalIconsContacts = styled(Box)`
   }
 
   :last-child {
-    content: "";
+    content: '';
     margin-right: 0;
   }
 `;

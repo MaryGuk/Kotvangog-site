@@ -41,7 +41,7 @@
 .title-one__title {
   position: relative;
   font-size: 32px;
-  font-family: "Palatino Linotype";
+  font-family: 'Palatino Linotype';
   font-weight: 500;
   margin-top: 8px;
   display: flex;

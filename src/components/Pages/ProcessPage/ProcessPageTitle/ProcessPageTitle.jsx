@@ -1,4 +1,4 @@
-import "./ProcessPageTitle.css";
+import './ProcessPageTitle.css';
 
 const ProcessPageTitle = () => {
   return (

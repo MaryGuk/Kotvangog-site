@@ -1,10 +1,10 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 export const BeforeAfterImageWrapper = styled(Box, {
-  shouldForwardProp: (prop) => prop !== "changeCursor",
+  shouldForwardProp: (prop) => prop !== 'changeCursor',
 })((props) => ({
-  position: "relative",
-  cursor: props.changeCursor ? "ew-resize" : undefined,
+  position: 'relative',
+  cursor: props.changeCursor ? 'ew-resize' : undefined,
 }));
 
 export const ImageWrapper = styled(Box)`
@@ -26,17 +26,17 @@ export const SecondImageWrapper = styled(ImageWrapper)`
 `;
 
 export const SliderWrapper = styled(Box)((props) => ({
-  position: "absolute",
+  position: 'absolute',
   top: 0,
   left: props.left,
-  height: "100%",
-  transform: "translate(-50%)",
+  height: '100%',
+  transform: 'translate(-50%)',
 }));
 
 export const DividingLine = styled(Box)((props) => ({
-  height: "100%",
+  height: '100%',
   backgroundColor: props.backgroundColor,
-  transform: "translate(-50%)",
+  transform: 'translate(-50%)',
 }));
 
 export const HoverListener = styled(Box)`
@@ -70,7 +70,7 @@ export const DividingLineSliderWrapper = styled(Box)`
   :hover {
     visibility: visible;
   }
-  
+
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     visibility: visible;
   }
@@ -81,7 +81,6 @@ export const ExampleDividingSlider = styled(Box)`
   height: 50px;
   background-color: white;
   border-radius: 3px;
-
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     width: 50px;

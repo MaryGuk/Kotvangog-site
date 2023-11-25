@@ -1,13 +1,13 @@
-import { useState } from "react";
-import ProductPageItem from "./PortraitPage/portrait-page";
-import Footer from "../../components/Pages/Footer/footer";
-import ArtStylesSize from "./PortraitSizes/ArtStylesSize";
-import { useMemo } from "react";
-import FooterMobile from "../../components/Pages/FooterMobile";
-import { isMobile } from "react-device-detect";
-import ContactsSticky from "../../components/Pages/ContactsSticky";
-import PreviewPhotoDialog from "../../components/PreviewPhotoDialog";
-import {productPageData} from "../../constants/mainConstants";
+import { useState } from 'react';
+import ProductPageItem from './PortraitPage/portrait-page';
+import Footer from '../../components/Pages/Footer/footer';
+import ArtStylesSize from './PortraitSizes/ArtStylesSize';
+import { useMemo } from 'react';
+import FooterMobile from '../../components/Pages/FooterMobile';
+import { isMobile } from 'react-device-detect';
+import ContactsSticky from '../../components/Pages/ContactsSticky';
+import PreviewPhotoDialog from '../../components/PreviewPhotoDialog';
+import { productPageData } from '../../constants/mainConstants';
 
 const ProductsPage = () => {
   const productPageDataArray = Object.values(productPageData);
@@ -15,7 +15,8 @@ const ProductsPage = () => {
   const [fullImageSrc, setFullImageSrc] = useState(null);
 
   const currentGallery = useMemo(
-    () => fullImageSrc && productPageDataArray[fullImageSrc.pageIdx]?.galleryImages,
+    () =>
+      fullImageSrc && productPageDataArray[fullImageSrc.pageIdx]?.galleryImages,
     [fullImageSrc, productPageDataArray]
   );
   const isLastPhoto = useMemo(
@@ -60,7 +61,11 @@ const ProductsPage = () => {
         />
       ))}
       {/* <BeautyArt /> */}
-      <ArtStylesSize title="Печать на холсте и картина маслом" printPricePrefix="Печать от" oilPricePrefix="Маслом от" />
+      <ArtStylesSize
+        title="Печать на холсте и картина маслом"
+        printPricePrefix="Печать от"
+        oilPricePrefix="Маслом от"
+      />
       {isMobile ? <FooterMobile /> : <Footer />}
 
       <PreviewPhotoDialog

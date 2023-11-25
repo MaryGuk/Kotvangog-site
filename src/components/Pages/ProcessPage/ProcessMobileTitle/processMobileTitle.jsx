@@ -1,5 +1,5 @@
-import "./processMobileTitle.css";
-import brashSrc from '../../../../images/brashes/brash7.svg'
+import './processMobileTitle.css';
+import brashSrc from '../../../../images/brashes/brash7.svg';
 
 const ProcessMobileTitle = () => {
   return (

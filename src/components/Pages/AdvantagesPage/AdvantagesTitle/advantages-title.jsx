@@ -1,4 +1,4 @@
-import "./advantages-title.css";
+import './advantages-title.css';
 
 const AdvantagesTitleWave = () => {
   return (

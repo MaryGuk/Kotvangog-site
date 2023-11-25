@@ -1,4 +1,4 @@
-import {Box} from "@mui/material";
+import { Box } from '@mui/material';
 import {
   OilPortraitWrapper,
   OilPortraitGeneral,
@@ -23,16 +23,16 @@ import {
   OilDesktopDescription1,
   OilDesktopDescription2,
   OilDesktopDescription3,
-} from "./styled";
+} from './styled';
 
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
-import OilTitle from "./OilTitle/OilTitle";
-import Modal from "../../../components/Modal/modal";
-import { Link } from "react-router-dom";
-import "./oil-portarait.css";
-import { isMobile } from "react-device-detect";
-import LikenessButtonMobile from "../../Button/LikenessButton";
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import OilTitle from './OilTitle/OilTitle';
+import Modal from '../../../components/Modal/modal';
+import { Link } from 'react-router-dom';
+import './oil-portarait.css';
+import { isMobile } from 'react-device-detect';
+import LikenessButtonMobile from '../../Button/LikenessButton';
 
 const OilPortrait = ({
   title,
@@ -50,24 +50,20 @@ const OilPortrait = ({
   return (
     <OilPortraitWrapper id="/oil-portrait">
       <OilPortraitGeneral>
-        {customMobileTitle || (<OilTitle titleText={title}/>)}
-        {customMobileDescription ||
-          (<OilMobileContent>
-            <OilMobileText>
-              {descriptionMobile}
-            </OilMobileText>
+        {customMobileTitle || <OilTitle titleText={title} />}
+        {customMobileDescription || (
+          <OilMobileContent>
+            <OilMobileText>{descriptionMobile}</OilMobileText>
           </OilMobileContent>
         )}
         <OilContent>
           <OilContent2>
             <OilContentPhoto>
               <img
-                src={
-                  isMobile
-                    ? imageMobile
-                    : imageDesktop
-                }
+                src={isMobile ? imageMobile : imageDesktop}
                 height="100%"
+                loading="lazy"
+                decoding="async"
               />
             </OilContentPhoto>
             <OilButton>
@@ -76,34 +72,35 @@ const OilPortrait = ({
             <OilContentDescription>
               <OilDesktopInfo>
                 {advantages.map((advantage, idx, arr) => (
-                    <OilDesktopInfoThree key={advantage} paddingBottom={idx === arr - 1 ? "0px" : "20px"}>
-                      <OilDesktopInfoIcon>
-                        <img
-                            width="20px"
-                            height="20px"
-                            src="/images/background/ellipse2.png"
-                        />
-                      </OilDesktopInfoIcon>
-                      <OilDesktopInfoText>
-                        {advantage}
-                      </OilDesktopInfoText>
-                    </OilDesktopInfoThree>
+                  <OilDesktopInfoThree
+                    key={advantage}
+                    paddingBottom={idx === arr - 1 ? '0px' : '20px'}
+                  >
+                    <OilDesktopInfoIcon>
+                      <img
+                        width="20px"
+                        height="20px"
+                        src="/images/background/ellipse2.png"
+                      />
+                    </OilDesktopInfoIcon>
+                    <OilDesktopInfoText>{advantage}</OilDesktopInfoText>
+                  </OilDesktopInfoThree>
                 ))}
               </OilDesktopInfo>
               {descriptionDesktop[0] && (
-                  <OilDesktopDescription1 bold={descriptionDesktop[0].bold}>
-                    {descriptionDesktop[0].text}
-                  </OilDesktopDescription1>
+                <OilDesktopDescription1 bold={descriptionDesktop[0].bold}>
+                  {descriptionDesktop[0].text}
+                </OilDesktopDescription1>
               )}
               {descriptionDesktop[1] && (
-                  <OilDesktopDescription2 bold={descriptionDesktop[1].bold}>
-                    {descriptionDesktop[1].text}
-                  </OilDesktopDescription2>
+                <OilDesktopDescription2 bold={descriptionDesktop[1].bold}>
+                  {descriptionDesktop[1].text}
+                </OilDesktopDescription2>
               )}
               {descriptionDesktop[2] && (
-                  <OilDesktopDescription3 bold={descriptionDesktop[2].bold}>
-                    {descriptionDesktop[2].text}
-                  </OilDesktopDescription3>
+                <OilDesktopDescription3 bold={descriptionDesktop[2].bold}>
+                  {descriptionDesktop[2].text}
+                </OilDesktopDescription3>
               )}
               <ButtonContainer>
                 <Box>
@@ -113,7 +110,7 @@ const OilPortrait = ({
                 </Box>
                 <Box>
                   <SecondButton onClick={() => setModalActive(true)}>
-                    {t("mainPage.button")}
+                    {t('mainPage.button')}
                   </SecondButton>
                 </Box>
 

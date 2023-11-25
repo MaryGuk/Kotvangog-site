@@ -1,5 +1,5 @@
-import { OilPortraitExamplesGallery } from "../styled";
-import ExamplesItem from "../ExamplesItem";
+import { OilPortraitExamplesGallery } from '../styled';
+import ExamplesItem from '../ExamplesItem';
 
 const ExamplesPhoto = ({ photosArray, setFullImageSrc, onImageLoad }) => {
   return (

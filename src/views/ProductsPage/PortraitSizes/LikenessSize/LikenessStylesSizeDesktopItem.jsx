@@ -4,7 +4,7 @@ import {
   LikenessSizesItemSize,
   LikenessSizesOilText,
   LikenessSizesPrintText,
-} from "./styled-likeness";
+} from './styled-likeness';
 
 const LikenessStylesSizeItem = ({
   imageSrc,

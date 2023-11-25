@@ -16,11 +16,17 @@ import {
   FooterEmailName,
   FooterPhone,
   FooterPhoneNumber,
-} from "./styled";
-import { Box } from "@mui/material";
-import "./footer-mobile.css";
-import { NavLink } from "react-router-dom";
-import {telegramLink, whatsappLink, vkLink, instagramLink, mailLink} from "../../../constants/links";
+} from './styled';
+import { Box } from '@mui/material';
+import './footer-mobile.css';
+import { NavLink } from 'react-router-dom';
+import {
+  telegramLink,
+  whatsappLink,
+  vkLink,
+  instagramLink,
+  mailLink,
+} from '../../../constants/links';
 import { ReactComponent as TelegramLogo } from './images/messenger/telegram.svg';
 import { ReactComponent as WhatsAppLogo } from './images/messenger/whatsapp.svg';
 import { ReactComponent as VkLogo } from './images/messenger/vk.svg';
@@ -52,7 +58,7 @@ const FooterMobile = () => {
           <FooterMobileLinkContainer>
             <FooterMobileLink>
               <NavLink
-                style={{ textDecoration: "none", color: "white" }}
+                style={{ textDecoration: 'none', color: 'white' }}
                 to="/oil-portrait"
               >
                 Портрет маслом
@@ -60,7 +66,7 @@ const FooterMobile = () => {
             </FooterMobileLink>
             <FooterMobileLink>
               <NavLink
-                style={{ textDecoration: "none", color: "white" }}
+                style={{ textDecoration: 'none', color: 'white' }}
                 to="/products"
               >
                 Арт стили
@@ -68,7 +74,7 @@ const FooterMobile = () => {
             </FooterMobileLink>
             <FooterMobileLink>
               <NavLink
-                style={{ textDecoration: "none", color: "white" }}
+                style={{ textDecoration: 'none', color: 'white' }}
                 to="/likeness-portrait"
               >
                 Портрет в образе
@@ -76,7 +82,7 @@ const FooterMobile = () => {
             </FooterMobileLink>
             <FooterMobileLink>
               <NavLink
-                style={{ textDecoration: "none", color: "white" }}
+                style={{ textDecoration: 'none', color: 'white' }}
                 to="/reviews"
               >
                 Отзывы
@@ -85,13 +91,15 @@ const FooterMobile = () => {
           </FooterMobileLinkContainer>
 
           <FooterMobileMessenger>
-            {getMessengersData({ fill: palette.primary.main }).map(({ link, icon }, idx) => (
-              <Box key={idx}>
-                <a href={link} target="_blank" rel="noreferrer">
-                  {icon}
-                </a>
-              </Box>
-            ))}
+            {getMessengersData({ fill: palette.primary.main }).map(
+              ({ link, icon }, idx) => (
+                <Box key={idx}>
+                  <a href={link} target="_blank" rel="noreferrer">
+                    {icon}
+                  </a>
+                </Box>
+              )
+            )}
           </FooterMobileMessenger>
 
           <FooterMobileWorkSchedule>
@@ -108,9 +116,9 @@ const FooterMobile = () => {
             <FooterPhoneNumber>
               <a
                 style={{
-                  textDecoration: "none",
-                  color: "#fff",
-                  fontFamily: "Century Gothic",
+                  textDecoration: 'none',
+                  color: '#fff',
+                  fontFamily: 'Century Gothic',
                 }}
                 href="tel:+79933600710"
               >

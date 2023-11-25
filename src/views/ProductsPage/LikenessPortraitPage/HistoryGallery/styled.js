@@ -1,9 +1,9 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled } from '@mui/material';
 
 export const HistoryImagesGalleryWrapper = styled(Box)`
-    display: flex;
-    width: 100%;
-    justify-content: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 `;
 
 export const HistoryImagesGallery = styled(Box)`

@@ -1,7 +1,11 @@
-import {ProductPageItemInfoBlock, ArtButtonWrapper, BeautyArtInformation } from "./styled";
-import ArtButton from "../../../components/Button/ArtButton";
-import { isMobile } from "react-device-detect";
-import "./portrait-page.css";
+import {
+  ProductPageItemInfoBlock,
+  ArtButtonWrapper,
+  BeautyArtInformation,
+} from './styled';
+import ArtButton from '../../../components/Button/ArtButton';
+import { isMobile } from 'react-device-detect';
+import './portrait-page.css';
 
 const PortraitPageItem = ({
   portraitTitle,

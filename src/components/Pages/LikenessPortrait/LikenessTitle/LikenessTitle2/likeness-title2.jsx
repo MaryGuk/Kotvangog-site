@@ -1,5 +1,5 @@
-import { isMobile } from "react-device-detect";
-import "./likeness-title2.css";
+import { isMobile } from 'react-device-detect';
+import './likeness-title2.css';
 
 const LikenessTitle2 = () => {
   return (
@@ -10,8 +10,8 @@ const LikenessTitle2 = () => {
             className="likeness__title-background-image2"
             src={
               isMobile
-                ? "/images/background/примеры моб.png"
-                : "/images/background/Мазок волна.png"
+                ? '/images/background/примеры моб.png'
+                : '/images/background/Мазок волна.png'
             }
           />
         </div>
