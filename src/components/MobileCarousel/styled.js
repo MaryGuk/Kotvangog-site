@@ -27,6 +27,7 @@ export const StyledIconButtonNext = styled(StyledIconButton)`
 
 export const HoverScalableContent = styled(Box)`
   transform: scale(0.95);
+  width: 100%;
 
   :hover {
     transform: scale(1);

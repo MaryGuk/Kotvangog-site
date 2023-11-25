@@ -12,15 +12,12 @@ export const UnderHeaderBlock = styled(Box)`
 
 export const GiftAdvertisementSlideWrapper = styled(Box)`
   padding: 25px 1px;
+  box-sizing: border-box;
   width: 100%;
   background-color: #ede7d6;
   display: flex;
   align-items: center;
   flex-direction: column;
-
-  ${mobileStyles(`  
-    height: 700px;
-  `)};
 `;
 
 export const FortuneWheelDescriptionWrapper = styled(Box)`
@@ -34,10 +31,6 @@ export const FortuneWheelDescriptionWrapper = styled(Box)`
 export const NewCarouselWrapper = styled(Box)`
   display: block;
   width: 100%;
-
-  ${mobileStyles(`  
-    height: 500px;
-  `)};
 `;
 
 export const NewCarouselItemWrapper = styled(Box)`

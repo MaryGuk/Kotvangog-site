@@ -9,7 +9,7 @@ export const likenessPhotos = [
   'https://www.dropbox.com/scl/fi/rewbj0ywpjdmnjipivzim/5463543_1000px_progressive.jpg?rlkey=crxh08nnbbsk0rsxqmhyor7de&dl=0',
 ]
   .map(normalizeDropBoxLink)
-  .map(addRedirectLink('/products#likeness-art'));
+  .map(addRedirectLink('/likeness-portrait'));
 
 export const petsPhotos = [
   'https://www.dropbox.com/scl/fi/6aelbpps3h9fmhep3kjof/1_57675365_1000px_progressive.jpg?rlkey=ir75o1i1n0lrsvx7nwku3sdho&dl=0',

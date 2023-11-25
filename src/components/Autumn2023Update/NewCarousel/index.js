@@ -9,12 +9,12 @@ import { NextArrow, PrevArrow } from '../../MobileCarousel';
 import { isMobile } from 'react-device-detect';
 import { Typography } from '@mui/material';
 
-const NewCarousel = () => {
+const NewCarousel = ({ slidesToShow = 1 }) => {
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
