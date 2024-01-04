@@ -21,7 +21,7 @@ const MainSlideImages = () => {
         onTouchEnd={() => setAutoPlay(true)}
       >
         <Carousel
-          autoPlay={autoPlay && false}
+          autoPlay={autoPlay}
           showIndicators={false}
           showThumbs={false}
           showArrows={false}
