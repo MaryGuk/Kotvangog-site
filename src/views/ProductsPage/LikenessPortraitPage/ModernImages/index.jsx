@@ -20,12 +20,14 @@ import {
 } from './styled';
 import MobileCarousel from '../../../../components/MobileCarousel';
 import { isMobile } from 'react-device-detect';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import PreviewPhotoDialog from '../../../../components/PreviewPhotoDialog';
 import usePreviewPhotoDialogState from '../../../../components/PreviewPhotoDialog/usePreviewPhotoDialogState';
 import { modernImages } from '../../../../constants/galleries/modernImages';
 import { historyImages } from '../../../../constants/galleries/historyImages';
-import LikenessTitle from './title-history';
+import BrashTitle from '../../../../components/Autumn2023Update/BrashTitle';
+import { BestGiftHeaderSmearSrc } from '../../../../constants/galleries/smears';
+import brashSrc from '../../../../images/brashes/brash7.svg';
 
 const ModernImages = () => {
   const {
@@ -40,10 +42,19 @@ const ModernImages = () => {
   return (
     <ModernImagesWrapper>
       <ModernImagesGeneral>
-        <LikenessTitle text="Современные образы" />
+        <BrashTitle
+          brashSrc={BestGiftHeaderSmearSrc}
+          translateX={0}
+          translateY={0}
+          brashWidth="20rem"
+        >
+          <Typography variant="h4">Современные образы</Typography>
+        </BrashTitle>
         <ModernImagesContent>
           <ModernImagesDescription>
-            У нас более <b>300</b> современных образов
+            <Typography variant="body2">
+              У нас более <b>300</b> современных образов
+            </Typography>
           </ModernImagesDescription>
         </ModernImagesContent>
         {isMobile ? (
@@ -72,15 +83,19 @@ const ModernImages = () => {
             }}
           />
         )}
-        <LikenessTitle text="Исторические образы" />
+        <BrashTitle brashSrc={brashSrc} brashWidth="20rem" translateY={-5}>
+          <Typography variant="h4">Исторические образы</Typography>
+        </BrashTitle>
         <ModernImagesContent>
           <ModernImagesDescription>
-            У нас более <b>300</b> исторических образов
+            <Typography variant="body2">
+              У нас более <b>300</b> исторических образов
+            </Typography>
           </ModernImagesDescription>
         </ModernImagesContent>
 
         {isMobile ? (
-          <Box p="30px 2px">
+          <Box p="30px 2px 20px">
             <MobileCarousel
               imageList={historyImages.map(({ previewSrc }) => previewSrc)}
               columnCount={2}
@@ -103,7 +118,7 @@ const ModernImages = () => {
             </MobileLikenessOneContainer>
             <MobileLikenessTwoContainer>
               <MobileLikenessTextTwo>
-                Мы бесплатно подберем 7-8 грубых макетов под ваше фото.
+                Мы подберем 7-8 грубых макетов под ваше фото.
               </MobileLikenessTextTwo>
             </MobileLikenessTwoContainer>
             <MobileLikenessThreeContainer>

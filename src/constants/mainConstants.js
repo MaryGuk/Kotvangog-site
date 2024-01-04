@@ -42,6 +42,13 @@ export const oilSlideAdvantages = [
   'Ручная отрисовка дизайнера и художника',
 ];
 
+export const likenessSlideAdvantages = [
+  'Подберем 7-8 грубых макетов',
+  'Более 200 тематических образов',
+  'Портретное сходство сохраняем на 100%',
+  'Ручная отрисовка дизайнера и художника',
+];
+
 export const processVideoStepsData = [
   {
     videoSrc: 'https://www.youtube.com/embed/Ml7CWmrXmsE?autoplay=0',
