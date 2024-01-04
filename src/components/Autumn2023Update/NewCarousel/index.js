@@ -34,7 +34,7 @@ const NewCarousel = ({ slidesToShow = 1 }) => {
               />
               {description && (
                 <NewCarouselItemDescriptionWrapper>
-                  <Typography variant="body2">{description}</Typography>
+                  <Typography variant="subtitle1">{description}</Typography>
                 </NewCarouselItemDescriptionWrapper>
               )}
             </NewCarouselItemWrapper>

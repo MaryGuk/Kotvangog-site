@@ -5,14 +5,14 @@ const MuiTypography = {
       textAlign: 'center',
     },
     h4: {
-      fontSize: '1.23rem',
+      fontSize: '1.5rem',
     },
     body2: {
       fontFamily: 'Century Gothic, sans-serif',
-      fontSize: '0.75rem',
+      fontSize: '0.9rem',
     },
     subtitle1: {
-      fontSize: '1.23rem',
+      fontSize: '1.3rem',
       fontFamily: 'Century Gothic, sans-serif',
     },
   },

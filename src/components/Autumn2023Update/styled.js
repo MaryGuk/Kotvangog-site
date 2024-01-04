@@ -42,7 +42,7 @@ export const NewCarouselItemWrapper = styled(Box)`
 
 export const NewCarouselItemDescriptionWrapper = styled(Box)`
   display: flex;
-  height: 2.5rem;
+  height: 3rem;
   justify-content: center;
   align-items: center;
   background-color: ${({ theme }) => theme.palette.secondary.main};

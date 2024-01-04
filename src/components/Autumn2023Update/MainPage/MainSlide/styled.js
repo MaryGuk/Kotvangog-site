@@ -71,7 +71,7 @@ export const MainSlideTitleTextWrapper = styled(Box)`
   display: flex;
   font-family: 'Myriad Pro', 'Arial', sans-serif;
   font-size: 25px;
-  max-width: 230px;
+  max-width: 250px;
   line-height: 25px;
   padding: 0 0 8px;
 `;
@@ -99,7 +99,7 @@ export const AdvantageItemWrapper = styled(Box)`
 
 export const AdvantageItemDescriptionWrapper = styled(Box)`
   display: flex;
-  background-color: #ffffff66;
+  background-color: #aaaaaa77;
   border-radius: 10px;
   height: 18px;
   padding: 1px 10px;

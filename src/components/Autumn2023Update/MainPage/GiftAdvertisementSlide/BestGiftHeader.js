@@ -8,9 +8,9 @@ const BestGiftHeader = () => {
     <BestGiftHeaderWrapper>
       <BrashTitle
         brashSrc={BestGiftHeaderSmearSrc}
-        translateX={50}
-        translateY={-6}
-        brashWidth="18rem"
+        translateX={0}
+        translateY={86}
+        brashWidth="20rem"
       >
         <Typography variant="h4">
           Портрет на холсте — лучший подарок на любое событие!

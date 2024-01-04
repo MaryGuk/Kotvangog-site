@@ -20,10 +20,13 @@ const ProcessPage = () => {
         <div className="process-page__general">
           <ProcessPageTitle />
           <ProcessMobileContent>
-            <BrashTitle brashSrc={brashSrc} brashWidth="20rem" translateY={-16}>
-              <Typography variant="h4" color={palette.text.secondary}>
-                Как дизайнер рисует портрет
-              </Typography>
+            <BrashTitle
+              brashSrc={brashSrc}
+              brashWidth="20rem"
+              translateY={-6}
+              translateX={6}
+            >
+              <Typography variant="h4">Как дизайнер рисует портрет</Typography>
             </BrashTitle>
           </ProcessMobileContent>
 
@@ -41,6 +44,9 @@ const ProcessPage = () => {
                 imageSrc:
                   'https://www.dropbox.com/scl/fi/cgjiqcvq23gmg2m1kykim/2.png?rlkey=t9mi18pf180dqmyhb08wejxn6&dl=0&raw=1',
                 mainDescription: t('processPage.stepTwo.mainDescription'),
+                secondaryDescription: t(
+                  'processPage.stepTwo.secondaryDescription'
+                ),
               },
               {
                 imageSrc:

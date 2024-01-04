@@ -15,7 +15,7 @@ export const ContactStickyContainer = styled(Box)`
 export const ContactStickyButtonOneContainer = styled(Box)`
   display: flex;
   justify-content: center;
-  background-color: #ff8cbc;
+  background-color: ${({ theme }) => theme.palette.primary.main};
   width: 50%;
   border-radius: 5px;
 `;
@@ -32,7 +32,7 @@ export const ContactStickyButtonOne = styled(Box)`
 export const ContactStickyButtonTwoContainer = styled(Box)`
   display: flex;
   justify-content: center;
-  background-color: #3a8a41;
+  background-color: ${({ theme }) => theme.palette.secondary.main};
   width: 50%;
   border-radius: 5px;
 `;

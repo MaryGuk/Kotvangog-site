@@ -67,7 +67,7 @@ export const CanvasAdvantagesListWrapper = styled(Box)`
 export const BoxingPointerWrapper = styled(Box)`
   display: flex;
   position: absolute;
-  right: 32px;
+  right: 22px;
   transform: translate(100%, 50%);
   height: 45px;
 `;

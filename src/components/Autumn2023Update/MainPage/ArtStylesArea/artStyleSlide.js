@@ -8,9 +8,7 @@ const ArtStyleSlide = ({ slideTitle, brashSrc, gallery }) => {
     <ArtStyleSlideWrapper>
       <BrashTitleWrapper>
         <BrashTitle brashSrc={brashSrc} brashWidth="19rem" translateY={-15}>
-          <Typography variant="h4" color="white">
-            {slideTitle}
-          </Typography>
+          <Typography variant="h4">{slideTitle}</Typography>
         </BrashTitle>
       </BrashTitleWrapper>
 
