@@ -13,7 +13,7 @@ import MainSlideImages from './MainSlideImage';
 import { useConsultationDialog } from '../../ConsultationDialogProvider';
 import { Button, Typography, Box } from '@mui/material';
 
-const MainSlide = ({ advantages }) => {
+const MainSlide = ({ advantages, title, description, detailsColor }) => {
   const { onOpen } = useConsultationDialog();
 
   return (
@@ -30,19 +30,19 @@ const MainSlide = ({ advantages }) => {
             <MainSlideTitleWrapper>
               <MainSlideTitleTextWrapper>
                 <Typography variant="h4" textAlign="start">
-                  Портреты по фото маслом и на холсте
+                  {title}
                 </Typography>
               </MainSlideTitleTextWrapper>
               <MainSlideTitleDescriptionWrapper>
-                <Typography variant="body2">За 1 день от 1350 руб</Typography>
+                <Typography variant="body2">{description}</Typography>
               </MainSlideTitleDescriptionWrapper>
             </MainSlideTitleWrapper>
-            <Advantages advantages={advantages} />
+            <Advantages advantages={advantages} iconsColor={detailsColor} />
             <Offer />
           </Box>
         </MainSlideDesktopWrapper>
       </MainSlideContentWrapper>
-      <OfferButtonWrapper>
+      <OfferButtonWrapper buttonColor={detailsColor}>
         <Box display="flex" justifyContent="center" alignItems="center">
           <Box display="flex">
             <Button variant="contained" onClick={onOpen}>

@@ -89,12 +89,8 @@ export const AdvantagesWrapper = styled(Box)`
 
 export const AdvantageItemWrapper = styled(Box)`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin: 0 0 15px;
-
-  & > img {
-    height: 20px;
-  }
 `;
 
 export const AdvantageItemDescriptionWrapper = styled(Box)`
@@ -218,15 +214,19 @@ export const OfferButtonWrapper = styled(Box)`
     }
   }
 
+  & > * > * > button {
+    background-color: ${({ buttonColor }) => buttonColor};
+  }
+
   ${mobileStyles(`
     left: 10px;
     bottom: 25px;
-    
+   
     & > div {
       width: min-content;
       padding: 0;
       
-      div {
+      & > div {
         padding: 0;
       }
     }

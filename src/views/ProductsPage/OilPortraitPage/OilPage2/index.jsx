@@ -34,13 +34,21 @@ import { Link } from 'react-router-dom';
 import { isMobile } from 'react-device-detect';
 import MainSlide from '../../../../components/Autumn2023Update/MainPage/MainSlide';
 import { oilSlideAdvantages } from '../../../../constants/mainConstants';
+import { useTheme } from '@mui/material/styles';
 
 const OilPage = () => {
   const { t } = useTranslation();
   const [modalActive, setModalActive] = useState(false);
+  const theme = useTheme();
+
   return (
     <OilPortraitWrapper2 id="/oil-portrait">
-      <MainSlide advantages={oilSlideAdvantages} />
+      <MainSlide
+        advantages={oilSlideAdvantages}
+        title="Классический портрет маслом"
+        description="Изготовление от 4 дней"
+        detailsColor={theme.palette.secondary.main}
+      />
 
       <OilPortraitWrapper3>
         <OilPageItemWrapper>
