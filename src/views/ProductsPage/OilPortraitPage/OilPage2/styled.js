@@ -7,6 +7,7 @@ export const OilPortraitWrapper2 = styled(Box)`
   width: 100%;
   padding: 30px 10% 0;
   box-sizing: border-box;
+  background-color: ${({ theme: { palette } }) => palette.background.default};
 
   ${mobileStyles(`
     box-sizing: content-box;

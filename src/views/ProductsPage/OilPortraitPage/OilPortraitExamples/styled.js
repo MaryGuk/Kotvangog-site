@@ -4,6 +4,7 @@ export const OilPortraitExamplesWrapper = styled(Box)`
   display: flex;
   justify-content: center;
   width: 100%;
+  background-color: ${({ theme: { palette } }) => palette.background.default};
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     background-image: none;

@@ -6,6 +6,7 @@ export const PortraitFrameWrapper = styled(Box)`
   display: flex;
   width: 100%;
   justify-content: center;
+  background-color: ${({ theme: { palette } }) => palette.background.default};
 
   ${mobileStyles(`
     box-sizing: border-box;
