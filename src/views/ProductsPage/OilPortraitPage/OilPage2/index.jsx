@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import {
   OilPortraitWrapper2,
   OilPortraitGeneral2,
@@ -35,6 +35,8 @@ import { isMobile } from 'react-device-detect';
 import MainSlide from '../../../../components/Autumn2023Update/MainPage/MainSlide';
 import { oilSlideAdvantages } from '../../../../constants/mainConstants';
 import { useTheme } from '@mui/material/styles';
+import OilSlide from '../../../../components/Autumn2023Update/MainPage/OilCanvasArea/OilSlide';
+import PresentBoxingSlide from '../../../../components/Autumn2023Update/MainPage/OilCanvasArea/PresentBoxingSlide';
 
 const OilPage = () => {
   const { t } = useTranslation();
@@ -52,6 +54,16 @@ const OilPage = () => {
 
       <OilPortraitWrapper3>
         <OilPageItemWrapper>
+          <OilSlide
+            customTitle={
+              <Typography variant="h4" mt="25px">
+                Как художник пишет портрет
+              </Typography>
+            }
+          />
+
+          <PresentBoxingSlide />
+
           <OilPortraitGeneral2>
             <OilContent2>
               <OilContent22>

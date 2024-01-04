@@ -3,6 +3,7 @@ import { Box, styled } from '@mui/material';
 export const BrashTitleWrapper = styled(Box)`
   display: flex;
   position: relative;
+  justify-content: center;
 `;
 
 export const BrashTitleTextWrapper = styled(Box)`
@@ -16,7 +17,7 @@ export const BrashTitleBrashWrapper = styled(Box, {
     !['translateX', 'translateY', 'brashWidth', 'reverseImage'].includes(prop),
 })`
   display: flex;
-  width: ${({ brashWidth }) => brashWidth ?? '14rem'};
+  width: ${({ brashWidth }) => brashWidth ?? '17rem'};
   max-width: 95vw;
   position: absolute;
   right: 50%;

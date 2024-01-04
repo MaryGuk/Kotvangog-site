@@ -15,7 +15,7 @@ const TitleExamples = () => {
             }
           />
         </div>
-        <div className="examples-text__title">Примеры</div>
+        <div className="examples-text__title">Примеры1</div>
       </div>
     </div>
   );

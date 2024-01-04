@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
 import {
   PortraitFrameWrapper,
@@ -6,14 +6,17 @@ import {
   PortraitFrameContentText,
   PortraitFrameContentCarousel,
 } from './styled';
-import FrameTitle from './TitleFrame/title-frame';
+import BrashTitle from '../../../../components/Autumn2023Update/BrashTitle';
+import YellowBrash from '../../../../images/brashes/brash4.svg';
 
 const PortraitFrame = () => {
   return (
     <PortraitFrameWrapper>
       <PortraitFrameContent>
         <PortraitFrameContentText>
-          <FrameTitle />
+          <BrashTitle brashSrc={YellowBrash} translateY={-10}>
+            <Typography variant="h4">Портрет в раме</Typography>
+          </BrashTitle>
         </PortraitFrameContentText>
         <PortraitFrameContentCarousel>
           <Carousel

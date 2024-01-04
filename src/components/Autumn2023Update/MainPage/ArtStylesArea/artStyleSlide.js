@@ -7,7 +7,7 @@ const ArtStyleSlide = ({ slideTitle, brashSrc, gallery }) => {
   return (
     <ArtStyleSlideWrapper>
       <BrashTitleWrapper>
-        <BrashTitle brashSrc={brashSrc} brashWidth="19rem" translateY={-15}>
+        <BrashTitle brashSrc={brashSrc} translateY={-15}>
           <Typography variant="h4">{slideTitle}</Typography>
         </BrashTitle>
       </BrashTitleWrapper>

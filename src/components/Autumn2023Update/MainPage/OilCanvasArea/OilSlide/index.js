@@ -12,18 +12,20 @@ import { oilSlideFramesGallery } from '../../../../../constants/galleries/mainPa
 import AdvantagesList from '../../../../AdvantagesList';
 import { oilAdvantages } from '../../../../../constants/advantages';
 
-const OilSlide = () => {
+const OilSlide = ({ customTitle }) => {
   return (
     <OilAreaWrapper>
-      <OilTitleWrapper>
-        <OilTitleBrashWrapper>
-          <img src={Brash} alt="background-brash" />
-        </OilTitleBrashWrapper>
+      {customTitle ?? (
+        <OilTitleWrapper>
+          <OilTitleBrashWrapper>
+            <img src={Brash} alt="background-brash" />
+          </OilTitleBrashWrapper>
 
-        <OilTitleTextWrapper>
-          <Typography variant="subtitle1">Портрет маслом</Typography>
-        </OilTitleTextWrapper>
-      </OilTitleWrapper>
+          <OilTitleTextWrapper>
+            <Typography variant="subtitle1">Портрет маслом</Typography>
+          </OilTitleTextWrapper>
+        </OilTitleWrapper>
+      )}
 
       <Box width="100vw" display="block">
         <MobileCarousel
@@ -31,6 +33,7 @@ const OilSlide = () => {
           columnCount={1}
           rowCount={1}
           onImageClick={() => true}
+          mt="15px"
         />
       </Box>
 

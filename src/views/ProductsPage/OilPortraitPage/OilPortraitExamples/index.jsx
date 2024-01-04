@@ -4,14 +4,16 @@ import {
   OilPortraitExamplesWrapper,
   OilPortraitExamplesGallery,
 } from './styled';
-import TitleExamples from './title-examples';
 import { isMobile } from 'react-device-detect';
 import PreviewPhotoDialog from '../../../../components/PreviewPhotoDialog';
 import ExamplesItem from './ExamplesItem';
 import MobileCarousel from '../../../../components/MobileCarousel';
 import usePreviewPhotoDialogState from '../../../../components/PreviewPhotoDialog/usePreviewPhotoDialogState';
 import { photosData } from '../../../../constants/galleries/photosData';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
+import BrashTitle from '../../../../components/Autumn2023Update/BrashTitle';
+
+import BlueBrash from '../../../../images/brashes/brash5.svg';
 
 const adaptivePhotosData = isMobile
   ? [0, 7, 6, 2, 1, 5, 3, 4].map((i) => photosData[i])
@@ -30,7 +32,9 @@ const OilPortraitExamples = () => {
   return (
     <OilPortraitExamplesWrapper>
       <OilPortraitExamplesGeneral>
-        <TitleExamples />
+        <BrashTitle brashSrc={BlueBrash} translateY={-10}>
+          <Typography variant="h4">Примеры</Typography>
+        </BrashTitle>
         <OilPortraitExamplesContent>
           {isMobile ? (
             <Box p="30px 2px">

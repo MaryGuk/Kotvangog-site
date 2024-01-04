@@ -7,6 +7,8 @@ export const OilPortraitExamplesWrapper = styled(Box)`
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     background-image: none;
+    box-sizing: border-box;
+    padding: 0 4% 30px;
   }
 `;
 export const OilPortraitExamplesGeneral = styled(Box)`

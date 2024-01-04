@@ -6,8 +6,6 @@ import {
   OilPortraitSecondContentMain,
   OilMobileSecondContent,
   OilMobileSecondText1,
-  OilMobileSecondText2,
-  OilMobileSecondText3,
 } from './styled';
 import TitleWaveOil from './title-wave-oil';
 import { isMobile } from 'react-device-detect';
@@ -21,17 +19,10 @@ const OilPortraitSecond = () => {
         <OilMobileSecondContent>
           <OilMobileSecondText1>
             <Typography variant="body2">
-              Мы уделяем особое внимание деталям в портрете, чтобы
+              Мы уделяем особое внимание деталям в портрете, чтобы каждая черта
+              и особенность была передана в точности.
             </Typography>
           </OilMobileSecondText1>
-          <OilMobileSecondText2>
-            <Typography variant="body2">
-              каждая черта и особенность была
-            </Typography>
-          </OilMobileSecondText2>
-          <OilMobileSecondText3>
-            <Typography variant="body2">передана в точности.</Typography>
-          </OilMobileSecondText3>
         </OilMobileSecondContent>
         <OilPortraitSecondContentMain>
           <OilPortraitSecondContent>
