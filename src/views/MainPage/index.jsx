@@ -22,6 +22,7 @@ import MainSlide from '../../components/Autumn2023Update/MainPage/MainSlide';
 import GiftAdvertisementSlide from '../../components/Autumn2023Update/MainPage/GiftAdvertisementSlide';
 import OilCanvasArea from '../../components/Autumn2023Update/MainPage/OilCanvasArea';
 import ArtStylesArea from '../../components/Autumn2023Update/MainPage/ArtStylesArea';
+import { mainSlideAdvantages } from '../../constants/mainConstants';
 
 const MainPage = () => {
   return (
@@ -33,7 +34,7 @@ const MainPage = () => {
         </>
       )}
 
-      <MainSlide />
+      <MainSlide advantages={mainSlideAdvantages} />
       <GiftAdvertisementSlide />
       <OilCanvasArea />
 

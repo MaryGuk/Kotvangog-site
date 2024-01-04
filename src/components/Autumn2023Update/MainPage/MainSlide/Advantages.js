@@ -3,12 +3,11 @@ import {
   AdvantageItemWrapper,
   AdvantageItemDescriptionWrapper,
 } from './styled';
-import { advantages } from '../../../../constants/mainConstants';
 import AdvantageMarker from '../../../../images/MainPage/MainSlide/advantageMarker.svg';
 import { Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
-const Advantages = () => {
+const Advantages = ({ advantages }) => {
   const theme = useTheme();
 
   return (

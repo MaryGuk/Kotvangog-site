@@ -13,7 +13,7 @@ import MainSlideImages from './MainSlideImage';
 import { useConsultationDialog } from '../../ConsultationDialogProvider';
 import { Button, Typography, Box } from '@mui/material';
 
-const MainSlide = () => {
+const MainSlide = ({ advantages }) => {
   const { onOpen } = useConsultationDialog();
 
   return (
@@ -37,7 +37,7 @@ const MainSlide = () => {
                 <Typography variant="body2">За 1 день от 1350 руб</Typography>
               </MainSlideTitleDescriptionWrapper>
             </MainSlideTitleWrapper>
-            <Advantages />
+            <Advantages advantages={advantages} />
             <Offer />
           </Box>
         </MainSlideDesktopWrapper>

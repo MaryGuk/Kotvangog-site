@@ -1,17 +1,18 @@
 import './oil-title2.css';
+import BrashTitle from '../../../../components/Autumn2023Update/BrashTitle';
+import { Typography } from '@mui/material';
+import { BestGiftHeaderSmearSrc } from '../../../../constants/galleries/smears';
 
 const OilTitle2 = () => {
   return (
     <div className="oil__title2-wrapper">
-      <div className="oil__title2-first">
-        <div className="oil-page__title2-background">
-          <img
-            className="oil__title2-background-image"
-            src={'/images/background/background new.png'}
-          />
-        </div>
-        <div className="oil__title2">Классический портрет маслом</div>
-      </div>
+      <BrashTitle
+        brashSrc={BestGiftHeaderSmearSrc}
+        translateX={7}
+        brashWidth="20rem"
+      >
+        <Typography variant="h4">Классический портрет маслом</Typography>
+      </BrashTitle>
     </div>
   );
 };

@@ -6,7 +6,7 @@ export const UnderHeaderBlock = styled(Box)`
   width: 100%;
 
   ${mobileStyles(`  
-    height: 50px;
+    height: 0;
   `)};
 `;
 

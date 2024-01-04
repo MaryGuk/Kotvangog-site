@@ -11,6 +11,7 @@ import {
 } from './styled';
 import TitleWaveOil from './title-wave-oil';
 import { isMobile } from 'react-device-detect';
+import { Typography } from '@mui/material';
 
 const OilPortraitSecond = () => {
   return (
@@ -19,12 +20,18 @@ const OilPortraitSecond = () => {
         <TitleWaveOil />
         <OilMobileSecondContent>
           <OilMobileSecondText1>
-            Мы уделяем особое внимание деталям в портрете, чтобы
+            <Typography variant="body2">
+              Мы уделяем особое внимание деталям в портрете, чтобы
+            </Typography>
           </OilMobileSecondText1>
           <OilMobileSecondText2>
-            каждая черта и особенность была
+            <Typography variant="body2">
+              каждая черта и особенность была
+            </Typography>
           </OilMobileSecondText2>
-          <OilMobileSecondText3>передана в точности.</OilMobileSecondText3>
+          <OilMobileSecondText3>
+            <Typography variant="body2">передана в точности.</Typography>
+          </OilMobileSecondText3>
         </OilMobileSecondContent>
         <OilPortraitSecondContentMain>
           <OilPortraitSecondContent>
