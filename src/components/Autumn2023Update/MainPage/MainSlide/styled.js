@@ -20,7 +20,7 @@ export const MainSlideDesktopWrapper = styled(Box)`
 
 export const MainSlideWrapper = styled(Box)`
   display: flex;
-  height: 450px;
+  height: 60vh;
   width: 100%;
   background-color: ${({ theme }) => theme.palette.secondary.dark};
   box-sizing: border-box;
@@ -147,6 +147,7 @@ export const MainSlideCarouselItemWrapper = styled(Box)`
 export const MainSlideImageWrapper = styled(Box)`
   display: flex;
   right: 0;
+  transform: translateX(11vh);
 
   img {
     width: auto !important;
@@ -168,13 +169,13 @@ export const MainSlideImageCarouselWrapper = styled(Box)`
   justify-content: flex-start;
   position: relative;
   width: 100vw;
-  height: 450px;
+  height: 60vh;
 
   & > div {
-    height: 450px;
+    height: 60vh;
 
     div {
-      height: 450px;
+      height: 60vh;
     }
   }
 
