@@ -195,6 +195,7 @@ export const MainSlideImageCarouselWrapper = styled(Box)`
 export const BestGiftHeaderWrapper = styled(Box)`
   display: flex;
   padding: 20px 15px;
+  max-width: 500px;
 `;
 
 export const OfferButtonWrapper = styled(Box)`
