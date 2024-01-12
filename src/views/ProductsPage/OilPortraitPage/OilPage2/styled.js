@@ -3,15 +3,13 @@ import { mobileStyles } from '../../../../utils/stylesUtils';
 
 export const OilPortraitWrapper2 = styled(Box)`
   display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 30px 10% 0;
-  box-sizing: border-box;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
   background-color: ${({ theme: { palette } }) => palette.background.default};
 
   ${mobileStyles(`
     box-sizing: content-box;
-    padding: 0;
     display: block;
     overflow: hidden;
   `)}
@@ -24,6 +22,10 @@ export const OilPortraitWrapper2 = styled(Box)`
 `;
 
 export const OilPortraitWrapper3 = styled(Box)`
+  padding: 30px 10% 0;
+  box-sizing: border-box;
+  width: 100%;
+
   ${mobileStyles(`
     box-sizing: border-box;
     padding: 0 4% 30px;
