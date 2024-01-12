@@ -3,6 +3,7 @@ import {
   StepNumber,
   StepNumberText,
 } from './styled';
+import { Typography } from '@mui/material';
 
 const ProcessItem = ({
   imageSrc,
@@ -26,10 +27,12 @@ const ProcessItem = ({
         </StepNumber>
       </div>
       <ProcessItemDescriptionWrapper>
-        <div className="process-main-description">{mainDescription}</div>
-        <div className="process-secondary-description">
+        <Typography mt="6px" variant="body2">
+          {mainDescription}
+        </Typography>
+        <Typography fontWeight="700" variant="body2">
           {secondaryDescription}
-        </div>
+        </Typography>
       </ProcessItemDescriptionWrapper>
     </div>
   );

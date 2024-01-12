@@ -7,10 +7,11 @@ export const OilPortraitSecondWrapper = styled(Box)`
   overflow: hidden;
   padding: 0 10%;
   box-sizing: border-box;
+  background-color: ${({ theme: { palette } }) => palette.background.default};
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    background-color: white;
-    padding: 0;
+    box-sizing: border-box;
+    padding: 0 4% 30px;
   }
 `;
 export const OilPortraitSecondGeneral = styled(Box)`
@@ -56,7 +57,6 @@ export const OilMobileSecondContent = styled(Box)`
     display: flex;
     text-align: center;
     flex-direction: column;
-    padding-top: 41px;
     padding-bottom: 36px;
   }
 `;

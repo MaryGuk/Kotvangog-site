@@ -1,22 +1,14 @@
 import './PortraitSizesTitle.css';
-import { isMobile } from 'react-device-detect';
+import BrashTitle from '../../../../../components/Autumn2023Update/BrashTitle';
+import { Typography } from '@mui/material';
+import YellowBrash from '../../../../../images/brashes/brash4.svg';
 
 const PortraitSizesTitle = () => {
   return (
     <div className="portrait-sizes__title-wrapper">
-      <div className="portrait-sizes__title-first">
-        <div className="portrait-sizes-page__title-background">
-          <img
-            className="portrait-sizes__title-background-image"
-            src={
-              isMobile
-                ? '/images/background/size wave.png'
-                : '/images/background/waveOne1.png'
-            }
-          />
-        </div>
-        <div className="portrait-sizes__title">Размеры и цены</div>
-      </div>
+      <BrashTitle brashSrc={YellowBrash} translateY={-13}>
+        <Typography variant="h4">Размеры и цены</Typography>
+      </BrashTitle>
     </div>
   );
 };

@@ -20,7 +20,7 @@ export const MainSlideDesktopWrapper = styled(Box)`
 
 export const MainSlideWrapper = styled(Box)`
   display: flex;
-  height: 450px;
+  height: 60vh;
   width: 100%;
   background-color: ${({ theme }) => theme.palette.secondary.dark};
   box-sizing: border-box;
@@ -71,7 +71,7 @@ export const MainSlideTitleTextWrapper = styled(Box)`
   display: flex;
   font-family: 'Myriad Pro', 'Arial', sans-serif;
   font-size: 25px;
-  max-width: 230px;
+  max-width: 250px;
   line-height: 25px;
   padding: 0 0 8px;
 `;
@@ -89,17 +89,13 @@ export const AdvantagesWrapper = styled(Box)`
 
 export const AdvantageItemWrapper = styled(Box)`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin: 0 0 15px;
-
-  & > img {
-    height: 20px;
-  }
 `;
 
 export const AdvantageItemDescriptionWrapper = styled(Box)`
   display: flex;
-  background-color: #ffffff66;
+  background-color: #aaaaaa77;
   border-radius: 10px;
   height: 18px;
   padding: 1px 10px;
@@ -151,6 +147,7 @@ export const MainSlideCarouselItemWrapper = styled(Box)`
 export const MainSlideImageWrapper = styled(Box)`
   display: flex;
   right: 0;
+  transform: translateX(11vh);
 
   img {
     width: auto !important;
@@ -172,13 +169,13 @@ export const MainSlideImageCarouselWrapper = styled(Box)`
   justify-content: flex-start;
   position: relative;
   width: 100vw;
-  height: 450px;
+  height: 60vh;
 
   & > div {
-    height: 450px;
+    height: 60vh;
 
     div {
-      height: 450px;
+      height: 60vh;
     }
   }
 
@@ -198,6 +195,7 @@ export const MainSlideImageCarouselWrapper = styled(Box)`
 export const BestGiftHeaderWrapper = styled(Box)`
   display: flex;
   padding: 20px 15px;
+  max-width: 500px;
 `;
 
 export const OfferButtonWrapper = styled(Box)`
@@ -218,15 +216,19 @@ export const OfferButtonWrapper = styled(Box)`
     }
   }
 
+  & > * > * > button {
+    background-color: ${({ buttonColor }) => buttonColor};
+  }
+
   ${mobileStyles(`
     left: 10px;
     bottom: 25px;
-    
+   
     & > div {
       width: min-content;
       padding: 0;
       
-      div {
+      & > div {
         padding: 0;
       }
     }

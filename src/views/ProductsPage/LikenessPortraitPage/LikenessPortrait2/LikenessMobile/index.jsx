@@ -20,13 +20,6 @@ import {
   ModalIcons,
   ModalTitle,
   LikenessButton2,
-  LikenessMobileContent2,
-  LikenessMobileInfoItems,
-  LikenessMobileInfoItemsIcon,
-  LikenessMobileInfoItemsOne,
-  LikenessMobileInfoItemsText,
-  LikenessMobileInfoItemsThree,
-  LikenessMobileInfoItemsTwo,
 } from './styled';
 
 import Modal from '../../../../../components/Modal/modal';
@@ -35,61 +28,25 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { isMobile } from 'react-device-detect';
-import LikenessTitle2 from '../LikenessTitle2/likeness-title2';
+import MainSlide from '../../../../../components/Autumn2023Update/MainPage/MainSlide';
+import { likenessSlideAdvantages } from '../../../../../constants/mainConstants';
+import { useTheme } from '@mui/material/styles';
 
 const LikenessMobile = () => {
   const { t } = useTranslation();
   const [modalActive, setModalActive] = useState(false);
+  const theme = useTheme();
+
   return (
     <LikenessPortraitWrapper2 id="/Likeness-portrait">
+      <MainSlide
+        advantages={likenessSlideAdvantages}
+        title="Портрет в образе"
+        description="За 1 день от 1350 руб"
+        detailsColor={theme.palette.secondary.main}
+      />
+
       <LikenessPortraitGeneral2>
-        <LikenessTitle2 />
-        <LikenessMobileContent2>
-          {isMobile ? (
-            <LikenessMobileInfoItems>
-              <LikenessMobileInfoItemsOne>
-                <LikenessMobileInfoItemsIcon>
-                  <img
-                    width="20px"
-                    height="20px"
-                    src="/images/background/ellipse2.png"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </LikenessMobileInfoItemsIcon>
-                <LikenessMobileInfoItemsText>
-                  Бесплатно подберем 7-8 грубых макетов.
-                </LikenessMobileInfoItemsText>
-              </LikenessMobileInfoItemsOne>
-
-              <LikenessMobileInfoItemsTwo>
-                <LikenessMobileInfoItemsIcon>
-                  <img
-                    width="20px"
-                    height="20px"
-                    src="/images/background/ellipse2.png"
-                  />
-                </LikenessMobileInfoItemsIcon>
-                <LikenessMobileInfoItemsText>
-                  Более 600 тематических образов
-                </LikenessMobileInfoItemsText>
-              </LikenessMobileInfoItemsTwo>
-
-              <LikenessMobileInfoItemsThree>
-                <LikenessMobileInfoItemsIcon>
-                  <img
-                    width="20px"
-                    height="20px"
-                    src="/images/background/ellipse2.png"
-                  />
-                </LikenessMobileInfoItemsIcon>
-                <LikenessMobileInfoItemsText>
-                  Портретное сходство сохраняем на 100%
-                </LikenessMobileInfoItemsText>
-              </LikenessMobileInfoItemsThree>
-            </LikenessMobileInfoItems>
-          ) : null}
-        </LikenessMobileContent2>
         <LikenessContent2>
           <LikenessContent22>
             <LikenessContentPhoto2>

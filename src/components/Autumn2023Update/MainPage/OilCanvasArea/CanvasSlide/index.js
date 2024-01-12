@@ -10,7 +10,7 @@ import AdvantagesList from '../../../../AdvantagesList';
 const CanvasSlide = () => {
   return (
     <CanvasAreaWrapper>
-      <BrashTitle brashSrc={brashSrc}>
+      <BrashTitle brashSrc={brashSrc} brashWidth="20rem" translateY={-5}>
         <Typography variant="h4">Портрет на холсте</Typography>
       </BrashTitle>
 

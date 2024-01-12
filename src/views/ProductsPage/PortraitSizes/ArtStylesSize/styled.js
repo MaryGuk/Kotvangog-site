@@ -10,7 +10,7 @@ export const ArtStylesSizeWrapper = styled(Box)`
   box-sizing: border-box;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    padding: 65px 0 0;
+    padding: 30px 0 0;
   }
 `;
 export const ArtStylesSizeGeneral = styled(Box)`

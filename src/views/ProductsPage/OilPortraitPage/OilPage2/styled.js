@@ -1,16 +1,37 @@
 import { Box, styled } from '@mui/material';
+import { mobileStyles } from '../../../../utils/stylesUtils';
 
 export const OilPortraitWrapper2 = styled(Box)`
   display: flex;
-  justify-content: center;
-  width: 100%;
-  padding-top: 30px;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  background-color: ${({ theme: { palette } }) => palette.background.default};
+
+  ${mobileStyles(`
+    box-sizing: content-box;
+    display: block;
+    overflow: hidden;
+  `)}
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     /* height: 730px; */
     background-image: none;
     padding-top: 0;
   }
+`;
+
+export const OilPortraitWrapper3 = styled(Box)`
+  padding: 30px 10% 0;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  ${mobileStyles(`
+    box-sizing: border-box;
+    padding: 0 4% 30px;
+  `)}
 `;
 
 export const OilPortraitGeneral2 = styled(Box)`
@@ -23,7 +44,8 @@ export const OilPortraitGeneral2 = styled(Box)`
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     background-image: none;
-    margin: 10px;
+    margin: 0;
+    display: none;
   }
 `;
 
@@ -158,6 +180,7 @@ export const OilMobileContent2 = styled(Box)`
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: flex;
+    padding: 25px 0 0;
   }
 `;
 export const OilMobileText2 = styled(Box)`
@@ -307,4 +330,18 @@ export const OilDesktopDescription3 = styled(Box)`
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 80px;
+`;
+
+export const OilPageItemWrapper = styled(Box)`
+  padding: 15px 0;
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    padding: 0;
+  }
 `;

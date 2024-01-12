@@ -45,7 +45,7 @@ const MobileCarouselItem = ({ onClick, onImageLoad, data }) => {
   }
 
   const handleImageLoad = ({ target: img }) => {
-    onImageLoad(
+    onImageLoad?.(
       img.offsetHeight + (data.description?.length ?? 0) * subtitlePxHeight
     );
   };

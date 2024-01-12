@@ -7,7 +7,7 @@ export const ModernImagesWrapper = styled(Box)`
   width: 100%;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.palette.background.default};
   }
 `;
 export const ModernImagesGeneral = styled(Box)`
@@ -16,7 +16,7 @@ export const ModernImagesGeneral = styled(Box)`
   box-sizing: border-box;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-    padding: 0;
+    padding: 40px 0 0;
   }
 `;
 export const ModernImagesContent = styled(Box)`
@@ -106,7 +106,6 @@ export const MobileLikenessOneContainer = styled(Box)`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 43px;
   }
 `;
 

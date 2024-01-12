@@ -48,6 +48,7 @@ export const OilAreaWrapper = styled(Box)`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 `;
 
 export const AdvantagesListWrapper = styled(Box)`
@@ -67,7 +68,7 @@ export const CanvasAdvantagesListWrapper = styled(Box)`
 export const BoxingPointerWrapper = styled(Box)`
   display: flex;
   position: absolute;
-  right: 32px;
+  right: 22px;
   transform: translate(100%, 50%);
   height: 45px;
 `;
@@ -151,4 +152,13 @@ export const OilCanvasGridButtonBlockWrapper = styled(Box)`
   width: 100%;
   height: 100%;
   padding: 15px 0 0;
+`;
+
+export const OilSlideCarouselWrapper = styled(Box)`
+  display: block;
+  max-width: 500px;
+
+  ${mobileStyles(`
+    width: 100vw;
+  `)}
 `;

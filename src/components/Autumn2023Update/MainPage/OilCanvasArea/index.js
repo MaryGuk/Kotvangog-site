@@ -16,7 +16,7 @@ const OilCanvasArea = () => {
         alignItems="center"
       >
         <OilCanvasAreaTitleWrapper>
-          <Typography variant="h4">
+          <Typography variant="h4" letterSpacing="-0.024rem" fontSize="1.45rem">
             Мы создаем портреты маслом или печатаем на холсте
           </Typography>
         </OilCanvasAreaTitleWrapper>

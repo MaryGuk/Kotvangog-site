@@ -16,7 +16,11 @@ const OilPortraitPage = () => {
       <OilPortraitSecond />
       <OilPortraitExamples />
       {isMobile ? <PortraitFrame /> : null}
-      <ArtStylesSize title="Портрет или картина маслом" oilPricePrefix="От" />
+      <ArtStylesSize
+        title="Портрет маслом (100% ручная работа)"
+        oilPricePrefix="От"
+        hideSecondString
+      />
       {isMobile ? <FooterMobile /> : <Footer />}
       {isMobile ? <ContactsSticky /> : null}
     </Box>

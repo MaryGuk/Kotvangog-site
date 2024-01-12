@@ -13,6 +13,7 @@ import ArtStylesSizeMobileItem from './ArtStylesSizeMobileItem';
 import ArtStylesSizeDesktopItem from './ArtStylesSizeDesktopItem';
 import PortraitSizesTitle from './PortraitSizesTitle/PortraitSizesTitle';
 import { isMobile } from 'react-device-detect';
+import { Typography } from '@mui/material';
 
 const ArtStylesSize = ({
   title,
@@ -21,6 +22,7 @@ const ArtStylesSize = ({
   children,
   alternateOilPrices,
   alternatePrintPrices,
+  hideSecondString,
 }) => {
   return (
     <ArtStylesSizeWrapper>
@@ -29,20 +31,30 @@ const ArtStylesSize = ({
         {children ?? (
           <ArtStylesSizeDescription>
             <ArtSizeTextOneContainer>
-              <ArtSizeTextOne>{title}</ArtSizeTextOne>
-              <ArtSizeTextOnePart2> (100% ручная работа) </ArtSizeTextOnePart2>
+              <ArtSizeTextOne>
+                <Typography variant="body2">{title}</Typography>
+              </ArtSizeTextOne>
+              {hideSecondString ? null : (
+                <ArtSizeTextOnePart2>
+                  <Typography variant="body2">(100% ручная работа)</Typography>
+                </ArtSizeTextOnePart2>
+              )}
             </ArtSizeTextOneContainer>
             <ArtSizeTextTwoContainer>
               <ArtSizeTextTwo>
-                Возможно изготовление любых размеров.
-                <span
-                  style={{
-                    fontSize: '12px',
-                    color: '#414141',
-                  }}
-                >
-                  Цены указаны без работы дизайнера
-                </span>
+                <Typography variant="body2">
+                  Возможно изготовление любых размеров.
+                </Typography>
+                <Typography variant="body2">
+                  <span
+                    style={{
+                      fontSize: '12px',
+                      color: '#414141',
+                    }}
+                  >
+                    Цены указаны без работы дизайнера
+                  </span>
+                </Typography>
               </ArtSizeTextTwo>
             </ArtSizeTextTwoContainer>
           </ArtStylesSizeDescription>

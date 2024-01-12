@@ -19,7 +19,7 @@ const PresentBoxingSlide = () => {
       {isMobile ? (
         <>
           <Typography variant="h4">Премиальная подарочная</Typography>
-          <BrashTitle brashSrc={brashSrc}>
+          <BrashTitle brashSrc={brashSrc} brashWidth="20rem" translateY={-9}>
             <Typography variant="h4">упаковка бесплатно</Typography>
           </BrashTitle>
         </>

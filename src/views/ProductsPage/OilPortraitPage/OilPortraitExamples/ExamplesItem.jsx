@@ -26,7 +26,7 @@ const ExamplesItem = ({ previewSrc, fullSrc, setFullImage, onImageLoad }) => {
           height="300px"
           loading="lazy"
           decoding="async"
-          onLoad={() => onImageLoad()}
+          onLoad={onImageLoad}
           alt=""
         />
       </ExamplesGallery>

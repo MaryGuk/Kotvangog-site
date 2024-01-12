@@ -6,6 +6,7 @@ import {
 } from './styled-sizes';
 
 import { Fragment } from 'react';
+import { Typography } from '@mui/material';
 
 const ArtStylesSizeMobileItem = ({
   imageSrc,
@@ -37,16 +38,20 @@ const ArtStylesSizeMobileItem = ({
         />
       </ArtSizeItemContainer>
       <ArtSizesItemSize gridColumn={gridColumn} gridRow={gridRowOffset + 2}>
-        {imageSize}
+        <Typography variant="body2">{imageSize}</Typography>
       </ArtSizesItemSize>
       {printPricePrefix && (
         <ArtSizesPrintText gridColumn={gridColumn} gridRow={gridRowOffset + 3}>
-          {`${printPricePrefix} ${printDescription} руб.`}
+          <Typography variant="body2">
+            {`${printPricePrefix} ${printDescription} руб.`}
+          </Typography>
         </ArtSizesPrintText>
       )}
       {oilPricePrefix && (
         <ArtSizesOilText gridColumn={gridColumn} gridRow={gridRowOffset + 4}>
-          {`${oilPricePrefix} ${oilDescription} руб.`}
+          <Typography variant="body2">
+            {`${oilPricePrefix} ${oilDescription} руб.`}
+          </Typography>
         </ArtSizesOilText>
       )}
     </Fragment>
