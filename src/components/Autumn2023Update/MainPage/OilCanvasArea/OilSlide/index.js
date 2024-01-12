@@ -4,9 +4,10 @@ import {
   OilTitleBrashWrapper,
   OilTitleTextWrapper,
   OilTitleWrapper,
+  OilSlideCarouselWrapper,
 } from '../styled';
 import Brash from '../../../../../images/brashes/brash4.svg';
-import { Box, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import MobileCarousel from '../../../../MobileCarousel';
 import { oilSlideFramesGallery } from '../../../../../constants/galleries/mainPageImages';
 import AdvantagesList from '../../../../AdvantagesList';
@@ -27,7 +28,7 @@ const OilSlide = ({ customTitle }) => {
         </OilTitleWrapper>
       )}
 
-      <Box width="100vw" display="block">
+      <OilSlideCarouselWrapper>
         <MobileCarousel
           imageList={oilSlideFramesGallery}
           columnCount={1}
@@ -35,7 +36,7 @@ const OilSlide = ({ customTitle }) => {
           onImageClick={() => true}
           mt="15px"
         />
-      </Box>
+      </OilSlideCarouselWrapper>
 
       <AdvantagesListWrapper>
         <AdvantagesList advantages={oilAdvantages} />
