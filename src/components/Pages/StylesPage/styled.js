@@ -34,3 +34,12 @@ export const StylesImageWrapper = styled(Box)`
     max-height: 29vw;
   }
 `;
+
+export const DesktopStylesPageWrapper = styled(Box)`
+  display: flex;
+  justify-content: center;
+  padding: 65px 10%;
+  box-sizing: border-box;
+
+  background: ${({ theme }) => theme.palette.background.default};
+`;

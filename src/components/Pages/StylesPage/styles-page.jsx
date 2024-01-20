@@ -6,7 +6,7 @@ import i18n from '../../../i18n';
 import StylesTitle from './StylesPageTitle/StylesTitle';
 import StylesButton from '../../Button/StylesButton';
 import { isMobile } from 'react-device-detect';
-import { StylesImageWrapper } from './styled';
+import { DesktopStylesPageWrapper, StylesImageWrapper } from './styled';
 
 const stylesData = [
   {
@@ -86,7 +86,7 @@ const stylesData = [
 const StylesPage = () => {
   const { t } = useTranslation();
   return (
-    <div className="styles-page">
+    <DesktopStylesPageWrapper>
       <MainPageItemWrapper>
         <div className="styles-page__general">
           <StylesTitle />
@@ -118,7 +118,7 @@ const StylesPage = () => {
           </div>
         </div>
       </MainPageItemWrapper>
-    </div>
+    </DesktopStylesPageWrapper>
   );
 };
 
