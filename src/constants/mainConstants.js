@@ -55,11 +55,11 @@ export const processVideoStepsData = [
     videoTitle: 'Портрет Энид Синклер из сериала Уэнсдей',
     description: 'Как дизайнер нарисует ваш портрет',
   },
-  // {
-  //   videoSrc: 'https://www.youtube.com/embed/Ml7CWmrXmsE?autoplay=0',
-  //   videoTitle: 'Портрет Энид Синклер из сериала Уэнсдей',
-  //   description: 'Как художник будет писать портрет маслом',
-  // },
+  {
+    videoSrc: 'https://www.youtube.com/embed/Cs1ZinkGKRQ?si=nLD976ECqTKkDHMy',
+    videoTitle: 'Портрет маслом по фото',
+    description: 'Как художник будет писать портрет маслом',
+  },
 ];
 
 export const aboutMeText = [
