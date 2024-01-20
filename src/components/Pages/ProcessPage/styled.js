@@ -1,4 +1,5 @@
 import { Box, styled } from '@mui/material';
+import { mobileStyles } from '../../../utils/stylesUtils';
 
 export const MasterInfoWrapper = styled(Box)`
   grid-row: 1/4;
@@ -11,6 +12,11 @@ export const MasterInfoWrapper = styled(Box)`
     display: flex;
     justify-content: center;
   }
+`;
+
+export const MasterInfoWrapper2 = styled(Box)`
+  display: flex;
+  justify-content: center;
 `;
 
 export const ProcessMobileContent = styled(Box)`
@@ -38,7 +44,7 @@ export const ProcessMobileTextOne = styled(Box)`
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
     display: flex;
-    font-family: 'Century Gothic';
+    font-family: 'Century Gothic', 'sans-serif';
     font-weight: bold;
     font-size: 14px;
     margin: 0 auto;
@@ -66,21 +72,42 @@ export const StepNumber = styled(Box)`
 `;
 
 export const StepNumberText = styled(Box)`
-  font-family: 'Palatino Linotype';
+  font-family: 'Palatino Linotype', 'sans-serif';
   font-size: 34px;
   line-height: 45px;
 `;
 
 export const ProcessSlideWrapper = styled(Box)`
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   background-color: ${({ theme }) => theme.palette.background.default};
   padding: 0 5% 20px;
 `;
 
-export const ProcessVideoStepsWrapper = styled(Box)`
+export const ProcessSlideInternalWrapper = styled(Box)`
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
+  width: 100%;
+
+  ${mobileStyles('max-width: none;')}
+`;
+
+export const ProcessVideoStepsTitleWrapper = styled(Box)`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const ProcessVideoStepsWrapper = styled(Box)`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 400px;
+
+  ${mobileStyles(`
+    flex-direction: column;
+    height: auto;
+  `)}
 `;
 
 export const ProcessItemVideoStepWrapper = styled(Box)`
@@ -92,7 +119,11 @@ export const ProcessItemVideoStepWrapper = styled(Box)`
 
     iframe {
       width: 100%;
-      height: 60vw;
+      height: 300px;
+
+      ${mobileStyles(`
+        height: 60vw;
+      `)}
     }
   }
 
@@ -104,8 +135,15 @@ export const ProcessItemVideoStepWrapper = styled(Box)`
 export const ProcessItemStepVideoWrapper = styled(Box)``;
 
 export const MasterInfoBlockWrapper = styled(Box)`
-  display: flex;
+  display: grid;
   flex-direction: column;
+  gap: 0 110px;
+  grid-template-rows: 120px 1fr;
+
+  ${mobileStyles(`
+    display: flex;
+    gap: 0;
+  `)}
 `;
 
 export const AboutMeBlock = styled(Box)`

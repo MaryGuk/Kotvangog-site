@@ -10,6 +10,7 @@
   grid-template-columns: 300px 450px;
   grid-template-rows: 100px 330px;
   grid-column-gap: calc(100% - 750px);
+  background: red;
 }
 
 @media (max-width: 780px) {
@@ -136,6 +137,7 @@
   height: 335px;
   border-radius: 10px;
   margin-top: 10px;
+  background: red;
 }
 
 @media (max-width: 780px) {

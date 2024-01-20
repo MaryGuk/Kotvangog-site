@@ -2,37 +2,50 @@ import './process-master.css';
 import {
   ProcessItemStepVideoWrapper,
   ProcessItemVideoStepWrapper,
+  ProcessSlideInternalWrapper,
   ProcessSlideWrapper,
+  ProcessVideoStepsTitleWrapper,
   ProcessVideoStepsWrapper,
 } from '../styled';
 import { Typography } from '@mui/material';
 import { processVideoStepsData } from '../../../../constants/mainConstants';
 import MasterInfoBlock from './MasterInfoBlock';
+import { isMobile } from 'react-device-detect';
 
 const ProcessMaster = () => {
   return (
     <ProcessSlideWrapper>
-      <ProcessVideoStepsWrapper>
-        <Typography variant="h4" textAlign="left">
-          Посмотрите 60-секундное видео
-        </Typography>
+      <ProcessSlideInternalWrapper>
+        <ProcessVideoStepsTitleWrapper>
+          <Typography variant="h4" textAlign={isMobile ? 'left' : 'center'}>
+            Посмотрите 60-секундное видео
+          </Typography>
 
-        {processVideoStepsData.map(
-          ({ videoSrc, videoTitle, description }, idx) => (
-            <ProcessItemVideoStepWrapper key={idx}>
-              <Typography variant="body2" textAlign="left">
-                {description}
-              </Typography>
+          <ProcessVideoStepsWrapper>
+            {processVideoStepsData.map(
+              ({ videoSrc, videoTitle, description }, idx) => (
+                <ProcessItemVideoStepWrapper
+                  key={idx}
+                  width={idx || isMobile ? 'auto' : '50%'}
+                >
+                  <Typography
+                    variant="body2"
+                    textAlign={isMobile ? 'left' : 'center'}
+                  >
+                    {description}
+                  </Typography>
 
-              <ProcessItemStepVideoWrapper>
-                <iframe src={videoSrc} title={videoTitle} allowFullScreen />
-              </ProcessItemStepVideoWrapper>
-            </ProcessItemVideoStepWrapper>
-          )
-        )}
-      </ProcessVideoStepsWrapper>
+                  <ProcessItemStepVideoWrapper>
+                    <iframe src={videoSrc} title={videoTitle} allowFullScreen />
+                  </ProcessItemStepVideoWrapper>
+                </ProcessItemVideoStepWrapper>
+              )
+            )}
+          </ProcessVideoStepsWrapper>
+        </ProcessVideoStepsTitleWrapper>
 
-      <MasterInfoBlock />
+        <MasterInfoBlock />
+      </ProcessSlideInternalWrapper>
     </ProcessSlideWrapper>
   );
 };
