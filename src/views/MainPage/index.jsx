@@ -137,7 +137,7 @@ const MainPage = () => {
       )}
 
       <ProcessPage />
-      {isMobile ? <ProcessMaster /> : null}
+      <ProcessMaster />
       <ArtStylesSize
         title="Печать на холсте и картина маслом"
         printPricePrefix="Печать от"

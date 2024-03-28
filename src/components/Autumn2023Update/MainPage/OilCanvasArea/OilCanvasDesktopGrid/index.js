@@ -12,45 +12,66 @@ import {
   oilAdvantages,
 } from '../../../../../constants/advantages';
 import ButtonBlock from './ButtonBlock';
+import BrashTitle from '../../../BrashTitle';
+import { Box, Typography } from '@mui/material';
 
 const OilCanvasDesktopGrid = () => {
   return (
     <OilCanvasDesktopGridWrapper>
-      <PrimaryBlock
-        gridRow="1 / 3"
-        gridColumn="1"
-        brashSrc={PurpleBrashSrc}
-        brashWidth="12.5rem"
-        translateY={25}
-        title="портрет на холсте"
-        imagesGallery={newCanvasSlideGallery}
-      />
-      <ButtonBlock gridRow="3" gridColumn="1" />
-      <SecondaryBlock
+      <Box
         gridRow="1"
-        gridColumn="2 / 4"
-        advantages={canvasAdvantages}
-        maxWidth="24rem"
-      />
+        gridColumn="1"
+        margin="0 0 10px"
+      >
+        <BrashTitle
+          brashSrc={PurpleBrashSrc}
+          brashWidth="17rem"
+          translateY={15}
+        >
+          <Typography variant="subtitle1">портрет на холсте</Typography>
+        </BrashTitle>
+      </Box>
       <PrimaryBlock
         gridRow="2 / 5"
+        gridColumn="1"
+        imagesGallery={newCanvasSlideGallery}
+      />
+      <ButtonBlock gridRow="5" gridColumn="1" />
+      <SecondaryBlock
+        gridRow="2"
+        gridColumn="2 / 4"
+        advantages={canvasAdvantages}
+        maxWidth="28rem"
+      />
+      <Box
+        gridRow="3"
         gridColumn="3"
-        brashSrc={YellowBrashSrc}
-        brashWidth="18rem"
-        translateY={25}
-        translateX={10}
+        margin="0 0 10px"
+      >
+        <BrashTitle
+          brashSrc={YellowBrashSrc}
+          brashWidth="23rem"
+          translateY={15}
+          translateX={10}
+        >
+          <Typography variant="subtitle1">портрет на холсте</Typography>
+        </BrashTitle>
+      </Box>
+      <PrimaryBlock
+        gridRow="4 / 7"
+        gridColumn="3"
         title="портрет маслом"
         imagesGallery={oilSlideFramesGallery}
         justifyContent="flex-end"
       />
       <SecondaryBlock
-        gridRow="4"
+        gridRow="6"
         gridColumn="1 / 3"
         advantages={oilAdvantages}
-        maxWidth="17rem"
+        maxWidth="25rem"
         reverseAdvantages
       />
-      <ButtonBlock gridRow="5" gridColumn="3" />
+      <ButtonBlock gridRow="7" gridColumn="3" />
     </OilCanvasDesktopGridWrapper>
   );
 };

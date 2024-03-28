@@ -35,7 +35,7 @@ export const MainSlideContentWrapper = styled(Box)`
   box-sizing: border-box;
   position: absolute;
   pointer-events: none;
-  height: 350px;
+  height: 430px;
 
   & > div {
     height: 100%;
@@ -62,18 +62,27 @@ export const MainSlideContentWrapper = styled(Box)`
 export const MainSlideTitleWrapper = styled(Box)`
   display: flex;
   flex-direction: column;
-  padding: 20px 14px 0;
+  padding: 39px 14px 0;
   color: #ffffff;
   z-index: 100;
+
+  ${mobileStyles(`
+    padding: 20px 14px 0;
+  `)}
 `;
 
 export const MainSlideTitleTextWrapper = styled(Box)`
   display: flex;
   font-family: 'Myriad Pro', 'Arial', sans-serif;
   font-size: 25px;
-  max-width: 250px;
+  max-width: 490px;
   line-height: 25px;
-  padding: 0 0 8px;
+  padding: 0 0 30px;
+
+  ${mobileStyles(`
+    max-width: 250px;
+    padding: 0 0 8px;
+  `)}
 `;
 
 export const MainSlideTitleDescriptionWrapper = styled(Box)`
@@ -90,7 +99,11 @@ export const AdvantagesWrapper = styled(Box)`
 export const AdvantageItemWrapper = styled(Box)`
   display: flex;
   align-items: flex-start;
-  margin: 0 0 15px;
+  margin: 11px 0;
+
+  ${mobileStyles(`
+    margin: 7px 0;
+  `)}
 `;
 
 export const AdvantageItemDescriptionWrapper = styled(Box)`
@@ -111,7 +124,7 @@ export const OfferWrapper = styled(Box)`
 export const OfferDescriptionWrapper = styled(Box)`
   display: flex;
   color: white;
-  padding: 0 30px 10px;
+  padding: 0 0 10px;
 
   ${mobileStyles(`
     padding: 0 10px 10px;

@@ -1,7 +1,4 @@
 .styles-page {
-  background-image: url('/public/images/background/Слой3.png');
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   justify-content: center;
   padding: 65px 10%;
@@ -12,9 +9,6 @@
   .styles-page {
     padding: 15px 0 0;
     box-sizing: initial;
-    background-image: url('/public/images/background/Слой7.png');
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 }
 

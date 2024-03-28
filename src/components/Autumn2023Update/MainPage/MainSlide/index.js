@@ -12,6 +12,7 @@ import Offer from './offer';
 import MainSlideImages from './MainSlideImage';
 import { useConsultationDialog } from '../../ConsultationDialogProvider';
 import { Button, Typography, Box } from '@mui/material';
+import { isMobile } from 'react-device-detect';
 
 const MainSlide = ({ advantages, title, description, detailsColor }) => {
   const { onOpen } = useConsultationDialog();
@@ -29,7 +30,7 @@ const MainSlide = ({ advantages, title, description, detailsColor }) => {
           >
             <MainSlideTitleWrapper>
               <MainSlideTitleTextWrapper>
-                <Typography variant="h4" textAlign="start">
+                <Typography variant={isMobile ? 'h4' : 'h2'} textAlign="start">
                   {title}
                 </Typography>
               </MainSlideTitleTextWrapper>

@@ -4,6 +4,9 @@ const MuiTypography = {
       fontFamily: '"Palatino Linotype", sans-serif',
       textAlign: 'center',
     },
+    h2: {
+      fontSize: '2.4rem',
+    },
     h4: {
       fontSize: '1.5rem',
     },
