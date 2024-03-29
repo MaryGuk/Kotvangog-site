@@ -18,11 +18,7 @@ import { Box, Typography } from '@mui/material';
 const OilCanvasDesktopGrid = () => {
   return (
     <OilCanvasDesktopGridWrapper>
-      <Box
-        gridRow="1"
-        gridColumn="1"
-        margin="0 0 10px"
-      >
+      <Box gridRow="1" gridColumn="1" margin="0 0 10px">
         <BrashTitle
           brashSrc={PurpleBrashSrc}
           brashWidth="17rem"
@@ -43,11 +39,7 @@ const OilCanvasDesktopGrid = () => {
         advantages={canvasAdvantages}
         maxWidth="28rem"
       />
-      <Box
-        gridRow="3"
-        gridColumn="3"
-        margin="0 0 10px"
-      >
+      <Box gridRow="3" gridColumn="3" margin="0 0 10px">
         <BrashTitle
           brashSrc={YellowBrashSrc}
           brashWidth="23rem"
