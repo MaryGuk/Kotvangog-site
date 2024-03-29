@@ -8,6 +8,7 @@ const TitleOne = () => {
           <img
             className="title-one__title-background-image"
             src="/images/background/Слой перый розовый.png"
+            alt=""
           />
         </div>
         <div className="title-one__title">Уникальные портреты и картины</div>

@@ -66,6 +66,7 @@ const LikenessPortrait = () => {
                     : 'https://www.dropbox.com/scl/fi/41rriflyaxngeqi4ruct9/2_4353_1400px_progressive.jpg?rlkey=alftcvp5saam6k8w00iccdpxd&dl=0&raw=1'
                 }
                 width="100%"
+                alt=""
               />
             </LikenessContentPhoto>
             <LikenessContentDescription>
@@ -76,6 +77,7 @@ const LikenessPortrait = () => {
                       width="20px"
                       height="20px"
                       src="/images/background/ellipse2.png"
+                      alt=""
                     />
                   </LikenessDesktopInfoIcon>
                   <LikenessDesktopInfoText>
@@ -89,6 +91,7 @@ const LikenessPortrait = () => {
                       width="20px"
                       height="20px"
                       src="/images/background/ellipse2.png"
+                      alt=""
                     />
                   </LikenessDesktopInfoIcon>
                   <LikenessDesktopInfoText>
@@ -102,6 +105,7 @@ const LikenessPortrait = () => {
                       width="20px"
                       height="20px"
                       src="/images/background/ellipse2.png"
+                      alt=""
                     />
                   </LikenessDesktopInfoIcon>
                   <LikenessDesktopInfoText>
@@ -151,6 +155,7 @@ const LikenessPortrait = () => {
                             width="40px"
                             height="40px"
                             src="/images/modal-icons/whatsapp.svg"
+                            alt=""
                           />
                         </ModalIcons>
                       </a>
@@ -160,6 +165,7 @@ const LikenessPortrait = () => {
                             width="40px"
                             height="40px"
                             src="/images/modal-icons/telegram.svg"
+                            alt=""
                           />
                         </ModalIcons>
                       </a>
@@ -169,6 +175,7 @@ const LikenessPortrait = () => {
                             width="40px"
                             height="40px"
                             src="/images/modal-icons/vk.svg"
+                            alt=""
                           />
                         </ModalIcons>
                       </a>

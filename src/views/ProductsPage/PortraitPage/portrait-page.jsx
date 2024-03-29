@@ -45,6 +45,7 @@ const ProductPageItem = ({
                   loading="lazy"
                   decoding="async"
                   src={srcAfter}
+                  alt=""
                 />
               </SimpleImageWrapper>
             )}

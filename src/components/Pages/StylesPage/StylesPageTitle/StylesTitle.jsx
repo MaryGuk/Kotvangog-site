@@ -13,6 +13,7 @@ const StylesTitle = () => {
                 ? '/images/background/арт стили волна.png'
                 : '/images/background/waveTwo1.png'
             }
+            alt=""
           />
         </div>
         <div className="styles__title">

@@ -8,6 +8,7 @@ const LikenessTitle = ({ text }) => {
           <img
             className="history-text__title-background-image"
             src="/images/background/Pink wave reverse.png"
+            alt=""
           />
         </div>
         <div className="history-text__title">{text}</div>

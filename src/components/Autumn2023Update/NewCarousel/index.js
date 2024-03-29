@@ -28,7 +28,7 @@ const NewCarousel = ({ slidesToShow = 1 }) => {
             <NewCarouselItemWrapper key={idx}>
               <img
                 src={(!isMobile && imageSrc_500) || imageSrc}
-                alt="example image"
+                alt=""
                 width="100%"
                 loading="lazy"
               />

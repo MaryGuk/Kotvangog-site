@@ -80,6 +80,7 @@ const OilPage = () => {
                           width="20px"
                           height="20px"
                           src="/images/background/ellipse2.png"
+                          alt=""
                         />
                       </OilDesktopInfoIcon>
                       <OilDesktopInfoText>
@@ -93,6 +94,7 @@ const OilPage = () => {
                           width="20px"
                           height="20px"
                           src="/images/background/ellipse2.png"
+                          alt=""
                         />
                       </OilDesktopInfoIcon>
                       <OilDesktopInfoText>
@@ -106,6 +108,7 @@ const OilPage = () => {
                           width="20px"
                           height="20px"
                           src="/images/background/ellipse2.png"
+                          alt=""
                         />
                       </OilDesktopInfoIcon>
                       <OilDesktopInfoText>
@@ -155,6 +158,7 @@ const OilPage = () => {
                                 width="40px"
                                 height="40px"
                                 src="/images/modal-icons/whatsapp.svg"
+                                alt=""
                               />
                             </ModalIcons>
                           </a>
@@ -164,6 +168,7 @@ const OilPage = () => {
                                 width="40px"
                                 height="40px"
                                 src="/images/modal-icons/telegram.svg"
+                                alt=""
                               />
                             </ModalIcons>
                           </a>
@@ -173,6 +178,7 @@ const OilPage = () => {
                                 width="40px"
                                 height="40px"
                                 src="/images/modal-icons/vk.svg"
+                                alt=""
                               />
                             </ModalIcons>
                           </a>

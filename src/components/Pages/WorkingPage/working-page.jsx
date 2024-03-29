@@ -1,5 +1,4 @@
 import './working-page.css';
-import { Typography } from '@mui/material';
 
 const WorkingPage = () => {
   return (

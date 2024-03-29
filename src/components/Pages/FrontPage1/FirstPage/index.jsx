@@ -50,6 +50,7 @@ const FirstPage = () => {
                         ? '/images/background/ellipse2.png'
                         : '/images/background/check.png'
                     }
+                    alt=""
                   />
                 </FirstPageInfoItemsIcon>
                 <FirstPageInfoItemsText>
@@ -67,6 +68,7 @@ const FirstPage = () => {
                         ? '/images/background/ellipse2.png'
                         : '/images/background/check.png'
                     }
+                    alt=""
                   />
                 </FirstPageInfoItemsIcon>
                 <FirstPageInfoItemsText>
@@ -84,6 +86,7 @@ const FirstPage = () => {
                         ? '/images/background/ellipse2.png'
                         : '/images/background/check.png'
                     }
+                    alt=""
                   />
                 </FirstPageInfoItemsIcon>
                 <FirstPageInfoItemsText>
@@ -101,7 +104,7 @@ const FirstPage = () => {
             </FirstPageInfoMessage>
 
             <ArrowGrayContainer>
-              <img height="45px" src="/images/background/arrow first.png" />
+              <img height="45px" src="/images/background/arrow first.png" alt="" />
             </ArrowGrayContainer>
 
             <MainButton />
@@ -113,7 +116,7 @@ const FirstPage = () => {
             <Box>
               <img
                 src="https://www.dropbox.com/s/y84e5q7zb15f96p/111%20pr.jpg?raw=1"
-                alt="Main photo"
+                alt="Main"
               />
             </Box>
           ) : (
@@ -144,7 +147,7 @@ const FirstPage = () => {
                 },
               ].map(({ src, key }) => (
                 <CarouselImageWrapper key={key}>
-                  <img src={src} key={key} loading="lazy" decoding="async" />
+                  <img src={src} key={key} loading="lazy" decoding="async" alt="" />
                 </CarouselImageWrapper>
               ))}
             </Carousel>

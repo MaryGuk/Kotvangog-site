@@ -67,6 +67,7 @@ const LikenessPortrait = () => {
                 }
                 width="100%"
                 height="100%"
+                alt=""
               />
             </LikenessContentPhoto2>
             <LikenessContentDescription2>
@@ -77,6 +78,7 @@ const LikenessPortrait = () => {
                       width="20px"
                       height="20px"
                       src="/images/background/ellipse2.png"
+                      alt=""
                     />
                   </LikenessDesktopInfoIcon2>
                   <LikenessDesktopInfoText2>
@@ -90,6 +92,7 @@ const LikenessPortrait = () => {
                       width="20px"
                       height="20px"
                       src="/images/background/ellipse2.png"
+                      alt=""
                     />
                   </LikenessDesktopInfoIcon2>
                   <LikenessDesktopInfoText2>
@@ -103,6 +106,7 @@ const LikenessPortrait = () => {
                       width="20px"
                       height="20px"
                       src="/images/background/ellipse2.png"
+                      alt=""
                     />
                   </LikenessDesktopInfoIcon2>
                   <LikenessDesktopInfoText2>
@@ -152,6 +156,7 @@ const LikenessPortrait = () => {
                             width="40px"
                             height="40px"
                             src="/images/modal-icons/whatsapp.svg"
+                            alt=""
                           />
                         </ModalIcons>
                       </a>
@@ -161,6 +166,7 @@ const LikenessPortrait = () => {
                             width="40px"
                             height="40px"
                             src="/images/modal-icons/telegram.svg"
+                            alt=""
                           />
                         </ModalIcons>
                       </a>
@@ -170,6 +176,7 @@ const LikenessPortrait = () => {
                             width="40px"
                             height="40px"
                             src="/images/modal-icons/vk.svg"
+                            alt=""
                           />
                         </ModalIcons>
                       </a>

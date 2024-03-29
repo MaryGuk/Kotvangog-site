@@ -35,6 +35,7 @@ const StylesButton = () => {
                     width="40px"
                     height="40px"
                     src="/images/modal-icons/whatsapp.svg"
+                    alt=""
                   />
                 </ModalIcons>
               </a>
@@ -44,6 +45,7 @@ const StylesButton = () => {
                     width="40px"
                     height="40px"
                     src="/images/modal-icons/telegram.svg"
+                    alt=""
                   />
                 </ModalIcons>
               </a>
@@ -53,6 +55,7 @@ const StylesButton = () => {
                     width="40px"
                     height="40px"
                     src="/images/modal-icons/vk.svg"
+                    alt=""
                   />
                 </ModalIcons>
               </a>

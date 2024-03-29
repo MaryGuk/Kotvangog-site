@@ -138,6 +138,7 @@ const ContactsSticky = () => {
                       <img
                         width="40px"
                         src="/images/modal-icons/whatsapp.svg"
+                        alt=""
                       />
                     </ModalIconsContacts>
                     <ModalContactsName> WhatsApp</ModalContactsName>
@@ -158,6 +159,7 @@ const ContactsSticky = () => {
                       <img
                         width="40px"
                         src="/images/modal-icons/telegram.svg"
+                        alt=""
                       />
                     </ModalIconsContacts>
                     <ModalContactsName> Telegram </ModalContactsName>
@@ -175,7 +177,7 @@ const ContactsSticky = () => {
                 >
                   <ModalContactsItems>
                     <ModalIconsContacts>
-                      <img width="40px" src="/images/modal-icons/vk.svg" />
+                      <img width="40px" src="/images/modal-icons/vk.svg" alt="" />
                     </ModalIconsContacts>
                     <ModalContactsName> Vkontakte</ModalContactsName>
                   </ModalContactsItems>

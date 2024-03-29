@@ -64,6 +64,7 @@ const OilPortrait = ({
                 height="100%"
                 loading="lazy"
                 decoding="async"
+                alt=""
               />
             </OilContentPhoto>
             <OilButton>
@@ -81,6 +82,7 @@ const OilPortrait = ({
                         width="20px"
                         height="20px"
                         src="/images/background/ellipse2.png"
+                        alt=""
                       />
                     </OilDesktopInfoIcon>
                     <OilDesktopInfoText>{advantage}</OilDesktopInfoText>
@@ -129,6 +131,7 @@ const OilPortrait = ({
                             width="40px"
                             height="40px"
                             src="/images/modal-icons/whatsapp.svg"
+                            alt=""
                           />
                         </ModalIcons>
                       </a>
@@ -138,6 +141,7 @@ const OilPortrait = ({
                             width="40px"
                             height="40px"
                             src="/images/modal-icons/telegram.svg"
+                            alt=""
                           />
                         </ModalIcons>
                       </a>
@@ -147,6 +151,7 @@ const OilPortrait = ({
                             width="40px"
                             height="40px"
                             src="/images/modal-icons/vk.svg"
+                            alt=""
                           />
                         </ModalIcons>
                       </a>

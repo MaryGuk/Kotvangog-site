@@ -14,7 +14,7 @@ const MobileLink = () => {
 
   return (
     <>
-      <a ref={ref} href={`tel:${mobilePhone.number}`} />
+      <a ref={ref} href={`tel:${mobilePhone.number}`} alt="" />
       <Typography variant="subtitle2" onClick={handleClick}>
         {mobilePhone.text}
       </Typography>

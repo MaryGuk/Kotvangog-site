@@ -13,6 +13,7 @@ const TitleModern = () => {
                 ? '/images/frame title.png'
                 : '/images/background/Examples.png'
             }
+            alt=""
           />
         </div>
         <div className="modern-text__title">Современные образы</div>
