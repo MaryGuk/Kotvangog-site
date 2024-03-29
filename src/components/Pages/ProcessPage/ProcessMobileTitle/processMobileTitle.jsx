@@ -9,6 +9,7 @@ const ProcessMobileTitle = () => {
           <img
             className="process-mobile__title-background-image"
             src={brashSrc}
+            alt=""
           />
         </div>
         <div className="process-mobile__title">Как дизайнер рисует портрет</div>

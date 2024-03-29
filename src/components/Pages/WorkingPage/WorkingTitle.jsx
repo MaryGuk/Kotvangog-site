@@ -11,6 +11,7 @@ const WorkingTitle = () => {
           <img
             className="working-page__title-background-image"
             src="/images/background/Фон заголовок2 — копия.png"
+            alt=""
           />
         </div>
       </div>

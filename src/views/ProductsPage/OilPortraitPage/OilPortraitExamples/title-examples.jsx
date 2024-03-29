@@ -13,6 +13,7 @@ const TitleExamples = () => {
                 ? '/images/background/примеры моб.png'
                 : 'https://www.dropbox.com/scl/fi/ungyc09uwmyb183idhjcx/.png?rlkey=06vxly6c5oo0h729a31w7n2e2&dl=0&raw=1'
             }
+            alt=""
           />
         </div>
         <div className="examples-text__title">Примеры1</div>

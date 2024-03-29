@@ -8,6 +8,7 @@ const TitleWaveOil = () => {
           <img
             className="wave-text__title-background-image"
             src="/images/background/Pink wave.png"
+            alt=""
           />
         </div>
         <div className="wave-text__title">

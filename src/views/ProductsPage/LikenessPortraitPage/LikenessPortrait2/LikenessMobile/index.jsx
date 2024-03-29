@@ -58,6 +58,7 @@ const LikenessMobile = () => {
                 }
                 width="100%"
                 height="100%"
+                alt=""
               />
             </LikenessContentPhoto2>
             {isMobile ? (
@@ -125,6 +126,7 @@ const LikenessMobile = () => {
                             width="40px"
                             height="40px"
                             src="/images/modal-icons/whatsapp.svg"
+                            alt=""
                           />
                         </ModalIcons>
                       </a>
@@ -134,6 +136,7 @@ const LikenessMobile = () => {
                             width="40px"
                             height="40px"
                             src="/images/modal-icons/telegram.svg"
+                            alt=""
                           />
                         </ModalIcons>
                       </a>
@@ -143,6 +146,7 @@ const LikenessMobile = () => {
                             width="40px"
                             height="40px"
                             src="/images/modal-icons/vk.svg"
+                            alt=""
                           />
                         </ModalIcons>
                       </a>

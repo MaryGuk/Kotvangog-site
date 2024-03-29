@@ -8,6 +8,7 @@ const OilTitle = ({ titleText }) => {
           <img
             className="oil__title-background-image"
             src="/images/background/background new.png"
+            alt=""
           />
         </div>
         <div className="oil__title">{titleText}</div>

@@ -13,6 +13,7 @@ const LikenessTitle2 = () => {
                 ? '/images/background/примеры моб.png'
                 : '/images/background/Мазок волна.png'
             }
+            alt=""
           />
         </div>
         <div className="likeness__title2">Портрет в образе</div>

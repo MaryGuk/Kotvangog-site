@@ -67,6 +67,7 @@ const Footer = () => {
                 <img
                   className="icons-messenger"
                   src="/images/messenger/telegram.svg"
+                  alt=""
                 />
               </a>
               <a
@@ -77,6 +78,7 @@ const Footer = () => {
                 <img
                   className="icons-messenger"
                   src="/images/messenger/whatsapp.svg"
+                  alt=""
                 />
               </a>
               <a
@@ -87,6 +89,7 @@ const Footer = () => {
                 <img
                   className="icons-messenger"
                   src="/images/messenger/instagram.svg"
+                  alt=""
                 />
               </a>
               <a
@@ -97,6 +100,7 @@ const Footer = () => {
                 <img
                   className="icons-messenger"
                   src="/images/messenger/vk.svg"
+                  alt=""
                 />
               </a>
               <a
@@ -107,6 +111,7 @@ const Footer = () => {
                 <img
                   className="icons-messenger"
                   src="/images/messenger/email.svg"
+                  alt=""
                 />
               </a>
             </div>

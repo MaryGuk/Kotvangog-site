@@ -8,6 +8,7 @@ const FrameTitle = () => {
           <img
             className="title-frame__title-background-image"
             src="/images/frame title.png"
+            alt=""
           />
         </div>
 

@@ -133,6 +133,7 @@ const ModernImages = () => {
                 src="https://www.dropbox.com/scl/fi/r2yewvz5qwh7wq2lwcwmf/1300_193745.png?rlkey=uh2sbcfwcz3nlymmzia2n5bsx&dl=0&raw=1"
                 loading="lazy"
                 decoding="async"
+                alt=""
               />
             </HistoryImagesCollageImage>
             <HistoryImagesCollageText>

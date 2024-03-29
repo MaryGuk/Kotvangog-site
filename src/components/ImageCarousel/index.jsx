@@ -41,7 +41,7 @@ const ImageCarousel = ({ galleryImages, setFullImageIdx, reverse }) => {
                 <img
                   className="beauty-art__image"
                   src={previewSrc}
-                  alt="Photo"
+                  alt=""
                 />
               </ImageItemWrapper>
             ))}

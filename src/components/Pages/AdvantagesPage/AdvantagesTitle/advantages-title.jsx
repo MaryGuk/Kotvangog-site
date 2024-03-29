@@ -8,6 +8,7 @@ const AdvantagesTitleWave = () => {
           <img
             className="advantages__title-background-image"
             src="/images/background/размеры масло.png"
+            alt=""
           />
         </div>
         <div className="advantages__title">Наши преимущества</div>
