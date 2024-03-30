@@ -2,15 +2,7 @@ import { OilCanvasGridPrimaryBlockWrapper } from '../styled';
 import { Box } from '@mui/material';
 import MobileCarousel from '../../../../MobileCarousel';
 
-const PrimaryBlock = ({
-  brashSrc,
-  translateY,
-  translateX,
-  brashWidth,
-  imagesGallery,
-  title,
-  ...props
-}) => {
+const PrimaryBlock = ({ imagesGallery, ...props }) => {
   return (
     <OilCanvasGridPrimaryBlockWrapper {...props}>
       <Box width="100%" display="block">

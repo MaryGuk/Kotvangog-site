@@ -38,11 +38,7 @@ const ImageCarousel = ({ galleryImages, setFullImageIdx, reverse }) => {
           <ImageGalleryInnerWrapper reverse={reverse}>
             {galleryImages.map(({ previewSrc }, idx) => (
               <ImageItemWrapper onClick={() => setFullImageIdx(idx)} key={idx}>
-                <img
-                  className="beauty-art__image"
-                  src={previewSrc}
-                  alt=""
-                />
+                <img className="beauty-art__image" src={previewSrc} alt="" />
               </ImageItemWrapper>
             ))}
           </ImageGalleryInnerWrapper>
