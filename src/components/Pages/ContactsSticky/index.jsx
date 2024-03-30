@@ -177,7 +177,11 @@ const ContactsSticky = () => {
                 >
                   <ModalContactsItems>
                     <ModalIconsContacts>
-                      <img width="40px" src="/images/modal-icons/vk.svg" alt="" />
+                      <img
+                        width="40px"
+                        src="/images/modal-icons/vk.svg"
+                        alt=""
+                      />
                     </ModalIconsContacts>
                     <ModalContactsName> Vkontakte</ModalContactsName>
                   </ModalContactsItems>
