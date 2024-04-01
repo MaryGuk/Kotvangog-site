@@ -126,7 +126,6 @@ export const OilCanvasDesktopGridWrapper = styled(Box, {
   grid-template-columns: ${({ maxPrimaryBlockWidth = '370px' }) =>
     `minmax(0, ${maxPrimaryBlockWidth}) 1fr minmax(0, ${maxPrimaryBlockWidth});`};
   padding: 0 0 10px;
-  grid-template-rows: auto auto 41px 225px;
 `;
 
 export const OilCanvasGridPrimaryBlockWrapper = styled(Box)`
@@ -151,7 +150,7 @@ export const OilCanvasGridButtonBlockWrapper = styled(Box)`
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: min-content;
   padding: 15px 0 0;
 `;
 
