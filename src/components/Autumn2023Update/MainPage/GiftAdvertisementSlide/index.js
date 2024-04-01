@@ -8,6 +8,7 @@ import { isMobile } from 'react-device-detect';
 import NewCarousel from '../../NewCarousel';
 import PageContentWrapper from '../../../PageContentWrapper';
 import { HoverScalableContent } from '../../../MobileCarousel/styled';
+import { eventsSlideGallery } from '../../../../constants/galleries/mainPageImages';
 
 const GiftAdvertisementSlide = () => {
   return (
@@ -23,11 +24,11 @@ const GiftAdvertisementSlide = () => {
 
       {isMobile ? (
         <HoverScalableContent>
-          <NewCarousel />
+          <NewCarousel gallery={eventsSlideGallery} />
         </HoverScalableContent>
       ) : (
         <PageContentWrapper>
-          <NewCarousel slidesToShow={3} />
+          <NewCarousel slidesToShow={3} gallery={eventsSlideGallery} />
         </PageContentWrapper>
       )}
     </GiftAdvertisementSlideWrapper>
