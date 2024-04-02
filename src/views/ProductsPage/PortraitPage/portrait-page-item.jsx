@@ -3,9 +3,10 @@ import {
   ArtButtonWrapper,
   BeautyArtInformation,
 } from './styled';
-import ArtButton from '../../../components/Button/ArtButton';
 import { isMobile } from 'react-device-detect';
 import './portrait-page.css';
+import { useConsultationDialog } from '../../../components/Autumn2023Update/ConsultationDialogProvider';
+import { Button } from '@mui/material';
 
 const PortraitPageItem = ({
   portraitTitle,
@@ -13,6 +14,8 @@ const PortraitPageItem = ({
   portraitDescription,
   reverse,
 }) => {
+  const { onOpen } = useConsultationDialog();
+
   return (
     <ProductPageItemInfoBlock reverse={reverse}>
       <BeautyArtInformation reverse={reverse}>
@@ -34,7 +37,9 @@ const PortraitPageItem = ({
 
       {!isMobile && (
         <ArtButtonWrapper>
-          <ArtButton />
+          <Button variant="contained" onClick={onOpen}>
+            Получить консультацию
+          </Button>
         </ArtButtonWrapper>
       )}
     </ProductPageItemInfoBlock>
