@@ -8,6 +8,7 @@ import { isMobile } from 'react-device-detect';
 import ContactsSticky from '../../components/Pages/ContactsSticky';
 import PreviewPhotoDialog from '../../components/PreviewPhotoDialog';
 import { productPageData } from '../../constants/mainConstants';
+import { ProductPageWrapper } from './styled';
 
 const ProductsPage = () => {
   const productPageDataArray = Object.values(productPageData);
@@ -50,7 +51,7 @@ const ProductsPage = () => {
   };
 
   return (
-    <div className="products-page__wrapper">
+    <ProductPageWrapper>
       {productPageDataArray.map((props, idx) => (
         <ProductPageItem
           {...props}
@@ -79,7 +80,7 @@ const ProductsPage = () => {
       />
 
       {isMobile ? <ContactsSticky /> : null}
-    </div>
+    </ProductPageWrapper>
   );
 };
 
