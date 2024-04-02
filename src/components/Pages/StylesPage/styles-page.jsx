@@ -3,10 +3,12 @@ import { HashLink as Link } from 'react-router-hash-link';
 import { MainPageItemWrapper } from '../../../views/MainPage/styled';
 import { useTranslation } from 'react-i18next';
 import i18n from '../../../i18n';
-import StylesTitle from './StylesPageTitle/StylesTitle';
 import StylesButton from '../../Button/StylesButton';
 import { isMobile } from 'react-device-detect';
 import { DesktopStylesPageWrapper, StylesImageWrapper } from './styled';
+import YellowBrash from '../../../images/brashes/brash4.svg';
+import BrashTitle from '../../Autumn2023Update/BrashTitle';
+import { Typography } from '@mui/material';
 
 const stylesData = [
   {
@@ -89,7 +91,10 @@ const StylesPage = () => {
     <DesktopStylesPageWrapper>
       <MainPageItemWrapper>
         <div className="styles-page__general">
-          <StylesTitle />
+          <BrashTitle brashSrc={YellowBrash} translateY={-12} translateX={-5}>
+            <Typography variant="h4">Стили и цены</Typography>
+          </BrashTitle>
+
           <div className="styles-art">
             {stylesData.map(
               ({ nameKey, imgSrc, enPrice, ruPrice, linkTo }, index) => (
