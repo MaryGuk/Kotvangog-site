@@ -11,7 +11,6 @@ const MuiButton = {
       padding: '6px 25px',
       fontSize: '0.9rem',
       borderRadius: '25px',
-      width: '200px',
       boxShadow: shadows[1],
       textTransform: 'none',
     },

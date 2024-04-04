@@ -8,7 +8,7 @@ const ButtonBlock = ({ ...props }) => {
   return (
     <OilCanvasGridButtonBlockWrapper {...props}>
       <Button variant="contained" onClick={onOpen}>
-        Рассчитать стоимость + подарок
+        Рассчитать стоимость
       </Button>
     </OilCanvasGridButtonBlockWrapper>
   );
