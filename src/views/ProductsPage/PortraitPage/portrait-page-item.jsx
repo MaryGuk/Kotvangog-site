@@ -6,7 +6,7 @@ import {
 import { isMobile } from 'react-device-detect';
 import './portrait-page.css';
 import { useConsultationDialog } from '../../../components/Autumn2023Update/ConsultationDialogProvider';
-import { Button } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 
 const PortraitPageItem = ({
   portraitTitle,
@@ -28,10 +28,21 @@ const PortraitPageItem = ({
             />
           </div>
         </div>
-        <div className="beauty-art__title">{portraitTitle}</div>
-        <div className="beauty-art__price">{` ${portraitPrice} `}</div>
+
+        <div className="beauty-art__title">
+          <Typography variant="h2" textAlign="start">
+            {portraitTitle}
+          </Typography>
+        </div>
+
+        <Typography variant="h2" textAlign="start">
+          {portraitPrice}
+        </Typography>
+
         {!isMobile && (
-          <div className="beauty-art__description">{portraitDescription}</div>
+          <Typography variant="body2" textAlign="start">
+            {portraitDescription}
+          </Typography>
         )}
       </BeautyArtInformation>
 
