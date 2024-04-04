@@ -38,7 +38,7 @@ export const StylesImageWrapper = styled(Box)`
 export const DesktopStylesPageWrapper = styled(Box)`
   display: flex;
   justify-content: center;
-  padding: 65px 10%;
+  padding: 65px 10% 0;
   box-sizing: border-box;
 
   background: ${({ theme }) => theme.palette.background.default};
