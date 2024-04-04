@@ -104,7 +104,11 @@ const FirstPage = () => {
             </FirstPageInfoMessage>
 
             <ArrowGrayContainer>
-              <img height="45px" src="/images/background/arrow first.png" alt="" />
+              <img
+                height="45px"
+                src="/images/background/arrow first.png"
+                alt=""
+              />
             </ArrowGrayContainer>
 
             <MainButton />
@@ -147,7 +151,13 @@ const FirstPage = () => {
                 },
               ].map(({ src, key }) => (
                 <CarouselImageWrapper key={key}>
-                  <img src={src} key={key} loading="lazy" decoding="async" alt="" />
+                  <img
+                    src={src}
+                    key={key}
+                    loading="lazy"
+                    decoding="async"
+                    alt=""
+                  />
                 </CarouselImageWrapper>
               ))}
             </Carousel>
