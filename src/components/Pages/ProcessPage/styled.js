@@ -135,6 +135,7 @@ export const ProcessItemVideoStepWrapper = styled(Box)`
 export const ProcessItemStepVideoWrapper = styled(Box)``;
 
 export const MasterInfoBlockWrapper = styled(Box)`
+  padding: 40px 0 0;
   display: grid;
   flex-direction: column;
   gap: 0 110px;
