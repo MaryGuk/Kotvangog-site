@@ -229,10 +229,6 @@ export const OfferButtonWrapper = styled(Box)`
     }
   }
 
-  & > * > * > button {
-    background-color: ${({ buttonColor }) => buttonColor};
-  }
-
   ${mobileStyles(`
     left: 10px;
     bottom: 25px;

@@ -1,5 +1,4 @@
 import shadows from '../shadows';
-import palette from '../palette';
 
 const MuiButton = {
   styleOverrides: {
@@ -14,7 +13,6 @@ const MuiButton = {
       borderRadius: '25px',
       boxShadow: shadows[1],
       textTransform: 'none',
-      color: palette.text.primary,
     },
   },
 };

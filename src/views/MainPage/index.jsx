@@ -14,11 +14,8 @@ import GiftAdvertisementSlide from '../../components/Autumn2023Update/MainPage/G
 import OilCanvasArea from '../../components/Autumn2023Update/MainPage/OilCanvasArea';
 import ArtStylesArea from '../../components/Autumn2023Update/MainPage/ArtStylesArea';
 import { mainSlideAdvantages } from '../../constants/mainConstants';
-import { useTheme } from '@mui/material/styles';
 
 const MainPage = () => {
-  const theme = useTheme();
-
   return (
     <MainPageWrapper>
       {isMobile && (
@@ -32,7 +29,7 @@ const MainPage = () => {
         advantages={mainSlideAdvantages}
         title="Портреты по фото маслом и на холсте"
         description="За 1 день от 1350 руб"
-        detailsColor={theme.palette.primary.main}
+        detailsColor="primary"
       />
       <GiftAdvertisementSlide />
       <OilCanvasArea />

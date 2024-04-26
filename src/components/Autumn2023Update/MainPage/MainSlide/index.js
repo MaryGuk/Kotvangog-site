@@ -13,8 +13,10 @@ import MainSlideImages from './MainSlideImage';
 import { useConsultationDialog } from '../../ConsultationDialogProvider';
 import { Button, Typography, Box } from '@mui/material';
 import { isMobile } from 'react-device-detect';
+import { useTheme } from '@mui/material/styles';
 
 const MainSlide = ({ advantages, title, description, detailsColor }) => {
+  const theme = useTheme();
   const { onOpen } = useConsultationDialog();
 
   return (
@@ -38,15 +40,18 @@ const MainSlide = ({ advantages, title, description, detailsColor }) => {
                 <Typography variant="body2">{description}</Typography>
               </MainSlideTitleDescriptionWrapper>
             </MainSlideTitleWrapper>
-            <Advantages advantages={advantages} iconsColor={detailsColor} />
+            <Advantages
+              advantages={advantages}
+              iconsColor={theme.palette[detailsColor].main}
+            />
             <Offer />
           </Box>
         </MainSlideDesktopWrapper>
       </MainSlideContentWrapper>
-      <OfferButtonWrapper buttonColor={detailsColor}>
+      <OfferButtonWrapper>
         <Box display="flex" justifyContent="center" alignItems="center">
           <Box display="flex">
-            <Button variant="contained" onClick={onOpen}>
+            <Button variant="contained" color={detailsColor} onClick={onOpen}>
               Получить подарок
             </Button>
           </Box>
