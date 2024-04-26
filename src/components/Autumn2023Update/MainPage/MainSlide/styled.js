@@ -238,7 +238,6 @@ export const OfferButtonWrapper = styled(Box)`
     bottom: 25px;
    
     & > div {
-      width: min-content;
       padding: 0;
       
       & > div {
