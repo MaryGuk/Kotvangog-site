@@ -1,5 +1,4 @@
 import './LikenessPortrait2/likeness-portrait2.jsx';
-import { Box } from '@mui/material';
 import ModernImages from './ModernImages';
 import Footer from '../../../components/Pages/Footer/footer.jsx';
 import LikenessSize from '../PortraitSizes/LikenessSize';
@@ -10,10 +9,11 @@ import ContactsSticky from '../../../components/Pages/ContactsSticky';
 import LikenessMobile from './LikenessPortrait2/LikenessMobile/index.jsx';
 import MainSlide from '../../../components/Autumn2023Update/MainPage/MainSlide';
 import { likenessSlideAdvantages } from '../../../constants/mainConstants';
+import { LikenessPortraitPageWrapper } from './styled';
 
 const LikenessPortraitPage = () => {
   return (
-    <Box>
+    <LikenessPortraitPageWrapper>
       {
         isMobile ? (
           <LikenessMobile />
@@ -31,7 +31,7 @@ const LikenessPortraitPage = () => {
       <LikenessSize />
       {isMobile ? <FooterMobile /> : <Footer />}
       {isMobile ? <ContactsSticky /> : null}
-    </Box>
+    </LikenessPortraitPageWrapper>
   );
 };
 
