@@ -10,11 +10,8 @@ import ContactsSticky from '../../../components/Pages/ContactsSticky';
 import LikenessMobile from './LikenessPortrait2/LikenessMobile/index.jsx';
 import MainSlide from '../../../components/Autumn2023Update/MainPage/MainSlide';
 import { likenessSlideAdvantages } from '../../../constants/mainConstants';
-import { useTheme } from '@mui/material/styles';
 
 const LikenessPortraitPage = () => {
-  const theme = useTheme();
-
   return (
     <Box>
       {
@@ -25,7 +22,7 @@ const LikenessPortraitPage = () => {
             advantages={likenessSlideAdvantages}
             title="Портрет в образе"
             description="За 1 день от 1350 руб"
-            detailsColor={theme.palette.secondary.main}
+            detailsColor="secondary"
           />
         )
         // <LikenessPortrait2 />

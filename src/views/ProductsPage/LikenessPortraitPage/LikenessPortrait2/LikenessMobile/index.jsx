@@ -30,12 +30,10 @@ import { Link } from 'react-router-dom';
 import { isMobile } from 'react-device-detect';
 import MainSlide from '../../../../../components/Autumn2023Update/MainPage/MainSlide';
 import { likenessSlideAdvantages } from '../../../../../constants/mainConstants';
-import { useTheme } from '@mui/material/styles';
 
 const LikenessMobile = () => {
   const { t } = useTranslation();
   const [modalActive, setModalActive] = useState(false);
-  const theme = useTheme();
 
   return (
     <LikenessPortraitWrapper2 id="/Likeness-portrait">
@@ -43,7 +41,7 @@ const LikenessMobile = () => {
         advantages={likenessSlideAdvantages}
         title="Портрет в образе"
         description="За 1 день от 1350 руб"
-        detailsColor={theme.palette.secondary.main}
+        detailsColor="secondary"
       />
 
       <LikenessPortraitGeneral2>
