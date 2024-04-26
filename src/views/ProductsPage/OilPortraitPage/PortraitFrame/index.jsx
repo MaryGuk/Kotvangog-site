@@ -6,17 +6,17 @@ import {
   PortraitFrameContentText,
   PortraitFrameContentCarousel,
 } from './styled';
-import BrashTitle from '../../../../components/Autumn2023Update/BrashTitle';
-import YellowBrash from '../../../../images/brashes/brash4.svg';
+import BrushTitle from '../../../../components/Autumn2023Update/BrushTitle';
+import YellowBrush from '../../../../images/brushes/brush4.svg';
 
 const PortraitFrame = () => {
   return (
     <PortraitFrameWrapper>
       <PortraitFrameContent>
         <PortraitFrameContentText>
-          <BrashTitle brashSrc={YellowBrash} translateY={-10}>
+          <BrushTitle brushSrc={YellowBrush} translateY={-10}>
             <Typography variant="h4">Портрет в раме</Typography>
-          </BrashTitle>
+          </BrushTitle>
         </PortraitFrameContentText>
         <PortraitFrameContentCarousel>
           <Carousel

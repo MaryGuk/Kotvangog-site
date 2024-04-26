@@ -1,14 +1,14 @@
 import './PortraitSizesTitle.css';
-import BrashTitle from '../../../../../components/Autumn2023Update/BrashTitle';
+import BrushTitle from '../../../../../components/Autumn2023Update/BrushTitle';
 import { Typography } from '@mui/material';
-import YellowBrash from '../../../../../images/brashes/brash4.svg';
+import YellowBrush from '../../../../../images/brushes/brush4.svg';
 
 const PortraitSizesTitle = () => {
   return (
     <div className="portrait-sizes__title-wrapper">
-      <BrashTitle brashSrc={YellowBrash} translateY={-13}>
+      <BrushTitle brushSrc={YellowBrush} translateY={-13}>
         <Typography variant="h4">Размеры и цены</Typography>
-      </BrashTitle>
+      </BrushTitle>
     </div>
   );
 };

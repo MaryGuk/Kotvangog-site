@@ -1,16 +1,16 @@
 import { OilCanvasGridPrimaryBlockWrapper } from '../styled';
 import { Box, Typography } from '@mui/material';
-import BrashTitle from '../../../BrashTitle';
+import BrushTitle from '../../../BrushTitle';
 import ButtonBlock from './ButtonBlock';
 import NewCarousel from '../../../NewCarousel';
 
-const PrimaryBlock = ({ imagesGallery, brashTitle, brashProps, ...props }) => {
+const PrimaryBlock = ({ imagesGallery, brushTitle, brushProps, ...props }) => {
   return (
     <OilCanvasGridPrimaryBlockWrapper {...props}>
       <Box margin="0 0 10px">
-        <BrashTitle {...brashProps}>
-          <Typography variant="subtitle1">{brashTitle}</Typography>
-        </BrashTitle>
+        <BrushTitle {...brushProps}>
+          <Typography variant="subtitle1">{brushTitle}</Typography>
+        </BrushTitle>
       </Box>
 
       <Box width="100%" display="block">

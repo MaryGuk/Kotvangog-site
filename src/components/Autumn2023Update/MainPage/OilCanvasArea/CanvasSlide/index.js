@@ -3,16 +3,16 @@ import { Box, Typography } from '@mui/material';
 import MobileCarousel from '../../../../MobileCarousel';
 import { newCanvasSlideGallery } from '../../../../../constants/galleries/mainPageImages';
 import { canvasAdvantages } from '../../../../../constants/advantages';
-import BrashTitle from '../../../BrashTitle';
-import brashSrc from '../../../../../images/brashes/brash7.svg';
+import BrushTitle from '../../../BrushTitle';
+import brushSrc from '../../../../../images/brushes/brush7.svg';
 import AdvantagesList from '../../../../AdvantagesList';
 
 const CanvasSlide = () => {
   return (
     <CanvasAreaWrapper>
-      <BrashTitle brashSrc={brashSrc} brashWidth="20rem" translateY={-5}>
+      <BrushTitle brushSrc={brushSrc} brushWidth="20rem" translateY={-5}>
         <Typography variant="h4">Портрет на холсте</Typography>
-      </BrashTitle>
+      </BrushTitle>
 
       <Box width="100vw" display="block">
         <MobileCarousel

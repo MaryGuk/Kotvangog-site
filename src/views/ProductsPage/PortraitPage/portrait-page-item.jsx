@@ -5,10 +5,10 @@ import {
 } from './styled';
 import { isMobile } from 'react-device-detect';
 import './portrait-page.css';
-import YellowBrash from '../../../images/brashes/brash4.svg';
+import YellowBrush from '../../../images/brushes/brush4.svg';
 import { useConsultationDialog } from '../../../components/Autumn2023Update/ConsultationDialogProvider';
 import { Button, Typography } from '@mui/material';
-import BrashTitle from '../../../components/Autumn2023Update/BrashTitle';
+import BrushTitle from '../../../components/Autumn2023Update/BrushTitle';
 
 const PortraitPageItem = ({
   portraitTitle,
@@ -21,11 +21,11 @@ const PortraitPageItem = ({
   return (
     <ProductPageItemInfoBlock reverse={reverse}>
       <BeautyArtInformation reverse={reverse}>
-        <BrashTitle brashSrc={YellowBrash} brashWidth="18rem">
+        <BrushTitle brushSrc={YellowBrush} brushWidth="18rem">
           <Typography variant="h2" textAlign="start">
             {portraitTitle}
           </Typography>
-        </BrashTitle>
+        </BrushTitle>
 
         <Typography variant="h2" textAlign="start">
           {portraitPrice}

@@ -4,8 +4,8 @@ import { MainPageItemWrapper } from '../../../views/MainPage/styled';
 import { ProcessMobileContent } from './styled';
 import { useTranslation } from 'react-i18next';
 import ProcessPageTitle from './ProcessPageTitle/ProcessPageTitle';
-import BrashTitle from '../../Autumn2023Update/BrashTitle';
-import brashSrc from '../../../images/brashes/brash7.svg';
+import BrushTitle from '../../Autumn2023Update/BrushTitle';
+import brushSrc from '../../../images/brushes/brush7.svg';
 import { Typography, Box } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
@@ -19,14 +19,14 @@ const ProcessPage = () => {
         <div className="process-page__general">
           <ProcessPageTitle />
           <ProcessMobileContent>
-            <BrashTitle
-              brashSrc={brashSrc}
-              brashWidth="20rem"
+            <BrushTitle
+              brushSrc={brushSrc}
+              brushWidth="20rem"
               translateY={-6}
               translateX={6}
             >
               <Typography variant="h4">Как дизайнер рисует портрет</Typography>
-            </BrashTitle>
+            </BrushTitle>
           </ProcessMobileContent>
 
           <div className="process-page__container">
