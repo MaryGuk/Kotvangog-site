@@ -8,8 +8,9 @@ import {
 } from './styled';
 import ImageCarousel from '../../../components/ImageCarousel';
 import { isMobile } from 'react-device-detect';
-import ArtButton from '../../../components/Button/ArtButton';
 import { useTranslation } from 'react-i18next';
+import { useConsultationDialog } from '../../../components/Autumn2023Update/ConsultationDialogProvider';
+import { Button } from '@mui/material';
 
 const ProductPageItem = ({
   portraitTitle,
@@ -23,6 +24,7 @@ const ProductPageItem = ({
   setFullImageIdx,
 }) => {
   const { t } = useTranslation();
+  const { onOpen } = useConsultationDialog();
 
   return (
     <div className="beauty-art__page">
@@ -64,7 +66,11 @@ const ProductPageItem = ({
           galleryImages={galleryImages}
           reverse={reverse}
         />
-        {isMobile && <ArtButton />}
+        {isMobile && (
+          <Button variant="contained" color="secondary" onClick={onOpen}>
+            Получить консультацию
+          </Button>
+        )}
       </div>
     </div>
   );
