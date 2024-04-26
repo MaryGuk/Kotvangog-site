@@ -25,9 +25,9 @@ import PreviewPhotoDialog from '../../../../components/PreviewPhotoDialog';
 import usePreviewPhotoDialogState from '../../../../components/PreviewPhotoDialog/usePreviewPhotoDialogState';
 import { modernImages } from '../../../../constants/galleries/modernImages';
 import { historyImages } from '../../../../constants/galleries/historyImages';
-import BrashTitle from '../../../../components/Autumn2023Update/BrashTitle';
+import BrushTitle from '../../../../components/Autumn2023Update/BrushTitle';
 import { BestGiftHeaderSmearSrc } from '../../../../constants/galleries/smears';
-import brashSrc from '../../../../images/brashes/brash7.svg';
+import brushSrc from '../../../../images/brushes/brush7.svg';
 
 const ModernImages = () => {
   const {
@@ -42,14 +42,14 @@ const ModernImages = () => {
   return (
     <ModernImagesWrapper>
       <ModernImagesGeneral>
-        <BrashTitle
-          brashSrc={BestGiftHeaderSmearSrc}
+        <BrushTitle
+          brushSrc={BestGiftHeaderSmearSrc}
           translateX={0}
           translateY={0}
-          brashWidth="20rem"
+          brushWidth="20rem"
         >
           <Typography variant="h4">Современные образы</Typography>
-        </BrashTitle>
+        </BrushTitle>
         <ModernImagesContent>
           <ModernImagesDescription>
             <Typography variant="body2">
@@ -83,9 +83,9 @@ const ModernImages = () => {
             }}
           />
         )}
-        <BrashTitle brashSrc={brashSrc} brashWidth="20rem" translateY={-5}>
+        <BrushTitle brushSrc={brushSrc} brushWidth="20rem" translateY={-5}>
           <Typography variant="h4">Исторические образы</Typography>
-        </BrashTitle>
+        </BrushTitle>
         <ModernImagesContent>
           <ModernImagesDescription>
             <Typography variant="body2">

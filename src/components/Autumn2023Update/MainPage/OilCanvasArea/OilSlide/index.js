@@ -1,12 +1,12 @@
 import {
   AdvantagesListWrapper,
   OilAreaWrapper,
-  OilTitleBrashWrapper,
+  OilTitleBrushWrapper,
   OilTitleTextWrapper,
   OilTitleWrapper,
   OilSlideCarouselWrapper,
 } from '../styled';
-import Brash from '../../../../../images/brashes/brash4.svg';
+import Brush from '../../../../../images/brushes/brush4.svg';
 import { Typography } from '@mui/material';
 import MobileCarousel from '../../../../MobileCarousel';
 import { oilSlideFramesGallery } from '../../../../../constants/galleries/mainPageImages';
@@ -18,9 +18,9 @@ const OilSlide = ({ customTitle }) => {
     <OilAreaWrapper>
       {customTitle ?? (
         <OilTitleWrapper>
-          <OilTitleBrashWrapper>
-            <img src={Brash} alt="background-brash" />
-          </OilTitleBrashWrapper>
+          <OilTitleBrushWrapper>
+            <img src={Brush} alt="background-brush" />
+          </OilTitleBrushWrapper>
 
           <OilTitleTextWrapper>
             <Typography variant="subtitle1">Портрет маслом</Typography>

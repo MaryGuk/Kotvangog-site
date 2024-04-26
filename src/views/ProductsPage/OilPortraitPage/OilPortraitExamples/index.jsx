@@ -11,9 +11,9 @@ import MobileCarousel from '../../../../components/MobileCarousel';
 import usePreviewPhotoDialogState from '../../../../components/PreviewPhotoDialog/usePreviewPhotoDialogState';
 import { photosData } from '../../../../constants/galleries/photosData';
 import { Box, Typography } from '@mui/material';
-import BrashTitle from '../../../../components/Autumn2023Update/BrashTitle';
+import BrushTitle from '../../../../components/Autumn2023Update/BrushTitle';
 
-import BlueBrash from '../../../../images/brashes/brash5.svg';
+import BlueBrush from '../../../../images/brushes/brush5.svg';
 
 const adaptivePhotosData = isMobile
   ? [0, 7, 6, 2, 1, 5, 3, 4].map((i) => photosData[i])
@@ -32,9 +32,9 @@ const OilPortraitExamples = () => {
   return (
     <OilPortraitExamplesWrapper>
       <OilPortraitExamplesGeneral>
-        <BrashTitle brashSrc={BlueBrash} translateY={-10}>
+        <BrushTitle brushSrc={BlueBrush} translateY={-10}>
           <Typography variant="h4">Примеры</Typography>
-        </BrashTitle>
+        </BrushTitle>
         <OilPortraitExamplesContent>
           {isMobile ? (
             <Box p="30px 2px">

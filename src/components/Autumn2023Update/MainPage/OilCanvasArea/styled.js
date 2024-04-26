@@ -32,7 +32,7 @@ export const OilTitleTextWrapper = styled(Box)`
   z-index: 100;
 `;
 
-export const OilTitleBrashWrapper = styled(Box)`
+export const OilTitleBrushWrapper = styled(Box)`
   display: flex;
   width: 14rem;
   position: absolute;

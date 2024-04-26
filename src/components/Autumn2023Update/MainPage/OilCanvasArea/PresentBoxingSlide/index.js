@@ -1,6 +1,6 @@
-import BrashTitle from '../../../BrashTitle';
+import BrushTitle from '../../../BrushTitle';
 import { Button, Typography } from '@mui/material';
-import brashSrc from '../../../../../images/brashes/brash7.svg';
+import brushSrc from '../../../../../images/brushes/brush7.svg';
 import {
   PresentBoxingAreaWrapper,
   PresentButtonWrapper,
@@ -19,22 +19,22 @@ const PresentBoxingSlide = () => {
       {isMobile ? (
         <>
           <Typography variant="h4">Премиальная подарочная</Typography>
-          <BrashTitle brashSrc={brashSrc} brashWidth="20rem" translateY={-9}>
+          <BrushTitle brushSrc={brushSrc} brushWidth="20rem" translateY={-9}>
             <Typography variant="h4">упаковка бесплатно</Typography>
-          </BrashTitle>
+          </BrushTitle>
         </>
       ) : (
-        <BrashTitle
-          brashSrc={brashSrc}
+        <BrushTitle
+          brushSrc={brushSrc}
           reverseImage
-          brashWidth="20.5rem"
+          brushWidth="20.5rem"
           translateY={-11}
           translateX={-20}
         >
           <Typography variant="h4">
             Премиальная подарочная упаковка бесплатно
           </Typography>
-        </BrashTitle>
+        </BrushTitle>
       )}
 
       <PresentImagesWrapper>

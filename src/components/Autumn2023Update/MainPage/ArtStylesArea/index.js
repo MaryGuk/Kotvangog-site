@@ -1,7 +1,7 @@
 import { ArtStylesAreaWrapper } from './styled';
 import ArtStyleSlide from './artStyleSlide';
-import YellowBrash from '../../../../images/brashes/brash4.svg';
-import BlueBrash from '../../../../images/brashes/brash5.svg';
+import YellowBrush from '../../../../images/brushes/brush4.svg';
+import BlueBrush from '../../../../images/brushes/brush5.svg';
 import {
   artStylesData,
   likenessPhotos,
@@ -13,17 +13,17 @@ const ArtStylesArea = () => {
     <ArtStylesAreaWrapper>
       <ArtStyleSlide
         slideTitle="Арт стили"
-        brashSrc={BlueBrash}
+        brushSrc={BlueBrush}
         gallery={artStylesData}
       />
       <ArtStyleSlide
         slideTitle="Портрет в образе"
-        brashSrc={YellowBrash}
+        brushSrc={YellowBrush}
         gallery={likenessPhotos}
       />
       <ArtStyleSlide
         slideTitle="Портрет питомца"
-        brashSrc={BlueBrash}
+        brushSrc={BlueBrush}
         gallery={petsPhotos}
       />
     </ArtStylesAreaWrapper>

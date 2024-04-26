@@ -1,5 +1,5 @@
 import './processMobileTitle.css';
-import brashSrc from '../../../../images/brashes/brash7.svg';
+import brushSrc from '../../../../images/brushes/brush7.svg';
 
 const ProcessMobileTitle = () => {
   return (
@@ -8,7 +8,7 @@ const ProcessMobileTitle = () => {
         <div className="process-mobile-page__title-background">
           <img
             className="process-mobile__title-background-image"
-            src={brashSrc}
+            src={brushSrc}
             alt=""
           />
         </div>

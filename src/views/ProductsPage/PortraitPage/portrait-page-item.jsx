@@ -5,8 +5,10 @@ import {
 } from './styled';
 import { isMobile } from 'react-device-detect';
 import './portrait-page.css';
+import YellowBrush from '../../../images/brushes/brush4.svg';
 import { useConsultationDialog } from '../../../components/Autumn2023Update/ConsultationDialogProvider';
 import { Button, Typography } from '@mui/material';
+import BrushTitle from '../../../components/Autumn2023Update/BrushTitle';
 
 const PortraitPageItem = ({
   portraitTitle,
@@ -19,21 +21,11 @@ const PortraitPageItem = ({
   return (
     <ProductPageItemInfoBlock reverse={reverse}>
       <BeautyArtInformation reverse={reverse}>
-        <div>
-          <div className="beauty__title-background">
-            <img
-              className="beauty__title-background-image"
-              src="/images/background/арт стили волна.png"
-              alt=""
-            />
-          </div>
-        </div>
-
-        <div className="beauty-art__title">
+        <BrushTitle brushSrc={YellowBrush} brushWidth="18rem">
           <Typography variant="h2" textAlign="start">
             {portraitTitle}
           </Typography>
-        </div>
+        </BrushTitle>
 
         <Typography variant="h2" textAlign="start">
           {portraitPrice}
@@ -48,7 +40,7 @@ const PortraitPageItem = ({
 
       {!isMobile && (
         <ArtButtonWrapper>
-          <Button variant="contained" onClick={onOpen}>
+          <Button variant="contained" color="secondary" onClick={onOpen}>
             Получить консультацию
           </Button>
         </ArtButtonWrapper>

@@ -6,8 +6,8 @@ import i18n from '../../../i18n';
 import StylesButton from '../../Button/StylesButton';
 import { isMobile } from 'react-device-detect';
 import { DesktopStylesPageWrapper, StylesImageWrapper } from './styled';
-import YellowBrash from '../../../images/brashes/brash4.svg';
-import BrashTitle from '../../Autumn2023Update/BrashTitle';
+import YellowBrush from '../../../images/brushes/brush4.svg';
+import BrushTitle from '../../Autumn2023Update/BrushTitle';
 import { Typography } from '@mui/material';
 
 const stylesData = [
@@ -91,9 +91,9 @@ const StylesPage = () => {
     <DesktopStylesPageWrapper>
       <MainPageItemWrapper>
         <div className="styles-page__general">
-          <BrashTitle brashSrc={YellowBrash} translateY={-12} translateX={-5}>
+          <BrushTitle brushSrc={YellowBrush} translateY={-12} translateX={-5}>
             <Typography variant="h4">Стили и цены</Typography>
-          </BrashTitle>
+          </BrushTitle>
 
           <div className="styles-art">
             {stylesData.map(

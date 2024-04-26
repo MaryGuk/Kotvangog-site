@@ -13,6 +13,6 @@ export const ArtStyleSlideWrapper = styled(Box)`
   padding: 0 0 20px;
 `;
 
-export const BrashTitleWrapper = styled(Box)`
+export const BrushTitleWrapper = styled(Box)`
   padding: 10px 0 15px;
 `;

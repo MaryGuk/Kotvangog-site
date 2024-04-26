@@ -1,7 +1,7 @@
 import { OilCanvasDesktopGridWrapper } from '../styled';
 import PrimaryBlock from './PrimaryBlock';
 import SecondaryBlock from './SecondaryBlock';
-import YellowBrashSrc from '../../../../../images/brashes/brash6.svg';
+import YellowBrushSrc from '../../../../../images/brushes/brush6.svg';
 import {
   newCanvasSlideGallery,
   oilSlideFramesGallery,
@@ -10,7 +10,7 @@ import {
   canvasAdvantages,
   oilAdvantages,
 } from '../../../../../constants/advantages';
-import PurpleBrashSrc from '../../../../../images/brashes/brash7.svg';
+import PurpleBrushSrc from '../../../../../images/brushes/brush7.svg';
 
 const OilCanvasDesktopGrid = () => {
   return (
@@ -19,12 +19,12 @@ const OilCanvasDesktopGrid = () => {
         gridRow="1 / 3"
         gridColumn="1"
         imagesGallery={newCanvasSlideGallery}
-        brashProps={{
-          brashSrc: PurpleBrashSrc,
-          brashWidth: '17rem',
+        brushProps={{
+          brushSrc: PurpleBrushSrc,
+          brushWidth: '17rem',
           translateY: 15,
         }}
-        brashTitle="портрет на холсте"
+        brushTitle="портрет на холсте"
       />
       <SecondaryBlock
         gridRow="1"
@@ -39,13 +39,13 @@ const OilCanvasDesktopGrid = () => {
         title="портрет маслом"
         imagesGallery={oilSlideFramesGallery}
         justifyContent="flex-end"
-        brashProps={{
-          brashSrc: YellowBrashSrc,
-          brashWidth: '23rem',
+        brushProps={{
+          brushSrc: YellowBrushSrc,
+          brushWidth: '23rem',
           translateY: 15,
           translateX: 10,
         }}
-        brashTitle="портрет на маслом"
+        brushTitle="портрет на маслом"
       />
       <SecondaryBlock
         padding="0 0 40px"
