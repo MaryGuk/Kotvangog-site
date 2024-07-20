@@ -14,7 +14,7 @@ const PrimaryBlock = ({ imagesGallery, brushTitle, brushProps, ...props }) => {
       </Box>
 
       <Box width="100%" display="block">
-        <NewCarousel gallery={imagesGallery} />
+        <NewCarousel gallery={imagesGallery} width={500} height={600} />
       </Box>
 
       <ButtonBlock />
