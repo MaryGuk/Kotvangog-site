@@ -60,6 +60,12 @@ export const presentSlideImages = [
   'https://www.dropbox.com/scl/fi/3xxekf95nprcdxe7qqn69/IMG_5550_400px_progressive.jpg?rlkey=f003mx3rz141osunmap3xcu8a&dl=0',
 ].map(normalizeDropBoxLink);
 
+export const presentSlideImagesCloudinary = [
+  'kot-vangog/main-page/5-present/bsjepym4xmjodxggudki',
+  'kot-vangog/main-page/5-present/e0qomrvgt14pm767t681',
+  'kot-vangog/main-page/5-present/zy48nmd1ou3hacdfgrmn',
+];
+
 export const eventsSlideGallery = [
   {
     imageSrc:
