@@ -157,6 +157,7 @@ export const OilCanvasGridButtonBlockWrapper = styled(Box)`
 export const OilSlideCarouselWrapper = styled(Box)`
   display: block;
   max-width: 500px;
+  padding: 15px 0 0;
 
   ${mobileStyles(`
     width: 100vw;
