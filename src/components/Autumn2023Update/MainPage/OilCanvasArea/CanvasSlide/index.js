@@ -14,8 +14,8 @@ const CanvasSlide = () => {
         <Typography variant="h4">Портрет на холсте</Typography>
       </BrushTitle>
 
-      <Box width="100vw" display="block">
-        <NewCarousel gallery={newCanvasSlideGallery} width={600} height={760} />
+      <Box width="100vw" display="block" pt="15px">
+        <NewCarousel gallery={newCanvasSlideGallery} width={620} height={760} />
       </Box>
 
       <CanvasAdvantagesListWrapper>
