@@ -8,7 +8,7 @@ const AdvantagesList = ({ advantages, reverse }) => {
       <List>
         {advantages?.map(
           ({ advantageText, endAdornment, reverseEndAdornment }, idx) => (
-            <ListItem key={idx} mar>
+            <ListItem key={idx}>
               <ListItemIcon>
                 <img src={Marker} alt="marker" />
               </ListItemIcon>

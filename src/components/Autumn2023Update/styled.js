@@ -38,6 +38,10 @@ export const NewCarouselItemWrapper = styled(Box)`
   padding: 0 10px;
   width: 30%;
   box-sizing: border-box;
+
+  & > img {
+    width: 100%;
+  }
 `;
 
 export const NewCarouselItemDescriptionWrapper = styled(Box)`

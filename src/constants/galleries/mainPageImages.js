@@ -9,23 +9,62 @@ export const mainSlideFramesGallery = [
   'https://www.dropbox.com/scl/fi/xh7b71oj3zv9ni2k1o3lz/00011_750px.png?rlkey=lk58et701rajag48gwb38i7ek&dl=0',
 ].map(normalizeDropBoxLink);
 
-// TODO : add 500px for PC OilCanvasGrid
+export const mainSlideFramesGalleryCloudinary = [
+  'kot-vangog/main-page/1-main-slide/axqqq3ine0ooj458oqwy',
+  'kot-vangog/main-page/1-main-slide/hph9ij9bqwbtv8sr7g0a',
+  'kot-vangog/main-page/1-main-slide/ahevgvleiutadcyqemk1',
+  'kot-vangog/main-page/1-main-slide/p7tblpkourpeqkiabzsp',
+  'kot-vangog/main-page/1-main-slide/el1ynmhpphku8wyyhpdv',
+];
+
 export const oilSlideFramesGallery = [
-  'https://www.dropbox.com/scl/fi/mn8fa7t724hzl452r862y/00001_1000px_progressive.jpg?rlkey=wwuxtfni2vlvdt3pqx30x7wzv&dl=0',
-  'https://www.dropbox.com/scl/fi/g7gnzy4xe9k174chj4azx/00002_1000px_progressive.jpg?rlkey=ur6gdsjtnxxfgo6nwxdb52ba5&dl=0',
-  'https://www.dropbox.com/scl/fi/nqxdeh46o7k9bkleenapx/00003_1000px_progressive.jpg?rlkey=gaps5hpsb7yquu3zevm0f2tl5&dl=0',
-  'https://www.dropbox.com/scl/fi/9lvo60877jzv96deq6wdv/00004_1000px_progressive.jpg?rlkey=9su8p8709eycktyy3pc0zabnm&dl=0',
-  'https://www.dropbox.com/scl/fi/j0zmzufg9g3508pmd8o2v/00005_1000px_progressive.jpg?rlkey=jnqye4wfxmazu3v0ujbxkthxq&dl=0',
-  'https://www.dropbox.com/scl/fi/ldewdlolwccu3c6sj5r3w/00006_1000px_progressive.jpg?rlkey=ffuyac7g5dtvdy7t01furjbnn&dl=0',
-]
-  .map(normalizeDropBoxLink)
-  .map(addRedirectLink('/oil-portrait'));
+  {
+    imageSrc:
+      'https://www.dropbox.com/scl/fi/mn8fa7t724hzl452r862y/00001_1000px_progressive.jpg?rlkey=wwuxtfni2vlvdt3pqx30x7wzv&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/4-oil-slide/fod9k9f6kuhjbzrrcqyw',
+  },
+  {
+    imageSrc:
+      'https://www.dropbox.com/scl/fi/g7gnzy4xe9k174chj4azx/00002_1000px_progressive.jpg?rlkey=ur6gdsjtnxxfgo6nwxdb52ba5&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/4-oil-slide/rgdaunljku2wmmmevyi0',
+  },
+  {
+    imageSrc:
+      'https://www.dropbox.com/scl/fi/nqxdeh46o7k9bkleenapx/00003_1000px_progressive.jpg?rlkey=gaps5hpsb7yquu3zevm0f2tl5&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/4-oil-slide/oxegp3ox6r2dxnrp9c2r',
+  },
+  {
+    imageSrc:
+      'https://www.dropbox.com/scl/fi/9lvo60877jzv96deq6wdv/00004_1000px_progressive.jpg?rlkey=9su8p8709eycktyy3pc0zabnm&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/4-oil-slide/m6jpwzw3givrodhty7iq',
+  },
+  {
+    imageSrc:
+      'https://www.dropbox.com/scl/fi/j0zmzufg9g3508pmd8o2v/00005_1000px_progressive.jpg?rlkey=jnqye4wfxmazu3v0ujbxkthxq&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/4-oil-slide/hnp17xmtnfq1wrxuza9v',
+  },
+  {
+    imageSrc:
+      'https://www.dropbox.com/scl/fi/ldewdlolwccu3c6sj5r3w/00006_1000px_progressive.jpg?rlkey=ffuyac7g5dtvdy7t01furjbnn&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/4-oil-slide/jfsqpj1usgnhehwstds7',
+  },
+].map(({ imageSrc, cloudinaryId }) => ({
+  cloudinaryId,
+  imageSrc: normalizeDropBoxLink(imageSrc),
+  redirectTo: '/oil-portrait',
+}));
 
 export const presentSlideImages = [
   'https://www.dropbox.com/scl/fi/3iyzchqxez8o4acffvzj4/IMG_5213_400px_progressive.jpg?rlkey=a7k3nqll5wjzfdjfuiulujroc&dl=0',
   'https://www.dropbox.com/scl/fi/l2tnv9bu1cu3zkgw0uswd/IMG_5543_400px_progressive.jpg?rlkey=jrn6jrwoixaqkchpty671ivsc&dl=0',
   'https://www.dropbox.com/scl/fi/3xxekf95nprcdxe7qqn69/IMG_5550_400px_progressive.jpg?rlkey=f003mx3rz141osunmap3xcu8a&dl=0',
 ].map(normalizeDropBoxLink);
+
+export const presentSlideImagesCloudinary = [
+  'kot-vangog/main-page/5-present/bsjepym4xmjodxggudki',
+  'kot-vangog/main-page/5-present/e0qomrvgt14pm767t681',
+  'kot-vangog/main-page/5-present/zy48nmd1ou3hacdfgrmn',
+];
 
 export const eventsSlideGallery = [
   {
@@ -35,6 +74,7 @@ export const eventsSlideGallery = [
       'https://www.dropbox.com/scl/fi/qgatcdxvkek4tx1q3unmv/0_-_1000px_progressive.jpg?rlkey=54tyhtzxqlg6qkli0oum1uz2t&dl=0',
     imageSrc_500:
       'https://www.dropbox.com/scl/fi/hiza7onsu7vfax2itonuw/0_-_500px_progressive.jpg?rlkey=1j96g5nmk70pydfokcqn8l1yf&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/2-events-slide/hrpuk92zth8lxljijoom',
     description: 'Портрет на день рождения',
   },
   {
@@ -44,6 +84,7 @@ export const eventsSlideGallery = [
       'https://www.dropbox.com/scl/fi/ij59j7pn7emn3qu84nxek/1_-_1000px_progressive.jpg?rlkey=jn4ocihsf4gtz95xm61zs29mb&dl=0',
     imageSrc_500:
       'https://www.dropbox.com/scl/fi/pmgh7c618unxuj6zm9yuz/1_-_500px_progressive.jpg?rlkey=fw2w83p0i4hkqa9vsotjcuk3l&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/2-events-slide/nmlsemg2kyqpji3acp2v',
     description: 'Портрет на  новый год',
   },
   {
@@ -53,6 +94,7 @@ export const eventsSlideGallery = [
       'https://www.dropbox.com/scl/fi/p0ib5lvv56zf8267bfr5j/2_-_1000px_progressive.jpg?rlkey=uesdedv2gnryra699bpmbur09&dl=0',
     imageSrc_500:
       'https://www.dropbox.com/scl/fi/yhckfquxc8yubcshesn5e/2_-_500px_progressive.jpg?rlkey=6cinnuv5jsdfgf79m51geidco&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/2-events-slide/gseroanicmr3uhu3we1t',
     description: 'Портрет на  день влюбленных',
   },
   {
@@ -62,6 +104,7 @@ export const eventsSlideGallery = [
       'https://www.dropbox.com/scl/fi/gohhwf8uaml6zkhf4ka05/4_-23-_1000px_progressive.jpg?rlkey=jyqccz3pz9v7cfwqvtqrupyei&dl=0',
     imageSrc_500:
       'https://www.dropbox.com/scl/fi/ozrhl1mzb7j7vhmw3g3pf/4_-23-_500px_progressive.jpg?rlkey=q1l9edlw98o3yuh8yeugndyvx&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/2-events-slide/c4pvoffsakos0rlqbvut',
     description: 'Портрет на  23 февраля',
   },
   {
@@ -71,6 +114,7 @@ export const eventsSlideGallery = [
       'https://www.dropbox.com/scl/fi/ketfebruhiikdiud34hjj/5_-_1000px_progressive.jpg?rlkey=2qk1w0d2e3hmm1gjh1bhl1v4g&dl=0',
     imageSrc_500:
       'https://www.dropbox.com/scl/fi/u0qo7zccuxi1jk73zt2lp/5_-_500px_progressive.jpg?rlkey=0fobp7app3hgaa2olqlhv65xv&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/2-events-slide/q6qtc0bkr3gavuxjyvem',
     description: 'Портрет для питомца',
   },
   {
@@ -80,14 +124,18 @@ export const eventsSlideGallery = [
       'https://www.dropbox.com/scl/fi/dhc1ljlrjmhukgxidr95w/6_-_1000px_progressive.jpg?rlkey=nd2yviqzftw3ly7u9skjk3n4t&dl=0',
     imageSrc_500:
       'https://www.dropbox.com/scl/fi/tcbicgphrxw5j81sri1ju/6_-_500px_progressive.jpg?rlkey=0ws6vr9mupwkzipnivsn2tmkf&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/2-events-slide/luasmdh5bpyqn5bucnvq',
     description: 'Портрет на  память',
   },
-].map(({ imageSrc, imageSrc_1000, imageSrc_500, description }) => ({
-  imageSrc: normalizeDropBoxLink(imageSrc),
-  imageSrc_1000: normalizeDropBoxLink(imageSrc_1000),
-  imageSrc_500: normalizeDropBoxLink(imageSrc_500),
-  description,
-}));
+].map(
+  ({ imageSrc, imageSrc_1000, imageSrc_500, description, cloudinaryId }) => ({
+    imageSrc: normalizeDropBoxLink(imageSrc),
+    imageSrc_1000: normalizeDropBoxLink(imageSrc_1000),
+    imageSrc_500: normalizeDropBoxLink(imageSrc_500),
+    cloudinaryId,
+    description,
+  })
+);
 
 export const newCanvasSlideGalleryDesktop = [
   'https://www.dropbox.com/scl/fi/cd45rc2cdllpwe6b3niak/1_5515641651_500px_progressive.jpg?rlkey=llc4fun5w7induwd52jr4j72b&dl=0',
@@ -102,7 +150,7 @@ export const newCanvasSlideGalleryDesktop = [
     addRedirectLink(`/products#${Object.values(productPageData)[0].imageId}`)
   );
 
-export const newCanvasSlideGallery = [
+export const newCanvasSlideGalleryPrev = [
   'https://www.dropbox.com/scl/fi/edrz17cq169liodv3xsig/1_5515641651_1000px_progressive.jpg?rlkey=5o5hdhg609njcmr8m6aruk5s5&dl=0',
   'https://www.dropbox.com/scl/fi/pkr85wjutme81ovi42jyd/2_453453_1000px_progressive.jpg?rlkey=d2xmjd6j0o5bs83h1lihs2vaq&dl=0',
   'https://www.dropbox.com/scl/fi/58d5ogw5ickdgwroi1qgo/3_4564_1000px_progressive.jpg?rlkey=5dv1qyhch9hbya095nxzuz3cl&dl=0',
@@ -114,3 +162,40 @@ export const newCanvasSlideGallery = [
   .map(
     addRedirectLink(`/products#${Object.values(productPageData)[0].imageId}`)
   );
+
+export const newCanvasSlideGallery = [
+  {
+    imageSrc:
+      'https://www.dropbox.com/scl/fi/edrz17cq169liodv3xsig/1_5515641651_1000px_progressive.jpg?rlkey=5o5hdhg609njcmr8m6aruk5s5&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/3-canvas-slide/rovpueykylrwtd81j0zx',
+  },
+  {
+    imageSrc:
+      'https://www.dropbox.com/scl/fi/pkr85wjutme81ovi42jyd/2_453453_1000px_progressive.jpg?rlkey=d2xmjd6j0o5bs83h1lihs2vaq&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/3-canvas-slide/wyitzgj8sqxrm9dxvtfc',
+  },
+  {
+    imageSrc:
+      'https://www.dropbox.com/scl/fi/58d5ogw5ickdgwroi1qgo/3_4564_1000px_progressive.jpg?rlkey=5dv1qyhch9hbya095nxzuz3cl&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/3-canvas-slide/qqtjx9wdfhsrrgtjtvjl',
+  },
+  {
+    imageSrc:
+      'https://www.dropbox.com/scl/fi/2519mk2d853r5bt195ktq/4_753735_1000px_progressive.jpg?rlkey=7y37zom5yhjrun6npna7c1y2x&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/3-canvas-slide/ecnpxnfd6dwbwvhl8xk8',
+  },
+  {
+    imageSrc:
+      'https://www.dropbox.com/scl/fi/zpzma0tkz22fx992l9qfx/5_56151_1000px_progressive.jpg?rlkey=1vcnddbrqnp3u5e9vz2qli25h&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/3-canvas-slide/qfjxt5q7u9pnjuwitaht',
+  },
+  {
+    imageSrc:
+      'https://www.dropbox.com/scl/fi/xcklcxgns5x42uscy7j5h/6_85451616_1000px_progressive.jpg?rlkey=s7za4lxcgoq96s2wa8zzvq2ll&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/3-canvas-slide/nljvwnc1co4sagvezg67',
+  },
+].map(({ imageSrc, cloudinaryId }) => ({
+  cloudinaryId,
+  imageSrc: normalizeDropBoxLink(imageSrc),
+  redirectTo: `/products#${Object.values(productPageData)[0].imageId}`,
+}));

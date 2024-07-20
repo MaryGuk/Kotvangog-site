@@ -24,11 +24,16 @@ const GiftAdvertisementSlide = () => {
 
       {isMobile ? (
         <HoverScalableContent>
-          <NewCarousel gallery={eventsSlideGallery} />
+          <NewCarousel gallery={eventsSlideGallery} width={500} height={700} />
         </HoverScalableContent>
       ) : (
         <PageContentWrapper>
-          <NewCarousel slidesToShow={3} gallery={eventsSlideGallery} />
+          <NewCarousel
+            slidesToShow={3}
+            gallery={eventsSlideGallery}
+            width={500}
+            height={700}
+          />
         </PageContentWrapper>
       )}
     </GiftAdvertisementSlideWrapper>

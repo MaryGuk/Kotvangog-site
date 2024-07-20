@@ -3,11 +3,15 @@ import {
   MainSlideImageCarouselWrapper,
   MainSlideCarouselItemWrapper,
 } from './styled';
-import { mainSlideFramesGallery } from '../../../../constants/galleries/mainPageImages';
+import {
+  // mainSlideFramesGallery,
+  mainSlideFramesGalleryCloudinary,
+} from '../../../../constants/galleries/mainPageImages';
 import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Box } from '@mui/system';
 import { useState } from 'react';
+import CloudinaryImage from '../../../CloudinaryImage';
 
 const MainSlideImages = () => {
   const [autoPlay, setAutoPlay] = useState(true);
@@ -30,11 +34,20 @@ const MainSlideImages = () => {
           stopOnHover
           width="120vw"
         >
-          {mainSlideFramesGallery.map((src, idx) => (
+          {/*{mainSlideFramesGallery.map((src, idx) => (*/}
+          {/*  <MainSlideCarouselItemWrapper key={idx}>*/}
+          {/*    <Box>*/}
+          {/*      <MainSlideImageWrapper>*/}
+          {/*        <img src={src} alt={'frame'} height="100%" />*/}
+          {/*      </MainSlideImageWrapper>*/}
+          {/*    </Box>*/}
+          {/*  </MainSlideCarouselItemWrapper>*/}
+          {/*))}*/}
+          {mainSlideFramesGalleryCloudinary.map((id, idx) => (
             <MainSlideCarouselItemWrapper key={idx}>
               <Box>
                 <MainSlideImageWrapper>
-                  <img src={src} alt={'frame'} height="100%" />
+                  <CloudinaryImage cloudinaryId={id} scaleWidth={1000} />
                 </MainSlideImageWrapper>
               </Box>
             </MainSlideCarouselItemWrapper>

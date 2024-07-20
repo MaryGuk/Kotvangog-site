@@ -7,9 +7,10 @@ import {
   PresentImageItemWrapper,
   PresentImagesWrapper,
 } from '../styled';
-import { presentSlideImages } from '../../../../../constants/galleries/mainPageImages';
+import { presentSlideImagesCloudinary } from '../../../../../constants/galleries/mainPageImages';
 import { useConsultationDialog } from '../../../ConsultationDialogProvider';
 import { isMobile } from 'react-device-detect';
+import CloudinaryImage from '../../../../CloudinaryImage';
 
 const PresentBoxingSlide = () => {
   const { onOpen } = useConsultationDialog();
@@ -38,9 +39,13 @@ const PresentBoxingSlide = () => {
       )}
 
       <PresentImagesWrapper>
-        {presentSlideImages.map((src, idx) => (
+        {presentSlideImagesCloudinary.map((cloudinaryId, idx) => (
           <PresentImageItemWrapper key={idx}>
-            <img src={src} alt="presentImage" width="100%" />
+            <CloudinaryImage
+              cloudinaryId={cloudinaryId}
+              width={600}
+              height={750}
+            />
           </PresentImageItemWrapper>
         ))}
       </PresentImagesWrapper>
