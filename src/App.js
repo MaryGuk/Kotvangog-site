@@ -17,44 +17,54 @@ import ScrollToTop from './components/ScrollToTop';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme/theme';
 import ConsultationDialogProvider from './components/Autumn2023Update/ConsultationDialogProvider/provider';
+import { Cloudinary } from '@cloudinary/url-gen';
+import CloudinaryProvider from './providers/CloudinaryProvider';
+
+const cld = new Cloudinary({
+  cloud: {
+    cloudName: 'ddeg71zn5',
+  },
+});
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Suspense
-        fallback={
-          <Box
-            width="100vw"
-            height="100vh"
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-          >
-            <PaintbrushLoader width={500} />
-          </Box>
-        }
-      >
-        <ConsultationDialogProvider>
-          <BrowserRouter>
-            <div className="app-wrapper">
-              <ScrollToTop />
-              {isMobile ? <BurgerMenu /> : <Navbar />}
-              <Routes>
-                <Route path="/home" element={<MainPage />} />
-                <Route path="/products" element={<ProductsPage />} />
-                <Route path="/oil-portrait" element={<OilPortraitPage />} />
-                <Route
-                  path="/likeness-portrait"
-                  element={<LikenessPortraitPage />}
-                />
-                <Route path="/art-styles" element={<ProductsPage />} />
-                <Route path="/reviews" element={<ReviewsPage />} />
-                <Route path="*" element={<Navigate to="/home" />} />
-              </Routes>
-            </div>
-          </BrowserRouter>
-        </ConsultationDialogProvider>
-      </Suspense>
+      <CloudinaryProvider cld={cld}>
+        <Suspense
+          fallback={
+            <Box
+              width="100vw"
+              height="100vh"
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+            >
+              <PaintbrushLoader width={500} />
+            </Box>
+          }
+        >
+          <ConsultationDialogProvider>
+            <BrowserRouter>
+              <div className="app-wrapper">
+                <ScrollToTop />
+                {isMobile ? <BurgerMenu /> : <Navbar />}
+                <Routes>
+                  <Route path="/home" element={<MainPage />} />
+                  <Route path="/products" element={<ProductsPage />} />
+                  <Route path="/oil-portrait" element={<OilPortraitPage />} />
+                  <Route
+                    path="/likeness-portrait"
+                    element={<LikenessPortraitPage />}
+                  />
+                  <Route path="/art-styles" element={<ProductsPage />} />
+                  <Route path="/reviews" element={<ReviewsPage />} />
+                  <Route path="*" element={<Navigate to="/home" />} />
+                </Routes>
+              </div>
+            </BrowserRouter>
+          </ConsultationDialogProvider>
+        </Suspense>
+      </CloudinaryProvider>
     </ThemeProvider>
   );
 };

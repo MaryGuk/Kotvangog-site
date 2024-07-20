@@ -7,8 +7,9 @@ import Slider from 'react-slick';
 import { NextArrow, PrevArrow } from '../../MobileCarousel';
 import { isMobile } from 'react-device-detect';
 import { Typography } from '@mui/material';
+import CloudinaryImage from '../../CloudinaryImage';
 
-const NewCarousel = ({ slidesToShow = 1, gallery }) => {
+const NewCarousel = ({ slidesToShow = 1, gallery, width, height }) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -22,21 +23,33 @@ const NewCarousel = ({ slidesToShow = 1, gallery }) => {
   return (
     <NewCarouselWrapper>
       <Slider {...settings}>
-        {gallery.map(({ imageSrc, imageSrc_500, description }, idx) => (
-          <NewCarouselItemWrapper key={idx}>
-            <img
-              src={(!isMobile && imageSrc_500) || imageSrc}
-              alt=""
-              width="100%"
-              loading="lazy"
-            />
-            {description && (
-              <NewCarouselItemDescriptionWrapper>
-                <Typography variant="subtitle1">{description}</Typography>
-              </NewCarouselItemDescriptionWrapper>
-            )}
-          </NewCarouselItemWrapper>
-        ))}
+        {gallery.map(
+          ({ description, cloudinaryId, imageSrc_500, imageSrc }, idx) => (
+            <NewCarouselItemWrapper key={idx}>
+              {cloudinaryId ? (
+                <CloudinaryImage
+                  cloudinaryId={cloudinaryId}
+                  width={width}
+                  height={height}
+                />
+              ) : (
+                <img
+                  src={(!isMobile && imageSrc_500) || imageSrc}
+                  alt=""
+                  width="100%"
+                  loading="lazy"
+                />
+              )}
+              {description && (
+                <NewCarouselItemDescriptionWrapper>
+                  <Typography lineHeight={1} variant="subtitle1">
+                    {description}
+                  </Typography>
+                </NewCarouselItemDescriptionWrapper>
+              )}
+            </NewCarouselItemWrapper>
+          )
+        )}
       </Slider>
     </NewCarouselWrapper>
   );

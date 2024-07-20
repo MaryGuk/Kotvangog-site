@@ -9,6 +9,14 @@ export const mainSlideFramesGallery = [
   'https://www.dropbox.com/scl/fi/xh7b71oj3zv9ni2k1o3lz/00011_750px.png?rlkey=lk58et701rajag48gwb38i7ek&dl=0',
 ].map(normalizeDropBoxLink);
 
+export const mainSlideFramesGalleryCloudinary = [
+  'kot-vangog/main-page/1-main-slide/axqqq3ine0ooj458oqwy',
+  'kot-vangog/main-page/1-main-slide/hph9ij9bqwbtv8sr7g0a',
+  'kot-vangog/main-page/1-main-slide/ahevgvleiutadcyqemk1',
+  'kot-vangog/main-page/1-main-slide/p7tblpkourpeqkiabzsp',
+  'kot-vangog/main-page/1-main-slide/el1ynmhpphku8wyyhpdv',
+];
+
 // TODO : add 500px for PC OilCanvasGrid
 export const oilSlideFramesGallery = [
   'https://www.dropbox.com/scl/fi/mn8fa7t724hzl452r862y/00001_1000px_progressive.jpg?rlkey=wwuxtfni2vlvdt3pqx30x7wzv&dl=0',
@@ -35,6 +43,7 @@ export const eventsSlideGallery = [
       'https://www.dropbox.com/scl/fi/qgatcdxvkek4tx1q3unmv/0_-_1000px_progressive.jpg?rlkey=54tyhtzxqlg6qkli0oum1uz2t&dl=0',
     imageSrc_500:
       'https://www.dropbox.com/scl/fi/hiza7onsu7vfax2itonuw/0_-_500px_progressive.jpg?rlkey=1j96g5nmk70pydfokcqn8l1yf&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/2-events-slide/hrpuk92zth8lxljijoom',
     description: 'Портрет на день рождения',
   },
   {
@@ -44,6 +53,7 @@ export const eventsSlideGallery = [
       'https://www.dropbox.com/scl/fi/ij59j7pn7emn3qu84nxek/1_-_1000px_progressive.jpg?rlkey=jn4ocihsf4gtz95xm61zs29mb&dl=0',
     imageSrc_500:
       'https://www.dropbox.com/scl/fi/pmgh7c618unxuj6zm9yuz/1_-_500px_progressive.jpg?rlkey=fw2w83p0i4hkqa9vsotjcuk3l&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/2-events-slide/nmlsemg2kyqpji3acp2v',
     description: 'Портрет на  новый год',
   },
   {
@@ -53,6 +63,7 @@ export const eventsSlideGallery = [
       'https://www.dropbox.com/scl/fi/p0ib5lvv56zf8267bfr5j/2_-_1000px_progressive.jpg?rlkey=uesdedv2gnryra699bpmbur09&dl=0',
     imageSrc_500:
       'https://www.dropbox.com/scl/fi/yhckfquxc8yubcshesn5e/2_-_500px_progressive.jpg?rlkey=6cinnuv5jsdfgf79m51geidco&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/2-events-slide/gseroanicmr3uhu3we1t',
     description: 'Портрет на  день влюбленных',
   },
   {
@@ -62,6 +73,7 @@ export const eventsSlideGallery = [
       'https://www.dropbox.com/scl/fi/gohhwf8uaml6zkhf4ka05/4_-23-_1000px_progressive.jpg?rlkey=jyqccz3pz9v7cfwqvtqrupyei&dl=0',
     imageSrc_500:
       'https://www.dropbox.com/scl/fi/ozrhl1mzb7j7vhmw3g3pf/4_-23-_500px_progressive.jpg?rlkey=q1l9edlw98o3yuh8yeugndyvx&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/2-events-slide/c4pvoffsakos0rlqbvut',
     description: 'Портрет на  23 февраля',
   },
   {
@@ -71,6 +83,7 @@ export const eventsSlideGallery = [
       'https://www.dropbox.com/scl/fi/ketfebruhiikdiud34hjj/5_-_1000px_progressive.jpg?rlkey=2qk1w0d2e3hmm1gjh1bhl1v4g&dl=0',
     imageSrc_500:
       'https://www.dropbox.com/scl/fi/u0qo7zccuxi1jk73zt2lp/5_-_500px_progressive.jpg?rlkey=0fobp7app3hgaa2olqlhv65xv&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/2-events-slide/q6qtc0bkr3gavuxjyvem',
     description: 'Портрет для питомца',
   },
   {
@@ -80,14 +93,18 @@ export const eventsSlideGallery = [
       'https://www.dropbox.com/scl/fi/dhc1ljlrjmhukgxidr95w/6_-_1000px_progressive.jpg?rlkey=nd2yviqzftw3ly7u9skjk3n4t&dl=0',
     imageSrc_500:
       'https://www.dropbox.com/scl/fi/tcbicgphrxw5j81sri1ju/6_-_500px_progressive.jpg?rlkey=0ws6vr9mupwkzipnivsn2tmkf&dl=0',
+    cloudinaryId: 'kot-vangog/main-page/2-events-slide/luasmdh5bpyqn5bucnvq',
     description: 'Портрет на  память',
   },
-].map(({ imageSrc, imageSrc_1000, imageSrc_500, description }) => ({
-  imageSrc: normalizeDropBoxLink(imageSrc),
-  imageSrc_1000: normalizeDropBoxLink(imageSrc_1000),
-  imageSrc_500: normalizeDropBoxLink(imageSrc_500),
-  description,
-}));
+].map(
+  ({ imageSrc, imageSrc_1000, imageSrc_500, description, cloudinaryId }) => ({
+    imageSrc: normalizeDropBoxLink(imageSrc),
+    imageSrc_1000: normalizeDropBoxLink(imageSrc_1000),
+    imageSrc_500: normalizeDropBoxLink(imageSrc_500),
+    cloudinaryId,
+    description,
+  })
+);
 
 export const newCanvasSlideGalleryDesktop = [
   'https://www.dropbox.com/scl/fi/cd45rc2cdllpwe6b3niak/1_5515641651_500px_progressive.jpg?rlkey=llc4fun5w7induwd52jr4j72b&dl=0',
