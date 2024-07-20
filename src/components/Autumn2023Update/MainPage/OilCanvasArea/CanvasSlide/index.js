@@ -1,11 +1,11 @@
 import { CanvasAdvantagesListWrapper, CanvasAreaWrapper } from '../styled';
 import { Box, Typography } from '@mui/material';
-import MobileCarousel from '../../../../MobileCarousel';
 import { newCanvasSlideGallery } from '../../../../../constants/galleries/mainPageImages';
 import { canvasAdvantages } from '../../../../../constants/advantages';
 import BrushTitle from '../../../BrushTitle';
 import brushSrc from '../../../../../images/brushes/brush7.svg';
 import AdvantagesList from '../../../../AdvantagesList';
+import NewCarousel from '../../../NewCarousel';
 
 const CanvasSlide = () => {
   return (
@@ -15,12 +15,7 @@ const CanvasSlide = () => {
       </BrushTitle>
 
       <Box width="100vw" display="block">
-        <MobileCarousel
-          imageList={newCanvasSlideGallery}
-          columnCount={1}
-          rowCount={1}
-          onImageClick={() => true}
-        />
+        <NewCarousel gallery={newCanvasSlideGallery} width={600} height={760} />
       </Box>
 
       <CanvasAdvantagesListWrapper>

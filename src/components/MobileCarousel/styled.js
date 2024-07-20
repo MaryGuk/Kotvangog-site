@@ -1,5 +1,6 @@
 import { IconButton, Box } from '@mui/material';
 import { styled } from '@mui/material';
+import { mobileStyles } from '../../utils/stylesUtils';
 
 const StyledIconButton = styled(IconButton)`
   top: 50%;
@@ -13,6 +14,12 @@ const StyledIconButton = styled(IconButton)`
     background-color: white;
     box-shadow: 0 0 20px #36883d;
   }
+
+  ${mobileStyles(`
+    :hover {
+      box-shadow: none;
+    }
+  `)}
 `;
 
 export const StyledIconButtonPrev = styled(StyledIconButton)`

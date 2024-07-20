@@ -8,10 +8,10 @@ import {
 } from '../styled';
 import Brush from '../../../../../images/brushes/brush4.svg';
 import { Typography } from '@mui/material';
-import MobileCarousel from '../../../../MobileCarousel';
 import { oilSlideFramesGallery } from '../../../../../constants/galleries/mainPageImages';
 import AdvantagesList from '../../../../AdvantagesList';
 import { oilAdvantages } from '../../../../../constants/advantages';
+import NewCarousel from '../../../NewCarousel';
 
 const OilSlide = ({ customTitle }) => {
   return (
@@ -29,13 +29,7 @@ const OilSlide = ({ customTitle }) => {
       )}
 
       <OilSlideCarouselWrapper>
-        <MobileCarousel
-          imageList={oilSlideFramesGallery}
-          columnCount={1}
-          rowCount={1}
-          onImageClick={() => true}
-          mt="15px"
-        />
+        <NewCarousel gallery={oilSlideFramesGallery} width={600} height={760} />
       </OilSlideCarouselWrapper>
 
       <AdvantagesListWrapper>
