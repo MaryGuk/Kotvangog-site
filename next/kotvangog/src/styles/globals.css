@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  display: block;
+}
+
+
+@font-face {
+  font-family: 'Palatino Linotype';
+  src:
+          url(/fonts/Palatinolinotype_bold.woff2) format('woff2'),
+          url(/fonts/palatinolinotype_roman.ttf) format('truetype');
+  src:
+          url(/fonts/Palatinolinotype_bolditalic.woff2) format('woff2'),
+          url(/fonts/palatinolinotype_roman.ttf) format('truetype');
+  src:
+          url(/fonts/Palatinolinotype_italic.woff2) format('woff2'),
+          url(/fonts/palatinolinotype_roman.ttf) format('truetype');
+  src:
+          url(/fonts/Palatinolinotype_roman.woff2) format('woff2'),
+          url(/fonts/palatinolinotype_roman.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Trebuchetms';
+  src: url('/fonts/trebuc.ttf') format('truetype');
+  src: url(/fonts/Trebuchetms.woff2) format('woff');
+  src: url(/fonts/AnyConv.com__Trebuchet\ MS\ Полужирный.woff2)
+  format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lucidaconsole';
+  src: url('/fonts/Lucidaconsole.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('/fonts/centurygothic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
